@@ -124,9 +124,13 @@ dist
 
 # Stores VSCode versions used for testing VSCode extensions
 .vscode-test
-reports/*
-!reports/CopilotDashboard.html
-temp
+# Keep temp folder content ignored (cloned repos)
+temp/*
+!temp/README.md
+
+# Keep reports structure but ignore large data files in archives
+reports/archive/
+reports/consolidated/
 
 # yarn v3
 .pnp.*
