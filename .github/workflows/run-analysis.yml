@@ -7,20 +7,48 @@ on:
       analysis_name:
         description: 'Name for this analysis run (e.g., January2026, Q1-Review)'
         required: false
+        type: string
         default: ''
       start_date:
         description: 'Start date (yyyy-MM-dd) - leave empty for all time'
         required: false
+        type: string
         default: ''
       end_date:
         description: 'End date (yyyy-MM-dd) - leave empty for today'
         required: false
+        type: string
         default: ''
       full_analysis:
-        description: 'Force full re-analysis (ignore incremental)'
+        description: 'Force full re-analysis (ignore incremental tracking)'
         required: false
         type: boolean
         default: false
+      validate_only:
+        description: 'Only validate Git access without running analysis'
+        required: false
+        type: boolean
+        default: false
+      parallel:
+        description: 'Enable parallel processing of repositories (faster)'
+        required: false
+        type: boolean
+        default: false
+      max_parallel:
+        description: 'Maximum parallel threads (only used with parallel=true)'
+        required: false
+        type: number
+        default: 4
+      compare_with:
+        description: 'Path to previous report JSON for comparison (e.g., reports/consolidated/Report.json)'
+        required: false
+        type: string
+        default: ''
+      config_path:
+        description: 'Path to config CSV file (default: config/config.csv)'
+        required: false
+        type: string
+        default: 'config/config.csv'
 
   # Optional: Schedule to run weekly on Mondays at 9 AM UTC
   # Uncomment the lines below to enable scheduled runs
@@ -43,46 +71,99 @@ jobs:
           fetch-depth: 0
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Setup Git credentials for cloning public repos
+      - name: Setup Git credentials
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        shell: pwsh
+
+      - name: Display input parameters
+        run: |
+          Write-Host "═══════════════════════════════════════════════════════════" -ForegroundColor Cyan
+          Write-Host "                 WORKFLOW INPUT PARAMETERS                  " -ForegroundColor Cyan
+          Write-Host "═══════════════════════════════════════════════════════════" -ForegroundColor Cyan
+          Write-Host "Analysis Name    : ${{ github.event.inputs.analysis_name || 'Auto-generated' }}" -ForegroundColor White
+          Write-Host "Start Date       : ${{ github.event.inputs.start_date || 'All time' }}" -ForegroundColor White
+          Write-Host "End Date         : ${{ github.event.inputs.end_date || 'Today' }}" -ForegroundColor White
+          Write-Host "Full Analysis    : ${{ github.event.inputs.full_analysis }}" -ForegroundColor White
+          Write-Host "Validate Only    : ${{ github.event.inputs.validate_only }}" -ForegroundColor White
+          Write-Host "Parallel         : ${{ github.event.inputs.parallel }}" -ForegroundColor White
+          Write-Host "Max Parallel     : ${{ github.event.inputs.max_parallel }}" -ForegroundColor White
+          Write-Host "Compare With     : ${{ github.event.inputs.compare_with || 'None' }}" -ForegroundColor White
+          Write-Host "Config Path      : ${{ github.event.inputs.config_path }}" -ForegroundColor White
+          Write-Host "═══════════════════════════════════════════════════════════" -ForegroundColor Cyan
         shell: pwsh
 
       - name: Run Batch Analysis
         run: |
           $params = @{}
           
+          # Analysis Name
           if ("${{ github.event.inputs.analysis_name }}" -ne "") {
             $params["AnalysisName"] = "${{ github.event.inputs.analysis_name }}"
           }
           
+          # Start Date
           if ("${{ github.event.inputs.start_date }}" -ne "") {
             $params["StartDate"] = "${{ github.event.inputs.start_date }}"
           }
           
+          # End Date
           if ("${{ github.event.inputs.end_date }}" -ne "") {
             $params["EndDate"] = "${{ github.event.inputs.end_date }}"
           }
           
+          # Full Analysis (switch)
           if ("${{ github.event.inputs.full_analysis }}" -eq "true") {
             $params["FullAnalysis"] = $true
           }
           
-          Write-Host "Running analysis with parameters:" -ForegroundColor Cyan
-          $params | Format-Table -AutoSize
+          # Validate Only (switch)
+          if ("${{ github.event.inputs.validate_only }}" -eq "true") {
+            $params["ValidateOnly"] = $true
+          }
+          
+          # Parallel (switch)
+          if ("${{ github.event.inputs.parallel }}" -eq "true") {
+            $params["Parallel"] = $true
+          }
+          
+          # Max Parallel
+          $maxParallel = "${{ github.event.inputs.max_parallel }}"
+          if ($maxParallel -ne "" -and $maxParallel -ne "4") {
+            $params["MaxParallel"] = [int]$maxParallel
+          }
+          
+          # Compare With
+          if ("${{ github.event.inputs.compare_with }}" -ne "") {
+            $params["CompareWith"] = "${{ github.event.inputs.compare_with }}"
+          }
+          
+          # Config Path
+          $configPath = "${{ github.event.inputs.config_path }}"
+          if ($configPath -ne "" -and $configPath -ne "config/config.csv") {
+            $params["ConfigPath"] = $configPath
+          }
+          
+          Write-Host "`nRunning analysis with parameters:" -ForegroundColor Cyan
+          $params.GetEnumerator() | ForEach-Object { Write-Host "  $($_.Key): $($_.Value)" -ForegroundColor Gray }
+          Write-Host ""
           
           # Run the analysis script
           & .\scripts\Run-BatchAnalysis.ps1 @params
         shell: pwsh
         env:
-          # For public repos, GITHUB_TOKEN works. For private repos, use REPO_ACCESS_TOKEN
           GH_TOKEN: ${{ secrets.REPO_ACCESS_TOKEN || secrets.GITHUB_TOKEN }}
 
       - name: Commit and push reports
         run: |
-          git add reports/
-          git add config/analysis-metadata.json -f 2>$null
+          # Pull latest changes first to avoid rejection
+          Write-Host "Pulling latest changes from remote..." -ForegroundColor Cyan
+          git pull origin ${{ github.ref_name }} --rebase --autostash
+          
+          # Stage files
+          git add reports/ --force
+          git add config/analysis-metadata.json --force 2>$null
           
           # Check if there are staged changes
           $status = git status --porcelain
@@ -92,9 +173,30 @@ jobs:
             if (-not $analysisName) {
               $analysisName = Get-Date -Format "yyyy-MM-dd_HH-mm"
             }
+            
             git commit -m "Analysis run: $analysisName [skip ci]"
-            git push
-            Write-Host "✅ Reports committed and pushed successfully" -ForegroundColor Green
+            
+            # Retry push up to 3 times with pull
+            $maxRetries = 3
+            $retryCount = 0
+            $pushSuccess = $false
+            
+            while (-not $pushSuccess -and $retryCount -lt $maxRetries) {
+              try {
+                git push origin ${{ github.ref_name }}
+                $pushSuccess = $true
+                Write-Host "✅ Reports committed and pushed successfully" -ForegroundColor Green
+              } catch {
+                $retryCount++
+                Write-Host "⚠️ Push failed, attempt $retryCount of $maxRetries. Pulling and retrying..." -ForegroundColor Yellow
+                git pull origin ${{ github.ref_name }} --rebase
+              }
+            }
+            
+            if (-not $pushSuccess) {
+              Write-Host "❌ Failed to push after $maxRetries attempts" -ForegroundColor Red
+              exit 1
+            }
           } else {
             Write-Host "⚠️ No changes to commit" -ForegroundColor Yellow
           }
@@ -102,6 +204,7 @@ jobs:
 
       - name: Upload Dashboard Artifact
         uses: actions/upload-artifact@v4
+        if: success() && github.event.inputs.validate_only != 'true'
         with:
           name: copilot-dashboard
           path: reports/CopilotDashboard.html
@@ -109,6 +212,7 @@ jobs:
 
       - name: Upload Full Reports
         uses: actions/upload-artifact@v4
+        if: success() && github.event.inputs.validate_only != 'true'
         with:
           name: analysis-reports
           path: |
@@ -122,7 +226,7 @@ jobs:
   deploy-dashboard:
     needs: analyze
     runs-on: ubuntu-latest
-    if: success()
+    if: success() && github.event.inputs.validate_only != 'true'
     
     permissions:
       pages: write
