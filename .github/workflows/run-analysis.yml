@@ -251,11 +251,18 @@ jobs:
       - name: Prepare dashboard for deployment
         run: |
           mkdir -p _site
+          mkdir -p _site/consolidated
           cp reports/CopilotDashboard.html _site/index.html
           cp -r reports/*.json _site/ 2>/dev/null || true
           cp -r reports/*.csv _site/ 2>/dev/null || true
+          # Copy consolidated reports for dropdown functionality
+          cp -r reports/consolidated/*.json _site/consolidated/ 2>/dev/null || true
           echo "Dashboard prepared for deployment"
+          echo "Main site files:"
           ls -la _site/
+          echo "Consolidated reports:"
+          ls -la _site/consolidated/ | head -20
+          echo "Total consolidated reports: $(ls _site/consolidated/*.json 2>/dev/null | wc -l)"
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
