@@ -130,7 +130,7 @@ temp/*
 
 # Keep reports structure but ignore large data files in archives
 reports/archive/
-reports/consolidated/
+# NOTE: reports/consolidated/ is NOT ignored - needed for GitHub Pages dashboard
 
 # yarn v3
 .pnp.*
