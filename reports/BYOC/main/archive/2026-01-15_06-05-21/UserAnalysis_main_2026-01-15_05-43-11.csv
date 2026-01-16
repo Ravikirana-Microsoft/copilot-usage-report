@@ -1,0 +1,6 @@
+"UserName","UserEmail","TotalCommits","AICommits","HumanCommits","AILinesAdded","HumanLinesAdded","TotalLinesAdded","AIPercentage","AvgConfidenceScore","Tier1Commits","Tier2Commits","Tier3Commits","Tier4Commits","Tier5Commits"
+"copilot-swe-agent[bot]","198982749+Copilot@users.noreply.github.com","2","0","2","0","1","1","0","0","0","0","0","0","0"
+"Rafi-Microsoft","v-rafmd@microsoft.com","1","0","1","0","6","6","0","0","0","0","0","0","0"
+,,"202","10","192","4115","23349","27464","14.98","100","10","0","0","0","0"
+"Harsh-Microsoft","v-hbangera@microsoft.com","6","0","6","0","408","408","0","0","0","0","0","0","0"
+"Prajwal-Microsoft","v-dcprajwal@microsoft.com","2","0","2","0","0","0","0","0","0","0","0","0","0"
