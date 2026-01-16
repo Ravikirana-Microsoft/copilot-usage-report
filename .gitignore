@@ -129,8 +129,9 @@ temp/*
 !temp/README.md
 
 # Keep reports structure but ignore large data files in archives
-reports/archive/
-# NOTE: reports/consolidated/ is NOT ignored - needed for GitHub Pages dashboard
+reports/
+!reports/copilotdashboard.html
+
 
 # yarn v3
 .pnp.*
