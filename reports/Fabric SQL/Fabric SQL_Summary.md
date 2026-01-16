@@ -2,12 +2,8 @@
 
 > Consolidated analysis across all branches using 5-Tier AI Detection Model
 
-<<<<<<< HEAD
-**Generated:** 2026-01-16 09:53:25  
-=======
-**Generated:** 2026-01-15 06:11:45  
->>>>>>> ed6b7068884fbf543951809d433c0788889a79e0
-**Analysis Period:** All Time (No date filter)
+**Generated:** 2026-01-16 04:50:21  
+**Analysis Period:** 2025-11-01 to 2025-11-30
 
 ---
 
@@ -17,13 +13,8 @@
 |--------|-------|
 | **Application** | Fabric SQL |
 | **Branches Analyzed** | 1 |
-<<<<<<< HEAD
-| **Total Contributors** | 21 |
-| **Overall AI Usage** | **54.51%** |
-=======
-| **Total Contributors** | 24 |
-| **Overall AI Usage** | **44.14%** |
->>>>>>> ed6b7068884fbf543951809d433c0788889a79e0
+| **Total Contributors** | 8 |
+| **Overall AI Usage** | **10.42%** |
 
 ---
 
@@ -33,26 +24,15 @@
 
 | Category | Lines | Percentage | Commits |
 |----------|-------|------------|---------|
-<<<<<<< HEAD
-| **AI-Assisted** | 74815 | 54.51% | 21 |
-| **Human-Written** | 62432 | 45.49% | 227 |
-| **Total** | 137247 | 100% | 248 |
-=======
-| **AI-Assisted** | 61210 | 44.14% | 2 |
-| **Human-Written** | 77448 | 55.86% | 397 |
-| **Total** | 138658 | 100% | 399 |
->>>>>>> ed6b7068884fbf543951809d433c0788889a79e0
+| **AI-Assisted** | 3416 | 10.42% | 4 |
+| **Human-Written** | 29366 | 89.58% | 59 |
+| **Total** | 32782 | 100% | 63 |
 
 ### Visual Summary
 
 ```
-<<<<<<< HEAD
-AI-Assisted:   ██████████░░░░░░░░░░ 54.51%
-Human-Written: █████████░░░░░░░░░░░ 45.49%
-=======
-AI-Assisted:   ████████░░░░░░░░░░░░ 44.14%
-Human-Written: ███████████░░░░░░░░░ 55.86%
->>>>>>> ed6b7068884fbf543951809d433c0788889a79e0
+AI-Assisted:   ██░░░░░░░░░░░░░░░░░░ 10.42%
+Human-Written: █████████████████░░░ 89.58%
 ```
 
 ---
@@ -62,19 +42,11 @@ Human-Written: ███████████░░░░░░░░░ 55.8
 | Tier | Confidence | Description | Commits | Percentage |
 |------|------------|-------------|---------|------------|
 | **Tier 1** | 99-100% | Definitive AI markers | 0 | 0% |
-<<<<<<< HEAD
-| **Tier 2** | 90-98% | Very high confidence | 7 | 33.3% |
-| **Tier 3** | 80-89% | High confidence | 3 | 14.3% |
-| **Tier 4** | 70-79% | Moderate confidence | 3 | 14.3% |
-| **Tier 5** | 60-69% | Low confidence | 8 | 38.1% |
-| **Human** | <60% | No AI detected | 227 | 91.5% |
-=======
-| **Tier 2** | 90-98% | Very high confidence | 0 | 0% |
+| **Tier 2** | 90-98% | Very high confidence | 1 | 25% |
 | **Tier 3** | 80-89% | High confidence | 0 | 0% |
-| **Tier 4** | 70-79% | Moderate confidence | 1 | 50% |
-| **Tier 5** | 60-69% | Low confidence | 1 | 50% |
-| **Human** | <60% | No AI detected | 397 | 99.5% |
->>>>>>> ed6b7068884fbf543951809d433c0788889a79e0
+| **Tier 4** | 70-79% | Moderate confidence | 1 | 25% |
+| **Tier 5** | 60-69% | Low confidence | 2 | 50% |
+| **Human** | <60% | No AI detected | 59 | 93.7% |
 
 ---
 
@@ -82,37 +54,22 @@ Human-Written: ███████████░░░░░░░░░ 55.8
 
 | Branch | Commits | AI Commits | AI Lines | AI % | T1 | T2 | T3 | T4 | T5 | Contributors |
 |--------|---------|------------|----------|------|----|----|----|----|-----|--------------|
-<<<<<<< HEAD
-| **dev** | 248 | 21 | 74815 | 54.51% | 0 | 7 | 3 | 3 | 8 | 21 |
-=======
-| **main** | 399 | 2 | 61210 | 44.14% | 0 | 0 | 0 | 1 | 1 | 24 |
->>>>>>> ed6b7068884fbf543951809d433c0788889a79e0
+| **dev** | 63 | 4 | 3416 | 10.42% | 0 | 1 | 0 | 1 | 2 | 8 |
 
 ---
 
 ## Branch Reports
 
-<<<<<<< HEAD
-- **dev**: [dev/](dev/) - AI: 54.51%
-=======
-- **main**: [main/](main/) - AI: 44.14%
->>>>>>> ed6b7068884fbf543951809d433c0788889a79e0
+- **dev**: [dev/](dev/) - AI: 10.42%
 
 ---
 
 ## Key Insights
 
-<<<<<<< HEAD
-### Balanced Development
-This application shows **balanced AI-human collaboration** with 54.51% AI-assisted code.
-- Mix of AI-assisted and human-written code
-- AI tools supplementing developer productivity
-=======
 ### Human-Centric Development
-This application is **primarily human-written** with only 44.14% AI-assisted code.
+This application is **primarily human-written** with only 10.42% AI-assisted code.
 - Most commits are traditional human development
 - AI tools used selectively or minimally
->>>>>>> ed6b7068884fbf543951809d433c0788889a79e0
 
 ---
 

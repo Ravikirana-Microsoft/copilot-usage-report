@@ -2,12 +2,8 @@
 
 > Consolidated analysis across all branches using 5-Tier AI Detection Model
 
-<<<<<<< HEAD
-**Generated:** 2026-01-16 09:53:25  
-=======
-**Generated:** 2026-01-15 06:11:45  
->>>>>>> ed6b7068884fbf543951809d433c0788889a79e0
-**Analysis Period:** All Time (No date filter)
+**Generated:** 2026-01-16 04:50:21  
+**Analysis Period:** 2025-11-01 to 2025-11-30
 
 ---
 
@@ -17,13 +13,8 @@
 |--------|-------|
 | **Application** | Code Modernization |
 | **Branches Analyzed** | 1 |
-<<<<<<< HEAD
-| **Total Contributors** | 48 |
-| **Overall AI Usage** | **24.6%** |
-=======
-| **Total Contributors** | 53 |
-| **Overall AI Usage** | **21.85%** |
->>>>>>> ed6b7068884fbf543951809d433c0788889a79e0
+| **Total Contributors** | 11 |
+| **Overall AI Usage** | **0.02%** |
 
 ---
 
@@ -33,26 +24,15 @@
 
 | Category | Lines | Percentage | Commits |
 |----------|-------|------------|---------|
-<<<<<<< HEAD
-| **AI-Assisted** | 36998 | 24.6% | 24 |
-| **Human-Written** | 113427 | 75.4% | 654 |
-| **Total** | 150425 | 100% | 678 |
-=======
-| **AI-Assisted** | 33126 | 21.85% | 9 |
-| **Human-Written** | 118504 | 78.15% | 936 |
-| **Total** | 151630 | 100% | 945 |
->>>>>>> ed6b7068884fbf543951809d433c0788889a79e0
+| **AI-Assisted** | 3 | 0.02% | 3 |
+| **Human-Written** | 15972 | 99.98% | 42 |
+| **Total** | 15975 | 100% | 45 |
 
 ### Visual Summary
 
 ```
-<<<<<<< HEAD
-AI-Assisted:   ████░░░░░░░░░░░░░░░░ 24.6%
-Human-Written: ███████████████░░░░░ 75.4%
-=======
-AI-Assisted:   ████░░░░░░░░░░░░░░░░ 21.85%
-Human-Written: ███████████████░░░░░ 78.15%
->>>>>>> ed6b7068884fbf543951809d433c0788889a79e0
+AI-Assisted:   ░░░░░░░░░░░░░░░░░░░░ 0.02%
+Human-Written: ███████████████████░ 99.98%
 ```
 
 ---
@@ -61,21 +41,12 @@ Human-Written: ███████████████░░░░░ 78.1
 
 | Tier | Confidence | Description | Commits | Percentage |
 |------|------------|-------------|---------|------------|
-<<<<<<< HEAD
-| **Tier 1** | 99-100% | Definitive AI markers | 3 | 12.5% |
-| **Tier 2** | 90-98% | Very high confidence | 1 | 4.2% |
-| **Tier 3** | 80-89% | High confidence | 6 | 25% |
-| **Tier 4** | 70-79% | Moderate confidence | 6 | 25% |
-| **Tier 5** | 60-69% | Low confidence | 8 | 33.3% |
-| **Human** | <60% | No AI detected | 654 | 96.5% |
-=======
-| **Tier 1** | 99-100% | Definitive AI markers | 3 | 33.3% |
-| **Tier 2** | 90-98% | Very high confidence | 1 | 11.1% |
+| **Tier 1** | 99-100% | Definitive AI markers | 3 | 100% |
+| **Tier 2** | 90-98% | Very high confidence | 0 | 0% |
 | **Tier 3** | 80-89% | High confidence | 0 | 0% |
-| **Tier 4** | 70-79% | Moderate confidence | 3 | 33.3% |
-| **Tier 5** | 60-69% | Low confidence | 2 | 22.2% |
-| **Human** | <60% | No AI detected | 936 | 99% |
->>>>>>> ed6b7068884fbf543951809d433c0788889a79e0
+| **Tier 4** | 70-79% | Moderate confidence | 0 | 0% |
+| **Tier 5** | 60-69% | Low confidence | 0 | 0% |
+| **Human** | <60% | No AI detected | 42 | 93.3% |
 
 ---
 
@@ -83,32 +54,20 @@ Human-Written: ███████████████░░░░░ 78.1
 
 | Branch | Commits | AI Commits | AI Lines | AI % | T1 | T2 | T3 | T4 | T5 | Contributors |
 |--------|---------|------------|----------|------|----|----|----|----|-----|--------------|
-<<<<<<< HEAD
-| **dev** | 678 | 24 | 36998 | 24.6% | 3 | 1 | 6 | 6 | 8 | 48 |
-=======
-| **main** | 945 | 9 | 33126 | 21.85% | 3 | 1 | 0 | 3 | 2 | 53 |
->>>>>>> ed6b7068884fbf543951809d433c0788889a79e0
+| **dev** | 45 | 3 | 3 | 0.02% | 3 | 0 | 0 | 0 | 0 | 11 |
 
 ---
 
 ## Branch Reports
 
-<<<<<<< HEAD
-- **dev**: [dev/](dev/) - AI: 24.6%
-=======
-- **main**: [main/](main/) - AI: 21.85%
->>>>>>> ed6b7068884fbf543951809d433c0788889a79e0
+- **dev**: [dev/](dev/) - AI: 0.02%
 
 ---
 
 ## Key Insights
 
 ### Human-Centric Development
-<<<<<<< HEAD
-This application is **primarily human-written** with only 24.6% AI-assisted code.
-=======
-This application is **primarily human-written** with only 21.85% AI-assisted code.
->>>>>>> ed6b7068884fbf543951809d433c0788889a79e0
+This application is **primarily human-written** with only 0.02% AI-assisted code.
 - Most commits are traditional human development
 - AI tools used selectively or minimally
 

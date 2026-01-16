@@ -2,12 +2,8 @@
 
 > Consolidated analysis across all branches using 5-Tier AI Detection Model
 
-<<<<<<< HEAD
-**Generated:** 2026-01-16 09:53:25  
-=======
-**Generated:** 2026-01-15 06:11:45  
->>>>>>> ed6b7068884fbf543951809d433c0788889a79e0
-**Analysis Period:** All Time (No date filter)
+**Generated:** 2026-01-16 04:50:21  
+**Analysis Period:** 2025-11-01 to 2025-11-30
 
 ---
 
@@ -17,13 +13,8 @@
 |--------|-------|
 | **Application** | BYOCC |
 | **Branches Analyzed** | 1 |
-<<<<<<< HEAD
-| **Total Contributors** | 17 |
-| **Overall AI Usage** | **26.74%** |
-=======
-| **Total Contributors** | 19 |
-| **Overall AI Usage** | **0.04%** |
->>>>>>> ed6b7068884fbf543951809d433c0788889a79e0
+| **Total Contributors** | 8 |
+| **Overall AI Usage** | **0%** |
 
 ---
 
@@ -33,26 +24,15 @@
 
 | Category | Lines | Percentage | Commits |
 |----------|-------|------------|---------|
-<<<<<<< HEAD
-| **AI-Assisted** | 64311 | 26.74% | 16 |
-| **Human-Written** | 176195 | 73.26% | 128 |
-| **Total** | 240506 | 100% | 144 |
-=======
-| **AI-Assisted** | 87 | 0.04% | 1 |
-| **Human-Written** | 235394 | 99.96% | 189 |
-| **Total** | 235481 | 100% | 190 |
->>>>>>> ed6b7068884fbf543951809d433c0788889a79e0
+| **AI-Assisted** | 0 | 0% | 0 |
+| **Human-Written** | 7562 | 100% | 47 |
+| **Total** | 7562 | 100% | 47 |
 
 ### Visual Summary
 
 ```
-<<<<<<< HEAD
-AI-Assisted:   █████░░░░░░░░░░░░░░░ 26.74%
-Human-Written: ██████████████░░░░░░ 73.26%
-=======
-AI-Assisted:   ░░░░░░░░░░░░░░░░░░░░ 0.04%
-Human-Written: ███████████████████░ 99.96%
->>>>>>> ed6b7068884fbf543951809d433c0788889a79e0
+AI-Assisted:   ░░░░░░░░░░░░░░░░░░░░ 0%
+Human-Written: ████████████████████ 100%
 ```
 
 ---
@@ -62,19 +42,11 @@ Human-Written: ███████████████████░ 99.9
 | Tier | Confidence | Description | Commits | Percentage |
 |------|------------|-------------|---------|------------|
 | **Tier 1** | 99-100% | Definitive AI markers | 0 | 0% |
-<<<<<<< HEAD
-| **Tier 2** | 90-98% | Very high confidence | 2 | 12.5% |
-| **Tier 3** | 80-89% | High confidence | 9 | 56.2% |
-| **Tier 4** | 70-79% | Moderate confidence | 2 | 12.5% |
-| **Tier 5** | 60-69% | Low confidence | 3 | 18.8% |
-| **Human** | <60% | No AI detected | 128 | 88.9% |
-=======
 | **Tier 2** | 90-98% | Very high confidence | 0 | 0% |
-| **Tier 3** | 80-89% | High confidence | 1 | 100% |
+| **Tier 3** | 80-89% | High confidence | 0 | 0% |
 | **Tier 4** | 70-79% | Moderate confidence | 0 | 0% |
 | **Tier 5** | 60-69% | Low confidence | 0 | 0% |
-| **Human** | <60% | No AI detected | 189 | 99.5% |
->>>>>>> ed6b7068884fbf543951809d433c0788889a79e0
+| **Human** | <60% | No AI detected | 47 | 100% |
 
 ---
 
@@ -82,32 +54,20 @@ Human-Written: ███████████████████░ 99.9
 
 | Branch | Commits | AI Commits | AI Lines | AI % | T1 | T2 | T3 | T4 | T5 | Contributors |
 |--------|---------|------------|----------|------|----|----|----|----|-----|--------------|
-<<<<<<< HEAD
-| **dev** | 144 | 16 | 64311 | 26.74% | 0 | 2 | 9 | 2 | 3 | 17 |
-=======
-| **main** | 190 | 1 | 87 | 0.04% | 0 | 0 | 1 | 0 | 0 | 19 |
->>>>>>> ed6b7068884fbf543951809d433c0788889a79e0
+| **dev** | 47 | 0 |  | 0% | 0 | 0 | 0 | 0 | 0 | 8 |
 
 ---
 
 ## Branch Reports
 
-<<<<<<< HEAD
-- **dev**: [dev/](dev/) - AI: 26.74%
-=======
-- **main**: [main/](main/) - AI: 0.04%
->>>>>>> ed6b7068884fbf543951809d433c0788889a79e0
+- **dev**: [dev/](dev/) - AI: 0%
 
 ---
 
 ## Key Insights
 
 ### Human-Centric Development
-<<<<<<< HEAD
-This application is **primarily human-written** with only 26.74% AI-assisted code.
-=======
-This application is **primarily human-written** with only 0.04% AI-assisted code.
->>>>>>> ed6b7068884fbf543951809d433c0788889a79e0
+This application is **primarily human-written** with only 0% AI-assisted code.
 - Most commits are traditional human development
 - AI tools used selectively or minimally
 

@@ -2,12 +2,8 @@
 
 > Consolidated analysis across all branches using 5-Tier AI Detection Model
 
-<<<<<<< HEAD
-**Generated:** 2026-01-16 09:53:25  
-=======
-**Generated:** 2026-01-15 06:11:45  
->>>>>>> ed6b7068884fbf543951809d433c0788889a79e0
-**Analysis Period:** All Time (No date filter)
+**Generated:** 2026-01-16 04:50:21  
+**Analysis Period:** 2025-11-01 to 2025-11-30
 
 ---
 
@@ -17,13 +13,8 @@
 |--------|-------|
 | **Application** | CWYD |
 | **Branches Analyzed** | 1 |
-<<<<<<< HEAD
-| **Total Contributors** | 88 |
-| **Overall AI Usage** | **42.18%** |
-=======
-| **Total Contributors** | 76 |
-| **Overall AI Usage** | **34.67%** |
->>>>>>> ed6b7068884fbf543951809d433c0788889a79e0
+| **Total Contributors** | 9 |
+| **Overall AI Usage** | **0%** |
 
 ---
 
@@ -33,26 +24,15 @@
 
 | Category | Lines | Percentage | Commits |
 |----------|-------|------------|---------|
-<<<<<<< HEAD
-| **AI-Assisted** | 250087 | 42.18% | 52 |
-| **Human-Written** | 342786 | 57.82% | 1091 |
-| **Total** | 592873 | 100% | 1143 |
-=======
-| **AI-Assisted** | 146094 | 34.67% | 22 |
-| **Human-Written** | 275326 | 65.33% | 1049 |
-| **Total** | 421420 | 100% | 1071 |
->>>>>>> ed6b7068884fbf543951809d433c0788889a79e0
+| **AI-Assisted** | 0 | 0% | 0 |
+| **Human-Written** | 19668 | 100% | 18 |
+| **Total** | 19668 | 100% | 18 |
 
 ### Visual Summary
 
 ```
-<<<<<<< HEAD
-AI-Assisted:   ████████░░░░░░░░░░░░ 42.18%
-Human-Written: ███████████░░░░░░░░░ 57.82%
-=======
-AI-Assisted:   ██████░░░░░░░░░░░░░░ 34.67%
-Human-Written: █████████████░░░░░░░ 65.33%
->>>>>>> ed6b7068884fbf543951809d433c0788889a79e0
+AI-Assisted:   ░░░░░░░░░░░░░░░░░░░░ 0%
+Human-Written: ████████████████████ 100%
 ```
 
 ---
@@ -61,21 +41,12 @@ Human-Written: █████████████░░░░░░░ 65.3
 
 | Tier | Confidence | Description | Commits | Percentage |
 |------|------------|-------------|---------|------------|
-<<<<<<< HEAD
 | **Tier 1** | 99-100% | Definitive AI markers | 0 | 0% |
-| **Tier 2** | 90-98% | Very high confidence | 11 | 21.2% |
-| **Tier 3** | 80-89% | High confidence | 8 | 15.4% |
-| **Tier 4** | 70-79% | Moderate confidence | 7 | 13.5% |
-| **Tier 5** | 60-69% | Low confidence | 26 | 50% |
-| **Human** | <60% | No AI detected | 1091 | 95.5% |
-=======
-| **Tier 1** | 99-100% | Definitive AI markers | 15 | 68.2% |
-| **Tier 2** | 90-98% | Very high confidence | 1 | 4.5% |
-| **Tier 3** | 80-89% | High confidence | 2 | 9.1% |
-| **Tier 4** | 70-79% | Moderate confidence | 2 | 9.1% |
-| **Tier 5** | 60-69% | Low confidence | 2 | 9.1% |
-| **Human** | <60% | No AI detected | 1049 | 97.9% |
->>>>>>> ed6b7068884fbf543951809d433c0788889a79e0
+| **Tier 2** | 90-98% | Very high confidence | 0 | 0% |
+| **Tier 3** | 80-89% | High confidence | 0 | 0% |
+| **Tier 4** | 70-79% | Moderate confidence | 0 | 0% |
+| **Tier 5** | 60-69% | Low confidence | 0 | 0% |
+| **Human** | <60% | No AI detected | 18 | 100% |
 
 ---
 
@@ -83,32 +54,20 @@ Human-Written: █████████████░░░░░░░ 65.3
 
 | Branch | Commits | AI Commits | AI Lines | AI % | T1 | T2 | T3 | T4 | T5 | Contributors |
 |--------|---------|------------|----------|------|----|----|----|----|-----|--------------|
-<<<<<<< HEAD
-| **dev** | 1143 | 52 | 250087 | 42.18% | 0 | 11 | 8 | 7 | 26 | 88 |
-=======
-| **main** | 1071 | 22 | 146094 | 34.67% | 15 | 1 | 2 | 2 | 2 | 76 |
->>>>>>> ed6b7068884fbf543951809d433c0788889a79e0
+| **dev** | 18 | 0 |  | 0% | 0 | 0 | 0 | 0 | 0 | 9 |
 
 ---
 
 ## Branch Reports
 
-<<<<<<< HEAD
-- **dev**: [dev/](dev/) - AI: 42.18%
-=======
-- **main**: [main/](main/) - AI: 34.67%
->>>>>>> ed6b7068884fbf543951809d433c0788889a79e0
+- **dev**: [dev/](dev/) - AI: 0%
 
 ---
 
 ## Key Insights
 
 ### Human-Centric Development
-<<<<<<< HEAD
-This application is **primarily human-written** with only 42.18% AI-assisted code.
-=======
-This application is **primarily human-written** with only 34.67% AI-assisted code.
->>>>>>> ed6b7068884fbf543951809d433c0788889a79e0
+This application is **primarily human-written** with only 0% AI-assisted code.
 - Most commits are traditional human development
 - AI tools used selectively or minimally
 
