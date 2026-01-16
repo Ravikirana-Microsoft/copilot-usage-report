@@ -131,7 +131,8 @@ try {
     }
 
     # Build git log command with date filtering
-    $gitLogCmd = "git log $Branch --numstat --pretty=format:'COMMIT:%H|%an|%ae|%ad|%s'"
+    # --no-merges: Exclude merge commits - we only want actual code commits, not PR merges
+    $gitLogCmd = "git log $Branch --no-merges --numstat --pretty=format:'COMMIT:%H|%an|%ae|%ad|%s'"
     
     # INCREMENTAL: If we have previous data, only get commits since last analyzed
     if ($lastAnalyzedCommit -and -not $StartDate) {
@@ -172,13 +173,15 @@ try {
     # =====================================================
     
     # Git Trailers - Definitive AI markers in commit metadata
+    # IMPORTANT: Patterns must be specific to avoid false positives on human names/emails
     $gitTrailers = @(
         'Co-authored-by:.*[Cc]opilot',
-        'Co-authored-by:.*[Aa][Ii]',
+        'Co-authored-by:\s*AI\s',                    # Standalone "AI" as author name
+        'Co-authored-by:.*\bAI\s*<',                 # AI followed by email bracket
         'Co-authored-by:.*[Gg]ithub.*[Aa]ssistant',
         'Signed-off-by:.*[Cc]opilot',
         'Generated-by:.*[Cc]opilot',
-        'AI-assisted:.*true'
+        'AI-assisted:\s*true'
     )
 
     # Tier 1 (99-100%): Explicit AI/Copilot markers - Weight: 100
@@ -221,7 +224,13 @@ try {
         @{ Pattern = '\.ConfigureAwait\(false\)'; Weight = 15 },
         
         # AI-style region comments
-        @{ Pattern = '#region\s+\w+\s+\w+\s+\w+'; Weight = 12 }
+        @{ Pattern = '#region\s+\w+\s+\w+\s+\w+'; Weight = 12 },
+        
+        # Redux Toolkit patterns (very common in AI-generated React code)
+        @{ Pattern = 'createAsyncThunk\s*\('; Weight = 18 },
+        @{ Pattern = 'extraReducers:\s*\(builder\)'; Weight = 20 },
+        @{ Pattern = '\.addCase\(\w+\.(pending|fulfilled|rejected)'; Weight = 15 },
+        @{ Pattern = 'createSlice\s*\(\s*\{'; Weight = 15 }
     )
 
     # Tier 3 (80-89%): High confidence patterns - Weight: 8-14
@@ -247,7 +256,18 @@ try {
         
         # Python comprehensive type hints
         @{ Pattern = 'def\s+\w+\([^)]*:\s*\w+[^)]*\)\s*->\s*\w+:'; Weight = 8 },
-        @{ Pattern = 'from\s+typing\s+import\s+[A-Z]\w+,\s*[A-Z]\w+'; Weight = 10 }
+        @{ Pattern = 'from\s+typing\s+import\s+[A-Z]\w+,\s*[A-Z]\w+'; Weight = 10 },
+        
+        # Redux Toolkit additional patterns
+        @{ Pattern = 'type\s+PayloadAction<'; Weight = 10 },
+        @{ Pattern = 'state\.\w+\s*=\s*action\.payload'; Weight = 8 },
+        @{ Pattern = 'useAppDispatch|useAppSelector'; Weight = 8 },
+        @{ Pattern = '\.unwrap\(\)\.then\('; Weight = 12 },
+        @{ Pattern = 'dispatch\(\w+\(\)\)'; Weight = 8 },
+        
+        # HTTP client patterns (AI loves axios/fetch abstractions)
+        @{ Pattern = 'httpClient\.\w+\s*\('; Weight = 10 },
+        @{ Pattern = 'axiosInstance\.\w+\s*\('; Weight = 10 }
     )
 
     # Tier 4 (70-79%): Moderate indicators - Weight: 4-7
@@ -271,7 +291,15 @@ try {
         # Python
         @{ Pattern = 'Optional\[\w+\]'; Weight = 5 },
         @{ Pattern = '@dataclass'; Weight = 5 },
-        @{ Pattern = 'async\s+def\s+\w+'; Weight = 4 }
+        @{ Pattern = 'async\s+def\s+\w+'; Weight = 4 },
+        
+        # Redux/State management patterns
+        @{ Pattern = 'initialState:\s*\w+State'; Weight = 6 },
+        @{ Pattern = 'reducers:\s*\{'; Weight = 5 },
+        @{ Pattern = 'import\s*\{[^}]*createSlice[^}]*\}'; Weight = 6 },
+        @{ Pattern = 'export\s+const\s+\w+Slice\s*='; Weight = 7 },
+        @{ Pattern = 'memo\(\s*\(\s*\{'; Weight = 5 },
+        @{ Pattern = 'useCallback\(\s*async'; Weight = 6 }
     )
 
     # Tier 5 (60-69%): Weak indicators - Weight: 2-3
@@ -362,8 +390,12 @@ try {
                 $commits += $currentCommit
             }
             
-            # Get commit hash and message (defer full message fetch for performance)
+            # Get commit hash, author, email, date and message IMMEDIATELY after match
+            # IMPORTANT: Must capture before any other -match operations that overwrite $matches
             $commitHash = $matches[1]
+            $authorName = $matches[2]
+            $authorEmail = $matches[3]
+            $commitDate = $matches[4]
             $commitMessage = $matches[5]
             
             # Quick check: Only fetch full message if message hints at AI (optimization)
@@ -384,12 +416,21 @@ try {
                 }
             }
             
+            # Get author name and validate (skip commits with empty/null authors like merge commits)
+            if ([string]::IsNullOrWhiteSpace($authorName) -or $authorName -eq 'null' -or $authorName -eq 'Unknown') {
+                # Skip this commit - it's likely a merge commit or has invalid author
+                # Set currentCommit to null so subsequent file lines are also skipped
+                $currentCommit = $null
+                $files = @()
+                continue
+            }
+            
             # Start new commit
             $currentCommit = [PSCustomObject]@{
                 Hash = $commitHash
-                Author = $matches[2]
-                Email = $matches[3]
-                Date = $matches[4]
+                Author = $authorName.Trim()
+                Email = $authorEmail
+                Date = $commitDate
                 Message = $commitMessage
                 FullMessage = $fullCommitMsg
                 HasAITrailer = $hasAITrailer
@@ -404,8 +445,9 @@ try {
             }
             $files = @()
             
-        } elseif ($line -match '^(\d+|-)\s+(\d+|-)\s+(.+)$') {
-            # File change line
+        } elseif (($line -match '^(\d+|-)\s+(\d+|-)\s+(.+)$' -or $line -match '^(\d+|-)\t(\d+|-)\t(.+)$') -and $currentCommit) {
+            # File change line - only process if we have a valid current commit
+            # Note: git numstat uses tabs, but some terminals may convert to spaces
             $added = if ($matches[1] -eq '-') { 0 } else { [int]$matches[1] }
             $deleted = if ($matches[2] -eq '-') { 0 } else { [int]$matches[2] }
             $filePath = $matches[3]
@@ -550,12 +592,16 @@ try {
             try {
                 # CRITICAL IMPROVEMENT: Get only the DIFF (changed lines), not entire file
                 # Skip binary files and very large changes that can hang
-                $statInfo = git diff-tree --numstat -r $commit.Hash -- $file.Path 2>$null
-                if ($statInfo -match '^-\s+-') {
+                $statInfoRaw = git diff-tree --numstat -r $commit.Hash -- $file.Path 2>$null
+                # git diff-tree returns array: [0]=commit hash, [1]=numstat line - join for consistent matching
+                $statInfo = if ($statInfoRaw -is [array]) { $statInfoRaw -join "`n" } else { $statInfoRaw }
+                
+                if ($statInfo -match '^-\t-\t' -or $statInfo -match '\n-\t-\t') {
                     # Binary file - skip
                     continue
                 }
-                if ($statInfo -match '^(\d+)\s+(\d+)') {
+                # Match numstat format: <added>\t<deleted>\t<filepath>
+                if ($statInfo -match '(\d+)\t(\d+)\t') {
                     $linesAdded = [int]$matches[1]
                     $linesRemoved = [int]$matches[2]
                     # Skip files with more than 5000 lines changed (likely auto-generated)
@@ -810,6 +856,11 @@ try {
     $userStats = @{}
     
     foreach ($commit in $commits) {
+        # Skip commits with null/empty authors
+        if ([string]::IsNullOrWhiteSpace($commit.Author) -or $commit.Author -eq 'null' -or $commit.Author -eq 'Unknown') {
+            continue
+        }
+        
         $userKey = "$($commit.Author)___$($commit.Email)"
         
         if (-not $userStats.ContainsKey($userKey)) {

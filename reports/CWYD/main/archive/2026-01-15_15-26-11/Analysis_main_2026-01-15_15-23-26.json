@@ -1,0 +1,87 @@
+{
+  "Commits": {
+    "Hash": "e2b7df00bffa68801ec37cdc80e43aa0b702ad00",
+    "Author": "Prekshith-Microsoft",
+    "Date": "Tue Dec 2 15:46:36 2025 +0530",
+    "Message": "chore: Add @dgp10801 as a CODEOWNER (#1988)",
+    "LinesAdded": 1,
+    "LinesDeleted": 1,
+    "IsAI": false,
+    "ConfidenceScore": 0,
+    "ConfidenceTier": "Human Written",
+    "TierNumber": 0
+  },
+  "BranchStatistics": {
+    "Branch": "main",
+    "TotalCommits": 1,
+    "AICommits": 0,
+    "HumanCommits": 1,
+    "TotalLinesAdded": 1.0,
+    "TotalLinesDeleted": 1.0,
+    "AILinesAdded": null,
+    "AILinesDeleted": null,
+    "Tier1Commits": 0,
+    "Tier2Commits": 0,
+    "Tier3Commits": 0,
+    "Tier4Commits": 0,
+    "Tier5Commits": 0,
+    "UniqueContributors": 1,
+    "AIPercentage": 0.0,
+    "HumanLinesAdded": 1.0
+  },
+  "GeneratedAt": "2026-01-15 15:23:26",
+  "FileTypeBreakdown": [
+    {
+      "Extension": "github/codeowners",
+      "TotalLines": 1,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 1
+    }
+  ],
+  "TierDistribution": {
+    "Tier5_Low": 0,
+    "Tier2_VeryHigh": 0,
+    "Tier1_Definitive": 0,
+    "Human": 1,
+    "Tier3_High": 0,
+    "Tier4_Moderate": 0
+  },
+  "Branch": "main",
+  "AnalysisPeriod": {
+    "StartDate": "2025-12-01",
+    "FilterApplied": true,
+    "EndDate": "2025-12-31"
+  },
+  "ApplicationName": "CWYD",
+  "Users": [
+    {
+      "UserName": "Prekshith-Microsoft",
+      "UserEmail": "v-pdj@microsoft.com",
+      "TotalCommits": 1,
+      "AICommits": 0,
+      "HumanCommits": 1,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 1,
+      "HumanLinesDeleted": 1,
+      "TotalLinesAdded": 1,
+      "TotalLinesDeleted": 1,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    }
+  ],
+  "Metadata": {
+    "GeneratedBy": "Copilot Usage Report Tool v2.0",
+    "PowerShellVersion": "7.5.4",
+    "GeneratedAt": "2026-01-15 15:23:26",
+    "ScriptVersion": "2.0.0",
+    "AnalysisMethod": "5-Tier Weighted Pattern Detection"
+  }
+}
