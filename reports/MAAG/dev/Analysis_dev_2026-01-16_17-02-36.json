@@ -1,0 +1,141 @@
+{
+  "FileTypeBreakdown": [
+    {
+      "Extension": "txt",
+      "TotalLines": 2,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "github/codeowners",
+      "TotalLines": 2,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 2
+    }
+  ],
+  "Branch": "dev",
+  "BranchStatistics": {
+    "Branch": "dev",
+    "TotalCommits": 3,
+    "AICommits": 0,
+    "HumanCommits": 3,
+    "TotalLinesAdded": 2.0,
+    "TotalLinesDeleted": 2.0,
+    "AILinesAdded": null,
+    "AILinesDeleted": null,
+    "Tier1Commits": 0,
+    "Tier2Commits": 0,
+    "Tier3Commits": 0,
+    "Tier4Commits": 0,
+    "Tier5Commits": 0,
+    "UniqueContributors": 2,
+    "AIPercentage": 0.0,
+    "HumanLinesAdded": 2.0
+  },
+  "GeneratedAt": "2026-01-16 17:02:36",
+  "Users": [
+    {
+      "UserName": "copilot-swe-agent[bot]",
+      "UserEmail": "198982749+Copilot@users.noreply.github.com",
+      "TotalCommits": 2,
+      "AICommits": 0,
+      "HumanCommits": 2,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 1,
+      "HumanLinesDeleted": 1,
+      "TotalLinesAdded": 1,
+      "TotalLinesDeleted": 1,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Saswato-Microsoft",
+      "UserEmail": "v-saswatoc@microsoft.com",
+      "TotalCommits": 1,
+      "AICommits": 0,
+      "HumanCommits": 1,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 1,
+      "HumanLinesDeleted": 1,
+      "TotalLinesAdded": 1,
+      "TotalLinesDeleted": 1,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    }
+  ],
+  "ApplicationName": "MAAG",
+  "Commits": [
+    {
+      "Hash": "24a6902eb06cb5aff5149b6d2605f3c04af341ba",
+      "Author": "Saswato-Microsoft",
+      "Date": "Thu Dec 4 14:04:40 2025 +0530",
+      "Message": "Update azure-core version to 1.30.0 in requirements.txt",
+      "LinesAdded": 1,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "06d6d48fdac2e3b3499cddb016e79eaacd3f955c",
+      "Author": "copilot-swe-agent[bot]",
+      "Date": "Tue Dec 2 07:31:41 2025 +0000",
+      "Message": "Add Daniel Poku (dgp10801) to CODEOWNERS",
+      "LinesAdded": 1,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "38942897c1e4bc80cedf3dcc9bec0313df4d6ff3",
+      "Author": "copilot-swe-agent[bot]",
+      "Date": "Tue Dec 2 07:29:37 2025 +0000",
+      "Message": "Initial plan",
+      "LinesAdded": 0,
+      "LinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    }
+  ],
+  "AnalysisPeriod": {
+    "StartDate": "2025-12-01",
+    "FilterApplied": true,
+    "EndDate": "2025-12-31"
+  },
+  "Metadata": {
+    "GeneratedAt": "2026-01-16 17:02:36",
+    "GeneratedBy": "Copilot Usage Report Tool v2.0",
+    "PowerShellVersion": "7.4.13",
+    "AnalysisMethod": "5-Tier Weighted Pattern Detection",
+    "ScriptVersion": "2.0.0"
+  },
+  "TierDistribution": {
+    "Tier2_VeryHigh": 0,
+    "Tier3_High": 0,
+    "Human": 3,
+    "Tier1_Definitive": 0,
+    "Tier5_Low": 0,
+    "Tier4_Moderate": 0
+  }
+}
