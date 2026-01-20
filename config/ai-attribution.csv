@@ -1,0 +1,19 @@
+# Manual AI Attribution Configuration
+# Use this file to manually specify known AI-generated content that cannot be detected automatically
+# (e.g., Copilot-generated code without explicit markers, AI-assisted PRs without git trailers)
+#
+# Format: ApplicationName,PRNumber,Branch,AIPercentage,StartDate,EndDate,Notes
+# - ApplicationName: Must match the name in config.csv
+# - PRNumber: Pull request number (or leave empty for branch-wide)
+# - Branch: Branch name containing the AI-generated code
+# - AIPercentage: Override AI percentage (0-100)
+# - StartDate: (Optional) Start date for attribution (yyyy-MM-dd)
+# - EndDate: (Optional) End date for attribution (yyyy-MM-dd)
+# - Notes: Description of why this is marked as AI-generated
+#
+# Example entries:
+# MACAE v4,753,macae-v4-unittestcases-kd,90,,,Unit tests generated using Copilot Chat
+# MyApp,,feature-ai-refactor,85,2025-01-01,2025-01-15,AI-assisted refactoring sprint
+#
+ApplicationName,PRNumber,Branch,AIPercentage,StartDate,EndDate,Notes
+MACAE v4,753,macae-v4-unittestcases-kd,90,,,Unit tests generated using Copilot Chat - confirmed by team
