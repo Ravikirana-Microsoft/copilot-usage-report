@@ -5,6 +5,9 @@
 .DESCRIPTION
     Analyzes Git commits to identify which lines of code were written by AI assistance (like GitHub Copilot)
     versus human-written code. Uses sophisticated 5-tier pattern detection and confidence scoring.
+    
+    Supports manual AI attribution overrides via config/ai-attribution.csv for cases where AI-generated
+    code cannot be detected automatically (e.g., Copilot Chat without git trailers).
 
 .PARAMETER RepoPath
     Path to the Git repository to analyze
@@ -24,6 +27,12 @@
 .PARAMETER OutputPath
     Path where reports will be saved
 
+.PARAMETER IncludeTestFiles
+    When specified, includes test files in AI pattern analysis (by default test files are excluded to reduce false positives)
+
+.PARAMETER AIAttributionPath
+    Path to AI attribution CSV file for manual overrides. Default: config/ai-attribution.csv
+
 .EXAMPLE
     .\Analyze-CodeAuthorship.ps1 -RepoPath "C:\repos\myapp" -ApplicationName "MyApp" -Branch "main"
     
@@ -33,6 +42,14 @@
 .EXAMPLE
     .\Analyze-CodeAuthorship.ps1 -RepoPath "C:\repos\myapp" -ApplicationName "MyApp" -Branch "main" -PreviousDataPath "reports\archive\Analysis.json"
     # Incremental analysis: merges with previous data
+
+.EXAMPLE
+    .\Analyze-CodeAuthorship.ps1 -RepoPath "C:\repos\myapp" -ApplicationName "MyApp" -Branch "test-branch" -IncludeTestFiles
+    # Analyze including test files (for branches with AI-generated tests)
+
+.EXAMPLE
+    .\Analyze-CodeAuthorship.ps1 -RepoPath "C:\repos\myapp" -ApplicationName "MyApp" -Branch "test-branch" -IncludeTestFiles
+    # Analyze including test files for AI pattern detection
 #>
 
 [CmdletBinding()]
@@ -56,7 +73,13 @@ param(
     [string]$OutputPath = (Join-Path $PSScriptRoot "..\reports"),
     
     [Parameter()]
-    [string]$PreviousDataPath
+    [string]$PreviousDataPath,
+    
+    [Parameter()]
+    [switch]$IncludeTestFiles = $false,
+    
+    [Parameter()]
+    [string]$AIAttributionPath = (Join-Path $PSScriptRoot "..\config\ai-attribution.csv")
 )
 
 # Change to repository directory
@@ -128,6 +151,38 @@ try {
             Write-Warning "Failed to load previous data: $_"
             $previousCommits = @()
         }
+    }
+
+    # =====================================================
+    # AI ATTRIBUTION: Load manual AI attribution config
+    # =====================================================
+    $aiAttributionOverrides = @{}
+    if ($AIAttributionPath -and (Test-Path $AIAttributionPath)) {
+        Write-Host "Loading AI attribution configuration..." -ForegroundColor Cyan
+        try {
+            $attributionData = Import-Csv $AIAttributionPath | Where-Object { $_.ApplicationName -eq $ApplicationName }
+            foreach ($attr in $attributionData) {
+                $key = if ($attr.Branch) { $attr.Branch } else { "default" }
+                $aiAttributionOverrides[$key] = @{
+                    PRNumber = $attr.PRNumber
+                    AIPercentage = [int]$attr.AIPercentage
+                    StartDate = $attr.StartDate
+                    EndDate = $attr.EndDate
+                    Notes = $attr.Notes
+                }
+                Write-Host "  Found AI attribution for branch '$key': $($attr.AIPercentage)% AI" -ForegroundColor Yellow
+            }
+        } catch {
+            Write-Warning "Failed to load AI attribution config: $_"
+        }
+    }
+    
+    # Check if current branch has an AI attribution override
+    $branchAttribution = $null
+    if ($aiAttributionOverrides.ContainsKey($Branch)) {
+        $branchAttribution = $aiAttributionOverrides[$Branch]
+        Write-Host "  AI Attribution Override Active: $($branchAttribution.AIPercentage)% for branch '$Branch'" -ForegroundColor Magenta
+        Write-Host "  Reason: $($branchAttribution.Notes)" -ForegroundColor Gray
     }
 
     # Build git log command with date filtering
@@ -230,7 +285,17 @@ try {
         @{ Pattern = 'createAsyncThunk\s*\('; Weight = 18 },
         @{ Pattern = 'extraReducers:\s*\(builder\)'; Weight = 20 },
         @{ Pattern = '\.addCase\(\w+\.(pending|fulfilled|rejected)'; Weight = 15 },
-        @{ Pattern = 'createSlice\s*\(\s*\{'; Weight = 15 }
+        @{ Pattern = 'createSlice\s*\(\s*\{'; Weight = 15 },
+        
+        # Python Unit Test AI patterns (Copilot-generated test code)
+        @{ Pattern = 'mock\.patch\s*\([''"][\w.]+[''"]'; Weight = 18 },
+        @{ Pattern = 'sys\.modules\s*\[[''"][\w.]+[''"]'; Weight = 20 },
+        @{ Pattern = '@patch\s*\([''"][\w.]+[''"]'; Weight = 15 },
+        @{ Pattern = 'MagicMock\s*\(\s*\)'; Weight = 15 },
+        @{ Pattern = 'mock_\w+\s*=\s*MagicMock'; Weight = 18 },
+        @{ Pattern = 'assert_called_once_with\s*\('; Weight = 12 },
+        @{ Pattern = 'return_value\s*=\s*\{'; Weight = 15 },
+        @{ Pattern = 'side_effect\s*=\s*\['; Weight = 15 }
     )
 
     # Tier 3 (80-89%): High confidence patterns - Weight: 8-14
@@ -322,26 +387,16 @@ try {
     $tier4Threshold = 25   # Weighted score needed for Tier 4
     $tier5Threshold = 15   # Weighted score needed for Tier 5
 
-    # ADVANCED: Files to exclude from AI pattern analysis (high false-positive)
+    # ADVANCED: Files to exclude from AI pattern analysis
+    # NOTE: Empty by default - all files are analyzed. Add patterns here if needed:
+    # Example patterns:
+    #   '\.test\.'       - Test files
+    #   '\.spec\.'       - Spec files
+    #   'tests?/'         - Test directories
+    #   '__tests__/'      - Jest test directories
+    #   'package-lock\.json' - Lock files
     $excludeFilePatterns = @(
-        '\.test\.',           # Test files: .test.ts, .test.js, .test.py
-        '\.spec\.',           # Spec files: .spec.ts, .spec.js
-        '_test\.py$',         # Python test files
-        '_test\.go$',         # Go test files
-        'test_.*\.py$',       # Python test files
-        'tests?/',            # Test directories
-        '__tests__/',         # Jest test directories
-        '\.stories\.',       # Storybook files
-        '\.mock\.',          # Mock files
-        'mock.*\.',           # Mock files
-        '\.fixture\.',       # Fixture files
-        'conftest\.py$',      # Pytest config
-        'jest\.config',       # Jest config
-        'setup\.py$',         # Python setup
-        'package-lock\.json', # Lock files
-        'yarn\.lock',         # Lock files
-        '\.d\.ts$',           # TypeScript declaration files
-        '\.min\.'             # Minified files
+        # Add exclusion patterns here if needed
     )
 
     # ADVANCED: Commit message patterns that indicate non-AI commits
@@ -578,13 +633,15 @@ try {
                 continue
             }
             
-            # ADVANCED: Skip test files (high false-positive rate)
+            # ADVANCED: Skip test files (high false-positive rate) - unless IncludeTestFiles is set
             $isTestFile = $false
-            foreach ($excludePattern in $excludeFilePatterns) {
-                if ($file.Path -match $excludePattern) {
-                    $isTestFile = $true
-                    $testFilesSkipped++
-                    break
+            if (-not $IncludeTestFiles) {
+                foreach ($excludePattern in $excludeFilePatterns) {
+                    if ($file.Path -match $excludePattern) {
+                        $isTestFile = $true
+                        $testFilesSkipped++
+                        break
+                    }
                 }
             }
             if ($isTestFile) { continue }
@@ -681,9 +738,9 @@ try {
         
         $normalizedScore = [Math]::Floor($weightedScore * $sizeFactor)
         
-        # ADVANCED: If all/mostly test files, reduce confidence further
-        if ($codeFilesAnalyzed -eq 0 -and $testFilesSkipped -gt 0) {
-            # Only test files in this commit - mark as human
+        # ADVANCED: If all/mostly test files, reduce confidence further (only when test files are excluded)
+        if (-not $IncludeTestFiles -and $codeFilesAnalyzed -eq 0 -and $testFilesSkipped -gt 0) {
+            # Only test files in this commit - mark as human (unless IncludeTestFiles is set)
             $commit.IsAI = $false
             $commit.ConfidenceScore = 0
             $commit.ConfidenceTier = "Human Written (Test Files Only)"
@@ -951,6 +1008,30 @@ try {
         $branchStats.TotalLinesAdded - $branchStats.AILinesAdded
     )
     
+    # =====================================================
+    # AI ATTRIBUTION OVERRIDE: Apply manual attribution if configured
+    # =====================================================
+    $attributionApplied = $false
+    if ($branchAttribution -and $branchStats.TotalLinesAdded -gt 0) {
+        $overrideAIPercentage = $branchAttribution.AIPercentage
+        $originalAIPercentage = $branchStats.AIPercentage
+        $originalAILines = $branchStats.AILinesAdded
+        
+        # Calculate new AI lines based on override percentage
+        $newAILines = [Math]::Round($branchStats.TotalLinesAdded * ($overrideAIPercentage / 100))
+        
+        # Update branch stats
+        $branchStats.AILinesAdded = $newAILines
+        $branchStats.AIPercentage = $overrideAIPercentage
+        $branchStats.HumanLinesAdded = $branchStats.TotalLinesAdded - $newAILines
+        
+        $attributionApplied = $true
+        Write-Host "`n[AI Attribution Override Applied]" -ForegroundColor Magenta
+        Write-Host "  Original detection: $originalAIPercentage% AI ($originalAILines lines)" -ForegroundColor Gray
+        Write-Host "  Override applied: $overrideAIPercentage% AI ($newAILines lines)" -ForegroundColor Yellow
+        Write-Host "  Reason: $($branchAttribution.Notes)" -ForegroundColor Cyan
+    }
+
     # IMPROVEMENT: Merge previous file type stats with new ones
     if ($previousFileTypeStats.Count -gt 0) {
         Write-Host "Merging file type statistics with previous data..." -ForegroundColor Cyan
@@ -1017,6 +1098,7 @@ try {
             ScriptVersion = "2.0.0"
             GeneratedAt = (Get-Date -Format "yyyy-MM-dd HH:mm:ss")
             PowerShellVersion = $PSVersionTable.PSVersion.ToString()
+            IncludeTestFiles = $IncludeTestFiles.IsPresent
         }
         ApplicationName = $ApplicationName
         Branch = $Branch
@@ -1024,6 +1106,12 @@ try {
             StartDate = if ($StartDate) { $StartDate } else { "All Time" }
             EndDate = if ($EndDate) { $EndDate } else { "Present" }
             FilterApplied = ($StartDate -or $EndDate)
+        }
+        # AI Attribution Override info
+        AIAttributionOverride = @{
+            Applied = $attributionApplied
+            OverridePercentage = if ($branchAttribution) { $branchAttribution.AIPercentage } else { $null }
+            Notes = if ($branchAttribution) { $branchAttribution.Notes } else { $null }
         }
         GeneratedAt = (Get-Date -Format "yyyy-MM-dd HH:mm:ss")
         BranchStatistics = $branchStats
@@ -1056,6 +1144,14 @@ try {
 
 **Analysis Period:** $(if ($StartDate) { $StartDate } else { "All time" }) to $(if ($EndDate) { $EndDate } else { "Present" })  
 **Generated:** $(Get-Date -Format "yyyy-MM-dd HH:mm:ss")
+$(if ($attributionApplied) {
+@"
+
+> ⚠️ **AI Attribution Override Applied**  
+> This branch has a manual AI attribution override: **$($branchAttribution.AIPercentage)% AI**  
+> Reason: $($branchAttribution.Notes)
+"@
+})
 
 ---
 

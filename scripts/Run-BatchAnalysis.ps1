@@ -91,7 +91,16 @@ param(
     [int]$MaxParallel = 4,
     
     [Parameter()]
-    [string]$CompareWith
+    [string]$CompareWith,
+    
+    [Parameter()]
+    [switch]$IncludeTestFiles,
+    
+    [Parameter()]
+    [string]$ApplicationName,
+    
+    [Parameter()]
+    [string]$BranchFilter
 )
 
 $ErrorActionPreference = "Stop"
@@ -283,6 +292,12 @@ $config = $allConfig | Where-Object {
     $_.Enabled -eq 'true' -or $_.Enabled -eq 'True' -or $_.Enabled -eq $true 
 }
 
+# Apply ApplicationName filter if specified
+if ($ApplicationName) {
+    $config = $config | Where-Object { $_.ApplicationName -eq $ApplicationName }
+    Write-Host "Filtering to application: $ApplicationName" -ForegroundColor Cyan
+}
+
 $disabledCount = ($allConfig | Where-Object { $_.Enabled -ne 'true' -and $_.Enabled -ne 'True' -and $_.Enabled -ne $true }).Count
 
 if ($config.Count -eq 0) {
@@ -405,6 +420,10 @@ foreach ($app in $config) {
     }
     
     foreach ($branch in $branches) {
+        # Apply BranchFilter if specified
+        if ($BranchFilter -and $branch -ne $BranchFilter) {
+            continue
+        }
         $analysisTasks += @{
             AppName = $appName
             Branch = $branch
@@ -417,7 +436,7 @@ foreach ($app in $config) {
 
 # Function to process a single analysis task
 $processAnalysisTask = {
-    param($task, $reportsPath, $analyzeScript, $StartDate, $EndDate, $incrementalMode, $metadataPath, $AnalysisName, $FullAnalysis)
+    param($task, $reportsPath, $analyzeScript, $StartDate, $EndDate, $incrementalMode, $metadataPath, $AnalysisName, $FullAnalysis, $IncludeTestFiles)
     
     $appName = $task.AppName
     $branch = $task.Branch
@@ -462,6 +481,7 @@ $processAnalysisTask = {
         
         if ($StartDate) { $params['StartDate'] = $StartDate }
         if ($EndDate) { $params['EndDate'] = $EndDate }
+        if ($IncludeTestFiles) { $params['IncludeTestFiles'] = $true }
         
         # INCREMENTAL ANALYSIS: Check for previous analysis data
         if ($incrementalMode -and -not $FullAnalysis) {
@@ -517,6 +537,7 @@ if ($Parallel -and $PSVersionTable.PSVersion.Major -ge 7) {
         $metadataPath = $using:metadataPath
         $AnalysisName = $using:AnalysisName
         $FullAnalysis = $using:FullAnalysis
+        $IncludeTestFiles = $using:IncludeTestFiles
         
         # Inline processing logic (cannot use $using: with scriptblock)
         $appName = $task.AppName
@@ -562,6 +583,7 @@ if ($Parallel -and $PSVersionTable.PSVersion.Major -ge 7) {
             
             if ($StartDate) { $params['StartDate'] = $StartDate }
             if ($EndDate) { $params['EndDate'] = $EndDate }
+            if ($IncludeTestFiles) { $params['IncludeTestFiles'] = $true }
             
             # INCREMENTAL ANALYSIS: Check for previous analysis data
             if ($incrementalMode -and -not $FullAnalysis) {
@@ -694,6 +716,7 @@ if ($Parallel -and $PSVersionTable.PSVersion.Major -ge 7) {
             
             if ($StartDate) { $params['StartDate'] = $StartDate }
             if ($EndDate) { $params['EndDate'] = $EndDate }
+            if ($IncludeTestFiles) { $params['IncludeTestFiles'] = $true }
             
             # INCREMENTAL ANALYSIS: Check for previous analysis data
             $prevCommitsCount = 0
