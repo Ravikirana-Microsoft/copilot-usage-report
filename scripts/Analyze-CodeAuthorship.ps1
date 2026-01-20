@@ -346,6 +346,7 @@ try {
         # DI patterns
         @{ Pattern = 'IOptions<\w+>'; Weight = 4 },
         @{ Pattern = 'AddScoped<\w+,\s*\w+>'; Weight = 4 },
+        @{ Pattern = 'AddTransient<\w+,\s*\w+>'; Weight = 4 },
         @{ Pattern = 'AddSingleton<\w+,\s*\w+>'; Weight = 4 },
         
         # Modern JS/TS
@@ -375,9 +376,12 @@ try {
         @{ Pattern = 'await\s+\w+'; Weight = 2 },
         @{ Pattern = '\.map\(\w+\s*=>'; Weight = 2 },
         @{ Pattern = '\.filter\(\w+\s*=>'; Weight = 2 },
+        @{ Pattern = '\.reduce\(\s*\('; Weight = 2 },
         @{ Pattern = 'const\s+\w+\s*=\s*async'; Weight = 3 },
         @{ Pattern = '@property'; Weight = 2 },
-        @{ Pattern = 'f"[^"]*\{\w+\}[^"]*"'; Weight = 2 }
+        @{ Pattern = 'f"[^"]*\{\w+\}[^"]*"'; Weight = 2 },
+        @{ Pattern = 'List\[\w+\]'; Weight = 2 },
+        @{ Pattern = 'Dict\[\w+,\s*\w+\]'; Weight = 2 }
     )
 
     # Scoring thresholds (weighted)
