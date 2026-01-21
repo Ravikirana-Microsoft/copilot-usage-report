@@ -153,6 +153,10 @@ jobs:
           & .\scripts\Run-BatchAnalysis.ps1 @params
         shell: pwsh
         env:
+          # GITHUB_TOKEN is used by Analyze-GitHubPR.ps1 for API calls
+          # Use REPO_ACCESS_TOKEN secret (with SSO auth) for Microsoft org repos
+          # Falls back to GITHUB_TOKEN if REPO_ACCESS_TOKEN is not set
+          GITHUB_TOKEN: ${{ secrets.REPO_ACCESS_TOKEN || secrets.GITHUB_TOKEN }}
           GH_TOKEN: ${{ secrets.REPO_ACCESS_TOKEN || secrets.GITHUB_TOKEN }}
 
       - name: Commit and push reports

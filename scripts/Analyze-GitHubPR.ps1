@@ -43,6 +43,7 @@ param(
     [int]$PRNumber,
     
     [Parameter()]
+    # Use environment variable GITHUB_TOKEN or pass token as parameter
     [string]$GitHubToken = $env:GITHUB_TOKEN,
     
     [Parameter()]
