@@ -1009,6 +1009,12 @@
                 </svg>
                 PDF
             </button>
+            <button class="refresh-btn" onclick="showTriggerAnalysisModal()" title="Trigger New Analysis" style="background: linear-gradient(135deg, #22c55e, #16a34a);">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon points="5 3 19 12 5 21 5 3"/>
+                </svg>
+                Run Analysis
+            </button>
             <!-- <button class="reset-btn" onclick="showResetModal()" title="Reset All Reports">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M3 6h18M19 6v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6m3 0V4a2 2 0 012-2h4a2 2 0 012 2v2"/>
@@ -1044,6 +1050,63 @@
             <div class="modal-footer">
                 <button class="modal-btn modal-btn-cancel" onclick="hideResetModal()">Cancel</button>
                 <button class="modal-btn modal-btn-danger" onclick="executeReset()">Reset Reports</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Trigger Analysis Modal -->
+    <div id="triggerAnalysisModal" class="modal-overlay">
+        <div class="modal-content" style="max-width: 500px;">
+            <div class="modal-header" style="background: linear-gradient(135deg, #22c55e, #16a34a);">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon points="5 3 19 12 5 21 5 3"/>
+                </svg>
+                <h3>Trigger New Analysis</h3>
+            </div>
+            <div class="modal-body">
+                <p style="margin-bottom: 16px; color: var(--text-secondary);">
+                    Trigger a GitHub Actions workflow to run a new batch analysis.
+                </p>
+                
+                <div class="form-group" style="margin-bottom: 16px;">
+                    <label style="display: block; margin-bottom: 6px; font-weight: 500;">Analysis Name</label>
+                    <input type="text" id="triggerAnalysisName" placeholder="e.g., January-2026" 
+                           style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid var(--border-color); background: var(--bg-hover); color: var(--text-primary);">
+                </div>
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 16px;">
+                    <div class="form-group">
+                        <label style="display: block; margin-bottom: 6px; font-weight: 500;">Start Date (Optional)</label>
+                        <input type="date" id="triggerStartDate" 
+                               style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid var(--border-color); background: var(--bg-hover); color: var(--text-primary);">
+                    </div>
+                    <div class="form-group">
+                        <label style="display: block; margin-bottom: 6px; font-weight: 500;">End Date (Optional)</label>
+                        <input type="date" id="triggerEndDate" 
+                               style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid var(--border-color); background: var(--bg-hover); color: var(--text-primary);">
+                    </div>
+                </div>
+
+                <div class="form-group" style="margin-bottom: 16px;">
+                    <label style="display: block; margin-bottom: 6px; font-weight: 500;">Parallel Jobs</label>
+                    <input type="number" id="triggerParallelJobs" value="5" min="1" max="20"
+                           style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid var(--border-color); background: var(--bg-hover); color: var(--text-primary);">
+                </div>
+
+                <div class="form-group" style="margin-bottom: 16px;">
+                    <label style="display: block; margin-bottom: 6px; font-weight: 500;">GitHub Token <span style="color: var(--text-secondary); font-weight: normal;">(needs workflow scope)</span></label>
+                    <input type="password" id="triggerGithubToken" placeholder="ghp_..." 
+                           style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid var(--border-color); background: var(--bg-hover); color: var(--text-primary);">
+                    <small style="color: var(--text-secondary); display: block; margin-top: 4px;">Token is used client-side only and not stored on any server.</small>
+                </div>
+
+                <div id="triggerStatus" style="display: none; padding: 12px; border-radius: 6px; margin-bottom: 12px;"></div>
+            </div>
+            <div class="modal-footer">
+                <button class="modal-btn modal-btn-cancel" onclick="hideTriggerAnalysisModal()">Cancel</button>
+                <button class="modal-btn" id="triggerAnalysisBtn" onclick="triggerAnalysis()" style="background: linear-gradient(135deg, #22c55e, #16a34a); color: white;">
+                    🚀 Trigger Workflow
+                </button>
             </div>
         </div>
     </div>
@@ -10899,7 +10962,145 @@
 
         function escapeHtml(t) { var d=document.createElement('div'); d.textContent=t; return d.innerHTML; }
 
-        document.addEventListener('keydown', function(e) { if(e.key==='Escape') hideResetModal(); });
+        document.addEventListener('keydown', function(e) { if(e.key==='Escape') { hideResetModal(); hideTriggerAnalysisModal(); } });
+
+        // ============================================
+        // TRIGGER ANALYSIS FUNCTIONS
+        // ============================================
+        function showTriggerAnalysisModal() {
+            document.getElementById('triggerAnalysisModal').classList.add('active');
+            // Try to load token from localStorage
+            const savedToken = localStorage.getItem('github_workflow_token');
+            if (savedToken) {
+                document.getElementById('triggerGithubToken').value = savedToken;
+            }
+            // Set default analysis name with current month
+            const now = new Date();
+            const monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+            document.getElementById('triggerAnalysisName').value = monthNames[now.getMonth()] + '-' + now.getFullYear();
+        }
+
+        function hideTriggerAnalysisModal() {
+            document.getElementById('triggerAnalysisModal').classList.remove('active');
+            document.getElementById('triggerStatus').style.display = 'none';
+        }
+
+        async function triggerAnalysis() {
+            const analysisName = document.getElementById('triggerAnalysisName').value.trim();
+            const startDate = document.getElementById('triggerStartDate').value;
+            const endDate = document.getElementById('triggerEndDate').value;
+            const parallelJobs = document.getElementById('triggerParallelJobs').value;
+            const token = document.getElementById('triggerGithubToken').value.trim();
+            const statusDiv = document.getElementById('triggerStatus');
+            const triggerBtn = document.getElementById('triggerAnalysisBtn');
+
+            // Validation
+            if (!analysisName) {
+                showTriggerStatus('error', '❌ Please enter an analysis name.');
+                return;
+            }
+            if (!token) {
+                showTriggerStatus('error', '❌ Please enter a GitHub token with workflow scope.');
+                return;
+            }
+
+            // Save token to localStorage for convenience
+            localStorage.setItem('github_workflow_token', token);
+
+            // Disable button and show loading
+            triggerBtn.disabled = true;
+            triggerBtn.innerHTML = '⏳ Triggering...';
+            showTriggerStatus('info', '🔄 Triggering GitHub Actions workflow...');
+
+            // Get repo info from current URL (assumes GitHub Pages)
+            const repoInfo = getRepoFromUrl();
+            if (!repoInfo) {
+                showTriggerStatus('error', '❌ Could not determine repository. Make sure this is hosted on GitHub Pages.');
+                triggerBtn.disabled = false;
+                triggerBtn.innerHTML = '🚀 Trigger Workflow';
+                return;
+            }
+
+            try {
+                // Build workflow inputs
+                const inputs = {
+                    analysis_name: analysisName,
+                    parallel: 'true',
+                    max_parallel: parallelJobs.toString()
+                };
+                if (startDate) inputs.start_date = startDate;
+                if (endDate) inputs.end_date = endDate;
+
+                // Call GitHub API to trigger workflow
+                const response = await fetch(`https://api.github.com/repos/${repoInfo.owner}/${repoInfo.repo}/actions/workflows/run-analysis.yml/dispatches`, {
+                    method: 'POST',
+                    headers: {
+                        'Authorization': `Bearer ${token}`,
+                        'Accept': 'application/vnd.github.v3+json',
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        ref: 'main',
+                        inputs: inputs
+                    })
+                });
+
+                if (response.status === 204) {
+                    showTriggerStatus('success', `✅ Workflow triggered successfully!<br><a href="https://github.com/${repoInfo.owner}/${repoInfo.repo}/actions" target="_blank" style="color: #22c55e;">View workflow runs →</a>`);
+                } else if (response.status === 404) {
+                    showTriggerStatus('error', '❌ Workflow not found. Make sure "run-analysis.yml" exists in .github/workflows/');
+                } else if (response.status === 401) {
+                    showTriggerStatus('error', '❌ Unauthorized. Check your token and ensure it has the "workflow" scope.');
+                } else if (response.status === 403) {
+                    const errorData = await response.json();
+                    showTriggerStatus('error', `❌ Forbidden: ${errorData.message || 'Token may need SSO authorization.'}`);
+                } else {
+                    const errorData = await response.json();
+                    showTriggerStatus('error', `❌ Error: ${errorData.message || response.statusText}`);
+                }
+            } catch (error) {
+                showTriggerStatus('error', `❌ Network error: ${error.message}`);
+            }
+
+            triggerBtn.disabled = false;
+            triggerBtn.innerHTML = '🚀 Trigger Workflow';
+        }
+
+        function showTriggerStatus(type, message) {
+            const statusDiv = document.getElementById('triggerStatus');
+            statusDiv.style.display = 'block';
+            statusDiv.innerHTML = message;
+            statusDiv.style.background = type === 'error' ? 'rgba(239, 68, 68, 0.2)' : 
+                                         type === 'success' ? 'rgba(34, 197, 94, 0.2)' : 
+                                         'rgba(59, 130, 246, 0.2)';
+            statusDiv.style.border = '1px solid ' + (type === 'error' ? '#ef4444' : 
+                                                     type === 'success' ? '#22c55e' : '#3b82f6');
+        }
+
+        function getRepoFromUrl() {
+            // Try to get from GitHub Pages URL pattern: username.github.io/repo
+            const hostname = window.location.hostname;
+            const pathname = window.location.pathname;
+            
+            // GitHub Pages patterns
+            if (hostname.endsWith('.github.io')) {
+                const owner = hostname.replace('.github.io', '');
+                const pathParts = pathname.split('/').filter(p => p);
+                const repo = pathParts[0] || owner + '.github.io';
+                return { owner, repo };
+            }
+            
+            // Check for explicit repo configuration (can be set manually)
+            if (window.GITHUB_REPO_CONFIG) {
+                return window.GITHUB_REPO_CONFIG;
+            }
+            
+            // Default fallback for this repository
+            return { owner: 'Ravikirana-Microsoft', repo: 'copilot-usage-report' };
+        }
+
+        // Allow manual repo configuration
+        // window.GITHUB_REPO_CONFIG = { owner: 'your-org', repo: 'your-repo' };
     </script>
 </body>
 </html>
