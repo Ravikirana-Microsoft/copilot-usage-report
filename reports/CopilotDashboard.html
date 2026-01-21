@@ -10981,8 +10981,8 @@
         }
 
         function hideTriggerAnalysisModal() {
-            document.getElementById('triggerAnalysisModal').classList.remove('active');
-            document.getElementById('triggerStatus').style.display = 'none';
+            // Reload the page to reset the modal state
+            window.location.reload();
         }
 
         async function triggerAnalysis() {
