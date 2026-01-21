@@ -1,6 +1,6 @@
 # Batch Analysis Summary - 5-Tier Model
 
-**Analysis Date:** 2026-01-21 14:54:56  
+**Analysis Date:** 2026-01-21 15:09:08  
 **Period:** 2026-01-01 to 2026-01-31
 
 ---
@@ -12,7 +12,7 @@
 | **Applications Processed** | 13 |
 | **Successful Analyses** | 13 |
 | **Failed Analyses** | 0 |
-| **Total Branches Analyzed** | 13 |
+| **Total Branches Analyzed** | 12 |
 
 ---
 
@@ -56,9 +56,8 @@
 | RTI | main | 9 | 0 |  | 0% | 0 | 0 | 0 | 0 | 0 | 5 |
 | Doc Gen | dev | 16 | 0 |  | 0% | 0 | 0 | 0 | 0 | 0 | 5 |
 | Code Modernization | dev | 12 | 0 |  | 0% | 0 | 0 | 0 | 0 | 0 | 3 |
-| BYOC | dev | 2 | 0 |  | 0% | 0 | 0 | 0 | 0 | 0 | 1 |
 | Container Migration | dev | 3 | 0 |  | 0% | 0 | 0 | 0 | 0 | 0 | 2 |
-| MAAG | dev | 0 | 0 |  | 0% | 0 | 0 | 0 | 0 | 0 | 0 |
+| BYOC | dev | 2 | 0 |  | 0% | 0 | 0 | 0 | 0 | 0 | 1 |
 
 ---
 
@@ -66,19 +65,19 @@
 
 | Application | Branch | Status | Timestamp |
 |-------------|--------|--------|-----------|
-| CWYD | dev | ✓ Success | 2026-01-21 14:54:56 |
-| Deploy your AI application | main | ✓ Success | 2026-01-21 14:54:56 |
-| MACAE v4 | main | ✓ Success | 2026-01-21 14:54:56 |
-| BYOCC | dev | ✓ Success | 2026-01-21 14:54:56 |
-| Fabric SQL | dev | ✓ Success | 2026-01-21 14:54:56 |
-| DKM | dev | ✓ Success | 2026-01-21 14:54:56 |
-| Content Processing | dev | ✓ Success | 2026-01-21 14:54:56 |
-| RTI | main | ✓ Success | 2026-01-21 14:54:56 |
-| Doc Gen | dev | ✓ Success | 2026-01-21 14:54:56 |
-| Code Modernization | dev | ✓ Success | 2026-01-21 14:54:56 |
-| BYOC | dev | ✓ Success | 2026-01-21 14:54:56 |
-| Container Migration | dev | ✓ Success | 2026-01-21 14:54:56 |
-| MAAG | dev | ✓ Success | 2026-01-21 14:54:56 |
+| CWYD | dev | ✓ Success | 2026-01-21 15:09:08 |
+| Deploy your AI application | main | ✓ Success | 2026-01-21 15:09:08 |
+| MACAE v4 | main | ✓ Success | 2026-01-21 15:09:08 |
+| BYOCC | dev | ✓ Success | 2026-01-21 15:09:08 |
+| Fabric SQL | dev | ✓ Success | 2026-01-21 15:09:08 |
+| DKM | dev | ✓ Success | 2026-01-21 15:09:08 |
+| Content Processing | dev | ✓ Success | 2026-01-21 15:09:08 |
+| RTI | main | ✓ Success | 2026-01-21 15:09:08 |
+| Doc Gen | dev | ✓ Success | 2026-01-21 15:09:08 |
+| Code Modernization | dev | ✓ Success | 2026-01-21 15:09:08 |
+| Container Migration | dev | ✓ Success | 2026-01-21 15:09:08 |
+| BYOC | dev | ✓ Success | 2026-01-21 15:09:08 |
+| MAAG | dev | ✓ Success | 2026-01-21 15:09:08 |
 
 ---
 
