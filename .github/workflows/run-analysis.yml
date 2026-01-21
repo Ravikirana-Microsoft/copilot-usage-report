@@ -75,6 +75,8 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          # Configure git to use the token for HTTPS authentication
+          git config --global url."https://x-access-token:${{ secrets.REPO_ACCESS_TOKEN || secrets.GITHUB_TOKEN }}@github.com/".insteadOf "https://github.com/"
         shell: pwsh
 
       - name: Display input parameters
