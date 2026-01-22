@@ -1158,7 +1158,51 @@
                     <small style="color: var(--text-secondary); display: block; margin-top: 4px;">Token is used client-side only and not stored on any server.</small>
                 </div>
 
+                <!-- Simple Status Message -->
                 <div id="triggerStatus" style="display: none; padding: 12px; border-radius: 6px; margin-bottom: 12px;"></div>
+                
+                <!-- Detailed Workflow Progress Tracker -->
+                <div id="workflowProgress" style="display: none; background: var(--bg-hover); border-radius: 8px; padding: 16px; margin-bottom: 12px; border: 1px solid var(--border-color);">
+                    <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px;">
+                        <div style="display: flex; align-items: center; gap: 10px;">
+                            <div id="workflowSpinner" style="width: 20px; height: 20px; border: 2px solid var(--border-color); border-top-color: #3b82f6; border-radius: 50%; animation: spin 1s linear infinite;"></div>
+                            <span id="workflowStatusText" style="font-weight: 500;">Waiting for workflow to start...</span>
+                        </div>
+                        <a id="workflowLink" href="#" target="_blank" style="color: #3b82f6; font-size: 13px; text-decoration: none;">View on GitHub →</a>
+                    </div>
+                    
+                    <!-- Progress Bar -->
+                    <div style="background: var(--bg-card); border-radius: 4px; height: 8px; overflow: hidden; margin-bottom: 12px;">
+                        <div id="workflowProgressBar" style="height: 100%; width: 0%; background: linear-gradient(90deg, #3b82f6, #22c55e); transition: width 0.5s ease;"></div>
+                    </div>
+                    
+                    <!-- Job Steps -->
+                    <div id="workflowJobs" style="font-size: 13px; max-height: 200px; overflow-y: auto;">
+                        <!-- Dynamically populated -->
+                    </div>
+                    
+                    <!-- Elapsed Time & Actions -->
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 12px; padding-top: 8px; border-top: 1px solid var(--border-color);">
+                        <div id="workflowElapsed" style="font-size: 12px; color: var(--text-secondary);">⏱️ Elapsed: 0:00</div>
+                        <button id="stopTrackingBtn" onclick="stopWorkflowTracking()" style="font-size: 12px; padding: 4px 10px; border-radius: 4px; border: 1px solid var(--border-color); background: transparent; color: var(--text-secondary); cursor: pointer;">Stop Tracking</button>
+                    </div>
+                </div>
+                
+                <style>
+                    @keyframes spin { to { transform: rotate(360deg); } }
+                    .workflow-job { display: flex; align-items: center; gap: 8px; padding: 8px; margin: 4px 0; background: var(--bg-card); border-radius: 6px; border-left: 3px solid var(--border-color); }
+                    .workflow-job.queued { border-left-color: #6b7280; }
+                    .workflow-job.in_progress { border-left-color: #f59e0b; background: rgba(245, 158, 11, 0.1); }
+                    .workflow-job.completed.success { border-left-color: #22c55e; }
+                    .workflow-job.completed.failure { border-left-color: #ef4444; background: rgba(239, 68, 68, 0.1); }
+                    .job-icon { font-size: 14px; }
+                    .job-name { flex: 1; font-weight: 500; }
+                    .job-duration { font-size: 11px; color: var(--text-secondary); }
+                    .workflow-step { display: flex; align-items: center; gap: 6px; padding: 4px 8px 4px 28px; font-size: 12px; color: var(--text-secondary); }
+                    .workflow-step.completed.success { color: #22c55e; }
+                    .workflow-step.in_progress { color: #f59e0b; font-weight: 500; }
+                    .workflow-step.completed.failure { color: #ef4444; }
+                </style>
             </div>
             <div class="modal-footer">
                 <button class="modal-btn modal-btn-cancel" onclick="hideTriggerAnalysisModal()">Cancel</button>
@@ -19671,22 +19715,32 @@
         // ============================================
         // TRIGGER ANALYSIS FUNCTIONS
         // ============================================
+        let workflowTrackingInterval = null;
+        let workflowStartTime = null;
+        let elapsedInterval = null;
+        let currentWorkflowToken = null;
+
         function showTriggerAnalysisModal() {
             document.getElementById('triggerAnalysisModal').classList.add('active');
-            // Try to load token from localStorage
+            document.getElementById('workflowProgress').style.display = 'none';
+            document.getElementById('triggerStatus').style.display = 'none';
             const savedToken = localStorage.getItem('github_workflow_token');
             if (savedToken) {
                 document.getElementById('triggerGithubToken').value = savedToken;
             }
-            // Set default analysis name with current month
             const now = new Date();
             const monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
             document.getElementById('triggerAnalysisName').value = monthNames[now.getMonth()] + '-' + now.getFullYear();
         }
 
         function hideTriggerAnalysisModal() {
-            // Reload the page to reset the modal state
-            window.location.reload();
+            stopWorkflowTracking();
+            document.getElementById('triggerAnalysisModal').classList.remove('active');
+        }
+
+        function stopWorkflowTracking() {
+            if (workflowTrackingInterval) { clearInterval(workflowTrackingInterval); workflowTrackingInterval = null; }
+            if (elapsedInterval) { clearInterval(elapsedInterval); elapsedInterval = null; }
         }
 
         async function triggerAnalysis() {
@@ -19700,36 +19754,26 @@
             const validateOnly = document.getElementById('triggerValidateOnly').value;
             const compareWith = document.getElementById('triggerCompareWith').value.trim();
             const token = document.getElementById('triggerGithubToken').value.trim();
-            const statusDiv = document.getElementById('triggerStatus');
             const triggerBtn = document.getElementById('triggerAnalysisBtn');
 
-            // Validation
-            if (!token) {
-                showTriggerStatus('error', '❌ Please enter a GitHub token with workflow scope.');
-                return;
-            }
-
-            // Save token to localStorage for convenience
+            if (!token) { showTriggerStatus('error', '❌ Please enter a GitHub token with workflow scope.'); return; }
             localStorage.setItem('github_workflow_token', token);
+            currentWorkflowToken = token;
 
-            // Disable button and show loading
             triggerBtn.disabled = true;
             triggerBtn.innerHTML = '⏳ Triggering...';
             showTriggerStatus('info', '🔄 Triggering GitHub Actions workflow...');
 
-            // Get repo info from current URL (assumes GitHub Pages)
             const repoInfo = getRepoFromUrl();
             if (!repoInfo) {
-                showTriggerStatus('error', '❌ Could not determine repository. Make sure this is hosted on GitHub Pages.');
+                showTriggerStatus('error', '❌ Could not determine repository.');
                 triggerBtn.disabled = false;
                 triggerBtn.innerHTML = '🚀 Trigger Workflow';
                 return;
             }
 
             try {
-                // Build workflow inputs - include all available parameters
                 const inputs = {};
-                
                 if (analysisName) inputs.analysis_name = analysisName;
                 if (startDate) inputs.start_date = startDate;
                 if (endDate) inputs.end_date = endDate;
@@ -19740,50 +19784,127 @@
                 inputs.validate_only = validateOnly;
                 if (compareWith) inputs.compare_with = compareWith;
 
-                // Call GitHub API to trigger workflow
                 const response = await fetch(`https://api.github.com/repos/${repoInfo.owner}/${repoInfo.repo}/actions/workflows/run-analysis.yml/dispatches`, {
                     method: 'POST',
-                    headers: {
-                        'Authorization': `Bearer ${token}`,
-                        'Accept': 'application/vnd.github.v3+json',
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify({
-                        ref: 'main',
-                        inputs: inputs
-                    })
+                    headers: { 'Authorization': `Bearer ${token}`, 'Accept': 'application/vnd.github.v3+json', 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ ref: 'main', inputs: inputs })
                 });
 
                 if (response.status === 204) {
-                    showTriggerStatus('success', `✅ Workflow triggered successfully!<br><a href="https://github.com/${repoInfo.owner}/${repoInfo.repo}/actions" target="_blank" style="color: #22c55e;">View workflow runs →</a>`);
+                    showTriggerStatus('success', '✅ Workflow triggered! Tracking progress...');
+                    triggerBtn.innerHTML = '📊 Tracking...';
+                    setTimeout(() => startWorkflowTracking(repoInfo, token, 'run-analysis.yml'), 3000);
                 } else if (response.status === 404) {
-                    showTriggerStatus('error', '❌ Workflow not found. Make sure "run-analysis.yml" exists in .github/workflows/');
+                    showTriggerStatus('error', '❌ Workflow not found.');
+                    triggerBtn.disabled = false; triggerBtn.innerHTML = '🚀 Trigger Workflow';
                 } else if (response.status === 401) {
-                    showTriggerStatus('error', '❌ Unauthorized. Check your token and ensure it has the "workflow" scope.');
-                } else if (response.status === 403) {
-                    const errorData = await response.json();
-                    showTriggerStatus('error', `❌ Forbidden: ${errorData.message || 'Token may need SSO authorization.'}`);
+                    showTriggerStatus('error', '❌ Unauthorized. Check your token.');
+                    triggerBtn.disabled = false; triggerBtn.innerHTML = '🚀 Trigger Workflow';
                 } else {
                     const errorData = await response.json();
                     showTriggerStatus('error', `❌ Error: ${errorData.message || response.statusText}`);
+                    triggerBtn.disabled = false; triggerBtn.innerHTML = '🚀 Trigger Workflow';
                 }
             } catch (error) {
                 showTriggerStatus('error', `❌ Network error: ${error.message}`);
+                triggerBtn.disabled = false; triggerBtn.innerHTML = '🚀 Trigger Workflow';
             }
+        }
 
-            triggerBtn.disabled = false;
-            triggerBtn.innerHTML = '🚀 Trigger Workflow';
+        async function startWorkflowTracking(repoInfo, token, workflowFile) {
+            const progressDiv = document.getElementById('workflowProgress');
+            const workflowLink = document.getElementById('workflowLink');
+            progressDiv.style.display = 'block';
+            workflowLink.href = `https://github.com/${repoInfo.owner}/${repoInfo.repo}/actions`;
+            workflowStartTime = Date.now();
+            updateElapsedTime();
+            elapsedInterval = setInterval(updateElapsedTime, 1000);
+            workflowTrackingInterval = setInterval(() => checkWorkflowStatus(repoInfo, token, workflowFile), 5000);
+            await checkWorkflowStatus(repoInfo, token, workflowFile);
+        }
+
+        function updateElapsedTime() {
+            if (!workflowStartTime) return;
+            const elapsed = Math.floor((Date.now() - workflowStartTime) / 1000);
+            const minutes = Math.floor(elapsed / 60);
+            const seconds = elapsed % 60;
+            document.getElementById('workflowElapsed').textContent = `⏱️ Elapsed: ${minutes}:${seconds.toString().padStart(2, '0')}`;
+        }
+
+        async function checkWorkflowStatus(repoInfo, token, workflowFile) {
+            try {
+                const runsResponse = await fetch(`https://api.github.com/repos/${repoInfo.owner}/${repoInfo.repo}/actions/workflows/${workflowFile}/runs?per_page=1`, {
+                    headers: { 'Authorization': `Bearer ${token}`, 'Accept': 'application/vnd.github.v3+json' }
+                });
+                if (!runsResponse.ok) return;
+                const runsData = await runsResponse.json();
+                if (!runsData.workflow_runs || runsData.workflow_runs.length === 0) {
+                    updateWorkflowUI({ status: 'queued', conclusion: null }, []);
+                    return;
+                }
+                const run = runsData.workflow_runs[0];
+                document.getElementById('workflowLink').href = run.html_url;
+                const jobsResponse = await fetch(run.jobs_url, { headers: { 'Authorization': `Bearer ${token}`, 'Accept': 'application/vnd.github.v3+json' } });
+                let jobs = [];
+                if (jobsResponse.ok) { const jobsData = await jobsResponse.json(); jobs = jobsData.jobs || []; }
+                updateWorkflowUI(run, jobs);
+                if (run.status === 'completed') {
+                    stopWorkflowTracking();
+                    const triggerBtn = document.getElementById('triggerAnalysisBtn');
+                    triggerBtn.disabled = false;
+                    if (run.conclusion === 'success') {
+                        triggerBtn.innerHTML = '✅ Completed!';
+                        showTriggerStatus('success', '🎉 Workflow completed successfully! Refreshing in 5s...');
+                        setTimeout(() => window.location.reload(), 5000);
+                    } else {
+                        triggerBtn.innerHTML = '🚀 Trigger Workflow';
+                        showTriggerStatus('error', `❌ Workflow ${run.conclusion}. <a href="${run.html_url}" target="_blank" style="color:#ef4444;">View details →</a>`);
+                    }
+                }
+            } catch (error) { console.error('Error checking workflow status:', error); }
+        }
+
+        function updateWorkflowUI(run, jobs) {
+            const statusText = document.getElementById('workflowStatusText');
+            const progressBar = document.getElementById('workflowProgressBar');
+            const jobsContainer = document.getElementById('workflowJobs');
+            const spinner = document.getElementById('workflowSpinner');
+            const statusEmoji = { 'queued': '⏳', 'in_progress': '🔄', 'completed': run.conclusion === 'success' ? '✅' : '❌' };
+            statusText.textContent = `${statusEmoji[run.status] || '🔄'} ${(run.status || '').replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase())}${run.conclusion ? ` - ${run.conclusion}` : ''}`;
+            if (run.status === 'completed') {
+                spinner.style.animation = 'none';
+                spinner.style.borderTopColor = run.conclusion === 'success' ? '#22c55e' : '#ef4444';
+            }
+            let progress = 0;
+            if (run.status === 'queued') progress = 5;
+            else if (run.status === 'in_progress') {
+                const completedJobs = jobs.filter(j => j.status === 'completed').length;
+                progress = 10 + (completedJobs / (jobs.length || 1) * 80);
+            } else if (run.status === 'completed') progress = 100;
+            progressBar.style.width = `${progress}%`;
+            progressBar.style.background = run.conclusion === 'failure' ? '#ef4444' : run.conclusion === 'success' ? '#22c55e' : 'linear-gradient(90deg, #3b82f6, #22c55e)';
+            jobsContainer.innerHTML = jobs.map(job => {
+                const icon = job.status === 'completed' ? (job.conclusion === 'success' ? '✅' : job.conclusion === 'failure' ? '❌' : '⏭️') : job.status === 'in_progress' ? '🔄' : '⏳';
+                const duration = job.started_at ? formatJobDuration(job.started_at, job.completed_at) : '';
+                return `<div class="workflow-job ${job.status}${job.conclusion ? ' ' + job.conclusion : ''}"><span class="job-icon">${icon}</span><span class="job-name">${job.name}</span><span class="job-duration">${duration}</span></div>`;
+            }).join('') || '<div style="color: var(--text-secondary); padding: 8px;">Waiting for jobs to start...</div>';
+        }
+
+        function formatJobDuration(start, end) {
+            const startDate = new Date(start);
+            const endDate = end ? new Date(end) : new Date();
+            const seconds = Math.floor((endDate - startDate) / 1000);
+            const minutes = Math.floor(seconds / 60);
+            const secs = seconds % 60;
+            return minutes > 0 ? `${minutes}m ${secs}s` : `${secs}s`;
         }
 
         function showTriggerStatus(type, message) {
             const statusDiv = document.getElementById('triggerStatus');
             statusDiv.style.display = 'block';
             statusDiv.innerHTML = message;
-            statusDiv.style.background = type === 'error' ? 'rgba(239, 68, 68, 0.2)' : 
-                                         type === 'success' ? 'rgba(34, 197, 94, 0.2)' : 
-                                         'rgba(59, 130, 246, 0.2)';
-            statusDiv.style.border = '1px solid ' + (type === 'error' ? '#ef4444' : 
-                                                     type === 'success' ? '#22c55e' : '#3b82f6');
+            statusDiv.style.background = type === 'error' ? 'rgba(239, 68, 68, 0.2)' : type === 'success' ? 'rgba(34, 197, 94, 0.2)' : 'rgba(59, 130, 246, 0.2)';
+            statusDiv.style.border = '1px solid ' + (type === 'error' ? '#ef4444' : type === 'success' ? '#22c55e' : '#3b82f6');
         }
 
         function getRepoFromUrl() {
@@ -19931,26 +20052,37 @@
             const repoInfo = getRepoFromUrl();
             
             try {
-                // Try to fetch the archive index
+                // First try: Fetch from deployed GitHub Pages
                 const basePath = getBasePath();
-                const response = await fetch(`${basePath}named-archives/index.json`);
+                let response = await fetch(`${basePath}named-archives/index.json`);
+                
+                // Second try: Fetch directly from GitHub repo if Pages version not found
+                if (!response.ok && repoInfo) {
+                    const token = localStorage.getItem('github_workflow_token');
+                    const headers = token ? { 'Authorization': `Bearer ${token}`, 'Accept': 'application/vnd.github.v3.raw' } : { 'Accept': 'application/vnd.github.v3.raw' };
+                    response = await fetch(`https://api.github.com/repos/${repoInfo.owner}/${repoInfo.repo}/contents/reports/named-archives/index.json?ref=main`, { headers });
+                }
                 
                 if (response.ok) {
                     const archives = await response.json();
-                    availableArchives = archives;
+                    availableArchives = Array.isArray(archives) ? archives : [];
                     
                     // Clear and rebuild dropdown
                     archiveSelect.innerHTML = '<option value="current">📁 Current Reports</option>';
                     
                     // Sort by created date descending
-                    archives.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
+                    availableArchives.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
                     
-                    archives.forEach(archive => {
+                    availableArchives.forEach(archive => {
                         const option = document.createElement('option');
                         option.value = archive.name;
-                        option.textContent = `📦 ${archive.name} (${archive.reportCount} reports)`;
+                        option.textContent = `📦 ${archive.name} (${archive.reportCount || '?'} reports)`;
                         archiveSelect.appendChild(option);
                     });
+                    
+                    console.log(`Loaded ${availableArchives.length} archives`);
+                } else {
+                    console.log('No archives index found');
                 }
             } catch (error) {
                 console.log('No archives available or error loading:', error);
