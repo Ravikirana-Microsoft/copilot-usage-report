@@ -4,6 +4,23 @@ on:
   # Manual trigger with inputs
   workflow_dispatch:
     inputs:
+      # === ARCHIVE MODE INPUTS ===
+      archive_mode:
+        description: 'Archive Mode: Bundle all reports into named archive'
+        required: false
+        type: boolean
+        default: false
+      archive_name:
+        description: 'Archive name (required if archive_mode=true)'
+        required: false
+        type: string
+        default: ''
+      archive_description:
+        description: 'Archive description (optional)'
+        required: false
+        type: string
+        default: ''
+      # === ANALYSIS MODE INPUTS ===
       analysis_name:
         description: 'Name for this analysis run (e.g., January2026, Q1-Review)'
         required: false
@@ -56,8 +73,223 @@ on:
   #   - cron: '0 9 * * 1'
 
 jobs:
+  # ============================================
+  # ARCHIVE JOB - Runs when archive_mode=true
+  # ============================================
+  archive:
+    runs-on: ubuntu-latest
+    if: ${{ github.event.inputs.archive_mode == 'true' }}
+    
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Validate Archive Name
+        run: |
+          ARCHIVE_NAME="${{ github.event.inputs.archive_name }}"
+          if [ -z "$ARCHIVE_NAME" ]; then
+            echo "❌ Archive name is required when archive_mode is true"
+            exit 1
+          fi
+          # Sanitize name (alphanumeric, dash, underscore only)
+          SANITIZED=$(echo "$ARCHIVE_NAME" | sed 's/[^a-zA-Z0-9_-]/-/g' | sed 's/-\+/-/g')
+          echo "Archive name: $SANITIZED"
+          echo "ARCHIVE_NAME=$SANITIZED" >> $GITHUB_ENV
+
+      - name: Create Archive Bundle
+        run: |
+          ARCHIVE_NAME="${{ env.ARCHIVE_NAME }}"
+          DESCRIPTION="${{ github.event.inputs.archive_description }}"
+          TIMESTAMP=$(date -u +"%Y-%m-%d %H:%M:%S UTC")
+          
+          # Create archive directory
+          ARCHIVE_DIR="reports/named-archives/${ARCHIVE_NAME}"
+          mkdir -p "$ARCHIVE_DIR/consolidated"
+          
+          echo "📦 Creating archive: $ARCHIVE_NAME"
+          
+          # Count reports
+          REPORT_COUNT=$(ls reports/consolidated/ConsolidatedReport_*.json 2>/dev/null | wc -l || echo "0")
+          
+          if [ "$REPORT_COUNT" -eq "0" ]; then
+            echo "⚠️ No consolidated reports found - creating empty archive marker"
+            REPORT_COUNT=0
+          else
+            echo "📄 Archiving $REPORT_COUNT consolidated reports..."
+            # Copy ALL consolidated reports to archive
+            cp reports/consolidated/ConsolidatedReport_*.json "$ARCHIVE_DIR/consolidated/" 2>/dev/null || true
+          fi
+          
+          # Copy summary files
+          cp reports/Batch-Analysis-Summary.csv "$ARCHIVE_DIR/" 2>/dev/null || true
+          cp reports/Batch-Analysis-Summary.md "$ARCHIVE_DIR/" 2>/dev/null || true
+          cp reports/Branch-Level-Summary_*.csv "$ARCHIVE_DIR/" 2>/dev/null || true
+          
+          # Copy dashboard snapshot
+          cp reports/CopilotDashboard.html "$ARCHIVE_DIR/" 2>/dev/null || true
+          
+          # Build reports list for metadata
+          if [ -d "$ARCHIVE_DIR/consolidated" ] && [ "$(ls -A $ARCHIVE_DIR/consolidated/*.json 2>/dev/null)" ]; then
+            REPORTS_LIST=$(ls "$ARCHIVE_DIR/consolidated/"*.json 2>/dev/null | while read f; do basename "$f"; done | jq -R -s -c 'split("\n") | map(select(length > 0))')
+          else
+            REPORTS_LIST="[]"
+          fi
+          
+          # Create archive metadata
+          cat > "$ARCHIVE_DIR/archive-info.json" << EOF
+          {
+            "name": "$ARCHIVE_NAME",
+            "description": "$DESCRIPTION",
+            "createdAt": "$TIMESTAMP",
+            "reportCount": $REPORT_COUNT,
+            "reports": $REPORTS_LIST,
+            "createdBy": "${{ github.actor }}"
+          }
+          EOF
+          
+          echo "✅ Archive created: $ARCHIVE_DIR"
+          ls -la "$ARCHIVE_DIR/"
+
+      - name: Clear Current Reports
+        run: |
+          echo "🗑️ Clearing current consolidated reports..."
+          
+          # Remove all consolidated reports
+          rm -f reports/consolidated/ConsolidatedReport_*.json 2>/dev/null || true
+          
+          # Remove summary files (keep structure)
+          rm -f reports/Batch-Analysis-Summary.csv 2>/dev/null || true
+          rm -f reports/Batch-Analysis-Summary.md 2>/dev/null || true
+          rm -f reports/Branch-Level-Summary_*.csv 2>/dev/null || true
+          rm -f reports/Consolidated-Analysis_*.json 2>/dev/null || true
+          
+          # Create placeholder to keep folder
+          echo "Reports archived to named-archives/${{ env.ARCHIVE_NAME }}" > reports/consolidated/README.md
+          
+          echo "✅ Current reports cleared"
+
+      - name: Update Archive Index
+        run: |
+          ARCHIVES_DIR="reports/named-archives"
+          INDEX_FILE="$ARCHIVES_DIR/index.json"
+          
+          mkdir -p "$ARCHIVES_DIR"
+          
+          # Build index from all archive directories
+          echo "[" > "$INDEX_FILE"
+          first=true
+          for dir in "$ARCHIVES_DIR"/*/; do
+            if [ -d "$dir" ] && [ -f "${dir}archive-info.json" ]; then
+              if [ "$first" = true ]; then
+                first=false
+              else
+                echo "," >> "$INDEX_FILE"
+              fi
+              cat "${dir}archive-info.json" >> "$INDEX_FILE"
+            fi
+          done
+          echo "]" >> "$INDEX_FILE"
+          
+          echo "📋 Archive index updated:"
+          cat "$INDEX_FILE"
+
+      - name: Commit and Push Archive
+        run: |
+          git add reports/named-archives/
+          git add reports/consolidated/
+          git add reports/*.csv 2>/dev/null || true
+          git add reports/*.md 2>/dev/null || true
+          git add reports/*.json 2>/dev/null || true
+          
+          if git diff --staged --quiet; then
+            echo "⚠️ No changes to commit"
+          else
+            git commit -m "📦 Archive: ${{ env.ARCHIVE_NAME }}"
+            
+            # Retry push
+            for i in 1 2 3; do
+              if git push; then
+                echo "✅ Archive committed and pushed"
+                exit 0
+              fi
+              echo "⚠️ Push failed, attempt $i. Retrying..."
+              git pull --rebase
+            done
+            
+            echo "❌ Failed to push after 3 attempts"
+            exit 1
+          fi
+
+  # Deploy after archive
+  deploy-after-archive:
+    needs: archive
+    runs-on: ubuntu-latest
+    if: ${{ github.event.inputs.archive_mode == 'true' }}
+    
+    permissions:
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+
+      - name: Pull latest changes
+        run: git pull origin ${{ github.ref_name }}
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Prepare dashboard for deployment
+        run: |
+          mkdir -p _site
+          mkdir -p _site/consolidated
+          mkdir -p _site/named-archives
+          cp reports/CopilotDashboard.html _site/index.html
+          cp -r reports/*.json _site/ 2>/dev/null || true
+          cp -r reports/*.csv _site/ 2>/dev/null || true
+          cp -r reports/consolidated/*.json _site/consolidated/ 2>/dev/null || true
+          if [ -d "reports/named-archives" ]; then
+            cp -r reports/named-archives/* _site/named-archives/ 2>/dev/null || true
+          fi
+          echo "Dashboard prepared for deployment"
+          ls -la _site/
+          ls -la _site/named-archives/ 2>/dev/null || echo "Archives ready"
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+  # ============================================
+  # ANALYSIS JOB - Runs when archive_mode=false
+  # ============================================
   analyze:
     runs-on: windows-latest
+    if: ${{ github.event.inputs.archive_mode != 'true' }}
     
     permissions:
       contents: write
@@ -232,7 +464,7 @@ jobs:
   deploy-dashboard:
     needs: analyze
     runs-on: ubuntu-latest
-    if: success() && github.event.inputs.validate_only != 'true'
+    if: ${{ success() && github.event.inputs.validate_only != 'true' && github.event.inputs.archive_mode != 'true' }}
     
     permissions:
       pages: write

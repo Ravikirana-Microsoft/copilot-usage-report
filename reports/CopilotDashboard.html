@@ -11210,26 +11210,130 @@
                 return;
             }
 
-            // Show archive instructions using the Create-Archive.ps1 script
-            const clearReportsFlag = document.getElementById('archiveClearReports')?.checked ? ' -ClearReports' : '';
-            showArchiveStatus('info', `
-                <strong>📦 Create Archive: ${archiveName}</strong><br><br>
-                <p>Run this command in your local project folder:</p>
-                <pre style="background: #1e293b; padding: 12px; border-radius: 5px; overflow-x: auto; font-size: 12px; margin: 10px 0; white-space: pre-wrap; word-wrap: break-word;">.\\scripts\\Create-Archive.ps1 -ArchiveName "${archiveName}" -Description "${description}"${clearReportsFlag} -Push</pre>
-                <p style="margin-top: 15px; font-size: 12px; color: #9ca3af;">
-                    This will bundle all current reports into a named archive and push to GitHub.
-                    ${clearReportsFlag ? '<br><strong>Note:</strong> Current reports will be cleared after archiving.' : ''}
-                </p>
-            `);
-            
+            try {
+                // Trigger the run-analysis.yml workflow with archive_mode=true
+                const response = await fetch(`https://api.github.com/repos/${repoInfo.owner}/${repoInfo.repo}/actions/workflows/run-analysis.yml/dispatches`, {
+                    method: 'POST',
+                    headers: {
+                        'Authorization': `Bearer ${token}`,
+                        'Accept': 'application/vnd.github.v3+json',
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        ref: 'main',
+                        inputs: {
+                            archive_mode: 'true',
+                            archive_name: archiveName,
+                            archive_description: description || `Archived on ${new Date().toISOString().split('T')[0]}`
+                        }
+                    })
+                });
+
+                if (response.status === 204) {
+                    showArchiveStatus('success', `✅ Archive workflow triggered!<br><br>
+                        <strong>📦 Archive name:</strong> ${archiveName}<br><br>
+                        <p style="margin: 8px 0;">The workflow will:</p>
+                        <ul style="margin: 8px 0 12px 20px; font-size: 13px; line-height: 1.6;">
+                            <li>Bundle all current reports into archive</li>
+                            <li>Clear current reports</li>
+                            <li>Update archive index</li>
+                            <li>Deploy updated dashboard</li>
+                        </ul>
+                        <a href="https://github.com/${repoInfo.owner}/${repoInfo.repo}/actions" target="_blank" style="color: #f59e0b; font-weight: 500;">🔗 View workflow progress →</a><br><br>
+                        <div id="archiveProgressContainer" style="margin-top: 12px; padding: 12px; background: var(--bg-hover); border-radius: 6px;">
+                            <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px;">
+                                <div style="width: 16px; height: 16px; border: 2px solid var(--border-color); border-top-color: #f59e0b; border-radius: 50%; animation: spin 1s linear infinite;"></div>
+                                <span id="archiveProgressText">Waiting for workflow to start...</span>
+                            </div>
+                            <button onclick="checkArchiveWorkflowStatus()" style="padding: 6px 12px; border-radius: 4px; border: 1px solid #f59e0b; background: transparent; color: #f59e0b; cursor: pointer; font-size: 12px;">
+                                🔄 Refresh Status
+                            </button>
+                        </div>`);
+                    
+                    // Store for status checking
+                    window.archiveRepoInfo = repoInfo;
+                    window.archiveToken = token;
+                    
+                    // Auto-check status after delay
+                    setTimeout(() => checkArchiveWorkflowStatus(), 5000);
+                    
+                } else if (response.status === 422) {
+                    const errorData = await response.json();
+                    showArchiveStatus('error', `❌ Workflow error: ${errorData.message}<br><small>The workflow may need to be pushed to GitHub first.</small>`);
+                } else if (response.status === 401 || response.status === 403) {
+                    const errorData = await response.json();
+                    showArchiveStatus('error', `❌ Authentication error: ${errorData.message}<br><small>Make sure your token has 'workflow' scope and SSO authorization if required.</small>`);
+                } else {
+                    const errorData = await response.json().catch(() => ({}));
+                    showArchiveStatus('error', `❌ Error: ${errorData.message || response.statusText}`);
+                }
+            } catch (error) {
+                showArchiveStatus('error', `❌ Network error: ${error.message}`);
+            }
+
             archiveBtn.disabled = false;
             archiveBtn.innerHTML = '📦 Create Archive';
         }
 
-        // Legacy archive trigger function (for future use when GitHub fixes workflow indexing)
+        async function checkArchiveWorkflowStatus() {
+            const repoInfo = window.archiveRepoInfo;
+            const token = window.archiveToken;
+            
+            if (!repoInfo || !token) {
+                return;
+            }
+            
+            const progressText = document.getElementById('archiveProgressText');
+            if (progressText) {
+                progressText.textContent = 'Checking status...';
+            }
+            
+            try {
+                const response = await fetch(
+                    `https://api.github.com/repos/${repoInfo.owner}/${repoInfo.repo}/actions/workflows/run-analysis.yml/runs?per_page=1`,
+                    {
+                        headers: {
+                            'Authorization': `Bearer ${token}`,
+                            'Accept': 'application/vnd.github.v3+json'
+                        }
+                    }
+                );
+                
+                if (response.ok) {
+                    const data = await response.json();
+                    if (data.workflow_runs && data.workflow_runs.length > 0) {
+                        const run = data.workflow_runs[0];
+                        
+                        if (progressText) {
+                            if (run.status === 'completed') {
+                                if (run.conclusion === 'success') {
+                                    progressText.innerHTML = '✅ Archive completed! Reloading page in 3 seconds...';
+                                    setTimeout(() => window.location.reload(), 3000);
+                                } else {
+                                    progressText.innerHTML = `❌ Workflow ${run.conclusion}. <a href="${run.html_url}" target="_blank" style="color: #ef4444;">View details</a>`;
+                                }
+                            } else if (run.status === 'in_progress') {
+                                progressText.textContent = '🔄 Workflow running...';
+                                // Auto-check again in 10 seconds
+                                setTimeout(() => checkArchiveWorkflowStatus(), 10000);
+                            } else {
+                                progressText.textContent = `⏳ ${run.status.replace(/_/g, ' ')}...`;
+                                // Auto-check again
+                                setTimeout(() => checkArchiveWorkflowStatus(), 8000);
+                            }
+                        }
+                    }
+                }
+            } catch (error) {
+                if (progressText) {
+                    progressText.textContent = `Error: ${error.message}`;
+                }
+            }
+        }
+
+        // Legacy archive trigger function (for reference)
         async function triggerArchiveWorkflow(repoInfo, token, archiveName, description) {
-            // This function is reserved for when GitHub workflow_dispatch works for new workflows
-            console.log('triggerArchiveWorkflow called but disabled due to GitHub limitations');
+            console.log('Using run-analysis.yml with archive_mode=true');
             return false;
         }
 
