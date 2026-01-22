@@ -1066,14 +1066,14 @@
 
     <!-- Trigger Analysis Modal -->
     <div id="triggerAnalysisModal" class="modal-overlay">
-        <div class="modal-content" style="max-width: 500px;">
+        <div class="modal-content" style="max-width: 600px;">
             <div class="modal-header" style="background: linear-gradient(135deg, #22c55e, #16a34a);">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <polygon points="5 3 19 12 5 21 5 3"/>
                 </svg>
                 <h3>Trigger New Analysis</h3>
             </div>
-            <div class="modal-body">
+            <div class="modal-body" style="max-height: 70vh; overflow-y: auto;">
                 <p style="margin-bottom: 16px; color: var(--text-secondary);">
                     Trigger a GitHub Actions workflow to run a new batch analysis.
                 </p>
@@ -1082,26 +1082,74 @@
                     <label style="display: block; margin-bottom: 6px; font-weight: 500;">Analysis Name</label>
                     <input type="text" id="triggerAnalysisName" placeholder="e.g., January-2026" 
                            style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid var(--border-color); background: var(--bg-hover); color: var(--text-primary);">
+                    <small style="color: var(--text-secondary);">Name for this analysis run (e.g., January2026, Q1-Review)</small>
                 </div>
 
                 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 16px;">
                     <div class="form-group">
-                        <label style="display: block; margin-bottom: 6px; font-weight: 500;">Start Date (Optional)</label>
+                        <label style="display: block; margin-bottom: 6px; font-weight: 500;">Start Date</label>
                         <input type="date" id="triggerStartDate" 
                                style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid var(--border-color); background: var(--bg-hover); color: var(--text-primary);">
+                        <small style="color: var(--text-secondary);">Leave empty for all time</small>
                     </div>
                     <div class="form-group">
-                        <label style="display: block; margin-bottom: 6px; font-weight: 500;">End Date (Optional)</label>
+                        <label style="display: block; margin-bottom: 6px; font-weight: 500;">End Date</label>
                         <input type="date" id="triggerEndDate" 
                                style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid var(--border-color); background: var(--bg-hover); color: var(--text-primary);">
+                        <small style="color: var(--text-secondary);">Leave empty for today</small>
                     </div>
                 </div>
 
                 <div class="form-group" style="margin-bottom: 16px;">
-                    <label style="display: block; margin-bottom: 6px; font-weight: 500;">Parallel Jobs</label>
-                    <input type="number" id="triggerParallelJobs" value="5" min="1" max="20"
+                    <label style="display: block; margin-bottom: 6px; font-weight: 500;">Config Path</label>
+                    <input type="text" id="triggerConfigPath" value="config/config.csv" placeholder="config/config.csv"
                            style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid var(--border-color); background: var(--bg-hover); color: var(--text-primary);">
+                    <small style="color: var(--text-secondary);">Path to config CSV file with repository list</small>
                 </div>
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 16px;">
+                    <div class="form-group">
+                        <label style="display: block; margin-bottom: 6px; font-weight: 500;">Parallel Processing</label>
+                        <select id="triggerParallel" style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid var(--border-color); background: var(--bg-hover); color: var(--text-primary);">
+                            <option value="true" selected>✓ Enabled (faster)</option>
+                            <option value="false">✗ Disabled (sequential)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label style="display: block; margin-bottom: 6px; font-weight: 500;">Max Parallel Jobs</label>
+                        <input type="number" id="triggerParallelJobs" value="4" min="1" max="20"
+                               style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid var(--border-color); background: var(--bg-hover); color: var(--text-primary);">
+                        <small style="color: var(--text-secondary);">1-20 threads</small>
+                    </div>
+                </div>
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 16px;">
+                    <div class="form-group">
+                        <label style="display: block; margin-bottom: 6px; font-weight: 500;">Full Re-analysis</label>
+                        <select id="triggerFullAnalysis" style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid var(--border-color); background: var(--bg-hover); color: var(--text-primary);">
+                            <option value="false" selected>✗ No (incremental)</option>
+                            <option value="true">✓ Yes (force full)</option>
+                        </select>
+                        <small style="color: var(--text-secondary);">Force full re-analysis ignoring cache</small>
+                    </div>
+                    <div class="form-group">
+                        <label style="display: block; margin-bottom: 6px; font-weight: 500;">Validate Only</label>
+                        <select id="triggerValidateOnly" style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid var(--border-color); background: var(--bg-hover); color: var(--text-primary);">
+                            <option value="false" selected>✗ No (run analysis)</option>
+                            <option value="true">✓ Yes (check access only)</option>
+                        </select>
+                        <small style="color: var(--text-secondary);">Only validate Git access</small>
+                    </div>
+                </div>
+
+                <div class="form-group" style="margin-bottom: 16px;">
+                    <label style="display: block; margin-bottom: 6px; font-weight: 500;">Compare With (Previous Report)</label>
+                    <input type="text" id="triggerCompareWith" placeholder="reports/consolidated/ConsolidatedReport_xxx.json"
+                           style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid var(--border-color); background: var(--bg-hover); color: var(--text-primary);">
+                    <small style="color: var(--text-secondary);">Path to previous report JSON for comparison (optional)</small>
+                </div>
+
+                <hr style="border: none; border-top: 1px solid var(--border-color); margin: 16px 0;">
 
                 <div class="form-group" style="margin-bottom: 16px;">
                     <label style="display: block; margin-bottom: 6px; font-weight: 500;">GitHub Token <span style="color: var(--text-secondary); font-weight: normal;">(needs workflow scope)</span></label>
@@ -10843,16 +10891,17 @@
             const analysisName = document.getElementById('triggerAnalysisName').value.trim();
             const startDate = document.getElementById('triggerStartDate').value;
             const endDate = document.getElementById('triggerEndDate').value;
+            const configPath = document.getElementById('triggerConfigPath').value.trim();
+            const parallel = document.getElementById('triggerParallel').value;
             const parallelJobs = document.getElementById('triggerParallelJobs').value;
+            const fullAnalysis = document.getElementById('triggerFullAnalysis').value;
+            const validateOnly = document.getElementById('triggerValidateOnly').value;
+            const compareWith = document.getElementById('triggerCompareWith').value.trim();
             const token = document.getElementById('triggerGithubToken').value.trim();
             const statusDiv = document.getElementById('triggerStatus');
             const triggerBtn = document.getElementById('triggerAnalysisBtn');
 
             // Validation
-            if (!analysisName) {
-                showTriggerStatus('error', '❌ Please enter an analysis name.');
-                return;
-            }
             if (!token) {
                 showTriggerStatus('error', '❌ Please enter a GitHub token with workflow scope.');
                 return;
@@ -10876,14 +10925,18 @@
             }
 
             try {
-                // Build workflow inputs
-                const inputs = {
-                    analysis_name: analysisName,
-                    parallel: 'true',
-                    max_parallel: parallelJobs.toString()
-                };
+                // Build workflow inputs - include all available parameters
+                const inputs = {};
+                
+                if (analysisName) inputs.analysis_name = analysisName;
                 if (startDate) inputs.start_date = startDate;
                 if (endDate) inputs.end_date = endDate;
+                if (configPath) inputs.config_path = configPath;
+                inputs.parallel = parallel;
+                inputs.max_parallel = parallelJobs.toString();
+                inputs.full_analysis = fullAnalysis;
+                inputs.validate_only = validateOnly;
+                if (compareWith) inputs.compare_with = compareWith;
 
                 // Call GitHub API to trigger workflow
                 const response = await fetch(`https://api.github.com/repos/${repoInfo.owner}/${repoInfo.repo}/actions/workflows/run-analysis.yml/dispatches`, {
