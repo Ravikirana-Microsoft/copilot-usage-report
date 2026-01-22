@@ -1,0 +1,942 @@
+{
+  "AnalysisPeriod": {
+    "StartDate": "2025-12-01",
+    "EndDate": "2026-01-31",
+    "FilterApplied": true
+  },
+  "BranchStatistics": {
+    "Branch": "dev",
+    "TotalCommits": 36,
+    "AICommits": 0,
+    "HumanCommits": 36,
+    "TotalLinesAdded": 4696.0,
+    "TotalLinesDeleted": 1240.0,
+    "AILinesAdded": null,
+    "AILinesDeleted": null,
+    "Tier1Commits": 0,
+    "Tier2Commits": 0,
+    "Tier3Commits": 0,
+    "Tier4Commits": 0,
+    "Tier5Commits": 0,
+    "UniqueContributors": 8,
+    "AIPercentage": 0.0,
+    "HumanLinesAdded": 4696.0
+  },
+  "FileTypeBreakdown": [
+    {
+      "Extension": "json",
+      "TotalLines": 104749,
+      "AILines": 34687,
+      "AIPercentage": 33.11,
+      "FileCount": 194
+    },
+    {
+      "Extension": "lock",
+      "TotalLines": 40588,
+      "AILines": 9661,
+      "AIPercentage": 23.8,
+      "FileCount": 92
+    },
+    {
+      "Extension": "cs",
+      "TotalLines": 36703,
+      "AILines": 36330,
+      "AIPercentage": 98.98,
+      "FileCount": 392
+    },
+    {
+      "Extension": "py",
+      "TotalLines": 12673,
+      "AILines": 186,
+      "AIPercentage": 1.47,
+      "FileCount": 58
+    },
+    {
+      "Extension": "md",
+      "TotalLines": 8967,
+      "AILines": 1938,
+      "AIPercentage": 21.61,
+      "FileCount": 258
+    },
+    {
+      "Extension": "tsx",
+      "TotalLines": 6041,
+      "AILines": 5677,
+      "AIPercentage": 93.97,
+      "FileCount": 85
+    },
+    {
+      "Extension": "bicep",
+      "TotalLines": 4596,
+      "AILines": 2834,
+      "AIPercentage": 61.66,
+      "FileCount": 118
+    },
+    {
+      "Extension": "yml",
+      "TotalLines": 3144,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 138
+    },
+    {
+      "Extension": "ts",
+      "TotalLines": 2069,
+      "AILines": 2052,
+      "AIPercentage": 99.18,
+      "FileCount": 42
+    },
+    {
+      "Extension": "ps1",
+      "TotalLines": 2021,
+      "AILines": 999,
+      "AIPercentage": 49.43,
+      "FileCount": 57
+    },
+    {
+      "Extension": "gitignore",
+      "TotalLines": 1724,
+      "AILines": 1159,
+      "AIPercentage": 67.23,
+      "FileCount": 11
+    },
+    {
+      "Extension": "csproj",
+      "TotalLines": 1133,
+      "AILines": 959,
+      "AIPercentage": 84.64,
+      "FileCount": 86
+    },
+    {
+      "Extension": "drawio",
+      "TotalLines": 980,
+      "AILines": 980,
+      "AIPercentage": 100.0,
+      "FileCount": 1
+    },
+    {
+      "Extension": "sh",
+      "TotalLines": 779,
+      "AILines": 525,
+      "AIPercentage": 67.39,
+      "FileCount": 26
+    },
+    {
+      "Extension": "editorconfig",
+      "TotalLines": 769,
+      "AILines": 769,
+      "AIPercentage": 100.0,
+      "FileCount": 12
+    },
+    {
+      "Extension": "sln",
+      "TotalLines": 564,
+      "AILines": 564,
+      "AIPercentage": 100.0,
+      "FileCount": 4
+    },
+    {
+      "Extension": "sample",
+      "TotalLines": 554,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 16
+    },
+    {
+      "Extension": "bkp",
+      "TotalLines": 542,
+      "AILines": 542,
+      "AIPercentage": 100.0,
+      "FileCount": 1
+    },
+    {
+      "Extension": "scss",
+      "TotalLines": 530,
+      "AILines": 434,
+      "AIPercentage": 81.89,
+      "FileCount": 19
+    },
+    {
+      "Extension": "template",
+      "TotalLines": 497,
+      "AILines": 418,
+      "AIPercentage": 84.1,
+      "FileCount": 31
+    },
+    {
+      "Extension": "other",
+      "TotalLines": 362,
+      "AILines": 152,
+      "AIPercentage": 41.99,
+      "FileCount": 11
+    },
+    {
+      "Extension": "props",
+      "TotalLines": 342,
+      "AILines": 251,
+      "AIPercentage": 73.39,
+      "FileCount": 42
+    },
+    {
+      "Extension": "dotsettings",
+      "TotalLines": 304,
+      "AILines": 304,
+      "AIPercentage": 100.0,
+      "FileCount": 1
+    },
+    {
+      "Extension": "txt",
+      "TotalLines": 298,
+      "AILines": 253,
+      "AIPercentage": 84.9,
+      "FileCount": 21
+    },
+    {
+      "Extension": "yaml",
+      "TotalLines": 146,
+      "AILines": 126,
+      "AIPercentage": 86.3,
+      "FileCount": 8
+    },
+    {
+      "Extension": "psm1",
+      "TotalLines": 107,
+      "AILines": 105,
+      "AIPercentage": 98.13,
+      "FileCount": 4
+    },
+    {
+      "Extension": "css",
+      "TotalLines": 107,
+      "AILines": 107,
+      "AIPercentage": 100.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "mjs",
+      "TotalLines": 101,
+      "AILines": 101,
+      "AIPercentage": 100.0,
+      "FileCount": 1
+    },
+    {
+      "Extension": "js",
+      "TotalLines": 69,
+      "AILines": 69,
+      "AIPercentage": 100.0,
+      "FileCount": 3
+    },
+    {
+      "Extension": "cjs",
+      "TotalLines": 49,
+      "AILines": 49,
+      "AIPercentage": 100.0,
+      "FileCount": 1
+    },
+    {
+      "Extension": "dockerignore",
+      "TotalLines": 45,
+      "AILines": 44,
+      "AIPercentage": 97.78,
+      "FileCount": 3
+    },
+    {
+      "Extension": "config",
+      "TotalLines": 37,
+      "AILines": 37,
+      "AIPercentage": 100.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "jsonl",
+      "TotalLines": 36,
+      "AILines": 36,
+      "AIPercentage": 100.0,
+      "FileCount": 1
+    },
+    {
+      "Extension": "html",
+      "TotalLines": 19,
+      "AILines": 19,
+      "AIPercentage": 100.0,
+      "FileCount": 1
+    },
+    {
+      "Extension": "github/codeowners",
+      "TotalLines": 15,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 8
+    },
+    {
+      "Extension": "cmd",
+      "TotalLines": 10,
+      "AILines": 10,
+      "AIPercentage": 100.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "ini",
+      "TotalLines": 6,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 3
+    },
+    {
+      "Extension": "gitattributes",
+      "TotalLines": 5,
+      "AILines": 5,
+      "AIPercentage": 100.0,
+      "FileCount": 1
+    },
+    {
+      "Extension": "eslintignore",
+      "TotalLines": 5,
+      "AILines": 5,
+      "AIPercentage": 100.0,
+      "FileCount": 1
+    },
+    {
+      "Extension": "prettierignore",
+      "TotalLines": 3,
+      "AILines": 3,
+      "AIPercentage": 100.0,
+      "FileCount": 1
+    },
+    {
+      "Extension": "svg",
+      "TotalLines": 1,
+      "AILines": 1,
+      "AIPercentage": 100.0,
+      "FileCount": 1
+    }
+  ],
+  "AIAttributionOverride": {
+    "OverridePercentage": null,
+    "Notes": null,
+    "Applied": false
+  },
+  "GeneratedAt": "2026-01-22 07:08:13",
+  "Branch": "dev",
+  "Commits": [
+    {
+      "Hash": "46908cac613e83bd2fc17e47107842b0e0f76766",
+      "Author": "Prajwal D C",
+      "Date": "Fri Jan 9 10:21:45 2026 +0530",
+      "Message": "fix: Minor issues in guide",
+      "LinesAdded": 6,
+      "LinesDeleted": 6,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "d0e44fea189bd7f574c32b639f383b2fc821903d",
+      "Author": "Prekshith D J (Persistent Systems Inc)",
+      "Date": "Thu Jan 8 12:45:13 2026 +0530",
+      "Message": "updated sections causing confusions",
+      "LinesAdded": 1,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "e8780144ac2186ea99fba51ae312491b24e95f7f",
+      "Author": "Prekshith D J (Persistent Systems Inc)",
+      "Date": "Wed Jan 7 14:24:51 2026 +0530",
+      "Message": "Updated the deployment guide",
+      "LinesAdded": 8,
+      "LinesDeleted": 37,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "4dcbd3e5027f24ed4fcf2a1de4808441108f0590",
+      "Author": "Prekshith D J (Persistent Systems Inc)",
+      "Date": "Tue Jan 6 11:47:41 2026 +0530",
+      "Message": "updated",
+      "LinesAdded": 2,
+      "LinesDeleted": 2,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "b3f63d6560fa9fce67fedb288ca2fba026a0f0de",
+      "Author": "Prekshith D J (Persistent Systems Inc)",
+      "Date": "Tue Jan 6 11:35:06 2026 +0530",
+      "Message": "Updated the placeholder and deleted the unwanted images",
+      "LinesAdded": 7,
+      "LinesDeleted": 9,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "4882c22cf296c18f275201762705cb28fe04619a",
+      "Author": "Prekshith D J (Persistent Systems Inc)",
+      "Date": "Mon Jan 5 15:22:21 2026 +0530",
+      "Message": "Fix broken links: Update LocalSetupGuide.md references to LocalDevelopmentSetup.md",
+      "LinesAdded": 2,
+      "LinesDeleted": 2,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written (Merge/Revert)",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "c6e096e37b38696f9984c76a620c928b69124960",
+      "Author": "Prekshith D J (Persistent Systems Inc)",
+      "Date": "Mon Jan 5 14:13:45 2026 +0530",
+      "Message": "Deleted the postdeployment file",
+      "LinesAdded": 0,
+      "LinesDeleted": 91,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "87d970f2309d997006e5900b56a7832180a3fd23",
+      "Author": "Prekshith D J (Persistent Systems Inc)",
+      "Date": "Mon Jan 5 14:11:57 2026 +0530",
+      "Message": "Updated as per the comments",
+      "LinesAdded": 148,
+      "LinesDeleted": 9,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "c2b4817b5ec0fd8df27aa932212ecd65c807c4be",
+      "Author": "Prekshith D J (Persistent Systems Inc)",
+      "Date": "Fri Jan 2 18:07:26 2026 +0530",
+      "Message": "Resolved the comments",
+      "LinesAdded": 4,
+      "LinesDeleted": 4,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "dca41864d8269d045247f658b0ec4c48b12aab67",
+      "Author": "Venkateswarlu Marthula",
+      "Date": "Fri Jan 2 17:19:37 2026 +0530",
+      "Message": "Refactor code structure for improved readability and maintainability",
+      "LinesAdded": 2005,
+      "LinesDeleted": 6,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "2b0c3b2e0d441c3846f63572c054f88ce958707e",
+      "Author": "Prekshith D J (Persistent Systems Inc)",
+      "Date": "Fri Jan 2 12:26:45 2026 +0530",
+      "Message": "Resolved the comments",
+      "LinesAdded": 76,
+      "LinesDeleted": 121,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "6f03e11f7dd67289e5c602ece0ea9b44d0a5e622",
+      "Author": "Prekshith D J (Persistent Systems Inc)",
+      "Date": "Thu Jan 1 18:16:05 2026 +0530",
+      "Message": "Removed the deployment re-requisites",
+      "LinesAdded": 0,
+      "LinesDeleted": 7,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "a0f9f8a3aff5d93ab7674aca6101caeab96302d0",
+      "Author": "Prekshith D J (Persistent Systems Inc)",
+      "Date": "Thu Jan 1 15:31:34 2026 +0530",
+      "Message": "Updated as per the copilot comments",
+      "LinesAdded": 16,
+      "LinesDeleted": 2,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "0e6b4beb981bdb9b7407863772cfeace1ebad152",
+      "Author": "Prekshith D J (Persistent Systems Inc)",
+      "Date": "Thu Jan 1 14:00:26 2026 +0530",
+      "Message": "Updated the alignment",
+      "LinesAdded": 3,
+      "LinesDeleted": 2,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "79bfe790129eb1d22ed9798ed0859ff1ed09df39",
+      "Author": "Prekshith D J (Persistent Systems Inc)",
+      "Date": "Thu Jan 1 13:39:35 2026 +0530",
+      "Message": "Removed Blob Data Reader role assignment",
+      "LinesAdded": 0,
+      "LinesDeleted": 11,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "00541d6bb8cd8cb0332ceb76bdd27585a0e8f057",
+      "Author": "Prekshith D J (Persistent Systems Inc)",
+      "Date": "Thu Jan 1 13:34:22 2026 +0530",
+      "Message": "Updated",
+      "LinesAdded": 2,
+      "LinesDeleted": 2,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "c16b11f441db87c44c59ed6ceb6301945c40f55e",
+      "Author": "Prekshith D J (Persistent Systems Inc)",
+      "Date": "Thu Jan 1 13:29:53 2026 +0530",
+      "Message": "Update all the comments and structure the document properly",
+      "LinesAdded": 571,
+      "LinesDeleted": 669,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "09f0ef30bdf0e336feb29bdc1bb484d2f3b1be4e",
+      "Author": "Prekshith D J (Persistent Systems Inc)",
+      "Date": "Wed Dec 31 14:28:38 2025 +0530",
+      "Message": "remove the commented line",
+      "LinesAdded": 0,
+      "LinesDeleted": 2,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "8117d0891b1da8733e7af6b40d04561aa0bd4bd1",
+      "Author": "Prekshith D J (Persistent Systems Inc)",
+      "Date": "Wed Dec 31 14:24:30 2025 +0530",
+      "Message": "Updated the co-pilot comments",
+      "LinesAdded": 11,
+      "LinesDeleted": 6,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "ec60238658daccd8222467fe49a86fdb343975b7",
+      "Author": "Prekshith D J (Persistent Systems Inc)",
+      "Date": "Wed Dec 31 12:12:30 2025 +0530",
+      "Message": "Updated as per the comments",
+      "LinesAdded": 77,
+      "LinesDeleted": 40,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "f4dd0dbd0b76bc48dc0fca6d95ea26640339d365",
+      "Author": "Prekshith D J (Persistent Systems Inc)",
+      "Date": "Tue Dec 30 18:59:34 2025 +0530",
+      "Message": "remove the repeated content",
+      "LinesAdded": 1,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "0a4fcc9970ce586c68a4d4c09c36d190e06cdb42",
+      "Author": "Prekshith D J (Persistent Systems Inc)",
+      "Date": "Tue Dec 30 18:55:26 2025 +0530",
+      "Message": "Fixed the PR review comments",
+      "LinesAdded": 358,
+      "LinesDeleted": 8,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "97b0907f7d51f877dd2fb37253c6ec0388a68033",
+      "Author": "Prekshith D J (Persistent Systems Inc)",
+      "Date": "Mon Dec 29 12:20:19 2025 +0530",
+      "Message": "Fix the copilot review comments",
+      "LinesAdded": 7,
+      "LinesDeleted": 12,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "9ea833b2edb6ca7caac9e0b6dd496bea82a32a61",
+      "Author": "Harmanpreet-Microsoft",
+      "Date": "Wed Dec 17 07:39:14 2025 +0000",
+      "Message": "Fix formatting issue in CI workflow by removing leading space in path",
+      "LinesAdded": 1,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "c9c92b9e171e7a491f790d730d6f66f8b279da43",
+      "Author": "Harmanpreet-Microsoft",
+      "Date": "Wed Dec 17 07:33:22 2025 +0000",
+      "Message": "Update CI workflow to include additional paths for deployment and analysis",
+      "LinesAdded": 3,
+      "LinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "10861a0d1aae86220b282ee6b21dc2bfc9b07e4d",
+      "Author": "Harmanpreet-Microsoft",
+      "Date": "Wed Dec 17 07:25:44 2025 +0000",
+      "Message": "Update CI and CodeQL workflows to include additional paths for deployment and analysis",
+      "LinesAdded": 23,
+      "LinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "e8007cbe0a51a6a6fed0530ce834b975cb793f9e",
+      "Author": "Prekshith D J (Persistent Systems Inc)",
+      "Date": "Fri Dec 12 13:20:15 2025 +0530",
+      "Message": "Updated the local setup guide",
+      "LinesAdded": 257,
+      "LinesDeleted": 13,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "0a99754af70b575144f313f832585c710dc5959c",
+      "Author": "Kingshuk-Microsoft",
+      "Date": "Thu Dec 4 13:22:58 2025 +0530",
+      "Message": "Add section for configuring deployment settings in Deployment Guide",
+      "LinesAdded": 4,
+      "LinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "7d39ee80aa6b77d5b25a5e05bedda28dfd7d5b18",
+      "Author": "Kingshuk-Microsoft",
+      "Date": "Thu Dec 4 12:47:46 2025 +0530",
+      "Message": "Fix link to Azure Account Setup in documentation",
+      "LinesAdded": 2,
+      "LinesDeleted": 2,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "fa02e6bc2bf14aa668fba79605ea970d78a065c0",
+      "Author": "Kingshuk-Microsoft",
+      "Date": "Thu Dec 4 12:43:17 2025 +0530",
+      "Message": "Fix Azure Account Setup link in README and add log analytics images for documentation",
+      "LinesAdded": 1,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "0a9d7d727b1d704cc828b85235335e1c1a2377db",
+      "Author": "Kingshuk-Microsoft",
+      "Date": "Thu Dec 4 12:22:32 2025 +0530",
+      "Message": "Update documentation and add new guides for Azure deployment, including resource deletion and log analytics workspace reuse",
+      "LinesAdded": 489,
+      "LinesDeleted": 171,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "1185dde2541b34083808786b6d775b1862e3a247",
+      "Author": "Ayaz-Microsoft",
+      "Date": "Thu Dec 4 11:56:47 2025 +0530",
+      "Message": "Add troubleshooting guide and related images for Azure deployment errors",
+      "LinesAdded": 609,
+      "LinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "615ea8d3c0b798073171525443a6960d7d384502",
+      "Author": "copilot-swe-agent[bot]",
+      "Date": "Tue Dec 2 07:05:31 2025 +0000",
+      "Message": "Add dgp10801 to CODEOWNERS file",
+      "LinesAdded": 1,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "4462d8a2fcac1c8e1582d99ac2f79595f6942f75",
+      "Author": "copilot-swe-agent[bot]",
+      "Date": "Tue Dec 2 07:02:39 2025 +0000",
+      "Message": "Initial plan",
+      "LinesAdded": 0,
+      "LinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "cebb087c884516c4871842215f8c49fd14cb6edf",
+      "Author": "Atulku-Microsoft",
+      "Date": "Mon Dec 1 15:49:12 2025 +0530",
+      "Message": "Fix image reference in SampleQuestions.md",
+      "LinesAdded": 1,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "107d759715e85d682940c56c545a45e2278ce8ce",
+      "Author": "Atulku-Microsoft",
+      "Date": "Mon Dec 1 15:48:48 2025 +0530",
+      "Message": "Rename dkm_housting.png to dkm_housing.png",
+      "LinesAdded": 0,
+      "LinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    }
+  ],
+  "TierDistribution": {
+    "Tier1_Definitive": 0,
+    "Tier5_Low": 0,
+    "Tier3_High": 0,
+    "Human": 36,
+    "Tier2_VeryHigh": 0,
+    "Tier4_Moderate": 0
+  },
+  "Metadata": {
+    "GeneratedAt": "2026-01-22 07:08:13",
+    "IncludeTestFiles": false,
+    "GeneratedBy": "Copilot Usage Report Tool v2.0",
+    "ScriptVersion": "2.0.0",
+    "AnalysisMethod": "5-Tier Weighted Pattern Detection",
+    "PowerShellVersion": "7.4.13"
+  },
+  "ApplicationName": "DKM",
+  "Users": [
+    {
+      "UserName": "Ayaz-Microsoft",
+      "UserEmail": "v-ayazkhan@microsoft.com",
+      "TotalCommits": 1,
+      "AICommits": 0,
+      "HumanCommits": 1,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 609,
+      "HumanLinesDeleted": 0,
+      "TotalLinesAdded": 609,
+      "TotalLinesDeleted": 0,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Harmanpreet-Microsoft",
+      "UserEmail": "v-harmanprka@microsoft.com",
+      "TotalCommits": 3,
+      "AICommits": 0,
+      "HumanCommits": 3,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 27,
+      "HumanLinesDeleted": 1,
+      "TotalLinesAdded": 27,
+      "TotalLinesDeleted": 1,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Prajwal D C",
+      "UserEmail": "v-dcprajwal@microsoft.com",
+      "TotalCommits": 1,
+      "AICommits": 0,
+      "HumanCommits": 1,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 6,
+      "HumanLinesDeleted": 6,
+      "TotalLinesAdded": 6,
+      "TotalLinesDeleted": 6,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Prekshith D J (Persistent Systems Inc)",
+      "UserEmail": "v-pdj@microsoft.com",
+      "TotalCommits": 22,
+      "AICommits": 0,
+      "HumanCommits": 22,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 1551,
+      "HumanLinesDeleted": 1051,
+      "TotalLinesAdded": 1551,
+      "TotalLinesDeleted": 1051,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "copilot-swe-agent[bot]",
+      "UserEmail": "198982749+Copilot@users.noreply.github.com",
+      "TotalCommits": 2,
+      "AICommits": 0,
+      "HumanCommits": 2,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 1,
+      "HumanLinesDeleted": 1,
+      "TotalLinesAdded": 1,
+      "TotalLinesDeleted": 1,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Kingshuk-Microsoft",
+      "UserEmail": "v-kidatta@microsoft.com",
+      "TotalCommits": 4,
+      "AICommits": 0,
+      "HumanCommits": 4,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 496,
+      "HumanLinesDeleted": 174,
+      "TotalLinesAdded": 496,
+      "TotalLinesDeleted": 174,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Venkateswarlu Marthula",
+      "UserEmail": "v-vemarthula@microsoft.com",
+      "TotalCommits": 1,
+      "AICommits": 0,
+      "HumanCommits": 1,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 2005,
+      "HumanLinesDeleted": 6,
+      "TotalLinesAdded": 2005,
+      "TotalLinesDeleted": 6,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Atulku-Microsoft",
+      "UserEmail": "v-atulku@microsoft.com",
+      "TotalCommits": 2,
+      "AICommits": 0,
+      "HumanCommits": 2,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 1,
+      "HumanLinesDeleted": 1,
+      "TotalLinesAdded": 1,
+      "TotalLinesDeleted": 1,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    }
+  ]
+}

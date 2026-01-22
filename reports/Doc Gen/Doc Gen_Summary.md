@@ -2,8 +2,8 @@
 
 > Consolidated analysis across all branches using 5-Tier AI Detection Model
 
-**Generated:** 2026-01-21 15:39:12  
-**Analysis Period:** 2026-01-01 to 2026-01-31
+**Generated:** 2026-01-22 07:08:44  
+**Analysis Period:** 2025-12-01 to 2026-01-31
 
 ---
 
@@ -13,7 +13,7 @@
 |--------|-------|
 | **Application** | Doc Gen |
 | **Branches Analyzed** | 1 |
-| **Total Contributors** | 5 |
+| **Total Contributors** | 12 |
 | **Overall AI Usage** | **0%** |
 
 ---
@@ -25,8 +25,8 @@
 | Category | Lines | Percentage | Commits |
 |----------|-------|------------|---------|
 | **AI-Assisted** | 0 | 0% | 0 |
-| **Human-Written** | 25150 | 100% | 16 |
-| **Total** | 25150 | 100% | 16 |
+| **Human-Written** | 28575 | 100% | 51 |
+| **Total** | 28575 | 100% | 51 |
 
 ### Visual Summary
 
@@ -46,7 +46,7 @@ Human-Written: ████████████████████ 100%
 | **Tier 3** | 80-89% | High confidence | 0 | 0% |
 | **Tier 4** | 70-79% | Moderate confidence | 0 | 0% |
 | **Tier 5** | 60-69% | Low confidence | 0 | 0% |
-| **Human** | <60% | No AI detected | 16 | 100% |
+| **Human** | <60% | No AI detected | 51 | 100% |
 
 ---
 
@@ -54,7 +54,7 @@ Human-Written: ████████████████████ 100%
 
 | Branch | Commits | AI Commits | AI Lines | AI % | T1 | T2 | T3 | T4 | T5 | Contributors |
 |--------|---------|------------|----------|------|----|----|----|----|-----|--------------|
-| **dev** | 16 | 0 |  | 0% | 0 | 0 | 0 | 0 | 0 | 5 |
+| **dev** | 51 | 0 |  | 0% | 0 | 0 | 0 | 0 | 0 | 12 |
 
 ---
 
