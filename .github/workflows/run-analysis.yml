@@ -187,8 +187,8 @@ jobs:
           if [ -f "$DASHBOARD" ]; then
             echo "📊 Updating dashboard to show no data state..."
             
-            # Use sed to clear REPORT_CONFIG archivedReports array
-            sed -i 's/archivedReports: \[.*\]/archivedReports: []/g' "$DASHBOARD"
+            # Use perl for multi-line regex - clear archivedReports array
+            perl -i -0pe 's/archivedReports:\s*\[[\s\S]*?\],/archivedReports: [],/g' "$DASHBOARD"
             
             # Use sed to clear latestReport
             sed -i 's/latestReport: "[^"]*"/latestReport: ""/g' "$DASHBOARD"
@@ -196,10 +196,14 @@ jobs:
             # Update lastUpdated timestamp
             sed -i "s/lastUpdated: \"[^\"]*\"/lastUpdated: \"$TIMESTAMP\"/g" "$DASHBOARD"
             
-            # For EMBEDDED_DATA, we need a more robust approach - use perl
-            perl -i -0pe 's/const EMBEDDED_DATA = \{[\s\S]*?\n\s*\]\s*\n\s*\};/const EMBEDDED_DATA = null;/g' "$DASHBOARD" || true
+            # For EMBEDDED_DATA, set to null using perl for multi-line
+            perl -i -0pe 's/const EMBEDDED_DATA = \{[\s\S]*?\};/const EMBEDDED_DATA = null;/g' "$DASHBOARD" || true
             
-            echo "✅ Dashboard updated"
+            echo "✅ Dashboard updated to show no data"
+            
+            # Verify the update
+            echo "--- Verifying REPORT_CONFIG ---"
+            grep -A5 "const REPORT_CONFIG" "$DASHBOARD" | head -10
           else
             echo "⚠️ Dashboard not found at $DASHBOARD"
           fi

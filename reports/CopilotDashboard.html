@@ -17978,6 +17978,33 @@
             return { owner: 'Ravikirana-Microsoft', repo: 'copilot-usage-report' };
         }
 
+        function getBasePath() {
+            // Determine the base path for fetching resources
+            const hostname = window.location.hostname;
+            const pathname = window.location.pathname;
+            
+            // For GitHub Pages: https://username.github.io/repo/reports/CopilotDashboard.html
+            if (hostname.endsWith('.github.io')) {
+                const pathParts = pathname.split('/').filter(p => p);
+                // Path format: /repo/reports/CopilotDashboard.html OR /repo/CopilotDashboard.html
+                // We need to get to /repo/ level for fetching
+                if (pathParts.length >= 1) {
+                    const repoName = pathParts[0];
+                    return `/${repoName}/`;
+                }
+                return '/';
+            }
+            
+            // For local development or other hosting
+            // If we're in /reports/, go up one level
+            if (pathname.includes('/reports/')) {
+                return pathname.substring(0, pathname.lastIndexOf('/reports/') + 1);
+            }
+            
+            // Default: assume resources are relative to current directory
+            return './';
+        }
+
         // Allow manual repo configuration
         // window.GITHUB_REPO_CONFIG = { owner: 'your-org', repo: 'your-repo' };
 
