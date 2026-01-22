@@ -1,7 +1,11 @@
 # Batch Analysis Summary - 5-Tier Model
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 **Analysis Date:** 2026-01-22 15:50:57  
+=======
+**Analysis Date:** 2026-01-22 15:57:00  
+>>>>>>> Stashed changes
 **Period:** 2025-11-01 to 2025-11-30
 =======
 **Analysis Date:** 2026-01-22 15:52:32  
@@ -51,6 +55,7 @@
 
 | Application | Branch | Commits | AI Commits | AI Lines | AI % | T1 | T2 | T3 | T4 | T5 | Contributors |
 |-------------|--------|---------|------------|----------|------|----|----|----|----|-----|--------------|
+<<<<<<< Updated upstream
 | MACAE v4 | main | 128 | 2 | 348 | 0.63% | 0 | 0 | 1 | 0 | 1 | 19 |
 | BYOCC | dev | 50 | 7 | 11690 | 86.06% | 0 | 5 | 1 | 0 | 1 | 8 |
 | Deploy your AI application | main | 14 | 0 |  | 0% | 0 | 0 | 0 | 0 | 0 | 5 |
@@ -64,6 +69,21 @@
 | Container Migration | dev | 36 | 0 |  | 0% | 0 | 0 | 0 | 0 | 0 | 6 |
 | BYOC | dev | 8 | 2 | 2 | 0.18% | 2 | 0 | 0 | 0 | 0 | 3 |
 | MAAG | dev | 3 | 0 |  | 0% | 0 | 0 | 0 | 0 | 0 | 2 |
+=======
+| MACAE v4 | main | 118 | 14 | 3870 | 6.92% | 3 | 0 | 1 | 6 | 4 | 18 |
+| RTI | main | 16 | 6 | 278865 | 99.54% | 0 | 1 | 1 | 1 | 3 | 4 |
+| BYOCC | dev | 47 | 1 | 5437 | 71.9% | 0 | 0 | 0 | 0 | 1 | 8 |
+| Fabric SQL | dev | 63 | 4 | 3416 | 10.42% | 0 | 1 | 0 | 1 | 2 | 8 |
+| Doc Gen | dev | 57 | 0 |  | 0% | 0 | 0 | 0 | 0 | 0 | 16 |
+| BYOC | dev | 53 | 3 | 179 | 5.12% | 0 | 2 | 0 | 0 | 1 | 13 |
+| Content Processing | dev | 75 | 7 | 210 | 0.76% | 5 | 1 | 1 | 0 | 0 | 15 |
+| Code Modernization | dev | 48 | 3 | 3 | 0.02% | 3 | 0 | 0 | 0 | 0 | 12 |
+| CWYD | dev | 20 | 0 |  | 0% | 0 | 0 | 0 | 0 | 0 | 10 |
+| Container Migration | dev | 39 | 4 | 307 | 0.48% | 3 | 0 | 0 | 1 | 0 | 12 |
+| Deploy your AI application | main | 13 | 0 |  | 0% | 0 | 0 | 0 | 0 | 0 | 5 |
+| MAAG | dev | 28 | 3 | 3 | 0.4% | 3 | 0 | 0 | 0 | 0 | 7 |
+| DKM | dev | 11 | 0 |  | 0% | 0 | 0 | 0 | 0 | 0 | 5 |
+>>>>>>> Stashed changes
 
 ---
 
@@ -71,6 +91,7 @@
 
 | Application | Branch | Status | Timestamp |
 |-------------|--------|--------|-----------|
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 | MACAE v4 | main | ✓ Success | 2026-01-22 15:50:57 |
 | RTI | main | ✓ Success | 2026-01-22 15:50:57 |
@@ -99,6 +120,21 @@
 | Container Migration | dev | ✓ Success | 2026-01-22 15:52:32 |
 | BYOC | dev | ✓ Success | 2026-01-22 15:52:32 |
 | MAAG | dev | ✓ Success | 2026-01-22 15:52:32 |
+>>>>>>> Stashed changes
+=======
+| MACAE v4 | main | ✓ Success | 2026-01-22 15:57:00 |
+| RTI | main | ✓ Success | 2026-01-22 15:57:00 |
+| BYOCC | dev | ✓ Success | 2026-01-22 15:57:00 |
+| Fabric SQL | dev | ✓ Success | 2026-01-22 15:57:00 |
+| Doc Gen | dev | ✓ Success | 2026-01-22 15:57:00 |
+| BYOC | dev | ✓ Success | 2026-01-22 15:57:00 |
+| Content Processing | dev | ✓ Success | 2026-01-22 15:57:00 |
+| Code Modernization | dev | ✓ Success | 2026-01-22 15:57:00 |
+| CWYD | dev | ✓ Success | 2026-01-22 15:57:00 |
+| Container Migration | dev | ✓ Success | 2026-01-22 15:57:00 |
+| Deploy your AI application | main | ✓ Success | 2026-01-22 15:57:00 |
+| MAAG | dev | ✓ Success | 2026-01-22 15:57:00 |
+| DKM | dev | ✓ Success | 2026-01-22 15:57:00 |
 >>>>>>> Stashed changes
 
 ---
