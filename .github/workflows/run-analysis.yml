@@ -189,12 +189,11 @@ jobs:
             echo "📊 Updating dashboard to show no data state..."
             
             # Use Python to update REPORT_CONFIG and EMBEDDED_DATA
-            python3 << PYTHON_SCRIPT
+            python3 -c "
 import re
-import os
 
-dashboard_path = "reports/CopilotDashboard.html"
-timestamp = "$TIMESTAMP"
+dashboard_path = 'reports/CopilotDashboard.html'
+timestamp = '$TIMESTAMP'
 
 with open(dashboard_path, 'r', encoding='utf-8') as f:
     content = f.read()
@@ -202,30 +201,24 @@ with open(dashboard_path, 'r', encoding='utf-8') as f:
 # Update REPORT_CONFIG to empty state
 new_config = '''const REPORT_CONFIG = {
             // Latest report path (auto-updated)
-            latestReport: "",
+            latestReport: \"\",
             
             // Available archived reports (auto-updated)
             archivedReports: [],
             
             // Last updated timestamp
-            lastUpdated: "''' + timestamp + '''"
+            lastUpdated: \"''' + timestamp + '''\"
         };'''
 
 # Replace REPORT_CONFIG block using a more robust pattern
 config_pattern = r'const REPORT_CONFIG = \{[\s\S]*?lastUpdated:[\s\S]*?\};'
 content = re.sub(config_pattern, new_config, content, count=1)
 
-# Update EMBEDDED_DATA to null
-embedded_pattern = r'const EMBEDDED_DATA = \{[\s\S]*?\n  \]\n\};'
-content = re.sub(embedded_pattern, 'const EMBEDDED_DATA = null;', content, count=1)
-
-# Also try alternative pattern if first doesn't match
+# Update EMBEDDED_DATA to null - find and replace the entire object
 if 'const EMBEDDED_DATA = {' in content:
-    # Find and replace the entire EMBEDDED_DATA object
     start_marker = 'const EMBEDDED_DATA = {'
     start_idx = content.find(start_marker)
     if start_idx != -1:
-        # Find the matching closing brace
         brace_count = 0
         end_idx = start_idx
         for i, char in enumerate(content[start_idx:], start_idx):
@@ -236,7 +229,6 @@ if 'const EMBEDDED_DATA = {' in content:
                 if brace_count == 0:
                     end_idx = i + 1
                     break
-        # Find the semicolon after closing brace
         while end_idx < len(content) and content[end_idx] in ' \n\t':
             end_idx += 1
         if end_idx < len(content) and content[end_idx] == ';':
@@ -246,8 +238,8 @@ if 'const EMBEDDED_DATA = {' in content:
 with open(dashboard_path, 'w', encoding='utf-8') as f:
     f.write(content)
 
-print("✅ Dashboard REPORT_CONFIG and EMBEDDED_DATA cleared")
-PYTHON_SCRIPT
+print('✅ Dashboard REPORT_CONFIG and EMBEDDED_DATA cleared')
+"
             
           else
             echo "⚠️ Dashboard not found at $DASHBOARD"
