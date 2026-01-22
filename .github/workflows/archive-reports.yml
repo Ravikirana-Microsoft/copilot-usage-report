@@ -74,37 +74,32 @@ jobs:
             REPORTS_LIST="$REPORTS_LIST\"$(basename $f)\""
           done
           
-          # Create archive metadata
+          # Create archive metadata (properly formatted JSON)
           cat > "$ARCHIVE_DIR/archive-info.json" << EOF
-          {
-            "name": "$ARCHIVE_NAME",
-            "description": "$DESCRIPTION",
-            "createdAt": "$TIMESTAMP",
-            "reportCount": $REPORT_COUNT,
-            "reports": [$REPORTS_LIST],
-            "createdBy": "${{ github.actor }}"
-          }
-          EOF
+{"name":"$ARCHIVE_NAME","description":"$DESCRIPTION","createdAt":"$TIMESTAMP","reportCount":$REPORT_COUNT,"reports":[$REPORTS_LIST],"createdBy":"${{ github.actor }}"}
+EOF
           
           echo "✅ Archive bundle created with $REPORT_COUNT reports"
           ls -la "$ARCHIVE_DIR/"
           ls -la "$ARCHIVE_DIR/consolidated/"
 
-      - name: Clear Current Reports (Keep latest only)
+      - name: Clear ALL Current Reports
         run: |
-          # Keep only the latest consolidated report after archiving
-          LATEST=$(ls -t reports/consolidated/ConsolidatedReport_*.json 2>/dev/null | head -1)
+          echo "🗑️ Clearing ALL current reports after archiving..."
           
-          if [ -n "$LATEST" ]; then
-            echo "📋 Keeping latest report: $(basename $LATEST)"
-            # Remove all except latest
-            for f in reports/consolidated/ConsolidatedReport_*.json; do
-              if [ "$f" != "$LATEST" ]; then
-                rm "$f"
-                echo "  Removed: $(basename $f)"
-              fi
-            done
-          fi
+          # Remove ALL consolidated reports
+          rm -f reports/consolidated/ConsolidatedReport_*.json
+          rm -f reports/consolidated/*.json
+          
+          # Clear summary files
+          rm -f reports/Batch-Analysis-Summary.csv
+          rm -f reports/Batch-Analysis-Summary.md
+          rm -f reports/Branch-Level-Summary_*.csv
+          rm -f reports/Consolidated-Analysis_*.json
+          
+          echo "✅ All current reports cleared"
+          echo "📋 Remaining in consolidated:"
+          ls -la reports/consolidated/ 2>/dev/null || echo "  (empty)"
 
       - name: Update Archive Index
         run: |
