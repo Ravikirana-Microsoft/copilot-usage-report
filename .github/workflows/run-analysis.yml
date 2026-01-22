@@ -149,16 +149,14 @@ jobs:
           fi
           
           # Create archive metadata
-          cat > "$ARCHIVE_DIR/archive-info.json" << EOF
-{
-  "name": "$ARCHIVE_NAME",
-  "description": "$DESCRIPTION",
-  "createdAt": "$TIMESTAMP",
-  "reportCount": $REPORT_COUNT,
-  "reports": $REPORTS_LIST,
-  "createdBy": "${{ github.actor }}"
-}
-EOF
+          echo "{" > "$ARCHIVE_DIR/archive-info.json"
+          echo "  \"name\": \"$ARCHIVE_NAME\"," >> "$ARCHIVE_DIR/archive-info.json"
+          echo "  \"description\": \"$DESCRIPTION\"," >> "$ARCHIVE_DIR/archive-info.json"
+          echo "  \"createdAt\": \"$TIMESTAMP\"," >> "$ARCHIVE_DIR/archive-info.json"
+          echo "  \"reportCount\": $REPORT_COUNT," >> "$ARCHIVE_DIR/archive-info.json"
+          echo "  \"reports\": $REPORTS_LIST," >> "$ARCHIVE_DIR/archive-info.json"
+          echo "  \"createdBy\": \"${{ github.actor }}\"" >> "$ARCHIVE_DIR/archive-info.json"
+          echo "}" >> "$ARCHIVE_DIR/archive-info.json"
           
           echo "✅ Archive created: $ARCHIVE_DIR"
           ls -la "$ARCHIVE_DIR/"
