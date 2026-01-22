@@ -1,0 +1,280 @@
+{
+  "Branch": "dev",
+  "Users": [
+    {
+      "UserName": "Saswato-Microsoft",
+      "UserEmail": "v-saswatoc@microsoft.com",
+      "TotalCommits": 1,
+      "AICommits": 0,
+      "HumanCommits": 1,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 1,
+      "HumanLinesDeleted": 1,
+      "TotalLinesAdded": 1,
+      "TotalLinesDeleted": 1,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "copilot-swe-agent[bot]",
+      "UserEmail": "198982749+Copilot@users.noreply.github.com",
+      "TotalCommits": 2,
+      "AICommits": 0,
+      "HumanCommits": 2,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 1,
+      "HumanLinesDeleted": 1,
+      "TotalLinesAdded": 1,
+      "TotalLinesDeleted": 1,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    }
+  ],
+  "FileTypeBreakdown": [
+    {
+      "Extension": "csv",
+      "TotalLines": 259674,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 387
+    },
+    {
+      "Extension": "json",
+      "TotalLines": 135864,
+      "AILines": 33,
+      "AIPercentage": 0.02,
+      "FileCount": 52
+    },
+    {
+      "Extension": "ipynb",
+      "TotalLines": 59529,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 801
+    },
+    {
+      "Extension": "md",
+      "TotalLines": 19643,
+      "AILines": 231,
+      "AIPercentage": 1.18,
+      "FileCount": 580
+    },
+    {
+      "Extension": "py",
+      "TotalLines": 14552,
+      "AILines": 7239,
+      "AIPercentage": 49.75,
+      "FileCount": 83
+    },
+    {
+      "Extension": "ps1",
+      "TotalLines": 3981,
+      "AILines": 2073,
+      "AIPercentage": 52.07,
+      "FileCount": 36
+    },
+    {
+      "Extension": "sh",
+      "TotalLines": 3613,
+      "AILines": 354,
+      "AIPercentage": 9.8,
+      "FileCount": 76
+    },
+    {
+      "Extension": "yml",
+      "TotalLines": 1986,
+      "AILines": 684,
+      "AIPercentage": 34.44,
+      "FileCount": 72
+    },
+    {
+      "Extension": "gitignore",
+      "TotalLines": 1612,
+      "AILines": 3,
+      "AIPercentage": 0.19,
+      "FileCount": 16
+    },
+    {
+      "Extension": "bicep",
+      "TotalLines": 924,
+      "AILines": 24,
+      "AIPercentage": 2.6,
+      "FileCount": 36
+    },
+    {
+      "Extension": "txt",
+      "TotalLines": 329,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 43
+    },
+    {
+      "Extension": "dockerignore",
+      "TotalLines": 282,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 3
+    },
+    {
+      "Extension": "yaml",
+      "TotalLines": 204,
+      "AILines": 45,
+      "AIPercentage": 22.06,
+      "FileCount": 36
+    },
+    {
+      "Extension": "other",
+      "TotalLines": 147,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 7
+    },
+    {
+      "Extension": "sql",
+      "TotalLines": 138,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 9
+    },
+    {
+      "Extension": "ps1}",
+      "TotalLines": 39,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 6
+    },
+    {
+      "Extension": "env",
+      "TotalLines": 28,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 4
+    },
+    {
+      "Extension": "github/psl-codeowners",
+      "TotalLines": 27,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 3
+    },
+    {
+      "Extension": "github/codeowners",
+      "TotalLines": 15,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 15
+    },
+    {
+      "Extension": "yml}",
+      "TotalLines": 6,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 3
+    },
+    {
+      "Extension": "png",
+      "TotalLines": 3,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 367
+    }
+  ],
+  "TierDistribution": {
+    "Tier4_Moderate": 0,
+    "Tier2_VeryHigh": 0,
+    "Human": 3,
+    "Tier5_Low": 0,
+    "Tier3_High": 0,
+    "Tier1_Definitive": 0
+  },
+  "AnalysisPeriod": {
+    "FilterApplied": true,
+    "EndDate": "2025-12-31",
+    "StartDate": "2025-12-01"
+  },
+  "Metadata": {
+    "GeneratedAt": "2026-01-22 10:53:47",
+    "ScriptVersion": "2.0.0",
+    "IncludeTestFiles": false,
+    "PowerShellVersion": "7.4.13",
+    "GeneratedBy": "Copilot Usage Report Tool v2.0",
+    "AnalysisMethod": "5-Tier Weighted Pattern Detection"
+  },
+  "ApplicationName": "MAAG",
+  "Commits": [
+    {
+      "Hash": "24a6902eb06cb5aff5149b6d2605f3c04af341ba",
+      "Author": "Saswato-Microsoft",
+      "Date": "Thu Dec 4 14:04:40 2025 +0530",
+      "Message": "Update azure-core version to 1.30.0 in requirements.txt",
+      "LinesAdded": 1,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "06d6d48fdac2e3b3499cddb016e79eaacd3f955c",
+      "Author": "copilot-swe-agent[bot]",
+      "Date": "Tue Dec 2 07:31:41 2025 +0000",
+      "Message": "Add Daniel Poku (dgp10801) to CODEOWNERS",
+      "LinesAdded": 1,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "38942897c1e4bc80cedf3dcc9bec0313df4d6ff3",
+      "Author": "copilot-swe-agent[bot]",
+      "Date": "Tue Dec 2 07:29:37 2025 +0000",
+      "Message": "Initial plan",
+      "LinesAdded": 0,
+      "LinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    }
+  ],
+  "BranchStatistics": {
+    "Branch": "dev",
+    "TotalCommits": 3,
+    "AICommits": 0,
+    "HumanCommits": 3,
+    "TotalLinesAdded": 2.0,
+    "TotalLinesDeleted": 2.0,
+    "AILinesAdded": null,
+    "AILinesDeleted": null,
+    "Tier1Commits": 0,
+    "Tier2Commits": 0,
+    "Tier3Commits": 0,
+    "Tier4Commits": 0,
+    "Tier5Commits": 0,
+    "UniqueContributors": 2,
+    "AIPercentage": 0.0,
+    "HumanLinesAdded": 2.0
+  },
+  "AIAttributionOverride": {
+    "Notes": null,
+    "OverridePercentage": null,
+    "Applied": false
+  },
+  "GeneratedAt": "2026-01-22 10:53:47"
+}
