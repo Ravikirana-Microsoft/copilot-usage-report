@@ -1,4 +1,5 @@
 # Archive workflow - bundles all reports into named archives
+# Updated: Force GitHub to re-parse workflow triggers
 name: Archive Reports
 
 on:
