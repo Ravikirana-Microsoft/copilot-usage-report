@@ -13653,7 +13653,7 @@
 
             try {
                 // Call GitHub API to trigger archive workflow
-                const response = await fetch(`https://api.github.com/repos/${repoInfo.owner}/${repoInfo.repo}/actions/workflows/create-archive.yml/dispatches`, {
+                const response = await fetch(`https://api.github.com/repos/${repoInfo.owner}/${repoInfo.repo}/actions/workflows/bundle-archive.yml/dispatches`, {
                     method: 'POST',
                     headers: {
                         'Authorization': `Bearer ${token}`,
@@ -13674,7 +13674,7 @@
                     // Refresh archives list after a delay
                     setTimeout(loadAvailableArchives, 3000);
                 } else if (response.status === 404) {
-                    showArchiveStatus('error', '❌ Archive workflow not found. Make sure "create-archive.yml" exists in .github/workflows/');
+                    showArchiveStatus('error', '❌ Archive workflow not found. Make sure "bundle-archive.yml" exists in .github/workflows/');
                 } else if (response.status === 401) {
                     showArchiveStatus('error', '❌ Unauthorized. Check your token.');
                 } else if (response.status === 422) {
