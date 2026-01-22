@@ -2,8 +2,8 @@
 
 > Consolidated analysis across all branches using 5-Tier AI Detection Model
 
-**Generated:** 2026-01-22 11:46:58  
-**Analysis Period:** 2025-11-01 to 2025-11-30
+**Generated:** 2026-01-22 11:50:21  
+**Analysis Period:** 2025-10-01 to 2025-10-31
 
 ---
 
@@ -13,8 +13,8 @@
 |--------|-------|
 | **Application** | CWYD |
 | **Branches Analyzed** | 1 |
-| **Total Contributors** | 10 |
-| **Overall AI Usage** | **0%** |
+| **Total Contributors** | 9 |
+| **Overall AI Usage** | **0.36%** |
 
 ---
 
@@ -24,15 +24,15 @@
 
 | Category | Lines | Percentage | Commits |
 |----------|-------|------------|---------|
-| **AI-Assisted** | 0 | 0% | 0 |
-| **Human-Written** | 19750 | 100% | 20 |
-| **Total** | 19750 | 100% | 20 |
+| **AI-Assisted** | 69 | 0.36% | 1 |
+| **Human-Written** | 19066 | 99.64% | 10 |
+| **Total** | 19135 | 100% | 11 |
 
 ### Visual Summary
 
 ```
-AI-Assisted:   ░░░░░░░░░░░░░░░░░░░░ 0%
-Human-Written: ████████████████████ 100%
+AI-Assisted:   ░░░░░░░░░░░░░░░░░░░░ 0.36%
+Human-Written: ███████████████████░ 99.64%
 ```
 
 ---
@@ -45,8 +45,8 @@ Human-Written: ████████████████████ 100%
 | **Tier 2** | 90-98% | Very high confidence | 0 | 0% |
 | **Tier 3** | 80-89% | High confidence | 0 | 0% |
 | **Tier 4** | 70-79% | Moderate confidence | 0 | 0% |
-| **Tier 5** | 60-69% | Low confidence | 0 | 0% |
-| **Human** | <60% | No AI detected | 20 | 100% |
+| **Tier 5** | 60-69% | Low confidence | 1 | 100% |
+| **Human** | <60% | No AI detected | 10 | 90.9% |
 
 ---
 
@@ -54,20 +54,20 @@ Human-Written: ████████████████████ 100%
 
 | Branch | Commits | AI Commits | AI Lines | AI % | T1 | T2 | T3 | T4 | T5 | Contributors |
 |--------|---------|------------|----------|------|----|----|----|----|-----|--------------|
-| **dev** | 20 | 0 |  | 0% | 0 | 0 | 0 | 0 | 0 | 10 |
+| **dev** | 11 | 1 | 69 | 0.36% | 0 | 0 | 0 | 0 | 1 | 9 |
 
 ---
 
 ## Branch Reports
 
-- **dev**: [dev/](dev/) - AI: 0%
+- **dev**: [dev/](dev/) - AI: 0.36%
 
 ---
 
 ## Key Insights
 
 ### Human-Centric Development
-This application is **primarily human-written** with only 0% AI-assisted code.
+This application is **primarily human-written** with only 0.36% AI-assisted code.
 - Most commits are traditional human development
 - AI tools used selectively or minimally
 

@@ -2,8 +2,8 @@
 
 > Consolidated analysis across all branches using 5-Tier AI Detection Model
 
-**Generated:** 2026-01-22 11:46:58  
-**Analysis Period:** 2025-11-01 to 2025-11-30
+**Generated:** 2026-01-22 11:50:21  
+**Analysis Period:** 2025-10-01 to 2025-10-31
 
 ---
 
@@ -13,8 +13,8 @@
 |--------|-------|
 | **Application** | Fabric SQL |
 | **Branches Analyzed** | 1 |
-| **Total Contributors** | 8 |
-| **Overall AI Usage** | **10.42%** |
+| **Total Contributors** | 10 |
+| **Overall AI Usage** | **51.14%** |
 
 ---
 
@@ -24,15 +24,15 @@
 
 | Category | Lines | Percentage | Commits |
 |----------|-------|------------|---------|
-| **AI-Assisted** | 3416 | 10.42% | 4 |
-| **Human-Written** | 29366 | 89.58% | 59 |
-| **Total** | 32782 | 100% | 63 |
+| **AI-Assisted** | 10004 | 51.14% | 11 |
+| **Human-Written** | 9559 | 48.86% | 68 |
+| **Total** | 19563 | 100% | 79 |
 
 ### Visual Summary
 
 ```
-AI-Assisted:   ██░░░░░░░░░░░░░░░░░░ 10.42%
-Human-Written: █████████████████░░░ 89.58%
+AI-Assisted:   ██████████░░░░░░░░░░ 51.14%
+Human-Written: █████████░░░░░░░░░░░ 48.86%
 ```
 
 ---
@@ -42,11 +42,11 @@ Human-Written: █████████████████░░░ 89.5
 | Tier | Confidence | Description | Commits | Percentage |
 |------|------------|-------------|---------|------------|
 | **Tier 1** | 99-100% | Definitive AI markers | 0 | 0% |
-| **Tier 2** | 90-98% | Very high confidence | 1 | 25% |
-| **Tier 3** | 80-89% | High confidence | 0 | 0% |
-| **Tier 4** | 70-79% | Moderate confidence | 1 | 25% |
-| **Tier 5** | 60-69% | Low confidence | 2 | 50% |
-| **Human** | <60% | No AI detected | 59 | 93.7% |
+| **Tier 2** | 90-98% | Very high confidence | 2 | 18.2% |
+| **Tier 3** | 80-89% | High confidence | 2 | 18.2% |
+| **Tier 4** | 70-79% | Moderate confidence | 2 | 18.2% |
+| **Tier 5** | 60-69% | Low confidence | 5 | 45.5% |
+| **Human** | <60% | No AI detected | 68 | 86.1% |
 
 ---
 
@@ -54,22 +54,22 @@ Human-Written: █████████████████░░░ 89.5
 
 | Branch | Commits | AI Commits | AI Lines | AI % | T1 | T2 | T3 | T4 | T5 | Contributors |
 |--------|---------|------------|----------|------|----|----|----|----|-----|--------------|
-| **dev** | 63 | 4 | 3416 | 10.42% | 0 | 1 | 0 | 1 | 2 | 8 |
+| **dev** | 79 | 11 | 10004 | 51.14% | 0 | 2 | 2 | 2 | 5 | 10 |
 
 ---
 
 ## Branch Reports
 
-- **dev**: [dev/](dev/) - AI: 10.42%
+- **dev**: [dev/](dev/) - AI: 51.14%
 
 ---
 
 ## Key Insights
 
-### Human-Centric Development
-This application is **primarily human-written** with only 10.42% AI-assisted code.
-- Most commits are traditional human development
-- AI tools used selectively or minimally
+### Balanced Development
+This application shows **balanced AI-human collaboration** with 51.14% AI-assisted code.
+- Mix of AI-assisted and human-written code
+- AI tools supplementing developer productivity
 
 ---
 

@@ -1,0 +1,200 @@
+{
+  "Metadata": {
+    "ScriptVersion": "2.0.0",
+    "PowerShellVersion": "7.4.13",
+    "AnalysisMethod": "5-Tier Weighted Pattern Detection",
+    "IncludeTestFiles": false,
+    "GeneratedBy": "Copilot Usage Report Tool v2.0",
+    "GeneratedAt": "2026-01-22 11:49:31"
+  },
+  "TierDistribution": {
+    "Human": 0,
+    "Tier4_Moderate": 0,
+    "Tier1_Definitive": 0,
+    "Tier3_High": 0,
+    "Tier2_VeryHigh": 0,
+    "Tier5_Low": 0
+  },
+  "ApplicationName": "RTI",
+  "Branch": "main",
+  "BranchStatistics": {
+    "Branch": "main",
+    "TotalCommits": 0,
+    "AICommits": 0,
+    "HumanCommits": 0,
+    "TotalLinesAdded": null,
+    "TotalLinesDeleted": null,
+    "AILinesAdded": null,
+    "AILinesDeleted": null,
+    "Tier1Commits": 0,
+    "Tier2Commits": 0,
+    "Tier3Commits": 0,
+    "Tier4Commits": 0,
+    "Tier5Commits": 0,
+    "UniqueContributors": 0,
+    "AIPercentage": 0,
+    "HumanLinesAdded": 0
+  },
+  "AIAttributionOverride": {
+    "Applied": false,
+    "Notes": null,
+    "OverridePercentage": null
+  },
+  "FileTypeBreakdown": [
+    {
+      "Extension": "csv",
+      "TotalLines": 777696,
+      "AILines": 777696,
+      "AIPercentage": 100.0,
+      "FileCount": 15
+    },
+    {
+      "Extension": "py",
+      "TotalLines": 44599,
+      "AILines": 37386,
+      "AIPercentage": 83.83,
+      "FileCount": 449
+    },
+    {
+      "Extension": "md",
+      "TotalLines": 17362,
+      "AILines": 9105,
+      "AIPercentage": 52.44,
+      "FileCount": 399
+    },
+    {
+      "Extension": "ps1",
+      "TotalLines": 14430,
+      "AILines": 14424,
+      "AIPercentage": 99.96,
+      "FileCount": 45
+    },
+    {
+      "Extension": "json",
+      "TotalLines": 10206,
+      "AILines": 3417,
+      "AIPercentage": 33.48,
+      "FileCount": 57
+    },
+    {
+      "Extension": "ipynb",
+      "TotalLines": 6264,
+      "AILines": 4074,
+      "AIPercentage": 65.04,
+      "FileCount": 30
+    },
+    {
+      "Extension": "kql",
+      "TotalLines": 4590,
+      "AILines": 4557,
+      "AIPercentage": 99.28,
+      "FileCount": 102
+    },
+    {
+      "Extension": "yml",
+      "TotalLines": 2260,
+      "AILines": 1167,
+      "AIPercentage": 51.64,
+      "FileCount": 95
+    },
+    {
+      "Extension": "gitignore",
+      "TotalLines": 1554,
+      "AILines": 45,
+      "AIPercentage": 2.9,
+      "FileCount": 9
+    },
+    {
+      "Extension": "sh",
+      "TotalLines": 549,
+      "AILines": 495,
+      "AIPercentage": 90.16,
+      "FileCount": 15
+    },
+    {
+      "Extension": "bicep",
+      "TotalLines": 423,
+      "AILines": 420,
+      "AIPercentage": 99.29,
+      "FileCount": 9
+    },
+    {
+      "Extension": "dockerignore",
+      "TotalLines": 282,
+      "AILines": 282,
+      "AIPercentage": 100.0,
+      "FileCount": 3
+    },
+    {
+      "Extension": "ps1}",
+      "TotalLines": 231,
+      "AILines": 3,
+      "AIPercentage": 1.3,
+      "FileCount": 6
+    },
+    {
+      "Extension": "txt",
+      "TotalLines": 180,
+      "AILines": 90,
+      "AIPercentage": 50.0,
+      "FileCount": 36
+    },
+    {
+      "Extension": "platform",
+      "TotalLines": 162,
+      "AILines": 144,
+      "AIPercentage": 88.89,
+      "FileCount": 27
+    },
+    {
+      "Extension": "yaml",
+      "TotalLines": 129,
+      "AILines": 96,
+      "AIPercentage": 74.42,
+      "FileCount": 21
+    },
+    {
+      "Extension": "other",
+      "TotalLines": 126,
+      "AILines": 63,
+      "AIPercentage": 50.0,
+      "FileCount": 6
+    },
+    {
+      "Extension": "flake8",
+      "TotalLines": 69,
+      "AILines": 69,
+      "AIPercentage": 100.0,
+      "FileCount": 3
+    },
+    {
+      "Extension": "github/codeowners",
+      "TotalLines": 36,
+      "AILines": 9,
+      "AIPercentage": 25.0,
+      "FileCount": 6
+    },
+    {
+      "Extension": "py}",
+      "TotalLines": 3,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 3
+    },
+    {
+      "Extension": "png",
+      "TotalLines": 3,
+      "AILines": 3,
+      "AIPercentage": 100.0,
+      "FileCount": 166
+    }
+  ],
+  "GeneratedAt": "2026-01-22 11:49:31",
+  "Users": [],
+  "AnalysisPeriod": {
+    "FilterApplied": true,
+    "EndDate": "2025-10-31",
+    "StartDate": "2025-10-01"
+  },
+  "Commits": null
+}
