@@ -1,0 +1,289 @@
+{
+  "Metadata": {
+    "PowerShellVersion": "7.4.13",
+    "GeneratedAt": "2026-01-22 14:53:53",
+    "AnalysisMethod": "5-Tier Weighted Pattern Detection",
+    "GeneratedBy": "Copilot Usage Report Tool v2.0",
+    "ScriptVersion": "2.0.0",
+    "IncludeTestFiles": false
+  },
+  "AnalysisPeriod": {
+    "EndDate": "2026-01-30",
+    "StartDate": "2026-01-01",
+    "FilterApplied": true
+  },
+  "ApplicationName": "Container Migration",
+  "GeneratedAt": "2026-01-22 14:53:53",
+  "BranchStatistics": {
+    "Branch": "dev",
+    "TotalCommits": 2,
+    "AICommits": 0,
+    "HumanCommits": 2,
+    "TotalLinesAdded": 13.0,
+    "TotalLinesDeleted": 7.0,
+    "AILinesAdded": null,
+    "AILinesDeleted": null,
+    "Tier1Commits": 0,
+    "Tier2Commits": 0,
+    "Tier3Commits": 0,
+    "Tier4Commits": 0,
+    "Tier5Commits": 0,
+    "UniqueContributors": 1,
+    "AIPercentage": 0.0,
+    "HumanLinesAdded": 13.0
+  },
+  "AIAttributionOverride": {
+    "Notes": null,
+    "Applied": false,
+    "OverridePercentage": null
+  },
+  "Users": [
+    {
+      "UserName": "Thanusree-Microsoft",
+      "UserEmail": "168087422+Thanusree-Microsoft@users.noreply.github.com",
+      "TotalCommits": 2,
+      "AICommits": 0,
+      "HumanCommits": 2,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 13,
+      "HumanLinesDeleted": 7,
+      "TotalLinesAdded": 13,
+      "TotalLinesDeleted": 7,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    }
+  ],
+  "Branch": "dev",
+  "FileTypeBreakdown": [
+    {
+      "Extension": "json",
+      "TotalLines": 323059,
+      "AILines": 10594,
+      "AIPercentage": 3.28,
+      "FileCount": 93
+    },
+    {
+      "Extension": "py",
+      "TotalLines": 41032,
+      "AILines": 39209,
+      "AIPercentage": 95.56,
+      "FileCount": 313
+    },
+    {
+      "Extension": "txt",
+      "TotalLines": 15243,
+      "AILines": 9461,
+      "AIPercentage": 62.07,
+      "FileCount": 227
+    },
+    {
+      "Extension": "md",
+      "TotalLines": 12584,
+      "AILines": 6235,
+      "AIPercentage": 49.55,
+      "FileCount": 311
+    },
+    {
+      "Extension": "bicep",
+      "TotalLines": 10326,
+      "AILines": 3938,
+      "AIPercentage": 38.14,
+      "FileCount": 120
+    },
+    {
+      "Extension": "lock",
+      "TotalLines": 9825,
+      "AILines": 5681,
+      "AIPercentage": 57.82,
+      "FileCount": 6
+    },
+    {
+      "Extension": "tsx",
+      "TotalLines": 8020,
+      "AILines": 7426,
+      "AIPercentage": 92.59,
+      "FileCount": 50
+    },
+    {
+      "Extension": "yml",
+      "TotalLines": 2036,
+      "AILines": 6,
+      "AIPercentage": 0.29,
+      "FileCount": 130
+    },
+    {
+      "Extension": "ts",
+      "TotalLines": 1671,
+      "AILines": 1671,
+      "AIPercentage": 100.0,
+      "FileCount": 12
+    },
+    {
+      "Extension": "sh",
+      "TotalLines": 1505,
+      "AILines": 245,
+      "AIPercentage": 16.28,
+      "FileCount": 15
+    },
+    {
+      "Extension": "gitignore",
+      "TotalLines": 1404,
+      "AILines": 728,
+      "AIPercentage": 51.85,
+      "FileCount": 9
+    },
+    {
+      "Extension": "yaml",
+      "TotalLines": 669,
+      "AILines": 368,
+      "AIPercentage": 55.01,
+      "FileCount": 28
+    },
+    {
+      "Extension": "dockerignore",
+      "TotalLines": 450,
+      "AILines": 450,
+      "AIPercentage": 100.0,
+      "FileCount": 3
+    },
+    {
+      "Extension": "css",
+      "TotalLines": 357,
+      "AILines": 357,
+      "AIPercentage": 100.0,
+      "FileCount": 5
+    },
+    {
+      "Extension": "jsx",
+      "TotalLines": 229,
+      "AILines": 181,
+      "AIPercentage": 79.04,
+      "FileCount": 10
+    },
+    {
+      "Extension": "other",
+      "TotalLines": 195,
+      "AILines": 111,
+      "AIPercentage": 56.92,
+      "FileCount": 7
+    },
+    {
+      "Extension": "toml",
+      "TotalLines": 174,
+      "AILines": 110,
+      "AIPercentage": 63.22,
+      "FileCount": 8
+    },
+    {
+      "Extension": "js",
+      "TotalLines": 165,
+      "AILines": 165,
+      "AIPercentage": 100.0,
+      "FileCount": 5
+    },
+    {
+      "Extension": "http",
+      "TotalLines": 104,
+      "AILines": 104,
+      "AIPercentage": 100.0,
+      "FileCount": 1
+    },
+    {
+      "Extension": "example",
+      "TotalLines": 96,
+      "AILines": 27,
+      "AIPercentage": 28.12,
+      "FileCount": 8
+    },
+    {
+      "Extension": "ini",
+      "TotalLines": 33,
+      "AILines": 33,
+      "AIPercentage": 100.0,
+      "FileCount": 1
+    },
+    {
+      "Extension": "flake8",
+      "TotalLines": 22,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 14
+    },
+    {
+      "Extension": "env",
+      "TotalLines": 21,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 3
+    },
+    {
+      "Extension": "sample",
+      "TotalLines": 14,
+      "AILines": 14,
+      "AIPercentage": 100.0,
+      "FileCount": 1
+    },
+    {
+      "Extension": "html",
+      "TotalLines": 13,
+      "AILines": 13,
+      "AIPercentage": 100.0,
+      "FileCount": 1
+    },
+    {
+      "Extension": "github/codeowners",
+      "TotalLines": 12,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 8
+    },
+    {
+      "Extension": "python-version",
+      "TotalLines": 2,
+      "AILines": 2,
+      "AIPercentage": 100.0,
+      "FileCount": 2
+    }
+  ],
+  "Commits": [
+    {
+      "Hash": "2a96287b3da24a9a6a845ff9ec40269dd0a17a91",
+      "Author": "Thanusree-Microsoft",
+      "Date": "Wed Jan 14 10:36:49 2026 +0530",
+      "Message": "Update VS Code Web section in Deployment Guide",
+      "LinesAdded": 3,
+      "LinesDeleted": 5,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "ccfa2c3db0d9fc3316c3a5a33acdea81f28eccb9",
+      "Author": "Thanusree-Microsoft",
+      "Date": "Thu Jan 8 18:18:01 2026 +0530",
+      "Message": "Update Deployment Guide with Azure authentication steps",
+      "LinesAdded": 10,
+      "LinesDeleted": 2,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    }
+  ],
+  "TierDistribution": {
+    "Tier2_VeryHigh": 0,
+    "Tier4_Moderate": 0,
+    "Tier3_High": 0,
+    "Human": 2,
+    "Tier1_Definitive": 0,
+    "Tier5_Low": 0
+  }
+}
