@@ -986,6 +986,10 @@
             Copilot Usage Dashboard
         </h1>
         <div class="report-selector">
+            <label for="archiveSelect" style="margin-right: 4px;">Archive:</label>
+            <select id="archiveSelect" onchange="loadArchiveSet()" style="min-width: 150px; margin-right: 16px;">
+                <option value="current">📁 Current Reports</option>
+            </select>
             <label for="reportSelect">Select Report:</label>
             <select id="reportSelect" onchange="loadSelectedReport()">
                 <option value="">-- Loading Reports --</option>
@@ -1015,16 +1019,22 @@
                 </svg>
                 Run Analysis
             </button>
-            <!-- <button class="reset-btn" onclick="showResetModal()" title="Reset All Reports">
+            <button class="refresh-btn" onclick="showArchiveModal()" title="Archive All Reports" style="background: linear-gradient(135deg, #f59e0b, #d97706);">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M3 6h18M19 6v14a2 2 0 01-2 2H7a2 2 0 01-2-2V6m3 0V4a2 2 0 012-2h4a2 2 0 012 2v2"/>
-                    <line x1="10" y1="11" x2="10" y2="17"/>
-                    <line x1="14" y1="11" x2="14" y2="17"/>
+                    <path d="M21 8v13H3V8M1 3h22v5H1zM10 12h4"/>
                 </svg>
-                Reset
-            </button> -->
+                Archive
+            </button>
         </div>
     </header>
+
+    <!-- Archive Indicator Banner -->
+    <div id="archiveIndicator" class="notice-banner" style="background: linear-gradient(135deg, #f59e0b, #d97706); display: none;">
+        📦 <strong>Viewing Archive:</strong> <span id="archiveName"></span> 
+        <button onclick="switchToCurrent()" style="margin-left: 12px; padding: 4px 12px; border: none; border-radius: 4px; background: white; color: #d97706; cursor: pointer; font-weight: 600;">
+            ← Back to Current Reports
+        </button>
+    </div>
 
     <!-- Reset Confirmation Modal -->
     <div id="resetModal" class="modal-overlay">
@@ -1106,6 +1116,54 @@
                 <button class="modal-btn modal-btn-cancel" onclick="hideTriggerAnalysisModal()">Cancel</button>
                 <button class="modal-btn" id="triggerAnalysisBtn" onclick="triggerAnalysis()" style="background: linear-gradient(135deg, #22c55e, #16a34a); color: white;">
                     🚀 Trigger Workflow
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Archive Reports Modal -->
+    <div id="archiveModal" class="modal-overlay">
+        <div class="modal-content" style="max-width: 500px;">
+            <div class="modal-header" style="background: linear-gradient(135deg, #f59e0b, #d97706);">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 8v13H3V8M1 3h22v5H1zM10 12h4"/>
+                </svg>
+                <h3>Archive All Reports</h3>
+            </div>
+            <div class="modal-body">
+                <p style="margin-bottom: 16px; color: var(--text-secondary);">
+                    Bundle all current reports into a named archive. You can load archived report sets later.
+                </p>
+                
+                <div class="form-group" style="margin-bottom: 16px;">
+                    <label style="display: block; margin-bottom: 6px; font-weight: 500;">Archive Name</label>
+                    <input type="text" id="archiveName_input" placeholder="e.g., Q4-2025-Final" 
+                           style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid var(--border-color); background: var(--bg-hover); color: var(--text-primary);">
+                </div>
+
+                <div class="form-group" style="margin-bottom: 16px;">
+                    <label style="display: block; margin-bottom: 6px; font-weight: 500;">Description (optional)</label>
+                    <input type="text" id="archiveDescription" placeholder="e.g., Final analysis for Q4 2025" 
+                           style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid var(--border-color); background: var(--bg-hover); color: var(--text-primary);">
+                </div>
+
+                <div class="form-group" style="margin-bottom: 16px;">
+                    <label style="display: block; margin-bottom: 6px; font-weight: 500;">GitHub Token <span style="color: var(--text-secondary); font-weight: normal;">(needs workflow scope)</span></label>
+                    <input type="password" id="archiveGithubToken" placeholder="ghp_..." 
+                           style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid var(--border-color); background: var(--bg-hover); color: var(--text-primary);">
+                    <small style="color: var(--text-secondary); display: block; margin-top: 4px;">Token is used client-side only.</small>
+                </div>
+
+                <div style="background: rgba(245, 158, 11, 0.1); border: 1px solid #f59e0b; border-radius: 6px; padding: 12px; margin-bottom: 12px;">
+                    <p style="font-size: 13px;">📦 <strong>Reports to archive:</strong> <span id="reportCountToArchive">0</span> consolidated reports</p>
+                </div>
+
+                <div id="archiveStatus" style="display: none; padding: 12px; border-radius: 6px; margin-bottom: 12px;"></div>
+            </div>
+            <div class="modal-footer">
+                <button class="modal-btn modal-btn-cancel" onclick="hideArchiveModal()">Cancel</button>
+                <button class="modal-btn" id="archiveBtn" onclick="executeArchive()" style="background: linear-gradient(135deg, #f59e0b, #d97706); color: white;">
+                    📦 Create Archive
                 </button>
             </div>
         </div>
@@ -10897,6 +10955,233 @@
 
         // Allow manual repo configuration
         // window.GITHUB_REPO_CONFIG = { owner: 'your-org', repo: 'your-repo' };
+
+        // ============================================
+        // ARCHIVE FUNCTIONS
+        // ============================================
+        let currentArchive = 'current';
+        let availableArchives = [];
+
+        function showArchiveModal() {
+            document.getElementById('archiveModal').classList.add('active');
+            // Try to load token from localStorage
+            const savedToken = localStorage.getItem('github_workflow_token');
+            if (savedToken) {
+                document.getElementById('archiveGithubToken').value = savedToken;
+            }
+            // Set default archive name with current quarter
+            const now = new Date();
+            const quarter = Math.ceil((now.getMonth() + 1) / 3);
+            document.getElementById('archiveName_input').value = `Q${quarter}-${now.getFullYear()}`;
+            // Count reports to archive
+            const reportCount = document.getElementById('reportSelect').options.length - 1; // minus the default option
+            document.getElementById('reportCountToArchive').textContent = reportCount > 0 ? reportCount : 0;
+        }
+
+        function hideArchiveModal() {
+            document.getElementById('archiveModal').classList.remove('active');
+            document.getElementById('archiveStatus').style.display = 'none';
+        }
+
+        async function executeArchive() {
+            const archiveName = document.getElementById('archiveName_input').value.trim();
+            const description = document.getElementById('archiveDescription').value.trim();
+            const token = document.getElementById('archiveGithubToken').value.trim();
+            const statusDiv = document.getElementById('archiveStatus');
+            const archiveBtn = document.getElementById('archiveBtn');
+
+            // Validation
+            if (!archiveName) {
+                showArchiveStatus('error', '❌ Please enter an archive name.');
+                return;
+            }
+            if (!token) {
+                showArchiveStatus('error', '❌ Please enter a GitHub token with workflow scope.');
+                return;
+            }
+            // Validate archive name (no special characters except dash and underscore)
+            if (!/^[a-zA-Z0-9_-]+$/.test(archiveName)) {
+                showArchiveStatus('error', '❌ Archive name can only contain letters, numbers, dashes, and underscores.');
+                return;
+            }
+
+            // Save token to localStorage for convenience
+            localStorage.setItem('github_workflow_token', token);
+
+            // Disable button and show loading
+            archiveBtn.disabled = true;
+            archiveBtn.innerHTML = '⏳ Creating Archive...';
+            showArchiveStatus('info', '🔄 Triggering archive workflow...');
+
+            // Get repo info
+            const repoInfo = getRepoFromUrl();
+            if (!repoInfo) {
+                showArchiveStatus('error', '❌ Could not determine repository.');
+                archiveBtn.disabled = false;
+                archiveBtn.innerHTML = '📦 Create Archive';
+                return;
+            }
+
+            try {
+                // Call GitHub API to trigger archive workflow
+                const response = await fetch(`https://api.github.com/repos/${repoInfo.owner}/${repoInfo.repo}/actions/workflows/archive-reports.yml/dispatches`, {
+                    method: 'POST',
+                    headers: {
+                        'Authorization': `Bearer ${token}`,
+                        'Accept': 'application/vnd.github.v3+json',
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        ref: 'main',
+                        inputs: {
+                            archive_name: archiveName,
+                            description: description
+                        }
+                    })
+                });
+
+                if (response.status === 204) {
+                    showArchiveStatus('success', `✅ Archive workflow triggered! Reports will be bundled as "${archiveName}".<br><a href="https://github.com/${repoInfo.owner}/${repoInfo.repo}/actions" target="_blank" style="color: #f59e0b;">View workflow runs →</a>`);
+                    // Refresh archives list after a delay
+                    setTimeout(loadAvailableArchives, 3000);
+                } else if (response.status === 404) {
+                    showArchiveStatus('error', '❌ Archive workflow not found. Make sure "archive-reports.yml" exists.');
+                } else if (response.status === 401) {
+                    showArchiveStatus('error', '❌ Unauthorized. Check your token.');
+                } else {
+                    const errorData = await response.json();
+                    showArchiveStatus('error', `❌ Error: ${errorData.message || response.statusText}`);
+                }
+            } catch (error) {
+                showArchiveStatus('error', `❌ Network error: ${error.message}`);
+            }
+
+            archiveBtn.disabled = false;
+            archiveBtn.innerHTML = '📦 Create Archive';
+        }
+
+        function showArchiveStatus(type, message) {
+            const statusDiv = document.getElementById('archiveStatus');
+            statusDiv.style.display = 'block';
+            statusDiv.innerHTML = message;
+            statusDiv.style.background = type === 'error' ? 'rgba(239, 68, 68, 0.2)' : 
+                                         type === 'success' ? 'rgba(245, 158, 11, 0.2)' : 
+                                         'rgba(59, 130, 246, 0.2)';
+            statusDiv.style.border = '1px solid ' + (type === 'error' ? '#ef4444' : 
+                                                     type === 'success' ? '#f59e0b' : '#3b82f6');
+        }
+
+        async function loadAvailableArchives() {
+            const archiveSelect = document.getElementById('archiveSelect');
+            const repoInfo = getRepoFromUrl();
+            
+            try {
+                // Try to fetch the archive index
+                const basePath = getBasePath();
+                const response = await fetch(`${basePath}named-archives/index.json`);
+                
+                if (response.ok) {
+                    const archives = await response.json();
+                    availableArchives = archives;
+                    
+                    // Clear and rebuild dropdown
+                    archiveSelect.innerHTML = '<option value="current">📁 Current Reports</option>';
+                    
+                    // Sort by created date descending
+                    archives.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
+                    
+                    archives.forEach(archive => {
+                        const option = document.createElement('option');
+                        option.value = archive.name;
+                        option.textContent = `📦 ${archive.name} (${archive.reportCount} reports)`;
+                        archiveSelect.appendChild(option);
+                    });
+                }
+            } catch (error) {
+                console.log('No archives available or error loading:', error);
+            }
+        }
+
+        async function loadArchiveSet() {
+            const archiveSelect = document.getElementById('archiveSelect');
+            const selectedArchive = archiveSelect.value;
+            
+            if (selectedArchive === 'current') {
+                // Switch back to current reports
+                currentArchive = 'current';
+                hideArchiveIndicator();
+                loadConsolidatedReportsList(); // Reload current reports
+                return;
+            }
+            
+            // Load the selected archive
+            currentArchive = selectedArchive;
+            showArchiveIndicator(selectedArchive);
+            
+            try {
+                const basePath = getBasePath();
+                const reportSelect = document.getElementById('reportSelect');
+                
+                // Load archive info
+                const archiveInfo = availableArchives.find(a => a.name === selectedArchive);
+                if (!archiveInfo) return;
+                
+                // Clear and rebuild report dropdown with archive reports
+                reportSelect.innerHTML = '';
+                
+                for (const reportFile of archiveInfo.reports) {
+                    const option = document.createElement('option');
+                    option.value = `${basePath}named-archives/${selectedArchive}/consolidated/${reportFile}`;
+                    // Parse date from filename
+                    const match = reportFile.match(/ConsolidatedReport_(.+?)\.json/);
+                    if (match) {
+                        option.textContent = match[1];
+                    } else {
+                        option.textContent = reportFile;
+                    }
+                    reportSelect.appendChild(option);
+                }
+                
+                // Load the first report
+                if (reportSelect.options.length > 0) {
+                    loadSelectedReport();
+                }
+            } catch (error) {
+                console.error('Error loading archive:', error);
+            }
+        }
+
+        function showArchiveIndicator(archiveName) {
+            const indicator = document.getElementById('archiveIndicator');
+            const nameSpan = document.getElementById('archiveName');
+            nameSpan.textContent = archiveName;
+            indicator.style.display = 'block';
+        }
+
+        function hideArchiveIndicator() {
+            document.getElementById('archiveIndicator').style.display = 'none';
+        }
+
+        function switchToCurrent() {
+            document.getElementById('archiveSelect').value = 'current';
+            loadArchiveSet();
+        }
+
+        // Load archives on page init
+        document.addEventListener('DOMContentLoaded', function() {
+            loadAvailableArchives();
+        });
+
+        // Update keyboard listener to also close archive modal
+        document.removeEventListener('keydown', handleEscapeKey);
+        function handleEscapeKey(e) { 
+            if(e.key==='Escape') { 
+                hideResetModal(); 
+                hideTriggerAnalysisModal(); 
+                hideArchiveModal();
+            } 
+        }
+        document.addEventListener('keydown', handleEscapeKey);
     </script>
 </body>
 </html>

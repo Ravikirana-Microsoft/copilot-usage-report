@@ -258,11 +258,18 @@ jobs:
         run: |
           mkdir -p _site
           mkdir -p _site/consolidated
+          mkdir -p _site/named-archives
           cp reports/CopilotDashboard.html _site/index.html
           cp -r reports/*.json _site/ 2>/dev/null || true
           cp -r reports/*.csv _site/ 2>/dev/null || true
           # Copy consolidated reports for dropdown functionality
           cp -r reports/consolidated/*.json _site/consolidated/ 2>/dev/null || true
+          # Copy named archives for archive functionality
+          if [ -d "reports/named-archives" ]; then
+            cp -r reports/named-archives/* _site/named-archives/ 2>/dev/null || true
+            echo "Named archives:"
+            ls -la _site/named-archives/ 2>/dev/null || echo "No archives"
+          fi
           echo "Dashboard prepared for deployment"
           echo "Main site files:"
           ls -la _site/
