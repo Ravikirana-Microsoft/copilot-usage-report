@@ -2,8 +2,8 @@
 
 > Consolidated analysis across all branches using 5-Tier AI Detection Model
 
-**Generated:** 2026-01-22 09:36:52  
-**Analysis Period:** 2026-01-01 to 2026-01-23
+**Generated:** 2026-01-22 10:04:56  
+**Analysis Period:** All Time (No date filter)
 
 ---
 
