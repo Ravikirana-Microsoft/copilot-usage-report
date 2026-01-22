@@ -11345,8 +11345,26 @@
 
         // Initialize on page load
         document.addEventListener('DOMContentLoaded', () => {
-            populateReportSelector();
-            loadSelectedReport();
+            // Check if we're in local file mode (file:// protocol)
+            if (window.location.protocol === 'file:') {
+                console.log('Local file mode detected - using embedded data');
+                isLocalFileAccess = true;
+                document.getElementById('localAccessNotice').classList.add('show');
+                restrictToLatestReportOnly();
+                
+                // Load embedded data directly
+                if (typeof EMBEDDED_DATA !== 'undefined' && EMBEDDED_DATA) {
+                    currentData = processConsolidatedData(EMBEDDED_DATA);
+                    currentReportPath = REPORT_CONFIG.latestReport;
+                    renderDashboard();
+                } else {
+                    showNoData('No embedded data available');
+                }
+            } else {
+                // HTTP mode - full functionality
+                populateReportSelector();
+                loadSelectedReport();
+            }
             loadAvailableArchives(); // Load available archives for dropdown
         });
 
@@ -11395,33 +11413,59 @@
                 currentReportPath = reportPath;
                 isLocalFileAccess = false;
                 document.getElementById('localAccessNotice').classList.remove('show');
+                enableReportSwitching(); // Enable full report switching
                 renderDashboard();
             } catch (error) {
                 console.error('Error loading report via fetch:', error);
                 isLocalFileAccess = true;
                 document.getElementById('localAccessNotice').classList.add('show');
+                restrictToLatestReportOnly(); // Restrict dropdown in local mode
                 
                 // Fallback: Try to use embedded data if available (only for latest report)
                 if (typeof EMBEDDED_DATA !== 'undefined' && EMBEDDED_DATA) {
-                    // Check if this is the latest report or if user selected archived report
-                    const isLatestReport = reportPath === REPORT_CONFIG.latestReport;
-                    if (isLatestReport) {
-                        console.log('Using embedded data for latest report');
-                        currentData = processConsolidatedData(EMBEDDED_DATA);
-                        currentReportPath = reportPath;
-                        renderDashboard();
-                    } else {
-                        // For archived reports without HTTP server, show message and switch to latest
-                        console.log('Archived report requested but not available without HTTP server');
-                        // Reset to latest report
-                        currentData = processConsolidatedData(EMBEDDED_DATA);
-                        currentReportPath = REPORT_CONFIG.latestReport;
-                        select.value = REPORT_CONFIG.latestReport;
-                        renderDashboard();
-                    }
+                    console.log('Using embedded data for latest report (local file mode)');
+                    currentData = processConsolidatedData(EMBEDDED_DATA);
+                    currentReportPath = REPORT_CONFIG.latestReport;
+                    renderDashboard();
                 } else {
                     showNoData('Could not load report. For local file access, please start an HTTP server or use embedded data.');
                 }
+            }
+        }
+        
+        // Restrict report dropdown to only show latest report in local file mode
+        function restrictToLatestReportOnly() {
+            const select = document.getElementById('reportSelect');
+            const archiveSelect = document.getElementById('archiveSelect');
+            
+            // Clear and set only the latest report
+            select.innerHTML = '';
+            const latestReport = REPORT_CONFIG.archivedReports.find(r => r.path === REPORT_CONFIG.latestReport) || REPORT_CONFIG.archivedReports[0];
+            if (latestReport) {
+                const option = document.createElement('option');
+                option.value = latestReport.path;
+                option.textContent = `${latestReport.label} (Local Mode)`;
+                option.selected = true;
+                select.appendChild(option);
+            }
+            
+            // Disable archive selection in local mode
+            if (archiveSelect) {
+                archiveSelect.disabled = true;
+                archiveSelect.title = 'Archive switching requires HTTP server';
+            }
+        }
+        
+        // Enable full report switching when HTTP server is available
+        function enableReportSwitching() {
+            const archiveSelect = document.getElementById('archiveSelect');
+            if (archiveSelect) {
+                archiveSelect.disabled = false;
+                archiveSelect.title = '';
+            }
+            // Repopulate full report list if needed
+            if (!isLocalFileAccess) {
+                populateReportSelector();
             }
         }
 
