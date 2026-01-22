@@ -1,12 +1,17 @@
 name: Archive Reports
 
 on:
+  push:
+    paths:
+      - '.github/workflows/archive-dispatch.yml'
   repository_dispatch:
     types: [create-archive]
 
 jobs:
   archive:
     runs-on: ubuntu-latest
+    # Only run on repository_dispatch, not on push
+    if: github.event_name == 'repository_dispatch'
     permissions:
       contents: write
 
