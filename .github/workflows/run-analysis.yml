@@ -150,15 +150,15 @@ jobs:
           
           # Create archive metadata
           cat > "$ARCHIVE_DIR/archive-info.json" << EOF
-          {
-            "name": "$ARCHIVE_NAME",
-            "description": "$DESCRIPTION",
-            "createdAt": "$TIMESTAMP",
-            "reportCount": $REPORT_COUNT,
-            "reports": $REPORTS_LIST,
-            "createdBy": "${{ github.actor }}"
-          }
-          EOF
+{
+  "name": "$ARCHIVE_NAME",
+  "description": "$DESCRIPTION",
+  "createdAt": "$TIMESTAMP",
+  "reportCount": $REPORT_COUNT,
+  "reports": $REPORTS_LIST,
+  "createdBy": "${{ github.actor }}"
+}
+EOF
           
           echo "✅ Archive created: $ARCHIVE_DIR"
           ls -la "$ARCHIVE_DIR/"
@@ -180,6 +180,80 @@ jobs:
           echo "Reports archived to named-archives/${{ env.ARCHIVE_NAME }}" > reports/consolidated/README.md
           
           echo "✅ Current reports cleared"
+
+      - name: Update Dashboard to Show No Data
+        run: |
+          DASHBOARD="reports/CopilotDashboard.html"
+          ARCHIVE_NAME="${{ env.ARCHIVE_NAME }}"
+          TIMESTAMP=$(date -u +'%Y-%m-%d %H:%M:%S')
+          
+          if [ -f "$DASHBOARD" ]; then
+            echo "📊 Updating dashboard to show no data state..."
+            
+            # Use Python to update REPORT_CONFIG and EMBEDDED_DATA
+            python3 << PYTHON_SCRIPT
+import re
+import os
+
+dashboard_path = "reports/CopilotDashboard.html"
+timestamp = "$TIMESTAMP"
+
+with open(dashboard_path, 'r', encoding='utf-8') as f:
+    content = f.read()
+
+# Update REPORT_CONFIG to empty state
+new_config = '''const REPORT_CONFIG = {
+            // Latest report path (auto-updated)
+            latestReport: "",
+            
+            // Available archived reports (auto-updated)
+            archivedReports: [],
+            
+            // Last updated timestamp
+            lastUpdated: "''' + timestamp + '''"
+        };'''
+
+# Replace REPORT_CONFIG block using a more robust pattern
+config_pattern = r'const REPORT_CONFIG = \{[\s\S]*?lastUpdated:[\s\S]*?\};'
+content = re.sub(config_pattern, new_config, content, count=1)
+
+# Update EMBEDDED_DATA to null
+embedded_pattern = r'const EMBEDDED_DATA = \{[\s\S]*?\n  \]\n\};'
+content = re.sub(embedded_pattern, 'const EMBEDDED_DATA = null;', content, count=1)
+
+# Also try alternative pattern if first doesn't match
+if 'const EMBEDDED_DATA = {' in content:
+    # Find and replace the entire EMBEDDED_DATA object
+    start_marker = 'const EMBEDDED_DATA = {'
+    start_idx = content.find(start_marker)
+    if start_idx != -1:
+        # Find the matching closing brace
+        brace_count = 0
+        end_idx = start_idx
+        for i, char in enumerate(content[start_idx:], start_idx):
+            if char == '{':
+                brace_count += 1
+            elif char == '}':
+                brace_count -= 1
+                if brace_count == 0:
+                    end_idx = i + 1
+                    break
+        # Find the semicolon after closing brace
+        while end_idx < len(content) and content[end_idx] in ' \n\t':
+            end_idx += 1
+        if end_idx < len(content) and content[end_idx] == ';':
+            end_idx += 1
+        content = content[:start_idx] + 'const EMBEDDED_DATA = null;' + content[end_idx:]
+
+with open(dashboard_path, 'w', encoding='utf-8') as f:
+    f.write(content)
+
+print("✅ Dashboard REPORT_CONFIG and EMBEDDED_DATA cleared")
+PYTHON_SCRIPT
+            
+          else
+            echo "⚠️ Dashboard not found at $DASHBOARD"
+          fi
 
       - name: Update Archive Index
         run: |
@@ -210,6 +284,7 @@ jobs:
         run: |
           git add reports/named-archives/
           git add reports/consolidated/
+          git add reports/CopilotDashboard.html
           git add reports/*.csv 2>/dev/null || true
           git add reports/*.md 2>/dev/null || true
           git add reports/*.json 2>/dev/null || true
