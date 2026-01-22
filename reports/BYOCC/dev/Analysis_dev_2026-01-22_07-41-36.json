@@ -1,0 +1,291 @@
+{
+  "AnalysisPeriod": {
+    "FilterApplied": true,
+    "StartDate": "2026-10-01",
+    "EndDate": "2026-10-30"
+  },
+  "Branch": "dev",
+  "FileTypeBreakdown": [
+    {
+      "Extension": "json",
+      "TotalLines": 134614,
+      "AILines": 16803,
+      "AIPercentage": 12.48,
+      "FileCount": 85
+    },
+    {
+      "Extension": "py",
+      "TotalLines": 60026,
+      "AILines": 57922,
+      "AIPercentage": 96.49,
+      "FileCount": 721
+    },
+    {
+      "Extension": "json}",
+      "TotalLines": 27594,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 1
+    },
+    {
+      "Extension": "html",
+      "TotalLines": 15424,
+      "AILines": 15418,
+      "AIPercentage": 99.96,
+      "FileCount": 17
+    },
+    {
+      "Extension": "md",
+      "TotalLines": 11869,
+      "AILines": 8932,
+      "AIPercentage": 75.25,
+      "FileCount": 161
+    },
+    {
+      "Extension": "ps1",
+      "TotalLines": 11583,
+      "AILines": 11476,
+      "AIPercentage": 99.08,
+      "FileCount": 144
+    },
+    {
+      "Extension": "bicep",
+      "TotalLines": 9933,
+      "AILines": 3520,
+      "AIPercentage": 35.44,
+      "FileCount": 110
+    },
+    {
+      "Extension": "tsx",
+      "TotalLines": 9273,
+      "AILines": 8076,
+      "AIPercentage": 87.09,
+      "FileCount": 220
+    },
+    {
+      "Extension": "yml",
+      "TotalLines": 2261,
+      "AILines": 82,
+      "AIPercentage": 3.63,
+      "FileCount": 59
+    },
+    {
+      "Extension": "sh",
+      "TotalLines": 2239,
+      "AILines": 1673,
+      "AIPercentage": 74.72,
+      "FileCount": 33
+    },
+    {
+      "Extension": "gitignore",
+      "TotalLines": 1806,
+      "AILines": 1383,
+      "AIPercentage": 76.58,
+      "FileCount": 17
+    },
+    {
+      "Extension": "ts",
+      "TotalLines": 1656,
+      "AILines": 1272,
+      "AIPercentage": 76.81,
+      "FileCount": 45
+    },
+    {
+      "Extension": "txt",
+      "TotalLines": 917,
+      "AILines": 351,
+      "AIPercentage": 38.28,
+      "FileCount": 100
+    },
+    {
+      "Extension": "css",
+      "TotalLines": 819,
+      "AILines": 810,
+      "AIPercentage": 98.9,
+      "FileCount": 13
+    },
+    {
+      "Extension": "js",
+      "TotalLines": 654,
+      "AILines": 644,
+      "AIPercentage": 98.47,
+      "FileCount": 31
+    },
+    {
+      "Extension": "other",
+      "TotalLines": 355,
+      "AILines": 179,
+      "AIPercentage": 50.42,
+      "FileCount": 27
+    },
+    {
+      "Extension": "bat",
+      "TotalLines": 225,
+      "AILines": 225,
+      "AIPercentage": 100.0,
+      "FileCount": 4
+    },
+    {
+      "Extension": "csv",
+      "TotalLines": 166,
+      "AILines": 51,
+      "AIPercentage": 30.72,
+      "FileCount": 16
+    },
+    {
+      "Extension": "yaml",
+      "TotalLines": 124,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 7
+    },
+    {
+      "Extension": "ini",
+      "TotalLines": 110,
+      "AILines": 104,
+      "AIPercentage": 94.55,
+      "FileCount": 13
+    },
+    {
+      "Extension": "example",
+      "TotalLines": 95,
+      "AILines": 85,
+      "AIPercentage": 89.47,
+      "FileCount": 15
+    },
+    {
+      "Extension": "minimal",
+      "TotalLines": 68,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 4
+    },
+    {
+      "Extension": "conf",
+      "TotalLines": 63,
+      "AILines": 63,
+      "AIPercentage": 100.0,
+      "FileCount": 4
+    },
+    {
+      "Extension": "coveragerc",
+      "TotalLines": 50,
+      "AILines": 44,
+      "AIPercentage": 88.0,
+      "FileCount": 4
+    },
+    {
+      "Extension": "svg",
+      "TotalLines": 48,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 48
+    },
+    {
+      "Extension": "sample",
+      "TotalLines": 48,
+      "AILines": 48,
+      "AIPercentage": 100.0,
+      "FileCount": 4
+    },
+    {
+      "Extension": "frontend",
+      "TotalLines": 32,
+      "AILines": 32,
+      "AIPercentage": 100.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "dockerignore",
+      "TotalLines": 31,
+      "AILines": 31,
+      "AIPercentage": 100.0,
+      "FileCount": 5
+    },
+    {
+      "Extension": "flake8",
+      "TotalLines": 28,
+      "AILines": 8,
+      "AIPercentage": 28.57,
+      "FileCount": 8
+    },
+    {
+      "Extension": "config",
+      "TotalLines": 20,
+      "AILines": 20,
+      "AIPercentage": 100.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "github/codeowners",
+      "TotalLines": 17,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 13
+    },
+    {
+      "Extension": "sql",
+      "TotalLines": 14,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "deployment",
+      "TotalLines": 3,
+      "AILines": 3,
+      "AIPercentage": 100.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "spark-initial-sha",
+      "TotalLines": 1,
+      "AILines": 1,
+      "AIPercentage": 100.0,
+      "FileCount": 2
+    }
+  ],
+  "GeneratedAt": "2026-01-22 07:41:36",
+  "TierDistribution": {
+    "Tier2_VeryHigh": 0,
+    "Tier4_Moderate": 0,
+    "Tier1_Definitive": 0,
+    "Tier5_Low": 0,
+    "Human": 0,
+    "Tier3_High": 0
+  },
+  "Metadata": {
+    "IncludeTestFiles": false,
+    "PowerShellVersion": "7.4.13",
+    "ScriptVersion": "2.0.0",
+    "AnalysisMethod": "5-Tier Weighted Pattern Detection",
+    "GeneratedAt": "2026-01-22 07:41:36",
+    "GeneratedBy": "Copilot Usage Report Tool v2.0"
+  },
+  "Users": [],
+  "BranchStatistics": {
+    "Branch": "dev",
+    "TotalCommits": 0,
+    "AICommits": 0,
+    "HumanCommits": 0,
+    "TotalLinesAdded": null,
+    "TotalLinesDeleted": null,
+    "AILinesAdded": null,
+    "AILinesDeleted": null,
+    "Tier1Commits": 0,
+    "Tier2Commits": 0,
+    "Tier3Commits": 0,
+    "Tier4Commits": 0,
+    "Tier5Commits": 0,
+    "UniqueContributors": 0,
+    "AIPercentage": 0,
+    "HumanLinesAdded": 0
+  },
+  "ApplicationName": "BYOCC",
+  "AIAttributionOverride": {
+    "OverridePercentage": null,
+    "Applied": false,
+    "Notes": null
+  },
+  "Commits": null
+}

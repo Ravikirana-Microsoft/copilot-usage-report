@@ -1,0 +1,193 @@
+{
+  "AnalysisPeriod": {
+    "FilterApplied": true,
+    "StartDate": "2026-10-01",
+    "EndDate": "2026-10-30"
+  },
+  "Branch": "main",
+  "FileTypeBreakdown": [
+    {
+      "Extension": "json",
+      "TotalLines": 237036,
+      "AILines": 71909,
+      "AIPercentage": 30.34,
+      "FileCount": 59
+    },
+    {
+      "Extension": "ps1",
+      "TotalLines": 24468,
+      "AILines": 254,
+      "AIPercentage": 1.04,
+      "FileCount": 460
+    },
+    {
+      "Extension": "bicep",
+      "TotalLines": 9995,
+      "AILines": 717,
+      "AIPercentage": 7.17,
+      "FileCount": 350
+    },
+    {
+      "Extension": "md",
+      "TotalLines": 9484,
+      "AILines": 87,
+      "AIPercentage": 0.92,
+      "FileCount": 282
+    },
+    {
+      "Extension": "svg",
+      "TotalLines": 9429,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "sh",
+      "TotalLines": 4001,
+      "AILines": 159,
+      "AIPercentage": 3.97,
+      "FileCount": 88
+    },
+    {
+      "Extension": "old",
+      "TotalLines": 656,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 3
+    },
+    {
+      "Extension": "yml",
+      "TotalLines": 650,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 42
+    },
+    {
+      "Extension": "py",
+      "TotalLines": 569,
+      "AILines": 396,
+      "AIPercentage": 69.6,
+      "FileCount": 27
+    },
+    {
+      "Extension": "yaml",
+      "TotalLines": 524,
+      "AILines": 42,
+      "AIPercentage": 8.02,
+      "FileCount": 52
+    },
+    {
+      "Extension": "bicepparam",
+      "TotalLines": 416,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 9
+    },
+    {
+      "Extension": "gitignore",
+      "TotalLines": 200,
+      "AILines": 1,
+      "AIPercentage": 0.5,
+      "FileCount": 9
+    },
+    {
+      "Extension": "other",
+      "TotalLines": 138,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 13
+    },
+    {
+      "Extension": "sample",
+      "TotalLines": 105,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 9
+    },
+    {
+      "Extension": "txt",
+      "TotalLines": 26,
+      "AILines": 12,
+      "AIPercentage": 46.15,
+      "FileCount": 19
+    },
+    {
+      "Extension": "md}",
+      "TotalLines": 18,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 1
+    },
+    {
+      "Extension": "env",
+      "TotalLines": 14,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 4
+    },
+    {
+      "Extension": "github/codeowners",
+      "TotalLines": 9,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 5
+    },
+    {
+      "Extension": "gitmodules",
+      "TotalLines": 6,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "bicep}",
+      "TotalLines": 1,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 4
+    }
+  ],
+  "GeneratedAt": "2026-01-22 07:41:36",
+  "TierDistribution": {
+    "Tier2_VeryHigh": 0,
+    "Tier4_Moderate": 0,
+    "Tier1_Definitive": 0,
+    "Tier5_Low": 0,
+    "Human": 0,
+    "Tier3_High": 0
+  },
+  "Metadata": {
+    "IncludeTestFiles": false,
+    "PowerShellVersion": "7.4.13",
+    "ScriptVersion": "2.0.0",
+    "AnalysisMethod": "5-Tier Weighted Pattern Detection",
+    "GeneratedAt": "2026-01-22 07:41:36",
+    "GeneratedBy": "Copilot Usage Report Tool v2.0"
+  },
+  "Users": [],
+  "BranchStatistics": {
+    "Branch": "main",
+    "TotalCommits": 0,
+    "AICommits": 0,
+    "HumanCommits": 0,
+    "TotalLinesAdded": null,
+    "TotalLinesDeleted": null,
+    "AILinesAdded": null,
+    "AILinesDeleted": null,
+    "Tier1Commits": 0,
+    "Tier2Commits": 0,
+    "Tier3Commits": 0,
+    "Tier4Commits": 0,
+    "Tier5Commits": 0,
+    "UniqueContributors": 0,
+    "AIPercentage": 0,
+    "HumanLinesAdded": 0
+  },
+  "ApplicationName": "Deploy your AI application",
+  "AIAttributionOverride": {
+    "OverridePercentage": null,
+    "Applied": false,
+    "Notes": null
+  },
+  "Commits": null
+}
