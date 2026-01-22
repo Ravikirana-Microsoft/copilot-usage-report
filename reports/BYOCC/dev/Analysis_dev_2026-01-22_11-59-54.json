@@ -1,0 +1,406 @@
+{
+  "AnalysisPeriod": {
+    "StartDate": "2026-01-01",
+    "EndDate": "2026-01-31",
+    "FilterApplied": true
+  },
+  "BranchStatistics": {
+    "Branch": "dev",
+    "TotalCommits": 4,
+    "AICommits": 1,
+    "HumanCommits": 3,
+    "TotalLinesAdded": 5085.0,
+    "TotalLinesDeleted": 21.0,
+    "AILinesAdded": 5027.0,
+    "AILinesDeleted": 0.0,
+    "Tier1Commits": 0,
+    "Tier2Commits": 0,
+    "Tier3Commits": 0,
+    "Tier4Commits": 1,
+    "Tier5Commits": 0,
+    "UniqueContributors": 3,
+    "AIPercentage": 98.86,
+    "HumanLinesAdded": 58.0
+  },
+  "FileTypeBreakdown": [
+    {
+      "Extension": "json",
+      "TotalLines": 255570,
+      "AILines": 20237,
+      "AIPercentage": 7.92,
+      "FileCount": 139
+    },
+    {
+      "Extension": "py",
+      "TotalLines": 90489,
+      "AILines": 86660,
+      "AIPercentage": 95.77,
+      "FileCount": 1147
+    },
+    {
+      "Extension": "json}",
+      "TotalLines": 55188,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "html",
+      "TotalLines": 24212,
+      "AILines": 24203,
+      "AIPercentage": 99.96,
+      "FileCount": 26
+    },
+    {
+      "Extension": "bicep",
+      "TotalLines": 17123,
+      "AILines": 4311,
+      "AIPercentage": 25.18,
+      "FileCount": 180
+    },
+    {
+      "Extension": "md",
+      "TotalLines": 16070,
+      "AILines": 11845,
+      "AIPercentage": 73.71,
+      "FileCount": 243
+    },
+    {
+      "Extension": "ps1",
+      "TotalLines": 12396,
+      "AILines": 12184,
+      "AIPercentage": 98.29,
+      "FileCount": 218
+    },
+    {
+      "Extension": "tsx",
+      "TotalLines": 10439,
+      "AILines": 8568,
+      "AIPercentage": 82.08,
+      "FileCount": 339
+    },
+    {
+      "Extension": "sh",
+      "TotalLines": 3353,
+      "AILines": 2420,
+      "AIPercentage": 72.17,
+      "FileCount": 51
+    },
+    {
+      "Extension": "yml",
+      "TotalLines": 3320,
+      "AILines": 83,
+      "AIPercentage": 2.5,
+      "FileCount": 88
+    },
+    {
+      "Extension": "gitignore",
+      "TotalLines": 2564,
+      "AILines": 2140,
+      "AIPercentage": 83.46,
+      "FileCount": 24
+    },
+    {
+      "Extension": "ts",
+      "TotalLines": 2375,
+      "AILines": 1799,
+      "AIPercentage": 75.75,
+      "FileCount": 73
+    },
+    {
+      "Extension": "txt",
+      "TotalLines": 1431,
+      "AILines": 501,
+      "AIPercentage": 35.01,
+      "FileCount": 153
+    },
+    {
+      "Extension": "css",
+      "TotalLines": 828,
+      "AILines": 810,
+      "AIPercentage": 97.83,
+      "FileCount": 19
+    },
+    {
+      "Extension": "js",
+      "TotalLines": 677,
+      "AILines": 657,
+      "AIPercentage": 97.05,
+      "FileCount": 49
+    },
+    {
+      "Extension": "other",
+      "TotalLines": 476,
+      "AILines": 206,
+      "AIPercentage": 43.28,
+      "FileCount": 40
+    },
+    {
+      "Extension": "csv",
+      "TotalLines": 266,
+      "AILines": 85,
+      "AIPercentage": 31.95,
+      "FileCount": 25
+    },
+    {
+      "Extension": "bat",
+      "TotalLines": 225,
+      "AILines": 225,
+      "AIPercentage": 100.0,
+      "FileCount": 6
+    },
+    {
+      "Extension": "yaml",
+      "TotalLines": 193,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 11
+    },
+    {
+      "Extension": "ini",
+      "TotalLines": 168,
+      "AILines": 159,
+      "AIPercentage": 94.64,
+      "FileCount": 20
+    },
+    {
+      "Extension": "example",
+      "TotalLines": 128,
+      "AILines": 108,
+      "AIPercentage": 84.38,
+      "FileCount": 25
+    },
+    {
+      "Extension": "minimal",
+      "TotalLines": 102,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 6
+    },
+    {
+      "Extension": "svg",
+      "TotalLines": 96,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 80
+    },
+    {
+      "Extension": "coveragerc",
+      "TotalLines": 75,
+      "AILines": 66,
+      "AIPercentage": 88.0,
+      "FileCount": 6
+    },
+    {
+      "Extension": "sample",
+      "TotalLines": 64,
+      "AILines": 64,
+      "AIPercentage": 100.0,
+      "FileCount": 7
+    },
+    {
+      "Extension": "conf",
+      "TotalLines": 63,
+      "AILines": 63,
+      "AIPercentage": 100.0,
+      "FileCount": 6
+    },
+    {
+      "Extension": "flake8",
+      "TotalLines": 42,
+      "AILines": 12,
+      "AIPercentage": 28.57,
+      "FileCount": 12
+    },
+    {
+      "Extension": "frontend",
+      "TotalLines": 32,
+      "AILines": 32,
+      "AIPercentage": 100.0,
+      "FileCount": 3
+    },
+    {
+      "Extension": "dockerignore",
+      "TotalLines": 31,
+      "AILines": 31,
+      "AIPercentage": 100.0,
+      "FileCount": 7
+    },
+    {
+      "Extension": "github/codeowners",
+      "TotalLines": 23,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 19
+    },
+    {
+      "Extension": "config",
+      "TotalLines": 20,
+      "AILines": 20,
+      "AIPercentage": 100.0,
+      "FileCount": 3
+    },
+    {
+      "Extension": "sql",
+      "TotalLines": 14,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 3
+    },
+    {
+      "Extension": "deployment",
+      "TotalLines": 3,
+      "AILines": 3,
+      "AIPercentage": 100.0,
+      "FileCount": 3
+    },
+    {
+      "Extension": "spark-initial-sha",
+      "TotalLines": 1,
+      "AILines": 1,
+      "AIPercentage": 100.0,
+      "FileCount": 3
+    }
+  ],
+  "ApplicationName": "BYOCC",
+  "Branch": "dev",
+  "AIAttributionOverride": {
+    "OverridePercentage": null,
+    "Applied": false,
+    "Notes": null
+  },
+  "Metadata": {
+    "IncludeTestFiles": false,
+    "GeneratedAt": "2026-01-22 11:59:54",
+    "GeneratedBy": "Copilot Usage Report Tool v2.0",
+    "ScriptVersion": "2.0.0",
+    "PowerShellVersion": "7.4.13",
+    "AnalysisMethod": "5-Tier Weighted Pattern Detection"
+  },
+  "GeneratedAt": "2026-01-22 11:59:54",
+  "TierDistribution": {
+    "Human": 3,
+    "Tier2_VeryHigh": 0,
+    "Tier1_Definitive": 0,
+    "Tier3_High": 0,
+    "Tier5_Low": 0,
+    "Tier4_Moderate": 1
+  },
+  "Commits": [
+    {
+      "Hash": "eff81e61c9cc8e36942a62ec296df5760069f081",
+      "Author": "Harmanpreet Kaur",
+      "Date": "Wed Jan 14 18:16:28 2026 +0530",
+      "Message": "Refactor code structure for improved readability and maintainability",
+      "LinesAdded": 5027,
+      "LinesDeleted": 0,
+      "IsAI": true,
+      "ConfidenceScore": 73,
+      "ConfidenceTier": "Tier 4: Moderate Confidence (70-79 percent)",
+      "TierNumber": 4
+    },
+    {
+      "Hash": "38d88e990b799b9d9f1017a3cd4ca8fc5fa57400",
+      "Author": "Niraj Chaudhari (Persistent Systems Inc)",
+      "Date": "Thu Jan 8 11:46:38 2026 +0530",
+      "Message": "Update .venv command in deployment guide",
+      "LinesAdded": 1,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "81f1cff1b5287ec126c422d87544b1c3c5b0cd1d",
+      "Author": "Niraj Chaudhari (Persistent Systems Inc)",
+      "Date": "Wed Jan 7 18:44:16 2026 +0530",
+      "Message": "(Fix for bug-30627 )create menu to show user details and logout options, on right top corner",
+      "LinesAdded": 51,
+      "LinesDeleted": 14,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "98d289a7b72e5da37318a3a291fc426508d02354",
+      "Author": "Shreyas-Microsoft",
+      "Date": "Tue Jan 6 08:51:56 2026 +0530",
+      "Message": "fix linting issues",
+      "LinesAdded": 6,
+      "LinesDeleted": 6,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    }
+  ],
+  "Users": [
+    {
+      "UserName": "Harmanpreet Kaur",
+      "UserEmail": "v-harmanpkau@microsoft.com",
+      "TotalCommits": 1,
+      "AICommits": 1,
+      "HumanCommits": 0,
+      "AILinesAdded": 5027,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 0,
+      "HumanLinesDeleted": 0,
+      "TotalLinesAdded": 5027,
+      "TotalLinesDeleted": 0,
+      "AIPercentage": 100.0,
+      "AvgConfidenceScore": 73.0,
+      "ConfidenceScores": [
+        73
+      ],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 1,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Shreyas-Microsoft",
+      "UserEmail": "v-swaikar@microsft.com",
+      "TotalCommits": 1,
+      "AICommits": 0,
+      "HumanCommits": 1,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 6,
+      "HumanLinesDeleted": 6,
+      "TotalLinesAdded": 6,
+      "TotalLinesDeleted": 6,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Niraj Chaudhari (Persistent Systems Inc)",
+      "UserEmail": "v-nirajcha@microsoft.com",
+      "TotalCommits": 2,
+      "AICommits": 0,
+      "HumanCommits": 2,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 52,
+      "HumanLinesDeleted": 15,
+      "TotalLinesAdded": 52,
+      "TotalLinesDeleted": 15,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    }
+  ]
+}
