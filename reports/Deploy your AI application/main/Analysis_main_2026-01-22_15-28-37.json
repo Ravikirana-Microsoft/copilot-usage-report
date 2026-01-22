@@ -1,0 +1,261 @@
+{
+  "TierDistribution": {
+    "Tier2_VeryHigh": 0,
+    "Tier1_Definitive": 0,
+    "Human": 2,
+    "Tier5_Low": 0,
+    "Tier4_Moderate": 0,
+    "Tier3_High": 0
+  },
+  "GeneratedAt": "2026-01-22 15:28:37",
+  "Branch": "main",
+  "FileTypeBreakdown": [
+    {
+      "Extension": "json",
+      "TotalLines": 266500,
+      "AILines": 71909,
+      "AIPercentage": 26.98,
+      "FileCount": 79
+    },
+    {
+      "Extension": "ps1",
+      "TotalLines": 46871,
+      "AILines": 254,
+      "AIPercentage": 0.54,
+      "FileCount": 804
+    },
+    {
+      "Extension": "md",
+      "TotalLines": 17385,
+      "AILines": 87,
+      "AIPercentage": 0.5,
+      "FileCount": 410
+    },
+    {
+      "Extension": "bicep",
+      "TotalLines": 11172,
+      "AILines": 717,
+      "AIPercentage": 6.42,
+      "FileCount": 434
+    },
+    {
+      "Extension": "svg",
+      "TotalLines": 9429,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "sh",
+      "TotalLines": 6992,
+      "AILines": 159,
+      "AIPercentage": 2.27,
+      "FileCount": 154
+    },
+    {
+      "Extension": "yml",
+      "TotalLines": 990,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 58
+    },
+    {
+      "Extension": "yaml",
+      "TotalLines": 893,
+      "AILines": 42,
+      "AIPercentage": 4.7,
+      "FileCount": 78
+    },
+    {
+      "Extension": "bicepparam",
+      "TotalLines": 772,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 16
+    },
+    {
+      "Extension": "py",
+      "TotalLines": 741,
+      "AILines": 396,
+      "AIPercentage": 53.44,
+      "FileCount": 49
+    },
+    {
+      "Extension": "old",
+      "TotalLines": 656,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 5
+    },
+    {
+      "Extension": "gitignore",
+      "TotalLines": 394,
+      "AILines": 1,
+      "AIPercentage": 0.25,
+      "FileCount": 15
+    },
+    {
+      "Extension": "sample",
+      "TotalLines": 208,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 16
+    },
+    {
+      "Extension": "other",
+      "TotalLines": 182,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 19
+    },
+    {
+      "Extension": "txt",
+      "TotalLines": 40,
+      "AILines": 12,
+      "AIPercentage": 30.0,
+      "FileCount": 35
+    },
+    {
+      "Extension": "env",
+      "TotalLines": 28,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 8
+    },
+    {
+      "Extension": "md}",
+      "TotalLines": 18,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 1
+    },
+    {
+      "Extension": "github/codeowners",
+      "TotalLines": 13,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 9
+    },
+    {
+      "Extension": "gitmodules",
+      "TotalLines": 12,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 4
+    },
+    {
+      "Extension": "bicep}",
+      "TotalLines": 1,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 10
+    }
+  ],
+  "Metadata": {
+    "ScriptVersion": "2.0.0",
+    "GeneratedAt": "2026-01-22 15:28:37",
+    "PowerShellVersion": "7.4.13",
+    "GeneratedBy": "Copilot Usage Report Tool v2.0",
+    "IncludeTestFiles": false,
+    "AnalysisMethod": "5-Tier Weighted Pattern Detection"
+  },
+  "BranchStatistics": {
+    "Branch": "main",
+    "TotalCommits": 2,
+    "AICommits": 0,
+    "HumanCommits": 2,
+    "TotalLinesAdded": 167.0,
+    "TotalLinesDeleted": 27.0,
+    "AILinesAdded": null,
+    "AILinesDeleted": null,
+    "Tier1Commits": 0,
+    "Tier2Commits": 0,
+    "Tier3Commits": 0,
+    "Tier4Commits": 0,
+    "Tier5Commits": 0,
+    "UniqueContributors": 2,
+    "AIPercentage": 0.0,
+    "HumanLinesAdded": 167.0
+  },
+  "Commits": [
+    {
+      "Hash": "b6f5cd8236b15ab94361becf9c3daafb81850f64",
+      "Author": "Prekshith-Microsoft",
+      "Date": "Fri Oct 17 15:14:06 2025 +0530",
+      "Message": "docs: Updated the deployment documents (#76)",
+      "LinesAdded": 165,
+      "LinesDeleted": 25,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "8381abc38718fa86e56333ef13e42c18717ab110",
+      "Author": "Abdul-Microsoft",
+      "Date": "Tue Oct 14 12:17:10 2025 +0530",
+      "Message": "Add Bicep modules for AI Foundry and Cognitive Services deployment",
+      "LinesAdded": 2,
+      "LinesDeleted": 2,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    }
+  ],
+  "AIAttributionOverride": {
+    "OverridePercentage": null,
+    "Applied": false,
+    "Notes": null
+  },
+  "ApplicationName": "Deploy your AI application",
+  "AnalysisPeriod": {
+    "FilterApplied": true,
+    "EndDate": "2025-10-31",
+    "StartDate": "2025-10-01"
+  },
+  "Users": [
+    {
+      "UserName": "Prekshith-Microsoft",
+      "UserEmail": "v-pdj@microsoft.com",
+      "TotalCommits": 1,
+      "AICommits": 0,
+      "HumanCommits": 1,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 165,
+      "HumanLinesDeleted": 25,
+      "TotalLinesAdded": 165,
+      "TotalLinesDeleted": 25,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Abdul-Microsoft",
+      "UserEmail": "v-amujeebta@microsoft.com",
+      "TotalCommits": 1,
+      "AICommits": 0,
+      "HumanCommits": 1,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 2,
+      "HumanLinesDeleted": 2,
+      "TotalLinesAdded": 2,
+      "TotalLinesDeleted": 2,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    }
+  ]
+}
