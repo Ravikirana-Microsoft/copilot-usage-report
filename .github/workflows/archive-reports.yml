@@ -1,3 +1,4 @@
+# Archive workflow - bundles all reports into named archives
 name: Archive Reports
 
 on:
