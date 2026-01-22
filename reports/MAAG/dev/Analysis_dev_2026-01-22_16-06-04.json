@@ -1,0 +1,200 @@
+{
+  "TierDistribution": {
+    "Tier3_High": 0,
+    "Tier4_Moderate": 0,
+    "Tier2_VeryHigh": 0,
+    "Human": 0,
+    "Tier5_Low": 0,
+    "Tier1_Definitive": 0
+  },
+  "AnalysisPeriod": {
+    "FilterApplied": true,
+    "StartDate": "2026-01-01",
+    "EndDate": "2026-01-31"
+  },
+  "BranchStatistics": {
+    "Branch": "dev",
+    "TotalCommits": 0,
+    "AICommits": 0,
+    "HumanCommits": 0,
+    "TotalLinesAdded": null,
+    "TotalLinesDeleted": null,
+    "AILinesAdded": null,
+    "AILinesDeleted": null,
+    "Tier1Commits": 0,
+    "Tier2Commits": 0,
+    "Tier3Commits": 0,
+    "Tier4Commits": 0,
+    "Tier5Commits": 0,
+    "UniqueContributors": 0,
+    "AIPercentage": 0,
+    "HumanLinesAdded": 0
+  },
+  "Metadata": {
+    "AnalysisMethod": "5-Tier Weighted Pattern Detection",
+    "ScriptVersion": "2.0.0",
+    "GeneratedAt": "2026-01-22 16:06:04",
+    "GeneratedBy": "Copilot Usage Report Tool v2.0",
+    "PowerShellVersion": "7.4.13",
+    "IncludeTestFiles": false
+  },
+  "Commits": null,
+  "Branch": "dev",
+  "ApplicationName": "MAAG",
+  "AIAttributionOverride": {
+    "OverridePercentage": null,
+    "Applied": false,
+    "Notes": null
+  },
+  "Users": [],
+  "FileTypeBreakdown": [
+    {
+      "Extension": "csv",
+      "TotalLines": 259674,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 387
+    },
+    {
+      "Extension": "json",
+      "TotalLines": 136152,
+      "AILines": 33,
+      "AIPercentage": 0.02,
+      "FileCount": 56
+    },
+    {
+      "Extension": "ipynb",
+      "TotalLines": 59529,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 801
+    },
+    {
+      "Extension": "md",
+      "TotalLines": 21099,
+      "AILines": 231,
+      "AIPercentage": 1.09,
+      "FileCount": 720
+    },
+    {
+      "Extension": "py",
+      "TotalLines": 14776,
+      "AILines": 7239,
+      "AIPercentage": 48.99,
+      "FileCount": 91
+    },
+    {
+      "Extension": "sh",
+      "TotalLines": 4613,
+      "AILines": 354,
+      "AIPercentage": 7.67,
+      "FileCount": 92
+    },
+    {
+      "Extension": "ps1",
+      "TotalLines": 3981,
+      "AILines": 2073,
+      "AIPercentage": 52.07,
+      "FileCount": 36
+    },
+    {
+      "Extension": "yml",
+      "TotalLines": 2434,
+      "AILines": 684,
+      "AIPercentage": 28.1,
+      "FileCount": 82
+    },
+    {
+      "Extension": "gitignore",
+      "TotalLines": 1952,
+      "AILines": 3,
+      "AIPercentage": 0.15,
+      "FileCount": 20
+    },
+    {
+      "Extension": "bicep",
+      "TotalLines": 924,
+      "AILines": 24,
+      "AIPercentage": 2.6,
+      "FileCount": 36
+    },
+    {
+      "Extension": "txt",
+      "TotalLines": 369,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 57
+    },
+    {
+      "Extension": "dockerignore",
+      "TotalLines": 282,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 3
+    },
+    {
+      "Extension": "other",
+      "TotalLines": 231,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 11
+    },
+    {
+      "Extension": "yaml",
+      "TotalLines": 214,
+      "AILines": 45,
+      "AIPercentage": 21.03,
+      "FileCount": 40
+    },
+    {
+      "Extension": "sql",
+      "TotalLines": 138,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 9
+    },
+    {
+      "Extension": "env",
+      "TotalLines": 56,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 8
+    },
+    {
+      "Extension": "github/psl-codeowners",
+      "TotalLines": 45,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 5
+    },
+    {
+      "Extension": "ps1}",
+      "TotalLines": 39,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 6
+    },
+    {
+      "Extension": "github/codeowners",
+      "TotalLines": 25,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 25
+    },
+    {
+      "Extension": "yml}",
+      "TotalLines": 6,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 3
+    },
+    {
+      "Extension": "png",
+      "TotalLines": 3,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 407
+    }
+  ],
+  "GeneratedAt": "2026-01-22 16:06:04"
+}
