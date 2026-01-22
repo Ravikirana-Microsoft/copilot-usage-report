@@ -1,0 +1,200 @@
+{
+  "Branch": "dev",
+  "AnalysisPeriod": {
+    "StartDate": "2026-01-01",
+    "FilterApplied": true,
+    "EndDate": "2026-01-31"
+  },
+  "Metadata": {
+    "GeneratedAt": "2026-01-22 07:34:03",
+    "PowerShellVersion": "7.4.13",
+    "GeneratedBy": "Copilot Usage Report Tool v2.0",
+    "ScriptVersion": "2.0.0",
+    "AnalysisMethod": "5-Tier Weighted Pattern Detection",
+    "IncludeTestFiles": false
+  },
+  "FileTypeBreakdown": [
+    {
+      "Extension": "csv",
+      "TotalLines": 86558,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 129
+    },
+    {
+      "Extension": "json",
+      "TotalLines": 45336,
+      "AILines": 11,
+      "AIPercentage": 0.02,
+      "FileCount": 18
+    },
+    {
+      "Extension": "ipynb",
+      "TotalLines": 19843,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 267
+    },
+    {
+      "Extension": "md",
+      "TotalLines": 6713,
+      "AILines": 77,
+      "AIPercentage": 1.15,
+      "FileCount": 212
+    },
+    {
+      "Extension": "py",
+      "TotalLines": 4888,
+      "AILines": 2413,
+      "AIPercentage": 49.37,
+      "FileCount": 29
+    },
+    {
+      "Extension": "sh",
+      "TotalLines": 1371,
+      "AILines": 118,
+      "AIPercentage": 8.61,
+      "FileCount": 28
+    },
+    {
+      "Extension": "ps1",
+      "TotalLines": 1327,
+      "AILines": 691,
+      "AIPercentage": 52.07,
+      "FileCount": 12
+    },
+    {
+      "Extension": "yml",
+      "TotalLines": 662,
+      "AILines": 228,
+      "AIPercentage": 34.44,
+      "FileCount": 24
+    },
+    {
+      "Extension": "gitignore",
+      "TotalLines": 594,
+      "AILines": 1,
+      "AIPercentage": 0.17,
+      "FileCount": 6
+    },
+    {
+      "Extension": "bicep",
+      "TotalLines": 308,
+      "AILines": 8,
+      "AIPercentage": 2.6,
+      "FileCount": 12
+    },
+    {
+      "Extension": "txt",
+      "TotalLines": 114,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 16
+    },
+    {
+      "Extension": "dockerignore",
+      "TotalLines": 94,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 1
+    },
+    {
+      "Extension": "yaml",
+      "TotalLines": 68,
+      "AILines": 15,
+      "AIPercentage": 22.06,
+      "FileCount": 12
+    },
+    {
+      "Extension": "other",
+      "TotalLines": 63,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 3
+    },
+    {
+      "Extension": "sql",
+      "TotalLines": 46,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 3
+    },
+    {
+      "Extension": "env",
+      "TotalLines": 14,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "ps1}",
+      "TotalLines": 13,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "github/psl-codeowners",
+      "TotalLines": 9,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 1
+    },
+    {
+      "Extension": "github/codeowners",
+      "TotalLines": 6,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 6
+    },
+    {
+      "Extension": "yml}",
+      "TotalLines": 2,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 1
+    },
+    {
+      "Extension": "png",
+      "TotalLines": 1,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 125
+    }
+  ],
+  "Commits": null,
+  "Users": [],
+  "GeneratedAt": "2026-01-22 07:34:03",
+  "AIAttributionOverride": {
+    "Notes": null,
+    "OverridePercentage": null,
+    "Applied": false
+  },
+  "ApplicationName": "MAAG",
+  "BranchStatistics": {
+    "Branch": "dev",
+    "TotalCommits": 0,
+    "AICommits": 0,
+    "HumanCommits": 0,
+    "TotalLinesAdded": null,
+    "TotalLinesDeleted": null,
+    "AILinesAdded": null,
+    "AILinesDeleted": null,
+    "Tier1Commits": 0,
+    "Tier2Commits": 0,
+    "Tier3Commits": 0,
+    "Tier4Commits": 0,
+    "Tier5Commits": 0,
+    "UniqueContributors": 0,
+    "AIPercentage": 0,
+    "HumanLinesAdded": 0
+  },
+  "TierDistribution": {
+    "Tier3_High": 0,
+    "Tier2_VeryHigh": 0,
+    "Human": 0,
+    "Tier5_Low": 0,
+    "Tier4_Moderate": 0,
+    "Tier1_Definitive": 0
+  }
+}
