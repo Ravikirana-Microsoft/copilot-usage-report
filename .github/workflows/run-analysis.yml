@@ -253,8 +253,19 @@ jobs:
         with:
           ref: ${{ github.ref }}
 
-      - name: Pull latest changes
-        run: git pull origin ${{ github.ref_name }}
+      - name: Pull latest changes (with retry)
+        run: |
+          for i in 1 2 3 4 5; do
+            echo "Attempt $i: Pulling latest changes..."
+            if git pull origin ${{ github.ref_name }}; then
+              echo "✅ Pull successful"
+              exit 0
+            fi
+            echo "⚠️ Pull failed, waiting 10 seconds before retry..."
+            sleep 10
+          done
+          echo "❌ Failed to pull after 5 attempts"
+          exit 1
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
@@ -480,8 +491,19 @@ jobs:
         with:
           ref: ${{ github.ref }}
 
-      - name: Pull latest changes
-        run: git pull origin ${{ github.ref_name }}
+      - name: Pull latest changes (with retry)
+        run: |
+          for i in 1 2 3 4 5; do
+            echo "Attempt $i: Pulling latest changes..."
+            if git pull origin ${{ github.ref_name }}; then
+              echo "✅ Pull successful"
+              exit 0
+            fi
+            echo "⚠️ Pull failed, waiting 10 seconds before retry..."
+            sleep 10
+          done
+          echo "❌ Failed to pull after 5 attempts"
+          exit 1
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
