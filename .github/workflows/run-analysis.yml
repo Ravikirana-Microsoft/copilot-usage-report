@@ -72,6 +72,14 @@ on:
   # schedule:
   #   - cron: '0 9 * * 1'
 
+# ============================================
+# CONCURRENCY CONTROL
+# Prevents merge conflicts when multiple runs overlap
+# ============================================
+concurrency:
+  group: copilot-analysis-${{ github.ref }}
+  cancel-in-progress: false  # Don't cancel in-progress runs, just queue
+
 jobs:
   # ============================================
   # ARCHIVE JOB - Runs when archive_mode=true
@@ -101,7 +109,7 @@ jobs:
         run: |
           ARCHIVE_NAME="${{ github.event.inputs.archive_name }}"
           if [ -z "$ARCHIVE_NAME" ]; then
-            echo "❌ Archive name is required when archive_mode is true"
+            echo "Γ¥î Archive name is required when archive_mode is true"
             exit 1
           fi
           # Sanitize name (alphanumeric, dash, underscore only)
@@ -119,16 +127,16 @@ jobs:
           ARCHIVE_DIR="reports/named-archives/${ARCHIVE_NAME}"
           mkdir -p "$ARCHIVE_DIR/consolidated"
           
-          echo "📦 Creating archive: $ARCHIVE_NAME"
+          echo "≡ƒôª Creating archive: $ARCHIVE_NAME"
           
           # Count reports
           REPORT_COUNT=$(ls reports/consolidated/ConsolidatedReport_*.json 2>/dev/null | wc -l || echo "0")
           
           if [ "$REPORT_COUNT" -eq "0" ]; then
-            echo "⚠️ No consolidated reports found - creating empty archive marker"
+            echo "ΓÜá∩╕Å No consolidated reports found - creating empty archive marker"
             REPORT_COUNT=0
           else
-            echo "📄 Archiving $REPORT_COUNT consolidated reports..."
+            echo "≡ƒôä Archiving $REPORT_COUNT consolidated reports..."
             # Copy ALL consolidated reports to archive
             cp reports/consolidated/ConsolidatedReport_*.json "$ARCHIVE_DIR/consolidated/" 2>/dev/null || true
           fi
@@ -158,12 +166,12 @@ jobs:
           echo "  \"createdBy\": \"${{ github.actor }}\"" >> "$ARCHIVE_DIR/archive-info.json"
           echo "}" >> "$ARCHIVE_DIR/archive-info.json"
           
-          echo "✅ Archive created: $ARCHIVE_DIR"
+          echo "Γ£à Archive created: $ARCHIVE_DIR"
           ls -la "$ARCHIVE_DIR/"
 
       - name: Clear Current Reports
         run: |
-          echo "🗑️ Clearing current consolidated reports..."
+          echo "≡ƒùæ∩╕Å Clearing current consolidated reports..."
           
           # Remove all consolidated reports
           rm -f reports/consolidated/ConsolidatedReport_*.json 2>/dev/null || true
@@ -177,7 +185,7 @@ jobs:
           # Create placeholder to keep folder
           echo "Reports archived to named-archives/${{ env.ARCHIVE_NAME }}" > reports/consolidated/README.md
           
-          echo "✅ Current reports cleared"
+          echo "Γ£à Current reports cleared"
 
       - name: Update Dashboard to Show No Data
         run: |
@@ -185,7 +193,7 @@ jobs:
           TIMESTAMP=$(date -u +'%Y-%m-%d %H:%M:%S')
           
           if [ -f "$DASHBOARD" ]; then
-            echo "📊 Updating dashboard to show no data state..."
+            echo "≡ƒôè Updating dashboard to show no data state..."
             
             # Use perl for multi-line regex - clear archivedReports array
             perl -i -0pe 's/archivedReports:\s*\[[\s\S]*?\],/archivedReports: [],/g' "$DASHBOARD"
@@ -199,13 +207,13 @@ jobs:
             # For EMBEDDED_DATA, set to null using perl for multi-line
             perl -i -0pe 's/const EMBEDDED_DATA = \{[\s\S]*?\};/const EMBEDDED_DATA = null;/g' "$DASHBOARD" || true
             
-            echo "✅ Dashboard updated to show no data"
+            echo "Γ£à Dashboard updated to show no data"
             
             # Verify the update
             echo "--- Verifying REPORT_CONFIG ---"
             grep -A5 "const REPORT_CONFIG" "$DASHBOARD" | head -10
           else
-            echo "⚠️ Dashboard not found at $DASHBOARD"
+            echo "ΓÜá∩╕Å Dashboard not found at $DASHBOARD"
           fi
 
       - name: Update Archive Index
@@ -230,7 +238,7 @@ jobs:
           done
           echo "]" >> "$INDEX_FILE"
           
-          echo "📋 Archive index updated:"
+          echo "≡ƒôï Archive index updated:"
           cat "$INDEX_FILE"
 
       - name: Commit and Push Archive
@@ -243,21 +251,21 @@ jobs:
           git add reports/*.json 2>/dev/null || true
           
           if git diff --staged --quiet; then
-            echo "⚠️ No changes to commit"
+            echo "ΓÜá∩╕Å No changes to commit"
           else
-            git commit -m "📦 Archive: ${{ env.ARCHIVE_NAME }}"
+            git commit -m "≡ƒôª Archive: ${{ env.ARCHIVE_NAME }}"
             
             # Retry push
             for i in 1 2 3; do
               if git push; then
-                echo "✅ Archive committed and pushed"
+                echo "Γ£à Archive committed and pushed"
                 exit 0
               fi
-              echo "⚠️ Push failed, attempt $i. Retrying..."
+              echo "ΓÜá∩╕Å Push failed, attempt $i. Retrying..."
               git pull --rebase
             done
             
-            echo "❌ Failed to push after 3 attempts"
+            echo "Γ¥î Failed to push after 3 attempts"
             exit 1
           fi
 
@@ -286,13 +294,13 @@ jobs:
           for i in 1 2 3 4 5; do
             echo "Attempt $i: Pulling latest changes..."
             if git pull origin ${{ github.ref_name }}; then
-              echo "✅ Pull successful"
+              echo "Γ£à Pull successful"
               exit 0
             fi
-            echo "⚠️ Pull failed, waiting 10 seconds before retry..."
+            echo "ΓÜá∩╕Å Pull failed, waiting 10 seconds before retry..."
             sleep 10
           done
-          echo "❌ Failed to pull after 5 attempts"
+          echo "Γ¥î Failed to pull after 5 attempts"
           exit 1
 
       - name: Setup Pages
@@ -352,9 +360,9 @@ jobs:
 
       - name: Display input parameters
         run: |
-          Write-Host "═══════════════════════════════════════════════════════════" -ForegroundColor Cyan
+          Write-Host "ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ" -ForegroundColor Cyan
           Write-Host "                 WORKFLOW INPUT PARAMETERS                  " -ForegroundColor Cyan
-          Write-Host "═══════════════════════════════════════════════════════════" -ForegroundColor Cyan
+          Write-Host "ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ" -ForegroundColor Cyan
           Write-Host "Analysis Name    : ${{ github.event.inputs.analysis_name || 'Auto-generated' }}" -ForegroundColor White
           Write-Host "Start Date       : ${{ github.event.inputs.start_date || 'All time' }}" -ForegroundColor White
           Write-Host "End Date         : ${{ github.event.inputs.end_date || 'Today' }}" -ForegroundColor White
@@ -364,7 +372,7 @@ jobs:
           Write-Host "Max Parallel     : ${{ github.event.inputs.max_parallel }}" -ForegroundColor White
           Write-Host "Compare With     : ${{ github.event.inputs.compare_with || 'None' }}" -ForegroundColor White
           Write-Host "Config Path      : ${{ github.event.inputs.config_path }}" -ForegroundColor White
-          Write-Host "═══════════════════════════════════════════════════════════" -ForegroundColor Cyan
+          Write-Host "ΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉΓòÉ" -ForegroundColor Cyan
         shell: pwsh
 
       - name: Run Batch Analysis
@@ -462,20 +470,20 @@ jobs:
               try {
                 git push origin ${{ github.ref_name }}
                 $pushSuccess = $true
-                Write-Host "✅ Reports committed and pushed successfully" -ForegroundColor Green
+                Write-Host "Γ£à Reports committed and pushed successfully" -ForegroundColor Green
               } catch {
                 $retryCount++
-                Write-Host "⚠️ Push failed, attempt $retryCount of $maxRetries. Pulling and retrying..." -ForegroundColor Yellow
+                Write-Host "ΓÜá∩╕Å Push failed, attempt $retryCount of $maxRetries. Pulling and retrying..." -ForegroundColor Yellow
                 git pull origin ${{ github.ref_name }} --rebase
               }
             }
             
             if (-not $pushSuccess) {
-              Write-Host "❌ Failed to push after $maxRetries attempts" -ForegroundColor Red
+              Write-Host "Γ¥î Failed to push after $maxRetries attempts" -ForegroundColor Red
               exit 1
             }
           } else {
-            Write-Host "⚠️ No changes to commit" -ForegroundColor Yellow
+            Write-Host "ΓÜá∩╕Å No changes to commit" -ForegroundColor Yellow
           }
         shell: pwsh
 
@@ -524,13 +532,13 @@ jobs:
           for i in 1 2 3 4 5; do
             echo "Attempt $i: Pulling latest changes..."
             if git pull origin ${{ github.ref_name }}; then
-              echo "✅ Pull successful"
+              echo "Γ£à Pull successful"
               exit 0
             fi
-            echo "⚠️ Pull failed, waiting 10 seconds before retry..."
+            echo "ΓÜá∩╕Å Pull failed, waiting 10 seconds before retry..."
             sleep 10
           done
-          echo "❌ Failed to pull after 5 attempts"
+          echo "Γ¥î Failed to pull after 5 attempts"
           exit 1
 
       - name: Setup Pages
