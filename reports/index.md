@@ -2,7 +2,7 @@
 
 > Auto-generated index of all analysis reports with application-level AI usage statistics.
 > 
-> **Last Updated:** 2026-01-22 20:48:27
+> **Last Updated:** 2026-01-22 15:24:03
 
 ---
 
@@ -34,6 +34,7 @@
 
 | Run Date | Period | Applications | Branches | Overall AI % | Reports |
 |----------|--------|--------------|----------|--------------|---------|
+| 2026-01-22 15:24 | 2025-11-01 to 2025-11-30 | 13 | 13 | 54.14% | [Summary](Batch-Analysis-Summary.md), [JSON](Consolidated-Analysis_2026-01-22_15-24-03.json) |
 | 2026-01-22 20:48 | 2025-11-01 to 2025-11-30 | 13 | 13 | 54.14% | [Summary](Batch-Analysis-Summary.md), [JSON](Consolidated-Analysis_2026-01-22_20-48-27.json) |
 | 2026-01-22 20:44 | 2026-01-01 to 2026-01-22 | 13 | 13 | 26.35% | [Summary](Batch-Analysis-Summary.md), [JSON](Consolidated-Analysis_2026-01-22_20-44-24.json) |
 | 2026-01-22 14:58 | 2025-12-01 to 2025-12-31 | 13 | 13 | 16.9% | [Summary](Batch-Analysis-Summary.md), [JSON](Consolidated-Analysis_2026-01-22_14-58-26.json) |
@@ -53,7 +54,6 @@
 | 2026-01-22 07:41 | 2026-10-01 to 2026-10-30 | 13 | 12 | 0% | [Summary](Batch-Analysis-Summary.md), [JSON](Consolidated-Analysis_2026-01-22_07-41-37.json) |
 | 2026-01-22 07:34 | 2026-01-01 to 2026-01-31 | 13 | 13 | 18.03% | [Summary](Batch-Analysis-Summary.md), [JSON](Consolidated-Analysis_2026-01-22_07-34-13.json) |
 | 2026-01-22 07:31 | 2025-11-01 to 2025-11-30 | 13 | 13 | 54.14% | [Summary](Batch-Analysis-Summary.md), [JSON](Consolidated-Analysis_2026-01-22_07-31-22.json) |
-| 2026-01-22 07:08 | 2025-12-01 to 2026-01-31 | 13 | 13 | 17.4% | [Summary](Batch-Analysis-Summary.md), [JSON](Consolidated-Analysis_2026-01-22_07-08-44.json) |
 
 ---
 
@@ -126,17 +126,17 @@
 - **main Branch**: [RTI/main](RTI/main/)
 
 
-**Latest Reports (2026-01-22 20:48):**
+**Latest Reports (2026-01-22 15:24):**
 
 - [MACAE v4 - main](MACAE v4/main/) - AI: 6.92%
 - [RTI - main](RTI/main/) - AI: 99.54%
-- [Fabric SQL - dev](Fabric SQL/dev/) - AI: 10.42%
 - [BYOCC - dev](BYOCC/dev/) - AI: 71.9%
+- [Fabric SQL - dev](Fabric SQL/dev/) - AI: 10.42%
+- [Doc Gen - dev](Doc Gen/dev/) - AI: 0%
 - [BYOC - dev](BYOC/dev/) - AI: 5.12%
-- [CWYD - dev](CWYD/dev/) - AI: 0%
 - [Content Processing - dev](Content Processing/dev/) - AI: 0.76%
 - [Code Modernization - dev](Code Modernization/dev/) - AI: 0.02%
-- [Doc Gen - dev](Doc Gen/dev/) - AI: 0%
+- [CWYD - dev](CWYD/dev/) - AI: 0%
 - [Container Migration - dev](Container Migration/dev/) - AI: 0.48%
 - [Deploy your AI application - main](Deploy your AI application/main/) - AI: 0%
 - [MAAG - dev](MAAG/dev/) - AI: 0.4%
@@ -148,8 +148,8 @@
 ## Quick Links
 
 - [Batch Analysis Summary](Batch-Analysis-Summary.md)
-- [Branch-Level Summary CSV](Branch-Level-Summary_2026-01-22_20-48-27.csv)
-- [Consolidated Analysis JSON](Consolidated-Analysis_2026-01-22_20-48-27.json)
+- [Branch-Level Summary CSV](Branch-Level-Summary_2026-01-22_15-24-03.csv)
+- [Consolidated Analysis JSON](Consolidated-Analysis_2026-01-22_15-24-03.json)
 - [Git Access Validation Report](Git-Access-Validation-Report.md)
 
 ---
