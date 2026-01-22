@@ -1,0 +1,322 @@
+{
+  "Branch": "dev",
+  "BranchStatistics": {
+    "Branch": "dev",
+    "TotalCommits": 3,
+    "AICommits": 0,
+    "HumanCommits": 3,
+    "TotalLinesAdded": 19.0,
+    "TotalLinesDeleted": 7.0,
+    "AILinesAdded": null,
+    "AILinesDeleted": null,
+    "Tier1Commits": 0,
+    "Tier2Commits": 0,
+    "Tier3Commits": 0,
+    "Tier4Commits": 0,
+    "Tier5Commits": 0,
+    "UniqueContributors": 2,
+    "AIPercentage": 0.0,
+    "HumanLinesAdded": 19.0
+  },
+  "Commits": [
+    {
+      "Hash": "2a96287b3da24a9a6a845ff9ec40269dd0a17a91",
+      "Author": "Thanusree-Microsoft",
+      "Date": "Wed Jan 14 10:36:49 2026 +0530",
+      "Message": "Update VS Code Web section in Deployment Guide",
+      "LinesAdded": 3,
+      "LinesDeleted": 5,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "ccfa2c3db0d9fc3316c3a5a33acdea81f28eccb9",
+      "Author": "Thanusree-Microsoft",
+      "Date": "Thu Jan 8 18:18:01 2026 +0530",
+      "Message": "Update Deployment Guide with Azure authentication steps",
+      "LinesAdded": 10,
+      "LinesDeleted": 2,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "04d276fd0962843fe0a29b599d94164a15031c6a",
+      "Author": "Shreyas-Microsoft",
+      "Date": "Thu Jan 1 16:18:44 2026 +0530",
+      "Message": "Add redeployment warning",
+      "LinesAdded": 6,
+      "LinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    }
+  ],
+  "Users": [
+    {
+      "UserName": "Shreyas-Microsoft",
+      "UserEmail": "v-swaikar@microsft.com",
+      "TotalCommits": 1,
+      "AICommits": 0,
+      "HumanCommits": 1,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 6,
+      "HumanLinesDeleted": 0,
+      "TotalLinesAdded": 6,
+      "TotalLinesDeleted": 0,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Thanusree-Microsoft",
+      "UserEmail": "168087422+Thanusree-Microsoft@users.noreply.github.com",
+      "TotalCommits": 2,
+      "AICommits": 0,
+      "HumanCommits": 2,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 13,
+      "HumanLinesDeleted": 7,
+      "TotalLinesAdded": 13,
+      "TotalLinesDeleted": 7,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    }
+  ],
+  "GeneratedAt": "2026-01-22 07:45:33",
+  "ApplicationName": "Container Migration",
+  "TierDistribution": {
+    "Tier1_Definitive": 0,
+    "Tier3_High": 0,
+    "Tier2_VeryHigh": 0,
+    "Tier5_Low": 0,
+    "Human": 3,
+    "Tier4_Moderate": 0
+  },
+  "AnalysisPeriod": {
+    "EndDate": "2026-01-31",
+    "FilterApplied": true,
+    "StartDate": "2026-01-01"
+  },
+  "Metadata": {
+    "GeneratedAt": "2026-01-22 07:45:32",
+    "AnalysisMethod": "5-Tier Weighted Pattern Detection",
+    "IncludeTestFiles": false,
+    "PowerShellVersion": "7.4.13",
+    "ScriptVersion": "2.0.0",
+    "GeneratedBy": "Copilot Usage Report Tool v2.0"
+  },
+  "FileTypeBreakdown": [
+    {
+      "Extension": "json",
+      "TotalLines": 197996,
+      "AILines": 10528,
+      "AIPercentage": 5.32,
+      "FileCount": 79
+    },
+    {
+      "Extension": "py",
+      "TotalLines": 40642,
+      "AILines": 39209,
+      "AIPercentage": 96.47,
+      "FileCount": 252
+    },
+    {
+      "Extension": "txt",
+      "TotalLines": 15231,
+      "AILines": 9461,
+      "AIPercentage": 62.12,
+      "FileCount": 224
+    },
+    {
+      "Extension": "md",
+      "TotalLines": 10298,
+      "AILines": 6235,
+      "AIPercentage": 60.55,
+      "FileCount": 201
+    },
+    {
+      "Extension": "lock",
+      "TotalLines": 7753,
+      "AILines": 5681,
+      "AIPercentage": 73.27,
+      "FileCount": 4
+    },
+    {
+      "Extension": "tsx",
+      "TotalLines": 7591,
+      "AILines": 7122,
+      "AIPercentage": 93.82,
+      "FileCount": 45
+    },
+    {
+      "Extension": "bicep",
+      "TotalLines": 5623,
+      "AILines": 2416,
+      "AIPercentage": 42.97,
+      "FileCount": 65
+    },
+    {
+      "Extension": "ts",
+      "TotalLines": 1671,
+      "AILines": 1671,
+      "AIPercentage": 100.0,
+      "FileCount": 12
+    },
+    {
+      "Extension": "yml",
+      "TotalLines": 1356,
+      "AILines": 6,
+      "AIPercentage": 0.44,
+      "FileCount": 72
+    },
+    {
+      "Extension": "gitignore",
+      "TotalLines": 1319,
+      "AILines": 728,
+      "AIPercentage": 55.19,
+      "FileCount": 8
+    },
+    {
+      "Extension": "sh",
+      "TotalLines": 999,
+      "AILines": 245,
+      "AIPercentage": 24.52,
+      "FileCount": 9
+    },
+    {
+      "Extension": "yaml",
+      "TotalLines": 520,
+      "AILines": 368,
+      "AIPercentage": 70.77,
+      "FileCount": 23
+    },
+    {
+      "Extension": "dockerignore",
+      "TotalLines": 450,
+      "AILines": 450,
+      "AIPercentage": 100.0,
+      "FileCount": 3
+    },
+    {
+      "Extension": "css",
+      "TotalLines": 357,
+      "AILines": 357,
+      "AIPercentage": 100.0,
+      "FileCount": 5
+    },
+    {
+      "Extension": "jsx",
+      "TotalLines": 205,
+      "AILines": 181,
+      "AIPercentage": 88.29,
+      "FileCount": 6
+    },
+    {
+      "Extension": "other",
+      "TotalLines": 174,
+      "AILines": 111,
+      "AIPercentage": 63.79,
+      "FileCount": 6
+    },
+    {
+      "Extension": "js",
+      "TotalLines": 165,
+      "AILines": 165,
+      "AIPercentage": 100.0,
+      "FileCount": 5
+    },
+    {
+      "Extension": "toml",
+      "TotalLines": 142,
+      "AILines": 110,
+      "AIPercentage": 77.46,
+      "FileCount": 5
+    },
+    {
+      "Extension": "http",
+      "TotalLines": 104,
+      "AILines": 104,
+      "AIPercentage": 100.0,
+      "FileCount": 1
+    },
+    {
+      "Extension": "example",
+      "TotalLines": 73,
+      "AILines": 27,
+      "AIPercentage": 36.99,
+      "FileCount": 6
+    },
+    {
+      "Extension": "ini",
+      "TotalLines": 33,
+      "AILines": 33,
+      "AIPercentage": 100.0,
+      "FileCount": 1
+    },
+    {
+      "Extension": "env",
+      "TotalLines": 14,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "sample",
+      "TotalLines": 14,
+      "AILines": 14,
+      "AIPercentage": 100.0,
+      "FileCount": 1
+    },
+    {
+      "Extension": "html",
+      "TotalLines": 13,
+      "AILines": 13,
+      "AIPercentage": 100.0,
+      "FileCount": 1
+    },
+    {
+      "Extension": "flake8",
+      "TotalLines": 11,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 7
+    },
+    {
+      "Extension": "github/codeowners",
+      "TotalLines": 9,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 5
+    },
+    {
+      "Extension": "python-version",
+      "TotalLines": 2,
+      "AILines": 2,
+      "AIPercentage": 100.0,
+      "FileCount": 2
+    }
+  ],
+  "AIAttributionOverride": {
+    "Applied": false,
+    "Notes": null,
+    "OverridePercentage": null
+  }
+}
