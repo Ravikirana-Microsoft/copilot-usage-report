@@ -9,7 +9,7 @@ on:
     inputs:
       archive_name:
         description: 'Name for this archive (e.g., Q4-2025-Final)'
-        required: true
+        required: false
         type: string
         default: ''
       description:
