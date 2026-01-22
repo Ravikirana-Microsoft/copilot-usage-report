@@ -1,0 +1,200 @@
+{
+  "BranchStatistics": {
+    "Branch": "dev",
+    "TotalCommits": 0,
+    "AICommits": 0,
+    "HumanCommits": 0,
+    "TotalLinesAdded": null,
+    "TotalLinesDeleted": null,
+    "AILinesAdded": null,
+    "AILinesDeleted": null,
+    "Tier1Commits": 0,
+    "Tier2Commits": 0,
+    "Tier3Commits": 0,
+    "Tier4Commits": 0,
+    "Tier5Commits": 0,
+    "UniqueContributors": 0,
+    "AIPercentage": 0,
+    "HumanLinesAdded": 0
+  },
+  "Branch": "dev",
+  "FileTypeBreakdown": [
+    {
+      "Extension": "csv",
+      "TotalLines": 259674,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 387
+    },
+    {
+      "Extension": "json",
+      "TotalLines": 135864,
+      "AILines": 33,
+      "AIPercentage": 0.02,
+      "FileCount": 52
+    },
+    {
+      "Extension": "ipynb",
+      "TotalLines": 59529,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 801
+    },
+    {
+      "Extension": "md",
+      "TotalLines": 19643,
+      "AILines": 231,
+      "AIPercentage": 1.18,
+      "FileCount": 580
+    },
+    {
+      "Extension": "py",
+      "TotalLines": 14552,
+      "AILines": 7239,
+      "AIPercentage": 49.75,
+      "FileCount": 83
+    },
+    {
+      "Extension": "ps1",
+      "TotalLines": 3981,
+      "AILines": 2073,
+      "AIPercentage": 52.07,
+      "FileCount": 36
+    },
+    {
+      "Extension": "sh",
+      "TotalLines": 3613,
+      "AILines": 354,
+      "AIPercentage": 9.8,
+      "FileCount": 76
+    },
+    {
+      "Extension": "yml",
+      "TotalLines": 1986,
+      "AILines": 684,
+      "AIPercentage": 34.44,
+      "FileCount": 72
+    },
+    {
+      "Extension": "gitignore",
+      "TotalLines": 1612,
+      "AILines": 3,
+      "AIPercentage": 0.19,
+      "FileCount": 16
+    },
+    {
+      "Extension": "bicep",
+      "TotalLines": 924,
+      "AILines": 24,
+      "AIPercentage": 2.6,
+      "FileCount": 36
+    },
+    {
+      "Extension": "txt",
+      "TotalLines": 329,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 43
+    },
+    {
+      "Extension": "dockerignore",
+      "TotalLines": 282,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 3
+    },
+    {
+      "Extension": "yaml",
+      "TotalLines": 204,
+      "AILines": 45,
+      "AIPercentage": 22.06,
+      "FileCount": 36
+    },
+    {
+      "Extension": "other",
+      "TotalLines": 147,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 7
+    },
+    {
+      "Extension": "sql",
+      "TotalLines": 138,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 9
+    },
+    {
+      "Extension": "ps1}",
+      "TotalLines": 39,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 6
+    },
+    {
+      "Extension": "env",
+      "TotalLines": 28,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 4
+    },
+    {
+      "Extension": "github/psl-codeowners",
+      "TotalLines": 27,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 3
+    },
+    {
+      "Extension": "github/codeowners",
+      "TotalLines": 15,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 15
+    },
+    {
+      "Extension": "yml}",
+      "TotalLines": 6,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 3
+    },
+    {
+      "Extension": "png",
+      "TotalLines": 3,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 367
+    }
+  ],
+  "AnalysisPeriod": {
+    "FilterApplied": true,
+    "StartDate": "2026-01-01",
+    "EndDate": "2026-01-31"
+  },
+  "TierDistribution": {
+    "Tier1_Definitive": 0,
+    "Tier2_VeryHigh": 0,
+    "Tier5_Low": 0,
+    "Human": 0,
+    "Tier4_Moderate": 0,
+    "Tier3_High": 0
+  },
+  "Metadata": {
+    "PowerShellVersion": "7.4.13",
+    "IncludeTestFiles": false,
+    "GeneratedAt": "2026-01-22 11:23:08",
+    "AnalysisMethod": "5-Tier Weighted Pattern Detection",
+    "ScriptVersion": "2.0.0",
+    "GeneratedBy": "Copilot Usage Report Tool v2.0"
+  },
+  "Commits": null,
+  "ApplicationName": "MAAG",
+  "Users": [],
+  "AIAttributionOverride": {
+    "Applied": false,
+    "OverridePercentage": null,
+    "Notes": null
+  },
+  "GeneratedAt": "2026-01-22 11:23:08"
+}
