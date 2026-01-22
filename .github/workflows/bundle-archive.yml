@@ -1,6 +1,9 @@
 name: Bundle Archive
 
 on:
+  push:
+    paths:
+      - '.github/workflows/bundle-archive.yml'
   # Manual trigger with inputs
   workflow_dispatch:
     inputs:
