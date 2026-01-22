@@ -1,0 +1,439 @@
+{
+  "TierDistribution": {
+    "Human": 4,
+    "Tier3_High": 0,
+    "Tier2_VeryHigh": 0,
+    "Tier1_Definitive": 0,
+    "Tier4_Moderate": 1,
+    "Tier5_Low": 0
+  },
+  "AIAttributionOverride": {
+    "Notes": null,
+    "Applied": false,
+    "OverridePercentage": null
+  },
+  "Branch": "dev",
+  "ApplicationName": "BYOCC",
+  "FileTypeBreakdown": [
+    {
+      "Extension": "json",
+      "TotalLines": 134740,
+      "AILines": 16929,
+      "AIPercentage": 12.56,
+      "FileCount": 87
+    },
+    {
+      "Extension": "py",
+      "TotalLines": 65132,
+      "AILines": 63016,
+      "AIPercentage": 96.75,
+      "FileCount": 747
+    },
+    {
+      "Extension": "json}",
+      "TotalLines": 27594,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 1
+    },
+    {
+      "Extension": "html",
+      "TotalLines": 19816,
+      "AILines": 19810,
+      "AIPercentage": 99.97,
+      "FileCount": 19
+    },
+    {
+      "Extension": "md",
+      "TotalLines": 11951,
+      "AILines": 9012,
+      "AIPercentage": 75.41,
+      "FileCount": 165
+    },
+    {
+      "Extension": "ps1",
+      "TotalLines": 11583,
+      "AILines": 11476,
+      "AIPercentage": 99.08,
+      "FileCount": 144
+    },
+    {
+      "Extension": "bicep",
+      "TotalLines": 9933,
+      "AILines": 3520,
+      "AIPercentage": 35.44,
+      "FileCount": 110
+    },
+    {
+      "Extension": "tsx",
+      "TotalLines": 9375,
+      "AILines": 8076,
+      "AIPercentage": 86.14,
+      "FileCount": 222
+    },
+    {
+      "Extension": "yml",
+      "TotalLines": 2265,
+      "AILines": 82,
+      "AIPercentage": 3.62,
+      "FileCount": 61
+    },
+    {
+      "Extension": "sh",
+      "TotalLines": 2239,
+      "AILines": 1673,
+      "AIPercentage": 74.72,
+      "FileCount": 33
+    },
+    {
+      "Extension": "gitignore",
+      "TotalLines": 2142,
+      "AILines": 1719,
+      "AIPercentage": 80.25,
+      "FileCount": 19
+    },
+    {
+      "Extension": "ts",
+      "TotalLines": 1656,
+      "AILines": 1272,
+      "AIPercentage": 76.81,
+      "FileCount": 45
+    },
+    {
+      "Extension": "txt",
+      "TotalLines": 931,
+      "AILines": 365,
+      "AIPercentage": 39.21,
+      "FileCount": 102
+    },
+    {
+      "Extension": "css",
+      "TotalLines": 819,
+      "AILines": 810,
+      "AIPercentage": 98.9,
+      "FileCount": 13
+    },
+    {
+      "Extension": "js",
+      "TotalLines": 654,
+      "AILines": 644,
+      "AIPercentage": 98.47,
+      "FileCount": 31
+    },
+    {
+      "Extension": "other",
+      "TotalLines": 355,
+      "AILines": 179,
+      "AIPercentage": 50.42,
+      "FileCount": 27
+    },
+    {
+      "Extension": "bat",
+      "TotalLines": 225,
+      "AILines": 225,
+      "AIPercentage": 100.0,
+      "FileCount": 4
+    },
+    {
+      "Extension": "csv",
+      "TotalLines": 166,
+      "AILines": 51,
+      "AIPercentage": 30.72,
+      "FileCount": 16
+    },
+    {
+      "Extension": "yaml",
+      "TotalLines": 124,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 7
+    },
+    {
+      "Extension": "ini",
+      "TotalLines": 122,
+      "AILines": 116,
+      "AIPercentage": 95.08,
+      "FileCount": 15
+    },
+    {
+      "Extension": "example",
+      "TotalLines": 95,
+      "AILines": 85,
+      "AIPercentage": 89.47,
+      "FileCount": 15
+    },
+    {
+      "Extension": "minimal",
+      "TotalLines": 68,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 4
+    },
+    {
+      "Extension": "conf",
+      "TotalLines": 63,
+      "AILines": 63,
+      "AIPercentage": 100.0,
+      "FileCount": 4
+    },
+    {
+      "Extension": "coveragerc",
+      "TotalLines": 50,
+      "AILines": 44,
+      "AIPercentage": 88.0,
+      "FileCount": 4
+    },
+    {
+      "Extension": "svg",
+      "TotalLines": 48,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 48
+    },
+    {
+      "Extension": "sample",
+      "TotalLines": 48,
+      "AILines": 48,
+      "AIPercentage": 100.0,
+      "FileCount": 4
+    },
+    {
+      "Extension": "frontend",
+      "TotalLines": 32,
+      "AILines": 32,
+      "AIPercentage": 100.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "dockerignore",
+      "TotalLines": 31,
+      "AILines": 31,
+      "AIPercentage": 100.0,
+      "FileCount": 5
+    },
+    {
+      "Extension": "flake8",
+      "TotalLines": 28,
+      "AILines": 8,
+      "AIPercentage": 28.57,
+      "FileCount": 8
+    },
+    {
+      "Extension": "config",
+      "TotalLines": 20,
+      "AILines": 20,
+      "AIPercentage": 100.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "github/codeowners",
+      "TotalLines": 17,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 13
+    },
+    {
+      "Extension": "sql",
+      "TotalLines": 14,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "deployment",
+      "TotalLines": 3,
+      "AILines": 3,
+      "AIPercentage": 100.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "spark-initial-sha",
+      "TotalLines": 1,
+      "AILines": 1,
+      "AIPercentage": 100.0,
+      "FileCount": 2
+    }
+  ],
+  "AnalysisPeriod": {
+    "EndDate": "Present",
+    "StartDate": "All Time",
+    "FilterApplied": false
+  },
+  "Commits": [
+    {
+      "Hash": "eff81e61c9cc8e36942a62ec296df5760069f081",
+      "Author": "Harmanpreet Kaur",
+      "Date": "Wed Jan 14 18:16:28 2026 +0530",
+      "Message": "Refactor code structure for improved readability and maintainability",
+      "LinesAdded": 5027,
+      "LinesDeleted": 0,
+      "IsAI": true,
+      "ConfidenceScore": 73,
+      "ConfidenceTier": "Tier 4: Moderate Confidence (70-79 percent)",
+      "TierNumber": 4
+    },
+    {
+      "Hash": "38d88e990b799b9d9f1017a3cd4ca8fc5fa57400",
+      "Author": "Niraj Chaudhari (Persistent Systems Inc)",
+      "Date": "Thu Jan 8 11:46:38 2026 +0530",
+      "Message": "Update .venv command in deployment guide",
+      "LinesAdded": 1,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "81f1cff1b5287ec126c422d87544b1c3c5b0cd1d",
+      "Author": "Niraj Chaudhari (Persistent Systems Inc)",
+      "Date": "Wed Jan 7 18:44:16 2026 +0530",
+      "Message": "(Fix for bug-30627 )create menu to show user details and logout options, on right top corner",
+      "LinesAdded": 51,
+      "LinesDeleted": 14,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "98d289a7b72e5da37318a3a291fc426508d02354",
+      "Author": "Shreyas-Microsoft",
+      "Date": "Tue Jan 6 08:51:56 2026 +0530",
+      "Message": "fix linting issues",
+      "LinesAdded": 6,
+      "LinesDeleted": 6,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "86ab5ea03c9dcbacaf2223fa415cfb927058cf6d",
+      "Author": "Harmanpreet-Microsoft",
+      "Date": "Thu Jan 1 15:14:47 2026 +0530",
+      "Message": "Rename workflow for customer chatbot solution",
+      "LinesAdded": 2,
+      "LinesDeleted": 2,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    }
+  ],
+  "GeneratedAt": "2026-01-22 08:31:29",
+  "Users": [
+    {
+      "UserName": "Harmanpreet-Microsoft",
+      "UserEmail": null,
+      "TotalCommits": 1,
+      "AICommits": 0,
+      "HumanCommits": 1,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 2,
+      "HumanLinesDeleted": 2,
+      "TotalLinesAdded": 2,
+      "TotalLinesDeleted": 2,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Niraj Chaudhari (Persistent Systems Inc)",
+      "UserEmail": null,
+      "TotalCommits": 2,
+      "AICommits": 0,
+      "HumanCommits": 2,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 52,
+      "HumanLinesDeleted": 15,
+      "TotalLinesAdded": 52,
+      "TotalLinesDeleted": 15,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Shreyas-Microsoft",
+      "UserEmail": null,
+      "TotalCommits": 1,
+      "AICommits": 0,
+      "HumanCommits": 1,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 6,
+      "HumanLinesDeleted": 6,
+      "TotalLinesAdded": 6,
+      "TotalLinesDeleted": 6,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Harmanpreet Kaur",
+      "UserEmail": null,
+      "TotalCommits": 1,
+      "AICommits": 1,
+      "HumanCommits": 0,
+      "AILinesAdded": 5027,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 0,
+      "HumanLinesDeleted": 0,
+      "TotalLinesAdded": 5027,
+      "TotalLinesDeleted": 0,
+      "AIPercentage": 100.0,
+      "AvgConfidenceScore": 73.0,
+      "ConfidenceScores": [
+        73
+      ],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 1,
+      "Tier5Commits": 0
+    }
+  ],
+  "Metadata": {
+    "PowerShellVersion": "7.4.13",
+    "GeneratedBy": "Copilot Usage Report Tool v2.0",
+    "ScriptVersion": "2.0.0",
+    "IncludeTestFiles": false,
+    "AnalysisMethod": "5-Tier Weighted Pattern Detection",
+    "GeneratedAt": "2026-01-22 08:31:29"
+  },
+  "BranchStatistics": {
+    "Branch": "dev",
+    "TotalCommits": 5,
+    "AICommits": 1,
+    "HumanCommits": 4,
+    "TotalLinesAdded": 5087.0,
+    "TotalLinesDeleted": 23.0,
+    "AILinesAdded": 5027.0,
+    "AILinesDeleted": 0.0,
+    "Tier1Commits": 0,
+    "Tier2Commits": 0,
+    "Tier3Commits": 0,
+    "Tier4Commits": 1,
+    "Tier5Commits": 0,
+    "UniqueContributors": 4,
+    "AIPercentage": 98.82,
+    "HumanLinesAdded": 60.0
+  }
+}
