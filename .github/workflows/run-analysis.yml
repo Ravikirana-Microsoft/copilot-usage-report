@@ -182,65 +182,24 @@ jobs:
       - name: Update Dashboard to Show No Data
         run: |
           DASHBOARD="reports/CopilotDashboard.html"
-          ARCHIVE_NAME="${{ env.ARCHIVE_NAME }}"
           TIMESTAMP=$(date -u +'%Y-%m-%d %H:%M:%S')
           
           if [ -f "$DASHBOARD" ]; then
             echo "📊 Updating dashboard to show no data state..."
             
-            # Use Python to update REPORT_CONFIG and EMBEDDED_DATA
-            python3 -c "
-import re
-
-dashboard_path = 'reports/CopilotDashboard.html'
-timestamp = '$TIMESTAMP'
-
-with open(dashboard_path, 'r', encoding='utf-8') as f:
-    content = f.read()
-
-# Update REPORT_CONFIG to empty state
-new_config = '''const REPORT_CONFIG = {
-            // Latest report path (auto-updated)
-            latestReport: \"\",
+            # Use sed to clear REPORT_CONFIG archivedReports array
+            sed -i 's/archivedReports: \[.*\]/archivedReports: []/g' "$DASHBOARD"
             
-            // Available archived reports (auto-updated)
-            archivedReports: [],
+            # Use sed to clear latestReport
+            sed -i 's/latestReport: "[^"]*"/latestReport: ""/g' "$DASHBOARD"
             
-            // Last updated timestamp
-            lastUpdated: \"''' + timestamp + '''\"
-        };'''
-
-# Replace REPORT_CONFIG block using a more robust pattern
-config_pattern = r'const REPORT_CONFIG = \{[\s\S]*?lastUpdated:[\s\S]*?\};'
-content = re.sub(config_pattern, new_config, content, count=1)
-
-# Update EMBEDDED_DATA to null - find and replace the entire object
-if 'const EMBEDDED_DATA = {' in content:
-    start_marker = 'const EMBEDDED_DATA = {'
-    start_idx = content.find(start_marker)
-    if start_idx != -1:
-        brace_count = 0
-        end_idx = start_idx
-        for i, char in enumerate(content[start_idx:], start_idx):
-            if char == '{':
-                brace_count += 1
-            elif char == '}':
-                brace_count -= 1
-                if brace_count == 0:
-                    end_idx = i + 1
-                    break
-        while end_idx < len(content) and content[end_idx] in ' \n\t':
-            end_idx += 1
-        if end_idx < len(content) and content[end_idx] == ';':
-            end_idx += 1
-        content = content[:start_idx] + 'const EMBEDDED_DATA = null;' + content[end_idx:]
-
-with open(dashboard_path, 'w', encoding='utf-8') as f:
-    f.write(content)
-
-print('✅ Dashboard REPORT_CONFIG and EMBEDDED_DATA cleared')
-"
+            # Update lastUpdated timestamp
+            sed -i "s/lastUpdated: \"[^\"]*\"/lastUpdated: \"$TIMESTAMP\"/g" "$DASHBOARD"
             
+            # For EMBEDDED_DATA, we need a more robust approach - use perl
+            perl -i -0pe 's/const EMBEDDED_DATA = \{[\s\S]*?\n\s*\]\s*\n\s*\};/const EMBEDDED_DATA = null;/g' "$DASHBOARD" || true
+            
+            echo "✅ Dashboard updated"
           else
             echo "⚠️ Dashboard not found at $DASHBOARD"
           fi
