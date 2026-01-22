@@ -131,7 +131,13 @@ temp/*
 # Keep reports structure but ignore large data files in archives
 reports/*
 !reports/copilotdashboard.html
+!reports/CopilotDashboard.html
 !reports/index.md
+!reports/README.md
+!reports/consolidated/
+!reports/named-archives/
+!reports/*.csv
+!reports/*.md
 
 
 # yarn v3
