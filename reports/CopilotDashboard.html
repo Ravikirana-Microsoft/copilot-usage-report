@@ -11244,7 +11244,7 @@
 
             try {
                 // Call GitHub API to trigger archive workflow
-                const response = await fetch(`https://api.github.com/repos/${repoInfo.owner}/${repoInfo.repo}/actions/workflows/archive-reports.yml/dispatches`, {
+                const response = await fetch(`https://api.github.com/repos/${repoInfo.owner}/${repoInfo.repo}/actions/workflows/archive-workflow.yml/dispatches`, {
                     method: 'POST',
                     headers: {
                         'Authorization': `Bearer ${token}`,
@@ -11265,9 +11265,16 @@
                     // Refresh archives list after a delay
                     setTimeout(loadAvailableArchives, 3000);
                 } else if (response.status === 404) {
-                    showArchiveStatus('error', '❌ Archive workflow not found. Make sure "archive-reports.yml" exists.');
+                    showArchiveStatus('error', '❌ Archive workflow not found. Make sure "archive-workflow.yml" exists in .github/workflows/');
                 } else if (response.status === 401) {
                     showArchiveStatus('error', '❌ Unauthorized. Check your token.');
+                } else if (response.status === 422) {
+                    const errorData = await response.json();
+                    if (errorData.message && errorData.message.includes('workflow_dispatch')) {
+                        showArchiveStatus('error', '❌ Your token needs the "workflow" scope. Please regenerate your token with repo + workflow permissions.');
+                    } else {
+                        showArchiveStatus('error', `❌ Error: ${errorData.message || response.statusText}`);
+                    }
                 } else {
                     const errorData = await response.json();
                     showArchiveStatus('error', `❌ Error: ${errorData.message || response.statusText}`);
