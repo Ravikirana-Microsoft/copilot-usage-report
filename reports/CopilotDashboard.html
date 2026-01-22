@@ -13654,8 +13654,8 @@
             }
 
             try {
-                // Call GitHub API to trigger archive workflow (using run-analysis.yml with archive_mode=true)
-                const response = await fetch(`https://api.github.com/repos/${repoInfo.owner}/${repoInfo.repo}/actions/workflows/run-analysis.yml/dispatches`, {
+                // Use repository_dispatch instead of workflow_dispatch (more reliable)
+                const response = await fetch(`https://api.github.com/repos/${repoInfo.owner}/${repoInfo.repo}/dispatches`, {
                     method: 'POST',
                     headers: {
                         'Authorization': `Bearer ${token}`,
@@ -13663,11 +13663,10 @@
                         'Content-Type': 'application/json'
                     },
                     body: JSON.stringify({
-                        ref: 'main',
-                        inputs: {
-                            archive_mode: 'true',
+                        event_type: 'create-archive',
+                        client_payload: {
                             archive_name: archiveName,
-                            archive_description: description
+                            description: description
                         }
                     })
                 });
@@ -13675,20 +13674,13 @@
                 if (response.status === 204) {
                     showArchiveStatus('success', `✅ Archive workflow triggered! Reports will be bundled as "${archiveName}".<br><a href="https://github.com/${repoInfo.owner}/${repoInfo.repo}/actions" target="_blank" style="color: #f59e0b;">View workflow runs →</a>`);
                     // Refresh archives list after a delay
-                    setTimeout(loadAvailableArchives, 3000);
+                    setTimeout(loadAvailableArchives, 5000);
                 } else if (response.status === 404) {
-                    showArchiveStatus('error', '❌ Archive workflow not found. Make sure "run-analysis.yml" exists in .github/workflows/');
+                    showArchiveStatus('error', '❌ Repository not found or no access.');
                 } else if (response.status === 401) {
                     showArchiveStatus('error', '❌ Unauthorized. Check your token.');
-                } else if (response.status === 422) {
-                    const errorData = await response.json();
-                    if (errorData.message && errorData.message.includes('workflow_dispatch')) {
-                        showArchiveStatus('error', '❌ GitHub is still indexing the workflow. Please try again in a minute, or trigger manually from the Actions tab.');
-                    } else {
-                        showArchiveStatus('error', `❌ Error: ${errorData.message || response.statusText}`);
-                    }
                 } else {
-                    const errorData = await response.json();
+                    const errorData = await response.json().catch(() => ({}));
                     showArchiveStatus('error', `❌ Error: ${errorData.message || response.statusText}`);
                 }
             } catch (error) {
