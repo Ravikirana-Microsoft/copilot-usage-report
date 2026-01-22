@@ -122923,14 +122923,71 @@
         let currentWorkflowFile = null;
         const POLL_INTERVAL = 15000; // 15 seconds to conserve API quota
 
+        // Persist workflow state to localStorage for refresh capability
+        function saveWorkflowState() {
+            if (currentRepoInfo && currentWorkflowFile) {
+                const state = {
+                    repoInfo: currentRepoInfo,
+                    workflowFile: currentWorkflowFile,
+                    startTime: workflowStartTime,
+                    timestamp: Date.now()
+                };
+                localStorage.setItem('workflow_tracking_state', JSON.stringify(state));
+            }
+        }
+
+        function loadWorkflowState() {
+            try {
+                const saved = localStorage.getItem('workflow_tracking_state');
+                if (saved) {
+                    const state = JSON.parse(saved);
+                    // Only restore if less than 30 minutes old
+                    if (state.timestamp && (Date.now() - state.timestamp) < 30 * 60 * 1000) {
+                        currentRepoInfo = state.repoInfo;
+                        currentWorkflowFile = state.workflowFile;
+                        workflowStartTime = state.startTime;
+                        return true;
+                    } else {
+                        localStorage.removeItem('workflow_tracking_state');
+                    }
+                }
+            } catch (e) { console.error('Error loading workflow state:', e); }
+            return false;
+        }
+
+        function clearWorkflowState() {
+            localStorage.removeItem('workflow_tracking_state');
+            currentRepoInfo = null;
+            currentWorkflowFile = null;
+            workflowStartTime = null;
+        }
+
         function showTriggerAnalysisModal() {
             document.getElementById('triggerAnalysisModal').classList.add('active');
-            document.getElementById('workflowProgress').style.display = 'none';
-            document.getElementById('triggerStatus').style.display = 'none';
+            
+            // Load saved token
             const savedToken = localStorage.getItem('github_workflow_token');
             if (savedToken) {
                 document.getElementById('triggerGithubToken').value = savedToken;
+                currentWorkflowToken = savedToken;
             }
+            
+            // Try to restore previous workflow state
+            const hasState = loadWorkflowState();
+            if (hasState && currentWorkflowToken) {
+                // Restore tracking UI and refresh status
+                document.getElementById('workflowProgress').style.display = 'block';
+                document.getElementById('workflowLink').href = `https://github.com/${currentRepoInfo.owner}/${currentRepoInfo.repo}/actions`;
+                updateElapsedTime();
+                elapsedInterval = setInterval(updateElapsedTime, 1000);
+                showTriggerStatus('info', '🔄 Restored previous session. Click Refresh to update status.');
+                // Auto-refresh status once
+                setTimeout(() => manualRefreshStatus(), 500);
+            } else {
+                document.getElementById('workflowProgress').style.display = 'none';
+                document.getElementById('triggerStatus').style.display = 'none';
+            }
+            
             const now = new Date();
             const monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
             document.getElementById('triggerAnalysisName').value = monthNames[now.getMonth()] + '-' + now.getFullYear();
@@ -123022,6 +123079,8 @@
             progressDiv.style.display = 'block';
             workflowLink.href = `https://github.com/${repoInfo.owner}/${repoInfo.repo}/actions`;
             workflowStartTime = Date.now();
+            // Save state for refresh capability
+            saveWorkflowState();
             updateElapsedTime();
             elapsedInterval = setInterval(updateElapsedTime, 1000);
             // Auto-polling disabled to conserve API quota - use manual refresh button instead
@@ -123039,8 +123098,20 @@
         }
 
         async function manualRefreshStatus() {
+            // Try to restore state if not loaded
+            if (!currentRepoInfo || !currentWorkflowFile) {
+                loadWorkflowState();
+            }
+            // Also try to get token from localStorage if not set
+            if (!currentWorkflowToken) {
+                currentWorkflowToken = localStorage.getItem('github_workflow_token');
+            }
+            
             if (currentRepoInfo && currentWorkflowToken && currentWorkflowFile) {
+                showTriggerStatus('info', '🔄 Refreshing workflow status...');
                 await checkWorkflowStatus(currentRepoInfo, currentWorkflowToken, currentWorkflowFile);
+            } else {
+                showTriggerStatus('error', '❌ No workflow to refresh. Please trigger a new analysis.');
             }
         }
 
@@ -123065,10 +123136,14 @@
                     return;
                 }
                 
-                if (!runsResponse.ok) return;
+                if (!runsResponse.ok) {
+                    showTriggerStatus('error', `❌ Failed to fetch workflow status (${runsResponse.status})`);
+                    return;
+                }
                 const runsData = await runsResponse.json();
                 if (!runsData.workflow_runs || runsData.workflow_runs.length === 0) {
                     updateWorkflowUI({ status: 'queued', conclusion: null }, []);
+                    showTriggerStatus('info', '⏳ Workflow queued, waiting for runner...');
                     return;
                 }
                 const run = runsData.workflow_runs[0];
@@ -123077,8 +123152,18 @@
                 let jobs = [];
                 if (jobsResponse.ok) { const jobsData = await jobsResponse.json(); jobs = jobsData.jobs || []; }
                 updateWorkflowUI(run, jobs);
+                
+                // Show status based on run state
+                if (run.status === 'in_progress') {
+                    const completedJobs = jobs.filter(j => j.status === 'completed').length;
+                    showTriggerStatus('info', `🔄 Running: ${completedJobs}/${jobs.length} jobs completed`);
+                } else if (run.status === 'queued') {
+                    showTriggerStatus('info', '⏳ Workflow queued, waiting for runner...');
+                }
+                
                 if (run.status === 'completed') {
                     stopWorkflowTracking();
+                    clearWorkflowState(); // Clear saved state when done
                     const triggerBtn = document.getElementById('triggerAnalysisBtn');
                     triggerBtn.disabled = false;
                     if (run.conclusion === 'success') {
@@ -123090,7 +123175,10 @@
                         showTriggerStatus('error', `❌ Workflow ${run.conclusion}. <a href="${run.html_url}" target="_blank" style="color:#ef4444;">View details →</a>`);
                     }
                 }
-            } catch (error) { console.error('Error checking workflow status:', error); }
+            } catch (error) { 
+                console.error('Error checking workflow status:', error);
+                showTriggerStatus('error', `❌ Error checking status: ${error.message}`);
+            }
         }
 
         function updateWorkflowUI(run, jobs) {
