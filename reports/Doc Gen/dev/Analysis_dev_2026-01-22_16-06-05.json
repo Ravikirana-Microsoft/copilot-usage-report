@@ -1,0 +1,540 @@
+{
+  "TierDistribution": {
+    "Tier3_High": 0,
+    "Tier4_Moderate": 0,
+    "Tier2_VeryHigh": 0,
+    "Human": 13,
+    "Tier5_Low": 0,
+    "Tier1_Definitive": 0
+  },
+  "AnalysisPeriod": {
+    "FilterApplied": true,
+    "StartDate": "2026-01-01",
+    "EndDate": "2026-01-31"
+  },
+  "BranchStatistics": {
+    "Branch": "dev",
+    "TotalCommits": 13,
+    "AICommits": 0,
+    "HumanCommits": 13,
+    "TotalLinesAdded": 25075.0,
+    "TotalLinesDeleted": 29251.0,
+    "AILinesAdded": null,
+    "AILinesDeleted": null,
+    "Tier1Commits": 0,
+    "Tier2Commits": 0,
+    "Tier3Commits": 0,
+    "Tier4Commits": 0,
+    "Tier5Commits": 0,
+    "UniqueContributors": 4,
+    "AIPercentage": 0.0,
+    "HumanLinesAdded": 25075.0
+  },
+  "Metadata": {
+    "AnalysisMethod": "5-Tier Weighted Pattern Detection",
+    "ScriptVersion": "2.0.0",
+    "GeneratedAt": "2026-01-22 16:06:05",
+    "GeneratedBy": "Copilot Usage Report Tool v2.0",
+    "PowerShellVersion": "7.4.13",
+    "IncludeTestFiles": false
+  },
+  "Commits": [
+    {
+      "Hash": "6b66b7ded0a41438e7aa4f33970e58a2598a2f44",
+      "Author": "Thanusree-Microsoft",
+      "Date": "Wed Jan 14 12:03:37 2026 +0530",
+      "Message": "Include Azure authentication step in Deployment Guide",
+      "LinesAdded": 10,
+      "LinesDeleted": 2,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "660d626a26246fa909cbece6448ef79aaf6ac1ba",
+      "Author": "Harsh-Microsoft",
+      "Date": "Mon Jan 12 17:21:04 2026 +0530",
+      "Message": "fix: remove 'hb-psl-fix-testissue' branch from push triggers in node.js.yml",
+      "LinesAdded": 1,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "ffb5d13e4b00eb9ad0986deb23beeee9f51e61f9",
+      "Author": "Harsh-Microsoft",
+      "Date": "Mon Jan 12 16:58:30 2026 +0530",
+      "Message": "fix: ensure QUOTA_FAILED output defaults to 'false' in job-deploy.yml",
+      "LinesAdded": 1,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "5f5439d2ad6fbc0d95663ee1460dd8659d7aad4b",
+      "Author": "Harsh-Microsoft",
+      "Date": "Mon Jan 12 16:33:03 2026 +0530",
+      "Message": "rebuilt package lock",
+      "LinesAdded": 7533,
+      "LinesDeleted": 9889,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "bfe2a2f5a40f86992c8dc17becfb734e6d42feba",
+      "Author": "Harsh-Microsoft",
+      "Date": "Mon Jan 12 16:06:00 2026 +0530",
+      "Message": "chore: replace npm ci with npm install in GitHub Actions workflow",
+      "LinesAdded": 1,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "3ff3a9b075412e0648d4c693af78d5be5b5ec593",
+      "Author": "Harsh-Microsoft",
+      "Date": "Mon Jan 12 15:58:28 2026 +0530",
+      "Message": "chore: update dependencies in package.json",
+      "LinesAdded": 10809,
+      "LinesDeleted": 7782,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "78a84801d625bb793aed37ece29bad13df39c48e",
+      "Author": "Kingshuk-Microsoft",
+      "Date": "Fri Jan 9 14:01:17 2026 +0530",
+      "Message": "Add sample environment configuration for Azure AI integration",
+      "LinesAdded": 131,
+      "LinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "af76ea0983a774e83d8c18b5b091bbd2e7a0d880",
+      "Author": "Harsh-Microsoft",
+      "Date": "Wed Jan 7 16:05:33 2026 +0530",
+      "Message": "chore: downgrade React and related packages to version 18.x, update TypeScript ESLint plugins, and adjust ESLint dependencies; update Python OpenTelemetry packages to 1.39.0 and 0.60b0",
+      "LinesAdded": 5450,
+      "LinesDeleted": 9719,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "1422cf4c72957042f55279d09c6bc204b87b4fbe",
+      "Author": "Harsh-Microsoft",
+      "Date": "Tue Jan 6 18:23:07 2026 +0530",
+      "Message": "Add Azure AI agent endpoint and enable build during deployment custom deployment template",
+      "LinesAdded": 6,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "8ce46e78b430f658b8384f5e92c1721e43cb4c31",
+      "Author": "Kingshuk-Microsoft",
+      "Date": "Fri Jan 2 17:20:12 2026 +0530",
+      "Message": "Refactor failedSections handling in appStateReducer for improved clarity and consistency",
+      "LinesAdded": 9,
+      "LinesDeleted": 9,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "606d3cf1c38bf5fe45c026898bc22161318a930b",
+      "Author": "dependabot[bot]",
+      "Date": "Thu Jan 1 22:17:00 2026 +0000",
+      "Message": "build(deps): bump the all-actions group with 4 updates",
+      "LinesAdded": 21,
+      "LinesDeleted": 21,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "ff3babdbe9dbb143ac68676030fb3b06a25127d1",
+      "Author": "dependabot[bot]",
+      "Date": "Thu Jan 1 22:20:46 2026 +0000",
+      "Message": "build(deps): bump the all-backend-deps group in /src with 18 updates",
+      "LinesAdded": 19,
+      "LinesDeleted": 19,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "83ba03917325323ded06d9fe90e5ce6b40c7c876",
+      "Author": "dependabot[bot]",
+      "Date": "Thu Jan 1 22:25:08 2026 +0000",
+      "Message": "build(deps): bump the all-frontend-deps group",
+      "LinesAdded": 1084,
+      "LinesDeleted": 1806,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    }
+  ],
+  "Branch": "dev",
+  "ApplicationName": "Doc Gen",
+  "AIAttributionOverride": {
+    "OverridePercentage": null,
+    "Applied": false,
+    "Notes": null
+  },
+  "Users": [
+    {
+      "UserName": "dependabot[bot]",
+      "UserEmail": "49699333+dependabot[bot]@users.noreply.github.com",
+      "TotalCommits": 3,
+      "AICommits": 0,
+      "HumanCommits": 3,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 1124,
+      "HumanLinesDeleted": 1846,
+      "TotalLinesAdded": 1124,
+      "TotalLinesDeleted": 1846,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Thanusree-Microsoft",
+      "UserEmail": "168087422+Thanusree-Microsoft@users.noreply.github.com",
+      "TotalCommits": 1,
+      "AICommits": 0,
+      "HumanCommits": 1,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 10,
+      "HumanLinesDeleted": 2,
+      "TotalLinesAdded": 10,
+      "TotalLinesDeleted": 2,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Harsh-Microsoft",
+      "UserEmail": "v-hbangera@microsoft.com",
+      "TotalCommits": 7,
+      "AICommits": 0,
+      "HumanCommits": 7,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 23801,
+      "HumanLinesDeleted": 27394,
+      "TotalLinesAdded": 23801,
+      "TotalLinesDeleted": 27394,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Kingshuk-Microsoft",
+      "UserEmail": "v-kidatta@microsoft.com",
+      "TotalCommits": 2,
+      "AICommits": 0,
+      "HumanCommits": 2,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 140,
+      "HumanLinesDeleted": 9,
+      "TotalLinesAdded": 140,
+      "TotalLinesDeleted": 9,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    }
+  ],
+  "FileTypeBreakdown": [
+    {
+      "Extension": "json",
+      "TotalLines": 565859,
+      "AILines": 71525,
+      "AIPercentage": 12.64,
+      "FileCount": 479
+    },
+    {
+      "Extension": "bicep",
+      "TotalLines": 21065,
+      "AILines": 4187,
+      "AIPercentage": 19.88,
+      "FileCount": 475
+    },
+    {
+      "Extension": "yml",
+      "TotalLines": 17925,
+      "AILines": 457,
+      "AIPercentage": 2.55,
+      "FileCount": 678
+    },
+    {
+      "Extension": "py",
+      "TotalLines": 14085,
+      "AILines": 9324,
+      "AIPercentage": 66.2,
+      "FileCount": 594
+    },
+    {
+      "Extension": "tsx",
+      "TotalLines": 13475,
+      "AILines": 8615,
+      "AIPercentage": 63.93,
+      "FileCount": 442
+    },
+    {
+      "Extension": "md",
+      "TotalLines": 13198,
+      "AILines": 702,
+      "AIPercentage": 5.32,
+      "FileCount": 478
+    },
+    {
+      "Extension": "sh",
+      "TotalLines": 4176,
+      "AILines": 679,
+      "AIPercentage": 16.26,
+      "FileCount": 167
+    },
+    {
+      "Extension": "sample",
+      "TotalLines": 2054,
+      "AILines": 142,
+      "AIPercentage": 6.91,
+      "FileCount": 63
+    },
+    {
+      "Extension": "ts",
+      "TotalLines": 1303,
+      "AILines": 1112,
+      "AIPercentage": 85.34,
+      "FileCount": 66
+    },
+    {
+      "Extension": "css",
+      "TotalLines": 1215,
+      "AILines": 1121,
+      "AIPercentage": 92.26,
+      "FileCount": 36
+    },
+    {
+      "Extension": "ps1",
+      "TotalLines": 1049,
+      "AILines": 71,
+      "AIPercentage": 6.77,
+      "FileCount": 29
+    },
+    {
+      "Extension": "yaml",
+      "TotalLines": 996,
+      "AILines": 53,
+      "AIPercentage": 5.32,
+      "FileCount": 45
+    },
+    {
+      "Extension": "txt",
+      "TotalLines": 917,
+      "AILines": 53,
+      "AIPercentage": 5.78,
+      "FileCount": 218
+    },
+    {
+      "Extension": "gitignore",
+      "TotalLines": 727,
+      "AILines": 16,
+      "AIPercentage": 2.2,
+      "FileCount": 21
+    },
+    {
+      "Extension": "md}",
+      "TotalLines": 590,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 6
+    },
+    {
+      "Extension": "other",
+      "TotalLines": 244,
+      "AILines": 97,
+      "AIPercentage": 39.75,
+      "FileCount": 15
+    },
+    {
+      "Extension": "backend",
+      "TotalLines": 204,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 12
+    },
+    {
+      "Extension": "dockerignore",
+      "TotalLines": 166,
+      "AILines": 5,
+      "AIPercentage": 3.01,
+      "FileCount": 3
+    },
+    {
+      "Extension": "pylintrc",
+      "TotalLines": 82,
+      "AILines": 58,
+      "AIPercentage": 70.73,
+      "FileCount": 5
+    },
+    {
+      "Extension": "jinja2",
+      "TotalLines": 79,
+      "AILines": 79,
+      "AIPercentage": 100.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "svg",
+      "TotalLines": 66,
+      "AILines": 66,
+      "AIPercentage": 100.0,
+      "FileCount": 10
+    },
+    {
+      "Extension": "cmd",
+      "TotalLines": 58,
+      "AILines": 42,
+      "AIPercentage": 72.41,
+      "FileCount": 8
+    },
+    {
+      "Extension": "env",
+      "TotalLines": 48,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 12
+    },
+    {
+      "Extension": "js",
+      "TotalLines": 34,
+      "AILines": 3,
+      "AIPercentage": 8.82,
+      "FileCount": 6
+    },
+    {
+      "Extension": "dockerfile",
+      "TotalLines": 33,
+      "AILines": 31,
+      "AIPercentage": 93.94,
+      "FileCount": 4
+    },
+    {
+      "Extension": "flake8",
+      "TotalLines": 26,
+      "AILines": 17,
+      "AIPercentage": 65.38,
+      "FileCount": 6
+    },
+    {
+      "Extension": "github/codeowners",
+      "TotalLines": 26,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 17
+    },
+    {
+      "Extension": "bicepparam",
+      "TotalLines": 26,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 10
+    },
+    {
+      "Extension": "html",
+      "TotalLines": 13,
+      "AILines": 13,
+      "AIPercentage": 100.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "yml}",
+      "TotalLines": 12,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "ini",
+      "TotalLines": 7,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "prettierignore",
+      "TotalLines": 4,
+      "AILines": 4,
+      "AIPercentage": 100.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "eslintignore",
+      "TotalLines": 4,
+      "AILines": 4,
+      "AIPercentage": 100.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "gitattributes",
+      "TotalLines": 3,
+      "AILines": 3,
+      "AIPercentage": 100.0,
+      "FileCount": 1
+    },
+    {
+      "Extension": "dockerignore}",
+      "TotalLines": 1,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 1
+    }
+  ],
+  "GeneratedAt": "2026-01-22 16:06:05"
+}
