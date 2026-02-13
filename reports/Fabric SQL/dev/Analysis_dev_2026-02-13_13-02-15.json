@@ -1,0 +1,649 @@
+{
+  "AIAttributionOverride": {
+    "Applied": false,
+    "OverridePercentage": null,
+    "Notes": null
+  },
+  "Branch": "dev",
+  "FileTypeBreakdown": [
+    {
+      "Extension": "sql",
+      "TotalLines": 48137,
+      "AILines": 11531,
+      "AIPercentage": 23.95,
+      "FileCount": 14
+    },
+    {
+      "Extension": "json",
+      "TotalLines": 30210,
+      "AILines": 28335,
+      "AIPercentage": 93.79,
+      "FileCount": 73
+    },
+    {
+      "Extension": "py",
+      "TotalLines": 23474,
+      "AILines": 20213,
+      "AIPercentage": 86.11,
+      "FileCount": 261
+    },
+    {
+      "Extension": "csv",
+      "TotalLines": 11876,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 7
+    },
+    {
+      "Extension": "cs",
+      "TotalLines": 6512,
+      "AILines": 5897,
+      "AIPercentage": 90.56,
+      "FileCount": 193
+    },
+    {
+      "Extension": "yml",
+      "TotalLines": 5822,
+      "AILines": 1781,
+      "AIPercentage": 30.59,
+      "FileCount": 123
+    },
+    {
+      "Extension": "tsx",
+      "TotalLines": 4919,
+      "AILines": 4233,
+      "AIPercentage": 86.05,
+      "FileCount": 88
+    },
+    {
+      "Extension": "bicep",
+      "TotalLines": 3618,
+      "AILines": 2753,
+      "AIPercentage": 76.09,
+      "FileCount": 101
+    },
+    {
+      "Extension": "ts",
+      "TotalLines": 2986,
+      "AILines": 2959,
+      "AIPercentage": 99.1,
+      "FileCount": 42
+    },
+    {
+      "Extension": "md",
+      "TotalLines": 2470,
+      "AILines": 1428,
+      "AIPercentage": 57.81,
+      "FileCount": 103
+    },
+    {
+      "Extension": "sh",
+      "TotalLines": 1453,
+      "AILines": 1014,
+      "AIPercentage": 69.79,
+      "FileCount": 58
+    },
+    {
+      "Extension": "gitignore",
+      "TotalLines": 1319,
+      "AILines": 647,
+      "AIPercentage": 49.05,
+      "FileCount": 16
+    },
+    {
+      "Extension": "css",
+      "TotalLines": 925,
+      "AILines": 857,
+      "AIPercentage": 92.65,
+      "FileCount": 13
+    },
+    {
+      "Extension": "dockerignore",
+      "TotalLines": 582,
+      "AILines": 533,
+      "AIPercentage": 91.58,
+      "FileCount": 7
+    },
+    {
+      "Extension": "dockerfile",
+      "TotalLines": 310,
+      "AILines": 189,
+      "AIPercentage": 60.97,
+      "FileCount": 14
+    },
+    {
+      "Extension": "ps1",
+      "TotalLines": 217,
+      "AILines": 216,
+      "AIPercentage": 99.54,
+      "FileCount": 4
+    },
+    {
+      "Extension": "ipynb",
+      "TotalLines": 216,
+      "AILines": 216,
+      "AIPercentage": 100.0,
+      "FileCount": 1
+    },
+    {
+      "Extension": "cmd",
+      "TotalLines": 187,
+      "AILines": 187,
+      "AIPercentage": 100.0,
+      "FileCount": 1
+    },
+    {
+      "Extension": "txt",
+      "TotalLines": 166,
+      "AILines": 103,
+      "AIPercentage": 62.05,
+      "FileCount": 30
+    },
+    {
+      "Extension": "sample",
+      "TotalLines": 128,
+      "AILines": 98,
+      "AIPercentage": 76.56,
+      "FileCount": 14
+    },
+    {
+      "Extension": "yaml",
+      "TotalLines": 79,
+      "AILines": 57,
+      "AIPercentage": 72.15,
+      "FileCount": 7
+    },
+    {
+      "Extension": "sln",
+      "TotalLines": 50,
+      "AILines": 50,
+      "AIPercentage": 100.0,
+      "FileCount": 3
+    },
+    {
+      "Extension": "csproj",
+      "TotalLines": 48,
+      "AILines": 48,
+      "AIPercentage": 100.0,
+      "FileCount": 9
+    },
+    {
+      "Extension": "html",
+      "TotalLines": 48,
+      "AILines": 46,
+      "AIPercentage": 95.83,
+      "FileCount": 3
+    },
+    {
+      "Extension": "other",
+      "TotalLines": 42,
+      "AILines": 21,
+      "AIPercentage": 50.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "js",
+      "TotalLines": 41,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 5
+    },
+    {
+      "Extension": "editorconfig",
+      "TotalLines": 21,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "ini",
+      "TotalLines": 20,
+      "AILines": 13,
+      "AIPercentage": 65.0,
+      "FileCount": 5
+    },
+    {
+      "Extension": "svg",
+      "TotalLines": 20,
+      "AILines": 20,
+      "AIPercentage": 100.0,
+      "FileCount": 6
+    },
+    {
+      "Extension": "github/codeowners",
+      "TotalLines": 10,
+      "AILines": 5,
+      "AIPercentage": 50.0,
+      "FileCount": 6
+    },
+    {
+      "Extension": "flake8",
+      "TotalLines": 9,
+      "AILines": 9,
+      "AIPercentage": 100.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "env",
+      "TotalLines": 8,
+      "AILines": 1,
+      "AIPercentage": 12.5,
+      "FileCount": 3
+    },
+    {
+      "Extension": "coveragerc",
+      "TotalLines": 3,
+      "AILines": 3,
+      "AIPercentage": 100.0,
+      "FileCount": 1
+    },
+    {
+      "Extension": "npmrc",
+      "TotalLines": 3,
+      "AILines": 3,
+      "AIPercentage": 100.0,
+      "FileCount": 1
+    },
+    {
+      "Extension": "cache",
+      "TotalLines": 1,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "gitattributes",
+      "TotalLines": 1,
+      "AILines": 1,
+      "AIPercentage": 100.0,
+      "FileCount": 1
+    }
+  ],
+  "GeneratedAt": "2026-02-13 13:02:15",
+  "Commits": [
+    {
+      "Hash": "ba2262297d8ed7ea660078c513287c9fa9954779",
+      "Author": "Harsh-Microsoft",
+      "Date": "Tue Feb 10 12:14:10 2026 +0530",
+      "Message": "update TaskCanceledException test to return 499 status code",
+      "LinesAdded": 2,
+      "LinesDeleted": 2,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "2174233fbc733c08990e47615b43b535feb4ba09",
+      "Author": "Harsh-Microsoft",
+      "Date": "Tue Feb 10 12:04:55 2026 +0530",
+      "Message": "update assertion in delete_messages test to check for empty list",
+      "LinesAdded": 1,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "065b355cd504dc8c2a2cfe44080de3907b49ed02",
+      "Author": "Harsh-Microsoft",
+      "Date": "Mon Feb 9 14:25:51 2026 +0530",
+      "Message": "add logging to ChatController for improved test coverage",
+      "LinesAdded": 4,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "0d208d6f4fa92b6ccc0de84ca1e4d9c7fd8186df",
+      "Author": "Harsh-Microsoft",
+      "Date": "Mon Feb 9 14:07:53 2026 +0530",
+      "Message": "add logging to ExpCache and ChatController for improved error tracking",
+      "LinesAdded": 35,
+      "LinesDeleted": 26,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "88ac9c9ea3228f25e36e2838ecfe9a25b29da379",
+      "Author": "Harsh-Microsoft",
+      "Date": "Mon Feb 9 13:59:11 2026 +0530",
+      "Message": "enhance error handling across controllers and services to manage specific exceptions",
+      "LinesAdded": 130,
+      "LinesDeleted": 65,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "b0e481d13f595cfa8dbf70b6df29f444f59a19ff",
+      "Author": "Harsh-Microsoft",
+      "Date": "Sun Feb 8 16:01:06 2026 +0530",
+      "Message": "streamline conditional logic for conversation deletion and SQL queries",
+      "LinesAdded": 16,
+      "LinesDeleted": 37,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "342211dc04123044962603b37991bd14b85db328",
+      "Author": "Harsh-Microsoft",
+      "Date": "Sun Feb 8 15:47:34 2026 +0530",
+      "Message": "add null-forgiving operator to nullable value assertions in tests",
+      "LinesAdded": 8,
+      "LinesDeleted": 10,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "066023849da7f43d2f952935f715c5945ecd19f0",
+      "Author": "Harsh-Microsoft",
+      "Date": "Fri Feb 6 16:47:49 2026 +0530",
+      "Message": "added dispose call on idisposables",
+      "LinesAdded": 45,
+      "LinesDeleted": 54,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "a9d872b3a85d7240c0740c2da061c7ffb4953282",
+      "Author": "Harsh-Microsoft",
+      "Date": "Fri Feb 6 14:31:20 2026 +0530",
+      "Message": "remove disabled chart loading logic from Chat component",
+      "LinesAdded": 0,
+      "LinesDeleted": 8,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "42128fb505353a616264980debafe38832123fa6",
+      "Author": "Harsh-Microsoft",
+      "Date": "Fri Feb 6 14:30:44 2026 +0530",
+      "Message": "added missing call to superclass __init__",
+      "LinesAdded": 1,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "b2d479865e75f961ae86971f9c2235d7d940429b",
+      "Author": "Harsh-Microsoft",
+      "Date": "Fri Feb 6 12:14:32 2026 +0530",
+      "Message": "closing opened file",
+      "LinesAdded": 3,
+      "LinesDeleted": 3,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "1ad653ff4619a13d0403caa984362e91830839e2",
+      "Author": "Harsh-Microsoft",
+      "Date": "Tue Feb 3 13:47:05 2026 +0530",
+      "Message": "added check for null fabric connection",
+      "LinesAdded": 4,
+      "LinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "7c3a8adb4abbcbe7cc59b3ab8201ef151a88701d",
+      "Author": "Harsh-Microsoft",
+      "Date": "Tue Feb 3 13:31:00 2026 +0530",
+      "Message": "remove unused variable defined multiple times",
+      "LinesAdded": 0,
+      "LinesDeleted": 26,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "f8c3c78ef79ebea0e9f15adf643ff4dde8b7770e",
+      "Author": "Ragini-Microsoft",
+      "Date": "Mon Feb 2 18:43:18 2026 +0530",
+      "Message": "handle constant condition",
+      "LinesAdded": 1,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "93f5d220c0ebb03e75b6cadc3ae841587aaca9b5",
+      "Author": "Ragini-Microsoft",
+      "Date": "Mon Feb 2 18:39:19 2026 +0530",
+      "Message": "missing semicolons added",
+      "LinesAdded": 2,
+      "LinesDeleted": 2,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "9af958e1825ba6ad4a23d8af768c86a56b8626ae",
+      "Author": "Ragini-Microsoft",
+      "Date": "Mon Feb 2 18:32:31 2026 +0530",
+      "Message": "removed duplicate imports",
+      "LinesAdded": 0,
+      "LinesDeleted": 4,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "38be998da652c9d7816a3ed63d1f49943936a5ba",
+      "Author": "Ragini-Microsoft",
+      "Date": "Mon Feb 2 18:02:17 2026 +0530",
+      "Message": "return statement issue resolved",
+      "LinesAdded": 1,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "da320fe13a76ac1169f5e7d5348dbea424030558",
+      "Author": "Ragini-Microsoft",
+      "Date": "Mon Feb 2 17:05:09 2026 +0530",
+      "Message": "addressed useless assignment to local variable",
+      "LinesAdded": 2,
+      "LinesDeleted": 4,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "471231c3fc8ce40c5a9aa33a6ff14f148bc32bb7",
+      "Author": "Ragini-Microsoft",
+      "Date": "Mon Feb 2 16:08:24 2026 +0530",
+      "Message": "fixed the unused global vars issue",
+      "LinesAdded": 3,
+      "LinesDeleted": 7,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "296604a96550edc0eb125d6cea17159de839fa31",
+      "Author": "Ragini-Microsoft",
+      "Date": "Mon Feb 2 15:01:40 2026 +0530",
+      "Message": "empty except issue fixed",
+      "LinesAdded": 10,
+      "LinesDeleted": 10,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "85d81df6f85556f3eeaedb0d39887f2d4b1f388e",
+      "Author": "Ragini-Microsoft",
+      "Date": "Mon Feb 2 13:08:15 2026 +0530",
+      "Message": "removed unused imports",
+      "LinesAdded": 1,
+      "LinesDeleted": 6,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "bc8deb584443a96ebbbf8db4c92cb17f4f3a3480",
+      "Author": "Ragini-Microsoft",
+      "Date": "Mon Feb 2 13:04:33 2026 +0530",
+      "Message": "removed the commented code",
+      "LinesAdded": 0,
+      "LinesDeleted": 32,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "ec83b7f8aa79bd6abce44e83703fd2d802201cb4",
+      "Author": "Ragini-Microsoft",
+      "Date": "Mon Feb 2 12:58:37 2026 +0530",
+      "Message": "Except block handles Base Exception fixes python",
+      "LinesAdded": 11,
+      "LinesDeleted": 11,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "07a4371d3f35ddb1aa846eac6ff5d04e5622f08c",
+      "Author": "Ragini-Microsoft",
+      "Date": "Mon Feb 2 12:49:21 2026 +0530",
+      "Message": "Remove unused imports and variables across multiple components",
+      "LinesAdded": 2,
+      "LinesDeleted": 37,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "b67855d6ce4a8ce7d5d87bcfb062f3998ea4706a",
+      "Author": "Ragini-Microsoft",
+      "Date": "Mon Feb 2 12:33:46 2026 +0530",
+      "Message": "unused local variable python",
+      "LinesAdded": 21,
+      "LinesDeleted": 21,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    }
+  ],
+  "BranchStatistics": {
+    "Branch": "dev",
+    "TotalCommits": 25,
+    "AICommits": 0,
+    "HumanCommits": 25,
+    "TotalLinesAdded": 303.0,
+    "TotalLinesDeleted": 370.0,
+    "AILinesAdded": null,
+    "AILinesDeleted": null,
+    "Tier1Commits": 0,
+    "Tier2Commits": 0,
+    "Tier3Commits": 0,
+    "Tier4Commits": 0,
+    "Tier5Commits": 0,
+    "UniqueContributors": 2,
+    "AIPercentage": 0.0,
+    "HumanLinesAdded": 303.0
+  },
+  "ApplicationName": "Fabric SQL",
+  "AnalysisPeriod": {
+    "EndDate": "2026-02-13",
+    "StartDate": "2026-02-01",
+    "FilterApplied": true
+  },
+  "Metadata": {
+    "IncludeTestFiles": false,
+    "PowerShellVersion": "7.4.13",
+    "AnalysisMethod": "5-Tier Weighted Pattern Detection",
+    "ScriptVersion": "2.0.0",
+    "GeneratedBy": "Copilot Usage Report Tool v2.0",
+    "GeneratedAt": "2026-02-13 13:02:15"
+  },
+  "Users": [
+    {
+      "UserName": "Harsh-Microsoft",
+      "UserEmail": "v-hbangera@microsoft.com",
+      "TotalCommits": 13,
+      "AICommits": 0,
+      "HumanCommits": 13,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 249,
+      "HumanLinesDeleted": 234,
+      "TotalLinesAdded": 249,
+      "TotalLinesDeleted": 234,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Ragini-Microsoft",
+      "UserEmail": "v-raginich@microsoft.com",
+      "TotalCommits": 12,
+      "AICommits": 0,
+      "HumanCommits": 12,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 54,
+      "HumanLinesDeleted": 136,
+      "TotalLinesAdded": 54,
+      "TotalLinesDeleted": 136,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    }
+  ],
+  "TierDistribution": {
+    "Tier1_Definitive": 0,
+    "Human": 25,
+    "Tier3_High": 0,
+    "Tier4_Moderate": 0,
+    "Tier5_Low": 0,
+    "Tier2_VeryHigh": 0
+  }
+}
