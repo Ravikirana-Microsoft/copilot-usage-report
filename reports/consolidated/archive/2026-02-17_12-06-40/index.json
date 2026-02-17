@@ -1,0 +1,66 @@
+{
+  "lastUpdated": "2026-02-17 11:22:06",
+  "reports": [
+    {
+      "filename": "ConsolidatedReport_2026-02-17_11-21-08.json",
+      "isLatest": true,
+      "date": "2026-02-17 11:21:08 UTC",
+      "name": "Jan-2026",
+      "dateRange": "2026-01-01 to 2026-01-31"
+    },
+    {
+      "filename": "ConsolidatedReport_2026-02-13_13-02-15.json",
+      "date": "2026-02-13 13:02:15 UTC",
+      "name": "February-2026",
+      "dateRange": "2026-02-01 to 2026-02-13"
+    },
+    {
+      "filename": "ConsolidatedReport_2026-01-23_12-12-10.json",
+      "date": "2026-01-23 12:12:11 UTC",
+      "name": "Overall analysis",
+      "dateRange": "All Time (No date filter)"
+    },
+    {
+      "filename": "ConsolidatedReport_2026-01-22_16-06-11.json",
+      "date": "2026-01-22 16:06:12 UTC",
+      "name": "January2026",
+      "dateRange": "2026-01-01 to 2026-01-31"
+    },
+    {
+      "filename": "ConsolidatedReport_2026-01-23_16-35-01.json",
+      "date": "2026-01-23 16:35:02 UTC",
+      "name": "November2025",
+      "dateRange": "2025-11-01 to 2025-11-30"
+    },
+    {
+      "filename": "ConsolidatedReport_2026-01-23_10-22-24.json",
+      "date": "2026-01-23 10:22:24 UTC",
+      "name": "Over all",
+      "dateRange": "All Time (No date filter)"
+    },
+    {
+      "filename": "ConsolidatedReport_2026-01-23_10-16-52.json",
+      "date": "2026-01-23 10:16:53 UTC",
+      "name": "October2025",
+      "dateRange": "2025-10-01 to 2025-10-31"
+    },
+    {
+      "filename": "ConsolidatedReport_2026-01-22_15-50-57.json",
+      "date": "2026-01-22 15:50:57 UTC",
+      "name": "November -2025",
+      "dateRange": "2025-11-01 to 2025-11-30"
+    },
+    {
+      "filename": "ConsolidatedReport_2026-01-22_15-52-32.json",
+      "date": "2026-01-22 15:52:32 UTC",
+      "name": "December2025",
+      "dateRange": "2025-12-01 to 2025-12-31"
+    },
+    {
+      "filename": "ConsolidatedReport_2026-01-22_15-57-00.json",
+      "date": "2026-01-22 15:57:00 UTC",
+      "name": "November -2025",
+      "dateRange": "2025-11-01 to 2025-11-30"
+    }
+  ]
+}

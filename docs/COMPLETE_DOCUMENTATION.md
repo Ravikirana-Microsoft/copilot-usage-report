@@ -387,7 +387,26 @@ The main dashboard view with summary metrics and charts.
 | **AI by Application** | Compare repos horizontally | Longer bar = More AI usage |
 | **Top Contributors** | Top 5 AI-using developers | Shows who uses Copilot most |
 | **File Type Breakdown** | AI usage by file extension | Stacked bars: Blue=AI, Green=Human |
-| **Historical Trend** | AI % over time | Line shows adoption trend |
+| **Historical Trend** | AI % across all analysis reports | Line shows adoption trend over multiple runs |
+
+#### Historical Trend Chart
+
+The **Historical Trend** chart displays AI usage percentage across **all historical analysis reports**, not just the current report. This enables true trend tracking over time.
+
+**How it works:**
+1. The dashboard fetches all reports from the `reports/consolidated/` folder
+2. It extracts summary statistics (AI%, commits, lines) from each report
+3. Data is plotted chronologically showing how AI adoption evolves
+
+**Building historical data:**
+```powershell
+# Run analyses with descriptive names to build trend data
+.\scripts\Run-BatchAnalysis.ps1 -AnalysisName "Week1-Jan2026"
+.\scripts\Run-BatchAnalysis.ps1 -AnalysisName "Week2-Jan2026"
+.\scripts\Run-BatchAnalysis.ps1 -AnalysisName "Week3-Jan2026"
+```
+
+**Note:** If only one report exists, the chart falls back to monthly grouping of commits within that report.
 
 ---
 

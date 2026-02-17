@@ -1460,6 +1460,41 @@ $consolidatedWithMetadata | Out-File -FilePath $dashboardJsonPath -Encoding UTF8
 Write-Host "Dashboard data saved: $dashboardJsonPath" -ForegroundColor Green
 
 # =====================================================
+# UPDATE INDEX.JSON: Regenerate index from actual files in consolidated folder
+# =====================================================
+$indexJsonPath = Join-Path $consolidatedFolder "index.json"
+$consolidatedReports = Get-ChildItem -Path $consolidatedFolder -Filter "ConsolidatedReport_*.json" -ErrorAction SilentlyContinue | 
+    Sort-Object LastWriteTime -Descending
+
+$indexReports = @()
+$isFirst = $true
+foreach ($reportFile in $consolidatedReports) {
+    try {
+        $reportContent = Get-Content $reportFile.FullName -Raw | ConvertFrom-Json
+        $indexEntry = @{
+            filename = $reportFile.Name
+            name = if ($reportContent._metadata.analysisName) { $reportContent._metadata.analysisName } else { "Analysis" }
+            date = if ($reportContent._metadata.timestampUTC) { $reportContent._metadata.timestampUTC } else { $reportFile.LastWriteTime.ToString("yyyy-MM-dd HH:mm:ss") }
+            dateRange = if ($reportContent._metadata.dateRange) { $reportContent._metadata.dateRange } else { "Unknown" }
+        }
+        if ($isFirst) {
+            $indexEntry.isLatest = $true
+            $isFirst = $false
+        }
+        $indexReports += $indexEntry
+    } catch {
+        Write-Warning "Could not parse $($reportFile.Name) for index: $_"
+    }
+}
+
+$indexData = @{
+    reports = $indexReports
+    lastUpdated = (Get-Date).ToString("yyyy-MM-dd HH:mm:ss")
+}
+$indexData | ConvertTo-Json -Depth 5 | Out-File -FilePath $indexJsonPath -Encoding UTF8
+Write-Host "Index updated: $indexJsonPath ($($indexReports.Count) reports)" -ForegroundColor Green
+
+# =====================================================
 # COMPARE REPORTS: Generate comparison if -CompareWith provided
 # =====================================================
 $comparisonReport = $null

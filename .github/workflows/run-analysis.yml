@@ -4,6 +4,12 @@ on:
   # Manual trigger with inputs
   workflow_dispatch:
     inputs:
+      # === RESET MODE INPUTS ===
+      reset_mode:
+        description: 'Reset Mode: Archive all reports and clear dashboard'
+        required: false
+        type: boolean
+        default: false
       # === ARCHIVE MODE INPUTS ===
       archive_mode:
         description: 'Archive Mode: Bundle all reports into named archive'
@@ -332,11 +338,183 @@ jobs:
         uses: actions/deploy-pages@v4
 
   # ============================================
-  # ANALYSIS JOB - Runs when archive_mode=false
+  # RESET JOB - Runs when reset_mode=true
+  # Archives all reports and clears dashboard
+  # ============================================
+  reset:
+    runs-on: ubuntu-latest
+    if: ${{ github.event.inputs.reset_mode == 'true' }}
+    
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Archive Current Reports
+        run: |
+          TIMESTAMP=$(date -u +"%Y-%m-%d_%H-%M-%S")
+          ARCHIVE_DIR="reports/consolidated/archive/${TIMESTAMP}"
+          
+          echo "📦 Creating reset archive: $ARCHIVE_DIR"
+          
+          # Create archive directory
+          mkdir -p "$ARCHIVE_DIR"
+          
+          # Count and archive reports
+          REPORT_COUNT=$(ls reports/consolidated/ConsolidatedReport_*.json 2>/dev/null | wc -l || echo "0")
+          
+          if [ "$REPORT_COUNT" -eq "0" ]; then
+            echo "⚠️ No consolidated reports found to archive"
+          else
+            echo "📄 Archiving $REPORT_COUNT consolidated reports..."
+            mv reports/consolidated/ConsolidatedReport_*.json "$ARCHIVE_DIR/" 2>/dev/null || true
+          fi
+          
+          # Create archive metadata
+          echo "{" > "$ARCHIVE_DIR/archive-info.json"
+          echo "  \"archivedAt\": \"$TIMESTAMP\"," >> "$ARCHIVE_DIR/archive-info.json"
+          echo "  \"reportCount\": $REPORT_COUNT," >> "$ARCHIVE_DIR/archive-info.json"
+          echo "  \"reason\": \"Reset from Dashboard\"," >> "$ARCHIVE_DIR/archive-info.json"
+          echo "  \"triggeredBy\": \"${{ github.actor }}\"" >> "$ARCHIVE_DIR/archive-info.json"
+          echo "}" >> "$ARCHIVE_DIR/archive-info.json"
+          
+          echo "✅ Reports archived to $ARCHIVE_DIR"
+
+      - name: Clear Summary Files
+        run: |
+          echo "🗑️ Clearing summary files..."
+          rm -f reports/Batch-Analysis-Summary.csv 2>/dev/null || true
+          rm -f reports/Batch-Analysis-Summary.md 2>/dev/null || true
+          rm -f reports/Branch-Level-Summary_*.csv 2>/dev/null || true
+          rm -f reports/Consolidated-Analysis_*.json 2>/dev/null || true
+          echo "✅ Summary files cleared"
+
+      - name: Create Empty Index
+        run: |
+          TIMESTAMP=$(date -u +"%Y-%m-%d %H:%M:%S UTC")
+          echo "{" > reports/consolidated/index.json
+          echo "  \"reports\": []," >> reports/consolidated/index.json
+          echo "  \"lastUpdated\": \"$TIMESTAMP\"," >> reports/consolidated/index.json
+          echo "  \"resetReason\": \"Manual reset via Dashboard\"" >> reports/consolidated/index.json
+          echo "}" >> reports/consolidated/index.json
+          echo "✅ Empty index.json created"
+
+      - name: Update Dashboard
+        run: |
+          DASHBOARD="reports/CopilotDashboard.html"
+          TIMESTAMP=$(date -u +'%Y-%m-%d %H:%M:%S')
+          
+          if [ -f "$DASHBOARD" ]; then
+            echo "📊 Updating dashboard to show no data state..."
+            
+            # Clear archivedReports array using perl
+            perl -i -0pe 's/archivedReports:\s*\[[\s\S]*?\],/archivedReports: [],/g' "$DASHBOARD"
+            
+            # Clear latestReport
+            sed -i 's/latestReport: "[^"]*"/latestReport: ""/g' "$DASHBOARD"
+            
+            # Update lastUpdated timestamp
+            sed -i "s/lastUpdated: \"[^\"]*\"/lastUpdated: \"$TIMESTAMP\"/g" "$DASHBOARD"
+            
+            # Clear EMBEDDED_DATA
+            perl -i -0pe 's/const EMBEDDED_DATA = \{[\s\S]*?\};/const EMBEDDED_DATA = null;/g' "$DASHBOARD" || true
+            
+            echo "✅ Dashboard updated"
+          else
+            echo "⚠️ Dashboard not found"
+          fi
+
+      - name: Commit and Push Reset
+        run: |
+          git add reports/
+          
+          if git diff --staged --quiet; then
+            echo "⚠️ No changes to commit"
+          else
+            git commit -m "🔄 Reset: Clear all reports for new analysis"
+            
+            for i in 1 2 3; do
+              if git push; then
+                echo "✅ Reset committed and pushed"
+                exit 0
+              fi
+              echo "⚠️ Push failed, attempt $i. Retrying..."
+              git pull --rebase
+            done
+            
+            echo "❌ Failed to push after 3 attempts"
+            exit 1
+          fi
+
+  # Deploy after reset
+  deploy-after-reset:
+    needs: reset
+    runs-on: ubuntu-latest
+    if: ${{ github.event.inputs.reset_mode == 'true' }}
+    
+    permissions:
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+
+      - name: Pull latest changes
+        run: |
+          for i in 1 2 3 4 5; do
+            if git pull origin ${{ github.ref_name }}; then
+              echo "✅ Pull successful"
+              exit 0
+            fi
+            sleep 10
+          done
+          exit 1
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Prepare dashboard for deployment
+        run: |
+          mkdir -p _site
+          mkdir -p _site/consolidated
+          cp reports/CopilotDashboard.html _site/index.html
+          cp reports/consolidated/index.json _site/consolidated/ 2>/dev/null || true
+          echo "Dashboard prepared for deployment"
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+  # ============================================
+  # ANALYSIS JOB - Runs when not archive/reset mode
   # ============================================
   analyze:
     runs-on: windows-latest
-    if: ${{ github.event.inputs.archive_mode != 'true' }}
+    if: ${{ github.event.inputs.archive_mode != 'true' && github.event.inputs.reset_mode != 'true' }}
     
     permissions:
       contents: write
