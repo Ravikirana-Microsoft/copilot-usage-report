@@ -1,6 +1,6 @@
 # Batch Analysis Summary - 5-Tier Model
 
-**Analysis Date:** 2026-02-17 11:21:08  
+**Analysis Date:** 2026-02-17 13:26:28  
 **Period:** 2026-01-01 to 2026-01-31
 
 ---
@@ -20,12 +20,12 @@
 
 | Metric | Value |
 |--------|-------|
-| **Total Commits** | 481 |
-| **AI-Assisted Commits** | 35 |
-| **Human Commits** | 446 |
-| **Total Lines Added** | 319991 |
-| **AI-Assisted Lines** | 108032 (33.76%) |
-| **Human-Written Lines** | 211959 (66.24%) |
+| **Total Commits** | 493 |
+| **AI-Assisted Commits** | 38 |
+| **Human Commits** | 455 |
+| **Total Lines Added** | 340109 |
+| **AI-Assisted Lines** | 128057 (37.65%) |
+| **Human-Written Lines** | 212052 (62.35%) |
 
 ---
 
@@ -34,11 +34,11 @@
 | Tier | Description | Commits |
 |------|-------------|---------|
 | **Tier 1** | Definitive AI (99-100%) | 0 |
-| **Tier 2** | Very High Confidence (90-98%) | 15 |
+| **Tier 2** | Very High Confidence (90-98%) | 18 |
 | **Tier 3** | High Confidence (80-89%) | 4 |
 | **Tier 4** | Moderate Confidence (70-79%) | 7 |
 | **Tier 5** | Low Confidence (60-69%) | 9 |
-| **Human** | No AI Detected | 446 |
+| **Human** | No AI Detected | 455 |
 
 ---
 
@@ -46,17 +46,17 @@
 
 | Application | Branch | Commits | AI Commits | AI Lines | AI % | T1 | T2 | T3 | T4 | T5 | Contributors |
 |-------------|--------|---------|------------|----------|------|----|----|----|----|-----|--------------|
-| Doc Gen | dev | 119 | 13 | 18717 | 38.43% | 0 | 2 | 1 | 2 | 8 | 13 |
+| Doc Gen | dev | 117 | 13 | 18717 | 38.7% | 0 | 2 | 1 | 2 | 8 | 13 |
 | BYOCC | dev | 50 | 3 | 9442 | 9.76% | 0 | 2 | 0 | 1 | 0 | 7 |
-| Code Modernization | dev | 40 | 1 | 2429 | 33.57% | 0 | 1 | 0 | 0 | 0 | 10 |
+| MACAE v4 | main | 85 | 9 | 33528 | 39.37% | 0 | 8 | 0 | 0 | 1 | 12 |
+| Code Modernization | dev | 40 | 1 | 2429 | 33.57% | 0 | 1 | 0 | 0 | 0 | 9 |
 | CWYD | dev | 19 | 4 | 25767 | 84.46% | 0 | 2 | 0 | 2 | 0 | 11 |
-| MACAE v4 | main | 70 | 6 | 13503 | 20.97% | 0 | 5 | 0 | 0 | 1 | 8 |
 | MAAG | dev | 53 | 6 | 12748 | 52.73% | 0 | 1 | 3 | 2 | 0 | 6 |
 | Fabric SQL | dev | 41 | 2 | 25426 | 90.71% | 0 | 2 | 0 | 0 | 0 | 9 |
 | Deploy your AI application | main | 5 | 0 |  | 0% | 0 | 0 | 0 | 0 | 0 | 2 |
 | RTI | main | 15 | 0 |  | 0% | 0 | 0 | 0 | 0 | 0 | 7 |
-| Content Processing | dev | 38 | 0 |  | 0% | 0 | 0 | 0 | 0 | 0 | 7 |
-| DKM | dev | 17 | 0 |  | 0% | 0 | 0 | 0 | 0 | 0 | 3 |
+| Content Processing | dev | 37 | 0 |  | 0% | 0 | 0 | 0 | 0 | 0 | 8 |
+| DKM | dev | 17 | 0 |  | 0% | 0 | 0 | 0 | 0 | 0 | 4 |
 | Container Migration | dev | 12 | 0 |  | 0% | 0 | 0 | 0 | 0 | 0 | 5 |
 | BYOC | dev | 2 | 0 |  | 0% | 0 | 0 | 0 | 0 | 0 | 1 |
 
@@ -66,25 +66,25 @@
 
 | Application | Branch | Status | Timestamp |
 |-------------|--------|--------|-----------|
-| Doc Gen | dev | ✓ Success | 2026-02-17 11:21:07 |
-| BYOCC | dev | ✓ Success | 2026-02-17 11:21:07 |
-| Code Modernization | dev | ✓ Success | 2026-02-17 11:21:07 |
-| CWYD | dev | ✓ Success | 2026-02-17 11:21:07 |
-| MACAE v4 | main | ✓ Success | 2026-02-17 11:21:07 |
-| MAAG | dev | ✓ Success | 2026-02-17 11:21:07 |
-| Fabric SQL | dev | ✓ Success | 2026-02-17 11:21:07 |
-| Deploy your AI application | main | ✓ Success | 2026-02-17 11:21:07 |
-| RTI | main | ✓ Success | 2026-02-17 11:21:07 |
-| Content Processing | dev | ✓ Success | 2026-02-17 11:21:07 |
-| DKM | dev | ✓ Success | 2026-02-17 11:21:07 |
-| Container Migration | dev | ✓ Success | 2026-02-17 11:21:07 |
-| BYOC | dev | ✓ Success | 2026-02-17 11:21:07 |
+| Doc Gen | dev | ✓ Success | 2026-02-17 13:26:28 |
+| BYOCC | dev | ✓ Success | 2026-02-17 13:26:28 |
+| MACAE v4 | main | ✓ Success | 2026-02-17 13:26:28 |
+| Code Modernization | dev | ✓ Success | 2026-02-17 13:26:28 |
+| CWYD | dev | ✓ Success | 2026-02-17 13:26:28 |
+| MAAG | dev | ✓ Success | 2026-02-17 13:26:28 |
+| Fabric SQL | dev | ✓ Success | 2026-02-17 13:26:28 |
+| Deploy your AI application | main | ✓ Success | 2026-02-17 13:26:28 |
+| RTI | main | ✓ Success | 2026-02-17 13:26:28 |
+| Content Processing | dev | ✓ Success | 2026-02-17 13:26:28 |
+| DKM | dev | ✓ Success | 2026-02-17 13:26:28 |
+| Container Migration | dev | ✓ Success | 2026-02-17 13:26:28 |
+| BYOC | dev | ✓ Success | 2026-02-17 13:26:28 |
 
 ---
 
 ## Reports Location
 
-All detailed reports are available in: `C:\workspace\copilot\copilotusagereport\reports`
+All detailed reports are available in: `D:\a\copilot-usage-report\copilot-usage-report\reports`
 
 ### Report Structure
 
