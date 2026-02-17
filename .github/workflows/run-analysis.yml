@@ -689,7 +689,7 @@ jobs:
   deploy-dashboard:
     needs: analyze
     runs-on: ubuntu-latest
-    if: ${{ success() && github.event.inputs.validate_only != 'true' && github.event.inputs.archive_mode != 'true' }}
+    if: ${{ success() && github.event.inputs.validate_only != 'true' && github.event.inputs.archive_mode != 'true' && github.event.inputs.reset_mode != 'true' }}
     
     permissions:
       pages: write
