@@ -1,17 +1,23 @@
 {
-  "lastUpdated": "2026-02-17 15:47:59",
+  "lastUpdated": "2026-02-17 15:53:59",
   "reports": [
     {
-      "name": "February-2026",
+      "name": "Feb2026",
+      "date": "2026-02-17 15:53:59 UTC",
       "isLatest": true,
-      "dateRange": "2026-02-01 to 2026-02-17",
+      "dateRange": "2026-02-01 to 2026-02-28",
+      "filename": "ConsolidatedReport_2026-02-17_15-53-58.json"
+    },
+    {
+      "name": "February-2026",
       "date": "2026-02-17 15:47:59 UTC",
+      "dateRange": "2026-02-01 to 2026-02-17",
       "filename": "ConsolidatedReport_2026-02-17_15-47-59.json"
     },
     {
       "name": "January2026",
-      "dateRange": "2026-01-01 to 2026-01-31",
       "date": "2026-02-17 14:56:23 UTC",
+      "dateRange": "2026-01-01 to 2026-01-31",
       "filename": "ConsolidatedReport_2026-02-17_14-56-22.json"
     }
   ]

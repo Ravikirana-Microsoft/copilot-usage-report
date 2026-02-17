@@ -1,7 +1,7 @@
 # Batch Analysis Summary - 5-Tier Model
 
-**Analysis Date:** 2026-02-17 15:47:59  
-**Period:** 2026-02-01 to 2026-02-17
+**Analysis Date:** 2026-02-17 15:53:58  
+**Period:** 2026-02-01 to 2026-02-28
 
 ---
 
@@ -12,7 +12,7 @@
 | **Applications Processed** | 13 |
 | **Successful Analyses** | 13 |
 | **Failed Analyses** | 0 |
-| **Total Branches Analyzed** | 13 |
+| **Total Branches Analyzed** | 9 |
 
 ---
 
@@ -55,10 +55,6 @@
 | RTI | main | 1 | 0 |  | 0% | 0 | 0 | 0 | 0 | 0 | 1 |
 | Code Modernization | dev | 9 | 0 |  | 0% | 0 | 0 | 0 | 0 | 0 | 3 |
 | Deploy your AI application | main | 1 | 0 |  | 0% | 0 | 0 | 0 | 0 | 0 | 1 |
-| DKM | dev | 0 | 0 |  | 0% | 0 | 0 | 0 | 0 | 0 | 0 |
-| Container Migration | dev | 0 | 0 |  | 0% | 0 | 0 | 0 | 0 | 0 | 0 |
-| Content Processing | dev | 0 | 0 |  | 0% | 0 | 0 | 0 | 0 | 0 | 0 |
-| BYOC | dev | 0 | 0 |  | 0% | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ---
 
@@ -66,19 +62,19 @@
 
 | Application | Branch | Status | Timestamp |
 |-------------|--------|--------|-----------|
-| Fabric SQL | dev | ✓ Success | 2026-02-17 15:47:59 |
-| Doc Gen | dev | ✓ Success | 2026-02-17 15:47:59 |
-| CWYD | dev | ✓ Success | 2026-02-17 15:47:59 |
-| MAAG | dev | ✓ Success | 2026-02-17 15:47:59 |
-| BYOCC | dev | ✓ Success | 2026-02-17 15:47:59 |
-| MACAE v4 | main | ✓ Success | 2026-02-17 15:47:59 |
-| RTI | main | ✓ Success | 2026-02-17 15:47:59 |
-| Code Modernization | dev | ✓ Success | 2026-02-17 15:47:59 |
-| Deploy your AI application | main | ✓ Success | 2026-02-17 15:47:59 |
-| DKM | dev | ✓ Success | 2026-02-17 15:47:59 |
-| Container Migration | dev | ✓ Success | 2026-02-17 15:47:59 |
-| Content Processing | dev | ✓ Success | 2026-02-17 15:47:59 |
-| BYOC | dev | ✓ Success | 2026-02-17 15:47:59 |
+| Fabric SQL | dev | ✓ Success | 2026-02-17 15:53:58 |
+| Doc Gen | dev | ✓ Success | 2026-02-17 15:53:58 |
+| CWYD | dev | ✓ Success | 2026-02-17 15:53:58 |
+| MAAG | dev | ✓ Success | 2026-02-17 15:53:58 |
+| BYOCC | dev | ✓ Success | 2026-02-17 15:53:58 |
+| MACAE v4 | main | ✓ Success | 2026-02-17 15:53:58 |
+| RTI | main | ✓ Success | 2026-02-17 15:53:58 |
+| Code Modernization | dev | ✓ Success | 2026-02-17 15:53:58 |
+| DKM | dev | ✓ Success | 2026-02-17 15:53:58 |
+| Deploy your AI application | main | ✓ Success | 2026-02-17 15:53:58 |
+| Content Processing | dev | ✓ Success | 2026-02-17 15:53:58 |
+| BYOC | dev | ✓ Success | 2026-02-17 15:53:58 |
+| Container Migration | dev | ✓ Success | 2026-02-17 15:53:58 |
 
 ---
 
