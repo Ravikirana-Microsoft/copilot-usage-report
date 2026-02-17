@@ -1,0 +1,53 @@
+{
+  "reports": [
+    {
+      "filename": "ConsolidatedReport_2026-01-23_16-35-01.json",
+      "name": "November 2025",
+      "date": "2026-01-23",
+      "dateRange": "2025-11-01 to 2025-11-30"
+    },
+    {
+      "filename": "ConsolidatedReport_2026-01-23_12-12-10.json",
+      "name": "October 2025",
+      "date": "2026-01-23",
+      "dateRange": "2025-10-01 to 2025-10-31"
+    },
+    {
+      "filename": "ConsolidatedReport_2026-01-23_10-22-24.json",
+      "name": "September 2025",
+      "date": "2026-01-23",
+      "dateRange": "2025-09-01 to 2025-09-30"
+    },
+    {
+      "filename": "ConsolidatedReport_2026-01-23_10-16-52.json",
+      "name": "August 2025",
+      "date": "2026-01-23",
+      "dateRange": "2025-08-01 to 2025-08-31"
+    },
+    {
+      "filename": "ConsolidatedReport_2026-01-22_16-06-11.json",
+      "name": "July 2025",
+      "date": "2026-01-22",
+      "dateRange": "2025-07-01 to 2025-07-31"
+    },
+    {
+      "filename": "ConsolidatedReport_2026-01-22_15-57-00.json",
+      "name": "June 2025",
+      "date": "2026-01-22",
+      "dateRange": "2025-06-01 to 2025-06-30"
+    },
+    {
+      "filename": "ConsolidatedReport_2026-01-22_15-52-32.json",
+      "name": "May 2025",
+      "date": "2026-01-22",
+      "dateRange": "2025-05-01 to 2025-05-31"
+    },
+    {
+      "filename": "ConsolidatedReport_2026-01-22_15-50-57.json",
+      "name": "April 2025",
+      "date": "2026-01-22",
+      "dateRange": "2025-04-01 to 2025-04-30"
+    }
+  ],
+  "lastUpdated": "2026-01-23T16:35:01Z"
+}

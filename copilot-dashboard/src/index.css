@@ -1,0 +1,97 @@
+/* Copilot Dashboard - Global Styles */
+:root {
+  /* Color scheme */
+  --color-ai-primary: #00bcf2;
+  --color-ai-secondary: #33c9f4;
+  --color-ai-light: rgba(0, 188, 242, 0.3);
+  --color-human-primary: #6b7280;
+  --color-human-secondary: #9ca3af;
+  --color-human-light: rgba(107, 114, 128, 0.3);
+  
+  /* Tier colors */
+  --color-tier-1: #ef4444;
+  --color-tier-2: #f97316;
+  --color-tier-3: #eab308;
+  --color-tier-4: #22c55e;
+  --color-tier-5: #3b82f6;
+  
+  /* Typography */
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: dark;
+  
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Chart.js canvas reset */
+canvas {
+  display: block;
+}
+
+/* Animation classes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.pulse {
+  animation: pulse 2s ease-in-out infinite;
+}
