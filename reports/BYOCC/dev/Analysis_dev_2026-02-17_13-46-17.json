@@ -1,0 +1,523 @@
+{
+  "AnalysisPeriod": {
+    "FilterApplied": true,
+    "StartDate": "2026-02-01",
+    "EndDate": "2026-02-17"
+  },
+  "Users": [
+    {
+      "UserName": "Niraj Chaudhari (Persistent Systems Inc)",
+      "UserEmail": "v-nirajcha@microsoft.com",
+      "TotalCommits": 3,
+      "AICommits": 1,
+      "HumanCommits": 2,
+      "AILinesAdded": 102,
+      "AILinesDeleted": 68,
+      "HumanLinesAdded": 14,
+      "HumanLinesDeleted": 4,
+      "TotalLinesAdded": 116,
+      "TotalLinesDeleted": 72,
+      "AIPercentage": 87.93,
+      "AvgConfidenceScore": 84.0,
+      "ConfidenceScores": [
+        84
+      ],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 1,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Ajit Padhi",
+      "UserEmail": "v-padhiajit@microsoft.com",
+      "TotalCommits": 10,
+      "AICommits": 1,
+      "HumanCommits": 9,
+      "AILinesAdded": 68,
+      "AILinesDeleted": 89,
+      "HumanLinesAdded": 124,
+      "HumanLinesDeleted": 149,
+      "TotalLinesAdded": 192,
+      "TotalLinesDeleted": 238,
+      "AIPercentage": 35.42,
+      "AvgConfidenceScore": 63.0,
+      "ConfidenceScores": [
+        63
+      ],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 1
+    }
+  ],
+  "ApplicationName": "BYOCC",
+  "FileTypeBreakdown": [
+    {
+      "Extension": "json",
+      "TotalLines": 210999,
+      "AILines": 13916,
+      "AIPercentage": 6.6,
+      "FileCount": 95
+    },
+    {
+      "Extension": "py",
+      "TotalLines": 38849,
+      "AILines": 36825,
+      "AIPercentage": 94.79,
+      "FileCount": 559
+    },
+    {
+      "Extension": "json}",
+      "TotalLines": 27594,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 1
+    },
+    {
+      "Extension": "bicep",
+      "TotalLines": 13839,
+      "AILines": 2732,
+      "AIPercentage": 19.74,
+      "FileCount": 146
+    },
+    {
+      "Extension": "md",
+      "TotalLines": 12689,
+      "AILines": 9240,
+      "AIPercentage": 72.82,
+      "FileCount": 164
+    },
+    {
+      "Extension": "ps1",
+      "TotalLines": 11833,
+      "AILines": 11071,
+      "AIPercentage": 93.56,
+      "FileCount": 160
+    },
+    {
+      "Extension": "tsx",
+      "TotalLines": 8753,
+      "AILines": 8144,
+      "AIPercentage": 93.04,
+      "FileCount": 200
+    },
+    {
+      "Extension": "html",
+      "TotalLines": 4441,
+      "AILines": 4438,
+      "AIPercentage": 99.93,
+      "FileCount": 10
+    },
+    {
+      "Extension": "sh",
+      "TotalLines": 1789,
+      "AILines": 965,
+      "AIPercentage": 53.94,
+      "FileCount": 49
+    },
+    {
+      "Extension": "ts",
+      "TotalLines": 1465,
+      "AILines": 1272,
+      "AIPercentage": 86.83,
+      "FileCount": 38
+    },
+    {
+      "Extension": "yml",
+      "TotalLines": 1216,
+      "AILines": 83,
+      "AIPercentage": 6.83,
+      "FileCount": 40
+    },
+    {
+      "Extension": "gitignore",
+      "TotalLines": 880,
+      "AILines": 458,
+      "AIPercentage": 52.05,
+      "FileCount": 13
+    },
+    {
+      "Extension": "css",
+      "TotalLines": 819,
+      "AILines": 810,
+      "AIPercentage": 98.9,
+      "FileCount": 13
+    },
+    {
+      "Extension": "js",
+      "TotalLines": 654,
+      "AILines": 644,
+      "AIPercentage": 98.47,
+      "FileCount": 29
+    },
+    {
+      "Extension": "txt",
+      "TotalLines": 564,
+      "AILines": 199,
+      "AIPercentage": 35.28,
+      "FileCount": 76
+    },
+    {
+      "Extension": "other",
+      "TotalLines": 273,
+      "AILines": 158,
+      "AIPercentage": 57.88,
+      "FileCount": 24
+    },
+    {
+      "Extension": "bat",
+      "TotalLines": 225,
+      "AILines": 225,
+      "AIPercentage": 100.0,
+      "FileCount": 4
+    },
+    {
+      "Extension": "csv",
+      "TotalLines": 100,
+      "AILines": 34,
+      "AIPercentage": 34.0,
+      "FileCount": 11
+    },
+    {
+      "Extension": "example",
+      "TotalLines": 95,
+      "AILines": 85,
+      "AIPercentage": 89.47,
+      "FileCount": 14
+    },
+    {
+      "Extension": "yaml",
+      "TotalLines": 91,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 16
+    },
+    {
+      "Extension": "conf",
+      "TotalLines": 63,
+      "AILines": 63,
+      "AIPercentage": 100.0,
+      "FileCount": 4
+    },
+    {
+      "Extension": "svg",
+      "TotalLines": 48,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 32
+    },
+    {
+      "Extension": "sample",
+      "TotalLines": 48,
+      "AILines": 48,
+      "AIPercentage": 100.0,
+      "FileCount": 4
+    },
+    {
+      "Extension": "ini",
+      "TotalLines": 46,
+      "AILines": 43,
+      "AIPercentage": 93.48,
+      "FileCount": 5
+    },
+    {
+      "Extension": "minimal",
+      "TotalLines": 34,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "frontend",
+      "TotalLines": 32,
+      "AILines": 32,
+      "AIPercentage": 100.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "dockerignore",
+      "TotalLines": 31,
+      "AILines": 31,
+      "AIPercentage": 100.0,
+      "FileCount": 4
+    },
+    {
+      "Extension": "coveragerc",
+      "TotalLines": 25,
+      "AILines": 22,
+      "AIPercentage": 88.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "config",
+      "TotalLines": 20,
+      "AILines": 20,
+      "AIPercentage": 100.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "toml",
+      "TotalLines": 16,
+      "AILines": 8,
+      "AIPercentage": 50.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "flake8",
+      "TotalLines": 14,
+      "AILines": 4,
+      "AIPercentage": 28.57,
+      "FileCount": 4
+    },
+    {
+      "Extension": "sql",
+      "TotalLines": 14,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "github/codeowners",
+      "TotalLines": 11,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 7
+    },
+    {
+      "Extension": "devcontainer/dockerfile",
+      "TotalLines": 10,
+      "AILines": 5,
+      "AIPercentage": 50.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "env",
+      "TotalLines": 7,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 1
+    },
+    {
+      "Extension": "cmd",
+      "TotalLines": 5,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "deployment",
+      "TotalLines": 3,
+      "AILines": 3,
+      "AIPercentage": 100.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "spark-initial-sha",
+      "TotalLines": 1,
+      "AILines": 1,
+      "AIPercentage": 100.0,
+      "FileCount": 2
+    }
+  ],
+  "Branch": "dev",
+  "AIAttributionOverride": {
+    "OverridePercentage": null,
+    "Applied": false,
+    "Notes": null
+  },
+  "GeneratedAt": "2026-02-17 13:46:17",
+  "Metadata": {
+    "GeneratedAt": "2026-02-17 13:46:17",
+    "AnalysisMethod": "5-Tier Weighted Pattern Detection",
+    "IncludeTestFiles": false,
+    "PowerShellVersion": "7.4.13",
+    "GeneratedBy": "Copilot Usage Report Tool v2.0",
+    "ScriptVersion": "2.0.0"
+  },
+  "TierDistribution": {
+    "Tier5_Low": 1,
+    "Tier2_VeryHigh": 0,
+    "Tier4_Moderate": 0,
+    "Tier3_High": 1,
+    "Tier1_Definitive": 0,
+    "Human": 11
+  },
+  "BranchStatistics": {
+    "Branch": "dev",
+    "TotalCommits": 13,
+    "AICommits": 2,
+    "HumanCommits": 11,
+    "TotalLinesAdded": 308.0,
+    "TotalLinesDeleted": 310.0,
+    "AILinesAdded": 170.0,
+    "AILinesDeleted": 157.0,
+    "Tier1Commits": 0,
+    "Tier2Commits": 0,
+    "Tier3Commits": 1,
+    "Tier4Commits": 0,
+    "Tier5Commits": 1,
+    "UniqueContributors": 2,
+    "AIPercentage": 55.19,
+    "HumanLinesAdded": 138.0
+  },
+  "Commits": [
+    {
+      "Hash": "111ad26a286ea934cd7af1fdc2afefb578c7603d",
+      "Author": "Ajit Padhi",
+      "Date": "Mon Feb 16 13:27:07 2026 +0530",
+      "Message": "updated as per comment",
+      "LinesAdded": 2,
+      "LinesDeleted": 2,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "e1c367936f5b35f1e65664f463af10558702b932",
+      "Author": "Ajit Padhi",
+      "Date": "Mon Feb 16 13:16:03 2026 +0530",
+      "Message": "document and script issue fix",
+      "LinesAdded": 3,
+      "LinesDeleted": 3,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "026e156c086bf9d32c1153c49757d86361b53693",
+      "Author": "Ajit Padhi",
+      "Date": "Thu Feb 12 16:58:31 2026 +0530",
+      "Message": "removed comment code",
+      "LinesAdded": 0,
+      "LinesDeleted": 8,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "8c2a38c2850c8e35b316cec4316058426d260cad",
+      "Author": "Ajit Padhi",
+      "Date": "Thu Feb 12 16:03:24 2026 +0530",
+      "Message": "updated based on review comment",
+      "LinesAdded": 0,
+      "LinesDeleted": 6,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "1a999eefdb3d200a331fc3f0f1a27bcc73525ddb",
+      "Author": "Ajit Padhi",
+      "Date": "Thu Feb 12 15:52:02 2026 +0530",
+      "Message": "updated bicep",
+      "LinesAdded": 2,
+      "LinesDeleted": 6,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "580dd232d4902d4b9f85b8c8f96e8f488645a960",
+      "Author": "Ajit Padhi",
+      "Date": "Thu Feb 12 15:33:55 2026 +0530",
+      "Message": "updated ui code",
+      "LinesAdded": 68,
+      "LinesDeleted": 89,
+      "IsAI": true,
+      "ConfidenceScore": 63,
+      "ConfidenceTier": "Tier 5: Low Confidence (60-69 percent)",
+      "TierNumber": 5
+    },
+    {
+      "Hash": "ed05b6cc1a3c98e884d83e34d980faa8a6359d37",
+      "Author": "Ajit Padhi",
+      "Date": "Wed Feb 11 17:45:22 2026 +0530",
+      "Message": "Fixed cold loading and authentication issue",
+      "LinesAdded": 39,
+      "LinesDeleted": 26,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "f9a9af4d810e7d3ae38b0d31ae287b3ddc2d8eeb",
+      "Author": "Niraj Chaudhari (Persistent Systems Inc)",
+      "Date": "Mon Feb 9 12:54:14 2026 +0530",
+      "Message": "Update TroubleshootingSteps.md file with latest errors 7",
+      "LinesAdded": 1,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written (Merge/Revert)",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "2a78f8c70e492bb1339140bb149b9b23a2793577",
+      "Author": "Niraj Chaudhari (Persistent Systems Inc)",
+      "Date": "Mon Feb 9 12:50:25 2026 +0530",
+      "Message": "Update TroubleshootingSteps.md file with latest errors",
+      "LinesAdded": 13,
+      "LinesDeleted": 3,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written (Merge/Revert)",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "b8232123b159a806fd5644587ff5cadd5ed846e3",
+      "Author": "Ajit Padhi",
+      "Date": "Thu Feb 5 14:36:34 2026 +0530",
+      "Message": "updated pipeline",
+      "LinesAdded": 1,
+      "LinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "b79b5a8031696ad976e885bdda323a3d6b06c52c",
+      "Author": "Ajit Padhi",
+      "Date": "Tue Feb 3 15:40:00 2026 +0530",
+      "Message": "code quality issue fix",
+      "LinesAdded": 67,
+      "LinesDeleted": 90,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "9cb337fecaeb428de82adb27a2fa2b98123b7454",
+      "Author": "Ajit Padhi",
+      "Date": "Mon Feb 2 11:54:10 2026 +0530",
+      "Message": "updated pipeline with guideline",
+      "LinesAdded": 10,
+      "LinesDeleted": 8,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "0b4c784fb1d20db0ad8773b786beb5bebf2c5f18",
+      "Author": "Niraj Chaudhari (Persistent Systems Inc)",
+      "Date": "Mon Feb 2 11:38:11 2026 +0530",
+      "Message": "Add Error handing",
+      "LinesAdded": 102,
+      "LinesDeleted": 68,
+      "IsAI": true,
+      "ConfidenceScore": 84,
+      "ConfidenceTier": "Tier 3: High Confidence (80-89 percent)",
+      "TierNumber": 3
+    }
+  ]
+}
