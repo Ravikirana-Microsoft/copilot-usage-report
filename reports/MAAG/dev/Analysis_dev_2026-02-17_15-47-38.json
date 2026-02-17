@@ -1,0 +1,184 @@
+{
+  "Users": [
+    {
+      "UserName": "Saswato-Microsoft",
+      "UserEmail": "v-saswatoc@microsoft.com",
+      "TotalCommits": 1,
+      "AICommits": 0,
+      "HumanCommits": 1,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 373,
+      "HumanLinesDeleted": 144,
+      "TotalLinesAdded": 373,
+      "TotalLinesDeleted": 144,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    }
+  ],
+  "Branch": "dev",
+  "BranchStatistics": {
+    "Branch": "dev",
+    "TotalCommits": 1,
+    "AICommits": 0,
+    "HumanCommits": 1,
+    "TotalLinesAdded": 373.0,
+    "TotalLinesDeleted": 144.0,
+    "AILinesAdded": null,
+    "AILinesDeleted": null,
+    "Tier1Commits": 0,
+    "Tier2Commits": 0,
+    "Tier3Commits": 0,
+    "Tier4Commits": 0,
+    "Tier5Commits": 0,
+    "UniqueContributors": 1,
+    "AIPercentage": 0.0,
+    "HumanLinesAdded": 373.0
+  },
+  "AIAttributionOverride": {
+    "Notes": null,
+    "Applied": false,
+    "OverridePercentage": null
+  },
+  "Commits": {
+    "Hash": "2726fda889d8668d408975b6cbcde80cddbf071b",
+    "Author": "Saswato-Microsoft",
+    "Date": "Wed Feb 4 13:33:24 2026 +0530",
+    "Message": "Refactor lakehouse path configuration in notebooks to use dynamic workspace and lakehouse IDs",
+    "LinesAdded": 373,
+    "LinesDeleted": 144,
+    "IsAI": false,
+    "ConfidenceScore": 0,
+    "ConfidenceTier": "Human Written",
+    "TierNumber": 0
+  },
+  "ApplicationName": "MAAG",
+  "AnalysisPeriod": {
+    "FilterApplied": true,
+    "EndDate": "2026-02-17",
+    "StartDate": "2026-02-01"
+  },
+  "TierDistribution": {
+    "Tier2_VeryHigh": 0,
+    "Human": 1,
+    "Tier1_Definitive": 0,
+    "Tier5_Low": 0,
+    "Tier4_Moderate": 0,
+    "Tier3_High": 0
+  },
+  "GeneratedAt": "2026-02-17 15:47:38",
+  "FileTypeBreakdown": [
+    {
+      "Extension": "csv",
+      "TotalLines": 9047,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 3
+    },
+    {
+      "Extension": "py",
+      "TotalLines": 7102,
+      "AILines": 6966,
+      "AIPercentage": 98.09,
+      "FileCount": 47
+    },
+    {
+      "Extension": "md",
+      "TotalLines": 3006,
+      "AILines": 1236,
+      "AIPercentage": 41.12,
+      "FileCount": 50
+    },
+    {
+      "Extension": "ps1",
+      "TotalLines": 2764,
+      "AILines": 2536,
+      "AIPercentage": 91.75,
+      "FileCount": 7
+    },
+    {
+      "Extension": "bak",
+      "TotalLines": 1581,
+      "AILines": 1581,
+      "AIPercentage": 100.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "ipynb",
+      "TotalLines": 756,
+      "AILines": 383,
+      "AIPercentage": 50.66,
+      "FileCount": 38
+    },
+    {
+      "Extension": "py}",
+      "TotalLines": 109,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "yml",
+      "TotalLines": 94,
+      "AILines": 24,
+      "AIPercentage": 25.53,
+      "FileCount": 9
+    },
+    {
+      "Extension": "txt",
+      "TotalLines": 52,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "platform",
+      "TotalLines": 12,
+      "AILines": 12,
+      "AIPercentage": 100.0,
+      "FileCount": 1
+    },
+    {
+      "Extension": "json",
+      "TotalLines": 11,
+      "AILines": 8,
+      "AIPercentage": 72.73,
+      "FileCount": 3
+    },
+    {
+      "Extension": "bicep",
+      "TotalLines": 5,
+      "AILines": 2,
+      "AIPercentage": 40.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "devcontainer/dockerfile",
+      "TotalLines": 4,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 1
+    },
+    {
+      "Extension": "yaml",
+      "TotalLines": 4,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 1
+    }
+  ],
+  "Metadata": {
+    "GeneratedBy": "Copilot Usage Report Tool v2.0",
+    "IncludeTestFiles": false,
+    "GeneratedAt": "2026-02-17 15:47:38",
+    "AnalysisMethod": "5-Tier Weighted Pattern Detection",
+    "ScriptVersion": "2.0.0",
+    "PowerShellVersion": "7.4.13"
+  }
+}
