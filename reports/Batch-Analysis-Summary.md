@@ -1,6 +1,6 @@
 # Batch Analysis Summary - 5-Tier Model
 
-**Analysis Date:** 2026-02-18 07:46:29  
+**Analysis Date:** 2026-02-18 07:50:17  
 **Period:** 2025-11-01 to 2025-11-30
 
 ---
@@ -51,8 +51,8 @@
 | RTI | main | 16 | 6 | 278865 | 99.54% | 0 | 1 | 1 | 1 | 3 | 4 |
 | BYOCC | dev | 47 | 1 | 5437 | 71.9% | 0 | 0 | 0 | 0 | 1 | 8 |
 | Fabric SQL | dev | 63 | 4 | 3416 | 10.42% | 0 | 1 | 0 | 1 | 2 | 8 |
-| Content Processing | dev | 75 | 7 | 210 | 0.76% | 5 | 1 | 1 | 0 | 0 | 15 |
 | BYOC | dev | 53 | 3 | 179 | 5.12% | 0 | 2 | 0 | 0 | 1 | 13 |
+| Content Processing | dev | 75 | 7 | 210 | 0.76% | 5 | 1 | 1 | 0 | 0 | 15 |
 | Code Modernization | dev | 48 | 3 | 3 | 0.02% | 3 | 0 | 0 | 0 | 0 | 12 |
 | CWYD | dev | 18 | 0 |  | 0% | 0 | 0 | 0 | 0 | 0 | 9 |
 | Container Migration | dev | 39 | 4 | 307 | 0.48% | 3 | 0 | 0 | 1 | 0 | 12 |
@@ -66,19 +66,19 @@
 
 | Application | Branch | Status | Timestamp |
 |-------------|--------|--------|-----------|
-| MACAE v4 | main | ✓ Success | 2026-02-18 07:46:29 |
-| Doc Gen | dev | ✓ Success | 2026-02-18 07:46:29 |
-| RTI | main | ✓ Success | 2026-02-18 07:46:29 |
-| BYOCC | dev | ✓ Success | 2026-02-18 07:46:29 |
-| Fabric SQL | dev | ✓ Success | 2026-02-18 07:46:29 |
-| Content Processing | dev | ✓ Success | 2026-02-18 07:46:29 |
-| BYOC | dev | ✓ Success | 2026-02-18 07:46:29 |
-| Code Modernization | dev | ✓ Success | 2026-02-18 07:46:29 |
-| CWYD | dev | ✓ Success | 2026-02-18 07:46:29 |
-| Container Migration | dev | ✓ Success | 2026-02-18 07:46:29 |
-| Deploy your AI application | main | ✓ Success | 2026-02-18 07:46:29 |
-| MAAG | dev | ✓ Success | 2026-02-18 07:46:29 |
-| DKM | dev | ✓ Success | 2026-02-18 07:46:29 |
+| MACAE v4 | main | ✓ Success | 2026-02-18 07:50:17 |
+| Doc Gen | dev | ✓ Success | 2026-02-18 07:50:17 |
+| RTI | main | ✓ Success | 2026-02-18 07:50:17 |
+| BYOCC | dev | ✓ Success | 2026-02-18 07:50:17 |
+| Fabric SQL | dev | ✓ Success | 2026-02-18 07:50:17 |
+| BYOC | dev | ✓ Success | 2026-02-18 07:50:17 |
+| Content Processing | dev | ✓ Success | 2026-02-18 07:50:17 |
+| Code Modernization | dev | ✓ Success | 2026-02-18 07:50:17 |
+| CWYD | dev | ✓ Success | 2026-02-18 07:50:17 |
+| Container Migration | dev | ✓ Success | 2026-02-18 07:50:17 |
+| Deploy your AI application | main | ✓ Success | 2026-02-18 07:50:17 |
+| MAAG | dev | ✓ Success | 2026-02-18 07:50:17 |
+| DKM | dev | ✓ Success | 2026-02-18 07:50:17 |
 
 ---
 
