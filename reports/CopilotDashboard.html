@@ -15771,8 +15771,21 @@
             </td></tr>`;
             
             try {
-                const basePath = getBasePath();
-                const response = await fetch(`${basePath}../config/config.json?_t=${Date.now()}`, { cache: 'no-store' });
+                // Config is in repo root, not served by GitHub Pages
+                // Fetch from raw.githubusercontent.com instead
+                const repoInfo = getRepoFromUrl();
+                let configUrl;
+                
+                if (repoInfo) {
+                    // Use raw GitHub content URL for GitHub Pages deployments
+                    configUrl = `https://raw.githubusercontent.com/${repoInfo.owner}/${repoInfo.repo}/main/config/config.json?_t=${Date.now()}`;
+                } else {
+                    // Fallback for local development
+                    const basePath = getBasePath();
+                    configUrl = `${basePath}../config/config.json?_t=${Date.now()}`;
+                }
+                
+                const response = await fetch(configUrl, { cache: 'no-store' });
                 
                 if (!response.ok) {
                     throw new Error('Config file not found');
@@ -15791,7 +15804,7 @@
                 tbody.innerHTML = `<tr><td colspan="8" style="padding: 40px; text-align: center; color: var(--text-secondary);">
                     <div style="color: #ef4444; margin-bottom: 12px;">❌ Failed to load configuration</div>
                     <p>${error.message}</p>
-                    <p style="margin-top: 12px; font-size: 13px;">Config file path: config/config.json</p>
+                    <p style="margin-top: 12px; font-size: 13px;">Tip: Make sure config/config.json exists in the repository</p>
                 </td></tr>`;
             }
         }
