@@ -1,5 +1,12 @@
 {
-  "reports": [],
-  "lastUpdated": "2026-02-18 07:56:41 UTC",
-  "resetReason": "Manual reset via Dashboard"
+  "reports": [
+    {
+      "date": "2026-02-18 08:00:25 UTC",
+      "dateRange": "2025-11-01 to 2025-11-30",
+      "name": "November-2025",
+      "isLatest": true,
+      "filename": "ConsolidatedReport_2026-02-18_08-00-25.json"
+    }
+  ],
+  "lastUpdated": "2026-02-18 08:00:25"
 }
