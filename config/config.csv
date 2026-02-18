@@ -1,15 +1,15 @@
-ApplicationName,GitUrl,Branches,ExcludePaths,Owner,Team,TargetAIPercent,Enabled
-BYOCC,https://github.com/microsoft/customer-chatbot-solution-accelerator.git,dev,,Team-CCSA,AI Platform,50,true
-Container Migration,https://github.com/microsoft/Container-Migration-Solution-Accelerator.git,dev,,Team-Container,Cloud Migration,50,true
-Fabric SQL,https://github.com/microsoft/agentic-applications-for-unified-data-foundation-solution-accelerator.git,dev,,Team-Container,Cloud Migration,50,true
-MACAE v4,https://github.com/microsoft/Multi-Agent-Custom-Automation-Engine-Solution-Accelerator.git,main,,Team-Container,Cloud Migration,50,true
-Doc Gen,https://github.com/microsoft/document-generation-solution-accelerator.git,dev,,Team-Container,Cloud Migration,50,true
-CWYD,https://github.com/Azure-Samples/chat-with-your-data-solution-accelerator.git,dev,,Team-Container,Cloud Migration,50,true
-BYOC,https://github.com/microsoft/Build-your-own-copilot-Solution-Accelerator.git,dev,,Team-Container,Cloud Migration,50,true
-DKM,https://github.com/microsoft/Document-Knowledge-Mining-Solution-Accelerator.git,dev,,Team-Container,Cloud Migration,50,true
-Code Modernization,https://github.com/microsoft/Modernize-your-code-solution-accelerator.git,dev,,Team-Container,Cloud Migration,50,true
-Content Processing,https://github.com/microsoft/content-processing-solution-accelerator.git,dev,,Team-Container,Cloud Migration,50,true
-Deploy your AI application,https://github.com/microsoft/Deploy-Your-AI-Application-In-Production.git,main,,Team-Container,Cloud Migration,50,true
-MAAG,https://github.com/microsoft/unified-data-foundation-with-fabric-solution-accelerator.git,dev,,Team-Container,Cloud Migration,50,true
-RTI,https://github.com/microsoft/real-time-intelligence-operations-solution-accelerator.git,main,,Team-Container,Cloud Migration,50,true
-KM Generic,https://github.com/microsoft/Conversation-Knowledge-Mining-Solution-Accelerator.git,dev,,Team-Container,Cloud Migration,50,true
+"ApplicationName","GitUrl","Branches","ExcludePaths","Owner","Team","TargetAIPercent","Enabled"
+"BYOCC","https://github.com/microsoft/customer-chatbot-solution-accelerator.git","dev","","Team-CCSA","AI Platform","50","true"
+"Container Migration","https://github.com/microsoft/Container-Migration-Solution-Accelerator.git","dev","","Team-Container","Cloud Migration","50","true"
+"Fabric SQL","https://github.com/microsoft/agentic-applications-for-unified-data-foundation-solution-accelerator.git","dev","","Team-Container","Cloud Migration","50","true"
+"MACAE v4","https://github.com/microsoft/Multi-Agent-Custom-Automation-Engine-Solution-Accelerator.git","main","","Team-Container","Cloud Migration","50","true"
+"Doc Gen","https://github.com/microsoft/document-generation-solution-accelerator.git","dev","","Team-Container","Cloud Migration","50","true"
+"CWYD","https://github.com/Azure-Samples/chat-with-your-data-solution-accelerator.git","dev","","Team-Container","Cloud Migration","50","true"
+"BYOC","https://github.com/microsoft/Build-your-own-copilot-Solution-Accelerator.git","dev","","Team-Container","Cloud Migration","50","true"
+"DKM","https://github.com/microsoft/Document-Knowledge-Mining-Solution-Accelerator.git","dev","","Team-Container","Cloud Migration","50","true"
+"Code Modernization","https://github.com/microsoft/Modernize-your-code-solution-accelerator.git","dev","","Team-Container","Cloud Migration","50","true"
+"Content Processing","https://github.com/microsoft/content-processing-solution-accelerator.git","dev","","Team-Container","Cloud Migration","50","true"
+"Deploy your AI application","https://github.com/microsoft/Deploy-Your-AI-Application-In-Production.git","main","","Team-Container","Cloud Migration","50","true"
+"MAAG","https://github.com/microsoft/unified-data-foundation-with-fabric-solution-accelerator.git","dev","","Team-Container","Cloud Migration","50","true"
+"RTI","https://github.com/microsoft/real-time-intelligence-operations-solution-accelerator.git","main","","Team-Container","Cloud Migration","50","true"
+"KM Generic","https://github.com/microsoft/Conversation-Knowledge-Mining-Solution-Accelerator.git","dev","","Team-Container","Cloud Migration","50","true"
