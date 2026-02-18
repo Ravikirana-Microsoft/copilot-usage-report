@@ -2,7 +2,7 @@
 
 > Auto-generated index of all analysis reports with application-level AI usage statistics.
 > 
-> **Last Updated:** 2026-02-18 13:09:23
+> **Last Updated:** 2026-02-18 13:21:33
 
 ---
 
@@ -30,6 +30,7 @@
 
 | Run Date | Period | Applications | Branches | Overall AI % | Reports |
 |----------|--------|--------------|----------|--------------|---------|
+| 2026-02-18 13:21 | 2026-02-01 to 2026-02-28 | 14 | 9 | 2.78% | [Summary](Batch-Analysis-Summary.md), [JSON](Consolidated-Analysis_2026-02-18_13-21-33.json) |
 | 2026-02-18 13:09 | 2026-02-01 to 2026-02-28 | 14 | 9 | 2.78% | [Summary](Batch-Analysis-Summary.md), [JSON](Consolidated-Analysis_2026-02-18_13-09-23.json) |
 | 2026-02-18 12:57 | 2026-02-01 to 2026-02-28 | 13 | 13 | 2.78% | [Summary](Batch-Analysis-Summary.md), [JSON](Consolidated-Analysis_2026-02-18_12-57-39.json) |
 | 2026-02-18 12:46 | 2026-01-01 to 2026-01-31 | 13 | 13 | 37.75% | [Summary](Batch-Analysis-Summary.md), [JSON](Consolidated-Analysis_2026-02-18_12-46-15.json) |
@@ -49,7 +50,6 @@
 | 2026-01-23 16:35 | 2025-11-01 to 2025-11-30 | 13 | 13 | 54.14% | [Summary](Batch-Analysis-Summary.md), [JSON](Consolidated-Analysis_2026-01-23_16-35-01.json) |
 | 2026-01-23 10:22 | All Time (No date filter) | 13 | 13 | 30.59% | [Summary](Batch-Analysis-Summary.md), [JSON](Consolidated-Analysis_2026-01-23_10-22-24.json) |
 | 2026-01-23 10:16 | 2025-10-01 to 2025-10-31 | 13 | 12 | 7.25% | [Summary](Batch-Analysis-Summary.md), [JSON](Consolidated-Analysis_2026-01-23_10-16-52.json) |
-| 2026-01-22 15:50 | 2025-11-01 to 2025-11-30 | 13 | 13 | 54.14% | [Summary](Batch-Analysis-Summary.md), [JSON](Consolidated-Analysis_2026-01-22_15-50-57.json) |
 
 ---
 
@@ -102,7 +102,7 @@
 - **main Branch**: [RTI/main](RTI/main/)
 
 
-**Latest Reports (2026-02-18 13:09):**
+**Latest Reports (2026-02-18 13:21):**
 
 - [Fabric SQL - dev](Fabric SQL/dev/) - AI: 60.27%
 - [Doc Gen - dev](Doc Gen/dev/) - AI: 1.29%
@@ -111,8 +111,8 @@
 - [BYOCC - dev](BYOCC/dev/) - AI: 4.75%
 - [MACAE v4 - main](MACAE v4/main/) - AI: 0%
 - [Code Modernization - dev](Code Modernization/dev/) - AI: 0%
-- [Deploy your AI application - main](Deploy your AI application/main/) - AI: 0%
 - [RTI - main](RTI/main/) - AI: 0%
+- [Deploy your AI application - main](Deploy your AI application/main/) - AI: 0%
 
 
 ---
@@ -120,8 +120,8 @@
 ## Quick Links
 
 - [Batch Analysis Summary](Batch-Analysis-Summary.md)
-- [Branch-Level Summary CSV](Branch-Level-Summary_2026-02-18_13-09-23.csv)
-- [Consolidated Analysis JSON](Consolidated-Analysis_2026-02-18_13-09-23.json)
+- [Branch-Level Summary CSV](Branch-Level-Summary_2026-02-18_13-21-33.csv)
+- [Consolidated Analysis JSON](Consolidated-Analysis_2026-02-18_13-21-33.json)
 - [Git Access Validation Report](Git-Access-Validation-Report.md)
 
 ---

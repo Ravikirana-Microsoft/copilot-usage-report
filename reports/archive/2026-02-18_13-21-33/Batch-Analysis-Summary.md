@@ -1,6 +1,6 @@
 # Batch Analysis Summary - 5-Tier Model
 
-**Analysis Date:** 2026-02-18 13:21:33  
+**Analysis Date:** 2026-02-18 13:09:23  
 **Period:** 2026-02-01 to 2026-02-28
 
 ---
@@ -53,8 +53,8 @@
 | BYOCC | dev | 16 | 2 | 170 | 4.75% | 0 | 0 | 1 | 0 | 1 | 2 |
 | MACAE v4 | main | 5 | 0 |  | 0% | 0 | 0 | 0 | 0 | 0 | 3 |
 | Code Modernization | dev | 9 | 0 |  | 0% | 0 | 0 | 0 | 0 | 0 | 3 |
-| RTI | main | 1 | 0 |  | 0% | 0 | 0 | 0 | 0 | 0 | 1 |
 | Deploy your AI application | main | 1 | 0 |  | 0% | 0 | 0 | 0 | 0 | 0 | 1 |
+| RTI | main | 1 | 0 |  | 0% | 0 | 0 | 0 | 0 | 0 | 1 |
 
 ---
 
@@ -62,20 +62,20 @@
 
 | Application | Branch | Status | Timestamp |
 |-------------|--------|--------|-----------|
-| Fabric SQL | dev | ✓ Success | 2026-02-18 13:21:33 |
-| Doc Gen | dev | ✓ Success | 2026-02-18 13:21:33 |
-| CWYD | dev | ✓ Success | 2026-02-18 13:21:33 |
-| MAAG | dev | ✓ Success | 2026-02-18 13:21:33 |
-| BYOCC | dev | ✓ Success | 2026-02-18 13:21:33 |
-| MACAE v4 | main | ✓ Success | 2026-02-18 13:21:33 |
-| KM Generic | dev | ✓ Success | 2026-02-18 13:21:33 |
-| Code Modernization | dev | ✓ Success | 2026-02-18 13:21:33 |
-| RTI | main | ✓ Success | 2026-02-18 13:21:33 |
-| Deploy your AI application | main | ✓ Success | 2026-02-18 13:21:33 |
-| BYOC | dev | ✓ Success | 2026-02-18 13:21:33 |
-| DKM | dev | ✓ Success | 2026-02-18 13:21:33 |
-| Container Migration | dev | ✓ Success | 2026-02-18 13:21:33 |
-| Content Processing | dev | ✓ Success | 2026-02-18 13:21:33 |
+| Fabric SQL | dev | ✓ Success | 2026-02-18 13:09:23 |
+| Doc Gen | dev | ✓ Success | 2026-02-18 13:09:23 |
+| CWYD | dev | ✓ Success | 2026-02-18 13:09:23 |
+| MAAG | dev | ✓ Success | 2026-02-18 13:09:23 |
+| BYOCC | dev | ✓ Success | 2026-02-18 13:09:23 |
+| KM Generic | dev | ✓ Success | 2026-02-18 13:09:23 |
+| MACAE v4 | main | ✓ Success | 2026-02-18 13:09:23 |
+| Code Modernization | dev | ✓ Success | 2026-02-18 13:09:23 |
+| Deploy your AI application | main | ✓ Success | 2026-02-18 13:09:23 |
+| DKM | dev | ✓ Success | 2026-02-18 13:09:23 |
+| RTI | main | ✓ Success | 2026-02-18 13:09:23 |
+| Content Processing | dev | ✓ Success | 2026-02-18 13:09:23 |
+| BYOC | dev | ✓ Success | 2026-02-18 13:09:23 |
+| Container Migration | dev | ✓ Success | 2026-02-18 13:09:23 |
 
 ---
 
