@@ -22,9 +22,15 @@ param(
     [string]$ConfigPath = (Join-Path $PSScriptRoot "..\config\config.csv")
 )
 
-# Ensure config file exists
-if (-not (Test-Path $ConfigPath)) {
-    Write-Error "Configuration file not found: $ConfigPath"
+# Ensure config file exists (support both JSON and CSV)
+$jsonConfigPath = $ConfigPath -replace '\.csv$', '.json'
+$useJsonConfig = $false
+
+if (Test-Path $jsonConfigPath) {
+    $useJsonConfig = $true
+    $ConfigPath = $jsonConfigPath
+} elseif (-not (Test-Path $ConfigPath)) {
+    Write-Error "Configuration file not found: $ConfigPath or $jsonConfigPath"
     exit 1
 }
 
@@ -33,7 +39,23 @@ Write-Host "Configuration: $ConfigPath`n" -ForegroundColor Gray
 
 # Read configuration
 try {
-    $config = Import-Csv -Path $ConfigPath
+    if ($useJsonConfig) {
+        $jsonContent = Get-Content $ConfigPath -Raw | ConvertFrom-Json
+        $config = $jsonContent.repositories | ForEach-Object {
+            [PSCustomObject]@{
+                ApplicationName = $_.applicationName
+                GitUrl = $_.gitUrl
+                Branches = ($_.branches -join ',')
+                ExcludePaths = if ($_.excludePaths) { ($_.excludePaths -join ',') } else { '' }
+                Owner = $_.owner
+                Team = $_.team
+                TargetAIPercent = $_.targetAIPercent
+                Enabled = if ($_.enabled) { 'true' } else { 'false' }
+            }
+        }
+    } else {
+        $config = Import-Csv -Path $ConfigPath
+    }
     Write-Host "Found $($config.Count) application(s) to validate`n" -ForegroundColor Green
 } catch {
     Write-Error "Failed to read configuration file: $_"

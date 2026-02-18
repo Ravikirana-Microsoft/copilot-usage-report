@@ -4,6 +4,17 @@ on:
   # Manual trigger with inputs
   workflow_dispatch:
     inputs:
+      # === CONFIG UPDATE INPUTS ===
+      update_config:
+        description: 'Update Config Mode: Save new config.json from dashboard'
+        required: false
+        type: string
+        default: 'false'
+      config_data:
+        description: 'JSON config data (used with update_config=true)'
+        required: false
+        type: string
+        default: ''
       # === RESET MODE INPUTS ===
       reset_mode:
         description: 'Reset Mode: Archive all reports and clear dashboard'
@@ -87,6 +98,82 @@ concurrency:
   cancel-in-progress: false  # Don't cancel in-progress runs, just queue
 
 jobs:
+  # ============================================
+  # CONFIG UPDATE JOB - Runs when update_config=true
+  # ============================================
+  update-config:
+    runs-on: ubuntu-latest
+    if: ${{ github.event.inputs.update_config == 'true' }}
+    
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Update config.json
+        run: |
+          echo "📝 Updating config.json..."
+          CONFIG_DATA='${{ github.event.inputs.config_data }}'
+          
+          if [ -z "$CONFIG_DATA" ]; then
+            echo "❌ No config data provided"
+            exit 1
+          fi
+          
+          # Write the config data to file
+          echo "$CONFIG_DATA" > config/config.json
+          
+          # Pretty print for verification
+          echo "✅ Config updated:"
+          cat config/config.json | head -50
+
+      - name: Generate CSV for backward compatibility
+        run: |
+          python3 -c "
+          import json, csv
+          with open('config/config.json', 'r') as f:
+              config = json.load(f)
+          with open('config/config.csv', 'w', newline='') as f:
+              writer = csv.writer(f)
+              writer.writerow(['ApplicationName', 'GitUrl', 'Branches', 'ExcludePaths', 'Owner', 'Team', 'TargetAIPercent', 'Enabled'])
+              for repo in config.get('repositories', []):
+                  branches = ','.join(repo.get('branches', ['main'])) if isinstance(repo.get('branches'), list) else repo.get('branches', 'main')
+                  excludePaths = ','.join(repo.get('excludePaths', [])) if isinstance(repo.get('excludePaths'), list) else (repo.get('excludePaths') or '')
+                  writer.writerow([repo.get('applicationName', ''), repo.get('gitUrl', ''), branches, excludePaths, repo.get('owner', ''), repo.get('team', ''), repo.get('targetAIPercent', 25), 'true' if repo.get('enabled', True) else 'false'])
+          print(f'Generated config.csv with {len(config.get(\"repositories\", []))} repositories')
+          "
+
+      - name: Commit and push config
+        run: |
+          git add config/config.json config/config.csv
+          
+          if git diff --staged --quiet; then
+            echo "⚠️ No changes to commit"
+          else
+            git commit -m "⚙️ Update config from Dashboard"
+            
+            for i in 1 2 3; do
+              if git push; then
+                echo "✅ Config committed and pushed"
+                exit 0
+              fi
+              echo "⚠️ Push failed, attempt $i. Retrying..."
+              git pull --rebase
+            done
+            
+            echo "❌ Failed to push after 3 attempts"
+            exit 1
+          fi
+
   # ============================================
   # ARCHIVE JOB - Runs when archive_mode=true
   # ============================================
@@ -510,11 +597,11 @@ jobs:
         uses: actions/deploy-pages@v4
 
   # ============================================
-  # ANALYSIS JOB - Runs when not archive/reset mode
+  # ANALYSIS JOB - Runs when not archive/reset/config-update mode
   # ============================================
   analyze:
     runs-on: windows-latest
-    if: ${{ github.event.inputs.archive_mode != 'true' && github.event.inputs.reset_mode != 'true' }}
+    if: ${{ github.event.inputs.archive_mode != 'true' && github.event.inputs.reset_mode != 'true' && github.event.inputs.update_config != 'true' }}
     
     permissions:
       contents: write
@@ -689,7 +776,7 @@ jobs:
   deploy-dashboard:
     needs: analyze
     runs-on: ubuntu-latest
-    if: ${{ success() && github.event.inputs.validate_only != 'true' && github.event.inputs.archive_mode != 'true' && github.event.inputs.reset_mode != 'true' }}
+    if: ${{ success() && github.event.inputs.validate_only != 'true' && github.event.inputs.archive_mode != 'true' && github.event.inputs.reset_mode != 'true' && github.event.inputs.update_config != 'true' }}
     
     permissions:
       pages: write

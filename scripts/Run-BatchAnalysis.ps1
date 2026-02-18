@@ -277,15 +277,41 @@ if ($CompareWith) {
 }
 Write-Host "Mode: $($modeText -join ' | ')`n" -ForegroundColor DarkCyan
 
-# Ensure config exists
-if (-not (Test-Path $ConfigPath)) {
-    Write-Error "Configuration file not found: $ConfigPath"
+# Ensure config exists (support both JSON and CSV)
+$jsonConfigPath = $ConfigPath -replace '\.csv$', '.json'
+$useJsonConfig = $false
+
+if (Test-Path $jsonConfigPath) {
+    # Prefer JSON config if it exists
+    $useJsonConfig = $true
+    Write-Host "Using JSON configuration: $jsonConfigPath" -ForegroundColor Cyan
+} elseif (-not (Test-Path $ConfigPath)) {
+    Write-Error "Configuration file not found: $ConfigPath or $jsonConfigPath"
     exit 1
 }
 
 # Read configuration
 Write-Host "Reading configuration..." -ForegroundColor Yellow
-$allConfig = Import-Csv -Path $ConfigPath
+
+if ($useJsonConfig) {
+    # Read from JSON config
+    $jsonContent = Get-Content $jsonConfigPath -Raw | ConvertFrom-Json
+    $allConfig = $jsonContent.repositories | ForEach-Object {
+        [PSCustomObject]@{
+            ApplicationName = $_.applicationName
+            GitUrl = $_.gitUrl
+            Branches = ($_.branches -join ',')
+            ExcludePaths = if ($_.excludePaths) { ($_.excludePaths -join ',') } else { '' }
+            Owner = $_.owner
+            Team = $_.team
+            TargetAIPercent = $_.targetAIPercent
+            Enabled = if ($_.enabled) { 'true' } else { 'false' }
+        }
+    }
+} else {
+    # Read from CSV config (legacy)
+    $allConfig = Import-Csv -Path $ConfigPath
+}
 
 # Filter to only enabled applications
 $config = $allConfig | Where-Object { 
