@@ -1,0 +1,205 @@
+{
+  "AIAttributionOverride": {
+    "Applied": false,
+    "Notes": null,
+    "OverridePercentage": null
+  },
+  "Users": [
+    {
+      "UserName": "Prekshith-Microsoft",
+      "UserEmail": "v-pdj@microsoft.com",
+      "TotalCommits": 1,
+      "AICommits": 0,
+      "HumanCommits": 1,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 9,
+      "HumanLinesDeleted": 2,
+      "TotalLinesAdded": 9,
+      "TotalLinesDeleted": 2,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    }
+  ],
+  "TierDistribution": {
+    "Human": 1,
+    "Tier1_Definitive": 0,
+    "Tier5_Low": 0,
+    "Tier2_VeryHigh": 0,
+    "Tier3_High": 0,
+    "Tier4_Moderate": 0
+  },
+  "GeneratedAt": "2026-02-18 13:27:10",
+  "Branch": "main",
+  "Commits": {
+    "Hash": "c9f99c73f0535218ec290669b0d77978ea138343",
+    "Author": "Prekshith-Microsoft",
+    "Date": "Wed Feb 11 13:05:56 2026 +0530",
+    "Message": "fixed the powershell issue (#107)",
+    "LinesAdded": 9,
+    "LinesDeleted": 2,
+    "IsAI": false,
+    "ConfidenceScore": 0,
+    "ConfidenceTier": "Human Written",
+    "TierNumber": 0
+  },
+  "BranchStatistics": {
+    "Branch": "main",
+    "TotalCommits": 1,
+    "AICommits": 0,
+    "HumanCommits": 1,
+    "TotalLinesAdded": 9.0,
+    "TotalLinesDeleted": 2.0,
+    "AILinesAdded": null,
+    "AILinesDeleted": null,
+    "Tier1Commits": 0,
+    "Tier2Commits": 0,
+    "Tier3Commits": 0,
+    "Tier4Commits": 0,
+    "Tier5Commits": 0,
+    "UniqueContributors": 1,
+    "AIPercentage": 0.0,
+    "HumanLinesAdded": 9.0
+  },
+  "FileTypeBreakdown": [
+    {
+      "Extension": "json",
+      "TotalLines": 43911,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 30
+    },
+    {
+      "Extension": "ps1",
+      "TotalLines": 20426,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 204
+    },
+    {
+      "Extension": "md",
+      "TotalLines": 7348,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 104
+    },
+    {
+      "Extension": "sh",
+      "TotalLines": 2827,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 65
+    },
+    {
+      "Extension": "bicep",
+      "TotalLines": 1067,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 86
+    },
+    {
+      "Extension": "yml",
+      "TotalLines": 438,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 20
+    },
+    {
+      "Extension": "yaml",
+      "TotalLines": 324,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 14
+    },
+    {
+      "Extension": "bicepparam",
+      "TotalLines": 266,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 4
+    },
+    {
+      "Extension": "py",
+      "TotalLines": 197,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 23
+    },
+    {
+      "Extension": "gitignore",
+      "TotalLines": 194,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 6
+    },
+    {
+      "Extension": "sample",
+      "TotalLines": 100,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 4
+    },
+    {
+      "Extension": "other",
+      "TotalLines": 44,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 6
+    },
+    {
+      "Extension": "devcontainer/dockerfile",
+      "TotalLines": 24,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 6
+    },
+    {
+      "Extension": "txt",
+      "TotalLines": 15,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 17
+    },
+    {
+      "Extension": "env",
+      "TotalLines": 14,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 4
+    },
+    {
+      "Extension": "gitmodules",
+      "TotalLines": 6,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "github/codeowners",
+      "TotalLines": 5,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 5
+    }
+  ],
+  "AnalysisPeriod": {
+    "StartDate": "2026-02-01",
+    "FilterApplied": true,
+    "EndDate": "2026-02-28"
+  },
+  "Metadata": {
+    "GeneratedAt": "2026-02-18 13:27:10",
+    "IncludeTestFiles": false,
+    "ScriptVersion": "2.0.0",
+    "GeneratedBy": "Copilot Usage Report Tool v2.0",
+    "PowerShellVersion": "7.4.13",
+    "AnalysisMethod": "5-Tier Weighted Pattern Detection"
+  },
+  "ApplicationName": "Deploy your AI application"
+}
