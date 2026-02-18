@@ -1,0 +1,158 @@
+{
+  "Metadata": {
+    "GeneratedAt": "2026-02-18 12:57:12",
+    "PowerShellVersion": "7.4.13",
+    "IncludeTestFiles": false,
+    "AnalysisMethod": "5-Tier Weighted Pattern Detection",
+    "GeneratedBy": "Copilot Usage Report Tool v2.0",
+    "ScriptVersion": "2.0.0"
+  },
+  "TierDistribution": {
+    "Tier1_Definitive": 0,
+    "Tier5_Low": 0,
+    "Tier3_High": 0,
+    "Tier2_VeryHigh": 0,
+    "Tier4_Moderate": 0,
+    "Human": 0
+  },
+  "Commits": null,
+  "AIAttributionOverride": {
+    "Applied": false,
+    "OverridePercentage": null,
+    "Notes": null
+  },
+  "AnalysisPeriod": {
+    "EndDate": "2026-02-28",
+    "StartDate": "2026-02-01",
+    "FilterApplied": true
+  },
+  "GeneratedAt": "2026-02-18 12:57:12",
+  "ApplicationName": "Container Migration",
+  "Users": [],
+  "Branch": "dev",
+  "FileTypeBreakdown": [
+    {
+      "Extension": "json",
+      "TotalLines": 187302,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 18
+    },
+    {
+      "Extension": "yml",
+      "TotalLines": 5504,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 118
+    },
+    {
+      "Extension": "md",
+      "TotalLines": 4281,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 165
+    },
+    {
+      "Extension": "tsx",
+      "TotalLines": 1281,
+      "AILines": 912,
+      "AIPercentage": 71.19,
+      "FileCount": 12
+    },
+    {
+      "Extension": "sh",
+      "TotalLines": 744,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 6
+    },
+    {
+      "Extension": "py",
+      "TotalLines": 402,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 42
+    },
+    {
+      "Extension": "gitignore",
+      "TotalLines": 255,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 3
+    },
+    {
+      "Extension": "bicep",
+      "TotalLines": 110,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 18
+    },
+    {
+      "Extension": "example",
+      "TotalLines": 69,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 6
+    },
+    {
+      "Extension": "other",
+      "TotalLines": 63,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 3
+    },
+    {
+      "Extension": "jsx",
+      "TotalLines": 24,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 4
+    },
+    {
+      "Extension": "env",
+      "TotalLines": 21,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 3
+    },
+    {
+      "Extension": "txt",
+      "TotalLines": 18,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 6
+    },
+    {
+      "Extension": "devcontainer/dockerfile",
+      "TotalLines": 10,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 4
+    },
+    {
+      "Extension": "github/codeowners",
+      "TotalLines": 5,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 5
+    }
+  ],
+  "BranchStatistics": {
+    "Branch": "dev",
+    "TotalCommits": 0,
+    "AICommits": 0,
+    "HumanCommits": 0,
+    "TotalLinesAdded": null,
+    "TotalLinesDeleted": null,
+    "AILinesAdded": null,
+    "AILinesDeleted": null,
+    "Tier1Commits": 0,
+    "Tier2Commits": 0,
+    "Tier3Commits": 0,
+    "Tier4Commits": 0,
+    "Tier5Commits": 0,
+    "UniqueContributors": 0,
+    "AIPercentage": 0,
+    "HumanLinesAdded": 0
+  }
+}

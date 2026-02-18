@@ -1,0 +1,109 @@
+{
+  "Metadata": {
+    "GeneratedAt": "2026-02-18 12:57:11",
+    "PowerShellVersion": "7.4.13",
+    "IncludeTestFiles": false,
+    "AnalysisMethod": "5-Tier Weighted Pattern Detection",
+    "GeneratedBy": "Copilot Usage Report Tool v2.0",
+    "ScriptVersion": "2.0.0"
+  },
+  "TierDistribution": {
+    "Tier1_Definitive": 0,
+    "Tier5_Low": 0,
+    "Tier3_High": 0,
+    "Tier2_VeryHigh": 0,
+    "Tier4_Moderate": 0,
+    "Human": 0
+  },
+  "Commits": null,
+  "AIAttributionOverride": {
+    "Applied": false,
+    "OverridePercentage": null,
+    "Notes": null
+  },
+  "AnalysisPeriod": {
+    "EndDate": "2026-02-28",
+    "StartDate": "2026-02-01",
+    "FilterApplied": true
+  },
+  "GeneratedAt": "2026-02-18 12:57:11",
+  "ApplicationName": "DKM",
+  "Users": [],
+  "Branch": "dev",
+  "FileTypeBreakdown": [
+    {
+      "Extension": "py",
+      "TotalLines": 4010,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 6
+    },
+    {
+      "Extension": "md",
+      "TotalLines": 3648,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 79
+    },
+    {
+      "Extension": "sample",
+      "TotalLines": 546,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 8
+    },
+    {
+      "Extension": "ps1",
+      "TotalLines": 251,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 10
+    },
+    {
+      "Extension": "yml",
+      "TotalLines": 81,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 23
+    },
+    {
+      "Extension": "template",
+      "TotalLines": 8,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 6
+    },
+    {
+      "Extension": "yaml",
+      "TotalLines": 6,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "github/codeowners",
+      "TotalLines": 5,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 5
+    }
+  ],
+  "BranchStatistics": {
+    "Branch": "dev",
+    "TotalCommits": 0,
+    "AICommits": 0,
+    "HumanCommits": 0,
+    "TotalLinesAdded": null,
+    "TotalLinesDeleted": null,
+    "AILinesAdded": null,
+    "AILinesDeleted": null,
+    "Tier1Commits": 0,
+    "Tier2Commits": 0,
+    "Tier3Commits": 0,
+    "Tier4Commits": 0,
+    "Tier5Commits": 0,
+    "UniqueContributors": 0,
+    "AIPercentage": 0,
+    "HumanLinesAdded": 0
+  }
+}

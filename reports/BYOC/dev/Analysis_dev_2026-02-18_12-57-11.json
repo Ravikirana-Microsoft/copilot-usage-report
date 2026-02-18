@@ -1,0 +1,144 @@
+{
+  "Metadata": {
+    "GeneratedAt": "2026-02-18 12:57:11",
+    "PowerShellVersion": "7.4.13",
+    "IncludeTestFiles": false,
+    "AnalysisMethod": "5-Tier Weighted Pattern Detection",
+    "GeneratedBy": "Copilot Usage Report Tool v2.0",
+    "ScriptVersion": "2.0.0"
+  },
+  "TierDistribution": {
+    "Tier1_Definitive": 0,
+    "Tier5_Low": 0,
+    "Tier3_High": 0,
+    "Tier2_VeryHigh": 0,
+    "Tier4_Moderate": 0,
+    "Human": 0
+  },
+  "Commits": null,
+  "AIAttributionOverride": {
+    "Applied": false,
+    "OverridePercentage": null,
+    "Notes": null
+  },
+  "AnalysisPeriod": {
+    "EndDate": "2026-02-28",
+    "StartDate": "2026-02-01",
+    "FilterApplied": true
+  },
+  "GeneratedAt": "2026-02-18 12:57:11",
+  "ApplicationName": "BYOC",
+  "Users": [],
+  "Branch": "dev",
+  "FileTypeBreakdown": [
+    {
+      "Extension": "bicep",
+      "TotalLines": 5300,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 45
+    },
+    {
+      "Extension": "json",
+      "TotalLines": 2999,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 47
+    },
+    {
+      "Extension": "py",
+      "TotalLines": 1146,
+      "AILines": 447,
+      "AIPercentage": 39.01,
+      "FileCount": 66
+    },
+    {
+      "Extension": "yaml",
+      "TotalLines": 1050,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 6
+    },
+    {
+      "Extension": "sh",
+      "TotalLines": 894,
+      "AILines": 90,
+      "AIPercentage": 10.07,
+      "FileCount": 39
+    },
+    {
+      "Extension": "md",
+      "TotalLines": 660,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 63
+    },
+    {
+      "Extension": "ps1",
+      "TotalLines": 318,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 3
+    },
+    {
+      "Extension": "gitignore",
+      "TotalLines": 255,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 3
+    },
+    {
+      "Extension": "other",
+      "TotalLines": 63,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 3
+    },
+    {
+      "Extension": "txt",
+      "TotalLines": 30,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 15
+    },
+    {
+      "Extension": "env",
+      "TotalLines": 21,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 3
+    },
+    {
+      "Extension": "sample",
+      "TotalLines": 15,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 3
+    },
+    {
+      "Extension": "github/codeowners",
+      "TotalLines": 5,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 5
+    }
+  ],
+  "BranchStatistics": {
+    "Branch": "dev",
+    "TotalCommits": 0,
+    "AICommits": 0,
+    "HumanCommits": 0,
+    "TotalLinesAdded": null,
+    "TotalLinesDeleted": null,
+    "AILinesAdded": null,
+    "AILinesDeleted": null,
+    "Tier1Commits": 0,
+    "Tier2Commits": 0,
+    "Tier3Commits": 0,
+    "Tier4Commits": 0,
+    "Tier5Commits": 0,
+    "UniqueContributors": 0,
+    "AIPercentage": 0,
+    "HumanLinesAdded": 0
+  }
+}

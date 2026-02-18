@@ -1,0 +1,219 @@
+{
+  "Metadata": {
+    "GeneratedAt": "2026-02-18 12:57:19",
+    "PowerShellVersion": "7.4.13",
+    "IncludeTestFiles": false,
+    "AnalysisMethod": "5-Tier Weighted Pattern Detection",
+    "GeneratedBy": "Copilot Usage Report Tool v2.0",
+    "ScriptVersion": "2.0.0"
+  },
+  "TierDistribution": {
+    "Tier1_Definitive": 0,
+    "Tier5_Low": 0,
+    "Tier3_High": 0,
+    "Tier2_VeryHigh": 0,
+    "Tier4_Moderate": 0,
+    "Human": 1
+  },
+  "Commits": {
+    "Hash": "2726fda889d8668d408975b6cbcde80cddbf071b",
+    "Author": "Saswato-Microsoft",
+    "Date": "Wed Feb 4 13:33:24 2026 +0530",
+    "Message": "Refactor lakehouse path configuration in notebooks to use dynamic workspace and lakehouse IDs",
+    "LinesAdded": 373,
+    "LinesDeleted": 144,
+    "IsAI": false,
+    "ConfidenceScore": 0,
+    "ConfidenceTier": "Human Written",
+    "TierNumber": 0
+  },
+  "AIAttributionOverride": {
+    "Applied": false,
+    "OverridePercentage": null,
+    "Notes": null
+  },
+  "AnalysisPeriod": {
+    "EndDate": "2026-02-28",
+    "StartDate": "2026-02-01",
+    "FilterApplied": true
+  },
+  "GeneratedAt": "2026-02-18 12:57:19",
+  "ApplicationName": "MAAG",
+  "Users": [
+    {
+      "UserName": "Saswato-Microsoft",
+      "UserEmail": "v-saswatoc@microsoft.com",
+      "TotalCommits": 1,
+      "AICommits": 0,
+      "HumanCommits": 1,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 373,
+      "HumanLinesDeleted": 144,
+      "TotalLinesAdded": 373,
+      "TotalLinesDeleted": 144,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    }
+  ],
+  "Branch": "dev",
+  "FileTypeBreakdown": [
+    {
+      "Extension": "csv",
+      "TotalLines": 18094,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 6
+    },
+    {
+      "Extension": "py",
+      "TotalLines": 14372,
+      "AILines": 13932,
+      "AIPercentage": 96.94,
+      "FileCount": 100
+    },
+    {
+      "Extension": "md",
+      "TotalLines": 9066,
+      "AILines": 2472,
+      "AIPercentage": 27.27,
+      "FileCount": 224
+    },
+    {
+      "Extension": "ps1",
+      "TotalLines": 5528,
+      "AILines": 5072,
+      "AIPercentage": 91.75,
+      "FileCount": 14
+    },
+    {
+      "Extension": "bak",
+      "TotalLines": 3162,
+      "AILines": 3162,
+      "AIPercentage": 100.0,
+      "FileCount": 4
+    },
+    {
+      "Extension": "ipynb",
+      "TotalLines": 1885,
+      "AILines": 766,
+      "AIPercentage": 40.64,
+      "FileCount": 112
+    },
+    {
+      "Extension": "sh",
+      "TotalLines": 750,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 12
+    },
+    {
+      "Extension": "gitignore",
+      "TotalLines": 255,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 3
+    },
+    {
+      "Extension": "json",
+      "TotalLines": 238,
+      "AILines": 16,
+      "AIPercentage": 6.72,
+      "FileCount": 9
+    },
+    {
+      "Extension": "py}",
+      "TotalLines": 218,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 4
+    },
+    {
+      "Extension": "yml",
+      "TotalLines": 188,
+      "AILines": 48,
+      "AIPercentage": 25.53,
+      "FileCount": 18
+    },
+    {
+      "Extension": "txt",
+      "TotalLines": 124,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 12
+    },
+    {
+      "Extension": "other",
+      "TotalLines": 63,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 3
+    },
+    {
+      "Extension": "platform",
+      "TotalLines": 24,
+      "AILines": 24,
+      "AIPercentage": 100.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "env",
+      "TotalLines": 21,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 3
+    },
+    {
+      "Extension": "bicep",
+      "TotalLines": 10,
+      "AILines": 4,
+      "AIPercentage": 40.0,
+      "FileCount": 4
+    },
+    {
+      "Extension": "yaml",
+      "TotalLines": 8,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "devcontainer/dockerfile",
+      "TotalLines": 8,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "github/codeowners",
+      "TotalLines": 5,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 5
+    }
+  ],
+  "BranchStatistics": {
+    "Branch": "dev",
+    "TotalCommits": 1,
+    "AICommits": 0,
+    "HumanCommits": 1,
+    "TotalLinesAdded": 373.0,
+    "TotalLinesDeleted": 144.0,
+    "AILinesAdded": null,
+    "AILinesDeleted": null,
+    "Tier1Commits": 0,
+    "Tier2Commits": 0,
+    "Tier3Commits": 0,
+    "Tier4Commits": 0,
+    "Tier5Commits": 0,
+    "UniqueContributors": 1,
+    "AIPercentage": 0.0,
+    "HumanLinesAdded": 373.0
+  }
+}
