@@ -1,6 +1,6 @@
 # Batch Analysis Summary - 5-Tier Model
 
-**Analysis Date:** 2026-02-18 12:57:39  
+**Analysis Date:** 2026-02-18 13:09:23  
 **Period:** 2026-02-01 to 2026-02-28
 
 ---
@@ -9,10 +9,10 @@
 
 | Metric | Count |
 |--------|-------|
-| **Applications Processed** | 13 |
-| **Successful Analyses** | 13 |
+| **Applications Processed** | 14 |
+| **Successful Analyses** | 14 |
 | **Failed Analyses** | 0 |
-| **Total Branches Analyzed** | 13 |
+| **Total Branches Analyzed** | 9 |
 
 ---
 
@@ -55,10 +55,6 @@
 | Code Modernization | dev | 9 | 0 |  | 0% | 0 | 0 | 0 | 0 | 0 | 3 |
 | Deploy your AI application | main | 1 | 0 |  | 0% | 0 | 0 | 0 | 0 | 0 | 1 |
 | RTI | main | 1 | 0 |  | 0% | 0 | 0 | 0 | 0 | 0 | 1 |
-| Container Migration | dev | 0 | 0 |  | 0% | 0 | 0 | 0 | 0 | 0 | 0 |
-| DKM | dev | 0 | 0 |  | 0% | 0 | 0 | 0 | 0 | 0 | 0 |
-| Content Processing | dev | 0 | 0 |  | 0% | 0 | 0 | 0 | 0 | 0 | 0 |
-| BYOC | dev | 0 | 0 |  | 0% | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ---
 
@@ -66,19 +62,20 @@
 
 | Application | Branch | Status | Timestamp |
 |-------------|--------|--------|-----------|
-| Fabric SQL | dev | ✓ Success | 2026-02-18 12:57:39 |
-| Doc Gen | dev | ✓ Success | 2026-02-18 12:57:39 |
-| CWYD | dev | ✓ Success | 2026-02-18 12:57:39 |
-| MAAG | dev | ✓ Success | 2026-02-18 12:57:39 |
-| BYOCC | dev | ✓ Success | 2026-02-18 12:57:39 |
-| MACAE v4 | main | ✓ Success | 2026-02-18 12:57:39 |
-| Code Modernization | dev | ✓ Success | 2026-02-18 12:57:39 |
-| Deploy your AI application | main | ✓ Success | 2026-02-18 12:57:39 |
-| RTI | main | ✓ Success | 2026-02-18 12:57:39 |
-| Container Migration | dev | ✓ Success | 2026-02-18 12:57:39 |
-| DKM | dev | ✓ Success | 2026-02-18 12:57:39 |
-| Content Processing | dev | ✓ Success | 2026-02-18 12:57:39 |
-| BYOC | dev | ✓ Success | 2026-02-18 12:57:39 |
+| Fabric SQL | dev | ✓ Success | 2026-02-18 13:09:23 |
+| Doc Gen | dev | ✓ Success | 2026-02-18 13:09:23 |
+| CWYD | dev | ✓ Success | 2026-02-18 13:09:23 |
+| MAAG | dev | ✓ Success | 2026-02-18 13:09:23 |
+| BYOCC | dev | ✓ Success | 2026-02-18 13:09:23 |
+| KM Generic | dev | ✓ Success | 2026-02-18 13:09:23 |
+| MACAE v4 | main | ✓ Success | 2026-02-18 13:09:23 |
+| Code Modernization | dev | ✓ Success | 2026-02-18 13:09:23 |
+| Deploy your AI application | main | ✓ Success | 2026-02-18 13:09:23 |
+| DKM | dev | ✓ Success | 2026-02-18 13:09:23 |
+| RTI | main | ✓ Success | 2026-02-18 13:09:23 |
+| Content Processing | dev | ✓ Success | 2026-02-18 13:09:23 |
+| BYOC | dev | ✓ Success | 2026-02-18 13:09:23 |
+| Container Migration | dev | ✓ Success | 2026-02-18 13:09:23 |
 
 ---
 
