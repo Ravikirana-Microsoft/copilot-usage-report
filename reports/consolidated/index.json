@@ -1,42 +1,5 @@
 {
-  "reports": [
-    {
-      "filename": "ConsolidatedReport_2026-02-18_07-50-17.json",
-      "date": "2026-02-18 07:50:17 UTC",
-      "isLatest": true,
-      "dateRange": "2025-11-01 to 2025-11-30",
-      "name": "November -2025"
-    },
-    {
-      "filename": "ConsolidatedReport_2026-02-18_07-38-42.json",
-      "date": "2026-02-18 07:38:42 UTC",
-      "dateRange": "2025-12-01 to 2025-12-31",
-      "name": "December2025"
-    },
-    {
-      "filename": "ConsolidatedReport_2026-02-18_07-46-29.json",
-      "date": "2026-02-18 07:46:29 UTC",
-      "dateRange": "2025-11-01 to 2025-11-30",
-      "name": "November -2025"
-    },
-    {
-      "filename": "ConsolidatedReport_2026-02-17_15-53-58.json",
-      "date": "2026-02-17 15:53:59 UTC",
-      "dateRange": "2026-02-01 to 2026-02-28",
-      "name": "Feb2026"
-    },
-    {
-      "filename": "ConsolidatedReport_2026-02-17_14-56-22.json",
-      "date": "2026-02-17 14:56:23 UTC",
-      "dateRange": "2026-01-01 to 2026-01-31",
-      "name": "January2026"
-    },
-    {
-      "filename": "ConsolidatedReport_2026-02-17_15-47-59.json",
-      "date": "2026-02-17 15:47:59 UTC",
-      "dateRange": "2026-02-01 to 2026-02-17",
-      "name": "February-2026"
-    }
-  ],
-  "lastUpdated": "2026-02-18 07:50:17"
+  "reports": [],
+  "lastUpdated": "2026-02-18 07:56:41 UTC",
+  "resetReason": "Manual reset via Dashboard"
 }
