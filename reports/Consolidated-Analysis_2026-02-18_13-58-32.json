@@ -1,0 +1,774 @@
+{
+  "GeneratedAt": "2026-02-18 13:58:32",
+  "Summary": {
+    "SuccessfulAnalyses": 14,
+    "TotalBranches": 14,
+    "FailedAnalyses": 0,
+    "TotalApplications": 14
+  },
+  "AnalysisPeriod": {
+    "StartDate": "2025-12-01",
+    "FilterApplied": true,
+    "EndDate": "2025-12-31"
+  },
+  "FileTypeAnalysis": [
+    {
+      "Extension": "json",
+      "TotalLines": 10981745,
+      "AILines": 161741,
+      "AIPercentage": 1.47,
+      "FileCount": 1424
+    },
+    {
+      "Extension": "csv",
+      "TotalLines": 883111,
+      "AILines": 778344,
+      "AIPercentage": 88.14,
+      "FileCount": 200
+    },
+    {
+      "Extension": "py",
+      "TotalLines": 465736,
+      "AILines": 374994,
+      "AIPercentage": 80.52,
+      "FileCount": 5506
+    },
+    {
+      "Extension": "html",
+      "TotalLines": 165989,
+      "AILines": 165944,
+      "AIPercentage": 99.97,
+      "FileCount": 316
+    },
+    {
+      "Extension": "sql",
+      "TotalLines": 143785,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 95
+    },
+    {
+      "Extension": "md",
+      "TotalLines": 129059,
+      "AILines": 30860,
+      "AIPercentage": 23.91,
+      "FileCount": 3552
+    },
+    {
+      "Extension": "yml",
+      "TotalLines": 100976,
+      "AILines": 8798,
+      "AIPercentage": 8.71,
+      "FileCount": 2561
+    },
+    {
+      "Extension": "lock",
+      "TotalLines": 61181,
+      "AILines": 9594,
+      "AIPercentage": 15.68,
+      "FileCount": 99
+    },
+    {
+      "Extension": "ps1",
+      "TotalLines": 61132,
+      "AILines": 23789,
+      "AIPercentage": 38.91,
+      "FileCount": 526
+    },
+    {
+      "Extension": "bicep",
+      "TotalLines": 57701,
+      "AILines": 15734,
+      "AIPercentage": 27.27,
+      "FileCount": 1209
+    },
+    {
+      "Extension": "js",
+      "TotalLines": 44978,
+      "AILines": 44919,
+      "AIPercentage": 99.87,
+      "FileCount": 509
+    },
+    {
+      "Extension": "tsx",
+      "TotalLines": 30793,
+      "AILines": 22627,
+      "AIPercentage": 73.48,
+      "FileCount": 1388
+    },
+    {
+      "Extension": "xml",
+      "TotalLines": 29678,
+      "AILines": 29678,
+      "AIPercentage": 100.0,
+      "FileCount": 22
+    },
+    {
+      "Extension": "sh",
+      "TotalLines": 28697,
+      "AILines": 8908,
+      "AIPercentage": 31.04,
+      "FileCount": 661
+    },
+    {
+      "Extension": "txt",
+      "TotalLines": 11952,
+      "AILines": 1148,
+      "AIPercentage": 9.61,
+      "FileCount": 630
+    },
+    {
+      "Extension": "cs",
+      "TotalLines": 9983,
+      "AILines": 8298,
+      "AIPercentage": 83.12,
+      "FileCount": 249
+    },
+    {
+      "Extension": "ipynb",
+      "TotalLines": 9247,
+      "AILines": 4840,
+      "AIPercentage": 52.34,
+      "FileCount": 243
+    },
+    {
+      "Extension": "ts",
+      "TotalLines": 9095,
+      "AILines": 8364,
+      "AIPercentage": 91.96,
+      "FileCount": 275
+    },
+    {
+      "Extension": "yaml",
+      "TotalLines": 6647,
+      "AILines": 1533,
+      "AIPercentage": 23.06,
+      "FileCount": 290
+    },
+    {
+      "Extension": "kql",
+      "TotalLines": 4590,
+      "AILines": 4557,
+      "AIPercentage": 99.28,
+      "FileCount": 102
+    },
+    {
+      "Extension": "gitignore",
+      "TotalLines": 4499,
+      "AILines": 789,
+      "AIPercentage": 17.54,
+      "FileCount": 85
+    },
+    {
+      "Extension": "pdf",
+      "TotalLines": 3208,
+      "AILines": 510,
+      "AIPercentage": 15.9,
+      "FileCount": 98
+    },
+    {
+      "Extension": "bak",
+      "TotalLines": 3162,
+      "AILines": 3162,
+      "AIPercentage": 100.0,
+      "FileCount": 4
+    },
+    {
+      "Extension": "css",
+      "TotalLines": 2653,
+      "AILines": 1628,
+      "AIPercentage": 61.36,
+      "FileCount": 118
+    },
+    {
+      "Extension": "other",
+      "TotalLines": 1680,
+      "AILines": 461,
+      "AIPercentage": 27.44,
+      "FileCount": 133
+    },
+    {
+      "Extension": "sample",
+      "TotalLines": 1510,
+      "AILines": 78,
+      "AIPercentage": 5.17,
+      "FileCount": 115
+    },
+    {
+      "Extension": "py}",
+      "TotalLines": 1087,
+      "AILines": 856,
+      "AIPercentage": 78.75,
+      "FileCount": 20
+    },
+    {
+      "Extension": "dockerignore",
+      "TotalLines": 620,
+      "AILines": 282,
+      "AIPercentage": 45.48,
+      "FileCount": 21
+    },
+    {
+      "Extension": "toml",
+      "TotalLines": 436,
+      "AILines": 92,
+      "AIPercentage": 21.1,
+      "FileCount": 62
+    },
+    {
+      "Extension": "md}",
+      "TotalLines": 418,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 4
+    },
+    {
+      "Extension": "template",
+      "TotalLines": 401,
+      "AILines": 357,
+      "AIPercentage": 89.03,
+      "FileCount": 15
+    },
+    {
+      "Extension": "env",
+      "TotalLines": 395,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 52
+    },
+    {
+      "Extension": "bicepparam",
+      "TotalLines": 369,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 5
+    },
+    {
+      "Extension": "example",
+      "TotalLines": 291,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 18
+    },
+    {
+      "Extension": "dockerfile",
+      "TotalLines": 260,
+      "AILines": 6,
+      "AIPercentage": 2.31,
+      "FileCount": 24
+    },
+    {
+      "Extension": "ps1}",
+      "TotalLines": 231,
+      "AILines": 3,
+      "AIPercentage": 1.3,
+      "FileCount": 6
+    },
+    {
+      "Extension": "platform",
+      "TotalLines": 196,
+      "AILines": 168,
+      "AIPercentage": 85.71,
+      "FileCount": 33
+    },
+    {
+      "Extension": "flake8",
+      "TotalLines": 168,
+      "AILines": 81,
+      "AIPercentage": 48.21,
+      "FileCount": 27
+    },
+    {
+      "Extension": "ini",
+      "TotalLines": 154,
+      "AILines": 115,
+      "AIPercentage": 74.68,
+      "FileCount": 31
+    },
+    {
+      "Extension": "devcontainer/dockerfile",
+      "TotalLines": 136,
+      "AILines": 10,
+      "AIPercentage": 7.35,
+      "FileCount": 36
+    },
+    {
+      "Extension": "csproj",
+      "TotalLines": 135,
+      "AILines": 135,
+      "AIPercentage": 100.0,
+      "FileCount": 16
+    },
+    {
+      "Extension": "github/codeowners",
+      "TotalLines": 129,
+      "AILines": 11,
+      "AIPercentage": 8.53,
+      "FileCount": 99
+    },
+    {
+      "Extension": "coveragerc",
+      "TotalLines": 125,
+      "AILines": 116,
+      "AIPercentage": 92.8,
+      "FileCount": 8
+    },
+    {
+      "Extension": "backend",
+      "TotalLines": 102,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 6
+    },
+    {
+      "Extension": "minimal",
+      "TotalLines": 102,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 6
+    },
+    {
+      "Extension": "map",
+      "TotalLines": 96,
+      "AILines": 96,
+      "AIPercentage": 100.0,
+      "FileCount": 48
+    },
+    {
+      "Extension": "js}",
+      "TotalLines": 81,
+      "AILines": 45,
+      "AIPercentage": 55.56,
+      "FileCount": 9
+    },
+    {
+      "Extension": "svg",
+      "TotalLines": 56,
+      "AILines": 12,
+      "AIPercentage": 21.43,
+      "FileCount": 29
+    },
+    {
+      "Extension": "runsettings",
+      "TotalLines": 56,
+      "AILines": 56,
+      "AIPercentage": 100.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "log",
+      "TotalLines": 51,
+      "AILines": 51,
+      "AIPercentage": 100.0,
+      "FileCount": 5
+    },
+    {
+      "Extension": "cmd",
+      "TotalLines": 49,
+      "AILines": 39,
+      "AIPercentage": 79.59,
+      "FileCount": 13
+    },
+    {
+      "Extension": "jsx",
+      "TotalLines": 45,
+      "AILines": 3,
+      "AIPercentage": 6.67,
+      "FileCount": 15
+    },
+    {
+      "Extension": "json}",
+      "TotalLines": 30,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 3
+    },
+    {
+      "Extension": "sln",
+      "TotalLines": 12,
+      "AILines": 12,
+      "AIPercentage": 100.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "gitattributes",
+      "TotalLines": 9,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 3
+    },
+    {
+      "Extension": "gitmodules",
+      "TotalLines": 9,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 3
+    },
+    {
+      "Extension": "yml}",
+      "TotalLines": 6,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 6
+    },
+    {
+      "Extension": "sample}",
+      "TotalLines": 4,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "png",
+      "TotalLines": 3,
+      "AILines": 3,
+      "AIPercentage": 100.0,
+      "FileCount": 138
+    },
+    {
+      "Extension": "bicep}",
+      "TotalLines": 2,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 1
+    }
+  ],
+  "OverallStatistics": {
+    "TotalTier1": 2.0,
+    "TotalAILinesAdded": 96203.0,
+    "TotalLinesAdded": 594309.0,
+    "TotalTier5": 7.0,
+    "TotalAICommits": 46.0,
+    "TotalTier4": 11.0,
+    "TotalTier2": 14.0,
+    "TotalHumanCommits": 691.0,
+    "TotalCommits": 737.0,
+    "TotalTier3": 12.0
+  },
+  "AnalysisResults": [
+    {
+      "Application": "Doc Gen",
+      "Branch": "dev",
+      "Status": "Success",
+      "Timestamp": "2026-02-18 13:58:32"
+    },
+    {
+      "Application": "BYOCC",
+      "Branch": "dev",
+      "Status": "Success",
+      "Timestamp": "2026-02-18 13:58:32"
+    },
+    {
+      "Application": "MACAE v4",
+      "Branch": "main",
+      "Status": "Success",
+      "Timestamp": "2026-02-18 13:58:32"
+    },
+    {
+      "Application": "KM Generic",
+      "Branch": "dev",
+      "Status": "Success",
+      "Timestamp": "2026-02-18 13:58:32"
+    },
+    {
+      "Application": "Deploy your AI application",
+      "Branch": "main",
+      "Status": "Success",
+      "Timestamp": "2026-02-18 13:58:32"
+    },
+    {
+      "Application": "RTI",
+      "Branch": "main",
+      "Status": "Success",
+      "Timestamp": "2026-02-18 13:58:32"
+    },
+    {
+      "Application": "Code Modernization",
+      "Branch": "dev",
+      "Status": "Success",
+      "Timestamp": "2026-02-18 13:58:32"
+    },
+    {
+      "Application": "Fabric SQL",
+      "Branch": "dev",
+      "Status": "Success",
+      "Timestamp": "2026-02-18 13:58:32"
+    },
+    {
+      "Application": "Content Processing",
+      "Branch": "dev",
+      "Status": "Success",
+      "Timestamp": "2026-02-18 13:58:32"
+    },
+    {
+      "Application": "DKM",
+      "Branch": "dev",
+      "Status": "Success",
+      "Timestamp": "2026-02-18 13:58:32"
+    },
+    {
+      "Application": "CWYD",
+      "Branch": "dev",
+      "Status": "Success",
+      "Timestamp": "2026-02-18 13:58:32"
+    },
+    {
+      "Application": "Container Migration",
+      "Branch": "dev",
+      "Status": "Success",
+      "Timestamp": "2026-02-18 13:58:32"
+    },
+    {
+      "Application": "BYOC",
+      "Branch": "dev",
+      "Status": "Success",
+      "Timestamp": "2026-02-18 13:58:32"
+    },
+    {
+      "Application": "MAAG",
+      "Branch": "dev",
+      "Status": "Success",
+      "Timestamp": "2026-02-18 13:58:32"
+    }
+  ],
+  "BranchDetails": [
+    {
+      "Application": "Doc Gen",
+      "Branch": "dev",
+      "TotalCommits": 97,
+      "AICommits": 17,
+      "HumanCommits": 80,
+      "TotalLinesAdded": 80807.0,
+      "AILinesAdded": 67992.0,
+      "HumanLinesAdded": 12815.0,
+      "AIPercentage": 84.14,
+      "Tier1": 0,
+      "Tier2": 2,
+      "Tier3": 6,
+      "Tier4": 8,
+      "Tier5": 1,
+      "UniqueContributors": 13
+    },
+    {
+      "Application": "BYOCC",
+      "Branch": "dev",
+      "TotalCommits": 58,
+      "AICommits": 7,
+      "HumanCommits": 51,
+      "TotalLinesAdded": 53663.0,
+      "AILinesAdded": 11690.0,
+      "HumanLinesAdded": 41973.0,
+      "AIPercentage": 21.78,
+      "Tier1": 0,
+      "Tier2": 5,
+      "Tier3": 1,
+      "Tier4": 0,
+      "Tier5": 1,
+      "UniqueContributors": 8
+    },
+    {
+      "Application": "MACAE v4",
+      "Branch": "main",
+      "TotalCommits": 130,
+      "AICommits": 4,
+      "HumanCommits": 126,
+      "TotalLinesAdded": 63149.0,
+      "AILinesAdded": 8345.0,
+      "HumanLinesAdded": 54804.0,
+      "AIPercentage": 13.21,
+      "Tier1": 0,
+      "Tier2": 2,
+      "Tier3": 1,
+      "Tier4": 0,
+      "Tier5": 1,
+      "UniqueContributors": 19
+    },
+    {
+      "Application": "KM Generic",
+      "Branch": "dev",
+      "TotalCommits": 98,
+      "AICommits": 0,
+      "HumanCommits": 98,
+      "TotalLinesAdded": 346786.0,
+      "AILinesAdded": null,
+      "HumanLinesAdded": 346786.0,
+      "AIPercentage": 0.0,
+      "Tier1": 0,
+      "Tier2": 0,
+      "Tier3": 0,
+      "Tier4": 0,
+      "Tier5": 0,
+      "UniqueContributors": 16
+    },
+    {
+      "Application": "Deploy your AI application",
+      "Branch": "main",
+      "TotalCommits": 14,
+      "AICommits": 0,
+      "HumanCommits": 14,
+      "TotalLinesAdded": 15593.0,
+      "AILinesAdded": null,
+      "HumanLinesAdded": 15593.0,
+      "AIPercentage": 0.0,
+      "Tier1": 0,
+      "Tier2": 0,
+      "Tier3": 0,
+      "Tier4": 0,
+      "Tier5": 0,
+      "UniqueContributors": 5
+    },
+    {
+      "Application": "RTI",
+      "Branch": "main",
+      "TotalCommits": 113,
+      "AICommits": 7,
+      "HumanCommits": 106,
+      "TotalLinesAdded": 12339.0,
+      "AILinesAdded": 5650.0,
+      "HumanLinesAdded": 6689.0,
+      "AIPercentage": 45.79,
+      "Tier1": 0,
+      "Tier2": 0,
+      "Tier3": 3,
+      "Tier4": 2,
+      "Tier5": 2,
+      "UniqueContributors": 7
+    },
+    {
+      "Application": "Code Modernization",
+      "Branch": "dev",
+      "TotalCommits": 49,
+      "AICommits": 1,
+      "HumanCommits": 48,
+      "TotalLinesAdded": 4718.0,
+      "AILinesAdded": 165.0,
+      "HumanLinesAdded": 4553.0,
+      "AIPercentage": 3.5,
+      "Tier1": 0,
+      "Tier2": 0,
+      "Tier3": 0,
+      "Tier4": 1,
+      "Tier5": 0,
+      "UniqueContributors": 9
+    },
+    {
+      "Application": "Fabric SQL",
+      "Branch": "dev",
+      "TotalCommits": 50,
+      "AICommits": 6,
+      "HumanCommits": 44,
+      "TotalLinesAdded": 5311.0,
+      "AILinesAdded": 2227.0,
+      "HumanLinesAdded": 3084.0,
+      "AIPercentage": 41.93,
+      "Tier1": 0,
+      "Tier2": 3,
+      "Tier3": 1,
+      "Tier4": 0,
+      "Tier5": 2,
+      "UniqueContributors": 9
+    },
+    {
+      "Application": "Content Processing",
+      "Branch": "dev",
+      "TotalCommits": 41,
+      "AICommits": 0,
+      "HumanCommits": 41,
+      "TotalLinesAdded": 5703.0,
+      "AILinesAdded": null,
+      "HumanLinesAdded": 5703.0,
+      "AIPercentage": 0.0,
+      "Tier1": 0,
+      "Tier2": 0,
+      "Tier3": 0,
+      "Tier4": 0,
+      "Tier5": 0,
+      "UniqueContributors": 10
+    },
+    {
+      "Application": "DKM",
+      "Branch": "dev",
+      "TotalCommits": 17,
+      "AICommits": 0,
+      "HumanCommits": 17,
+      "TotalLinesAdded": 1844.0,
+      "AILinesAdded": null,
+      "HumanLinesAdded": 1844.0,
+      "AIPercentage": 0.0,
+      "Tier1": 0,
+      "Tier2": 0,
+      "Tier3": 0,
+      "Tier4": 0,
+      "Tier5": 0,
+      "UniqueContributors": 5
+    },
+    {
+      "Application": "CWYD",
+      "Branch": "dev",
+      "TotalCommits": 5,
+      "AICommits": 2,
+      "HumanCommits": 3,
+      "TotalLinesAdded": 201.0,
+      "AILinesAdded": 132.0,
+      "HumanLinesAdded": 69.0,
+      "AIPercentage": 65.67,
+      "Tier1": 0,
+      "Tier2": 2,
+      "Tier3": 0,
+      "Tier4": 0,
+      "Tier5": 0,
+      "UniqueContributors": 4
+    },
+    {
+      "Application": "Container Migration",
+      "Branch": "dev",
+      "TotalCommits": 39,
+      "AICommits": 0,
+      "HumanCommits": 39,
+      "TotalLinesAdded": 1930.0,
+      "AILinesAdded": null,
+      "HumanLinesAdded": 1930.0,
+      "AIPercentage": 0.0,
+      "Tier1": 0,
+      "Tier2": 0,
+      "Tier3": 0,
+      "Tier4": 0,
+      "Tier5": 0,
+      "UniqueContributors": 7
+    },
+    {
+      "Application": "BYOC",
+      "Branch": "dev",
+      "TotalCommits": 8,
+      "AICommits": 2,
+      "HumanCommits": 6,
+      "TotalLinesAdded": 1108.0,
+      "AILinesAdded": 2.0,
+      "HumanLinesAdded": 1106.0,
+      "AIPercentage": 0.18,
+      "Tier1": 2,
+      "Tier2": 0,
+      "Tier3": 0,
+      "Tier4": 0,
+      "Tier5": 0,
+      "UniqueContributors": 3
+    },
+    {
+      "Application": "MAAG",
+      "Branch": "dev",
+      "TotalCommits": 18,
+      "AICommits": 0,
+      "HumanCommits": 18,
+      "TotalLinesAdded": 1157.0,
+      "AILinesAdded": null,
+      "HumanLinesAdded": 1157.0,
+      "AIPercentage": 0.0,
+      "Tier1": 0,
+      "Tier2": 0,
+      "Tier3": 0,
+      "Tier4": 0,
+      "Tier5": 0,
+      "UniqueContributors": 3
+    }
+  ]
+}
