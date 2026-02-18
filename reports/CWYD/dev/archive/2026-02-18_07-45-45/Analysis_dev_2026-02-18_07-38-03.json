@@ -1,0 +1,293 @@
+{
+  "GeneratedAt": "2026-02-18 07:38:03",
+  "Metadata": {
+    "PowerShellVersion": "7.4.13",
+    "ScriptVersion": "2.0.0",
+    "AnalysisMethod": "5-Tier Weighted Pattern Detection",
+    "IncludeTestFiles": false,
+    "GeneratedBy": "Copilot Usage Report Tool v2.0",
+    "GeneratedAt": "2026-02-18 07:38:03"
+  },
+  "BranchStatistics": {
+    "Branch": "dev",
+    "TotalCommits": 5,
+    "AICommits": 2,
+    "HumanCommits": 3,
+    "TotalLinesAdded": 201.0,
+    "TotalLinesDeleted": 61.0,
+    "AILinesAdded": 132.0,
+    "AILinesDeleted": 60.0,
+    "Tier1Commits": 0,
+    "Tier2Commits": 2,
+    "Tier3Commits": 0,
+    "Tier4Commits": 0,
+    "Tier5Commits": 0,
+    "UniqueContributors": 4,
+    "AIPercentage": 65.67,
+    "HumanLinesAdded": 69.0
+  },
+  "Branch": "dev",
+  "Users": [
+    {
+      "UserName": "Prekshith-Microsoft",
+      "UserEmail": "v-pdj@microsoft.com",
+      "TotalCommits": 1,
+      "AICommits": 0,
+      "HumanCommits": 1,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 1,
+      "HumanLinesDeleted": 1,
+      "TotalLinesAdded": 1,
+      "TotalLinesDeleted": 1,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Priyanka-Microsoft",
+      "UserEmail": "v-prisinghal@microsoft.com",
+      "TotalCommits": 2,
+      "AICommits": 2,
+      "HumanCommits": 0,
+      "AILinesAdded": 132,
+      "AILinesDeleted": 60,
+      "HumanLinesAdded": 0,
+      "HumanLinesDeleted": 0,
+      "TotalLinesAdded": 132,
+      "TotalLinesDeleted": 60,
+      "AIPercentage": 100.0,
+      "AvgConfidenceScore": 95.0,
+      "ConfidenceScores": [
+        95,
+        95
+      ],
+      "Tier1Commits": 0,
+      "Tier2Commits": 2,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Harmanpreet-Microsoft",
+      "UserEmail": "v-harmanprka@microsoft.com",
+      "TotalCommits": 1,
+      "AICommits": 0,
+      "HumanCommits": 1,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 34,
+      "HumanLinesDeleted": 0,
+      "TotalLinesAdded": 34,
+      "TotalLinesDeleted": 0,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Prajwal-Microsoft",
+      "UserEmail": "v-dcprajwal@microsoft.com",
+      "TotalCommits": 1,
+      "AICommits": 0,
+      "HumanCommits": 1,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 34,
+      "HumanLinesDeleted": 0,
+      "TotalLinesAdded": 34,
+      "TotalLinesDeleted": 0,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    }
+  ],
+  "ApplicationName": "CWYD",
+  "TierDistribution": {
+    "Tier2_VeryHigh": 2,
+    "Tier5_Low": 0,
+    "Tier3_High": 0,
+    "Tier1_Definitive": 0,
+    "Human": 3,
+    "Tier4_Moderate": 0
+  },
+  "FileTypeBreakdown": [
+    {
+      "Extension": "json",
+      "TotalLines": 3100310,
+      "AILines": 742,
+      "AIPercentage": 0.02,
+      "FileCount": 38
+    },
+    {
+      "Extension": "py",
+      "TotalLines": 25901,
+      "AILines": 20988,
+      "AIPercentage": 81.03,
+      "FileCount": 123
+    },
+    {
+      "Extension": "yml",
+      "TotalLines": 6905,
+      "AILines": 28,
+      "AIPercentage": 0.41,
+      "FileCount": 59
+    },
+    {
+      "Extension": "lock",
+      "TotalLines": 5108,
+      "AILines": 1488,
+      "AIPercentage": 29.13,
+      "FileCount": 4
+    },
+    {
+      "Extension": "md",
+      "TotalLines": 4440,
+      "AILines": 2171,
+      "AIPercentage": 48.9,
+      "FileCount": 28
+    },
+    {
+      "Extension": "py}",
+      "TotalLines": 404,
+      "AILines": 404,
+      "AIPercentage": 100.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "tsx",
+      "TotalLines": 174,
+      "AILines": 58,
+      "AIPercentage": 33.33,
+      "FileCount": 12
+    },
+    {
+      "Extension": "bicep",
+      "TotalLines": 64,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 14
+    },
+    {
+      "Extension": "toml",
+      "TotalLines": 50,
+      "AILines": 20,
+      "AIPercentage": 40.0,
+      "FileCount": 4
+    },
+    {
+      "Extension": "yaml",
+      "TotalLines": 20,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 6
+    },
+    {
+      "Extension": "devcontainer/dockerfile",
+      "TotalLines": 6,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "ini",
+      "TotalLines": 4,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "github/codeowners",
+      "TotalLines": 1,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 1
+    }
+  ],
+  "AIAttributionOverride": {
+    "OverridePercentage": null,
+    "Notes": null,
+    "Applied": false
+  },
+  "AnalysisPeriod": {
+    "StartDate": "2025-12-01",
+    "EndDate": "2025-12-31",
+    "FilterApplied": true
+  },
+  "Commits": [
+    {
+      "Hash": "69862516a2a0a86ac15770c4fa9bb61ce1035612",
+      "Author": "Prajwal-Microsoft",
+      "Date": "Mon Dec 29 12:42:42 2025 +0530",
+      "Message": "chore: Merge from dev to main (#2001)",
+      "LinesAdded": 34,
+      "LinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "b3ea020d94a334470b2760551cae458b68edcd2a",
+      "Author": "Harmanpreet-Microsoft",
+      "Date": "Wed Dec 24 00:21:47 2025 +0530",
+      "Message": "ci: add path filters to reduce unnecessary workflow runs (#1997)",
+      "LinesAdded": 34,
+      "LinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "61712e8da1c6a9706f577cfdbd371ec46dfe61a9",
+      "Author": "Priyanka-Microsoft",
+      "Date": "Tue Dec 16 16:04:32 2025 +0530",
+      "Message": "fix: merging dev changes to main (#1994)",
+      "LinesAdded": 66,
+      "LinesDeleted": 30,
+      "IsAI": true,
+      "ConfidenceScore": 95,
+      "ConfidenceTier": "Tier 2: Very High Confidence (90-98 percent)",
+      "TierNumber": 2
+    },
+    {
+      "Hash": "a40e461a4287b8bace421908a607ee33ce890886",
+      "Author": "Priyanka-Microsoft",
+      "Date": "Fri Dec 5 12:15:25 2025 +0530",
+      "Message": "fix: convert storage image source url to base64 (#1989)",
+      "LinesAdded": 66,
+      "LinesDeleted": 30,
+      "IsAI": true,
+      "ConfidenceScore": 95,
+      "ConfidenceTier": "Tier 2: Very High Confidence (90-98 percent)",
+      "TierNumber": 2
+    },
+    {
+      "Hash": "e2b7df00bffa68801ec37cdc80e43aa0b702ad00",
+      "Author": "Prekshith-Microsoft",
+      "Date": "Tue Dec 2 15:46:36 2025 +0530",
+      "Message": "chore: Add @dgp10801 as a CODEOWNER (#1988)",
+      "LinesAdded": 1,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    }
+  ]
+}
