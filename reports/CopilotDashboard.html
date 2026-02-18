@@ -7729,9 +7729,12 @@
             let reports = [];
             let indexFetched = false;
             
-            // Try to fetch from consolidated/index.json (dynamic, reflects actual files)
+            // Try to fetch from consolidated/index.json with cache-busting query param
             try {
-                const response = await fetch(`${basePath}consolidated/index.json`);
+                const cacheBuster = `?_t=${Date.now()}`;
+                const response = await fetch(`${basePath}consolidated/index.json${cacheBuster}`, {
+                    cache: 'no-store'  // Bypass browser cache
+                });
                 if (response.ok) {
                     const indexData = await response.json();
                     indexFetched = true; // Mark that we successfully fetched index.json
@@ -7772,11 +7775,19 @@
                 return;
             }
             
+            // Preserve current selection if any
+            const currentSelection = currentReportPath || select.value;
+            
             reports.forEach((report, index) => {
                 const option = document.createElement('option');
                 option.value = report.path;
                 option.textContent = report.label;
-                if (index === 0 || report.isLatest) option.selected = true;
+                // Restore previous selection, or default to first/latest
+                if (currentSelection && report.path.includes(currentSelection.split('/').pop())) {
+                    option.selected = true;
+                } else if (!currentSelection && (index === 0 || report.isLatest)) {
+                    option.selected = true;
+                }
                 select.appendChild(option);
             });
         }
@@ -10190,9 +10201,8 @@
                         
                         if (latestRun.status === 'completed') {
                             if (latestRun.conclusion === 'success') {
-                                progressText.textContent = '✅ Reset complete! Reloading dashboard...';
-                                statusDiv.innerHTML = '✅ Dashboard reset successfully! Reloading...';
-                                setTimeout(() => location.reload(), 2000);
+                                progressText.textContent = '✅ Reset complete! Click Refresh when ready.';
+                                statusDiv.innerHTML = '✅ Dashboard reset successfully! GitHub Pages deployment may take 30-60s. <button onclick=\"forceRefreshWithCache()\" style=\"margin-left:8px;padding:4px 12px;border-radius:4px;border:none;background:#22c55e;color:white;cursor:pointer;font-weight:500;\">Refresh Now</button>';
                             } else {
                                 progressText.textContent = `❌ Workflow ${latestRun.conclusion}. Check GitHub Actions.`;
                                 document.getElementById('resetBtn').disabled = false;
@@ -10578,8 +10588,8 @@
                     triggerBtn.disabled = false;
                     if (run.conclusion === 'success') {
                         triggerBtn.innerHTML = '✅ Completed!';
-                        showTriggerStatus('success', '🎉 Workflow completed successfully! Refreshing in 5s...');
-                        setTimeout(() => window.location.reload(), 5000);
+                        showTriggerStatus('success', `🎉 Workflow completed! GitHub Pages deployment may take 30-60s. <button onclick="forceRefreshWithCache()" style="margin-left:8px;padding:4px 12px;border-radius:4px;border:none;background:#22c55e;color:white;cursor:pointer;font-weight:500;">Refresh Now</button>`);
+                        // Don't auto-reload - let user click refresh when deployment is ready
                     } else {
                         triggerBtn.innerHTML = '🚀 Trigger Workflow';
                         showTriggerStatus('error', `❌ Workflow ${run.conclusion}. <a href="${run.html_url}" target="_blank" style="color:#ef4444;">View details →</a>`);
@@ -10632,6 +10642,28 @@
             statusDiv.innerHTML = message;
             statusDiv.style.background = type === 'error' ? 'rgba(239, 68, 68, 0.2)' : type === 'success' ? 'rgba(34, 197, 94, 0.2)' : 'rgba(59, 130, 246, 0.2)';
             statusDiv.style.border = '1px solid ' + (type === 'error' ? '#ef4444' : type === 'success' ? '#22c55e' : '#3b82f6');
+        }
+        
+        // Force refresh with cache busting for index.json
+        async function forceRefreshWithCache() {
+            const statusDiv = document.getElementById('triggerStatus');
+            statusDiv.innerHTML = '🔄 Refreshing with cache clear...';
+            
+            try {
+                // Clear the service worker cache if available
+                if ('caches' in window) {
+                    const cacheNames = await caches.keys();
+                    await Promise.all(cacheNames.map(name => caches.delete(name)));
+                }
+                
+                // Force reload with cache bypass
+                window.location.reload(true);
+            } catch (e) {
+                // Fallback: add timestamp to URL to bypass cache
+                const url = new URL(window.location.href);
+                url.searchParams.set('_t', Date.now());
+                window.location.href = url.toString();
+            }
         }
 
         function getRepoFromUrl() {
