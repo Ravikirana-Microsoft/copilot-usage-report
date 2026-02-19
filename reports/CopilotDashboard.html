@@ -1114,10 +1114,10 @@
             Copilot Usage Dashboard
         </h1>
         <div class="report-selector">
-            <!-- <label for="archiveSelect" style="margin-right: 4px;">Archive:</label>
-            <select id="archiveSelect" onchange="loadArchiveSet()" style="min-width: 150px; margin-right: 16px;">
+            <label for="archiveSelect" style="margin-right: 4px;">Archive:</label>
+            <select id="archiveSelect" onchange="loadArchiveSet()" style="min-width: 150px; margin-right: 16px; padding: 8px 12px; border-radius: 6px; border: 1px solid var(--border-color); background: var(--bg-hover); color: var(--text-primary);">
                 <option value="current">📁 Current Reports</option>
-            </select> -->
+            </select>
             <label for="reportSelect">Select Report:</label>
             <select id="reportSelect" onchange="loadSelectedReport()">
                 <option value="">-- Loading Reports --</option>
@@ -1146,6 +1146,12 @@
                     <polygon points="5 3 19 12 5 21 5 3"/>
                 </svg>
                 Run Analysis
+            </button>
+            <button class="refresh-btn" onclick="showArchiveModal()" title="Archive All Reports - Bundle current reports into a named archive" style="background: linear-gradient(135deg, #f59e0b, #d97706);">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 8v13H3V8M1 3h22v5H1zM10 12h4"/>
+                </svg>
+                Archive
             </button>
             <button class="refresh-btn" onclick="showResetConfirmation()" title="Reset Dashboard - Clear all reports and start fresh" style="background: linear-gradient(135deg, #ef4444, #dc2626);">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
