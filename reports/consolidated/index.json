@@ -1,66 +1,72 @@
 {
   "reports": [
     {
-      "dateRange": "2025-12-01 to 2025-12-31",
       "name": "December2025",
-      "date": "2026-02-19 04:39:14 UTC",
+      "filename": "ConsolidatedReport_2026-02-19_04-53-42.json",
+      "date": "2026-02-19 04:53:42 UTC",
+      "isLatest": true,
+      "dateRange": "2025-12-01 to 2025-12-31"
+    },
+    {
+      "name": "December2025",
       "filename": "ConsolidatedReport_2026-02-19_04-39-14.json",
-      "isLatest": true
+      "date": "2026-02-19 04:39:14 UTC",
+      "dateRange": "2025-12-01 to 2025-12-31"
     },
     {
-      "dateRange": "2025-12-01 to 2025-12-31",
       "name": "December2025",
+      "filename": "ConsolidatedReport_2026-02-18_19-23-59.json",
       "date": "2026-02-18 19:24:00 UTC",
-      "filename": "ConsolidatedReport_2026-02-18_19-23-59.json"
+      "dateRange": "2025-12-01 to 2025-12-31"
     },
     {
-      "dateRange": "2025-12-01 to 2025-12-31",
       "name": "dec 25",
+      "filename": "ConsolidatedReport_2026-02-18_13-58-32.json",
       "date": "2026-02-18 13:58:32 UTC",
-      "filename": "ConsolidatedReport_2026-02-18_13-58-32.json"
+      "dateRange": "2025-12-01 to 2025-12-31"
     },
     {
-      "dateRange": "2026-02-01 to 2026-02-28",
-      "name": "Feb 2",
-      "date": "2026-02-18 13:09:23 UTC",
-      "filename": "ConsolidatedReport_2026-02-18_13-09-23.json"
-    },
-    {
-      "dateRange": "2026-02-01 to 2026-02-28",
       "name": "February-2026",
-      "date": "2026-02-18 13:21:33 UTC",
-      "filename": "ConsolidatedReport_2026-02-18_13-21-33.json"
-    },
-    {
-      "dateRange": "2026-02-01 to 2026-02-28",
-      "name": "February-2026",
+      "filename": "ConsolidatedReport_2026-02-18_13-27-38.json",
       "date": "2026-02-18 13:27:39 UTC",
-      "filename": "ConsolidatedReport_2026-02-18_13-27-38.json"
+      "dateRange": "2026-02-01 to 2026-02-28"
     },
     {
-      "dateRange": "2025-12-01 to 2025-12-31",
-      "name": "December -2025",
-      "date": "2026-02-18 08:04:53 UTC",
-      "filename": "ConsolidatedReport_2026-02-18_08-04-53.json"
+      "name": "Feb 2",
+      "filename": "ConsolidatedReport_2026-02-18_13-09-23.json",
+      "date": "2026-02-18 13:09:23 UTC",
+      "dateRange": "2026-02-01 to 2026-02-28"
     },
     {
-      "dateRange": "2026-01-01 to 2026-01-31",
-      "name": "January-2026",
-      "date": "2026-02-18 12:46:15 UTC",
-      "filename": "ConsolidatedReport_2026-02-18_12-46-15.json"
-    },
-    {
-      "dateRange": "2026-02-01 to 2026-02-28",
       "name": "February-2026",
-      "date": "2026-02-18 12:57:39 UTC",
-      "filename": "ConsolidatedReport_2026-02-18_12-57-39.json"
+      "filename": "ConsolidatedReport_2026-02-18_13-21-33.json",
+      "date": "2026-02-18 13:21:33 UTC",
+      "dateRange": "2026-02-01 to 2026-02-28"
     },
     {
-      "dateRange": "2025-11-01 to 2025-11-30",
+      "name": "January-2026",
+      "filename": "ConsolidatedReport_2026-02-18_12-46-15.json",
+      "date": "2026-02-18 12:46:15 UTC",
+      "dateRange": "2026-01-01 to 2026-01-31"
+    },
+    {
+      "name": "February-2026",
+      "filename": "ConsolidatedReport_2026-02-18_12-57-39.json",
+      "date": "2026-02-18 12:57:39 UTC",
+      "dateRange": "2026-02-01 to 2026-02-28"
+    },
+    {
+      "name": "December -2025",
+      "filename": "ConsolidatedReport_2026-02-18_08-04-53.json",
+      "date": "2026-02-18 08:04:53 UTC",
+      "dateRange": "2025-12-01 to 2025-12-31"
+    },
+    {
       "name": "November-2025",
+      "filename": "ConsolidatedReport_2026-02-18_08-00-25.json",
       "date": "2026-02-18 08:00:25 UTC",
-      "filename": "ConsolidatedReport_2026-02-18_08-00-25.json"
+      "dateRange": "2025-11-01 to 2025-11-30"
     }
   ],
-  "lastUpdated": "2026-02-19 04:39:14"
+  "lastUpdated": "2026-02-19 04:53:42"
 }
