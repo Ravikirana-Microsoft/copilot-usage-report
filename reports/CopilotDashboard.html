@@ -20912,20 +20912,63 @@
                 hideNoData();
                 
                 // Clear and rebuild report dropdown with archive reports
-                reportSelect.innerHTML = '';
+                reportSelect.innerHTML = '<option value="">-- Loading Archive Reports --</option>';
                 
-                for (const reportFile of archiveInfo.reports) {
-                    const option = document.createElement('option');
-                    option.value = `${basePath}named-archives/${selectedArchive}/consolidated/${reportFile}`;
-                    // Parse date from filename
-                    const match = reportFile.match(/ConsolidatedReport_(.+?)\.json/);
-                    if (match) {
-                        option.textContent = match[1];
-                    } else {
-                        option.textContent = reportFile;
+                // Build reports array with paths
+                const archiveReports = archiveInfo.reports.map(reportFile => ({
+                    filename: reportFile,
+                    path: `${basePath}named-archives/${selectedArchive}/consolidated/${reportFile}`
+                }));
+                
+                // Fetch metadata from each report to get proper names
+                const reportsWithMetadata = await Promise.all(archiveReports.map(async (report) => {
+                    try {
+                        const response = await fetch(report.path);
+                        if (response.ok) {
+                            const data = await response.json();
+                            // Get metadata from report
+                            let name = '';
+                            let dateRange = '';
+                            
+                            if (data._metadata) {
+                                name = data._metadata.analysisName || data._metadata.name || '';
+                                dateRange = data._metadata.dateRange || '';
+                            }
+                            
+                            // Fallback to filename parsing
+                            if (!name) {
+                                const match = report.filename.match(/ConsolidatedReport_(.+?)\.json/);
+                                name = match ? match[1] : report.filename;
+                            }
+                            
+                            return {
+                                path: report.path,
+                                label: `📊 ${name}${dateRange ? ` (${dateRange})` : ''}`,
+                                name: name
+                            };
+                        }
+                    } catch (e) {
+                        console.log('Could not fetch metadata for:', report.filename);
                     }
+                    // Fallback: format timestamp nicely
+                    const match = report.filename.match(/ConsolidatedReport_(.+?)\.json/);
+                    const timestamp = match ? match[1] : report.filename;
+                    return {
+                        path: report.path,
+                        label: `📊 ${timestamp}`,
+                        name: timestamp
+                    };
+                }));
+                
+                // Update dropdown with proper labels
+                reportSelect.innerHTML = '';
+                reportsWithMetadata.forEach((report, index) => {
+                    const option = document.createElement('option');
+                    option.value = report.path;
+                    option.textContent = report.label;
+                    if (index === 0) option.selected = true;
                     reportSelect.appendChild(option);
-                }
+                });
                 
                 // Load the first report
                 if (reportSelect.options.length > 0) {
