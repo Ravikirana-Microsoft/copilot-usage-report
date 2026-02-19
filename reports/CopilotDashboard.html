@@ -17497,6 +17497,8 @@
         let currentReportPath = null;  // Track which report is loaded
         let charts = {};
         let isLocalFileAccess = false;  // Flag to track if running from file:// protocol
+        let currentArchive = 'current';  // Track which archive is being viewed ('current' = main reports)
+        let availableArchives = [];      // List of available archive bundles
 
         // Initialize on page load
         document.addEventListener('DOMContentLoaded', async () => {
@@ -17666,8 +17668,9 @@
                 archiveSelect.disabled = false;
                 archiveSelect.title = '';
             }
-            // Repopulate full report list if needed
-            if (!isLocalFileAccess) {
+            // Repopulate full report list ONLY if viewing current reports (not an archive)
+            // This prevents overwriting archive reports when loading archived reports
+            if (!isLocalFileAccess && currentArchive === 'current') {
                 populateReportSelector();
             }
         }
@@ -18498,8 +18501,27 @@
             // Parse historical data from archived reports
             const trendPoints = [];
             
-            // Load data from each archived report
-            for (const report of REPORT_CONFIG.archivedReports.slice().reverse()) {
+            // Determine which reports to use for trend chart
+            // If viewing an archive, use the archive's reports; otherwise use current reports
+            let reportsToUse = [];
+            const basePath = getBasePath();
+            
+            if (currentArchive !== 'current') {
+                // Get reports from selected archive
+                const archiveInfo = availableArchives.find(a => a.name === currentArchive);
+                if (archiveInfo && archiveInfo.reports) {
+                    reportsToUse = archiveInfo.reports.map(filename => ({
+                        path: `${basePath}named-archives/${currentArchive}/consolidated/${filename}`,
+                        label: filename.replace('ConsolidatedReport_', '').replace('.json', '')
+                    }));
+                }
+            } else {
+                // Use current reports
+                reportsToUse = REPORT_CONFIG.archivedReports || [];
+            }
+            
+            // Load data from each report
+            for (const report of reportsToUse.slice().reverse()) {
                 // Use analysisName for x-axis if available, otherwise extract from label
                 const trendLabel = report.analysisName || report.label.split(' ')[0];
                 
@@ -20523,8 +20545,7 @@
         // ============================================
         // ARCHIVE FUNCTIONS
         // ============================================
-        let currentArchive = 'current';
-        let availableArchives = [];
+        // Note: currentArchive and availableArchives are declared at the top of the script
 
         function showArchiveModal() {
             document.getElementById('archiveModal').classList.add('active');
