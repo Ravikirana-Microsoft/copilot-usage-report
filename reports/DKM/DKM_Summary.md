@@ -2,8 +2,8 @@
 
 > Consolidated analysis across all branches using 5-Tier AI Detection Model
 
-**Generated:** 2026-02-19 06:41:46  
-**Analysis Period:** 2026-01-01 to 2026-01-31
+**Generated:** 2026-02-19 08:11:05  
+**Analysis Period:** 2025-12-01 to 2025-12-31
 
 ---
 
@@ -13,7 +13,7 @@
 |--------|-------|
 | **Application** | DKM |
 | **Branches Analyzed** | 1 |
-| **Total Contributors** | 3 |
+| **Total Contributors** | 6 |
 | **Overall AI Usage** | **0%** |
 
 ---
@@ -25,8 +25,8 @@
 | Category | Lines | Percentage | Commits |
 |----------|-------|------------|---------|
 | **AI-Assisted** | 0 | 0% | 0 |
-| **Human-Written** | 2851 | 100% | 17 |
-| **Total** | 2851 | 100% | 17 |
+| **Human-Written** | 1834 | 100% | 17 |
+| **Total** | 1834 | 100% | 17 |
 
 ### Visual Summary
 
@@ -54,7 +54,7 @@ Human-Written: ████████████████████ 100%
 
 | Branch | Commits | AI Commits | AI Lines | AI % | T1 | T2 | T3 | T4 | T5 | Contributors |
 |--------|---------|------------|----------|------|----|----|----|----|-----|--------------|
-| **dev** | 17 | 0 |  | 0% | 0 | 0 | 0 | 0 | 0 | 3 |
+| **dev** | 17 | 0 |  | 0% | 0 | 0 | 0 | 0 | 0 | 6 |
 
 ---
 

@@ -1,18 +1,24 @@
 {
   "reports": [
     {
-      "name": "January-2026",
-      "isLatest": true,
-      "filename": "ConsolidatedReport_2026-02-19_06-41-46.json",
-      "date": "2026-02-19 06:41:46 UTC",
-      "dateRange": "2026-01-01 to 2026-01-31"
+      "date": "2026-02-19 08:11:05 UTC",
+      "dateRange": "2025-12-01 to 2025-12-31",
+      "name": "December2025",
+      "filename": "ConsolidatedReport_2026-02-19_08-11-05.json",
+      "isLatest": true
     },
     {
-      "name": "December2025",
-      "filename": "ConsolidatedReport_2026-02-19_06-15-25.json",
+      "date": "2026-02-19 06:41:46 UTC",
+      "dateRange": "2026-01-01 to 2026-01-31",
+      "name": "January-2026",
+      "filename": "ConsolidatedReport_2026-02-19_06-41-46.json"
+    },
+    {
       "date": "2026-02-19 06:15:25 UTC",
-      "dateRange": "2025-12-01 to 2025-12-31"
+      "dateRange": "2025-12-01 to 2025-12-31",
+      "name": "December2025",
+      "filename": "ConsolidatedReport_2026-02-19_06-15-25.json"
     }
   ],
-  "lastUpdated": "2026-02-19 06:41:46"
+  "lastUpdated": "2026-02-19 08:11:05"
 }
