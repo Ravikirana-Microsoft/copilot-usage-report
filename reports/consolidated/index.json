@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "lastUpdated": "2026-02-18 19:24:00",
   "reports": [
     {
@@ -48,7 +49,58 @@
       "name": "November-2025",
       "dateRange": "2025-11-01 to 2025-11-30",
       "filename": "ConsolidatedReport_2026-02-18_08-00-25.json",
+=======
+  "reports": [
+    {
+      "name": "dec 25",
+      "filename": "ConsolidatedReport_2026-02-18_13-58-32.json",
+      "isLatest": true,
+      "dateRange": "2025-12-01 to 2025-12-31",
+      "date": "2026-02-18 13:58:32 UTC"
+    },
+    {
+      "name": "February-2026",
+      "filename": "ConsolidatedReport_2026-02-18_13-27-38.json",
+      "dateRange": "2026-02-01 to 2026-02-28",
+      "date": "2026-02-18 13:27:39 UTC"
+    },
+    {
+      "name": "Feb 2",
+      "filename": "ConsolidatedReport_2026-02-18_13-09-23.json",
+      "dateRange": "2026-02-01 to 2026-02-28",
+      "date": "2026-02-18 13:09:23 UTC"
+    },
+    {
+      "name": "February-2026",
+      "filename": "ConsolidatedReport_2026-02-18_13-21-33.json",
+      "dateRange": "2026-02-01 to 2026-02-28",
+      "date": "2026-02-18 13:21:33 UTC"
+    },
+    {
+      "name": "December -2025",
+      "filename": "ConsolidatedReport_2026-02-18_08-04-53.json",
+      "dateRange": "2025-12-01 to 2025-12-31",
+      "date": "2026-02-18 08:04:53 UTC"
+    },
+    {
+      "name": "January-2026",
+      "filename": "ConsolidatedReport_2026-02-18_12-46-15.json",
+      "dateRange": "2026-01-01 to 2026-01-31",
+      "date": "2026-02-18 12:46:15 UTC"
+    },
+    {
+      "name": "February-2026",
+      "filename": "ConsolidatedReport_2026-02-18_12-57-39.json",
+      "dateRange": "2026-02-01 to 2026-02-28",
+      "date": "2026-02-18 12:57:39 UTC"
+    },
+    {
+      "name": "November-2025",
+      "filename": "ConsolidatedReport_2026-02-18_08-00-25.json",
+      "dateRange": "2025-11-01 to 2025-11-30",
+>>>>>>> d4fbf94529302eac6a23b546d39231b289830ce3
       "date": "2026-02-18 08:00:25 UTC"
     }
-  ]
+  ],
+  "lastUpdated": "2026-02-18 13:58:32"
 }

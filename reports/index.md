@@ -2,7 +2,11 @@
 
 > Auto-generated index of all analysis reports with application-level AI usage statistics.
 > 
+<<<<<<< HEAD
 > **Last Updated:** 2026-02-18 19:23:59
+=======
+> **Last Updated:** 2026-02-18 13:58:32
+>>>>>>> d4fbf94529302eac6a23b546d39231b289830ce3
 
 ---
 
@@ -14,8 +18,13 @@
 | **BYOCC** | **21.78%** | 58 | 7 | 51 | 53663 | 11690 | dev |
 | **Code Modernization** | **3.5%** | 49 | 1 | 48 | 4718 | 165 | dev |
 | **Container Migration** | **0%** | 39 | 0 | 39 | 1930 | 0 | dev |
+<<<<<<< HEAD
 | **Content Processing** | **0%** | 42 | 0 | 42 | 6019 | 0 | dev |
 | **CWYD** | **46.32%** | 8 | 2 | 6 | 285 | 132 | dev |
+=======
+| **Content Processing** | **0%** | 41 | 0 | 41 | 5703 | 0 | dev |
+| **CWYD** | **65.67%** | 5 | 2 | 3 | 201 | 132 | dev |
+>>>>>>> d4fbf94529302eac6a23b546d39231b289830ce3
 | **Deploy your AI application** | **0%** | 14 | 0 | 14 | 15593 | 0 | main |
 | **DKM** | **0%** | 17 | 0 | 17 | 1844 | 0 | dev |
 | **Doc Gen** | **84.14%** | 97 | 17 | 80 | 80807 | 67992 | dev |
@@ -25,7 +34,11 @@
 | **MACAE v4** | **13.21%** | 130 | 4 | 126 | 63149 | 8345 | main |
 | **RTI** | **45.79%** | 113 | 7 | 106 | 12339 | 5650 | main |
 
+<<<<<<< HEAD
 ### Overall AI Usage: **16.18%**
+=======
+### Overall AI Usage: **16.19%**
+>>>>>>> d4fbf94529302eac6a23b546d39231b289830ce3
 
 ---
 
@@ -35,7 +48,11 @@
 
 | Run Date | Period | Applications | Branches | Overall AI % | Reports |
 |----------|--------|--------------|----------|--------------|---------|
+<<<<<<< HEAD
 | 2026-02-18 19:23 | 2025-12-01 to 2025-12-31 | 14 | 14 | 16.18% | [Summary](Batch-Analysis-Summary.md), [JSON](Consolidated-Analysis_2026-02-18_19-23-59.json) |
+=======
+| 2026-02-18 13:58 | 2025-12-01 to 2025-12-31 | 14 | 14 | 16.19% | [Summary](Batch-Analysis-Summary.md), [JSON](Consolidated-Analysis_2026-02-18_13-58-32.json) |
+>>>>>>> d4fbf94529302eac6a23b546d39231b289830ce3
 | 2026-02-18 13:27 | 2026-02-01 to 2026-02-28 | 14 | 9 | 2.78% | [Summary](Batch-Analysis-Summary.md), [JSON](Consolidated-Analysis_2026-02-18_13-27-38.json) |
 | 2026-02-18 13:21 | 2026-02-01 to 2026-02-28 | 14 | 9 | 2.78% | [Summary](Batch-Analysis-Summary.md), [JSON](Consolidated-Analysis_2026-02-18_13-21-33.json) |
 | 2026-02-18 13:09 | 2026-02-01 to 2026-02-28 | 14 | 9 | 2.78% | [Summary](Batch-Analysis-Summary.md), [JSON](Consolidated-Analysis_2026-02-18_13-09-23.json) |
@@ -132,13 +149,18 @@
 - **main Branch**: [RTI/main](RTI/main/)
 
 
+<<<<<<< HEAD
 **Latest Reports (2026-02-18 19:23):**
+=======
+**Latest Reports (2026-02-18 13:58):**
+>>>>>>> d4fbf94529302eac6a23b546d39231b289830ce3
 
 - [Doc Gen - dev](Doc Gen/dev/) - AI: 84.14%
 - [BYOCC - dev](BYOCC/dev/) - AI: 21.78%
 - [MACAE v4 - main](MACAE v4/main/) - AI: 13.21%
 - [KM Generic - dev](KM Generic/dev/) - AI: 0%
 - [Deploy your AI application - main](Deploy your AI application/main/) - AI: 0%
+<<<<<<< HEAD
 - [Code Modernization - dev](Code Modernization/dev/) - AI: 3.5%
 - [RTI - main](RTI/main/) - AI: 45.79%
 - [Fabric SQL - dev](Fabric SQL/dev/) - AI: 41.93%
@@ -148,6 +170,17 @@
 - [Container Migration - dev](Container Migration/dev/) - AI: 0%
 - [MAAG - dev](MAAG/dev/) - AI: 0%
 - [BYOC - dev](BYOC/dev/) - AI: 0.18%
+=======
+- [RTI - main](RTI/main/) - AI: 45.79%
+- [Code Modernization - dev](Code Modernization/dev/) - AI: 3.5%
+- [Fabric SQL - dev](Fabric SQL/dev/) - AI: 41.93%
+- [Content Processing - dev](Content Processing/dev/) - AI: 0%
+- [DKM - dev](DKM/dev/) - AI: 0%
+- [CWYD - dev](CWYD/dev/) - AI: 65.67%
+- [Container Migration - dev](Container Migration/dev/) - AI: 0%
+- [BYOC - dev](BYOC/dev/) - AI: 0.18%
+- [MAAG - dev](MAAG/dev/) - AI: 0%
+>>>>>>> d4fbf94529302eac6a23b546d39231b289830ce3
 
 
 ---
@@ -155,8 +188,13 @@
 ## Quick Links
 
 - [Batch Analysis Summary](Batch-Analysis-Summary.md)
+<<<<<<< HEAD
 - [Branch-Level Summary CSV](Branch-Level-Summary_2026-02-18_19-23-59.csv)
 - [Consolidated Analysis JSON](Consolidated-Analysis_2026-02-18_19-23-59.json)
+=======
+- [Branch-Level Summary CSV](Branch-Level-Summary_2026-02-18_13-58-32.csv)
+- [Consolidated Analysis JSON](Consolidated-Analysis_2026-02-18_13-58-32.json)
+>>>>>>> d4fbf94529302eac6a23b546d39231b289830ce3
 - [Git Access Validation Report](Git-Access-Validation-Report.md)
 
 ---
