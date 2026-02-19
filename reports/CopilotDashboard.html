@@ -5181,8 +5181,14 @@
                         if (progressText) {
                             if (run.status === 'completed') {
                                 if (run.conclusion === 'success') {
-                                    progressText.innerHTML = '✅ Archive completed! Reloading page in 3 seconds...';
-                                    setTimeout(() => window.location.reload(), 3000);
+                                    progressText.innerHTML = `✅ Archive completed!<br><br>
+                                        <div style="margin-top: 8px;">
+                                            <p style="margin-bottom: 8px;">Reports have been archived. Dashboard will be updated when GitHub Pages deploys (~1-2 min).</p>
+                                            <button onclick="refreshAfterArchive()" style="padding: 8px 16px; border-radius: 6px; border: none; background: linear-gradient(135deg, #22c55e, #16a34a); color: white; cursor: pointer; font-weight: 500; margin-right: 8px;">🔄 Refresh Now</button>
+                                            <button onclick="hideArchiveModal()" style="padding: 8px 16px; border-radius: 6px; border: 1px solid var(--border-color); background: transparent; color: var(--text-primary); cursor: pointer;">Close</button>
+                                        </div>`;
+                                    // Clear reports dropdown immediately
+                                    clearReportsAfterArchive();
                                 } else {
                                     progressText.innerHTML = `❌ Workflow ${run.conclusion}. <a href="${run.html_url}" target="_blank" style="color: #ef4444;">View details</a>`;
                                 }
@@ -5221,29 +5227,60 @@
             statusDiv.style.border = '1px solid ' + (type === 'error' ? '#ef4444' : 
                                                      type === 'success' ? '#f59e0b' : '#3b82f6');
         }
+        
+        // Clear reports dropdown after successful archive
+        function clearReportsAfterArchive() {
+            const reportSelect = document.getElementById('reportSelect');
+            const archiveSelect = document.getElementById('archiveSelect');
+            
+            // Clear reports dropdown
+            reportSelect.innerHTML = '<option value="">-- No Reports (Archived) --</option>';
+            
+            // Reset archive dropdown to current
+            archiveSelect.value = 'current';
+            currentArchive = 'current';
+            hideArchiveIndicator();
+            
+            // Show no data state
+            showNoData('Reports have been archived. Run a new analysis to generate new reports.');
+        }
+        
+        // Refresh page after archive to get updated data
+        async function refreshAfterArchive() {
+            hideArchiveModal();
+            // Reload archives list with cache busting
+            await loadAvailableArchives();
+            // Reload current reports list
+            await loadCurrentReportsList();
+            // Ensure current is selected
+            const archiveSelect = document.getElementById('archiveSelect');
+            archiveSelect.value = 'current';
+            currentArchive = 'current';
+        }
 
         async function loadAvailableArchives() {
             const archiveSelect = document.getElementById('archiveSelect');
             const repoInfo = getRepoFromUrl();
             
             try {
-                // First try: Fetch from deployed GitHub Pages
+                // First try: Fetch from deployed GitHub Pages with cache busting
                 const basePath = getBasePath();
-                let response = await fetch(`${basePath}named-archives/index.json`);
+                const cacheBuster = `?_t=${Date.now()}`;
+                let response = await fetch(`${basePath}named-archives/index.json${cacheBuster}`, { cache: 'no-store' });
                 
                 // Second try: Fetch directly from GitHub repo if Pages version not found
                 if (!response.ok && repoInfo) {
                     const token = localStorage.getItem('github_workflow_token');
-                    const headers = token ? { 'Authorization': `Bearer ${token}`, 'Accept': 'application/vnd.github.v3.raw' } : { 'Accept': 'application/vnd.github.v3.raw' };
-                    response = await fetch(`https://api.github.com/repos/${repoInfo.owner}/${repoInfo.repo}/contents/reports/named-archives/index.json?ref=main`, { headers });
+                    const headers = token ? { 'Authorization': `Bearer ${token}`, 'Accept': 'application/vnd.github.v3.raw', 'Cache-Control': 'no-cache' } : { 'Accept': 'application/vnd.github.v3.raw' };
+                    response = await fetch(`https://api.github.com/repos/${repoInfo.owner}/${repoInfo.repo}/contents/reports/named-archives/index.json?ref=main&_t=${Date.now()}`, { headers, cache: 'no-store' });
                 }
                 
                 if (response.ok) {
                     const archives = await response.json();
                     availableArchives = Array.isArray(archives) ? archives : [];
                     
-                    // Clear and rebuild dropdown
-                    archiveSelect.innerHTML = '<option value="current">📁 Current Reports</option>';
+                    // Clear and rebuild dropdown with Current Reports as default selected
+                    archiveSelect.innerHTML = '<option value="current" selected>📁 Current Reports</option>';
                     
                     // Sort by created date descending
                     availableArchives.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
