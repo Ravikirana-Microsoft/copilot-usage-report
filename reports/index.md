@@ -2,7 +2,7 @@
 
 > Auto-generated index of all analysis reports with application-level AI usage statistics.
 > 
-> **Last Updated:** 2026-02-19 04:53:42
+> **Last Updated:** 2026-02-19 06:15:25
 
 ---
 
@@ -35,6 +35,7 @@
 
 | Run Date | Period | Applications | Branches | Overall AI % | Reports |
 |----------|--------|--------------|----------|--------------|---------|
+| 2026-02-19 06:15 | 2025-12-01 to 2025-12-31 | 14 | 14 | 16.19% | [Summary](Batch-Analysis-Summary.md), [JSON](Consolidated-Analysis_2026-02-19_06-15-25.json) |
 | 2026-02-19 04:53 | 2025-12-01 to 2025-12-31 | 14 | 14 | 16.19% | [Summary](Batch-Analysis-Summary.md), [JSON](Consolidated-Analysis_2026-02-19_04-53-42.json) |
 | 2026-02-19 04:39 | 2025-12-01 to 2025-12-31 | 14 | 14 | 16.19% | [Summary](Batch-Analysis-Summary.md), [JSON](Consolidated-Analysis_2026-02-19_04-39-14.json) |
 | 2026-02-18 19:23 | 2025-12-01 to 2025-12-31 | 14 | 14 | 16.18% | [Summary](Batch-Analysis-Summary.md), [JSON](Consolidated-Analysis_2026-02-18_19-23-59.json) |
@@ -54,7 +55,6 @@
 | 2026-02-17 14:56 | 2026-01-01 to 2026-01-31 | 13 | 13 | 37.75% | [Summary](Batch-Analysis-Summary.md), [JSON](Consolidated-Analysis_2026-02-17_14-56-22.json) |
 | 2026-02-17 13:46 | 2026-02-01 to 2026-02-17 | 13 | 13 | 2.79% | [Summary](Batch-Analysis-Summary.md), [JSON](Consolidated-Analysis_2026-02-17_13-46-39.json) |
 | 2026-02-17 13:26 | 2026-01-01 to 2026-01-31 | 13 | 13 | 37.65% | [Summary](Batch-Analysis-Summary.md), [JSON](Consolidated-Analysis_2026-02-17_13-26-28.json) |
-| 2026-02-17 11:21 | 2026-01-01 to 2026-01-31 | 13 | 13 | 33.76% | [Summary](Batch-Analysis-Summary.md), [JSON](Consolidated-Analysis_2026-02-17_11-21-08.json) |
 
 ---
 
@@ -132,7 +132,7 @@
 - **main Branch**: [RTI/main](RTI/main/)
 
 
-**Latest Reports (2026-02-19 04:53):**
+**Latest Reports (2026-02-19 06:15):**
 
 - [Doc Gen - dev](Doc Gen/dev/) - AI: 84.14%
 - [BYOCC - dev](BYOCC/dev/) - AI: 21.78%
@@ -155,8 +155,8 @@
 ## Quick Links
 
 - [Batch Analysis Summary](Batch-Analysis-Summary.md)
-- [Branch-Level Summary CSV](Branch-Level-Summary_2026-02-19_04-53-42.csv)
-- [Consolidated Analysis JSON](Consolidated-Analysis_2026-02-19_04-53-42.json)
+- [Branch-Level Summary CSV](Branch-Level-Summary_2026-02-19_06-15-25.csv)
+- [Consolidated Analysis JSON](Consolidated-Analysis_2026-02-19_06-15-25.json)
 - [Git Access Validation Report](Git-Access-Validation-Report.md)
 
 ---

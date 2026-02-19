@@ -1,6 +1,6 @@
 # Batch Analysis Summary - 5-Tier Model
 
-**Analysis Date:** 2026-02-19 04:53:42  
+**Analysis Date:** 2026-02-19 06:15:25  
 **Period:** 2025-12-01 to 2025-12-31
 
 ---
@@ -47,8 +47,8 @@
 | Application | Branch | Commits | AI Commits | AI Lines | AI % | T1 | T2 | T3 | T4 | T5 | Contributors |
 |-------------|--------|---------|------------|----------|------|----|----|----|----|-----|--------------|
 | Doc Gen | dev | 97 | 17 | 67992 | 84.14% | 0 | 2 | 6 | 8 | 1 | 15 |
-| BYOCC | dev | 59 | 7 | 11690 | 21.78% | 0 | 5 | 1 | 0 | 1 | 9 |
-| MACAE v4 | main | 146 | 4 | 8345 | 13.14% | 0 | 2 | 1 | 0 | 1 | 22 |
+| BYOCC | dev | 59 | 7 | 11690 | 21.78% | 0 | 5 | 1 | 0 | 1 | 10 |
+| MACAE v4 | main | 146 | 4 | 8345 | 13.14% | 0 | 2 | 1 | 0 | 1 | 21 |
 | KM Generic | dev | 100 | 1 | 97 | 0.03% | 0 | 0 | 0 | 0 | 1 | 17 |
 | Deploy your AI application | main | 14 | 0 |  | 0% | 0 | 0 | 0 | 0 | 0 | 5 |
 | RTI | main | 125 | 7 | 5650 | 45.36% | 0 | 0 | 3 | 2 | 2 | 7 |
@@ -56,9 +56,9 @@
 | Fabric SQL | dev | 50 | 6 | 2227 | 41.93% | 0 | 3 | 1 | 0 | 2 | 9 |
 | Content Processing | dev | 44 | 0 |  | 0% | 0 | 0 | 0 | 0 | 0 | 11 |
 | CWYD | dev | 7 | 2 | 132 | 47.48% | 0 | 2 | 0 | 0 | 0 | 6 |
-| Container Migration | dev | 49 | 0 |  | 0% | 0 | 0 | 0 | 0 | 0 | 8 |
+| Container Migration | dev | 49 | 0 |  | 0% | 0 | 0 | 0 | 0 | 0 | 10 |
 | DKM | dev | 20 | 0 |  | 0% | 0 | 0 | 0 | 0 | 0 | 7 |
-| BYOC | dev | 11 | 3 | 97 | 7.86% | 3 | 0 | 0 | 0 | 0 | 5 |
+| BYOC | dev | 11 | 3 | 97 | 7.86% | 3 | 0 | 0 | 0 | 0 | 6 |
 | MAAG | dev | 18 | 0 |  | 0% | 0 | 0 | 0 | 0 | 0 | 3 |
 
 ---
@@ -67,20 +67,20 @@
 
 | Application | Branch | Status | Timestamp |
 |-------------|--------|--------|-----------|
-| Doc Gen | dev | ✓ Success | 2026-02-19 04:53:42 |
-| BYOCC | dev | ✓ Success | 2026-02-19 04:53:42 |
-| MACAE v4 | main | ✓ Success | 2026-02-19 04:53:42 |
-| KM Generic | dev | ✓ Success | 2026-02-19 04:53:42 |
-| Deploy your AI application | main | ✓ Success | 2026-02-19 04:53:42 |
-| RTI | main | ✓ Success | 2026-02-19 04:53:42 |
-| Code Modernization | dev | ✓ Success | 2026-02-19 04:53:42 |
-| Fabric SQL | dev | ✓ Success | 2026-02-19 04:53:42 |
-| Content Processing | dev | ✓ Success | 2026-02-19 04:53:42 |
-| CWYD | dev | ✓ Success | 2026-02-19 04:53:42 |
-| Container Migration | dev | ✓ Success | 2026-02-19 04:53:42 |
-| DKM | dev | ✓ Success | 2026-02-19 04:53:42 |
-| BYOC | dev | ✓ Success | 2026-02-19 04:53:42 |
-| MAAG | dev | ✓ Success | 2026-02-19 04:53:42 |
+| Doc Gen | dev | ✓ Success | 2026-02-19 06:15:25 |
+| BYOCC | dev | ✓ Success | 2026-02-19 06:15:25 |
+| MACAE v4 | main | ✓ Success | 2026-02-19 06:15:25 |
+| KM Generic | dev | ✓ Success | 2026-02-19 06:15:25 |
+| Deploy your AI application | main | ✓ Success | 2026-02-19 06:15:25 |
+| RTI | main | ✓ Success | 2026-02-19 06:15:25 |
+| Code Modernization | dev | ✓ Success | 2026-02-19 06:15:25 |
+| Fabric SQL | dev | ✓ Success | 2026-02-19 06:15:25 |
+| Content Processing | dev | ✓ Success | 2026-02-19 06:15:25 |
+| CWYD | dev | ✓ Success | 2026-02-19 06:15:25 |
+| Container Migration | dev | ✓ Success | 2026-02-19 06:15:25 |
+| DKM | dev | ✓ Success | 2026-02-19 06:15:25 |
+| BYOC | dev | ✓ Success | 2026-02-19 06:15:25 |
+| MAAG | dev | ✓ Success | 2026-02-19 06:15:25 |
 
 ---
 
