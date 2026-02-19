@@ -2,11 +2,7 @@
 
 > Consolidated analysis across all branches using 5-Tier AI Detection Model
 
-<<<<<<< HEAD
-**Generated:** 2026-02-18 19:23:58  
-=======
-**Generated:** 2026-02-18 13:58:32  
->>>>>>> d4fbf94529302eac6a23b546d39231b289830ce3
+**Generated:** 2026-02-19 04:39:14  
 **Analysis Period:** 2025-12-01 to 2025-12-31
 
 ---
@@ -17,7 +13,7 @@
 |--------|-------|
 | **Application** | Doc Gen |
 | **Branches Analyzed** | 1 |
-| **Total Contributors** | 13 |
+| **Total Contributors** | 15 |
 | **Overall AI Usage** | **84.14%** |
 
 ---
@@ -58,7 +54,7 @@ Human-Written: ███░░░░░░░░░░░░░░░░░ 15.8
 
 | Branch | Commits | AI Commits | AI Lines | AI % | T1 | T2 | T3 | T4 | T5 | Contributors |
 |--------|---------|------------|----------|------|----|----|----|----|-----|--------------|
-| **dev** | 97 | 17 | 67992 | 84.14% | 0 | 2 | 6 | 8 | 1 | 13 |
+| **dev** | 97 | 17 | 67992 | 84.14% | 0 | 2 | 6 | 8 | 1 | 15 |
 
 ---
 

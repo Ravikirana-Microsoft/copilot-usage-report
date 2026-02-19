@@ -2,11 +2,7 @@
 
 > Consolidated analysis across all branches using 5-Tier AI Detection Model
 
-<<<<<<< HEAD
-**Generated:** 2026-02-18 19:23:58  
-=======
-**Generated:** 2026-02-18 13:58:32  
->>>>>>> d4fbf94529302eac6a23b546d39231b289830ce3
+**Generated:** 2026-02-19 04:39:14  
 **Analysis Period:** 2025-12-01 to 2025-12-31
 
 ---
@@ -17,7 +13,7 @@
 |--------|-------|
 | **Application** | Container Migration |
 | **Branches Analyzed** | 1 |
-| **Total Contributors** | 7 |
+| **Total Contributors** | 8 |
 | **Overall AI Usage** | **0%** |
 
 ---
@@ -29,8 +25,8 @@
 | Category | Lines | Percentage | Commits |
 |----------|-------|------------|---------|
 | **AI-Assisted** | 0 | 0% | 0 |
-| **Human-Written** | 1930 | 100% | 39 |
-| **Total** | 1930 | 100% | 39 |
+| **Human-Written** | 2293 | 100% | 49 |
+| **Total** | 2293 | 100% | 49 |
 
 ### Visual Summary
 
@@ -50,7 +46,7 @@ Human-Written: ████████████████████ 100%
 | **Tier 3** | 80-89% | High confidence | 0 | 0% |
 | **Tier 4** | 70-79% | Moderate confidence | 0 | 0% |
 | **Tier 5** | 60-69% | Low confidence | 0 | 0% |
-| **Human** | <60% | No AI detected | 39 | 100% |
+| **Human** | <60% | No AI detected | 49 | 100% |
 
 ---
 
@@ -58,7 +54,7 @@ Human-Written: ████████████████████ 100%
 
 | Branch | Commits | AI Commits | AI Lines | AI % | T1 | T2 | T3 | T4 | T5 | Contributors |
 |--------|---------|------------|----------|------|----|----|----|----|-----|--------------|
-| **dev** | 39 | 0 |  | 0% | 0 | 0 | 0 | 0 | 0 | 7 |
+| **dev** | 49 | 0 |  | 0% | 0 | 0 | 0 | 0 | 0 | 8 |
 
 ---
 
