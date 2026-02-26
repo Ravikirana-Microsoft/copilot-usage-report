@@ -1,0 +1,605 @@
+{
+  "AnalysisPeriod": {
+    "FilterApplied": true,
+    "StartDate": "2026-01-05",
+    "EndDate": "2026-01-16"
+  },
+  "GeneratedAt": "2026-02-26 09:34:35",
+  "Metadata": {
+    "IncludeTestFiles": false,
+    "ScriptVersion": "2.0.0",
+    "GeneratedAt": "2026-02-26 09:34:35",
+    "PowerShellVersion": "7.4.13",
+    "GeneratedBy": "Copilot Usage Report Tool v2.0",
+    "AnalysisMethod": "5-Tier Weighted Pattern Detection"
+  },
+  "FileTypeBreakdown": [
+    {
+      "Extension": "html",
+      "TotalLines": 153834,
+      "AILines": 153834,
+      "AIPercentage": 100.0,
+      "FileCount": 204
+    },
+    {
+      "Extension": "sql",
+      "TotalLines": 143055,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 45
+    },
+    {
+      "Extension": "py",
+      "TotalLines": 104917,
+      "AILines": 84119,
+      "AIPercentage": 80.18,
+      "FileCount": 1089
+    },
+    {
+      "Extension": "csv",
+      "TotalLines": 86850,
+      "AILines": 348,
+      "AIPercentage": 0.4,
+      "FileCount": 105
+    },
+    {
+      "Extension": "xml",
+      "TotalLines": 44316,
+      "AILines": 44316,
+      "AIPercentage": 100.0,
+      "FileCount": 27
+    },
+    {
+      "Extension": "js",
+      "TotalLines": 43638,
+      "AILines": 43626,
+      "AIPercentage": 99.97,
+      "FileCount": 450
+    },
+    {
+      "Extension": "yml",
+      "TotalLines": 21598,
+      "AILines": 1836,
+      "AIPercentage": 8.5,
+      "FileCount": 481
+    },
+    {
+      "Extension": "md",
+      "TotalLines": 21221,
+      "AILines": 8064,
+      "AIPercentage": 38.0,
+      "FileCount": 907
+    },
+    {
+      "Extension": "json",
+      "TotalLines": 16343,
+      "AILines": 8070,
+      "AIPercentage": 49.38,
+      "FileCount": 336
+    },
+    {
+      "Extension": "cs",
+      "TotalLines": 14100,
+      "AILines": 12396,
+      "AIPercentage": 87.91,
+      "FileCount": 287
+    },
+    {
+      "Extension": "ts",
+      "TotalLines": 6943,
+      "AILines": 6812,
+      "AIPercentage": 98.11,
+      "FileCount": 150
+    },
+    {
+      "Extension": "tsx",
+      "TotalLines": 5598,
+      "AILines": 3634,
+      "AIPercentage": 64.92,
+      "FileCount": 287
+    },
+    {
+      "Extension": "bicep",
+      "TotalLines": 4090,
+      "AILines": 3090,
+      "AIPercentage": 75.55,
+      "FileCount": 211
+    },
+    {
+      "Extension": "sh",
+      "TotalLines": 3487,
+      "AILines": 3054,
+      "AIPercentage": 87.58,
+      "FileCount": 106
+    },
+    {
+      "Extension": "pdf",
+      "TotalLines": 1524,
+      "AILines": 510,
+      "AIPercentage": 33.46,
+      "FileCount": 96
+    },
+    {
+      "Extension": "txt",
+      "TotalLines": 907,
+      "AILines": 495,
+      "AIPercentage": 54.58,
+      "FileCount": 164
+    },
+    {
+      "Extension": "yaml",
+      "TotalLines": 826,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 43
+    },
+    {
+      "Extension": "csproj",
+      "TotalLines": 225,
+      "AILines": 225,
+      "AIPercentage": 100.0,
+      "FileCount": 26
+    },
+    {
+      "Extension": "example",
+      "TotalLines": 222,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 12
+    },
+    {
+      "Extension": "env",
+      "TotalLines": 204,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 12
+    },
+    {
+      "Extension": "map",
+      "TotalLines": 96,
+      "AILines": 96,
+      "AIPercentage": 100.0,
+      "FileCount": 48
+    },
+    {
+      "Extension": "css",
+      "TotalLines": 92,
+      "AILines": 12,
+      "AIPercentage": 13.04,
+      "FileCount": 41
+    },
+    {
+      "Extension": "runsettings",
+      "TotalLines": 84,
+      "AILines": 84,
+      "AIPercentage": 100.0,
+      "FileCount": 3
+    },
+    {
+      "Extension": "sample",
+      "TotalLines": 83,
+      "AILines": 36,
+      "AIPercentage": 43.37,
+      "FileCount": 45
+    },
+    {
+      "Extension": "py}",
+      "TotalLines": 48,
+      "AILines": 48,
+      "AIPercentage": 100.0,
+      "FileCount": 12
+    },
+    {
+      "Extension": "sln",
+      "TotalLines": 18,
+      "AILines": 18,
+      "AIPercentage": 100.0,
+      "FileCount": 3
+    },
+    {
+      "Extension": "dockerfile",
+      "TotalLines": 14,
+      "AILines": 14,
+      "AIPercentage": 100.0,
+      "FileCount": 7
+    },
+    {
+      "Extension": "github/codeowners",
+      "TotalLines": 13,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 13
+    },
+    {
+      "Extension": "devcontainer/dockerfile",
+      "TotalLines": 12,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 3
+    },
+    {
+      "Extension": "ps1",
+      "TotalLines": 7,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 11
+    },
+    {
+      "Extension": "ini",
+      "TotalLines": 3,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 3
+    }
+  ],
+  "ApplicationName": "Fabric SQL",
+  "AIAttributionOverride": {
+    "Applied": false,
+    "Notes": null,
+    "OverridePercentage": null
+  },
+  "Commits": [
+    {
+      "Hash": "51440fe4239a0e8b593fedb1cfbcead50a3b3fe8",
+      "Author": "Vamshi-Microsoft",
+      "Date": "Fri Jan 16 13:05:32 2026 +0530",
+      "Message": "Disabled e2e Testing",
+      "LinesAdded": 2,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "b470b4637bf594953b5fe13cbf56d7643b9ed3c0",
+      "Author": "Vamshi-Microsoft",
+      "Date": "Wed Jan 14 12:59:26 2026 +0530",
+      "Message": "ci: fixed pipeline failures",
+      "LinesAdded": 51,
+      "LinesDeleted": 40,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "8997574ea677fa32ac578dd153b64fc33be679e4",
+      "Author": "Thanusree-Microsoft",
+      "Date": "Wed Jan 14 11:57:19 2026 +0530",
+      "Message": "Clarify deployment instructions in DeploymentGuide.md",
+      "LinesAdded": 5,
+      "LinesDeleted": 5,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "3a97c4bdf5ec3691b646ded95d97ddb2dad9c52b",
+      "Author": "Thanusree-Microsoft",
+      "Date": "Tue Jan 13 15:02:16 2026 +0530",
+      "Message": "Update DeploymentGuide.md",
+      "LinesAdded": 12,
+      "LinesDeleted": 7,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written (Merge/Revert)",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "b4db6778fe4bcf941338f2f6f1dde3eb994c791a",
+      "Author": "Ayaz-Microsoft",
+      "Date": "Tue Jan 13 12:29:47 2026 +0530",
+      "Message": "chore: Update CodeQL configuration to use .NET 8.0 and add C# project build step",
+      "LinesAdded": 8,
+      "LinesDeleted": 2,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "cd383914b12ba4e973f5501d1d196b0a316622cf",
+      "Author": "Vamshi-Microsoft",
+      "Date": "Mon Jan 12 18:03:56 2026 +0530",
+      "Message": "fix: updated deployment job condition",
+      "LinesAdded": 1,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "ed14796f681a215432b3f65a118c4dc21569fae7",
+      "Author": "Vamshi-Microsoft",
+      "Date": "Mon Jan 12 17:53:45 2026 +0530",
+      "Message": "Pass Exp inputs to env",
+      "LinesAdded": 6,
+      "LinesDeleted": 4,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "4afaf82adf77282821b7be8f794fb2f334761a91",
+      "Author": "Vamshi-Microsoft",
+      "Date": "Mon Jan 12 17:18:47 2026 +0530",
+      "Message": "fix: update AZURE_ENV_LOG_ANALYTICS_WORKSPACE_ID validation regex for consistency",
+      "LinesAdded": 5,
+      "LinesDeleted": 5,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "8eabd11e1da567fb1891bf65a0f091e98cb26f0e",
+      "Author": "Vamshi-Microsoft",
+      "Date": "Mon Jan 12 15:13:05 2026 +0530",
+      "Message": "Added Test automation for Retail and Insurance use cases",
+      "LinesAdded": 47,
+      "LinesDeleted": 7,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "6ccdc8816758057adf1902373ee4151164d943ee",
+      "Author": "Vamshi-Microsoft",
+      "Date": "Mon Jan 12 15:00:14 2026 +0530",
+      "Message": "fix: update QUOTA_FAILED validation to allow empty string",
+      "LinesAdded": 3,
+      "LinesDeleted": 3,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "94c8826bdf90340a8e194bebff339585674a3e1c",
+      "Author": "Vamshi-Microsoft",
+      "Date": "Mon Jan 12 11:35:41 2026 +0530",
+      "Message": "add input validation for workflow inputs and map to env",
+      "LinesAdded": 382,
+      "LinesDeleted": 22,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "7b4735ed5cfa10d8d930f9658c43c0e8961f03de",
+      "Author": "Ayaz-Microsoft",
+      "Date": "Fri Jan 9 18:16:59 2026 +0530",
+      "Message": "chore: Update CodeQL language matrix to include JavaScript, TypeScript, and C#",
+      "LinesAdded": 1,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "02f074e6a0f7fd728f221271de94462f97601f4f",
+      "Author": "Ritesh",
+      "Date": "Fri Jan 9 16:53:18 2026 +0530",
+      "Message": "fabric-sql-insurance",
+      "LinesAdded": 1011,
+      "LinesDeleted": 169,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "d286c0cf62d3353316ae5805245127aeff859ba1",
+      "Author": "Vamshi-Microsoft",
+      "Date": "Fri Jan 9 10:00:00 2026 +0530",
+      "Message": "Fix curl vulnerability",
+      "LinesAdded": 9,
+      "LinesDeleted": 39,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "1cca21a30a3faa6f595d2a77989ab85b4babc703",
+      "Author": "Vamshi-Microsoft",
+      "Date": "Thu Jan 8 15:47:29 2026 +0530",
+      "Message": "fix: update ACR login server fallback in Docker build workflow",
+      "LinesAdded": 6,
+      "LinesDeleted": 6,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "6d19fa59813b8005109655c7ba8ddc1698674302",
+      "Author": "Vamshi-Microsoft",
+      "Date": "Thu Jan 8 15:40:52 2026 +0530",
+      "Message": "fixed vulnerabilities",
+      "LinesAdded": 879,
+      "LinesDeleted": 131,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "514ed9964e79c2100556bd1c9298ea250824dee9",
+      "Author": "Ritesh",
+      "Date": "Tue Jan 6 16:42:55 2026 +0530",
+      "Message": "fabsql-browser-cache",
+      "LinesAdded": 11,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "5462142b66749f91c3f16b5db55d1155624e88ca",
+      "Author": "Ritesh",
+      "Date": "Tue Jan 6 15:48:32 2026 +0530",
+      "Message": "fab-sql-file-renamed",
+      "LinesAdded": 0,
+      "LinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "73004ea503b9f432a1762baec3ed204f8a169e42",
+      "Author": "Ragini-Microsoft",
+      "Date": "Mon Jan 5 17:13:12 2026 +0530",
+      "Message": "update VS Code Web URL to use stable version",
+      "LinesAdded": 3,
+      "LinesDeleted": 3,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    }
+  ],
+  "BranchStatistics": {
+    "Branch": "dev",
+    "TotalCommits": 19,
+    "AICommits": 0,
+    "HumanCommits": 19,
+    "TotalLinesAdded": 2442.0,
+    "TotalLinesDeleted": 447.0,
+    "AILinesAdded": null,
+    "AILinesDeleted": null,
+    "Tier1Commits": 0,
+    "Tier2Commits": 0,
+    "Tier3Commits": 0,
+    "Tier4Commits": 0,
+    "Tier5Commits": 0,
+    "UniqueContributors": 5,
+    "AIPercentage": 0.0,
+    "HumanLinesAdded": 2442.0
+  },
+  "Users": [
+    {
+      "UserName": "Ayaz-Microsoft",
+      "UserEmail": "v-ayazkhan@microsoft.com",
+      "TotalCommits": 2,
+      "AICommits": 0,
+      "HumanCommits": 2,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 9,
+      "HumanLinesDeleted": 3,
+      "TotalLinesAdded": 9,
+      "TotalLinesDeleted": 3,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Ritesh",
+      "UserEmail": "v-riteshmate@microsoft.com",
+      "TotalCommits": 3,
+      "AICommits": 0,
+      "HumanCommits": 3,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 1022,
+      "HumanLinesDeleted": 170,
+      "TotalLinesAdded": 1022,
+      "TotalLinesDeleted": 170,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Vamshi-Microsoft",
+      "UserEmail": "v-vamolla@microsoft.com",
+      "TotalCommits": 11,
+      "AICommits": 0,
+      "HumanCommits": 11,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 1391,
+      "HumanLinesDeleted": 259,
+      "TotalLinesAdded": 1391,
+      "TotalLinesDeleted": 259,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Ragini-Microsoft",
+      "UserEmail": "v-raginich@microsoft.com",
+      "TotalCommits": 1,
+      "AICommits": 0,
+      "HumanCommits": 1,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 3,
+      "HumanLinesDeleted": 3,
+      "TotalLinesAdded": 3,
+      "TotalLinesDeleted": 3,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Thanusree-Microsoft",
+      "UserEmail": "168087422+Thanusree-Microsoft@users.noreply.github.com",
+      "TotalCommits": 2,
+      "AICommits": 0,
+      "HumanCommits": 2,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 17,
+      "HumanLinesDeleted": 12,
+      "TotalLinesAdded": 17,
+      "TotalLinesDeleted": 12,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    }
+  ],
+  "Branch": "dev",
+  "TierDistribution": {
+    "Tier4_Moderate": 0,
+    "Tier1_Definitive": 0,
+    "Human": 19,
+    "Tier2_VeryHigh": 0,
+    "Tier5_Low": 0,
+    "Tier3_High": 0
+  }
+}

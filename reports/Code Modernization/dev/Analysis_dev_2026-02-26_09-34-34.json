@@ -1,0 +1,411 @@
+{
+  "AnalysisPeriod": {
+    "FilterApplied": true,
+    "StartDate": "2026-01-05",
+    "EndDate": "2026-01-16"
+  },
+  "GeneratedAt": "2026-02-26 09:34:34",
+  "Metadata": {
+    "IncludeTestFiles": false,
+    "ScriptVersion": "2.0.0",
+    "GeneratedAt": "2026-02-26 09:34:34",
+    "PowerShellVersion": "7.4.13",
+    "GeneratedBy": "Copilot Usage Report Tool v2.0",
+    "AnalysisMethod": "5-Tier Weighted Pattern Detection"
+  },
+  "FileTypeBreakdown": [
+    {
+      "Extension": "json",
+      "TotalLines": 61445,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 104
+    },
+    {
+      "Extension": "yml",
+      "TotalLines": 18858,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 515
+    },
+    {
+      "Extension": "py",
+      "TotalLines": 11707,
+      "AILines": 7651,
+      "AIPercentage": 65.35,
+      "FileCount": 501
+    },
+    {
+      "Extension": "md",
+      "TotalLines": 10943,
+      "AILines": 21,
+      "AIPercentage": 0.19,
+      "FileCount": 241
+    },
+    {
+      "Extension": "bicep",
+      "TotalLines": 4847,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 91
+    },
+    {
+      "Extension": "pdf",
+      "TotalLines": 2526,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 3
+    },
+    {
+      "Extension": "sql",
+      "TotalLines": 1095,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 75
+    },
+    {
+      "Extension": "tsx",
+      "TotalLines": 943,
+      "AILines": 700,
+      "AIPercentage": 74.23,
+      "FileCount": 216
+    },
+    {
+      "Extension": "other",
+      "TotalLines": 450,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 33
+    },
+    {
+      "Extension": "gitignore",
+      "TotalLines": 264,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 6
+    },
+    {
+      "Extension": "txt",
+      "TotalLines": 160,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 41
+    },
+    {
+      "Extension": "cs",
+      "TotalLines": 126,
+      "AILines": 56,
+      "AIPercentage": 44.44,
+      "FileCount": 21
+    },
+    {
+      "Extension": "yaml",
+      "TotalLines": 111,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 15
+    },
+    {
+      "Extension": "toml",
+      "TotalLines": 87,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 6
+    },
+    {
+      "Extension": "sample",
+      "TotalLines": 27,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 3
+    },
+    {
+      "Extension": "env",
+      "TotalLines": 21,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 3
+    },
+    {
+      "Extension": "jsx",
+      "TotalLines": 21,
+      "AILines": 7,
+      "AIPercentage": 33.33,
+      "FileCount": 21
+    },
+    {
+      "Extension": "dockerfile",
+      "TotalLines": 16,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 10
+    },
+    {
+      "Extension": "devcontainer/dockerfile",
+      "TotalLines": 12,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 3
+    },
+    {
+      "Extension": "js",
+      "TotalLines": 11,
+      "AILines": 7,
+      "AIPercentage": 63.64,
+      "FileCount": 25
+    },
+    {
+      "Extension": "github/codeowners",
+      "TotalLines": 10,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 10
+    },
+    {
+      "Extension": "sh",
+      "TotalLines": 9,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 3
+    },
+    {
+      "Extension": "ini",
+      "TotalLines": 8,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 4
+    }
+  ],
+  "ApplicationName": "Code Modernization",
+  "AIAttributionOverride": {
+    "Applied": false,
+    "Notes": null,
+    "OverridePercentage": null
+  },
+  "Commits": [
+    {
+      "Hash": "d72a1b8770acde97ec4fb8b5a087c48167a219a8",
+      "Author": "Kanchan-Microsoft",
+      "Date": "Fri Jan 16 10:52:08 2026 +0530",
+      "Message": "fixed the pylint issue",
+      "LinesAdded": 0,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "55df904c3bfb5549e16f7f19156b1df5a747cea7",
+      "Author": "Kanchan-Microsoft",
+      "Date": "Fri Jan 16 10:47:22 2026 +0530",
+      "Message": "fixed pylint issues",
+      "LinesAdded": 16,
+      "LinesDeleted": 18,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "1e9004cb7900a675f8a4a666efdb0357897bc74b",
+      "Author": "Kanchan-Microsoft",
+      "Date": "Fri Jan 16 10:28:46 2026 +0530",
+      "Message": "smoke test case integration",
+      "LinesAdded": 225,
+      "LinesDeleted": 21,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "1a7bb2c52a70c0114fc39edace61ef99254b4d9a",
+      "Author": "Rafi-Microsoft",
+      "Date": "Tue Jan 13 16:16:09 2026 +0530",
+      "Message": "package updates",
+      "LinesAdded": 7,
+      "LinesDeleted": 6,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "13e124e59277bc83ed522e6179362762140a5e51",
+      "Author": "Vamshi-Microsoft",
+      "Date": "Tue Jan 13 16:07:22 2026 +0530",
+      "Message": "ci: fixed Pipeline failures",
+      "LinesAdded": 51,
+      "LinesDeleted": 43,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "15fad7214587d5a94a28e3e25eafbb4325779055",
+      "Author": "Vamshi-Microsoft",
+      "Date": "Mon Jan 12 13:57:19 2026 +0530",
+      "Message": "Minor fix regarding Azure env",
+      "LinesAdded": 162,
+      "LinesDeleted": 6,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "10bcfc8af417af12fe3c1f46bc25456322ddf559",
+      "Author": "Vamshi-Microsoft",
+      "Date": "Mon Jan 12 12:07:00 2026 +0530",
+      "Message": "updated Azure template validation action and add input validation for deployment workflows",
+      "LinesAdded": 363,
+      "LinesDeleted": 26,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "55facfa32304c1b93052c588d65a7142635d917e",
+      "Author": "Kanchan-Microsoft",
+      "Date": "Fri Jan 9 16:02:03 2026 +0530",
+      "Message": "fixed",
+      "LinesAdded": 2,
+      "LinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "372c8c10749fdce080b838578745c7859ba51197",
+      "Author": "Kanchan-Microsoft",
+      "Date": "Fri Jan 9 15:32:33 2026 +0530",
+      "Message": "fixed",
+      "LinesAdded": 6,
+      "LinesDeleted": 6,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "1019e7976e27f854fbdd6de411660839bdc05283",
+      "Author": "Kanchan-Microsoft",
+      "Date": "Fri Jan 9 15:25:13 2026 +0530",
+      "Message": "Fixed pipeline security vulnerabilities",
+      "LinesAdded": 670,
+      "LinesDeleted": 147,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "bd94697049aa61f027de95889f9b926d84255192",
+      "Author": "Kanchan-Microsoft",
+      "Date": "Mon Jan 5 18:00:54 2026 +0530",
+      "Message": "updation of vs code web url",
+      "LinesAdded": 2,
+      "LinesDeleted": 2,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    }
+  ],
+  "BranchStatistics": {
+    "Branch": "dev",
+    "TotalCommits": 11,
+    "AICommits": 0,
+    "HumanCommits": 11,
+    "TotalLinesAdded": 1504.0,
+    "TotalLinesDeleted": 276.0,
+    "AILinesAdded": null,
+    "AILinesDeleted": null,
+    "Tier1Commits": 0,
+    "Tier2Commits": 0,
+    "Tier3Commits": 0,
+    "Tier4Commits": 0,
+    "Tier5Commits": 0,
+    "UniqueContributors": 3,
+    "AIPercentage": 0.0,
+    "HumanLinesAdded": 1504.0
+  },
+  "Users": [
+    {
+      "UserName": "Kanchan-Microsoft",
+      "UserEmail": "v-knagshetti@microsoft.com",
+      "TotalCommits": 7,
+      "AICommits": 0,
+      "HumanCommits": 7,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 921,
+      "HumanLinesDeleted": 195,
+      "TotalLinesAdded": 921,
+      "TotalLinesDeleted": 195,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Rafi-Microsoft",
+      "UserEmail": "v-rafmd@microsoft.com",
+      "TotalCommits": 1,
+      "AICommits": 0,
+      "HumanCommits": 1,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 7,
+      "HumanLinesDeleted": 6,
+      "TotalLinesAdded": 7,
+      "TotalLinesDeleted": 6,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Vamshi-Microsoft",
+      "UserEmail": "v-vamolla@microsoft.com",
+      "TotalCommits": 3,
+      "AICommits": 0,
+      "HumanCommits": 3,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 576,
+      "HumanLinesDeleted": 75,
+      "TotalLinesAdded": 576,
+      "TotalLinesDeleted": 75,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    }
+  ],
+  "Branch": "dev",
+  "TierDistribution": {
+    "Tier4_Moderate": 0,
+    "Tier1_Definitive": 0,
+    "Human": 11,
+    "Tier2_VeryHigh": 0,
+    "Tier5_Low": 0,
+    "Tier3_High": 0
+  }
+}

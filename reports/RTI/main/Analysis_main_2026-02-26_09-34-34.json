@@ -1,0 +1,455 @@
+{
+  "AnalysisPeriod": {
+    "FilterApplied": true,
+    "StartDate": "2026-01-05",
+    "EndDate": "2026-01-16"
+  },
+  "GeneratedAt": "2026-02-26 09:34:34",
+  "Metadata": {
+    "IncludeTestFiles": false,
+    "ScriptVersion": "2.0.0",
+    "GeneratedAt": "2026-02-26 09:34:34",
+    "PowerShellVersion": "7.4.13",
+    "GeneratedBy": "Copilot Usage Report Tool v2.0",
+    "AnalysisMethod": "5-Tier Weighted Pattern Detection"
+  },
+  "FileTypeBreakdown": [
+    {
+      "Extension": "csv",
+      "TotalLines": 777696,
+      "AILines": 777696,
+      "AIPercentage": 100.0,
+      "FileCount": 15
+    },
+    {
+      "Extension": "py",
+      "TotalLines": 55594,
+      "AILines": 47690,
+      "AIPercentage": 85.78,
+      "FileCount": 658
+    },
+    {
+      "Extension": "md",
+      "TotalLines": 30484,
+      "AILines": 10749,
+      "AIPercentage": 35.26,
+      "FileCount": 751
+    },
+    {
+      "Extension": "ps1",
+      "TotalLines": 19438,
+      "AILines": 19432,
+      "AIPercentage": 99.97,
+      "FileCount": 65
+    },
+    {
+      "Extension": "json",
+      "TotalLines": 19344,
+      "AILines": 3417,
+      "AIPercentage": 17.66,
+      "FileCount": 117
+    },
+    {
+      "Extension": "ipynb",
+      "TotalLines": 14562,
+      "AILines": 9506,
+      "AIPercentage": 65.28,
+      "FileCount": 52
+    },
+    {
+      "Extension": "kql",
+      "TotalLines": 4634,
+      "AILines": 4557,
+      "AIPercentage": 98.34,
+      "FileCount": 110
+    },
+    {
+      "Extension": "yml",
+      "TotalLines": 3680,
+      "AILines": 1227,
+      "AIPercentage": 33.34,
+      "FileCount": 189
+    },
+    {
+      "Extension": "gitignore",
+      "TotalLines": 1894,
+      "AILines": 45,
+      "AIPercentage": 2.38,
+      "FileCount": 13
+    },
+    {
+      "Extension": "sh",
+      "TotalLines": 565,
+      "AILines": 495,
+      "AIPercentage": 87.61,
+      "FileCount": 23
+    },
+    {
+      "Extension": "bicep",
+      "TotalLines": 423,
+      "AILines": 420,
+      "AIPercentage": 99.29,
+      "FileCount": 11
+    },
+    {
+      "Extension": "txt",
+      "TotalLines": 300,
+      "AILines": 90,
+      "AIPercentage": 30.0,
+      "FileCount": 64
+    },
+    {
+      "Extension": "dockerignore",
+      "TotalLines": 282,
+      "AILines": 282,
+      "AIPercentage": 100.0,
+      "FileCount": 3
+    },
+    {
+      "Extension": "platform",
+      "TotalLines": 249,
+      "AILines": 192,
+      "AIPercentage": 77.11,
+      "FileCount": 57
+    },
+    {
+      "Extension": "ps1}",
+      "TotalLines": 231,
+      "AILines": 3,
+      "AIPercentage": 1.3,
+      "FileCount": 6
+    },
+    {
+      "Extension": "other",
+      "TotalLines": 210,
+      "AILines": 63,
+      "AIPercentage": 30.0,
+      "FileCount": 10
+    },
+    {
+      "Extension": "flake8",
+      "TotalLines": 161,
+      "AILines": 161,
+      "AIPercentage": 100.0,
+      "FileCount": 7
+    },
+    {
+      "Extension": "yaml",
+      "TotalLines": 146,
+      "AILines": 96,
+      "AIPercentage": 65.75,
+      "FileCount": 32
+    },
+    {
+      "Extension": "github/codeowners",
+      "TotalLines": 84,
+      "AILines": 21,
+      "AIPercentage": 25.0,
+      "FileCount": 14
+    },
+    {
+      "Extension": "devcontainer/dockerfile",
+      "TotalLines": 12,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 3
+    },
+    {
+      "Extension": "py}",
+      "TotalLines": 3,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 3
+    },
+    {
+      "Extension": "png",
+      "TotalLines": 3,
+      "AILines": 3,
+      "AIPercentage": 100.0,
+      "FileCount": 248
+    }
+  ],
+  "ApplicationName": "RTI",
+  "AIAttributionOverride": {
+    "Applied": false,
+    "Notes": null,
+    "OverridePercentage": null
+  },
+  "Commits": [
+    {
+      "Hash": "f8eb0ad73969e0c9b1b1455d07c8b96bda2959d4",
+      "Author": "Yamini-Microsoft",
+      "Date": "Wed Jan 14 09:43:51 2026 +0530",
+      "Message": "fix : Rename update_activator_definition to setup_activator_definition",
+      "LinesAdded": 1,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "f1d9a1e5473daea6c3cd815046c38dd43da54a82",
+      "Author": "Harmanpreet Kaur",
+      "Date": "Tue Jan 13 19:25:29 2026 +0530",
+      "Message": "fix: Remove 'demo' branch from workflow triggers in AZD AI Template validation",
+      "LinesAdded": 0,
+      "LinesDeleted": 2,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "7fb34c2645b31ec8c6a7d5d1b6be14a8381a5d20",
+      "Author": "Harmanpreet Kaur",
+      "Date": "Tue Jan 13 19:23:57 2026 +0530",
+      "Message": "fix: Update workflow triggers for AZD AI Template and Azure Dev CI/CD",
+      "LinesAdded": 11,
+      "LinesDeleted": 4,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "777938e83a605c605923d482dee1b6034f9d8a6e",
+      "Author": "Thanusree-Microsoft",
+      "Date": "Tue Jan 13 17:03:17 2026 +0530",
+      "Message": "Update Deployment Guide with Azure authentication steps",
+      "LinesAdded": 8,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "c1b58eccd165eb384116efac15b467cae9e08e87",
+      "Author": "Gaiye Zhou",
+      "Date": "Thu Jan 8 19:11:57 2026 -0500",
+      "Message": "updated activator icon",
+      "LinesAdded": 0,
+      "LinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "802bd083681e67e0611c0809e73956886e88f2db",
+      "Author": "Alvaro Guadamillas",
+      "Date": "Wed Jan 7 16:05:37 2026 +0100",
+      "Message": "fix: Correct function call for setting up eventstream definition in deploy_fabric_rti.py",
+      "LinesAdded": 1,
+      "LinesDeleted": 2,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "ff2d5c74f2b685e3ed34585aab0e0c89ad877e5e",
+      "Author": "Saswato-Microsoft",
+      "Date": "Tue Jan 6 12:08:58 2026 +0530",
+      "Message": "style: Enhance code readability by formatting long lines and improving print statements",
+      "LinesAdded": 159,
+      "LinesDeleted": 58,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "d348c652d5d72ccef8dd91cd3d7616dedb0fe2ba",
+      "Author": "Saswato-Microsoft",
+      "Date": "Mon Jan 5 20:17:40 2026 +0530",
+      "Message": "style: Improve code readability by formatting long lines and enhancing print statements",
+      "LinesAdded": 141,
+      "LinesDeleted": 42,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "5eb762c6b54ed901a4241b3c51e0ce3c0cbd51ed",
+      "Author": "Saswato-Microsoft",
+      "Date": "Mon Jan 5 19:56:41 2026 +0530",
+      "Message": "style: Refactor error messages and path assignments for improved readability",
+      "LinesAdded": 20,
+      "LinesDeleted": 5,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "62521d1aeb54a33ccd4ddb857dd7c67d5ee40f96",
+      "Author": "Saswato-Microsoft",
+      "Date": "Mon Jan 5 19:20:36 2026 +0530",
+      "Message": "chore: Update VS Code Web link in deployment instructions",
+      "LinesAdded": 2,
+      "LinesDeleted": 2,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    }
+  ],
+  "BranchStatistics": {
+    "Branch": "main",
+    "TotalCommits": 10,
+    "AICommits": 0,
+    "HumanCommits": 10,
+    "TotalLinesAdded": 343.0,
+    "TotalLinesDeleted": 117.0,
+    "AILinesAdded": null,
+    "AILinesDeleted": null,
+    "Tier1Commits": 0,
+    "Tier2Commits": 0,
+    "Tier3Commits": 0,
+    "Tier4Commits": 0,
+    "Tier5Commits": 0,
+    "UniqueContributors": 6,
+    "AIPercentage": 0.0,
+    "HumanLinesAdded": 343.0
+  },
+  "Users": [
+    {
+      "UserName": "Thanusree-Microsoft",
+      "UserEmail": "168087422+Thanusree-Microsoft@users.noreply.github.com",
+      "TotalCommits": 1,
+      "AICommits": 0,
+      "HumanCommits": 1,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 8,
+      "HumanLinesDeleted": 1,
+      "TotalLinesAdded": 8,
+      "TotalLinesDeleted": 1,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Alvaro Guadamillas",
+      "UserEmail": "alguadam@microsoft.com",
+      "TotalCommits": 1,
+      "AICommits": 0,
+      "HumanCommits": 1,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 1,
+      "HumanLinesDeleted": 2,
+      "TotalLinesAdded": 1,
+      "TotalLinesDeleted": 2,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Saswato-Microsoft",
+      "UserEmail": "v-saswatoc@microsoft.com",
+      "TotalCommits": 4,
+      "AICommits": 0,
+      "HumanCommits": 4,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 322,
+      "HumanLinesDeleted": 107,
+      "TotalLinesAdded": 322,
+      "TotalLinesDeleted": 107,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Harmanpreet Kaur",
+      "UserEmail": "v-harmanpkau@microsoft.com",
+      "TotalCommits": 2,
+      "AICommits": 0,
+      "HumanCommits": 2,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 11,
+      "HumanLinesDeleted": 6,
+      "TotalLinesAdded": 11,
+      "TotalLinesDeleted": 6,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Gaiye Zhou",
+      "UserEmail": "gazho@microsoft.com",
+      "TotalCommits": 1,
+      "AICommits": 0,
+      "HumanCommits": 1,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 0,
+      "HumanLinesDeleted": 0,
+      "TotalLinesAdded": 0,
+      "TotalLinesDeleted": 0,
+      "AIPercentage": 0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Yamini-Microsoft",
+      "UserEmail": "v-yamini3@microsoft.com",
+      "TotalCommits": 1,
+      "AICommits": 0,
+      "HumanCommits": 1,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 1,
+      "HumanLinesDeleted": 1,
+      "TotalLinesAdded": 1,
+      "TotalLinesDeleted": 1,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    }
+  ],
+  "Branch": "main",
+  "TierDistribution": {
+    "Tier4_Moderate": 0,
+    "Tier1_Definitive": 0,
+    "Human": 10,
+    "Tier2_VeryHigh": 0,
+    "Tier5_Low": 0,
+    "Tier3_High": 0
+  }
+}

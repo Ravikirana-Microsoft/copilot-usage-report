@@ -1,0 +1,331 @@
+{
+  "AnalysisPeriod": {
+    "FilterApplied": true,
+    "StartDate": "2026-01-05",
+    "EndDate": "2026-01-16"
+  },
+  "GeneratedAt": "2026-02-26 09:34:31",
+  "Metadata": {
+    "IncludeTestFiles": false,
+    "ScriptVersion": "2.0.0",
+    "GeneratedAt": "2026-02-26 09:34:31",
+    "PowerShellVersion": "7.4.13",
+    "GeneratedBy": "Copilot Usage Report Tool v2.0",
+    "AnalysisMethod": "5-Tier Weighted Pattern Detection"
+  },
+  "FileTypeBreakdown": [
+    {
+      "Extension": "json",
+      "TotalLines": 187335,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 29
+    },
+    {
+      "Extension": "yml",
+      "TotalLines": 15424,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 290
+    },
+    {
+      "Extension": "md",
+      "TotalLines": 7563,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 348
+    },
+    {
+      "Extension": "tsx",
+      "TotalLines": 1281,
+      "AILines": 912,
+      "AIPercentage": 71.19,
+      "FileCount": 12
+    },
+    {
+      "Extension": "sh",
+      "TotalLines": 744,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 6
+    },
+    {
+      "Extension": "py",
+      "TotalLines": 402,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 42
+    },
+    {
+      "Extension": "gitignore",
+      "TotalLines": 255,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 3
+    },
+    {
+      "Extension": "bicep",
+      "TotalLines": 235,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 33
+    },
+    {
+      "Extension": "jsx",
+      "TotalLines": 84,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 14
+    },
+    {
+      "Extension": "example",
+      "TotalLines": 69,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 6
+    },
+    {
+      "Extension": "other",
+      "TotalLines": 63,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 3
+    },
+    {
+      "Extension": "env",
+      "TotalLines": 21,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 3
+    },
+    {
+      "Extension": "txt",
+      "TotalLines": 18,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 6
+    },
+    {
+      "Extension": "devcontainer/dockerfile",
+      "TotalLines": 15,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 6
+    },
+    {
+      "Extension": "github/codeowners",
+      "TotalLines": 10,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 10
+    }
+  ],
+  "ApplicationName": "Container Migration",
+  "AIAttributionOverride": {
+    "Applied": false,
+    "Notes": null,
+    "OverridePercentage": null
+  },
+  "Commits": [
+    {
+      "Hash": "2a96287b3da24a9a6a845ff9ec40269dd0a17a91",
+      "Author": "Thanusree-Microsoft",
+      "Date": "Wed Jan 14 10:36:49 2026 +0530",
+      "Message": "Update VS Code Web section in Deployment Guide",
+      "LinesAdded": 3,
+      "LinesDeleted": 5,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "44a6d13e179747f5161ba805f900c05f4fecd317",
+      "Author": "Vamshi-Microsoft",
+      "Date": "Wed Jan 14 10:10:17 2026 +0530",
+      "Message": "fix: update regex validation for AZURE_EXISTING_AI_PROJECT_RESOURCE_ID in deployment workflows",
+      "LinesAdded": 3,
+      "LinesDeleted": 3,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "de631938d87c1fa056c0ea6ec53c67be56d8f356",
+      "Author": "Vamshi-Microsoft",
+      "Date": "Wed Jan 14 09:50:06 2026 +0530",
+      "Message": "fix: correct regex validation for AZURE_EXISTING_AI_PROJECT_RESOURCE_ID in deployment workflows",
+      "LinesAdded": 3,
+      "LinesDeleted": 3,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "44d1dca88635380fef446a3490d282f082b835ad",
+      "Author": "Vamshi-Microsoft",
+      "Date": "Tue Jan 13 16:39:46 2026 +0530",
+      "Message": "ci: fixed Pipeline failures",
+      "LinesAdded": 366,
+      "LinesDeleted": 46,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "112bd98f17a13a0063166730a80adefc2c76816f",
+      "Author": "Vamshi-Microsoft",
+      "Date": "Fri Jan 9 15:31:53 2026 +0530",
+      "Message": "Remove export, Curl and Map to env and setup actions",
+      "LinesAdded": 18,
+      "LinesDeleted": 45,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "47637a4d4bb5dc6f7edf6b70e4779cef84048e24",
+      "Author": "Vamshi-Microsoft",
+      "Date": "Fri Jan 9 15:25:27 2026 +0530",
+      "Message": "Add Permissions",
+      "LinesAdded": 52,
+      "LinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "08eace9d1d859ac4333377eb57dfcb2bdb5b6238",
+      "Author": "Vamshi-Microsoft",
+      "Date": "Fri Jan 9 15:21:40 2026 +0530",
+      "Message": "Add validation step for Inputs and Map Inputs to env",
+      "LinesAdded": 823,
+      "LinesDeleted": 66,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "ccfa2c3db0d9fc3316c3a5a33acdea81f28eccb9",
+      "Author": "Thanusree-Microsoft",
+      "Date": "Thu Jan 8 18:18:01 2026 +0530",
+      "Message": "Update Deployment Guide with Azure authentication steps",
+      "LinesAdded": 10,
+      "LinesDeleted": 2,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "26acf544493c8d5086f0add5467ab652703d6e85",
+      "Author": "Kanchan-Microsoft",
+      "Date": "Mon Jan 5 18:00:42 2026 +0530",
+      "Message": "updation of vs code web url",
+      "LinesAdded": 1,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    }
+  ],
+  "BranchStatistics": {
+    "Branch": "dev",
+    "TotalCommits": 9,
+    "AICommits": 0,
+    "HumanCommits": 9,
+    "TotalLinesAdded": 1279.0,
+    "TotalLinesDeleted": 171.0,
+    "AILinesAdded": null,
+    "AILinesDeleted": null,
+    "Tier1Commits": 0,
+    "Tier2Commits": 0,
+    "Tier3Commits": 0,
+    "Tier4Commits": 0,
+    "Tier5Commits": 0,
+    "UniqueContributors": 3,
+    "AIPercentage": 0.0,
+    "HumanLinesAdded": 1279.0
+  },
+  "Users": [
+    {
+      "UserName": "Kanchan-Microsoft",
+      "UserEmail": "v-knagshetti@microsoft.com",
+      "TotalCommits": 1,
+      "AICommits": 0,
+      "HumanCommits": 1,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 1,
+      "HumanLinesDeleted": 1,
+      "TotalLinesAdded": 1,
+      "TotalLinesDeleted": 1,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Vamshi-Microsoft",
+      "UserEmail": "v-vamolla@microsoft.com",
+      "TotalCommits": 6,
+      "AICommits": 0,
+      "HumanCommits": 6,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 1265,
+      "HumanLinesDeleted": 163,
+      "TotalLinesAdded": 1265,
+      "TotalLinesDeleted": 163,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Thanusree-Microsoft",
+      "UserEmail": "168087422+Thanusree-Microsoft@users.noreply.github.com",
+      "TotalCommits": 2,
+      "AICommits": 0,
+      "HumanCommits": 2,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 13,
+      "HumanLinesDeleted": 7,
+      "TotalLinesAdded": 13,
+      "TotalLinesDeleted": 7,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    }
+  ],
+  "Branch": "dev",
+  "TierDistribution": {
+    "Tier4_Moderate": 0,
+    "Tier1_Definitive": 0,
+    "Human": 9,
+    "Tier2_VeryHigh": 0,
+    "Tier5_Low": 0,
+    "Tier3_High": 0
+  }
+}

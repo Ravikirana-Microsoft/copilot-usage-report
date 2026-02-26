@@ -1,0 +1,243 @@
+{
+  "AnalysisPeriod": {
+    "FilterApplied": true,
+    "StartDate": "2026-01-05",
+    "EndDate": "2026-01-16"
+  },
+  "GeneratedAt": "2026-02-26 09:34:40",
+  "Metadata": {
+    "IncludeTestFiles": false,
+    "ScriptVersion": "2.0.0",
+    "GeneratedAt": "2026-02-26 09:34:40",
+    "PowerShellVersion": "7.4.13",
+    "GeneratedBy": "Copilot Usage Report Tool v2.0",
+    "AnalysisMethod": "5-Tier Weighted Pattern Detection"
+  },
+  "FileTypeBreakdown": [
+    {
+      "Extension": "ps1",
+      "TotalLines": 69454,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 538
+    },
+    {
+      "Extension": "json",
+      "TotalLines": 45486,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 60
+    },
+    {
+      "Extension": "md",
+      "TotalLines": 24968,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 295
+    },
+    {
+      "Extension": "sh",
+      "TotalLines": 9569,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 184
+    },
+    {
+      "Extension": "bicep",
+      "TotalLines": 2974,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 220
+    },
+    {
+      "Extension": "yaml",
+      "TotalLines": 1089,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 37
+    },
+    {
+      "Extension": "bicepparam",
+      "TotalLines": 841,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 11
+    },
+    {
+      "Extension": "yml",
+      "TotalLines": 798,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 40
+    },
+    {
+      "Extension": "gitignore",
+      "TotalLines": 679,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 21
+    },
+    {
+      "Extension": "py",
+      "TotalLines": 502,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 73
+    },
+    {
+      "Extension": "sample",
+      "TotalLines": 347,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 11
+    },
+    {
+      "Extension": "other",
+      "TotalLines": 154,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 21
+    },
+    {
+      "Extension": "env",
+      "TotalLines": 49,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 14
+    },
+    {
+      "Extension": "txt",
+      "TotalLines": 45,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 52
+    },
+    {
+      "Extension": "devcontainer/dockerfile",
+      "TotalLines": 24,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 6
+    },
+    {
+      "Extension": "gitmodules",
+      "TotalLines": 21,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 7
+    },
+    {
+      "Extension": "github/codeowners",
+      "TotalLines": 10,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 10
+    }
+  ],
+  "ApplicationName": "Deploy your AI application",
+  "AIAttributionOverride": {
+    "Applied": false,
+    "Notes": null,
+    "OverridePercentage": null
+  },
+  "Commits": [
+    {
+      "Hash": "9fb289cf17c67d80ad8abefe739d55c0db08f77f",
+      "Author": "Mike Swantek",
+      "Date": "Wed Jan 14 15:18:56 2026 -0500",
+      "Message": "Update pre-provision failover from bash to posh",
+      "LinesAdded": 111,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "cca1768ae0d748a4e077ddabdd93539896949bdd",
+      "Author": "Mike Swantek",
+      "Date": "Wed Jan 14 14:06:55 2026 -0500",
+      "Message": "Update Fabric automation Allow for BYO workspace and capacity Allow no workspace or capacity Allow creation of workspace or capacity",
+      "LinesAdded": 400,
+      "LinesDeleted": 50,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "fe20dc549be51930bbfecbd118b9016e501113ca",
+      "Author": "Mike Swantek",
+      "Date": "Tue Jan 13 09:22:02 2026 -0500",
+      "Message": "Update scripts and docs to reflect Fabric mode/preset parameters and correct output→script mappings",
+      "LinesAdded": 359,
+      "LinesDeleted": 30,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "a23d64818ac84e49f705c6a4d521cb566b8fb783",
+      "Author": "Mike Swantek",
+      "Date": "Mon Jan 5 16:48:25 2026 -0500",
+      "Message": "Remove unsupported Fabric private link scripts and update docs",
+      "LinesAdded": 45,
+      "LinesDeleted": 2063,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    }
+  ],
+  "BranchStatistics": {
+    "Branch": "main",
+    "TotalCommits": 4,
+    "AICommits": 0,
+    "HumanCommits": 4,
+    "TotalLinesAdded": 915.0,
+    "TotalLinesDeleted": 2144.0,
+    "AILinesAdded": null,
+    "AILinesDeleted": null,
+    "Tier1Commits": 0,
+    "Tier2Commits": 0,
+    "Tier3Commits": 0,
+    "Tier4Commits": 0,
+    "Tier5Commits": 0,
+    "UniqueContributors": 1,
+    "AIPercentage": 0.0,
+    "HumanLinesAdded": 915.0
+  },
+  "Users": [
+    {
+      "UserName": "Mike Swantek",
+      "UserEmail": "mike.swantek@microsoft.com",
+      "TotalCommits": 4,
+      "AICommits": 0,
+      "HumanCommits": 4,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 915,
+      "HumanLinesDeleted": 2144,
+      "TotalLinesAdded": 915,
+      "TotalLinesDeleted": 2144,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    }
+  ],
+  "Branch": "main",
+  "TierDistribution": {
+    "Tier4_Moderate": 0,
+    "Tier1_Definitive": 0,
+    "Human": 4,
+    "Tier2_VeryHigh": 0,
+    "Tier5_Low": 0,
+    "Tier3_High": 0
+  }
+}
