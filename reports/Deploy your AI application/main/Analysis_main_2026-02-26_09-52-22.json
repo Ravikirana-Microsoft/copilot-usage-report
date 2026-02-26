@@ -1,0 +1,240 @@
+{
+  "AnalysisPeriod": {
+    "StartDate": "2026-02-01",
+    "FilterApplied": true,
+    "EndDate": "2026-02-28"
+  },
+  "ApplicationName": "Deploy your AI application",
+  "AIAttributionOverride": {
+    "Applied": false,
+    "Notes": null,
+    "OverridePercentage": null
+  },
+  "TierDistribution": {
+    "Tier3_High": 0,
+    "Tier5_Low": 0,
+    "Tier4_Moderate": 0,
+    "Human": 2,
+    "Tier2_VeryHigh": 0,
+    "Tier1_Definitive": 0
+  },
+  "FileTypeBreakdown": [
+    {
+      "Extension": "ps1",
+      "TotalLines": 69454,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 538
+    },
+    {
+      "Extension": "json",
+      "TotalLines": 45491,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 61
+    },
+    {
+      "Extension": "md",
+      "TotalLines": 24983,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 296
+    },
+    {
+      "Extension": "sh",
+      "TotalLines": 9569,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 184
+    },
+    {
+      "Extension": "bicep",
+      "TotalLines": 2974,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 220
+    },
+    {
+      "Extension": "yaml",
+      "TotalLines": 1089,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 37
+    },
+    {
+      "Extension": "bicepparam",
+      "TotalLines": 841,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 11
+    },
+    {
+      "Extension": "yml",
+      "TotalLines": 798,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 40
+    },
+    {
+      "Extension": "gitignore",
+      "TotalLines": 679,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 21
+    },
+    {
+      "Extension": "py",
+      "TotalLines": 502,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 73
+    },
+    {
+      "Extension": "sample",
+      "TotalLines": 347,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 11
+    },
+    {
+      "Extension": "other",
+      "TotalLines": 154,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 21
+    },
+    {
+      "Extension": "env",
+      "TotalLines": 49,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 14
+    },
+    {
+      "Extension": "txt",
+      "TotalLines": 45,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 52
+    },
+    {
+      "Extension": "devcontainer/dockerfile",
+      "TotalLines": 28,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 7
+    },
+    {
+      "Extension": "gitmodules",
+      "TotalLines": 21,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 7
+    },
+    {
+      "Extension": "github/codeowners",
+      "TotalLines": 10,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 10
+    }
+  ],
+  "Branch": "main",
+  "Metadata": {
+    "IncludeTestFiles": false,
+    "ScriptVersion": "2.0.0",
+    "GeneratedBy": "Copilot Usage Report Tool v2.0",
+    "PowerShellVersion": "7.4.13",
+    "GeneratedAt": "2026-02-26 09:52:22",
+    "AnalysisMethod": "5-Tier Weighted Pattern Detection"
+  },
+  "Commits": [
+    {
+      "Hash": "926c6973d96b0dc5282145aecfd3059d4a99ca15",
+      "Author": "Prajwal-Microsoft",
+      "Date": "Thu Feb 19 13:44:50 2026 +0530",
+      "Message": "docs: Enhance README with cross references to resources",
+      "LinesAdded": 15,
+      "LinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "c9f99c73f0535218ec290669b0d77978ea138343",
+      "Author": "Prekshith-Microsoft",
+      "Date": "Wed Feb 11 13:05:56 2026 +0530",
+      "Message": "fixed the powershell issue (#107)",
+      "LinesAdded": 9,
+      "LinesDeleted": 2,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    }
+  ],
+  "Users": [
+    {
+      "UserName": "Prekshith-Microsoft",
+      "UserEmail": "v-pdj@microsoft.com",
+      "TotalCommits": 1,
+      "AICommits": 0,
+      "HumanCommits": 1,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 9,
+      "HumanLinesDeleted": 2,
+      "TotalLinesAdded": 9,
+      "TotalLinesDeleted": 2,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Prajwal-Microsoft",
+      "UserEmail": "v-dcprajwal@microsoft.com",
+      "TotalCommits": 1,
+      "AICommits": 0,
+      "HumanCommits": 1,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 15,
+      "HumanLinesDeleted": 0,
+      "TotalLinesAdded": 15,
+      "TotalLinesDeleted": 0,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    }
+  ],
+  "BranchStatistics": {
+    "Branch": "main",
+    "TotalCommits": 2,
+    "AICommits": 0,
+    "HumanCommits": 2,
+    "TotalLinesAdded": 24.0,
+    "TotalLinesDeleted": 2.0,
+    "AILinesAdded": null,
+    "AILinesDeleted": null,
+    "Tier1Commits": 0,
+    "Tier2Commits": 0,
+    "Tier3Commits": 0,
+    "Tier4Commits": 0,
+    "Tier5Commits": 0,
+    "UniqueContributors": 2,
+    "AIPercentage": 0.0,
+    "HumanLinesAdded": 24.0
+  },
+  "GeneratedAt": "2026-02-26 09:52:22"
+}

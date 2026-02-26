@@ -1,0 +1,262 @@
+{
+  "AnalysisPeriod": {
+    "StartDate": "2026-02-01",
+    "FilterApplied": true,
+    "EndDate": "2026-02-28"
+  },
+  "ApplicationName": "Container Migration",
+  "AIAttributionOverride": {
+    "Applied": false,
+    "Notes": null,
+    "OverridePercentage": null
+  },
+  "TierDistribution": {
+    "Tier3_High": 0,
+    "Tier5_Low": 0,
+    "Tier4_Moderate": 0,
+    "Human": 5,
+    "Tier2_VeryHigh": 0,
+    "Tier1_Definitive": 0
+  },
+  "FileTypeBreakdown": [
+    {
+      "Extension": "json",
+      "TotalLines": 249718,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 32
+    },
+    {
+      "Extension": "yml",
+      "TotalLines": 15427,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 293
+    },
+    {
+      "Extension": "md",
+      "TotalLines": 7563,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 348
+    },
+    {
+      "Extension": "tsx",
+      "TotalLines": 1281,
+      "AILines": 912,
+      "AIPercentage": 71.19,
+      "FileCount": 12
+    },
+    {
+      "Extension": "sh",
+      "TotalLines": 744,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 6
+    },
+    {
+      "Extension": "py",
+      "TotalLines": 402,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 42
+    },
+    {
+      "Extension": "bicep",
+      "TotalLines": 259,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 37
+    },
+    {
+      "Extension": "gitignore",
+      "TotalLines": 255,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 3
+    },
+    {
+      "Extension": "jsx",
+      "TotalLines": 84,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 14
+    },
+    {
+      "Extension": "example",
+      "TotalLines": 69,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 6
+    },
+    {
+      "Extension": "other",
+      "TotalLines": 63,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 3
+    },
+    {
+      "Extension": "env",
+      "TotalLines": 21,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 3
+    },
+    {
+      "Extension": "txt",
+      "TotalLines": 18,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 6
+    },
+    {
+      "Extension": "devcontainer/dockerfile",
+      "TotalLines": 15,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 6
+    },
+    {
+      "Extension": "github/codeowners",
+      "TotalLines": 10,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 10
+    }
+  ],
+  "Branch": "dev",
+  "Metadata": {
+    "IncludeTestFiles": false,
+    "ScriptVersion": "2.0.0",
+    "GeneratedBy": "Copilot Usage Report Tool v2.0",
+    "PowerShellVersion": "7.4.13",
+    "GeneratedAt": "2026-02-26 09:52:24",
+    "AnalysisMethod": "5-Tier Weighted Pattern Detection"
+  },
+  "Commits": [
+    {
+      "Hash": "40af55827ad30b1fcba6a658b08a085192d84fa6",
+      "Author": "Dhruvkumar-Microsoft",
+      "Date": "Mon Feb 23 12:01:19 2026 +0530",
+      "Message": "updated the quota check",
+      "LinesAdded": 1,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "03d17a39a165042cc3cba674eb68901c8211f213",
+      "Author": "Dhruvkumar-Microsoft",
+      "Date": "Mon Feb 23 11:07:34 2026 +0530",
+      "Message": "updated the pipeline deploy linux",
+      "LinesAdded": 8,
+      "LinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "20ad5fab193569f91b5fa184086ee8553130fbf7",
+      "Author": "Prekshith D J (Persistent Systems Inc)",
+      "Date": "Thu Feb 19 15:44:25 2026 +0530",
+      "Message": "Regenerated the main.json file",
+      "LinesAdded": 62377,
+      "LinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "9fc1059e516e0e5966f5c932a3fb76ad1b328ad6",
+      "Author": "Prekshith D J (Persistent Systems Inc)",
+      "Date": "Thu Feb 19 10:26:37 2026 +0530",
+      "Message": "Call the variable outside the resource",
+      "LinesAdded": 6,
+      "LinesDeleted": 2,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "fa03e4b64f5b9ed41c1e7e78d6069756a1e243b6",
+      "Author": "Prekshith D J (Persistent Systems Inc)",
+      "Date": "Wed Feb 18 17:35:27 2026 +0530",
+      "Message": "Fixed the tag issue",
+      "LinesAdded": 18,
+      "LinesDeleted": 14,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    }
+  ],
+  "Users": [
+    {
+      "UserName": "Prekshith D J (Persistent Systems Inc)",
+      "UserEmail": "v-pdj@microsoft.com",
+      "TotalCommits": 3,
+      "AICommits": 0,
+      "HumanCommits": 3,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 62401,
+      "HumanLinesDeleted": 16,
+      "TotalLinesAdded": 62401,
+      "TotalLinesDeleted": 16,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Dhruvkumar-Microsoft",
+      "UserEmail": "v-dbabariya@microsoft.com",
+      "TotalCommits": 2,
+      "AICommits": 0,
+      "HumanCommits": 2,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 9,
+      "HumanLinesDeleted": 1,
+      "TotalLinesAdded": 9,
+      "TotalLinesDeleted": 1,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    }
+  ],
+  "BranchStatistics": {
+    "Branch": "dev",
+    "TotalCommits": 5,
+    "AICommits": 0,
+    "HumanCommits": 5,
+    "TotalLinesAdded": 62410.0,
+    "TotalLinesDeleted": 17.0,
+    "AILinesAdded": null,
+    "AILinesDeleted": null,
+    "Tier1Commits": 0,
+    "Tier2Commits": 0,
+    "Tier3Commits": 0,
+    "Tier4Commits": 0,
+    "Tier5Commits": 0,
+    "UniqueContributors": 2,
+    "AIPercentage": 0.0,
+    "HumanLinesAdded": 62410.0
+  },
+  "GeneratedAt": "2026-02-26 09:52:24"
+}

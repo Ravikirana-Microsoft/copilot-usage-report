@@ -1,0 +1,170 @@
+{
+  "AnalysisPeriod": {
+    "StartDate": "2026-02-01",
+    "FilterApplied": true,
+    "EndDate": "2026-02-28"
+  },
+  "ApplicationName": "DKM",
+  "AIAttributionOverride": {
+    "Applied": false,
+    "Notes": null,
+    "OverridePercentage": null
+  },
+  "TierDistribution": {
+    "Tier3_High": 0,
+    "Tier5_Low": 0,
+    "Tier4_Moderate": 0,
+    "Human": 2,
+    "Tier2_VeryHigh": 0,
+    "Tier1_Definitive": 0
+  },
+  "FileTypeBreakdown": [
+    {
+      "Extension": "md",
+      "TotalLines": 11953,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 204
+    },
+    {
+      "Extension": "py",
+      "TotalLines": 6015,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 9
+    },
+    {
+      "Extension": "json",
+      "TotalLines": 2394,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "sample",
+      "TotalLines": 1897,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 29
+    },
+    {
+      "Extension": "ps1",
+      "TotalLines": 259,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 14
+    },
+    {
+      "Extension": "yml",
+      "TotalLines": 216,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 43
+    },
+    {
+      "Extension": "bicep",
+      "TotalLines": 62,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "template",
+      "TotalLines": 22,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 12
+    },
+    {
+      "Extension": "yaml",
+      "TotalLines": 21,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 7
+    },
+    {
+      "Extension": "github/codeowners",
+      "TotalLines": 10,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 10
+    }
+  ],
+  "Branch": "dev",
+  "Metadata": {
+    "IncludeTestFiles": false,
+    "ScriptVersion": "2.0.0",
+    "GeneratedBy": "Copilot Usage Report Tool v2.0",
+    "PowerShellVersion": "7.4.13",
+    "GeneratedAt": "2026-02-26 09:52:23",
+    "AnalysisMethod": "5-Tier Weighted Pattern Detection"
+  },
+  "Commits": [
+    {
+      "Hash": "86fd47f5ea09924349211fac397f554bc52d026f",
+      "Author": "Harsh-Microsoft",
+      "Date": "Mon Feb 23 11:03:19 2026 +0000",
+      "Message": "replace avm module with bicep module for search service initial provision",
+      "LinesAdded": 26,
+      "LinesDeleted": 2401,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "bf000139e96d438d9ec5485ac205404c57180de3",
+      "Author": "Harsh-Microsoft",
+      "Date": "Mon Feb 16 12:54:38 2026 +0000",
+      "Message": "refactor: separate search service module to enable managed identity to reduce deployment time",
+      "LinesAdded": 2430,
+      "LinesDeleted": 33,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    }
+  ],
+  "Users": [
+    {
+      "UserName": "Harsh-Microsoft",
+      "UserEmail": "v-hbangera@microsoft.com",
+      "TotalCommits": 2,
+      "AICommits": 0,
+      "HumanCommits": 2,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 2456,
+      "HumanLinesDeleted": 2434,
+      "TotalLinesAdded": 2456,
+      "TotalLinesDeleted": 2434,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    }
+  ],
+  "BranchStatistics": {
+    "Branch": "dev",
+    "TotalCommits": 2,
+    "AICommits": 0,
+    "HumanCommits": 2,
+    "TotalLinesAdded": 2456.0,
+    "TotalLinesDeleted": 2434.0,
+    "AILinesAdded": null,
+    "AILinesDeleted": null,
+    "Tier1Commits": 0,
+    "Tier2Commits": 0,
+    "Tier3Commits": 0,
+    "Tier4Commits": 0,
+    "Tier5Commits": 0,
+    "UniqueContributors": 1,
+    "AIPercentage": 0.0,
+    "HumanLinesAdded": 2456.0
+  },
+  "GeneratedAt": "2026-02-26 09:52:23"
+}

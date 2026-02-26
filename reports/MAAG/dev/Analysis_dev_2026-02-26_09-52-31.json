@@ -1,0 +1,219 @@
+{
+  "AnalysisPeriod": {
+    "StartDate": "2026-02-01",
+    "FilterApplied": true,
+    "EndDate": "2026-02-28"
+  },
+  "ApplicationName": "MAAG",
+  "AIAttributionOverride": {
+    "Applied": false,
+    "Notes": null,
+    "OverridePercentage": null
+  },
+  "TierDistribution": {
+    "Tier3_High": 0,
+    "Tier5_Low": 0,
+    "Tier4_Moderate": 0,
+    "Human": 1,
+    "Tier2_VeryHigh": 0,
+    "Tier1_Definitive": 0
+  },
+  "FileTypeBreakdown": [
+    {
+      "Extension": "csv",
+      "TotalLines": 36188,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 12
+    },
+    {
+      "Extension": "py",
+      "TotalLines": 22581,
+      "AILines": 22005,
+      "AIPercentage": 97.45,
+      "FileCount": 150
+    },
+    {
+      "Extension": "md",
+      "TotalLines": 19269,
+      "AILines": 3708,
+      "AIPercentage": 19.24,
+      "FileCount": 399
+    },
+    {
+      "Extension": "ps1",
+      "TotalLines": 8520,
+      "AILines": 7608,
+      "AIPercentage": 89.3,
+      "FileCount": 24
+    },
+    {
+      "Extension": "bak",
+      "TotalLines": 4743,
+      "AILines": 4743,
+      "AIPercentage": 100.0,
+      "FileCount": 6
+    },
+    {
+      "Extension": "ipynb",
+      "TotalLines": 3760,
+      "AILines": 1149,
+      "AIPercentage": 30.56,
+      "FileCount": 258
+    },
+    {
+      "Extension": "sh",
+      "TotalLines": 750,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 12
+    },
+    {
+      "Extension": "py}",
+      "TotalLines": 436,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 8
+    },
+    {
+      "Extension": "yml",
+      "TotalLines": 348,
+      "AILines": 72,
+      "AIPercentage": 20.69,
+      "FileCount": 28
+    },
+    {
+      "Extension": "gitignore",
+      "TotalLines": 255,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 3
+    },
+    {
+      "Extension": "json",
+      "TotalLines": 249,
+      "AILines": 24,
+      "AIPercentage": 9.64,
+      "FileCount": 12
+    },
+    {
+      "Extension": "txt",
+      "TotalLines": 233,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 21
+    },
+    {
+      "Extension": "other",
+      "TotalLines": 63,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 3
+    },
+    {
+      "Extension": "platform",
+      "TotalLines": 36,
+      "AILines": 36,
+      "AIPercentage": 100.0,
+      "FileCount": 3
+    },
+    {
+      "Extension": "env",
+      "TotalLines": 21,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 3
+    },
+    {
+      "Extension": "bicep",
+      "TotalLines": 18,
+      "AILines": 6,
+      "AIPercentage": 33.33,
+      "FileCount": 7
+    },
+    {
+      "Extension": "yaml",
+      "TotalLines": 16,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 4
+    },
+    {
+      "Extension": "devcontainer/dockerfile",
+      "TotalLines": 12,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 3
+    },
+    {
+      "Extension": "github/codeowners",
+      "TotalLines": 10,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 10
+    }
+  ],
+  "Branch": "dev",
+  "Metadata": {
+    "IncludeTestFiles": false,
+    "ScriptVersion": "2.0.0",
+    "GeneratedBy": "Copilot Usage Report Tool v2.0",
+    "PowerShellVersion": "7.4.13",
+    "GeneratedAt": "2026-02-26 09:52:31",
+    "AnalysisMethod": "5-Tier Weighted Pattern Detection"
+  },
+  "Commits": {
+    "Hash": "2726fda889d8668d408975b6cbcde80cddbf071b",
+    "Author": "Saswato-Microsoft",
+    "Date": "Wed Feb 4 13:33:24 2026 +0530",
+    "Message": "Refactor lakehouse path configuration in notebooks to use dynamic workspace and lakehouse IDs",
+    "LinesAdded": 373,
+    "LinesDeleted": 144,
+    "IsAI": false,
+    "ConfidenceScore": 0,
+    "ConfidenceTier": "Human Written",
+    "TierNumber": 0
+  },
+  "Users": [
+    {
+      "UserName": "Saswato-Microsoft",
+      "UserEmail": "v-saswatoc@microsoft.com",
+      "TotalCommits": 1,
+      "AICommits": 0,
+      "HumanCommits": 1,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 373,
+      "HumanLinesDeleted": 144,
+      "TotalLinesAdded": 373,
+      "TotalLinesDeleted": 144,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    }
+  ],
+  "BranchStatistics": {
+    "Branch": "dev",
+    "TotalCommits": 1,
+    "AICommits": 0,
+    "HumanCommits": 1,
+    "TotalLinesAdded": 373.0,
+    "TotalLinesDeleted": 144.0,
+    "AILinesAdded": null,
+    "AILinesDeleted": null,
+    "Tier1Commits": 0,
+    "Tier2Commits": 0,
+    "Tier3Commits": 0,
+    "Tier4Commits": 0,
+    "Tier5Commits": 0,
+    "UniqueContributors": 1,
+    "AIPercentage": 0.0,
+    "HumanLinesAdded": 373.0
+  },
+  "GeneratedAt": "2026-02-26 09:52:31"
+}

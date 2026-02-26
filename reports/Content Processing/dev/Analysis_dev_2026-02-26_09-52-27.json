@@ -1,0 +1,292 @@
+{
+  "AnalysisPeriod": {
+    "StartDate": "2026-02-01",
+    "FilterApplied": true,
+    "EndDate": "2026-02-28"
+  },
+  "ApplicationName": "Content Processing",
+  "AIAttributionOverride": {
+    "Applied": false,
+    "Notes": null,
+    "OverridePercentage": null
+  },
+  "TierDistribution": {
+    "Tier3_High": 0,
+    "Tier5_Low": 0,
+    "Tier4_Moderate": 0,
+    "Human": 4,
+    "Tier2_VeryHigh": 1,
+    "Tier1_Definitive": 0
+  },
+  "FileTypeBreakdown": [
+    {
+      "Extension": "json",
+      "TotalLines": 77379,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 125
+    },
+    {
+      "Extension": "lock",
+      "TotalLines": 45429,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 95
+    },
+    {
+      "Extension": "md",
+      "TotalLines": 19253,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 319
+    },
+    {
+      "Extension": "yml",
+      "TotalLines": 15310,
+      "AILines": 1,
+      "AIPercentage": 0.01,
+      "FileCount": 474
+    },
+    {
+      "Extension": "txt",
+      "TotalLines": 14403,
+      "AILines": 3,
+      "AIPercentage": 0.02,
+      "FileCount": 100
+    },
+    {
+      "Extension": "py",
+      "TotalLines": 4453,
+      "AILines": 1124,
+      "AIPercentage": 25.24,
+      "FileCount": 202
+    },
+    {
+      "Extension": "bicep",
+      "TotalLines": 2144,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 76
+    },
+    {
+      "Extension": "toml",
+      "TotalLines": 274,
+      "AILines": 13,
+      "AIPercentage": 4.74,
+      "FileCount": 49
+    },
+    {
+      "Extension": "gitignore",
+      "TotalLines": 255,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 3
+    },
+    {
+      "Extension": "ps1",
+      "TotalLines": 246,
+      "AILines": 222,
+      "AIPercentage": 90.24,
+      "FileCount": 6
+    },
+    {
+      "Extension": "tsx",
+      "TotalLines": 168,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 77
+    },
+    {
+      "Extension": "sh",
+      "TotalLines": 153,
+      "AILines": 144,
+      "AIPercentage": 94.12,
+      "FileCount": 6
+    },
+    {
+      "Extension": "other",
+      "TotalLines": 87,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 12
+    },
+    {
+      "Extension": "env",
+      "TotalLines": 24,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 6
+    },
+    {
+      "Extension": "yaml",
+      "TotalLines": 18,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 14
+    },
+    {
+      "Extension": "github/codeowners",
+      "TotalLines": 10,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 10
+    },
+    {
+      "Extension": "devcontainer/dockerfile",
+      "TotalLines": 9,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 3
+    },
+    {
+      "Extension": "ts",
+      "TotalLines": 7,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 7
+    },
+    {
+      "Extension": "ini",
+      "TotalLines": 6,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 3
+    }
+  ],
+  "Branch": "dev",
+  "Metadata": {
+    "IncludeTestFiles": false,
+    "ScriptVersion": "2.0.0",
+    "GeneratedBy": "Copilot Usage Report Tool v2.0",
+    "PowerShellVersion": "7.4.13",
+    "GeneratedAt": "2026-02-26 09:52:27",
+    "AnalysisMethod": "5-Tier Weighted Pattern Detection"
+  },
+  "Commits": [
+    {
+      "Hash": "fb489631f69ee804101c85e135799d13ad1f096c",
+      "Author": "Ajit Padhi",
+      "Date": "Wed Feb 25 12:53:26 2026 +0530",
+      "Message": "lint issue fix",
+      "LinesAdded": 3,
+      "LinesDeleted": 3,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "b3035f376c807c72c60a7865e2358a49eec93a4c",
+      "Author": "Ajit Padhi",
+      "Date": "Wed Feb 25 12:45:20 2026 +0530",
+      "Message": "Unit test pipeline fix with update",
+      "LinesAdded": 892,
+      "LinesDeleted": 92,
+      "IsAI": true,
+      "ConfidenceScore": 98,
+      "ConfidenceTier": "Tier 2: Very High Confidence (90-98 percent)",
+      "TierNumber": 2
+    },
+    {
+      "Hash": "3ca02241d2638ed6680a55094507460f347961db",
+      "Author": "Prekshith D J (Persistent Systems Inc)",
+      "Date": "Thu Feb 19 15:42:46 2026 +0530",
+      "Message": "Regenerated the main.json file",
+      "LinesAdded": 34,
+      "LinesDeleted": 33,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "6d9ee25ad5dde26c6114be409b6274959b507b37",
+      "Author": "Prekshith D J (Persistent Systems Inc)",
+      "Date": "Thu Feb 19 10:25:17 2026 +0530",
+      "Message": "Call the variable outside the resource",
+      "LinesAdded": 3,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "4ab9f85d0d5d2423ad7344c5a582f316f8e3b2b9",
+      "Author": "Prekshith D J (Persistent Systems Inc)",
+      "Date": "Wed Feb 18 17:21:20 2026 +0530",
+      "Message": "Fixed the tag issue",
+      "LinesAdded": 5,
+      "LinesDeleted": 3,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    }
+  ],
+  "Users": [
+    {
+      "UserName": "Ajit Padhi",
+      "UserEmail": "v-padhiajit@microsoft.com",
+      "TotalCommits": 2,
+      "AICommits": 1,
+      "HumanCommits": 1,
+      "AILinesAdded": 892,
+      "AILinesDeleted": 92,
+      "HumanLinesAdded": 3,
+      "HumanLinesDeleted": 3,
+      "TotalLinesAdded": 895,
+      "TotalLinesDeleted": 95,
+      "AIPercentage": 99.66,
+      "AvgConfidenceScore": 98.0,
+      "ConfidenceScores": [
+        98
+      ],
+      "Tier1Commits": 0,
+      "Tier2Commits": 1,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Prekshith D J (Persistent Systems Inc)",
+      "UserEmail": "v-pdj@microsoft.com",
+      "TotalCommits": 3,
+      "AICommits": 0,
+      "HumanCommits": 3,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 42,
+      "HumanLinesDeleted": 37,
+      "TotalLinesAdded": 42,
+      "TotalLinesDeleted": 37,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    }
+  ],
+  "BranchStatistics": {
+    "Branch": "dev",
+    "TotalCommits": 5,
+    "AICommits": 1,
+    "HumanCommits": 4,
+    "TotalLinesAdded": 937.0,
+    "TotalLinesDeleted": 132.0,
+    "AILinesAdded": 892.0,
+    "AILinesDeleted": 92.0,
+    "Tier1Commits": 0,
+    "Tier2Commits": 1,
+    "Tier3Commits": 0,
+    "Tier4Commits": 0,
+    "Tier5Commits": 0,
+    "UniqueContributors": 2,
+    "AIPercentage": 95.2,
+    "HumanLinesAdded": 45.0
+  },
+  "GeneratedAt": "2026-02-26 09:52:27"
+}
