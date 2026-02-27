@@ -13,3 +13,4 @@ Deploy your AI application,https://github.com/microsoft/Deploy-Your-AI-Applicati
 MAAG,https://github.com/microsoft/unified-data-foundation-with-fabric-solution-accelerator.git,dev,,Team-Container,Cloud Migration,50,true
 RTI,https://github.com/microsoft/real-time-intelligence-operations-solution-accelerator.git,main,,Team-Container,Cloud Migration,50,true
 KM Generic,https://github.com/microsoft/Conversation-Knowledge-Mining-Solution-Accelerator.git,dev,,Team-Container,Cloud Migration,50,true
+Data and Security,https://github.com/microsoft/Data-and-Agent-Governance-and-Security-Accelerator.git,dev,,,Cloud Migration,50,true
