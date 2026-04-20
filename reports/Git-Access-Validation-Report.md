@@ -1,11 +1,11 @@
 # Git Access Validation Report
 
-**Generated:** 2026-04-20 08:37:19
+**Generated:** 2026-04-20 08:44:25
 
 ## Summary
 
-- **Total Applications:** 16
-- **Accessible:** 16 ✓
+- **Total Applications:** 15
+- **Accessible:** 15 ✓
 - **Not Accessible:** 0 ✗
 
 ## Detailed Results
@@ -16,7 +16,6 @@
 | Container Migration | https://github.com/microsoft/Container-Migration-Solution-Accelerator.git | ✓ Success |  |
 | Fabric SQL | https://github.com/microsoft/agentic-applications-for-unified-data-foundation-solution-accelerator.git | ✓ Success |  |
 | MACAE v4 | https://github.com/microsoft/Multi-Agent-Custom-Automation-Engine-Solution-Accelerator.git | ✓ Success |  |
-| Doc Gen | https://github.com/microsoft/document-generation-solution-accelerator.git | ✓ Success |  |
 | CWYD | https://github.com/Azure-Samples/chat-with-your-data-solution-accelerator.git | ✓ Success |  |
 | BYOC | https://github.com/microsoft/Build-your-own-copilot-Solution-Accelerator.git | ✓ Success |  |
 | DKM | https://github.com/microsoft/Document-Knowledge-Mining-Solution-Accelerator.git | ✓ Success |  |

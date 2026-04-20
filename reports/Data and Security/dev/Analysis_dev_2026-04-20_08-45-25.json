@@ -1,0 +1,440 @@
+{
+  "BranchStatistics": {
+    "Branch": "dev",
+    "TotalCommits": 21,
+    "AICommits": 0,
+    "HumanCommits": 21,
+    "TotalLinesAdded": 600.0,
+    "TotalLinesDeleted": 268.0,
+    "AILinesAdded": null,
+    "AILinesDeleted": null,
+    "Tier1Commits": 0,
+    "Tier2Commits": 0,
+    "Tier3Commits": 0,
+    "Tier4Commits": 0,
+    "Tier5Commits": 0,
+    "UniqueContributors": 3,
+    "AIPercentage": 0.0,
+    "HumanLinesAdded": 600.0
+  },
+  "ApplicationName": "Data and Security",
+  "Users": [
+    {
+      "UserName": "Saswato-Microsoft",
+      "UserEmail": "v-saswatoc@microsoft.com",
+      "TotalCommits": 15,
+      "AICommits": 0,
+      "HumanCommits": 15,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 519,
+      "HumanLinesDeleted": 176,
+      "TotalLinesAdded": 519,
+      "TotalLinesDeleted": 176,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Harmanpreet-Microsoft",
+      "UserEmail": "v-harmanprka@microsoft.com",
+      "TotalCommits": 5,
+      "AICommits": 0,
+      "HumanCommits": 5,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 51,
+      "HumanLinesDeleted": 5,
+      "TotalLinesAdded": 51,
+      "TotalLinesDeleted": 5,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Mike Swantek",
+      "UserEmail": "mike.swantek@microsoft.com",
+      "TotalCommits": 1,
+      "AICommits": 0,
+      "HumanCommits": 1,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 30,
+      "HumanLinesDeleted": 87,
+      "TotalLinesAdded": 30,
+      "TotalLinesDeleted": 87,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    }
+  ],
+  "AnalysisPeriod": {
+    "StartDate": "2026-02-01",
+    "EndDate": "2026-02-28",
+    "FilterApplied": true
+  },
+  "TierDistribution": {
+    "Tier5_Low": 0,
+    "Human": 21,
+    "Tier1_Definitive": 0,
+    "Tier2_VeryHigh": 0,
+    "Tier3_High": 0,
+    "Tier4_Moderate": 0
+  },
+  "GeneratedAt": "2026-04-20 08:45:25",
+  "Commits": [
+    {
+      "Hash": "3424484c4eaf8dfc431a692573558d8d72fb03ca",
+      "Author": "Saswato-Microsoft",
+      "Date": "Fri Feb 27 19:08:06 2026 +0530",
+      "Message": "Rename Azure Template Validation workflow",
+      "LinesAdded": 1,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "d985ec88c6ac35dd7f2ae8839238a75e96073362",
+      "Author": "Harmanpreet-Microsoft",
+      "Date": "Fri Feb 27 11:14:55 2026 +0530",
+      "Message": "Update .github/workflows/stale-bot.yml",
+      "LinesAdded": 1,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "5c6883b060f756f60a7f59c95a1c707e7abe92d5",
+      "Author": "Saswato-Microsoft",
+      "Date": "Fri Feb 27 11:05:45 2026 +0530",
+      "Message": "Update .github/workflows/powershell-analyzer.yml",
+      "LinesAdded": 1,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "51a5f3282a90bccd1cb19c8c2b2d5793e4cfe817",
+      "Author": "Saswato-Microsoft",
+      "Date": "Fri Feb 27 10:33:32 2026 +0530",
+      "Message": "Update .github/workflows/create-release.yml",
+      "LinesAdded": 1,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "a2d8572ec5f0cb3c876d73303db720e931801750",
+      "Author": "Saswato-Microsoft",
+      "Date": "Fri Feb 27 10:28:20 2026 +0530",
+      "Message": "Update .github/workflows/create-release.yml",
+      "LinesAdded": 0,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "f3dc61f11841ef82a8ca9d2ccaaa074bc5b3c728",
+      "Author": "Saswato-Microsoft",
+      "Date": "Wed Feb 25 20:19:34 2026 +0530",
+      "Message": "Add installation instructions for Azure Security module in Deployment Guide",
+      "LinesAdded": 3,
+      "LinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "2812b0a5b79f66e56a1caf0cbd712d0a2199bb7b",
+      "Author": "Harmanpreet-Microsoft",
+      "Date": "Tue Feb 24 19:16:31 2026 +0530",
+      "Message": "Update powershell-analyzer.yml",
+      "LinesAdded": 2,
+      "LinesDeleted": 2,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "233ee6bd5ac7a22a3c1f2b13e0bad00f291b3bed",
+      "Author": "Harmanpreet-Microsoft",
+      "Date": "Tue Feb 24 19:08:18 2026 +0530",
+      "Message": "Update pull request template file",
+      "LinesAdded": 0,
+      "LinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "0216cd0face6226625b2f654dd9526a1c7d8a0a7",
+      "Author": "Harmanpreet-Microsoft",
+      "Date": "Tue Feb 24 19:07:36 2026 +0530",
+      "Message": "Create pull request template for contributors",
+      "LinesAdded": 46,
+      "LinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "c91b257498827dc2aa76ae59d9d1d36d00a2df17",
+      "Author": "Harmanpreet-Microsoft",
+      "Date": "Tue Feb 24 19:06:07 2026 +0530",
+      "Message": "Exclude rule for ConvertToSecureString in analyzer",
+      "LinesAdded": 2,
+      "LinesDeleted": 2,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "bb5abbc0794ebba51b050c1e36307ff715a38c37",
+      "Author": "Saswato-Microsoft",
+      "Date": "Mon Feb 23 17:50:18 2026 +0530",
+      "Message": "Update checkout step in create-release workflow to use correct reference",
+      "LinesAdded": 2,
+      "LinesDeleted": 2,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "ad00495c4a68cb508009162b792f5f0e847acea9",
+      "Author": "Saswato-Microsoft",
+      "Date": "Mon Feb 23 15:10:41 2026 +0530",
+      "Message": "Remove CodeQL workflow configuration file",
+      "LinesAdded": 0,
+      "LinesDeleted": 94,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "1b00f42401843b8728b643760c7287b5ededf3e3",
+      "Author": "Saswato-Microsoft",
+      "Date": "Mon Feb 23 15:05:12 2026 +0530",
+      "Message": "Add GitHub workflows for automation and management tasks",
+      "LinesAdded": 414,
+      "LinesDeleted": 62,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "d6775d395db65c93fc36ec526935865c4891bdec",
+      "Author": "Mike Swantek",
+      "Date": "Thu Feb 19 15:01:10 2026 -0500",
+      "Message": "updates to match working content at tech connect",
+      "LinesAdded": 30,
+      "LinesDeleted": 87,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "029b5f282ef79d60add88df4f1e7c9e68d55adf0",
+      "Author": "Saswato-Microsoft",
+      "Date": "Thu Feb 19 19:27:43 2026 +0530",
+      "Message": "Update run script parameters to include specific tags",
+      "LinesAdded": 1,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "7a85f43dea19df91b0a91b46c7dced386fcdc1ea",
+      "Author": "Saswato-Microsoft",
+      "Date": "Thu Feb 19 17:27:39 2026 +0530",
+      "Message": "Add Az.Purview module installation to DSPM automation workflow",
+      "LinesAdded": 1,
+      "LinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "e90faa343e788e2a2de562bf0d00969ac3882dfb",
+      "Author": "Saswato-Microsoft",
+      "Date": "Thu Feb 19 17:09:13 2026 +0530",
+      "Message": "Fix certificate path in OIDC automation workflow",
+      "LinesAdded": 1,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "2ae35ec6294f3d150759485b87c2a85fedd9b839",
+      "Author": "Saswato-Microsoft",
+      "Date": "Thu Feb 19 17:03:22 2026 +0530",
+      "Message": "Refactor condition for M365 certificate handling in OIDC automation workflow",
+      "LinesAdded": 7,
+      "LinesDeleted": 5,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "f56a12e9ae4a620e8cb9e6bbb749c023588425da",
+      "Author": "Saswato-Microsoft",
+      "Date": "Mon Feb 9 17:38:35 2026 +0530",
+      "Message": "Add optional Azure PowerShell module installation instructions to Deployment Guide",
+      "LinesAdded": 22,
+      "LinesDeleted": 3,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "df83aabb90c538d0026d6a1dbdc49932b9d1500e",
+      "Author": "Saswato-Microsoft",
+      "Date": "Mon Feb 2 21:01:25 2026 +0530",
+      "Message": "Add Bash command examples for copying spec files in documentation",
+      "LinesAdded": 20,
+      "LinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "7921c02722c18b3a90a5c001784946736c7d0cac",
+      "Author": "Saswato-Microsoft",
+      "Date": "Mon Feb 2 15:58:38 2026 +0530",
+      "Message": "Update README and Deployment Guide for clarity on permissions and resource requirements",
+      "LinesAdded": 45,
+      "LinesDeleted": 4,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    }
+  ],
+  "FileTypeBreakdown": [
+    {
+      "Extension": "ps1",
+      "TotalLines": 2235,
+      "AILines": 169,
+      "AIPercentage": 7.56,
+      "FileCount": 42
+    },
+    {
+      "Extension": "md",
+      "TotalLines": 802,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 49
+    },
+    {
+      "Extension": "yml",
+      "TotalLines": 569,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 45
+    },
+    {
+      "Extension": "json",
+      "TotalLines": 341,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 6
+    },
+    {
+      "Extension": "md\"",
+      "TotalLines": 46,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 1
+    },
+    {
+      "Extension": "bicep",
+      "TotalLines": 28,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "bicepparam",
+      "TotalLines": 16,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 3
+    },
+    {
+      "Extension": "yaml",
+      "TotalLines": 10,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 4
+    },
+    {
+      "Extension": "github/codeowners",
+      "TotalLines": 2,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 1
+    },
+    {
+      "Extension": "yml}",
+      "TotalLines": 1,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 1
+    }
+  ],
+  "Branch": "dev",
+  "Metadata": {
+    "GeneratedAt": "2026-04-20 08:45:25",
+    "IncludeTestFiles": false,
+    "ScriptVersion": "2.0.0",
+    "GeneratedBy": "Copilot Usage Report Tool v2.0",
+    "PowerShellVersion": "7.4.14",
+    "AnalysisMethod": "5-Tier Weighted Pattern Detection"
+  },
+  "AIAttributionOverride": {
+    "OverridePercentage": null,
+    "Applied": false,
+    "Notes": null
+  }
+}

@@ -1,0 +1,590 @@
+{
+  "BranchStatistics": {
+    "Branch": "main",
+    "TotalCommits": 23,
+    "AICommits": 0,
+    "HumanCommits": 23,
+    "TotalLinesAdded": 1591.0,
+    "TotalLinesDeleted": 843.0,
+    "AILinesAdded": null,
+    "AILinesDeleted": null,
+    "Tier1Commits": 0,
+    "Tier2Commits": 0,
+    "Tier3Commits": 0,
+    "Tier4Commits": 0,
+    "Tier5Commits": 0,
+    "UniqueContributors": 5,
+    "AIPercentage": 0.0,
+    "HumanLinesAdded": 1591.0
+  },
+  "ApplicationName": "RTI",
+  "Users": [
+    {
+      "UserName": "Niraj Chaudhari (Persistent Systems Inc)",
+      "UserEmail": "v-nirajcha@microsoft.com",
+      "TotalCommits": 2,
+      "AICommits": 0,
+      "HumanCommits": 2,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 176,
+      "HumanLinesDeleted": 1,
+      "TotalLinesAdded": 176,
+      "TotalLinesDeleted": 1,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Yamini-Microsoft",
+      "UserEmail": "v-yamini3@microsoft.com",
+      "TotalCommits": 9,
+      "AICommits": 0,
+      "HumanCommits": 9,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 1133,
+      "HumanLinesDeleted": 680,
+      "TotalLinesAdded": 1133,
+      "TotalLinesDeleted": 680,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Prajwal-Microsoft",
+      "UserEmail": "v-dcprajwal@microsoft.com",
+      "TotalCommits": 1,
+      "AICommits": 0,
+      "HumanCommits": 1,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 9,
+      "HumanLinesDeleted": 1,
+      "TotalLinesAdded": 9,
+      "TotalLinesDeleted": 1,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Ayaz-Microsoft",
+      "UserEmail": "v-ayazkhan@microsoft.com",
+      "TotalCommits": 7,
+      "AICommits": 0,
+      "HumanCommits": 7,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 31,
+      "HumanLinesDeleted": 46,
+      "TotalLinesAdded": 31,
+      "TotalLinesDeleted": 46,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Vamshi-Microsoft",
+      "UserEmail": "v-vamolla@microsoft.com",
+      "TotalCommits": 4,
+      "AICommits": 0,
+      "HumanCommits": 4,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 242,
+      "HumanLinesDeleted": 115,
+      "TotalLinesAdded": 242,
+      "TotalLinesDeleted": 115,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    }
+  ],
+  "AnalysisPeriod": {
+    "StartDate": "2026-02-01",
+    "EndDate": "2026-02-28",
+    "FilterApplied": true
+  },
+  "TierDistribution": {
+    "Tier5_Low": 0,
+    "Human": 23,
+    "Tier1_Definitive": 0,
+    "Tier2_VeryHigh": 0,
+    "Tier3_High": 0,
+    "Tier4_Moderate": 0
+  },
+  "GeneratedAt": "2026-04-20 08:45:36",
+  "Commits": [
+    {
+      "Hash": "90c0001f57fdd9adbb81642e06fd6120f3100edc",
+      "Author": "Yamini-Microsoft",
+      "Date": "Thu Feb 26 19:09:36 2026 +0530",
+      "Message": "chore: remove temporary SecurityControl tag from main.bicep",
+      "LinesAdded": 0,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "75f87e41262f45ce51509f6ce2c8c2e84934f2bf",
+      "Author": "Yamini-Microsoft",
+      "Date": "Wed Feb 25 14:38:08 2026 +0530",
+      "Message": "refactor: assign Event Hub roles at hub level instead of namespace level",
+      "LinesAdded": 9,
+      "LinesDeleted": 9,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "4530e0fabd13c6d740aeccaec4f053844c150ad5",
+      "Author": "Vamshi-Microsoft",
+      "Date": "Tue Feb 24 14:20:52 2026 +0530",
+      "Message": "reverted environment names from 'production' to 'rti-build' and 'rti-dev' in Azure workflow",
+      "LinesAdded": 3,
+      "LinesDeleted": 3,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "3ff94885c76c804122c9e68d86c9c9b0d20d3743",
+      "Author": "Vamshi-Microsoft",
+      "Date": "Tue Feb 24 13:10:19 2026 +0530",
+      "Message": "fix: Remove redundant setting of AZURE_LOCATION in Azure environment configuration",
+      "LinesAdded": 0,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "139a357c06ddb4adfb5b8933aa7f9488179ccdef",
+      "Author": "Vamshi-Microsoft",
+      "Date": "Tue Feb 24 13:01:47 2026 +0530",
+      "Message": "refactor: Update deployment steps and cleanup logic in Azure workflow",
+      "LinesAdded": 27,
+      "LinesDeleted": 13,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "65446a6969b3d54351300ecd6640b15da7fbe41b",
+      "Author": "Vamshi-Microsoft",
+      "Date": "Tue Feb 24 12:30:49 2026 +0530",
+      "Message": "Enhanced deployment workflow with better resource management, cleanup logic, and updated environment naming",
+      "LinesAdded": 212,
+      "LinesDeleted": 98,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "281e79bf8004f10660a0ce71da0bfd04f17d8624",
+      "Author": "Yamini-Microsoft",
+      "Date": "Fri Feb 20 23:04:46 2026 +0530",
+      "Message": "feat: cross-subscription Event Hub support and documentation improvements",
+      "LinesAdded": 525,
+      "LinesDeleted": 195,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "49df845054adae6a59115b03301a64380cabd635",
+      "Author": "Prajwal-Microsoft",
+      "Date": "Thu Feb 19 13:12:36 2026 +0530",
+      "Message": "docs: Update README with AI and Data playbook links",
+      "LinesAdded": 9,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "f88cc477eb283b477e77e9eb6285aaa47a25a08e",
+      "Author": "Yamini-Microsoft",
+      "Date": "Mon Feb 16 17:21:53 2026 +0530",
+      "Message": "Fix broken anchor link in DeploymentGuide Key Sections table",
+      "LinesAdded": 2,
+      "LinesDeleted": 2,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "c7b0fd97aa9f8b0e2df7c70d779fcce7506c16b7",
+      "Author": "Yamini-Microsoft",
+      "Date": "Mon Feb 16 17:12:00 2026 +0530",
+      "Message": "Add Event Hub Data Sender role assignment and fix BCP318 suppression",
+      "LinesAdded": 17,
+      "LinesDeleted": 2,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "2079dfe1c01fa37a6b93ee709dfe55df9230c373",
+      "Author": "Yamini-Microsoft",
+      "Date": "Mon Feb 16 17:04:20 2026 +0530",
+      "Message": "Clarify EXISTING_EVENT_HUB_NAME requires namespace parameter",
+      "LinesAdded": 6,
+      "LinesDeleted": 2,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "b6e6008248e490bec7e08618fe0d8dc33dff9e2e",
+      "Author": "Yamini-Microsoft",
+      "Date": "Mon Feb 16 16:39:28 2026 +0530",
+      "Message": "Simplify existing resources deployment and improve documentation",
+      "LinesAdded": 150,
+      "LinesDeleted": 454,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "acd8bba10636e879b6243968831b71d4a1d2ba55",
+      "Author": "Niraj Chaudhari (Persistent Systems Inc)",
+      "Date": "Thu Feb 12 16:45:14 2026 +0530",
+      "Message": "fix: support existing Event Hub namespaces in different resource groups",
+      "LinesAdded": 13,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "ba1dfc3cc9f12f32f6ff605b8978088b1b5b3ac8",
+      "Author": "Yamini-Microsoft",
+      "Date": "Thu Feb 12 14:39:04 2026 +0530",
+      "Message": "docs: Add QA testing guide for existing resources scenarios",
+      "LinesAdded": 326,
+      "LinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "c2ae4272f4cc9c9b847043ae026b2a4f53eb466d",
+      "Author": "Yamini-Microsoft",
+      "Date": "Wed Feb 11 23:31:28 2026 +0530",
+      "Message": "feat: Add support for using existing Azure resources before azd up",
+      "LinesAdded": 98,
+      "LinesDeleted": 15,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "a88d7aa26ea17f35fde9a582dccb9f60d8e927eb",
+      "Author": "Niraj Chaudhari (Persistent Systems Inc)",
+      "Date": "Mon Feb 9 16:04:08 2026 +0530",
+      "Message": "Add troubleshoot document",
+      "LinesAdded": 163,
+      "LinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "f95cad53453d72c04e87362613dcb027433c3260",
+      "Author": "Ayaz-Microsoft",
+      "Date": "Wed Feb 4 10:26:34 2026 +0530",
+      "Message": "fix: improve error logging in FabricApiClient exception handling",
+      "LinesAdded": 2,
+      "LinesDeleted": 2,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "38da357f698e826adffea966c307224a6e836e7b",
+      "Author": "Ayaz-Microsoft",
+      "Date": "Wed Feb 4 10:12:20 2026 +0530",
+      "Message": "fix: specify exception type in error handling for FabricApiClient",
+      "LinesAdded": 1,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "2cd38b49665e5813cb48ff0b8bd243c8f38b8aa3",
+      "Author": "Ayaz-Microsoft",
+      "Date": "Tue Feb 3 18:37:01 2026 +0530",
+      "Message": "fix: unused global variable",
+      "LinesAdded": 2,
+      "LinesDeleted": 2,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "55d53486a3d10fad09835469709723318e05b147",
+      "Author": "Ayaz-Microsoft",
+      "Date": "Tue Feb 3 18:32:27 2026 +0530",
+      "Message": "fix: improve error handling for missing dependencies in Event Hub service",
+      "LinesAdded": 4,
+      "LinesDeleted": 7,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "60adc8491ab97c90c8bb71e47ba750a885184471",
+      "Author": "Ayaz-Microsoft",
+      "Date": "Tue Feb 3 16:54:24 2026 +0530",
+      "Message": "Explicit returns mixed with implicit returns",
+      "LinesAdded": 4,
+      "LinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "e00d592bc9294f125c5a8ea540616c2e57b7ff9f",
+      "Author": "Ayaz-Microsoft",
+      "Date": "Tue Feb 3 15:03:30 2026 +0530",
+      "Message": "remove unused imports",
+      "LinesAdded": 9,
+      "LinesDeleted": 18,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "8c4bc682f2bf600a3006d19565767603a283d075",
+      "Author": "Ayaz-Microsoft",
+      "Date": "Tue Feb 3 12:37:30 2026 +0530",
+      "Message": "refactor: remove unused variables and wrond name in arg call",
+      "LinesAdded": 9,
+      "LinesDeleted": 16,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    }
+  ],
+  "FileTypeBreakdown": [
+    {
+      "Extension": "csv",
+      "TotalLines": 777696,
+      "AILines": 777696,
+      "AIPercentage": 100.0,
+      "FileCount": 15
+    },
+    {
+      "Extension": "py",
+      "TotalLines": 56289,
+      "AILines": 47690,
+      "AIPercentage": 84.72,
+      "FileCount": 707
+    },
+    {
+      "Extension": "md",
+      "TotalLines": 31474,
+      "AILines": 10749,
+      "AIPercentage": 34.15,
+      "FileCount": 771
+    },
+    {
+      "Extension": "ps1",
+      "TotalLines": 19438,
+      "AILines": 19432,
+      "AIPercentage": 99.97,
+      "FileCount": 65
+    },
+    {
+      "Extension": "json",
+      "TotalLines": 19391,
+      "AILines": 3417,
+      "AIPercentage": 17.62,
+      "FileCount": 126
+    },
+    {
+      "Extension": "ipynb",
+      "TotalLines": 14565,
+      "AILines": 9506,
+      "AIPercentage": 65.27,
+      "FileCount": 53
+    },
+    {
+      "Extension": "kql",
+      "TotalLines": 4634,
+      "AILines": 4557,
+      "AIPercentage": 98.34,
+      "FileCount": 110
+    },
+    {
+      "Extension": "yml",
+      "TotalLines": 4067,
+      "AILines": 1227,
+      "AIPercentage": 30.17,
+      "FileCount": 209
+    },
+    {
+      "Extension": "gitignore",
+      "TotalLines": 1894,
+      "AILines": 45,
+      "AIPercentage": 2.38,
+      "FileCount": 13
+    },
+    {
+      "Extension": "bicep",
+      "TotalLines": 756,
+      "AILines": 420,
+      "AIPercentage": 55.56,
+      "FileCount": 35
+    },
+    {
+      "Extension": "sh",
+      "TotalLines": 565,
+      "AILines": 495,
+      "AIPercentage": 87.61,
+      "FileCount": 23
+    },
+    {
+      "Extension": "txt",
+      "TotalLines": 300,
+      "AILines": 90,
+      "AIPercentage": 30.0,
+      "FileCount": 64
+    },
+    {
+      "Extension": "dockerignore",
+      "TotalLines": 282,
+      "AILines": 282,
+      "AIPercentage": 100.0,
+      "FileCount": 3
+    },
+    {
+      "Extension": "platform",
+      "TotalLines": 254,
+      "AILines": 192,
+      "AIPercentage": 75.59,
+      "FileCount": 59
+    },
+    {
+      "Extension": "ps1}",
+      "TotalLines": 231,
+      "AILines": 3,
+      "AIPercentage": 1.3,
+      "FileCount": 6
+    },
+    {
+      "Extension": "other",
+      "TotalLines": 210,
+      "AILines": 63,
+      "AIPercentage": 30.0,
+      "FileCount": 10
+    },
+    {
+      "Extension": "flake8",
+      "TotalLines": 161,
+      "AILines": 161,
+      "AIPercentage": 100.0,
+      "FileCount": 7
+    },
+    {
+      "Extension": "yaml",
+      "TotalLines": 148,
+      "AILines": 96,
+      "AIPercentage": 64.86,
+      "FileCount": 34
+    },
+    {
+      "Extension": "github/codeowners",
+      "TotalLines": 84,
+      "AILines": 21,
+      "AIPercentage": 25.0,
+      "FileCount": 14
+    },
+    {
+      "Extension": "devcontainer/dockerfile",
+      "TotalLines": 16,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 4
+    },
+    {
+      "Extension": "png",
+      "TotalLines": 3,
+      "AILines": 3,
+      "AIPercentage": 100.0,
+      "FileCount": 254
+    },
+    {
+      "Extension": "py}",
+      "TotalLines": 3,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 3
+    }
+  ],
+  "Branch": "main",
+  "Metadata": {
+    "GeneratedAt": "2026-04-20 08:45:36",
+    "IncludeTestFiles": false,
+    "ScriptVersion": "2.0.0",
+    "GeneratedBy": "Copilot Usage Report Tool v2.0",
+    "PowerShellVersion": "7.4.14",
+    "AnalysisMethod": "5-Tier Weighted Pattern Detection"
+  },
+  "AIAttributionOverride": {
+    "OverridePercentage": null,
+    "Applied": false,
+    "Notes": null
+  }
+}

@@ -1,0 +1,599 @@
+{
+  "BranchStatistics": {
+    "Branch": "dev",
+    "TotalCommits": 22,
+    "AICommits": 0,
+    "HumanCommits": 22,
+    "TotalLinesAdded": 1314.0,
+    "TotalLinesDeleted": 764.0,
+    "AILinesAdded": null,
+    "AILinesDeleted": null,
+    "Tier1Commits": 0,
+    "Tier2Commits": 0,
+    "Tier3Commits": 0,
+    "Tier4Commits": 0,
+    "Tier5Commits": 0,
+    "UniqueContributors": 6,
+    "AIPercentage": 0.0,
+    "HumanLinesAdded": 1314.0
+  },
+  "ApplicationName": "MAAG",
+  "Users": [
+    {
+      "UserName": "Vamshi-Microsoft",
+      "UserEmail": "v-vamolla@microsoft.com",
+      "TotalCommits": 4,
+      "AICommits": 0,
+      "HumanCommits": 4,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 226,
+      "HumanLinesDeleted": 89,
+      "TotalLinesAdded": 226,
+      "TotalLinesDeleted": 89,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Saswato-Microsoft",
+      "UserEmail": "v-saswatoc@microsoft.com",
+      "TotalCommits": 1,
+      "AICommits": 0,
+      "HumanCommits": 1,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 373,
+      "HumanLinesDeleted": 144,
+      "TotalLinesAdded": 373,
+      "TotalLinesDeleted": 144,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Alvaro Guadamillas",
+      "UserEmail": "alguadam@microsoft.com",
+      "TotalCommits": 1,
+      "AICommits": 0,
+      "HumanCommits": 1,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 2,
+      "HumanLinesDeleted": 4,
+      "TotalLinesAdded": 2,
+      "TotalLinesDeleted": 4,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Yamini-Microsoft",
+      "UserEmail": "v-yamini3@microsoft.com",
+      "TotalCommits": 14,
+      "AICommits": 0,
+      "HumanCommits": 14,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 704,
+      "HumanLinesDeleted": 526,
+      "TotalLinesAdded": 704,
+      "TotalLinesDeleted": 526,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Prajwal-Microsoft",
+      "UserEmail": "v-dcprajwal@microsoft.com",
+      "TotalCommits": 1,
+      "AICommits": 0,
+      "HumanCommits": 1,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 8,
+      "HumanLinesDeleted": 0,
+      "TotalLinesAdded": 8,
+      "TotalLinesDeleted": 0,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Niraj Chaudhari (Persistent Systems Inc)",
+      "UserEmail": "v-nirajcha@microsoft.com",
+      "TotalCommits": 1,
+      "AICommits": 0,
+      "HumanCommits": 1,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 1,
+      "HumanLinesDeleted": 1,
+      "TotalLinesAdded": 1,
+      "TotalLinesDeleted": 1,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    }
+  ],
+  "AnalysisPeriod": {
+    "StartDate": "2026-02-01",
+    "EndDate": "2026-02-28",
+    "FilterApplied": true
+  },
+  "TierDistribution": {
+    "Tier5_Low": 0,
+    "Human": 22,
+    "Tier1_Definitive": 0,
+    "Tier2_VeryHigh": 0,
+    "Tier3_High": 0,
+    "Tier4_Moderate": 0
+  },
+  "GeneratedAt": "2026-04-20 08:45:38",
+  "Commits": [
+    {
+      "Hash": "6285da15ee6b9a3984eee7b6b500da9e15204a98",
+      "Author": "Vamshi-Microsoft",
+      "Date": "Tue Feb 24 14:21:37 2026 +0530",
+      "Message": "reverted environment names in workflow from production to udfwf-build and udfwf-dev",
+      "LinesAdded": 3,
+      "LinesDeleted": 3,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "9ac4874426b660da5588de007689e12ccd0cb2e6",
+      "Author": "Vamshi-Microsoft",
+      "Date": "Tue Feb 24 13:00:40 2026 +0530",
+      "Message": "refactor: enhance cleanup steps in workflow",
+      "LinesAdded": 27,
+      "LinesDeleted": 15,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "a27575a554755097460d7f80740a575d1cea2dbc",
+      "Author": "Vamshi-Microsoft",
+      "Date": "Tue Feb 24 12:11:18 2026 +0530",
+      "Message": "fix: update resource group name prefix in workflow",
+      "LinesAdded": 1,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "af6fedb2c43a58084eac03c1b73548a9290dca51",
+      "Author": "Vamshi-Microsoft",
+      "Date": "Tue Feb 24 11:41:13 2026 +0530",
+      "Message": "Updated workflow for improved resource management, cleanup and Environment name",
+      "LinesAdded": 195,
+      "LinesDeleted": 70,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "7ff77f8fbd8edebc62af8e3e7ef0f0ab8d422d64",
+      "Author": "Yamini-Microsoft",
+      "Date": "Mon Feb 23 12:06:32 2026 +0530",
+      "Message": "Apply suggestions from code review",
+      "LinesAdded": 1,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "ee2fa182b3ecc71f4bd1d7fdbacd11bb21d1880e",
+      "Author": "Alvaro Guadamillas",
+      "Date": "Fri Feb 20 17:27:36 2026 +0100",
+      "Message": "refactor: Remove lakehouse reference creation in deploy_notebooks function",
+      "LinesAdded": 2,
+      "LinesDeleted": 4,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "1b2fe3a758b9758c1d7dca72556733ff85da04b0",
+      "Author": "Prajwal-Microsoft",
+      "Date": "Thu Feb 19 13:16:27 2026 +0530",
+      "Message": "docs: Update README with AI and Data playbook links",
+      "LinesAdded": 8,
+      "LinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "dfe5dd3db3115be8dbc1e3377432670055a62721",
+      "Author": "Yamini-Microsoft",
+      "Date": "Tue Feb 17 00:57:07 2026 +0530",
+      "Message": "docs: Fix doc accuracy, collapsible sections, env var names, and broken links",
+      "LinesAdded": 61,
+      "LinesDeleted": 72,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "23269bc73c0aebde5e70eeeefd67ad5b93b3a3c1",
+      "Author": "Yamini-Microsoft",
+      "Date": "Fri Feb 13 00:00:32 2026 +0530",
+      "Message": "fix: Pass FABRIC_WORKSPACE_NAME to provisioning step in CI/CD workflow",
+      "LinesAdded": 1,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "8e98180d9417cb18504bf4f4c6561d35ad3907e5",
+      "Author": "Yamini-Microsoft",
+      "Date": "Thu Feb 12 23:33:15 2026 +0530",
+      "Message": "fix: Address PR review, improve validation error handling, separate takeover/parameter error paths, guard refresh calls",
+      "LinesAdded": 65,
+      "LinesDeleted": 33,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "cf8b83094cf0ea9b285fd8b2abfac8dabdd7506f",
+      "Author": "Yamini-Microsoft",
+      "Date": "Thu Feb 12 22:36:15 2026 +0530",
+      "Message": "fix: Address copilot PR review comments - align env var names, improve error handling, clarify outputs",
+      "LinesAdded": 28,
+      "LinesDeleted": 24,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "86d456b1fe9ad8b4782c5fe574cc8e55fb58b5af",
+      "Author": "Yamini-Microsoft",
+      "Date": "Thu Feb 12 21:04:55 2026 +0530",
+      "Message": "chore: Remove QA test guide from branch",
+      "LinesAdded": 0,
+      "LinesDeleted": 195,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "b7b07ae4715a41fb5a494246c9253c7c048b141b",
+      "Author": "Yamini-Microsoft",
+      "Date": "Thu Feb 12 20:22:44 2026 +0530",
+      "Message": "fix: Handle unresolved azd parameters in CI/CD and update QA guide",
+      "LinesAdded": 20,
+      "LinesDeleted": 10,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "b68a23d84f567f9edd9eaf4f185f19079fb71b7e",
+      "Author": "Yamini-Microsoft",
+      "Date": "Thu Feb 12 19:24:44 2026 +0530",
+      "Message": "fix: Resolve null reference error for conditional Fabric capacity module",
+      "LinesAdded": 1,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "b14cac4553eb4c1916d63a3a19279336aacd04be",
+      "Author": "Yamini-Microsoft",
+      "Date": "Thu Feb 12 19:20:52 2026 +0530",
+      "Message": "fix: Support both interactive users and service principals for Fabric capacity admin",
+      "LinesAdded": 4,
+      "LinesDeleted": 2,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "795292846ca63a965391a833d855adbc489dd66f",
+      "Author": "Niraj Chaudhari (Persistent Systems Inc)",
+      "Date": "Wed Feb 11 16:13:24 2026 +0530",
+      "Message": "Fix: Use UPN instead of Object ID for Fabric Capacity Admin to resolve deployment failure",
+      "LinesAdded": 1,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "3d828da66f3812f3f6b3bfde7ead9d6bfe7c61e1",
+      "Author": "Yamini-Microsoft",
+      "Date": "Wed Feb 11 10:31:31 2026 +0530",
+      "Message": "doc: Test guide for QA.",
+      "LinesAdded": 193,
+      "LinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "8d43d4edf52be2dbba00fed0e170c834acc0402d",
+      "Author": "Yamini-Microsoft",
+      "Date": "Wed Feb 11 00:43:31 2026 +0530",
+      "Message": "feat: Support azd up with existing Azure resources",
+      "LinesAdded": 55,
+      "LinesDeleted": 20,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "26ee04d68f800026941b67a6d9a7e6a37b61ad0f",
+      "Author": "Yamini-Microsoft",
+      "Date": "Fri Feb 6 19:49:40 2026 +0530",
+      "Message": "docs: Improve README and deployment guides",
+      "LinesAdded": 223,
+      "LinesDeleted": 162,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "ee2c52cacd77852e78057c2595ab23cba5893e7a",
+      "Author": "Yamini-Microsoft",
+      "Date": "Fri Feb 6 19:48:18 2026 +0530",
+      "Message": "fix: Replace spaces with underscores in default workspace name",
+      "LinesAdded": 6,
+      "LinesDeleted": 5,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "e4fb270e978e43084ed8c24734870c970feb5100",
+      "Author": "Yamini-Microsoft",
+      "Date": "Fri Feb 6 19:41:26 2026 +0530",
+      "Message": "feat: Add Power BI semantic model takeover for parameter updates",
+      "LinesAdded": 46,
+      "LinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "2726fda889d8668d408975b6cbcde80cddbf071b",
+      "Author": "Saswato-Microsoft",
+      "Date": "Wed Feb 4 13:33:24 2026 +0530",
+      "Message": "Refactor lakehouse path configuration in notebooks to use dynamic workspace and lakehouse IDs",
+      "LinesAdded": 373,
+      "LinesDeleted": 144,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    }
+  ],
+  "FileTypeBreakdown": [
+    {
+      "Extension": "csv",
+      "TotalLines": 45235,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 15
+    },
+    {
+      "Extension": "py",
+      "TotalLines": 39961,
+      "AILines": 38824,
+      "AIPercentage": 97.15,
+      "FileCount": 288
+    },
+    {
+      "Extension": "md",
+      "TotalLines": 23512,
+      "AILines": 5566,
+      "AIPercentage": 23.67,
+      "FileCount": 478
+    },
+    {
+      "Extension": "ps1",
+      "TotalLines": 11340,
+      "AILines": 10144,
+      "AIPercentage": 89.45,
+      "FileCount": 36
+    },
+    {
+      "Extension": "bak",
+      "TotalLines": 6324,
+      "AILines": 6324,
+      "AIPercentage": 100.0,
+      "FileCount": 8
+    },
+    {
+      "Extension": "ipynb",
+      "TotalLines": 4885,
+      "AILines": 1821,
+      "AIPercentage": 37.28,
+      "FileCount": 310
+    },
+    {
+      "Extension": "json",
+      "TotalLines": 3060,
+      "AILines": 2823,
+      "AIPercentage": 92.25,
+      "FileCount": 35
+    },
+    {
+      "Extension": "tmdl",
+      "TotalLines": 2461,
+      "AILines": 2450,
+      "AIPercentage": 99.55,
+      "FileCount": 25
+    },
+    {
+      "Extension": "yml",
+      "TotalLines": 950,
+      "AILines": 110,
+      "AIPercentage": 11.58,
+      "FileCount": 76
+    },
+    {
+      "Extension": "sh",
+      "TotalLines": 799,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 13
+    },
+    {
+      "Extension": "platform",
+      "TotalLines": 686,
+      "AILines": 686,
+      "AIPercentage": 100.0,
+      "FileCount": 65
+    },
+    {
+      "Extension": "py}",
+      "TotalLines": 545,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 10
+    },
+    {
+      "Extension": "txt",
+      "TotalLines": 290,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 25
+    },
+    {
+      "Extension": "gitignore",
+      "TotalLines": 255,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 3
+    },
+    {
+      "Extension": "bicep",
+      "TotalLines": 107,
+      "AILines": 8,
+      "AIPercentage": 7.48,
+      "FileCount": 19
+    },
+    {
+      "Extension": "other",
+      "TotalLines": 63,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 3
+    },
+    {
+      "Extension": "yaml",
+      "TotalLines": 24,
+      "AILines": 2,
+      "AIPercentage": 8.33,
+      "FileCount": 8
+    },
+    {
+      "Extension": "env",
+      "TotalLines": 21,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 3
+    },
+    {
+      "Extension": "devcontainer/dockerfile",
+      "TotalLines": 16,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 4
+    },
+    {
+      "Extension": "github/codeowners",
+      "TotalLines": 10,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 10
+    },
+    {
+      "Extension": "pbir",
+      "TotalLines": 9,
+      "AILines": 9,
+      "AIPercentage": 100.0,
+      "FileCount": 1
+    },
+    {
+      "Extension": "pbism",
+      "TotalLines": 5,
+      "AILines": 5,
+      "AIPercentage": 100.0,
+      "FileCount": 1
+    }
+  ],
+  "Branch": "dev",
+  "Metadata": {
+    "GeneratedAt": "2026-04-20 08:45:38",
+    "IncludeTestFiles": false,
+    "ScriptVersion": "2.0.0",
+    "GeneratedBy": "Copilot Usage Report Tool v2.0",
+    "PowerShellVersion": "7.4.14",
+    "AnalysisMethod": "5-Tier Weighted Pattern Detection"
+  },
+  "AIAttributionOverride": {
+    "OverridePercentage": null,
+    "Applied": false,
+    "Notes": null
+  }
+}

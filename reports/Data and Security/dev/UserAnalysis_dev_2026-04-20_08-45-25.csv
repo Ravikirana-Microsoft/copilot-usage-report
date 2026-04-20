@@ -1,0 +1,4 @@
+"UserName","UserEmail","TotalCommits","AICommits","HumanCommits","AILinesAdded","HumanLinesAdded","TotalLinesAdded","AIPercentage","AvgConfidenceScore","Tier1Commits","Tier2Commits","Tier3Commits","Tier4Commits","Tier5Commits"
+"Saswato-Microsoft","v-saswatoc@microsoft.com","15","0","15","0","519","519","0","0","0","0","0","0","0"
+"Harmanpreet-Microsoft","v-harmanprka@microsoft.com","5","0","5","0","51","51","0","0","0","0","0","0","0"
+"Mike Swantek","mike.swantek@microsoft.com","1","0","1","0","30","30","0","0","0","0","0","0","0"

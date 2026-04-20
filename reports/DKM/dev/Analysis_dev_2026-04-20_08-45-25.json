@@ -1,0 +1,323 @@
+{
+  "BranchStatistics": {
+    "Branch": "dev",
+    "TotalCommits": 6,
+    "AICommits": 0,
+    "HumanCommits": 6,
+    "TotalLinesAdded": 2631.0,
+    "TotalLinesDeleted": 3033.0,
+    "AILinesAdded": null,
+    "AILinesDeleted": null,
+    "Tier1Commits": 0,
+    "Tier2Commits": 0,
+    "Tier3Commits": 0,
+    "Tier4Commits": 0,
+    "Tier5Commits": 0,
+    "UniqueContributors": 4,
+    "AIPercentage": 0.0,
+    "HumanLinesAdded": 2631.0
+  },
+  "ApplicationName": "DKM",
+  "Users": [
+    {
+      "UserName": "Rafi-Microsoft",
+      "UserEmail": "v-rafmd@microsoft.com",
+      "TotalCommits": 2,
+      "AICommits": 0,
+      "HumanCommits": 2,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 18,
+      "HumanLinesDeleted": 6,
+      "TotalLinesAdded": 18,
+      "TotalLinesDeleted": 6,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Niraj Chaudhari (Persistent Systems Inc)",
+      "UserEmail": "v-nirajcha@microsoft.com",
+      "TotalCommits": 1,
+      "AICommits": 0,
+      "HumanCommits": 1,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 146,
+      "HumanLinesDeleted": 592,
+      "TotalLinesAdded": 146,
+      "TotalLinesDeleted": 592,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Harsh-Microsoft",
+      "UserEmail": "v-hbangera@microsoft.com",
+      "TotalCommits": 2,
+      "AICommits": 0,
+      "HumanCommits": 2,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 2456,
+      "HumanLinesDeleted": 2434,
+      "TotalLinesAdded": 2456,
+      "TotalLinesDeleted": 2434,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Prajwal-Microsoft",
+      "UserEmail": "v-dcprajwal@microsoft.com",
+      "TotalCommits": 1,
+      "AICommits": 0,
+      "HumanCommits": 1,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 11,
+      "HumanLinesDeleted": 1,
+      "TotalLinesAdded": 11,
+      "TotalLinesDeleted": 1,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    }
+  ],
+  "AnalysisPeriod": {
+    "StartDate": "2026-02-01",
+    "EndDate": "2026-02-28",
+    "FilterApplied": true
+  },
+  "TierDistribution": {
+    "Tier5_Low": 0,
+    "Human": 6,
+    "Tier1_Definitive": 0,
+    "Tier2_VeryHigh": 0,
+    "Tier3_High": 0,
+    "Tier4_Moderate": 0
+  },
+  "GeneratedAt": "2026-04-20 08:45:25",
+  "Commits": [
+    {
+      "Hash": "c17a98238199c638af8bdd5e321951b8ec0e17af",
+      "Author": "Rafi-Microsoft",
+      "Date": "Fri Feb 27 16:49:10 2026 +0530",
+      "Message": "added secondary location as per AVM module",
+      "LinesAdded": 16,
+      "LinesDeleted": 4,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "94ff525e7945b59a50bc056d62a71d83759449ec",
+      "Author": "Rafi-Microsoft",
+      "Date": "Fri Feb 27 15:51:52 2026 +0530",
+      "Message": "aks version update",
+      "LinesAdded": 2,
+      "LinesDeleted": 2,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "86fd47f5ea09924349211fac397f554bc52d026f",
+      "Author": "Harsh-Microsoft",
+      "Date": "Mon Feb 23 11:03:19 2026 +0000",
+      "Message": "replace avm module with bicep module for search service initial provision",
+      "LinesAdded": 26,
+      "LinesDeleted": 2401,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "610562947ec1a8a1cebf4054b6a469cf44f8dd3d",
+      "Author": "Prajwal-Microsoft",
+      "Date": "Thu Feb 19 12:34:29 2026 +0530",
+      "Message": "docs: Update README with new accelerators and playbook links",
+      "LinesAdded": 11,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "bf000139e96d438d9ec5485ac205404c57180de3",
+      "Author": "Harsh-Microsoft",
+      "Date": "Mon Feb 16 12:54:38 2026 +0000",
+      "Message": "refactor: separate search service module to enable managed identity to reduce deployment time",
+      "LinesAdded": 2430,
+      "LinesDeleted": 33,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "7ac7bf1fdf82c5de021b8a77e8a55cfa692e75f5",
+      "Author": "Niraj Chaudhari (Persistent Systems Inc)",
+      "Date": "Mon Feb 9 15:49:46 2026 +0530",
+      "Message": "update troubleshoot document",
+      "LinesAdded": 146,
+      "LinesDeleted": 592,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    }
+  ],
+  "FileTypeBreakdown": [
+    {
+      "Extension": "md",
+      "TotalLines": 12733,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 237
+    },
+    {
+      "Extension": "py",
+      "TotalLines": 8467,
+      "AILines": 423,
+      "AIPercentage": 5.0,
+      "FileCount": 14
+    },
+    {
+      "Extension": "json",
+      "TotalLines": 6944,
+      "AILines": 3,
+      "AIPercentage": 0.04,
+      "FileCount": 25
+    },
+    {
+      "Extension": "lock",
+      "TotalLines": 2557,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 1
+    },
+    {
+      "Extension": "sample",
+      "TotalLines": 1897,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 29
+    },
+    {
+      "Extension": "yml",
+      "TotalLines": 1475,
+      "AILines": 111,
+      "AIPercentage": 7.53,
+      "FileCount": 111
+    },
+    {
+      "Extension": "cs",
+      "TotalLines": 536,
+      "AILines": 461,
+      "AIPercentage": 86.01,
+      "FileCount": 9
+    },
+    {
+      "Extension": "ps1",
+      "TotalLines": 285,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 20
+    },
+    {
+      "Extension": "bicep",
+      "TotalLines": 212,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 14
+    },
+    {
+      "Extension": "psm1",
+      "TotalLines": 76,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 1
+    },
+    {
+      "Extension": "template",
+      "TotalLines": 29,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 16
+    },
+    {
+      "Extension": "yaml",
+      "TotalLines": 23,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 9
+    },
+    {
+      "Extension": "github/codeowners",
+      "TotalLines": 10,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 10
+    },
+    {
+      "Extension": "csproj",
+      "TotalLines": 5,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 4
+    },
+    {
+      "Extension": "yml}",
+      "TotalLines": 5,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 3
+    },
+    {
+      "Extension": "ini",
+      "TotalLines": 3,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 1
+    }
+  ],
+  "Branch": "dev",
+  "Metadata": {
+    "GeneratedAt": "2026-04-20 08:45:25",
+    "IncludeTestFiles": false,
+    "ScriptVersion": "2.0.0",
+    "GeneratedBy": "Copilot Usage Report Tool v2.0",
+    "PowerShellVersion": "7.4.14",
+    "AnalysisMethod": "5-Tier Weighted Pattern Detection"
+  },
+  "AIAttributionOverride": {
+    "OverridePercentage": null,
+    "Applied": false,
+    "Notes": null
+  }
+}
