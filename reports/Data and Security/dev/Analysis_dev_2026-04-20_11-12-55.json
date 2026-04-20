@@ -1,0 +1,457 @@
+{
+  "Metadata": {
+    "IncludeTestFiles": false,
+    "GeneratedBy": "Copilot Usage Report Tool v2.0",
+    "PowerShellVersion": "7.4.14",
+    "ScriptVersion": "2.0.0",
+    "AnalysisMethod": "5-Tier Weighted Pattern Detection",
+    "GeneratedAt": "2026-04-20 11:12:55"
+  },
+  "BranchStatistics": {
+    "Branch": "dev",
+    "TotalCommits": 23,
+    "AICommits": 0,
+    "HumanCommits": 23,
+    "TotalLinesAdded": 3690.0,
+    "TotalLinesDeleted": 1555.0,
+    "AILinesAdded": null,
+    "AILinesDeleted": null,
+    "Tier1Commits": 0,
+    "Tier2Commits": 0,
+    "Tier3Commits": 0,
+    "Tier4Commits": 0,
+    "Tier5Commits": 0,
+    "UniqueContributors": 2,
+    "AIPercentage": 0.0,
+    "HumanLinesAdded": 3690.0
+  },
+  "Branch": "dev",
+  "GeneratedAt": "2026-04-20 11:12:55",
+  "FileTypeBreakdown": [
+    {
+      "Extension": "ps1",
+      "TotalLines": 11559,
+      "AILines": 507,
+      "AIPercentage": 4.39,
+      "FileCount": 236
+    },
+    {
+      "Extension": "md",
+      "TotalLines": 11089,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 264
+    },
+    {
+      "Extension": "json",
+      "TotalLines": 1695,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 27
+    },
+    {
+      "Extension": "yml",
+      "TotalLines": 1654,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 130
+    },
+    {
+      "Extension": "gitignore",
+      "TotalLines": 419,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "bicep",
+      "TotalLines": 195,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 12
+    },
+    {
+      "Extension": "other",
+      "TotalLines": 163,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 3
+    },
+    {
+      "Extension": "bicepparam",
+      "TotalLines": 102,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 17
+    },
+    {
+      "Extension": "yaml",
+      "TotalLines": 98,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 18
+    },
+    {
+      "Extension": "md\"",
+      "TotalLines": 92,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "github/codeowners",
+      "TotalLines": 4,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "yml}",
+      "TotalLines": 2,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 2
+    }
+  ],
+  "Commits": [
+    {
+      "Hash": "edaa6df0ac0abf94e16363cf271b5f37816c09c6",
+      "Author": "Mike Swantek",
+      "Date": "Wed Dec 17 09:40:10 2025 -0500",
+      "Message": "sanitised the parameters added a silent continue when a rg no longer exists for Foundry resources",
+      "LinesAdded": 15,
+      "LinesDeleted": 6,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "3118c7f962fee650be4155f009d6fcc96ddf9171",
+      "Author": "Mike Swantek",
+      "Date": "Wed Dec 10 08:40:44 2025 -0500",
+      "Message": "fix: restore environment and add fallback defaults for gallery hosting",
+      "LinesAdded": 6,
+      "LinesDeleted": 4,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "53658c3d8e585a503ffca7372366bd6f10a212a5",
+      "Author": "Mike Swantek",
+      "Date": "Wed Dec 10 08:38:29 2025 -0500",
+      "Message": "fix: set validateAzd and useDevContainer explicitly to avoid empty variable bug",
+      "LinesAdded": 4,
+      "LinesDeleted": 6,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "9db102099e882f0e1419e42d27fc221f3c2f6dc0",
+      "Author": "Mike Swantek",
+      "Date": "Wed Dec 10 08:30:08 2025 -0500",
+      "Message": "Configure Azure Developer Pipeline",
+      "LinesAdded": 176,
+      "LinesDeleted": 17,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "57afaad8f4199d12be4730ff96fea76741363974",
+      "Author": "Mike Swantek",
+      "Date": "Tue Dec 9 10:01:25 2025 -0500",
+      "Message": "add change log",
+      "LinesAdded": 9,
+      "LinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "125ab6c300f53ffcd8730d4d0eba4296927629a2",
+      "Author": "Mike Swantek",
+      "Date": "Tue Dec 9 08:34:15 2025 -0500",
+      "Message": "Additional updates to documentation and FAQ regarding post deployment steps",
+      "LinesAdded": 19,
+      "LinesDeleted": 13,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "6271faab25febe143a8e9075051f971d0978a3c3",
+      "Author": "Mike Swantek",
+      "Date": "Tue Dec 9 08:27:24 2025 -0500",
+      "Message": "Cleaned up the FAQ file to add additional clarity",
+      "LinesAdded": 15,
+      "LinesDeleted": 35,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "83f9a9b40a02ef1bd2d210cb61cf8020824705dc",
+      "Author": "Mike Swantek",
+      "Date": "Tue Dec 9 08:09:41 2025 -0500",
+      "Message": "update wording in readme",
+      "LinesAdded": 1,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "847c4347ecf2b237e6035f8bf92bbefbe56f21bf",
+      "Author": "Mike Swantek",
+      "Date": "Tue Dec 9 07:57:55 2025 -0500",
+      "Message": "Added header images like other GSAs",
+      "LinesAdded": 16,
+      "LinesDeleted": 6,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "2c6e110dfe0c390d96df9d251bc4cd74c24acc4e",
+      "Author": "Mike Swantek",
+      "Date": "Tue Dec 9 07:49:11 2025 -0500",
+      "Message": "readme updates. Remove confusing readme, separate into smaller docs.",
+      "LinesAdded": 643,
+      "LinesDeleted": 820,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "5b2a3a5d7653c8a05f70a4e6d61bf944f32613d4",
+      "Author": "Mike Swantek",
+      "Date": "Mon Dec 8 10:44:37 2025 -0500",
+      "Message": "Revised guidance documents add cost guidance update readme, rework WhyDSPM.md",
+      "LinesAdded": 388,
+      "LinesDeleted": 170,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "3ad26f9d1501bf34866afd2a1fbbdbdd69a6711d",
+      "Author": "Mike Swantek",
+      "Date": "Mon Dec 8 09:52:08 2025 -0500",
+      "Message": "docs: improve new user onboarding and add spec example file",
+      "LinesAdded": 1051,
+      "LinesDeleted": 80,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "6708ca64b72fbd8b0ea5e4afca9149b7ecc68f87",
+      "Author": "Mike Swantek",
+      "Date": "Fri Dec 5 15:00:25 2025 -0500",
+      "Message": "add ability to run code from azd for telemetery",
+      "LinesAdded": 878,
+      "LinesDeleted": 95,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "9a4a7973e2e0135fbfc1b31a4edd5c1309a70d55",
+      "Author": "Mike Swantek",
+      "Date": "Tue Dec 2 10:32:09 2025 -0500",
+      "Message": "Add note about multiple authentication prompts",
+      "LinesAdded": 1,
+      "LinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "b31c7fb6d05d9523190bad8021e24dcc6fdcbea6",
+      "Author": "Mike Swantek",
+      "Date": "Tue Dec 2 10:05:27 2025 -0500",
+      "Message": "Add Infra drawing",
+      "LinesAdded": 56,
+      "LinesDeleted": 87,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "d17dac1def8e3b3bbc65a3379f818d36738153ad",
+      "Author": "Mike Swantek",
+      "Date": "Tue Dec 2 10:04:27 2025 -0500",
+      "Message": "Read me updates",
+      "LinesAdded": 89,
+      "LinesDeleted": 56,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "cf7c5d06a0179d7b51391f55371624d3e8ca7e25",
+      "Author": "Mike Swantek",
+      "Date": "Mon Dec 1 17:24:12 2025 -0500",
+      "Message": "Update docs/dspm-sales-narrative.md",
+      "LinesAdded": 1,
+      "LinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "5405ec82ba221974367813ed9f8d74ae75572117",
+      "Author": "Mike Swantek",
+      "Date": "Mon Dec 1 17:23:37 2025 -0500",
+      "Message": "Update README.md",
+      "LinesAdded": 1,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written (Merge/Revert)",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "294b0c2651878d0df87bfe8dc85ad260d4fda0a0",
+      "Author": "Mike Swantek",
+      "Date": "Mon Dec 1 17:23:10 2025 -0500",
+      "Message": "Update docs/dspm-sales-narrative.md",
+      "LinesAdded": 1,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "64379409b65e8cf92912d31733401724eb91a712",
+      "Author": "Mike Swantek",
+      "Date": "Mon Dec 1 17:22:48 2025 -0500",
+      "Message": "Update docs/value-prop-narrative.md",
+      "LinesAdded": 1,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "275caf384fb270cd37868d1e68642da9902dd431",
+      "Author": "Mike Swantek",
+      "Date": "Mon Dec 1 17:21:22 2025 -0500",
+      "Message": "remove errant azure.yaml file",
+      "LinesAdded": 0,
+      "LinesDeleted": 11,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "2e00a59dfa7b618a453dea09c0fac1a985b63663",
+      "Author": "Mike Swantek",
+      "Date": "Mon Dec 1 17:08:55 2025 -0500",
+      "Message": "remove infra folder",
+      "LinesAdded": 0,
+      "LinesDeleted": 31,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "1d53712f1df47824941e2273e9f3cb9b70828af7",
+      "Author": "Mike Swantek",
+      "Date": "Mon Dec 1 17:02:15 2025 -0500",
+      "Message": "docs: refresh README and KYD guidance",
+      "LinesAdded": 319,
+      "LinesDeleted": 114,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    }
+  ],
+  "AnalysisPeriod": {
+    "StartDate": "2025-12-01",
+    "EndDate": "2025-12-31",
+    "FilterApplied": true
+  },
+  "ApplicationName": "Data and Security",
+  "TierDistribution": {
+    "Tier2_VeryHigh": 0,
+    "Tier1_Definitive": 0,
+    "Human": 23,
+    "Tier4_Moderate": 0,
+    "Tier5_Low": 0,
+    "Tier3_High": 0
+  },
+  "AIAttributionOverride": {
+    "OverridePercentage": null,
+    "Applied": false,
+    "Notes": null
+  },
+  "Users": [
+    {
+      "UserName": "Mike Swantek",
+      "UserEmail": "mike.swantek@microsoft.com",
+      "TotalCommits": 19,
+      "AICommits": 0,
+      "HumanCommits": 19,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 3686,
+      "HumanLinesDeleted": 1552,
+      "TotalLinesAdded": 3686,
+      "TotalLinesDeleted": 1552,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Mike Swantek",
+      "UserEmail": "46489667+mswantek68@users.noreply.github.com",
+      "TotalCommits": 4,
+      "AICommits": 0,
+      "HumanCommits": 4,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 4,
+      "HumanLinesDeleted": 3,
+      "TotalLinesAdded": 4,
+      "TotalLinesDeleted": 3,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    }
+  ]
+}
