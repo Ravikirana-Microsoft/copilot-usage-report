@@ -1,0 +1,2 @@
+"Branch","TotalCommits","AICommits","HumanCommits","TotalLinesAdded","TotalLinesDeleted","AILinesAdded","AILinesDeleted","Tier1Commits","Tier2Commits","Tier3Commits","Tier4Commits","Tier5Commits","UniqueContributors","AIPercentage","HumanLinesAdded"
+"dev","70","6","64","93818","53344","68140","36753","0","3","0","2","1","14","72.63","25678"

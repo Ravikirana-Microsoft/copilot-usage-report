@@ -1,0 +1,563 @@
+{
+  "AIAttributionOverride": {
+    "Notes": null,
+    "OverridePercentage": null,
+    "Applied": false
+  },
+  "Commits": [
+    {
+      "Hash": "93b2f7a3b7e54970a9bc3c7830b2a8cf770b35ae",
+      "Author": "Ajit Padhi",
+      "Date": "Wed Mar 25 15:55:11 2026 +0530",
+      "Message": "Updated azure.yaml file to exclude the 1.23.9 azd version",
+      "LinesAdded": 1,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "f1b1b00e132feaec49d55885a921981c4872821b",
+      "Author": "Prajwal-Microsoft",
+      "Date": "Mon Mar 16 22:39:12 2026 +0530",
+      "Message": "Add note for azd version 1.23.9 in Deployment Guide",
+      "LinesAdded": 5,
+      "LinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "058893e2d84f317f46b49322e363fd7e81a3a909",
+      "Author": "Priyanka-Microsoft",
+      "Date": "Thu Mar 12 11:25:40 2026 +0530",
+      "Message": "resolved codeQL issue",
+      "LinesAdded": 3,
+      "LinesDeleted": 10,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "e59c2c284a1f60a1fcaf3c6118d9dd52c972b603",
+      "Author": "Vamshi-Microsoft",
+      "Date": "Tue Mar 10 22:29:00 2026 +0530",
+      "Message": "feat: add RG tags parsing and integration into Bicep parameter file",
+      "LinesAdded": 21,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "62cde94d3f7e5b6d8729f11e524ce4c0d528b1c5",
+      "Author": "Vamshi-Microsoft",
+      "Date": "Tue Mar 10 18:01:40 2026 +0530",
+      "Message": "Added Tag while creating RG",
+      "LinesAdded": 2,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "f8e2a88f2aa580cf0f39f948faf43e7b9b94d9e8",
+      "Author": "Yamini-Microsoft",
+      "Date": "Thu Mar 5 21:17:22 2026 +0530",
+      "Message": "fix: remove unused variables and import flagged by code quality checks",
+      "LinesAdded": 3,
+      "LinesDeleted": 3,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "8de387c3bb77dcf6f1fae439ecabaf5fc0ba0bbe",
+      "Author": "Yamini-Microsoft",
+      "Date": "Thu Mar 5 13:32:03 2026 +0530",
+      "Message": "fix(bicep): guard EventHub and Fabric vars against ARM eager-evaluation; fix README headings",
+      "LinesAdded": 19,
+      "LinesDeleted": 17,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "0db0aad9d6161fe4956a1f2346741c3c20b0055a",
+      "Author": "Yamini-Microsoft",
+      "Date": "Thu Mar 5 19:18:24 2026 +0530",
+      "Message": "Revert \"fix(bicep): guard EventHub and Fabric vars against ARM eager-evaluation; fix README headings\"",
+      "LinesAdded": 17,
+      "LinesDeleted": 19,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written (Merge/Revert)",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "bcf10169b1a34d086670520b7864f9bdbf5c4337",
+      "Author": "Yamini-Microsoft",
+      "Date": "Thu Mar 5 13:32:03 2026 +0530",
+      "Message": "fix(bicep): guard EventHub and Fabric vars against ARM eager-evaluation; fix README headings",
+      "LinesAdded": 19,
+      "LinesDeleted": 17,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "12d5186020cb78285f898297079ddec5bc5b2341",
+      "Author": "Yamini-Microsoft",
+      "Date": "Tue Mar 3 20:57:59 2026 +0530",
+      "Message": "Revert \"fix: bicep-fix-  guard EventHub namespace ID split against ARM eager-evaluation\"",
+      "LinesAdded": 7,
+      "LinesDeleted": 12,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written (Merge/Revert)",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "655314aad50a93f38ea5dab9d36f7feb01c00244",
+      "Author": "Yamini-Microsoft",
+      "Date": "Tue Mar 3 20:57:59 2026 +0530",
+      "Message": "Revert \"fix(bicep): resolve ARM eager-eval index-out-of-bounds on EventHub namespace vars\"",
+      "LinesAdded": 10,
+      "LinesDeleted": 11,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written (Merge/Revert)",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "25d0fc180cad8b8d76c3d789b2602656b3a11086",
+      "Author": "Yamini-Microsoft",
+      "Date": "Tue Mar 3 20:57:59 2026 +0530",
+      "Message": "Revert \"fix: use startsWith guard for EventHub namespace ID to handle unsubstituted env var literals\"",
+      "LinesAdded": 7,
+      "LinesDeleted": 7,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written (Merge/Revert)",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "c330ad5390ae624d39d6fd5098b9d13111983711",
+      "Author": "Yamini-Microsoft",
+      "Date": "Tue Mar 3 20:57:58 2026 +0530",
+      "Message": "Revert \"fix(bicep): guard existingFabricCapacityName against unsubstituted az CLI token\"",
+      "LinesAdded": 1,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written (Merge/Revert)",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "71fd73ae39a9b049768f6ca2967466a8256c75ff",
+      "Author": "Yamini-Microsoft",
+      "Date": "Tue Mar 3 20:46:12 2026 +0530",
+      "Message": "fix(bicep): guard existingFabricCapacityName against unsubstituted az CLI token",
+      "LinesAdded": 1,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "0364b07e3033819c9fe4eab8e460cc4ca664369b",
+      "Author": "Yamini-Microsoft",
+      "Date": "Tue Mar 3 20:33:14 2026 +0530",
+      "Message": "fix: use startsWith guard for EventHub namespace ID to handle unsubstituted env var literals",
+      "LinesAdded": 7,
+      "LinesDeleted": 7,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "50f93ec5d9959ba2a3be498f2f11e4f37166dd3d",
+      "Author": "Yamini-Microsoft",
+      "Date": "Tue Mar 3 19:17:20 2026 +0530",
+      "Message": "fix(bicep): resolve ARM eager-eval index-out-of-bounds on EventHub namespace vars",
+      "LinesAdded": 11,
+      "LinesDeleted": 10,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "4e6eeb621788213e0e9c7e1dc22f14a3b4c0dc75",
+      "Author": "Vamshi-Microsoft",
+      "Date": "Tue Mar 3 18:57:31 2026 +0530",
+      "Message": "fix: enable workspace administrators in Azure environment configuration",
+      "LinesAdded": 6,
+      "LinesDeleted": 6,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "636490271f5d8d09c7285dd4c05254aedaa862b9",
+      "Author": "Yamini-Microsoft",
+      "Date": "Tue Mar 3 17:35:00 2026 +0530",
+      "Message": "fix: bicep-fix-  guard EventHub namespace ID split against ARM eager-evaluation",
+      "LinesAdded": 12,
+      "LinesDeleted": 7,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "ae855aef01d3fe4866dba898133b55b53dec3885",
+      "Author": "Ragini-Microsoft",
+      "Date": "Mon Mar 2 14:23:02 2026 +0530",
+      "Message": "added createdby and type tags for RG",
+      "LinesAdded": 5,
+      "LinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    }
+  ],
+  "ApplicationName": "RTI",
+  "TierDistribution": {
+    "Tier3_High": 0,
+    "Tier1_Definitive": 0,
+    "Tier2_VeryHigh": 0,
+    "Tier4_Moderate": 0,
+    "Tier5_Low": 0,
+    "Human": 19
+  },
+  "FileTypeBreakdown": [
+    {
+      "Extension": "csv",
+      "TotalLines": 777696,
+      "AILines": 777696,
+      "AIPercentage": 100.0,
+      "FileCount": 15
+    },
+    {
+      "Extension": "py",
+      "TotalLines": 55606,
+      "AILines": 47690,
+      "AIPercentage": 85.76,
+      "FileCount": 675
+    },
+    {
+      "Extension": "md",
+      "TotalLines": 30677,
+      "AILines": 10749,
+      "AIPercentage": 35.04,
+      "FileCount": 757
+    },
+    {
+      "Extension": "ps1",
+      "TotalLines": 19438,
+      "AILines": 19432,
+      "AIPercentage": 99.97,
+      "FileCount": 65
+    },
+    {
+      "Extension": "json",
+      "TotalLines": 19344,
+      "AILines": 3417,
+      "AIPercentage": 17.66,
+      "FileCount": 117
+    },
+    {
+      "Extension": "ipynb",
+      "TotalLines": 14562,
+      "AILines": 9506,
+      "AIPercentage": 65.28,
+      "FileCount": 52
+    },
+    {
+      "Extension": "kql",
+      "TotalLines": 4634,
+      "AILines": 4557,
+      "AIPercentage": 98.34,
+      "FileCount": 110
+    },
+    {
+      "Extension": "yml",
+      "TotalLines": 3709,
+      "AILines": 1227,
+      "AIPercentage": 33.08,
+      "FileCount": 192
+    },
+    {
+      "Extension": "gitignore",
+      "TotalLines": 1894,
+      "AILines": 45,
+      "AIPercentage": 2.38,
+      "FileCount": 13
+    },
+    {
+      "Extension": "sh",
+      "TotalLines": 565,
+      "AILines": 495,
+      "AIPercentage": 87.61,
+      "FileCount": 23
+    },
+    {
+      "Extension": "bicep",
+      "TotalLines": 517,
+      "AILines": 420,
+      "AIPercentage": 81.24,
+      "FileCount": 23
+    },
+    {
+      "Extension": "txt",
+      "TotalLines": 300,
+      "AILines": 90,
+      "AIPercentage": 30.0,
+      "FileCount": 64
+    },
+    {
+      "Extension": "dockerignore",
+      "TotalLines": 282,
+      "AILines": 282,
+      "AIPercentage": 100.0,
+      "FileCount": 3
+    },
+    {
+      "Extension": "platform",
+      "TotalLines": 249,
+      "AILines": 192,
+      "AIPercentage": 77.11,
+      "FileCount": 57
+    },
+    {
+      "Extension": "ps1}",
+      "TotalLines": 231,
+      "AILines": 3,
+      "AIPercentage": 1.3,
+      "FileCount": 6
+    },
+    {
+      "Extension": "other",
+      "TotalLines": 210,
+      "AILines": 63,
+      "AIPercentage": 30.0,
+      "FileCount": 10
+    },
+    {
+      "Extension": "flake8",
+      "TotalLines": 161,
+      "AILines": 161,
+      "AIPercentage": 100.0,
+      "FileCount": 7
+    },
+    {
+      "Extension": "yaml",
+      "TotalLines": 147,
+      "AILines": 96,
+      "AIPercentage": 65.31,
+      "FileCount": 33
+    },
+    {
+      "Extension": "github/codeowners",
+      "TotalLines": 84,
+      "AILines": 21,
+      "AIPercentage": 25.0,
+      "FileCount": 14
+    },
+    {
+      "Extension": "devcontainer/dockerfile",
+      "TotalLines": 12,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 3
+    },
+    {
+      "Extension": "png",
+      "TotalLines": 3,
+      "AILines": 3,
+      "AIPercentage": 100.0,
+      "FileCount": 250
+    },
+    {
+      "Extension": "py}",
+      "TotalLines": 3,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 3
+    }
+  ],
+  "BranchStatistics": {
+    "Branch": "main",
+    "TotalCommits": 19,
+    "AICommits": 0,
+    "HumanCommits": 19,
+    "TotalLinesAdded": 157.0,
+    "TotalLinesDeleted": 131.0,
+    "AILinesAdded": null,
+    "AILinesDeleted": null,
+    "Tier1Commits": 0,
+    "Tier2Commits": 0,
+    "Tier3Commits": 0,
+    "Tier4Commits": 0,
+    "Tier5Commits": 0,
+    "UniqueContributors": 6,
+    "AIPercentage": 0.0,
+    "HumanLinesAdded": 157.0
+  },
+  "Branch": "main",
+  "Metadata": {
+    "PowerShellVersion": "7.4.14",
+    "ScriptVersion": "2.0.0",
+    "IncludeTestFiles": false,
+    "AnalysisMethod": "5-Tier Weighted Pattern Detection",
+    "GeneratedAt": "2026-04-20 06:36:30",
+    "GeneratedBy": "Copilot Usage Report Tool v2.0"
+  },
+  "Users": [
+    {
+      "UserName": "Ragini-Microsoft",
+      "UserEmail": "v-raginich@microsoft.com",
+      "TotalCommits": 1,
+      "AICommits": 0,
+      "HumanCommits": 1,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 5,
+      "HumanLinesDeleted": 0,
+      "TotalLinesAdded": 5,
+      "TotalLinesDeleted": 0,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Ajit Padhi",
+      "UserEmail": "v-padhiajit@microsoft.com",
+      "TotalCommits": 1,
+      "AICommits": 0,
+      "HumanCommits": 1,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 1,
+      "HumanLinesDeleted": 1,
+      "TotalLinesAdded": 1,
+      "TotalLinesDeleted": 1,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Yamini-Microsoft",
+      "UserEmail": "v-yamini3@microsoft.com",
+      "TotalCommits": 12,
+      "AICommits": 0,
+      "HumanCommits": 12,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 114,
+      "HumanLinesDeleted": 112,
+      "TotalLinesAdded": 114,
+      "TotalLinesDeleted": 112,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Priyanka-Microsoft",
+      "UserEmail": "v-prisinghal@microsoft.com",
+      "TotalCommits": 1,
+      "AICommits": 0,
+      "HumanCommits": 1,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 3,
+      "HumanLinesDeleted": 10,
+      "TotalLinesAdded": 3,
+      "TotalLinesDeleted": 10,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Prajwal-Microsoft",
+      "UserEmail": "v-dcprajwal@microsoft.com",
+      "TotalCommits": 1,
+      "AICommits": 0,
+      "HumanCommits": 1,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 5,
+      "HumanLinesDeleted": 0,
+      "TotalLinesAdded": 5,
+      "TotalLinesDeleted": 0,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Vamshi-Microsoft",
+      "UserEmail": "v-vamolla@microsoft.com",
+      "TotalCommits": 3,
+      "AICommits": 0,
+      "HumanCommits": 3,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 29,
+      "HumanLinesDeleted": 8,
+      "TotalLinesAdded": 29,
+      "TotalLinesDeleted": 8,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    }
+  ],
+  "GeneratedAt": "2026-04-20 06:36:30",
+  "AnalysisPeriod": {
+    "EndDate": "2026-03-31",
+    "FilterApplied": true,
+    "StartDate": "2026-03-01"
+  }
+}

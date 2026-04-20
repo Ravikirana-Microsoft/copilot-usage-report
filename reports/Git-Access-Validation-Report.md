@@ -1,11 +1,11 @@
 # Git Access Validation Report
 
-**Generated:** 2026-02-26 09:51:28
+**Generated:** 2026-04-20 06:35:15
 
 ## Summary
 
-- **Total Applications:** 14
-- **Accessible:** 14 ✓
+- **Total Applications:** 16
+- **Accessible:** 16 ✓
 - **Not Accessible:** 0 ✗
 
 ## Detailed Results
@@ -26,6 +26,8 @@
 | MAAG | https://github.com/microsoft/unified-data-foundation-with-fabric-solution-accelerator.git | ✓ Success |  |
 | RTI | https://github.com/microsoft/real-time-intelligence-operations-solution-accelerator.git | ✓ Success |  |
 | KM Generic | https://github.com/microsoft/Conversation-Knowledge-Mining-Solution-Accelerator.git | ✓ Success |  |
+| Data and Security | https://github.com/microsoft/Data-and-Agent-Governance-and-Security-Accelerator.git | ✓ Success |  |
+| Content Generation | https://github.com/microsoft/content-generation-solution-accelerator.git | ✓ Success |  |
 
 ## Authentication Guidance
 

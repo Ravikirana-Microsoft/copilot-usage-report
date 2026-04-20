@@ -1,0 +1,321 @@
+{
+  "AIAttributionOverride": {
+    "Notes": null,
+    "OverridePercentage": null,
+    "Applied": false
+  },
+  "Commits": [
+    {
+      "Hash": "bf02dea52ae8fdcf0575e8ab4ab7884319a59cb7",
+      "Author": "Mike Swantek",
+      "Date": "Fri Mar 27 11:45:52 2026 -0400",
+      "Message": "Updates from review suggestions",
+      "LinesAdded": 169,
+      "LinesDeleted": 17,
+      "IsAI": true,
+      "ConfidenceScore": 98,
+      "ConfidenceTier": "Tier 2: Very High Confidence (90-98 percent)",
+      "TierNumber": 2
+    },
+    {
+      "Hash": "612d996547e5c6accb6c8bcd14ce564430824060",
+      "Author": "Mike Swantek",
+      "Date": "Fri Mar 27 10:56:24 2026 -0400",
+      "Message": "Incorparated several cherry picked updates from pr#3.",
+      "LinesAdded": 30,
+      "LinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "464a7fb711b8edd35960de8938bcfd8ed179a588",
+      "Author": "Mike Swantek",
+      "Date": "Thu Mar 26 13:32:54 2026 -0400",
+      "Message": "Added post-provisioning validation",
+      "LinesAdded": 197,
+      "LinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "160256cbd7516f02d3cfb2d8989c6a7f6c6ff77b",
+      "Author": "Mike Swantek",
+      "Date": "Wed Mar 25 09:43:30 2026 -0400",
+      "Message": "Update to allow for azd up",
+      "LinesAdded": 24,
+      "LinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "0a0bc8890a1becb4987576d1736b619c1ded6656",
+      "Author": "Mike Swantek",
+      "Date": "Wed Mar 25 09:06:02 2026 -0400",
+      "Message": "added spec.local.releasedExample to show parameters used in this new release",
+      "LinesAdded": 167,
+      "LinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "3ac2c07c3af2f6307e5382dce49cecb236424691",
+      "Author": "Mike Swantek",
+      "Date": "Wed Mar 25 09:01:04 2026 -0400",
+      "Message": "Documentation updates and clarifications",
+      "LinesAdded": 36,
+      "LinesDeleted": 6,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "8bce031b136b32020b6c67061b6beea31fa557eb",
+      "Author": "Ajit Padhi",
+      "Date": "Wed Mar 25 15:45:51 2026 +0530",
+      "Message": "Updated azure.yaml file to exclude the 1.23.9 azd version",
+      "LinesAdded": 4,
+      "LinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "3cefe216b3743784c895035a8fceaa109bb315e6",
+      "Author": "Mike Swantek",
+      "Date": "Wed Mar 18 13:07:23 2026 -0400",
+      "Message": "Updated readme to align to Foundry Template research suggestions",
+      "LinesAdded": 109,
+      "LinesDeleted": 131,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "6fbef9ca1ab9decc377ece059d99547dda91da25",
+      "Author": "Mike Swantek",
+      "Date": "Fri Mar 13 11:34:00 2026 -0400",
+      "Message": "Updated to identify missing labels on lakehouse",
+      "LinesAdded": 15,
+      "LinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "9d1d2b93a3cccd88d51e50ae33729ab3dbdcf2f4",
+      "Author": "Mike Swantek",
+      "Date": "Thu Mar 12 12:27:44 2026 -0400",
+      "Message": "update name of accelerator in deployment guide. Resolves BUG 36710",
+      "LinesAdded": 1,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "e243793c33fba3aab360c41700e9ce480da3e5d4",
+      "Author": "Mike Swantek",
+      "Date": "Thu Mar 12 12:14:50 2026 -0400",
+      "Message": "Add note to resolve ADO BUG 36717",
+      "LinesAdded": 2,
+      "LinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "2d824ff71906efdb95a0b0e56ab8c40373921325",
+      "Author": "Mike Swantek",
+      "Date": "Wed Mar 11 09:36:53 2026 -0400",
+      "Message": "update and clarified spec local example",
+      "LinesAdded": 2,
+      "LinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "337100cfd373919a1b4ea3c4eba9a02d6e6e34c9",
+      "Author": "Mike Swantek",
+      "Date": "Wed Mar 11 09:22:19 2026 -0400",
+      "Message": "updated architecture",
+      "LinesAdded": 0,
+      "LinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "d2c5b129cfa495fe9df8666d91504cf0b68ee257",
+      "Author": "Mike Swantek",
+      "Date": "Wed Mar 11 09:02:25 2026 -0400",
+      "Message": "Update documentation, update spec examples, update script performance on some scripts, update Fabric  and Purview collection creation and data mapping",
+      "LinesAdded": 684,
+      "LinesDeleted": 147,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "25010c5d39b2bff9066a5340415185e8fba54dba",
+      "Author": "Mike Swantek",
+      "Date": "Mon Mar 9 08:23:05 2026 -0400",
+      "Message": "Add Fabric sensitivity label support and docs updates",
+      "LinesAdded": 1619,
+      "LinesDeleted": 682,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    }
+  ],
+  "ApplicationName": "Data and Security",
+  "TierDistribution": {
+    "Tier3_High": 0,
+    "Tier1_Definitive": 0,
+    "Tier2_VeryHigh": 1,
+    "Tier4_Moderate": 0,
+    "Tier5_Low": 0,
+    "Human": 14
+  },
+  "FileTypeBreakdown": [
+    {
+      "Extension": "ps1",
+      "TotalLines": 2035,
+      "AILines": 169,
+      "AIPercentage": 8.3,
+      "FileCount": 28
+    },
+    {
+      "Extension": "md",
+      "TotalLines": 668,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 33
+    },
+    {
+      "Extension": "json",
+      "TotalLines": 315,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 4
+    },
+    {
+      "Extension": "bicep",
+      "TotalLines": 24,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 1
+    },
+    {
+      "Extension": "bicepparam",
+      "TotalLines": 11,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 1
+    },
+    {
+      "Extension": "yaml",
+      "TotalLines": 6,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 2
+    }
+  ],
+  "BranchStatistics": {
+    "Branch": "dev",
+    "TotalCommits": 15,
+    "AICommits": 1,
+    "HumanCommits": 14,
+    "TotalLinesAdded": 3059.0,
+    "TotalLinesDeleted": 984.0,
+    "AILinesAdded": 169.0,
+    "AILinesDeleted": 17.0,
+    "Tier1Commits": 0,
+    "Tier2Commits": 1,
+    "Tier3Commits": 0,
+    "Tier4Commits": 0,
+    "Tier5Commits": 0,
+    "UniqueContributors": 2,
+    "AIPercentage": 5.52,
+    "HumanLinesAdded": 2890.0
+  },
+  "Branch": "dev",
+  "Metadata": {
+    "PowerShellVersion": "7.4.14",
+    "ScriptVersion": "2.0.0",
+    "IncludeTestFiles": false,
+    "AnalysisMethod": "5-Tier Weighted Pattern Detection",
+    "GeneratedAt": "2026-04-20 06:36:31",
+    "GeneratedBy": "Copilot Usage Report Tool v2.0"
+  },
+  "Users": [
+    {
+      "UserName": "Mike Swantek",
+      "UserEmail": "mike.swantek@microsoft.com",
+      "TotalCommits": 14,
+      "AICommits": 1,
+      "HumanCommits": 13,
+      "AILinesAdded": 169,
+      "AILinesDeleted": 17,
+      "HumanLinesAdded": 2886,
+      "HumanLinesDeleted": 967,
+      "TotalLinesAdded": 3055,
+      "TotalLinesDeleted": 984,
+      "AIPercentage": 5.53,
+      "AvgConfidenceScore": 98.0,
+      "ConfidenceScores": [
+        98
+      ],
+      "Tier1Commits": 0,
+      "Tier2Commits": 1,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Ajit Padhi",
+      "UserEmail": "v-padhiajit@microsoft.com",
+      "TotalCommits": 1,
+      "AICommits": 0,
+      "HumanCommits": 1,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 4,
+      "HumanLinesDeleted": 0,
+      "TotalLinesAdded": 4,
+      "TotalLinesDeleted": 0,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    }
+  ],
+  "GeneratedAt": "2026-04-20 06:36:31",
+  "AnalysisPeriod": {
+    "EndDate": "2026-03-31",
+    "FilterApplied": true,
+    "StartDate": "2026-03-01"
+  }
+}
