@@ -2,8 +2,8 @@
 
 > Consolidated analysis across all branches using 5-Tier AI Detection Model
 
-**Generated:** 2026-04-20 06:43:23  
-**Analysis Period:** 2026-04-01 to 2026-04-20
+**Generated:** 2026-04-20 08:39:25  
+**Analysis Period:** 2026-01-01 to 2026-01-31
 
 ---
 
@@ -14,7 +14,7 @@
 | **Application** | MAAG |
 | **Branches Analyzed** | 1 |
 | **Total Contributors** | 7 |
-| **Overall AI Usage** | **0%** |
+| **Overall AI Usage** | **54.39%** |
 
 ---
 
@@ -24,15 +24,15 @@
 
 | Category | Lines | Percentage | Commits |
 |----------|-------|------------|---------|
-| **AI-Assisted** | 0 | 0% | 0 |
-| **Human-Written** | 349 | 100% | 19 |
-| **Total** | 349 | 100% | 19 |
+| **AI-Assisted** | 13625 | 54.39% | 7 |
+| **Human-Written** | 11426 | 45.61% | 47 |
+| **Total** | 25051 | 100% | 54 |
 
 ### Visual Summary
 
 ```
-AI-Assisted:   ░░░░░░░░░░░░░░░░░░░░ 0%
-Human-Written: ████████████████████ 100%
+AI-Assisted:   ██████████░░░░░░░░░░ 54.39%
+Human-Written: █████████░░░░░░░░░░░ 45.61%
 ```
 
 ---
@@ -42,11 +42,11 @@ Human-Written: ████████████████████ 100%
 | Tier | Confidence | Description | Commits | Percentage |
 |------|------------|-------------|---------|------------|
 | **Tier 1** | 99-100% | Definitive AI markers | 0 | 0% |
-| **Tier 2** | 90-98% | Very high confidence | 0 | 0% |
-| **Tier 3** | 80-89% | High confidence | 0 | 0% |
-| **Tier 4** | 70-79% | Moderate confidence | 0 | 0% |
+| **Tier 2** | 90-98% | Very high confidence | 1 | 14.3% |
+| **Tier 3** | 80-89% | High confidence | 4 | 57.1% |
+| **Tier 4** | 70-79% | Moderate confidence | 2 | 28.6% |
 | **Tier 5** | 60-69% | Low confidence | 0 | 0% |
-| **Human** | <60% | No AI detected | 19 | 100% |
+| **Human** | <60% | No AI detected | 47 | 87% |
 
 ---
 
@@ -54,22 +54,22 @@ Human-Written: ████████████████████ 100%
 
 | Branch | Commits | AI Commits | AI Lines | AI % | T1 | T2 | T3 | T4 | T5 | Contributors |
 |--------|---------|------------|----------|------|----|----|----|----|-----|--------------|
-| **dev** | 19 | 0 |  | 0% | 0 | 0 | 0 | 0 | 0 | 7 |
+| **dev** | 54 | 7 | 13625 | 54.39% | 0 | 1 | 4 | 2 | 0 | 7 |
 
 ---
 
 ## Branch Reports
 
-- **dev**: [dev/](dev/) - AI: 0%
+- **dev**: [dev/](dev/) - AI: 54.39%
 
 ---
 
 ## Key Insights
 
-### Human-Centric Development
-This application is **primarily human-written** with only 0% AI-assisted code.
-- Most commits are traditional human development
-- AI tools used selectively or minimally
+### Balanced Development
+This application shows **balanced AI-human collaboration** with 54.39% AI-assisted code.
+- Mix of AI-assisted and human-written code
+- AI tools supplementing developer productivity
 
 ---
 

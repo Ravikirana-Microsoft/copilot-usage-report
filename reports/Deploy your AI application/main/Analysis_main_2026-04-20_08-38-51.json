@@ -1,0 +1,283 @@
+{
+  "FileTypeBreakdown": [
+    {
+      "Extension": "ps1",
+      "TotalLines": 75165,
+      "AILines": 4014,
+      "AIPercentage": 5.34,
+      "FileCount": 632
+    },
+    {
+      "Extension": "json",
+      "TotalLines": 45491,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 61
+    },
+    {
+      "Extension": "md",
+      "TotalLines": 26176,
+      "AILines": 392,
+      "AIPercentage": 1.5,
+      "FileCount": 363
+    },
+    {
+      "Extension": "sh",
+      "TotalLines": 9630,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 186
+    },
+    {
+      "Extension": "bicep",
+      "TotalLines": 3461,
+      "AILines": 21,
+      "AIPercentage": 0.61,
+      "FileCount": 231
+    },
+    {
+      "Extension": "bicepparam",
+      "TotalLines": 1163,
+      "AILines": 30,
+      "AIPercentage": 2.58,
+      "FileCount": 24
+    },
+    {
+      "Extension": "yaml",
+      "TotalLines": 1128,
+      "AILines": 8,
+      "AIPercentage": 0.71,
+      "FileCount": 47
+    },
+    {
+      "Extension": "yml",
+      "TotalLines": 811,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 43
+    },
+    {
+      "Extension": "gitignore",
+      "TotalLines": 680,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 22
+    },
+    {
+      "Extension": "py",
+      "TotalLines": 502,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 73
+    },
+    {
+      "Extension": "sample",
+      "TotalLines": 348,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 12
+    },
+    {
+      "Extension": "other",
+      "TotalLines": 156,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 23
+    },
+    {
+      "Extension": "env",
+      "TotalLines": 49,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 14
+    },
+    {
+      "Extension": "txt",
+      "TotalLines": 45,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 52
+    },
+    {
+      "Extension": "devcontainer/dockerfile",
+      "TotalLines": 28,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 7
+    },
+    {
+      "Extension": "gitmodules",
+      "TotalLines": 22,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 8
+    },
+    {
+      "Extension": "github/codeowners",
+      "TotalLines": 10,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 10
+    },
+    {
+      "Extension": "md}",
+      "TotalLines": 5,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 3
+    }
+  ],
+  "GeneratedAt": "2026-04-20 08:38:51",
+  "AIAttributionOverride": {
+    "Applied": false,
+    "OverridePercentage": null,
+    "Notes": null
+  },
+  "Branch": "main",
+  "Metadata": {
+    "GeneratedBy": "Copilot Usage Report Tool v2.0",
+    "ScriptVersion": "2.0.0",
+    "AnalysisMethod": "5-Tier Weighted Pattern Detection",
+    "IncludeTestFiles": false,
+    "PowerShellVersion": "7.4.14",
+    "GeneratedAt": "2026-04-20 08:38:51"
+  },
+  "AnalysisPeriod": {
+    "FilterApplied": true,
+    "EndDate": "2026-01-31",
+    "StartDate": "2026-01-01"
+  },
+  "ApplicationName": "Deploy your AI application",
+  "BranchStatistics": {
+    "Branch": "main",
+    "TotalCommits": 5,
+    "AICommits": 0,
+    "HumanCommits": 5,
+    "TotalLinesAdded": 924.0,
+    "TotalLinesDeleted": 2149.0,
+    "AILinesAdded": null,
+    "AILinesDeleted": null,
+    "Tier1Commits": 0,
+    "Tier2Commits": 0,
+    "Tier3Commits": 0,
+    "Tier4Commits": 0,
+    "Tier5Commits": 0,
+    "UniqueContributors": 2,
+    "AIPercentage": 0.0,
+    "HumanLinesAdded": 924.0
+  },
+  "Commits": [
+    {
+      "Hash": "1ab8547b353ec73d28e929cb5b5fc46cd9830e64",
+      "Author": "Yamini-Microsoft",
+      "Date": "Fri Jan 16 18:33:34 2026 +0530",
+      "Message": "fix: Use purviewCollectionName parameter for Purview collection setup",
+      "LinesAdded": 9,
+      "LinesDeleted": 5,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "9fb289cf17c67d80ad8abefe739d55c0db08f77f",
+      "Author": "Mike Swantek",
+      "Date": "Wed Jan 14 15:18:56 2026 -0500",
+      "Message": "Update pre-provision failover from bash to posh",
+      "LinesAdded": 111,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "cca1768ae0d748a4e077ddabdd93539896949bdd",
+      "Author": "Mike Swantek",
+      "Date": "Wed Jan 14 14:06:55 2026 -0500",
+      "Message": "Update Fabric automation Allow for BYO workspace and capacity Allow no workspace or capacity Allow creation of workspace or capacity",
+      "LinesAdded": 400,
+      "LinesDeleted": 50,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "fe20dc549be51930bbfecbd118b9016e501113ca",
+      "Author": "Mike Swantek",
+      "Date": "Tue Jan 13 09:22:02 2026 -0500",
+      "Message": "Update scripts and docs to reflect Fabric mode/preset parameters and correct output→script mappings",
+      "LinesAdded": 359,
+      "LinesDeleted": 30,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "a23d64818ac84e49f705c6a4d521cb566b8fb783",
+      "Author": "Mike Swantek",
+      "Date": "Mon Jan 5 16:48:25 2026 -0500",
+      "Message": "Remove unsupported Fabric private link scripts and update docs",
+      "LinesAdded": 45,
+      "LinesDeleted": 2063,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    }
+  ],
+  "TierDistribution": {
+    "Tier4_Moderate": 0,
+    "Human": 5,
+    "Tier1_Definitive": 0,
+    "Tier2_VeryHigh": 0,
+    "Tier5_Low": 0,
+    "Tier3_High": 0
+  },
+  "Users": [
+    {
+      "UserName": "Mike Swantek",
+      "UserEmail": "mike.swantek@microsoft.com",
+      "TotalCommits": 4,
+      "AICommits": 0,
+      "HumanCommits": 4,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 915,
+      "HumanLinesDeleted": 2144,
+      "TotalLinesAdded": 915,
+      "TotalLinesDeleted": 2144,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Yamini-Microsoft",
+      "UserEmail": "v-yamini3@microsoft.com",
+      "TotalCommits": 1,
+      "AICommits": 0,
+      "HumanCommits": 1,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 9,
+      "HumanLinesDeleted": 5,
+      "TotalLinesAdded": 9,
+      "TotalLinesDeleted": 5,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "FileTypeBreakdown": [
+    {
+      "Extension": "ps1",
+      "TotalLines": 2230,
+      "AILines": 169,
+      "AIPercentage": 7.58,
+      "FileCount": 41
+    },
+    {
+      "Extension": "md",
+      "TotalLines": 713,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 40
+    },
+    {
+      "Extension": "json",
+      "TotalLines": 315,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 4
+    },
+    {
+      "Extension": "yml",
+      "TotalLines": 138,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 23
+    },
+    {
+      "Extension": "bicep",
+      "TotalLines": 28,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "bicepparam",
+      "TotalLines": 16,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 3
+    },
+    {
+      "Extension": "yaml",
+      "TotalLines": 10,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 4
+    }
+  ],
+  "GeneratedAt": "2026-04-20 08:38:22",
+  "AIAttributionOverride": {
+    "Applied": false,
+    "OverridePercentage": null,
+    "Notes": null
+  },
+  "Branch": "dev",
+  "Metadata": {
+    "GeneratedBy": "Copilot Usage Report Tool v2.0",
+    "ScriptVersion": "2.0.0",
+    "AnalysisMethod": "5-Tier Weighted Pattern Detection",
+    "IncludeTestFiles": false,
+    "PowerShellVersion": "7.4.14",
+    "GeneratedAt": "2026-04-20 08:38:22"
+  },
+  "AnalysisPeriod": {
+    "FilterApplied": true,
+    "EndDate": "2026-01-31",
+    "StartDate": "2026-01-01"
+  },
+  "ApplicationName": "Data and Security",
+  "BranchStatistics": {
+    "Branch": "dev",
+    "TotalCommits": 2,
+    "AICommits": 0,
+    "HumanCommits": 2,
+    "TotalLinesAdded": 131.0,
+    "TotalLinesDeleted": 3.0,
+    "AILinesAdded": null,
+    "AILinesDeleted": null,
+    "Tier1Commits": 0,
+    "Tier2Commits": 0,
+    "Tier3Commits": 0,
+    "Tier4Commits": 0,
+    "Tier5Commits": 0,
+    "UniqueContributors": 1,
+    "AIPercentage": 0.0,
+    "HumanLinesAdded": 131.0
+  },
+  "Commits": [
+    {
+      "Hash": "aa7bbf865b763f9430302470c7bcadafce5677ca",
+      "Author": "Mike Swantek",
+      "Date": "Wed Jan 28 10:17:26 2026 -0500",
+      "Message": "Update breakfix on diagnostics ps",
+      "LinesAdded": 33,
+      "LinesDeleted": 2,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "0665cb9f0c58b9d45699918d397da846d73f757d",
+      "Author": "Mike Swantek",
+      "Date": "Tue Jan 27 10:56:33 2026 -0500",
+      "Message": "Updates to allow minimal paramters for azd up command. This will correct the automated step for telemetery",
+      "LinesAdded": 98,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    }
+  ],
+  "TierDistribution": {
+    "Tier4_Moderate": 0,
+    "Human": 2,
+    "Tier1_Definitive": 0,
+    "Tier2_VeryHigh": 0,
+    "Tier5_Low": 0,
+    "Tier3_High": 0
+  },
+  "Users": [
+    {
+      "UserName": "Mike Swantek",
+      "UserEmail": "mike.swantek@microsoft.com",
+      "TotalCommits": 2,
+      "AICommits": 0,
+      "HumanCommits": 2,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 131,
+      "HumanLinesDeleted": 3,
+      "TotalLinesAdded": 131,
+      "TotalLinesDeleted": 3,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    }
+  ]
+}
