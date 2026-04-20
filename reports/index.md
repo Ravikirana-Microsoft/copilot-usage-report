@@ -2,7 +2,7 @@
 
 > Auto-generated index of all analysis reports with application-level AI usage statistics.
 > 
-> **Last Updated:** 2026-04-20 06:37:23
+> **Last Updated:** 2026-04-20 06:43:23
 
 ---
 
@@ -10,23 +10,23 @@
 
 | Application | AI Usage % | Total Commits | AI Commits | Human Commits | Total Lines | AI Lines | Branches |
 |-------------|------------|---------------|------------|---------------|-------------|----------|----------|
-| **BYOCC** | **6.23%** | 80 | 2 | 78 | 9813 | 611 | dev |
-| **Code Modernization** | **5.3%** | 28 | 3 | 25 | 8427 | 447 | dev |
-| **Container Migration** | **0%** | 25 | 0 | 25 | 5985 | 0 | dev |
-| **Content Generation** | **12.57%** | 116 | 6 | 110 | 47496 | 5972 | dev |
-| **Content Processing** | **72.63%** | 70 | 6 | 64 | 93818 | 68140 | dev |
-| **CWYD** | **0.87%** | 7 | 1 | 6 | 1152 | 10 | dev |
-| **Data and Security** | **5.52%** | 15 | 1 | 14 | 3059 | 169 | dev |
-| **Deploy your AI application** | **64.82%** | 27 | 2 | 25 | 6888 | 4465 | main |
-| **DKM** | **0%** | 20 | 0 | 20 | 3185 | 0 | dev |
-| **Doc Gen** | **12.57%** | 116 | 6 | 110 | 47496 | 5972 | dev |
-| **Fabric SQL** | **13.7%** | 152 | 11 | 141 | 24948 | 3418 | dev |
-| **KM Generic** | **36.13%** | 95 | 5 | 90 | 8610 | 3111 | dev |
-| **MAAG** | **96.69%** | 32 | 3 | 29 | 16336 | 15796 | dev |
-| **MACAE v4** | **62.68%** | 75 | 11 | 64 | 7682 | 4815 | main |
-| **RTI** | **0%** | 19 | 0 | 19 | 157 | 0 | main |
+| **BYOCC** | **97.61%** | 36 | 3 | 33 | 15495 | 15125 | dev |
+| **Code Modernization** | **60.94%** | 44 | 3 | 41 | 1175 | 716 | dev |
+| **Container Migration** | **53.93%** | 22 | 3 | 19 | 1018 | 549 | dev |
+| **Content Generation** | **59.82%** | 46 | 4 | 42 | 6423 | 3842 | dev |
+| **Content Processing** | **0%** | 39 | 0 | 39 | 6397 | 0 | dev |
+| **CWYD** | **49.5%** | 12 | 2 | 10 | 3329 | 1648 | dev |
+| **Data and Security** | **5.38%** | 23 | 1 | 22 | 260 | 14 | dev |
+| **Deploy your AI application** | **0%** | 1 | 0 | 1 | 24 | 0 | main |
+| **DKM** | **23.93%** | 26 | 2 | 24 | 4171 | 998 | dev |
+| **Doc Gen** | **59.82%** | 46 | 4 | 42 | 6423 | 3842 | dev |
+| **Fabric SQL** | **17.9%** | 77 | 4 | 73 | 3397 | 608 | dev |
+| **KM Generic** | **56.66%** | 47 | 6 | 41 | 6160 | 3490 | dev |
+| **MAAG** | **0%** | 19 | 0 | 19 | 349 | 0 | dev |
+| **MACAE v4** | **34.13%** | 27 | 1 | 26 | 1556 | 531 | main |
+| **RTI** | **2.48%** | 13 | 2 | 11 | 161 | 4 | main |
 
-### Overall AI Usage: **39.62%**
+### Overall AI Usage: **55.68%**
 
 ---
 
@@ -36,6 +36,7 @@
 
 | Run Date | Period | Applications | Branches | Overall AI % | Reports |
 |----------|--------|--------------|----------|--------------|---------|
+| 2026-04-20 06:43 | 2026-04-01 to 2026-04-20 | 16 | 15 | 55.68% | [Summary](Batch-Analysis-Summary.md), [JSON](Consolidated-Analysis_2026-04-20_06-43-23.json) |
 | 2026-04-20 06:37 | 2026-03-01 to 2026-03-31 | 16 | 15 | 39.62% | [Summary](Batch-Analysis-Summary.md), [JSON](Consolidated-Analysis_2026-04-20_06-37-23.json) |
 | 2026-02-26 09:52 | 2026-02-01 to 2026-02-28 | 14 | 14 | 3.43% | [Summary](Batch-Analysis-Summary.md), [JSON](Consolidated-Analysis_2026-02-26_09-52-53.json) |
 | 2026-02-26 09:34 | 2026-01-05 to 2026-01-16 | 14 | 14 | 27.07% | [Summary](Batch-Analysis-Summary.md), [JSON](Consolidated-Analysis_2026-02-26_09-34-45.json) |
@@ -55,7 +56,6 @@
 | 2026-02-18 08:00 | 2025-11-01 to 2025-11-30 | 13 | 13 | 54.61% | [Summary](Batch-Analysis-Summary.md), [JSON](Consolidated-Analysis_2026-02-18_08-00-25.json) |
 | 2026-02-18 07:50 | 2025-11-01 to 2025-11-30 | 13 | 13 | 54.61% | [Summary](Batch-Analysis-Summary.md), [JSON](Consolidated-Analysis_2026-02-18_07-50-17.json) |
 | 2026-02-18 07:46 | 2025-11-01 to 2025-11-30 | 13 | 13 | 54.61% | [Summary](Batch-Analysis-Summary.md), [JSON](Consolidated-Analysis_2026-02-18_07-46-29.json) |
-| 2026-02-18 07:38 | 2025-12-01 to 2025-12-31 | 13 | 13 | 38.79% | [Summary](Batch-Analysis-Summary.md), [JSON](Consolidated-Analysis_2026-02-18_07-38-42.json) |
 
 ---
 
@@ -138,23 +138,23 @@
 - **main Branch**: [RTI/main](RTI/main/)
 
 
-**Latest Reports (2026-04-20 06:37):**
+**Latest Reports (2026-04-20 06:43):**
 
-- [Content Processing - dev](Content Processing/dev/) - AI: 72.63%
-- [Doc Gen - dev](Doc Gen/dev/) - AI: 12.57%
-- [Content Generation - dev](Content Generation/dev/) - AI: 12.57%
-- [Fabric SQL - dev](Fabric SQL/dev/) - AI: 13.7%
-- [MACAE v4 - main](MACAE v4/main/) - AI: 62.68%
-- [KM Generic - dev](KM Generic/dev/) - AI: 36.13%
-- [MAAG - dev](MAAG/dev/) - AI: 96.69%
-- [BYOCC - dev](BYOCC/dev/) - AI: 6.23%
-- [Deploy your AI application - main](Deploy your AI application/main/) - AI: 64.82%
-- [Code Modernization - dev](Code Modernization/dev/) - AI: 5.3%
-- [Data and Security - dev](Data and Security/dev/) - AI: 5.52%
-- [RTI - main](RTI/main/) - AI: 0%
-- [Container Migration - dev](Container Migration/dev/) - AI: 0%
-- [CWYD - dev](CWYD/dev/) - AI: 0.87%
-- [DKM - dev](DKM/dev/) - AI: 0%
+- [Content Generation - dev](Content Generation/dev/) - AI: 59.82%
+- [Doc Gen - dev](Doc Gen/dev/) - AI: 59.82%
+- [Fabric SQL - dev](Fabric SQL/dev/) - AI: 17.9%
+- [KM Generic - dev](KM Generic/dev/) - AI: 56.66%
+- [Content Processing - dev](Content Processing/dev/) - AI: 0%
+- [BYOCC - dev](BYOCC/dev/) - AI: 97.61%
+- [Code Modernization - dev](Code Modernization/dev/) - AI: 60.94%
+- [MACAE v4 - main](MACAE v4/main/) - AI: 34.13%
+- [CWYD - dev](CWYD/dev/) - AI: 49.5%
+- [DKM - dev](DKM/dev/) - AI: 23.93%
+- [Data and Security - dev](Data and Security/dev/) - AI: 5.38%
+- [MAAG - dev](MAAG/dev/) - AI: 0%
+- [Container Migration - dev](Container Migration/dev/) - AI: 53.93%
+- [RTI - main](RTI/main/) - AI: 2.48%
+- [Deploy your AI application - main](Deploy your AI application/main/) - AI: 0%
 
 
 ---
@@ -162,8 +162,8 @@
 ## Quick Links
 
 - [Batch Analysis Summary](Batch-Analysis-Summary.md)
-- [Branch-Level Summary CSV](Branch-Level-Summary_2026-04-20_06-37-23.csv)
-- [Consolidated Analysis JSON](Consolidated-Analysis_2026-04-20_06-37-23.json)
+- [Branch-Level Summary CSV](Branch-Level-Summary_2026-04-20_06-43-23.csv)
+- [Consolidated Analysis JSON](Consolidated-Analysis_2026-04-20_06-43-23.json)
 - [Git Access Validation Report](Git-Access-Validation-Report.md)
 
 ---
