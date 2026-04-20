@@ -2,7 +2,11 @@
 
 > Auto-generated index of all analysis reports with application-level AI usage statistics.
 > 
+<<<<<<< Updated upstream
 > **Last Updated:** 2026-04-20 11:13:35
+=======
+> **Last Updated:** 2026-04-20 11:16:26
+>>>>>>> Stashed changes
 
 ---
 
@@ -14,7 +18,11 @@
 | **BYOCC** | **21.78%** | 58 | 7 | 51 | 53663 | 11690 | dev |
 | **Code Modernization** | **3.48%** | 50 | 1 | 49 | 4736 | 165 | dev |
 | **Container Migration** | **0%** | 41 | 0 | 41 | 2144 | 0 | dev |
+<<<<<<< Updated upstream
 | **Content Generation** | **84.15%** | 95 | 17 | 78 | 80798 | 67992 | dev |
+=======
+| **Content Generation** | **84.15%** | 96 | 17 | 79 | 80800 | 67992 | dev |
+>>>>>>> Stashed changes
 | **Content Processing** | **0%** | 43 | 0 | 43 | 5721 | 0 | dev |
 | **CWYD** | **65.67%** | 5 | 2 | 3 | 201 | 132 | dev |
 | **Data and Security** | **0%** | 23 | 0 | 23 | 3690 | 0 | dev |
@@ -36,7 +44,11 @@
 
 | Run Date | Period | Applications | Branches | Overall AI % | Reports |
 |----------|--------|--------------|----------|--------------|---------|
+<<<<<<< Updated upstream
 | 2026-04-20 11:13 | 2025-12-01 to 2025-12-31 | 15 | 15 | 16.1% | [Summary](Batch-Analysis-Summary.md), [JSON](Consolidated-Analysis_2026-04-20_11-13-35.json) |
+=======
+| 2026-04-20 11:16 | 2025-12-01 to 2025-12-31 | 15 | 15 | 16.1% | [Summary](Batch-Analysis-Summary.md), [JSON](Consolidated-Analysis_2026-04-20_11-16-26.json) |
+>>>>>>> Stashed changes
 | 2026-04-20 09:51 | 2026-04-01 to 2026-04-20 | 15 | 15 | 45.42% | [Summary](Batch-Analysis-Summary.md), [JSON](Consolidated-Analysis_2026-04-20_09-51-18.json) |
 | 2026-04-20 09:39 | 2025-07-01 to 2026-04-20 | 15 | 15 | 23.88% | [Summary](Batch-Analysis-Summary.md), [JSON](Consolidated-Analysis_2026-04-20_09-39-11.json) |
 | 2026-04-20 08:51 | 2026-03-01 to 2026-03-31 | 15 | 14 | 47.27% | [Summary](Batch-Analysis-Summary.md), [JSON](Consolidated-Analysis_2026-04-20_08-51-40.json) |
@@ -138,7 +150,11 @@
 - **main Branch**: [RTI/main](RTI/main/)
 
 
+<<<<<<< Updated upstream
 **Latest Reports (2026-04-20 11:13):**
+=======
+**Latest Reports (2026-04-20 11:16):**
+>>>>>>> Stashed changes
 
 - [Content Generation - dev](Content Generation/dev/) - AI: 84.15%
 - [KM Generic - dev](KM Generic/dev/) - AI: 0.21%
@@ -153,8 +169,13 @@
 - [DKM - dev](DKM/dev/) - AI: 0%
 - [CWYD - dev](CWYD/dev/) - AI: 65.67%
 - [Container Migration - dev](Container Migration/dev/) - AI: 0%
+<<<<<<< Updated upstream
 - [MAAG - dev](MAAG/dev/) - AI: 0%
 - [BYOC - dev](BYOC/dev/) - AI: 0.18%
+=======
+- [BYOC - dev](BYOC/dev/) - AI: 0.18%
+- [MAAG - dev](MAAG/dev/) - AI: 0%
+>>>>>>> Stashed changes
 
 
 ---
@@ -162,8 +183,13 @@
 ## Quick Links
 
 - [Batch Analysis Summary](Batch-Analysis-Summary.md)
+<<<<<<< Updated upstream
 - [Branch-Level Summary CSV](Branch-Level-Summary_2026-04-20_11-13-35.csv)
 - [Consolidated Analysis JSON](Consolidated-Analysis_2026-04-20_11-13-35.json)
+=======
+- [Branch-Level Summary CSV](Branch-Level-Summary_2026-04-20_11-16-26.csv)
+- [Consolidated Analysis JSON](Consolidated-Analysis_2026-04-20_11-16-26.json)
+>>>>>>> Stashed changes
 - [Git Access Validation Report](Git-Access-Validation-Report.md)
 
 ---

@@ -1,0 +1,212 @@
+{
+  "Metadata": {
+    "IncludeTestFiles": false,
+    "AnalysisMethod": "5-Tier Weighted Pattern Detection",
+    "GeneratedAt": "2026-04-20 09:50:55",
+    "ScriptVersion": "2.0.0",
+    "GeneratedBy": "Copilot Usage Report Tool v2.0",
+    "PowerShellVersion": "7.4.14"
+  },
+  "Users": [
+    {
+      "UserName": "Rafi-Microsoft",
+      "UserEmail": "v-rafmd@microsoft.com",
+      "TotalCommits": 1,
+      "AICommits": 0,
+      "HumanCommits": 1,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 24,
+      "HumanLinesDeleted": 2,
+      "TotalLinesAdded": 24,
+      "TotalLinesDeleted": 2,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    }
+  ],
+  "FileTypeBreakdown": [
+    {
+      "Extension": "json",
+      "TotalLines": 132411,
+      "AILines": 71909,
+      "AIPercentage": 54.31,
+      "FileCount": 82
+    },
+    {
+      "Extension": "ps1",
+      "TotalLines": 95782,
+      "AILines": 12296,
+      "AIPercentage": 12.84,
+      "FileCount": 836
+    },
+    {
+      "Extension": "md",
+      "TotalLines": 32451,
+      "AILines": 1263,
+      "AIPercentage": 3.89,
+      "FileCount": 549
+    },
+    {
+      "Extension": "sh",
+      "TotalLines": 11201,
+      "AILines": 159,
+      "AIPercentage": 1.42,
+      "FileCount": 226
+    },
+    {
+      "Extension": "bicep",
+      "TotalLines": 5638,
+      "AILines": 780,
+      "AIPercentage": 13.83,
+      "FileCount": 315
+    },
+    {
+      "Extension": "bicepparam",
+      "TotalLines": 1884,
+      "AILines": 90,
+      "AIPercentage": 4.78,
+      "FileCount": 51
+    },
+    {
+      "Extension": "yaml",
+      "TotalLines": 1380,
+      "AILines": 66,
+      "AIPercentage": 4.78,
+      "FileCount": 68
+    },
+    {
+      "Extension": "yml",
+      "TotalLines": 1207,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 63
+    },
+    {
+      "Extension": "py",
+      "TotalLines": 985,
+      "AILines": 396,
+      "AIPercentage": 40.2,
+      "FileCount": 89
+    },
+    {
+      "Extension": "gitignore",
+      "TotalLines": 780,
+      "AILines": 1,
+      "AIPercentage": 0.13,
+      "FileCount": 28
+    },
+    {
+      "Extension": "sample",
+      "TotalLines": 398,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 14
+    },
+    {
+      "Extension": "other",
+      "TotalLines": 182,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 30
+    },
+    {
+      "Extension": "txt",
+      "TotalLines": 64,
+      "AILines": 12,
+      "AIPercentage": 18.75,
+      "FileCount": 63
+    },
+    {
+      "Extension": "env",
+      "TotalLines": 56,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 16
+    },
+    {
+      "Extension": "devcontainer/dockerfile",
+      "TotalLines": 36,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 9
+    },
+    {
+      "Extension": "gitmodules",
+      "TotalLines": 27,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 11
+    },
+    {
+      "Extension": "github/codeowners",
+      "TotalLines": 17,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 13
+    },
+    {
+      "Extension": "md}",
+      "TotalLines": 15,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 9
+    }
+  ],
+  "TierDistribution": {
+    "Tier1_Definitive": 0,
+    "Tier4_Moderate": 0,
+    "Tier5_Low": 0,
+    "Tier2_VeryHigh": 0,
+    "Tier3_High": 0,
+    "Human": 1
+  },
+  "BranchStatistics": {
+    "Branch": "main",
+    "TotalCommits": 1,
+    "AICommits": 0,
+    "HumanCommits": 1,
+    "TotalLinesAdded": 24.0,
+    "TotalLinesDeleted": 2.0,
+    "AILinesAdded": null,
+    "AILinesDeleted": null,
+    "Tier1Commits": 0,
+    "Tier2Commits": 0,
+    "Tier3Commits": 0,
+    "Tier4Commits": 0,
+    "Tier5Commits": 0,
+    "UniqueContributors": 1,
+    "AIPercentage": 0.0,
+    "HumanLinesAdded": 24.0
+  },
+  "AIAttributionOverride": {
+    "Notes": null,
+    "OverridePercentage": null,
+    "Applied": false
+  },
+  "Branch": "main",
+  "GeneratedAt": "2026-04-20 09:50:55",
+  "Commits": {
+    "Hash": "d7412e86a4a1607dd9b331aafac1aca4f3482282",
+    "Author": "Rafi-Microsoft",
+    "Date": "Thu Apr 2 19:22:36 2026 +0530",
+    "Message": "fix: Added deployment tags and dev container fix and PrincipleId param fix (#124)",
+    "LinesAdded": 24,
+    "LinesDeleted": 2,
+    "IsAI": false,
+    "ConfidenceScore": 0,
+    "ConfidenceTier": "Human Written",
+    "TierNumber": 0
+  },
+  "ApplicationName": "Deploy your AI application",
+  "AnalysisPeriod": {
+    "FilterApplied": true,
+    "EndDate": "2026-04-20",
+    "StartDate": "2026-04-01"
+  }
+}

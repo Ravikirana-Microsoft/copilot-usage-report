@@ -1,0 +1,4 @@
+"UserName","UserEmail","TotalCommits","AICommits","HumanCommits","AILinesAdded","HumanLinesAdded","TotalLinesAdded","AIPercentage","AvgConfidenceScore","Tier1Commits","Tier2Commits","Tier3Commits","Tier4Commits","Tier5Commits"
+"copilot-swe-agent[bot]","198982749+Copilot@users.noreply.github.com","2","0","2","0","1","1","0","0","0","0","0","0","0"
+"Abdul-Microsoft","v-amujeebta@microsoft.com","5","2","3","2","966","968","0.21","100","2","0","0","0","0"
+"NirajC-Microsoft","v-nirajcha@microsoft.com","1","0","1","0","139","139","0","0","0","0","0","0","0"

@@ -1,6 +1,10 @@
 # Batch Analysis Summary - 5-Tier Model
 
+<<<<<<< Updated upstream
 **Analysis Date:** 2026-04-20 11:13:35  
+=======
+**Analysis Date:** 2026-04-20 11:16:26  
+>>>>>>> Stashed changes
 **Period:** 2025-12-01 to 2025-12-31
 
 ---
@@ -20,12 +24,21 @@
 
 | Metric | Value |
 |--------|-------|
+<<<<<<< Updated upstream
 | **Total Commits** | 835 |
 | **AI-Assisted Commits** | 50 |
 | **Human Commits** | 785 |
 | **Total Lines Added** | 602317 |
 | **AI-Assisted Lines** | 96951 (16.1%) |
 | **Human-Written Lines** | 505366 (83.9%) |
+=======
+| **Total Commits** | 836 |
+| **AI-Assisted Commits** | 50 |
+| **Human Commits** | 786 |
+| **Total Lines Added** | 602319 |
+| **AI-Assisted Lines** | 96951 (16.1%) |
+| **Human-Written Lines** | 505368 (83.9%) |
+>>>>>>> Stashed changes
 
 ---
 
@@ -38,7 +51,11 @@
 | **Tier 3** | High Confidence (80-89%) | 12 |
 | **Tier 4** | Moderate Confidence (70-79%) | 11 |
 | **Tier 5** | Low Confidence (60-69%) | 9 |
+<<<<<<< Updated upstream
 | **Human** | No AI Detected | 785 |
+=======
+| **Human** | No AI Detected | 786 |
+>>>>>>> Stashed changes
 
 ---
 
@@ -46,7 +63,11 @@
 
 | Application | Branch | Commits | AI Commits | AI Lines | AI % | T1 | T2 | T3 | T4 | T5 | Contributors |
 |-------------|--------|---------|------------|----------|------|----|----|----|----|-----|--------------|
+<<<<<<< Updated upstream
 | Content Generation | dev | 95 | 17 | 67992 | 84.15% | 0 | 2 | 6 | 8 | 1 | 13 |
+=======
+| Content Generation | dev | 96 | 17 | 67992 | 84.15% | 0 | 2 | 6 | 8 | 1 | 13 |
+>>>>>>> Stashed changes
 | KM Generic | dev | 126 | 4 | 748 | 0.21% | 0 | 2 | 0 | 0 | 2 | 17 |
 | BYOCC | dev | 58 | 7 | 11690 | 21.78% | 0 | 5 | 1 | 0 | 1 | 8 |
 | MACAE v4 | main | 131 | 4 | 8345 | 13.22% | 0 | 2 | 1 | 0 | 1 | 20 |
@@ -59,8 +80,13 @@
 | DKM | dev | 51 | 0 |  | 0% | 0 | 0 | 0 | 0 | 0 | 8 |
 | CWYD | dev | 5 | 2 | 132 | 65.67% | 0 | 2 | 0 | 0 | 0 | 4 |
 | Container Migration | dev | 41 | 0 |  | 0% | 0 | 0 | 0 | 0 | 0 | 7 |
+<<<<<<< Updated upstream
 | MAAG | dev | 18 | 0 |  | 0% | 0 | 0 | 0 | 0 | 0 | 3 |
 | BYOC | dev | 8 | 2 | 2 | 0.18% | 2 | 0 | 0 | 0 | 0 | 3 |
+=======
+| BYOC | dev | 8 | 2 | 2 | 0.18% | 2 | 0 | 0 | 0 | 0 | 3 |
+| MAAG | dev | 18 | 0 |  | 0% | 0 | 0 | 0 | 0 | 0 | 3 |
+>>>>>>> Stashed changes
 
 ---
 
@@ -68,6 +94,7 @@
 
 | Application | Branch | Status | Timestamp |
 |-------------|--------|--------|-----------|
+<<<<<<< Updated upstream
 | Content Generation | dev | ✓ Success | 2026-04-20 11:13:35 |
 | KM Generic | dev | ✓ Success | 2026-04-20 11:13:35 |
 | BYOCC | dev | ✓ Success | 2026-04-20 11:13:35 |
@@ -83,6 +110,23 @@
 | Container Migration | dev | ✓ Success | 2026-04-20 11:13:35 |
 | MAAG | dev | ✓ Success | 2026-04-20 11:13:35 |
 | BYOC | dev | ✓ Success | 2026-04-20 11:13:35 |
+=======
+| Content Generation | dev | ✓ Success | 2026-04-20 11:16:26 |
+| KM Generic | dev | ✓ Success | 2026-04-20 11:16:26 |
+| BYOCC | dev | ✓ Success | 2026-04-20 11:16:26 |
+| MACAE v4 | main | ✓ Success | 2026-04-20 11:16:26 |
+| Deploy your AI application | main | ✓ Success | 2026-04-20 11:16:26 |
+| RTI | main | ✓ Success | 2026-04-20 11:16:26 |
+| Code Modernization | dev | ✓ Success | 2026-04-20 11:16:26 |
+| Fabric SQL | dev | ✓ Success | 2026-04-20 11:16:26 |
+| Content Processing | dev | ✓ Success | 2026-04-20 11:16:26 |
+| Data and Security | dev | ✓ Success | 2026-04-20 11:16:26 |
+| DKM | dev | ✓ Success | 2026-04-20 11:16:26 |
+| CWYD | dev | ✓ Success | 2026-04-20 11:16:26 |
+| Container Migration | dev | ✓ Success | 2026-04-20 11:16:26 |
+| BYOC | dev | ✓ Success | 2026-04-20 11:16:26 |
+| MAAG | dev | ✓ Success | 2026-04-20 11:16:26 |
+>>>>>>> Stashed changes
 
 ---
 
