@@ -1,16 +1,6 @@
 {
   "reports": [
     {
-<<<<<<< Updated upstream
-      "date": "2026-04-20 11:13:36 UTC",
-      "name": "December-2025",
-      "filename": "ConsolidatedReport_2026-04-20_11-13-35.json",
-      "isLatest": true,
-      "dateRange": "2025-12-01 to 2025-12-31"
-    }
-  ],
-  "lastUpdated": "2026-04-20 11:13:36"
-=======
       "filename": "ConsolidatedReport_2026-04-20_11-16-26.json",
       "isLatest": true,
       "dateRange": "2025-12-01 to 2025-12-31",
@@ -19,5 +9,4 @@
     }
   ],
   "lastUpdated": "2026-04-20 11:16:26"
->>>>>>> Stashed changes
 }
