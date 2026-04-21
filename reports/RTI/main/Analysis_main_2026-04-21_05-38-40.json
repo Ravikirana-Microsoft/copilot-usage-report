@@ -1,0 +1,207 @@
+{
+  "BranchStatistics": {
+    "Branch": "main",
+    "TotalCommits": 0,
+    "AICommits": 0,
+    "HumanCommits": 0,
+    "TotalLinesAdded": null,
+    "TotalLinesDeleted": null,
+    "AILinesAdded": null,
+    "AILinesDeleted": null,
+    "Tier1Commits": 0,
+    "Tier2Commits": 0,
+    "Tier3Commits": 0,
+    "Tier4Commits": 0,
+    "Tier5Commits": 0,
+    "UniqueContributors": 0,
+    "AIPercentage": 0,
+    "HumanLinesAdded": 0
+  },
+  "ApplicationName": "RTI",
+  "GeneratedAt": "2026-04-21 05:38:40",
+  "TierDistribution": {
+    "Tier5_Low": 0,
+    "Tier4_Moderate": 0,
+    "Tier3_High": 0,
+    "Tier1_Definitive": 0,
+    "Tier2_VeryHigh": 0,
+    "Human": 0
+  },
+  "FileTypeBreakdown": [
+    {
+      "Extension": "csv",
+      "TotalLines": 1296160,
+      "AILines": 1296160,
+      "AIPercentage": 100.0,
+      "FileCount": 25
+    },
+    {
+      "Extension": "py",
+      "TotalLines": 87803,
+      "AILines": 75190,
+      "AIPercentage": 85.63,
+      "FileCount": 1100
+    },
+    {
+      "Extension": "md",
+      "TotalLines": 46877,
+      "AILines": 17230,
+      "AIPercentage": 36.76,
+      "FileCount": 1131
+    },
+    {
+      "Extension": "ps1",
+      "TotalLines": 30310,
+      "AILines": 30300,
+      "AIPercentage": 99.97,
+      "FileCount": 100
+    },
+    {
+      "Extension": "json",
+      "TotalLines": 28507,
+      "AILines": 5695,
+      "AIPercentage": 19.98,
+      "FileCount": 186
+    },
+    {
+      "Extension": "ipynb",
+      "TotalLines": 20805,
+      "AILines": 13580,
+      "AIPercentage": 65.27,
+      "FileCount": 75
+    },
+    {
+      "Extension": "kql",
+      "TotalLines": 7705,
+      "AILines": 7595,
+      "AIPercentage": 98.57,
+      "FileCount": 180
+    },
+    {
+      "Extension": "yml",
+      "TotalLines": 6404,
+      "AILines": 2020,
+      "AIPercentage": 31.54,
+      "FileCount": 317
+    },
+    {
+      "Extension": "gitignore",
+      "TotalLines": 3015,
+      "AILines": 75,
+      "AIPercentage": 2.49,
+      "FileCount": 20
+    },
+    {
+      "Extension": "bicep",
+      "TotalLines": 1470,
+      "AILines": 700,
+      "AIPercentage": 47.62,
+      "FileCount": 78
+    },
+    {
+      "Extension": "sh",
+      "TotalLines": 935,
+      "AILines": 825,
+      "AIPercentage": 88.24,
+      "FileCount": 35
+    },
+    {
+      "Extension": "dockerignore",
+      "TotalLines": 470,
+      "AILines": 470,
+      "AIPercentage": 100.0,
+      "FileCount": 5
+    },
+    {
+      "Extension": "txt",
+      "TotalLines": 450,
+      "AILines": 150,
+      "AIPercentage": 33.33,
+      "FileCount": 95
+    },
+    {
+      "Extension": "platform",
+      "TotalLines": 385,
+      "AILines": 300,
+      "AIPercentage": 77.92,
+      "FileCount": 85
+    },
+    {
+      "Extension": "ps1}",
+      "TotalLines": 385,
+      "AILines": 5,
+      "AIPercentage": 1.3,
+      "FileCount": 10
+    },
+    {
+      "Extension": "other",
+      "TotalLines": 315,
+      "AILines": 105,
+      "AIPercentage": 33.33,
+      "FileCount": 15
+    },
+    {
+      "Extension": "yaml",
+      "TotalLines": 240,
+      "AILines": 160,
+      "AIPercentage": 66.67,
+      "FileCount": 54
+    },
+    {
+      "Extension": "flake8",
+      "TotalLines": 230,
+      "AILines": 230,
+      "AIPercentage": 100.0,
+      "FileCount": 10
+    },
+    {
+      "Extension": "github/codeowners",
+      "TotalLines": 120,
+      "AILines": 30,
+      "AIPercentage": 25.0,
+      "FileCount": 20
+    },
+    {
+      "Extension": "devcontainer/dockerfile",
+      "TotalLines": 20,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 5
+    },
+    {
+      "Extension": "py}",
+      "TotalLines": 5,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 5
+    },
+    {
+      "Extension": "png",
+      "TotalLines": 5,
+      "AILines": 5,
+      "AIPercentage": 100.0,
+      "FileCount": 390
+    }
+  ],
+  "Users": [],
+  "Commits": null,
+  "Branch": "main",
+  "AnalysisPeriod": {
+    "StartDate": "2025-10-01",
+    "FilterApplied": true,
+    "EndDate": "2025-10-31"
+  },
+  "AIAttributionOverride": {
+    "Applied": false,
+    "OverridePercentage": null,
+    "Notes": null
+  },
+  "Metadata": {
+    "GeneratedAt": "2026-04-21 05:38:40",
+    "PowerShellVersion": "7.4.14",
+    "AnalysisMethod": "5-Tier Weighted Pattern Detection",
+    "IncludeTestFiles": false,
+    "GeneratedBy": "Copilot Usage Report Tool v2.0",
+    "ScriptVersion": "2.0.0"
+  }
+}

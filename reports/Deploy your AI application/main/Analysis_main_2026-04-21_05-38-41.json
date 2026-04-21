@@ -1,0 +1,247 @@
+{
+  "BranchStatistics": {
+    "Branch": "main",
+    "TotalCommits": 2,
+    "AICommits": 0,
+    "HumanCommits": 2,
+    "TotalLinesAdded": 167.0,
+    "TotalLinesDeleted": 27.0,
+    "AILinesAdded": null,
+    "AILinesDeleted": null,
+    "Tier1Commits": 0,
+    "Tier2Commits": 0,
+    "Tier3Commits": 0,
+    "Tier4Commits": 0,
+    "Tier5Commits": 0,
+    "UniqueContributors": 2,
+    "AIPercentage": 0.0,
+    "HumanLinesAdded": 167.0
+  },
+  "ApplicationName": "Deploy your AI application",
+  "GeneratedAt": "2026-04-21 05:38:41",
+  "TierDistribution": {
+    "Tier5_Low": 0,
+    "Tier4_Moderate": 0,
+    "Tier3_High": 0,
+    "Tier1_Definitive": 0,
+    "Tier2_VeryHigh": 0,
+    "Human": 2
+  },
+  "FileTypeBreakdown": [
+    {
+      "Extension": "json",
+      "TotalLines": 147458,
+      "AILines": 71909,
+      "AIPercentage": 48.77,
+      "FileCount": 98
+    },
+    {
+      "Extension": "ps1",
+      "TotalLines": 114874,
+      "AILines": 12296,
+      "AIPercentage": 10.7,
+      "FileCount": 936
+    },
+    {
+      "Extension": "md",
+      "TotalLines": 39650,
+      "AILines": 1263,
+      "AIPercentage": 3.19,
+      "FileCount": 628
+    },
+    {
+      "Extension": "sh",
+      "TotalLines": 13868,
+      "AILines": 159,
+      "AIPercentage": 1.15,
+      "FileCount": 277
+    },
+    {
+      "Extension": "bicep",
+      "TotalLines": 6431,
+      "AILines": 780,
+      "AIPercentage": 12.13,
+      "FileCount": 378
+    },
+    {
+      "Extension": "bicepparam",
+      "TotalLines": 2090,
+      "AILines": 90,
+      "AIPercentage": 4.31,
+      "FileCount": 53
+    },
+    {
+      "Extension": "yaml",
+      "TotalLines": 1674,
+      "AILines": 66,
+      "AIPercentage": 3.94,
+      "FileCount": 74
+    },
+    {
+      "Extension": "yml",
+      "TotalLines": 1449,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 75
+    },
+    {
+      "Extension": "py",
+      "TotalLines": 1132,
+      "AILines": 396,
+      "AIPercentage": 34.98,
+      "FileCount": 110
+    },
+    {
+      "Extension": "gitignore",
+      "TotalLines": 974,
+      "AILines": 1,
+      "AIPercentage": 0.1,
+      "FileCount": 34
+    },
+    {
+      "Extension": "sample",
+      "TotalLines": 496,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 16
+    },
+    {
+      "Extension": "other",
+      "TotalLines": 226,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 36
+    },
+    {
+      "Extension": "txt",
+      "TotalLines": 77,
+      "AILines": 12,
+      "AIPercentage": 15.58,
+      "FileCount": 78
+    },
+    {
+      "Extension": "env",
+      "TotalLines": 70,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 20
+    },
+    {
+      "Extension": "devcontainer/dockerfile",
+      "TotalLines": 36,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 9
+    },
+    {
+      "Extension": "gitmodules",
+      "TotalLines": 33,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 13
+    },
+    {
+      "Extension": "github/codeowners",
+      "TotalLines": 20,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 16
+    },
+    {
+      "Extension": "md}",
+      "TotalLines": 15,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 9
+    }
+  ],
+  "Users": [
+    {
+      "UserName": "Abdul-Microsoft",
+      "UserEmail": "v-amujeebta@microsoft.com",
+      "TotalCommits": 1,
+      "AICommits": 0,
+      "HumanCommits": 1,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 2,
+      "HumanLinesDeleted": 2,
+      "TotalLinesAdded": 2,
+      "TotalLinesDeleted": 2,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Prekshith-Microsoft",
+      "UserEmail": "v-pdj@microsoft.com",
+      "TotalCommits": 1,
+      "AICommits": 0,
+      "HumanCommits": 1,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 165,
+      "HumanLinesDeleted": 25,
+      "TotalLinesAdded": 165,
+      "TotalLinesDeleted": 25,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    }
+  ],
+  "Commits": [
+    {
+      "Hash": "b6f5cd8236b15ab94361becf9c3daafb81850f64",
+      "Author": "Prekshith-Microsoft",
+      "Date": "Fri Oct 17 15:14:06 2025 +0530",
+      "Message": "docs: Updated the deployment documents (#76)",
+      "LinesAdded": 165,
+      "LinesDeleted": 25,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "8381abc38718fa86e56333ef13e42c18717ab110",
+      "Author": "Abdul-Microsoft",
+      "Date": "Tue Oct 14 12:17:10 2025 +0530",
+      "Message": "Add Bicep modules for AI Foundry and Cognitive Services deployment",
+      "LinesAdded": 2,
+      "LinesDeleted": 2,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    }
+  ],
+  "Branch": "main",
+  "AnalysisPeriod": {
+    "StartDate": "2025-10-01",
+    "FilterApplied": true,
+    "EndDate": "2025-10-31"
+  },
+  "AIAttributionOverride": {
+    "Applied": false,
+    "OverridePercentage": null,
+    "Notes": null
+  },
+  "Metadata": {
+    "GeneratedAt": "2026-04-21 05:38:41",
+    "PowerShellVersion": "7.4.14",
+    "AnalysisMethod": "5-Tier Weighted Pattern Detection",
+    "IncludeTestFiles": false,
+    "GeneratedBy": "Copilot Usage Report Tool v2.0",
+    "ScriptVersion": "2.0.0"
+  }
+}

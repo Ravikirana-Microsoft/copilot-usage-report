@@ -1,0 +1,137 @@
+{
+  "BranchStatistics": {
+    "Branch": "dev",
+    "TotalCommits": 0,
+    "AICommits": 0,
+    "HumanCommits": 0,
+    "TotalLinesAdded": null,
+    "TotalLinesDeleted": null,
+    "AILinesAdded": null,
+    "AILinesDeleted": null,
+    "Tier1Commits": 0,
+    "Tier2Commits": 0,
+    "Tier3Commits": 0,
+    "Tier4Commits": 0,
+    "Tier5Commits": 0,
+    "UniqueContributors": 0,
+    "AIPercentage": 0,
+    "HumanLinesAdded": 0
+  },
+  "ApplicationName": "Data and Security",
+  "GeneratedAt": "2026-04-21 05:38:40",
+  "TierDistribution": {
+    "Tier5_Low": 0,
+    "Tier4_Moderate": 0,
+    "Tier3_High": 0,
+    "Tier1_Definitive": 0,
+    "Tier2_VeryHigh": 0,
+    "Human": 0
+  },
+  "FileTypeBreakdown": [
+    {
+      "Extension": "md",
+      "TotalLines": 17067,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 347
+    },
+    {
+      "Extension": "ps1",
+      "TotalLines": 16145,
+      "AILines": 507,
+      "AIPercentage": 3.14,
+      "FileCount": 340
+    },
+    {
+      "Extension": "json",
+      "TotalLines": 2222,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 37
+    },
+    {
+      "Extension": "yml",
+      "TotalLines": 1853,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 139
+    },
+    {
+      "Extension": "gitignore",
+      "TotalLines": 838,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 4
+    },
+    {
+      "Extension": "bicep",
+      "TotalLines": 263,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 16
+    },
+    {
+      "Extension": "other",
+      "TotalLines": 255,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 5
+    },
+    {
+      "Extension": "yaml",
+      "TotalLines": 157,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 23
+    },
+    {
+      "Extension": "bicepparam",
+      "TotalLines": 137,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 22
+    },
+    {
+      "Extension": "md\"",
+      "TotalLines": 92,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "github/codeowners",
+      "TotalLines": 4,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "yml}",
+      "TotalLines": 2,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 2
+    }
+  ],
+  "Users": [],
+  "Commits": null,
+  "Branch": "dev",
+  "AnalysisPeriod": {
+    "StartDate": "2025-10-01",
+    "FilterApplied": true,
+    "EndDate": "2025-10-31"
+  },
+  "AIAttributionOverride": {
+    "Applied": false,
+    "OverridePercentage": null,
+    "Notes": null
+  },
+  "Metadata": {
+    "GeneratedAt": "2026-04-21 05:38:40",
+    "PowerShellVersion": "7.4.14",
+    "AnalysisMethod": "5-Tier Weighted Pattern Detection",
+    "IncludeTestFiles": false,
+    "GeneratedBy": "Copilot Usage Report Tool v2.0",
+    "ScriptVersion": "2.0.0"
+  }
+}
