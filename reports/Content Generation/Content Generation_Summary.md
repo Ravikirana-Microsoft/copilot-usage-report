@@ -2,8 +2,8 @@
 
 > Consolidated analysis across all branches using 5-Tier AI Detection Model
 
-**Generated:** 2026-04-22 11:27:31  
-**Analysis Period:** 2025-09-01 to 2025-09-30
+**Generated:** 2026-04-22 11:56:57  
+**Analysis Period:** 2025-08-01 to 2025-08-31
 
 ---
 
@@ -13,8 +13,8 @@
 |--------|-------|
 | **Application** | Content Generation |
 | **Branches Analyzed** | 1 |
-| **Total Contributors** | 8 |
-| **Overall AI Usage** | **0%** |
+| **Total Contributors** | 11 |
+| **Overall AI Usage** | **83.01%** |
 
 ---
 
@@ -24,15 +24,15 @@
 
 | Category | Lines | Percentage | Commits |
 |----------|-------|------------|---------|
-| **AI-Assisted** | 0 | 0% | 0 |
-| **Human-Written** | 4737 | 100% | 64 |
-| **Total** | 4737 | 100% | 64 |
+| **AI-Assisted** | 45828 | 83.01% | 1 |
+| **Human-Written** | 9377 | 16.99% | 37 |
+| **Total** | 55205 | 100% | 38 |
 
 ### Visual Summary
 
 ```
-AI-Assisted:   ░░░░░░░░░░░░░░░░░░░░ 0%
-Human-Written: ████████████████████ 100%
+AI-Assisted:   ████████████████░░░░ 83.01%
+Human-Written: ███░░░░░░░░░░░░░░░░░ 16.99%
 ```
 
 ---
@@ -45,8 +45,8 @@ Human-Written: ████████████████████ 100%
 | **Tier 2** | 90-98% | Very high confidence | 0 | 0% |
 | **Tier 3** | 80-89% | High confidence | 0 | 0% |
 | **Tier 4** | 70-79% | Moderate confidence | 0 | 0% |
-| **Tier 5** | 60-69% | Low confidence | 0 | 0% |
-| **Human** | <60% | No AI detected | 64 | 100% |
+| **Tier 5** | 60-69% | Low confidence | 1 | 100% |
+| **Human** | <60% | No AI detected | 37 | 97.4% |
 
 ---
 
@@ -54,22 +54,22 @@ Human-Written: ████████████████████ 100%
 
 | Branch | Commits | AI Commits | AI Lines | AI % | T1 | T2 | T3 | T4 | T5 | Contributors |
 |--------|---------|------------|----------|------|----|----|----|----|-----|--------------|
-| **dev** | 64 | 0 |  | 0% | 0 | 0 | 0 | 0 | 0 | 8 |
+| **dev** | 38 | 1 | 45828 | 83.01% | 0 | 0 | 0 | 0 | 1 | 11 |
 
 ---
 
 ## Branch Reports
 
-- **dev**: [dev/](dev/) - AI: 0%
+- **dev**: [dev/](dev/) - AI: 83.01%
 
 ---
 
 ## Key Insights
 
-### Human-Centric Development
-This application is **primarily human-written** with only 0% AI-assisted code.
-- Most commits are traditional human development
-- AI tools used selectively or minimally
+### High AI Adoption
+This application shows **strong AI-assisted development** with 83.01% of code attributed to AI tools.
+- Tier 1-2 (High confidence AI): 0 commits
+- Primary development appears to leverage Copilot effectively
 
 ---
 

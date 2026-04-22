@@ -1,0 +1,247 @@
+{
+  "GeneratedAt": "2026-04-22 11:55:47",
+  "AIAttributionOverride": {
+    "Applied": false,
+    "Notes": null,
+    "OverridePercentage": null
+  },
+  "ApplicationName": "Deploy your AI application",
+  "Commits": [
+    {
+      "Hash": "966b8203eb4a708affad8ae808cd6bbaa104aa36",
+      "Author": "Mike Swantek",
+      "Date": "Tue Aug 19 11:38:06 2025 -0400",
+      "Message": "update Security Guidlines section (#73)",
+      "LinesAdded": 12,
+      "LinesDeleted": 2,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "1b846a27b0a46154980aefaccf842b7a1694e1fc",
+      "Author": "Kanchan-Microsoft",
+      "Date": "Thu Aug 7 12:14:25 2025 +0530",
+      "Message": "ci: Added Github Actions (#72)",
+      "LinesAdded": 170,
+      "LinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    }
+  ],
+  "Users": [
+    {
+      "UserName": "Mike Swantek",
+      "UserEmail": "46489667+mswantek68@users.noreply.github.com",
+      "TotalCommits": 1,
+      "AICommits": 0,
+      "HumanCommits": 1,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 12,
+      "HumanLinesDeleted": 2,
+      "TotalLinesAdded": 12,
+      "TotalLinesDeleted": 2,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Kanchan-Microsoft",
+      "UserEmail": "v-knagshetti@microsoft.com",
+      "TotalCommits": 1,
+      "AICommits": 0,
+      "HumanCommits": 1,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 170,
+      "HumanLinesDeleted": 0,
+      "TotalLinesAdded": 170,
+      "TotalLinesDeleted": 0,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    }
+  ],
+  "Branch": "main",
+  "FileTypeBreakdown": [
+    {
+      "Extension": "json",
+      "TotalLines": 162505,
+      "AILines": 71909,
+      "AIPercentage": 44.25,
+      "FileCount": 114
+    },
+    {
+      "Extension": "ps1",
+      "TotalLines": 133966,
+      "AILines": 12296,
+      "AIPercentage": 9.18,
+      "FileCount": 1036
+    },
+    {
+      "Extension": "md",
+      "TotalLines": 46921,
+      "AILines": 1263,
+      "AIPercentage": 2.69,
+      "FileCount": 710
+    },
+    {
+      "Extension": "sh",
+      "TotalLines": 16535,
+      "AILines": 159,
+      "AIPercentage": 0.96,
+      "FileCount": 328
+    },
+    {
+      "Extension": "bicep",
+      "TotalLines": 7224,
+      "AILines": 780,
+      "AIPercentage": 10.8,
+      "FileCount": 441
+    },
+    {
+      "Extension": "bicepparam",
+      "TotalLines": 2296,
+      "AILines": 90,
+      "AIPercentage": 3.92,
+      "FileCount": 55
+    },
+    {
+      "Extension": "yaml",
+      "TotalLines": 1968,
+      "AILines": 66,
+      "AIPercentage": 3.35,
+      "FileCount": 80
+    },
+    {
+      "Extension": "yml",
+      "TotalLines": 1796,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 90
+    },
+    {
+      "Extension": "py",
+      "TotalLines": 1279,
+      "AILines": 396,
+      "AIPercentage": 30.96,
+      "FileCount": 131
+    },
+    {
+      "Extension": "gitignore",
+      "TotalLines": 1168,
+      "AILines": 1,
+      "AIPercentage": 0.09,
+      "FileCount": 40
+    },
+    {
+      "Extension": "sample",
+      "TotalLines": 594,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 18
+    },
+    {
+      "Extension": "other",
+      "TotalLines": 270,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 42
+    },
+    {
+      "Extension": "txt",
+      "TotalLines": 90,
+      "AILines": 12,
+      "AIPercentage": 13.33,
+      "FileCount": 93
+    },
+    {
+      "Extension": "env",
+      "TotalLines": 84,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 24
+    },
+    {
+      "Extension": "gitmodules",
+      "TotalLines": 39,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 15
+    },
+    {
+      "Extension": "devcontainer/dockerfile",
+      "TotalLines": 36,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 9
+    },
+    {
+      "Extension": "github/codeowners",
+      "TotalLines": 28,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 20
+    },
+    {
+      "Extension": "md}",
+      "TotalLines": 15,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 9
+    }
+  ],
+  "Metadata": {
+    "GeneratedAt": "2026-04-22 11:55:47",
+    "PowerShellVersion": "7.4.14",
+    "GeneratedBy": "Copilot Usage Report Tool v2.0",
+    "ScriptVersion": "2.0.0",
+    "IncludeTestFiles": false,
+    "AnalysisMethod": "5-Tier Weighted Pattern Detection"
+  },
+  "BranchStatistics": {
+    "Branch": "main",
+    "TotalCommits": 2,
+    "AICommits": 0,
+    "HumanCommits": 2,
+    "TotalLinesAdded": 182.0,
+    "TotalLinesDeleted": 2.0,
+    "AILinesAdded": null,
+    "AILinesDeleted": null,
+    "Tier1Commits": 0,
+    "Tier2Commits": 0,
+    "Tier3Commits": 0,
+    "Tier4Commits": 0,
+    "Tier5Commits": 0,
+    "UniqueContributors": 2,
+    "AIPercentage": 0.0,
+    "HumanLinesAdded": 182.0
+  },
+  "TierDistribution": {
+    "Tier3_High": 0,
+    "Tier2_VeryHigh": 0,
+    "Human": 2,
+    "Tier1_Definitive": 0,
+    "Tier5_Low": 0,
+    "Tier4_Moderate": 0
+  },
+  "AnalysisPeriod": {
+    "StartDate": "2025-08-01",
+    "FilterApplied": true,
+    "EndDate": "2025-08-31"
+  }
+}
