@@ -1,12 +1,18 @@
 {
-  "lastUpdated": "2026-04-22 10:53:19",
   "reports": [
     {
-      "dateRange": "2025-12-01 to 2025-12-31",
+      "dateRange": "2025-11-01 to 2025-11-30",
+      "date": "2026-04-22 11:02:17 UTC",
       "isLatest": true,
-      "filename": "ConsolidatedReport_2026-04-22_10-53-19.json",
+      "name": "November-2025",
+      "filename": "ConsolidatedReport_2026-04-22_11-02-16.json"
+    },
+    {
+      "dateRange": "2025-12-01 to 2025-12-31",
+      "date": "2026-04-22 10:53:19 UTC",
       "name": "December-2025",
-      "date": "2026-04-22 10:53:19 UTC"
+      "filename": "ConsolidatedReport_2026-04-22_10-53-19.json"
     }
-  ]
+  ],
+  "lastUpdated": "2026-04-22 11:02:17"
 }
