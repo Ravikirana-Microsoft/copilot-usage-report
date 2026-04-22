@@ -2,7 +2,7 @@
 
 > Auto-generated index of all analysis reports with application-level AI usage statistics.
 > 
-> **Last Updated:** 2026-04-21 05:39:21
+> **Last Updated:** 2026-04-22 10:18:03
 
 ---
 
@@ -10,23 +10,23 @@
 
 | Application | AI Usage % | Total Commits | AI Commits | Human Commits | Total Lines | AI Lines | Branches |
 |-------------|------------|---------------|------------|---------------|-------------|----------|----------|
-| **BYOC** | **0%** | 30 | 0 | 30 | 14819 | 0 | dev |
-| **BYOCC** | **6.69%** | 22 | 8 | 14 | 164399 | 11002 | dev |
-| **Code Modernization** | **3.38%** | 50 | 2 | 48 | 19534 | 661 | dev |
-| **Container Migration** | **2.25%** | 98 | 1 | 97 | 70593 | 1588 | dev |
-| **Content Generation** | **0%** | 22 | 0 | 22 | 12791 | 0 | dev |
-| **Content Processing** | **0%** | 49 | 0 | 49 | 65924 | 0 | dev |
-| **CWYD** | **0.36%** | 9 | 1 | 8 | 19053 | 69 | dev |
-| **Data and Security** | **0%** | 0 | 0 | 0 | 0 | 0 | dev |
-| **Deploy your AI application** | **0%** | 2 | 0 | 2 | 167 | 0 | main |
-| **DKM** | **0%** | 24 | 0 | 24 | 16609 | 0 | dev |
-| **Fabric SQL** | **51.14%** | 79 | 11 | 68 | 19563 | 10004 | dev |
-| **KM Generic** | **5.61%** | 31 | 1 | 30 | 2139 | 120 | dev |
-| **MAAG** | **0%** | 25 | 0 | 25 | 417 | 0 | dev |
-| **MACAE v4** | **16.45%** | 180 | 21 | 159 | 64722 | 10646 | main |
-| **RTI** | **0%** | 0 | 0 | 0 | 0 | 0 | main |
+| **BYOC** | **0.18%** | 8 | 2 | 6 | 1108 | 2 | dev |
+| **BYOCC** | **21.78%** | 58 | 7 | 51 | 53663 | 11690 | dev |
+| **Code Modernization** | **3.48%** | 50 | 1 | 49 | 4736 | 165 | dev |
+| **Container Migration** | **0%** | 44 | 0 | 44 | 2165 | 0 | dev |
+| **Content Generation** | **84.15%** | 95 | 17 | 78 | 80798 | 67992 | dev |
+| **Content Processing** | **0%** | 44 | 0 | 44 | 5764 | 0 | dev |
+| **CWYD** | **65.67%** | 5 | 2 | 3 | 201 | 132 | dev |
+| **Data and Security** | **0%** | 23 | 0 | 23 | 3690 | 0 | dev |
+| **Deploy your AI application** | **0%** | 14 | 0 | 14 | 15593 | 0 | main |
+| **DKM** | **0%** | 53 | 0 | 53 | 3959 | 0 | dev |
+| **Fabric SQL** | **41.93%** | 50 | 6 | 44 | 5311 | 2227 | dev |
+| **KM Generic** | **0.21%** | 124 | 4 | 120 | 348651 | 748 | dev |
+| **MAAG** | **0%** | 18 | 0 | 18 | 1157 | 0 | dev |
+| **MACAE v4** | **13.22%** | 131 | 4 | 127 | 63134 | 8345 | main |
+| **RTI** | **45.36%** | 125 | 7 | 118 | 12456 | 5650 | main |
 
-### Overall AI Usage: **7.24%**
+### Overall AI Usage: **16.09%**
 
 ---
 
@@ -36,6 +36,7 @@
 
 | Run Date | Period | Applications | Branches | Overall AI % | Reports |
 |----------|--------|--------------|----------|--------------|---------|
+| 2026-04-22 10:18 | 2025-12-01 to 2025-12-31 | 15 | 15 | 16.09% | [Summary](Batch-Analysis-Summary.md), [JSON](Consolidated-Analysis_2026-04-22_10-18-03.json) |
 | 2026-04-21 05:39 | 2025-10-01 to 2025-10-31 | 15 | 15 | 7.24% | [Summary](Batch-Analysis-Summary.md), [JSON](Consolidated-Analysis_2026-04-21_05-39-21.json) |
 | 2026-04-20 13:37 | 2025-11-01 to 2025-11-30 | 15 | 15 | 53.47% | [Summary](Batch-Analysis-Summary.md), [JSON](Consolidated-Analysis_2026-04-20_13-37-21.json) |
 | 2026-04-20 11:57 | 2025-12-01 to 2025-12-31 | 15 | 15 | 16.1% | [Summary](Batch-Analysis-Summary.md), [JSON](Consolidated-Analysis_2026-04-20_11-57-06.json) |
@@ -55,7 +56,6 @@
 | 2026-02-19 06:15 | 2025-12-01 to 2025-12-31 | 14 | 14 | 16.19% | [Summary](Batch-Analysis-Summary.md), [JSON](Consolidated-Analysis_2026-02-19_06-15-25.json) |
 | 2026-02-19 04:53 | 2025-12-01 to 2025-12-31 | 14 | 14 | 16.19% | [Summary](Batch-Analysis-Summary.md), [JSON](Consolidated-Analysis_2026-02-19_04-53-42.json) |
 | 2026-02-19 04:39 | 2025-12-01 to 2025-12-31 | 14 | 14 | 16.19% | [Summary](Batch-Analysis-Summary.md), [JSON](Consolidated-Analysis_2026-02-19_04-39-14.json) |
-| 2026-02-18 19:23 | 2025-12-01 to 2025-12-31 | 14 | 14 | 16.18% | [Summary](Batch-Analysis-Summary.md), [JSON](Consolidated-Analysis_2026-02-18_19-23-59.json) |
 
 ---
 
@@ -138,23 +138,23 @@
 - **main Branch**: [RTI/main](RTI/main/)
 
 
-**Latest Reports (2026-04-21 05:39):**
+**Latest Reports (2026-04-22 10:18):**
 
-- [BYOCC - dev](BYOCC/dev/) - AI: 6.69%
-- [MACAE v4 - main](MACAE v4/main/) - AI: 16.45%
-- [Fabric SQL - dev](Fabric SQL/dev/) - AI: 51.14%
-- [Container Migration - dev](Container Migration/dev/) - AI: 2.25%
-- [Code Modernization - dev](Code Modernization/dev/) - AI: 3.38%
-- [Content Processing - dev](Content Processing/dev/) - AI: 0%
-- [BYOC - dev](BYOC/dev/) - AI: 0%
-- [CWYD - dev](CWYD/dev/) - AI: 0.36%
-- [Content Generation - dev](Content Generation/dev/) - AI: 0%
-- [KM Generic - dev](KM Generic/dev/) - AI: 5.61%
-- [DKM - dev](DKM/dev/) - AI: 0%
-- [MAAG - dev](MAAG/dev/) - AI: 0%
+- [Content Generation - dev](Content Generation/dev/) - AI: 84.15%
+- [KM Generic - dev](KM Generic/dev/) - AI: 0.21%
+- [BYOCC - dev](BYOCC/dev/) - AI: 21.78%
+- [MACAE v4 - main](MACAE v4/main/) - AI: 13.22%
 - [Deploy your AI application - main](Deploy your AI application/main/) - AI: 0%
+- [RTI - main](RTI/main/) - AI: 45.36%
+- [Code Modernization - dev](Code Modernization/dev/) - AI: 3.48%
+- [Fabric SQL - dev](Fabric SQL/dev/) - AI: 41.93%
+- [Content Processing - dev](Content Processing/dev/) - AI: 0%
 - [Data and Security - dev](Data and Security/dev/) - AI: 0%
-- [RTI - main](RTI/main/) - AI: 0%
+- [DKM - dev](DKM/dev/) - AI: 0%
+- [CWYD - dev](CWYD/dev/) - AI: 65.67%
+- [Container Migration - dev](Container Migration/dev/) - AI: 0%
+- [BYOC - dev](BYOC/dev/) - AI: 0.18%
+- [MAAG - dev](MAAG/dev/) - AI: 0%
 
 
 ---
@@ -162,8 +162,8 @@
 ## Quick Links
 
 - [Batch Analysis Summary](Batch-Analysis-Summary.md)
-- [Branch-Level Summary CSV](Branch-Level-Summary_2026-04-21_05-39-21.csv)
-- [Consolidated Analysis JSON](Consolidated-Analysis_2026-04-21_05-39-21.json)
+- [Branch-Level Summary CSV](Branch-Level-Summary_2026-04-22_10-18-03.csv)
+- [Consolidated Analysis JSON](Consolidated-Analysis_2026-04-22_10-18-03.json)
 - [Git Access Validation Report](Git-Access-Validation-Report.md)
 
 ---
