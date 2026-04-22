@@ -1,0 +1,1074 @@
+{
+  "Commits": [
+    {
+      "Hash": "3837d7ea36751c73946460a867159e1733e98b95",
+      "Author": "Ragini-Microsoft",
+      "Date": "Fri Sep 26 13:37:15 2025 +0530",
+      "Message": "Updated sample questions",
+      "LinesAdded": 3,
+      "LinesDeleted": 3,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "16b8eab7035441eff7fc785b6de1b185f9975bf1",
+      "Author": "Rohini-Microsoft",
+      "Date": "Fri Sep 26 12:55:19 2025 +0530",
+      "Message": "fixed  Render HTML tables from assistant responses",
+      "LinesAdded": 72,
+      "LinesDeleted": 6,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "7c755cd6800123d37cfcc0e953fbbacff0e72a03",
+      "Author": "Malory Rose",
+      "Date": "Wed Sep 24 17:46:55 2025 -0700",
+      "Message": "update deployment",
+      "LinesAdded": 11,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "40f42e4bcc7bef8a4b6d71c0158fc690883f6a74",
+      "Author": "Ragini-Microsoft",
+      "Date": "Wed Sep 24 12:46:51 2025 +0530",
+      "Message": "update script paths in YAML and bash files for agent and fabric item creation",
+      "LinesAdded": 21,
+      "LinesDeleted": 32,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "d63619a101db9116da1d6793603020d10433015f",
+      "Author": "malrose07",
+      "Date": "Tue Sep 23 09:16:18 2025 -0700",
+      "Message": "Add .env file for Azure configuration",
+      "LinesAdded": 7,
+      "LinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "54cad503baf66ac41398d9e550d0b3a249cb7fba",
+      "Author": "Malory Rose",
+      "Date": "Tue Sep 23 09:14:31 2025 -0700",
+      "Message": "update readme",
+      "LinesAdded": 2,
+      "LinesDeleted": 2,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "6f1b7e7afda198187e06c02e4a2a6fc94938f4d0",
+      "Author": "Malory Rose",
+      "Date": "Tue Sep 23 08:51:35 2025 -0700",
+      "Message": "update deployment",
+      "LinesAdded": 288,
+      "LinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "26a4a62501fdfe8ae4aa48d5ecd4c278534a68a4",
+      "Author": "Avijit-Microsoft",
+      "Date": "Tue Sep 23 16:13:45 2025 +0530",
+      "Message": "Remove onCreateCommand from devcontainer.json",
+      "LinesAdded": 0,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "75b2f0f838414926b05f8f9553fb550c8bfb8b28",
+      "Author": "Ragini-Microsoft",
+      "Date": "Tue Sep 23 14:38:31 2025 +0530",
+      "Message": "chore: updated GP questions in readme",
+      "LinesAdded": 3,
+      "LinesDeleted": 5,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "de5c725bafa1192cb08664866405c7c4751fc70a",
+      "Author": "Avijit-Microsoft",
+      "Date": "Tue Sep 23 13:17:54 2025 +0530",
+      "Message": "Add Features section to README",
+      "LinesAdded": 4,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "5e2d630b26df840ed1c75e8d0f61077d38d662c5",
+      "Author": "Rohini-Microsoft",
+      "Date": "Tue Sep 23 11:31:15 2025 +0530",
+      "Message": "added try catch for json redering on ui and prevent enter while calling the update api call",
+      "LinesAdded": 57,
+      "LinesDeleted": 30,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "d3b519d1c84cd1318be389ef337b73841077b314",
+      "Author": "Malory Rose",
+      "Date": "Mon Sep 22 16:56:16 2025 -0700",
+      "Message": "update deployment",
+      "LinesAdded": 8,
+      "LinesDeleted": 2,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "4ee454b142b5435c70c207a87e45b2617bba1af7",
+      "Author": "Avijit-Microsoft",
+      "Date": "Mon Sep 22 20:14:46 2025 +0530",
+      "Message": "Add onCreateCommand to set executable permissions",
+      "LinesAdded": 1,
+      "LinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "61b2dfcb4ea2cc4284a476c706a48211b0bb496e",
+      "Author": "Malory Rose",
+      "Date": "Mon Sep 22 06:47:48 2025 -0700",
+      "Message": "update readme",
+      "LinesAdded": 1,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "c4904daf392061881e9d80729b0fcaad4c31da06",
+      "Author": "Ragini-Microsoft",
+      "Date": "Mon Sep 22 18:29:38 2025 +0530",
+      "Message": "feat: update fabric script to pull params from azd env",
+      "LinesAdded": 116,
+      "LinesDeleted": 115,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "69c83e1a655f3237dc62d37ae3a112df13702b2d",
+      "Author": "Ragini-Microsoft",
+      "Date": "Mon Sep 22 17:57:36 2025 +0530",
+      "Message": "fix for dependabot",
+      "LinesAdded": 2,
+      "LinesDeleted": 2,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "b1bf24061a0c594df38ef9873ea5854f0c84ceac",
+      "Author": "Ragini-Microsoft",
+      "Date": "Mon Sep 22 17:53:45 2025 +0530",
+      "Message": "chore: comment out npm registry configuration in dependabot.yml",
+      "LinesAdded": 5,
+      "LinesDeleted": 5,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "03e0c4e1cf0d6381c06755b464b30de2ac44a478",
+      "Author": "Ragini-Microsoft",
+      "Date": "Mon Sep 22 17:47:33 2025 +0530",
+      "Message": "Refactor CodeQL workflow for language and schedule updates",
+      "LinesAdded": 93,
+      "LinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "83f9c6a615e6a7f78ca0b06dcbec185d8a089f2a",
+      "Author": "Ragini-Microsoft",
+      "Date": "Mon Sep 22 17:43:55 2025 +0530",
+      "Message": "remove: delete CodeQL analysis workflow file",
+      "LinesAdded": 0,
+      "LinesDeleted": 93,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "db5435b148c29f08a002b4144f70aaae1f09c70c",
+      "Author": "Malory Rose",
+      "Date": "Fri Sep 19 17:27:07 2025 -0700",
+      "Message": "update readme",
+      "LinesAdded": 1,
+      "LinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "70e19cb9349aba809ac33a929557deaa305ce5f0",
+      "Author": "Ragini-Microsoft",
+      "Date": "Fri Sep 19 19:21:21 2025 +0530",
+      "Message": "removed the unused files",
+      "LinesAdded": 0,
+      "LinesDeleted": 693,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "09aebca23a6a152fff60d9ceb100a4f64f28a103",
+      "Author": "Ragini-Microsoft",
+      "Date": "Fri Sep 19 17:21:14 2025 +0530",
+      "Message": "feat: agent creation moved to post deployment script and docs updated",
+      "LinesAdded": 209,
+      "LinesDeleted": 242,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "6105ace2ef3645d953b49d354196b4a55c936bc0",
+      "Author": "Ragini-Microsoft",
+      "Date": "Fri Sep 19 17:19:57 2025 +0530",
+      "Message": "feat: add support for ODBC Driver 18 and fallback to ODBC Driver 17 in database connection in fabric script",
+      "LinesAdded": 30,
+      "LinesDeleted": 13,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "a51eb76149c95cf7b0b49b7382b41b4fd3a209f4",
+      "Author": "Ragini-Microsoft",
+      "Date": "Fri Sep 19 17:18:50 2025 +0530",
+      "Message": "pylint fixes",
+      "LinesAdded": 3,
+      "LinesDeleted": 4,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "a65c0188f095b7d6c6c8d4f478a53b0a2236d3ac",
+      "Author": "Avijit-Microsoft",
+      "Date": "Fri Sep 19 15:15:51 2025 +0530",
+      "Message": "feat: enable support for both ODBC 17 and ODBC 18",
+      "LinesAdded": 51,
+      "LinesDeleted": 34,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "e948ad71effd007a08d19c0d079c331823675f21",
+      "Author": "Ragini-Microsoft",
+      "Date": "Fri Sep 19 12:34:33 2025 +0530",
+      "Message": "remove the reference of customizedata.md",
+      "LinesAdded": 0,
+      "LinesDeleted": 4,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "c7302e4c3a12571b0508fb9c1c250c8e4edad61a",
+      "Author": "Ragini-Microsoft",
+      "Date": "Fri Sep 19 12:29:31 2025 +0530",
+      "Message": "Bug fixes, documentation changes and cleanup",
+      "LinesAdded": 84,
+      "LinesDeleted": 214,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "18acf8d6b1ed0d9a71e050eb5df6b33086aab3a9",
+      "Author": "Malory Rose",
+      "Date": "Thu Sep 18 21:36:23 2025 -0700",
+      "Message": "update docs",
+      "LinesAdded": 2,
+      "LinesDeleted": 5,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "4565383b3ca0db197b7d248b014919a61897fdc0",
+      "Author": "Ragini-Microsoft",
+      "Date": "Thu Sep 18 17:04:32 2025 +0530",
+      "Message": "removed the test files",
+      "LinesAdded": 0,
+      "LinesDeleted": 4413,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "01b2e329d7bd23686a2cf22d4ddd1cd043d7009a",
+      "Author": "Ragini-Microsoft",
+      "Date": "Thu Sep 18 16:25:50 2025 +0530",
+      "Message": "updated fabric sql data, script and pylint fixes",
+      "LinesAdded": 521,
+      "LinesDeleted": 518,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "37e20970066ce2cde5d83805ddf4976cdc6448a9",
+      "Author": "Malory Rose",
+      "Date": "Wed Sep 17 10:35:01 2025 -0700",
+      "Message": "update backend",
+      "LinesAdded": 8,
+      "LinesDeleted": 9,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "0645b3c82eb908c43ca614b2478db7211797e4e0",
+      "Author": "Ragini-Microsoft",
+      "Date": "Wed Sep 17 17:08:36 2025 +0530",
+      "Message": "pylint fixes",
+      "LinesAdded": 5,
+      "LinesDeleted": 4,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "3e7a8b414b76973e70be56791c420507998ad61d",
+      "Author": "Ragini-Microsoft",
+      "Date": "Wed Sep 17 17:04:31 2025 +0530",
+      "Message": "updates",
+      "LinesAdded": 1,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "a7a8f7eec2eb1769df6c133a9281b3f0977ead5b",
+      "Author": "Ragini-Microsoft",
+      "Date": "Wed Sep 17 17:03:16 2025 +0530",
+      "Message": "comment out debug print statements in fabric scripts",
+      "LinesAdded": 2,
+      "LinesDeleted": 2,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "f9bb479851609dbb02f45867f03385b56b023ac4",
+      "Author": "Ragini-Microsoft",
+      "Date": "Wed Sep 17 17:00:30 2025 +0530",
+      "Message": "chore: remove deprecated Bicep and script files",
+      "LinesAdded": 2,
+      "LinesDeleted": 635,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "b2fd3d99906c58a0f6ea8a9fe1b39ee652ebc79e",
+      "Author": "Ragini-Microsoft",
+      "Date": "Wed Sep 17 16:58:08 2025 +0530",
+      "Message": "Updated workflows, infra and backend",
+      "LinesAdded": 135,
+      "LinesDeleted": 824,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "acb32215dc895b77d14e0d755a08426635ef287f",
+      "Author": "Avijit-Microsoft",
+      "Date": "Wed Sep 17 13:54:27 2025 +0530",
+      "Message": "Add Ragini-Microsoft as a CODEOWNER",
+      "LinesAdded": 1,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "c405e2c9dd4cb9a89a074b4ff87e8a834923f88e",
+      "Author": "Avijit-Microsoft",
+      "Date": "Wed Sep 17 13:31:23 2025 +0530",
+      "Message": "Add @malrose07 as a CODEOWNER",
+      "LinesAdded": 1,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "abfec12bb08d4ab58e529bf66ab74e3992045a8f",
+      "Author": "Malory Rose",
+      "Date": "Tue Sep 16 22:02:34 2025 -0700",
+      "Message": "update deployment and backend",
+      "LinesAdded": 352,
+      "LinesDeleted": 699,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "388c7ad6de976a451a5cc6bf176116b1ed2796c0",
+      "Author": "Ragini-Microsoft",
+      "Date": "Tue Sep 16 10:45:24 2025 +0530",
+      "Message": "Updated workflow name",
+      "LinesAdded": 1,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "699f56a5e369bff07cc5173392163d0930714607",
+      "Author": "Malory Rose",
+      "Date": "Mon Sep 15 17:33:02 2025 -0700",
+      "Message": "update deployment",
+      "LinesAdded": 1,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "3164936b3f9076f80cf7e3d3cb6050d1eb466ae6",
+      "Author": "Malory Rose",
+      "Date": "Mon Sep 15 12:18:27 2025 -0700",
+      "Message": "update deployment",
+      "LinesAdded": 10,
+      "LinesDeleted": 8,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "890512df005c2d412b7da45a63e6b21e0740fd25",
+      "Author": "Malory Rose",
+      "Date": "Mon Sep 15 08:45:40 2025 -0700",
+      "Message": "update deployment",
+      "LinesAdded": 46,
+      "LinesDeleted": 19,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "090922c6aaadd233c1d62b5f9252d36d38934c9c",
+      "Author": "Malory Rose",
+      "Date": "Thu Sep 11 20:22:08 2025 -0700",
+      "Message": "update docs and scripts",
+      "LinesAdded": 14272,
+      "LinesDeleted": 9885,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "04c5e47ad66fc62f07b67fee9f7358606ac718fe",
+      "Author": "Ragini-Microsoft",
+      "Date": "Thu Sep 11 13:08:02 2025 +0530",
+      "Message": "revert  Docker build workflow to use 'main' branch",
+      "LinesAdded": 6,
+      "LinesDeleted": 6,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "f91da7ffe5297dee8f4fa741cc2703d6978be7d1",
+      "Author": "Ragini-Microsoft",
+      "Date": "Thu Sep 11 12:35:48 2025 +0530",
+      "Message": "Update Docker build workflow",
+      "LinesAdded": 8,
+      "LinesDeleted": 8,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "b8eea405641cd3c9629e5889f0f392c5749235f3",
+      "Author": "Malory Rose",
+      "Date": "Wed Sep 10 17:12:11 2025 -0700",
+      "Message": "initial commit",
+      "LinesAdded": 60987,
+      "LinesDeleted": 418,
+      "IsAI": true,
+      "ConfidenceScore": 98,
+      "ConfidenceTier": "Tier 2: Very High Confidence (90-98 percent)",
+      "TierNumber": 2
+    },
+    {
+      "Hash": "a5258d453c8d4efb312a9013257854995606711e",
+      "Author": "microsoft-github-operations[bot]",
+      "Date": "Thu Sep 4 19:03:44 2025 +0000",
+      "Message": "Initial commit",
+      "LinesAdded": 418,
+      "LinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    }
+  ],
+  "TierDistribution": {
+    "Tier3_High": 0,
+    "Human": 47,
+    "Tier1_Definitive": 0,
+    "Tier2_VeryHigh": 1,
+    "Tier5_Low": 0,
+    "Tier4_Moderate": 0
+  },
+  "ApplicationName": "Fabric SQL",
+  "AnalysisPeriod": {
+    "FilterApplied": true,
+    "EndDate": "2025-09-30",
+    "StartDate": "2025-09-01"
+  },
+  "Branch": "dev",
+  "GeneratedAt": "2026-04-22 11:26:57",
+  "Metadata": {
+    "PowerShellVersion": "7.4.14",
+    "GeneratedBy": "Copilot Usage Report Tool v2.0",
+    "IncludeTestFiles": false,
+    "AnalysisMethod": "5-Tier Weighted Pattern Detection",
+    "GeneratedAt": "2026-04-22 11:26:57",
+    "ScriptVersion": "2.0.0"
+  },
+  "Users": [
+    {
+      "UserName": "malrose07",
+      "UserEmail": "57774991+malrose07@users.noreply.github.com",
+      "TotalCommits": 1,
+      "AICommits": 0,
+      "HumanCommits": 1,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 7,
+      "HumanLinesDeleted": 0,
+      "TotalLinesAdded": 7,
+      "TotalLinesDeleted": 0,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Malory Rose",
+      "UserEmail": "maloryrose07@outlook.com",
+      "TotalCommits": 14,
+      "AICommits": 1,
+      "HumanCommits": 13,
+      "AILinesAdded": 60987,
+      "AILinesDeleted": 418,
+      "HumanLinesAdded": 15002,
+      "HumanLinesDeleted": 10632,
+      "TotalLinesAdded": 75989,
+      "TotalLinesDeleted": 11050,
+      "AIPercentage": 80.26,
+      "AvgConfidenceScore": 98.0,
+      "ConfidenceScores": [
+        98
+      ],
+      "Tier1Commits": 0,
+      "Tier2Commits": 1,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "microsoft-github-operations[bot]",
+      "UserEmail": "55726097+microsoft-github-operations[bot]@users.noreply.github.com",
+      "TotalCommits": 1,
+      "AICommits": 0,
+      "HumanCommits": 1,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 418,
+      "HumanLinesDeleted": 0,
+      "TotalLinesAdded": 418,
+      "TotalLinesDeleted": 0,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Rohini-Microsoft",
+      "UserEmail": "v-rwalunj@microsoft.com",
+      "TotalCommits": 2,
+      "AICommits": 0,
+      "HumanCommits": 2,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 129,
+      "HumanLinesDeleted": 36,
+      "TotalLinesAdded": 129,
+      "TotalLinesDeleted": 36,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Avijit-Microsoft",
+      "UserEmail": "v-aghorui@microsoft.com",
+      "TotalCommits": 6,
+      "AICommits": 0,
+      "HumanCommits": 6,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 58,
+      "HumanLinesDeleted": 38,
+      "TotalLinesAdded": 58,
+      "TotalLinesDeleted": 38,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Ragini-Microsoft",
+      "UserEmail": "v-raginich@microsoft.com",
+      "TotalCommits": 24,
+      "AICommits": 0,
+      "HumanCommits": 24,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 1250,
+      "HumanLinesDeleted": 7837,
+      "TotalLinesAdded": 1250,
+      "TotalLinesDeleted": 7837,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    }
+  ],
+  "FileTypeBreakdown": [
+    {
+      "Extension": "sql",
+      "TotalLines": 309110,
+      "AILines": 23062,
+      "AIPercentage": 7.46,
+      "FileCount": 101
+    },
+    {
+      "Extension": "html",
+      "TotalLines": 230848,
+      "AILines": 230843,
+      "AIPercentage": 100.0,
+      "FileCount": 313
+    },
+    {
+      "Extension": "py",
+      "TotalLines": 217704,
+      "AILines": 169488,
+      "AIPercentage": 77.85,
+      "FileCount": 2789
+    },
+    {
+      "Extension": "csv",
+      "TotalLines": 169038,
+      "AILines": 870,
+      "AIPercentage": 0.51,
+      "FileCount": 285
+    },
+    {
+      "Extension": "json",
+      "TotalLines": 105433,
+      "AILines": 68978,
+      "AIPercentage": 65.42,
+      "FileCount": 857
+    },
+    {
+      "Extension": "xml",
+      "TotalLines": 73793,
+      "AILines": 73793,
+      "AIPercentage": 100.0,
+      "FileCount": 43
+    },
+    {
+      "Extension": "js",
+      "TotalLines": 65580,
+      "AILines": 65439,
+      "AIPercentage": 99.78,
+      "FileCount": 690
+    },
+    {
+      "Extension": "cs",
+      "TotalLines": 43946,
+      "AILines": 37878,
+      "AIPercentage": 86.19,
+      "FileCount": 1098
+    },
+    {
+      "Extension": "yml",
+      "TotalLines": 43343,
+      "AILines": 6455,
+      "AIPercentage": 14.89,
+      "FileCount": 1090
+    },
+    {
+      "Extension": "md",
+      "TotalLines": 40266,
+      "AILines": 15423,
+      "AIPercentage": 38.3,
+      "FileCount": 1772
+    },
+    {
+      "Extension": "bicep",
+      "TotalLines": 21340,
+      "AILines": 10167,
+      "AIPercentage": 47.64,
+      "FileCount": 710
+    },
+    {
+      "Extension": "tsx",
+      "TotalLines": 17727,
+      "AILines": 13373,
+      "AIPercentage": 75.44,
+      "FileCount": 612
+    },
+    {
+      "Extension": "ts",
+      "TotalLines": 15496,
+      "AILines": 15082,
+      "AIPercentage": 97.33,
+      "FileCount": 308
+    },
+    {
+      "Extension": "sh",
+      "TotalLines": 11209,
+      "AILines": 6612,
+      "AIPercentage": 58.99,
+      "FileCount": 338
+    },
+    {
+      "Extension": "gitignore",
+      "TotalLines": 3166,
+      "AILines": 1653,
+      "AIPercentage": 52.21,
+      "FileCount": 40
+    },
+    {
+      "Extension": "pdf",
+      "TotalLines": 2793,
+      "AILines": 765,
+      "AIPercentage": 27.39,
+      "FileCount": 237
+    },
+    {
+      "Extension": "txt",
+      "TotalLines": 2356,
+      "AILines": 1083,
+      "AIPercentage": 45.97,
+      "FileCount": 396
+    },
+    {
+      "Extension": "css",
+      "TotalLines": 1983,
+      "AILines": 1732,
+      "AIPercentage": 87.34,
+      "FileCount": 87
+    },
+    {
+      "Extension": "cmd",
+      "TotalLines": 1943,
+      "AILines": 374,
+      "AIPercentage": 19.25,
+      "FileCount": 41
+    },
+    {
+      "Extension": "dockerignore",
+      "TotalLines": 1424,
+      "AILines": 1277,
+      "AIPercentage": 89.68,
+      "FileCount": 19
+    },
+    {
+      "Extension": "yaml",
+      "TotalLines": 1406,
+      "AILines": 114,
+      "AIPercentage": 8.11,
+      "FileCount": 88
+    },
+    {
+      "Extension": "dockerfile",
+      "TotalLines": 882,
+      "AILines": 526,
+      "AIPercentage": 59.64,
+      "FileCount": 51
+    },
+    {
+      "Extension": "csproj",
+      "TotalLines": 498,
+      "AILines": 498,
+      "AIPercentage": 100.0,
+      "FileCount": 67
+    },
+    {
+      "Extension": "sample",
+      "TotalLines": 476,
+      "AILines": 316,
+      "AIPercentage": 66.39,
+      "FileCount": 112
+    },
+    {
+      "Extension": "ps1",
+      "TotalLines": 467,
+      "AILines": 434,
+      "AIPercentage": 92.93,
+      "FileCount": 29
+    },
+    {
+      "Extension": "env",
+      "TotalLines": 466,
+      "AILines": 2,
+      "AIPercentage": 0.43,
+      "FileCount": 40
+    },
+    {
+      "Extension": "ipynb",
+      "TotalLines": 432,
+      "AILines": 432,
+      "AIPercentage": 100.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "example",
+      "TotalLines": 375,
+      "AILines": 6,
+      "AIPercentage": 1.6,
+      "FileCount": 30
+    },
+    {
+      "Extension": "sln",
+      "TotalLines": 180,
+      "AILines": 180,
+      "AIPercentage": 100.0,
+      "FileCount": 14
+    },
+    {
+      "Extension": "map",
+      "TotalLines": 144,
+      "AILines": 144,
+      "AIPercentage": 100.0,
+      "FileCount": 72
+    },
+    {
+      "Extension": "runsettings",
+      "TotalLines": 140,
+      "AILines": 140,
+      "AIPercentage": 100.0,
+      "FileCount": 5
+    },
+    {
+      "Extension": "py}",
+      "TotalLines": 138,
+      "AILines": 72,
+      "AIPercentage": 52.17,
+      "FileCount": 37
+    },
+    {
+      "Extension": "yml}",
+      "TotalLines": 88,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 4
+    },
+    {
+      "Extension": "other",
+      "TotalLines": 84,
+      "AILines": 42,
+      "AIPercentage": 50.0,
+      "FileCount": 4
+    },
+    {
+      "Extension": "editorconfig",
+      "TotalLines": 63,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 6
+    },
+    {
+      "Extension": "ini",
+      "TotalLines": 49,
+      "AILines": 26,
+      "AIPercentage": 53.06,
+      "FileCount": 14
+    },
+    {
+      "Extension": "svg",
+      "TotalLines": 40,
+      "AILines": 40,
+      "AIPercentage": 100.0,
+      "FileCount": 21
+    },
+    {
+      "Extension": "github/codeowners",
+      "TotalLines": 38,
+      "AILines": 10,
+      "AIPercentage": 26.32,
+      "FileCount": 30
+    },
+    {
+      "Extension": "devcontainer/dockerfile",
+      "TotalLines": 32,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 8
+    },
+    {
+      "Extension": "flake8",
+      "TotalLines": 18,
+      "AILines": 18,
+      "AIPercentage": 100.0,
+      "FileCount": 4
+    },
+    {
+      "Extension": "coveragerc",
+      "TotalLines": 6,
+      "AILines": 6,
+      "AIPercentage": 100.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "npmrc",
+      "TotalLines": 6,
+      "AILines": 6,
+      "AIPercentage": 100.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "md}",
+      "TotalLines": 4,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 4
+    },
+    {
+      "Extension": "cache",
+      "TotalLines": 3,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 6
+    },
+    {
+      "Extension": "gitattributes",
+      "TotalLines": 2,
+      "AILines": 2,
+      "AIPercentage": 100.0,
+      "FileCount": 2
+    }
+  ],
+  "BranchStatistics": {
+    "Branch": "dev",
+    "TotalCommits": 48,
+    "AICommits": 1,
+    "HumanCommits": 47,
+    "TotalLinesAdded": 77851.0,
+    "TotalLinesDeleted": 18961.0,
+    "AILinesAdded": 60987.0,
+    "AILinesDeleted": 418.0,
+    "Tier1Commits": 0,
+    "Tier2Commits": 1,
+    "Tier3Commits": 0,
+    "Tier4Commits": 0,
+    "Tier5Commits": 0,
+    "UniqueContributors": 6,
+    "AIPercentage": 78.34,
+    "HumanLinesAdded": 16864.0
+  },
+  "AIAttributionOverride": {
+    "Applied": false,
+    "OverridePercentage": null,
+    "Notes": null
+  }
+}

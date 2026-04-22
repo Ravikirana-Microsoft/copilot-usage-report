@@ -1,24 +1,12 @@
 {
-  "lastUpdated": "2026-04-22 11:07:54",
+  "lastUpdated": "2026-04-22 11:27:31",
   "reports": [
     {
-      "name": "October-2025",
-      "isLatest": true,
-      "filename": "ConsolidatedReport_2026-04-22_11-07-54.json",
-      "dateRange": "2025-10-01 to 2025-10-31",
-      "date": "2026-04-22 11:07:54 UTC"
-    },
-    {
-      "name": "November-2025",
-      "filename": "ConsolidatedReport_2026-04-22_11-02-16.json",
-      "dateRange": "2025-11-01 to 2025-11-30",
-      "date": "2026-04-22 11:02:17 UTC"
-    },
-    {
-      "name": "December-2025",
-      "filename": "ConsolidatedReport_2026-04-22_10-53-19.json",
-      "dateRange": "2025-12-01 to 2025-12-31",
-      "date": "2026-04-22 10:53:19 UTC"
+      "filename": "ConsolidatedReport_2026-04-22_11-27-31.json",
+      "date": "2026-04-22 11:27:31 UTC",
+      "name": "September-2025",
+      "dateRange": "2025-09-01 to 2025-09-30",
+      "isLatest": true
     }
   ]
 }
