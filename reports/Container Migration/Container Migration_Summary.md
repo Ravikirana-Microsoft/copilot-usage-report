@@ -2,7 +2,7 @@
 
 > Consolidated analysis across all branches using 5-Tier AI Detection Model
 
-**Generated:** 2026-04-22 10:18:03  
+**Generated:** 2026-04-22 10:53:19  
 **Analysis Period:** 2025-12-01 to 2025-12-31
 
 ---
@@ -13,7 +13,7 @@
 |--------|-------|
 | **Application** | Container Migration |
 | **Branches Analyzed** | 1 |
-| **Total Contributors** | 8 |
+| **Total Contributors** | 10 |
 | **Overall AI Usage** | **0%** |
 
 ---
@@ -54,7 +54,7 @@ Human-Written: ████████████████████ 100%
 
 | Branch | Commits | AI Commits | AI Lines | AI % | T1 | T2 | T3 | T4 | T5 | Contributors |
 |--------|---------|------------|----------|------|----|----|----|----|-----|--------------|
-| **dev** | 44 | 0 |  | 0% | 0 | 0 | 0 | 0 | 0 | 8 |
+| **dev** | 44 | 0 |  | 0% | 0 | 0 | 0 | 0 | 0 | 10 |
 
 ---
 

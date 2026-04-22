@@ -2,7 +2,7 @@
 
 > Auto-generated index of all analysis reports with application-level AI usage statistics.
 > 
-> **Last Updated:** 2026-04-22 10:18:03
+> **Last Updated:** 2026-04-22 10:53:19
 
 ---
 
@@ -21,7 +21,7 @@
 | **Deploy your AI application** | **0%** | 14 | 0 | 14 | 15593 | 0 | main |
 | **DKM** | **0%** | 53 | 0 | 53 | 3959 | 0 | dev |
 | **Fabric SQL** | **41.93%** | 50 | 6 | 44 | 5311 | 2227 | dev |
-| **KM Generic** | **0.21%** | 124 | 4 | 120 | 348651 | 748 | dev |
+| **KM Generic** | **0.21%** | 126 | 4 | 122 | 348654 | 748 | dev |
 | **MAAG** | **0%** | 18 | 0 | 18 | 1157 | 0 | dev |
 | **MACAE v4** | **13.22%** | 131 | 4 | 127 | 63134 | 8345 | main |
 | **RTI** | **45.36%** | 125 | 7 | 118 | 12456 | 5650 | main |
@@ -36,6 +36,7 @@
 
 | Run Date | Period | Applications | Branches | Overall AI % | Reports |
 |----------|--------|--------------|----------|--------------|---------|
+| 2026-04-22 10:53 | 2025-12-01 to 2025-12-31 | 15 | 15 | 16.09% | [Summary](Batch-Analysis-Summary.md), [JSON](Consolidated-Analysis_2026-04-22_10-53-19.json) |
 | 2026-04-22 10:18 | 2025-12-01 to 2025-12-31 | 15 | 15 | 16.09% | [Summary](Batch-Analysis-Summary.md), [JSON](Consolidated-Analysis_2026-04-22_10-18-03.json) |
 | 2026-04-21 05:39 | 2025-10-01 to 2025-10-31 | 15 | 15 | 7.24% | [Summary](Batch-Analysis-Summary.md), [JSON](Consolidated-Analysis_2026-04-21_05-39-21.json) |
 | 2026-04-20 13:37 | 2025-11-01 to 2025-11-30 | 15 | 15 | 53.47% | [Summary](Batch-Analysis-Summary.md), [JSON](Consolidated-Analysis_2026-04-20_13-37-21.json) |
@@ -55,7 +56,6 @@
 | 2026-02-19 06:41 | 2026-01-01 to 2026-01-31 | 14 | 14 | 37.51% | [Summary](Batch-Analysis-Summary.md), [JSON](Consolidated-Analysis_2026-02-19_06-41-46.json) |
 | 2026-02-19 06:15 | 2025-12-01 to 2025-12-31 | 14 | 14 | 16.19% | [Summary](Batch-Analysis-Summary.md), [JSON](Consolidated-Analysis_2026-02-19_06-15-25.json) |
 | 2026-02-19 04:53 | 2025-12-01 to 2025-12-31 | 14 | 14 | 16.19% | [Summary](Batch-Analysis-Summary.md), [JSON](Consolidated-Analysis_2026-02-19_04-53-42.json) |
-| 2026-02-19 04:39 | 2025-12-01 to 2025-12-31 | 14 | 14 | 16.19% | [Summary](Batch-Analysis-Summary.md), [JSON](Consolidated-Analysis_2026-02-19_04-39-14.json) |
 
 ---
 
@@ -138,7 +138,7 @@
 - **main Branch**: [RTI/main](RTI/main/)
 
 
-**Latest Reports (2026-04-22 10:18):**
+**Latest Reports (2026-04-22 10:53):**
 
 - [Content Generation - dev](Content Generation/dev/) - AI: 84.15%
 - [KM Generic - dev](KM Generic/dev/) - AI: 0.21%
@@ -162,8 +162,8 @@
 ## Quick Links
 
 - [Batch Analysis Summary](Batch-Analysis-Summary.md)
-- [Branch-Level Summary CSV](Branch-Level-Summary_2026-04-22_10-18-03.csv)
-- [Consolidated Analysis JSON](Consolidated-Analysis_2026-04-22_10-18-03.json)
+- [Branch-Level Summary CSV](Branch-Level-Summary_2026-04-22_10-53-19.csv)
+- [Consolidated Analysis JSON](Consolidated-Analysis_2026-04-22_10-53-19.json)
 - [Git Access Validation Report](Git-Access-Validation-Report.md)
 
 ---
