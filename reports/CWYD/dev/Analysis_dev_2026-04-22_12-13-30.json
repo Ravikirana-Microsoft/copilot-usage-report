@@ -1,0 +1,563 @@
+{
+  "TierDistribution": {
+    "Tier3_High": 0,
+    "Tier1_Definitive": 0,
+    "Human": 12,
+    "Tier5_Low": 0,
+    "Tier4_Moderate": 0,
+    "Tier2_VeryHigh": 0
+  },
+  "AIAttributionOverride": {
+    "Notes": null,
+    "Applied": false,
+    "OverridePercentage": null
+  },
+  "BranchStatistics": {
+    "Branch": "dev",
+    "TotalCommits": 12,
+    "AICommits": 0,
+    "HumanCommits": 12,
+    "TotalLinesAdded": 28958.0,
+    "TotalLinesDeleted": 2516.0,
+    "AILinesAdded": null,
+    "AILinesDeleted": null,
+    "Tier1Commits": 0,
+    "Tier2Commits": 0,
+    "Tier3Commits": 0,
+    "Tier4Commits": 0,
+    "Tier5Commits": 0,
+    "UniqueContributors": 8,
+    "AIPercentage": 0.0,
+    "HumanLinesAdded": 28958.0
+  },
+  "AnalysisPeriod": {
+    "FilterApplied": true,
+    "EndDate": "2025-07-31",
+    "StartDate": "2025-07-01"
+  },
+  "FileTypeBreakdown": [
+    {
+      "Extension": "json",
+      "TotalLines": 14335471,
+      "AILines": 228112,
+      "AIPercentage": 1.59,
+      "FileCount": 480
+    },
+    {
+      "Extension": "py",
+      "TotalLines": 141478,
+      "AILines": 109799,
+      "AIPercentage": 77.61,
+      "FileCount": 1138
+    },
+    {
+      "Extension": "csv",
+      "TotalLines": 108144,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 7
+    },
+    {
+      "Extension": "lock",
+      "TotalLines": 70121,
+      "AILines": 7440,
+      "AIPercentage": 10.61,
+      "FileCount": 38
+    },
+    {
+      "Extension": "bicep",
+      "TotalLines": 44266,
+      "AILines": 37974,
+      "AIPercentage": 85.79,
+      "FileCount": 596
+    },
+    {
+      "Extension": "yml",
+      "TotalLines": 40537,
+      "AILines": 600,
+      "AIPercentage": 1.48,
+      "FileCount": 660
+    },
+    {
+      "Extension": "md",
+      "TotalLines": 24548,
+      "AILines": 11528,
+      "AIPercentage": 46.96,
+      "FileCount": 332
+    },
+    {
+      "Extension": "sh",
+      "TotalLines": 3035,
+      "AILines": 13,
+      "AIPercentage": 0.43,
+      "FileCount": 64
+    },
+    {
+      "Extension": "py}",
+      "TotalLines": 2020,
+      "AILines": 2020,
+      "AIPercentage": 100.0,
+      "FileCount": 10
+    },
+    {
+      "Extension": "tsx",
+      "TotalLines": 1616,
+      "AILines": 519,
+      "AIPercentage": 32.12,
+      "FileCount": 142
+    },
+    {
+      "Extension": "css",
+      "TotalLines": 1524,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 12
+    },
+    {
+      "Extension": "ps1",
+      "TotalLines": 1128,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 9
+    },
+    {
+      "Extension": "bicep}",
+      "TotalLines": 812,
+      "AILines": 812,
+      "AIPercentage": 100.0,
+      "FileCount": 4
+    },
+    {
+      "Extension": "toml",
+      "TotalLines": 547,
+      "AILines": 100,
+      "AIPercentage": 18.28,
+      "FileCount": 35
+    },
+    {
+      "Extension": "other",
+      "TotalLines": 477,
+      "AILines": 22,
+      "AIPercentage": 4.61,
+      "FileCount": 19
+    },
+    {
+      "Extension": "yaml",
+      "TotalLines": 268,
+      "AILines": 4,
+      "AIPercentage": 1.49,
+      "FileCount": 58
+    },
+    {
+      "Extension": "js",
+      "TotalLines": 184,
+      "AILines": 92,
+      "AIPercentage": 50.0,
+      "FileCount": 4
+    },
+    {
+      "Extension": "sample",
+      "TotalLines": 71,
+      "AILines": 12,
+      "AIPercentage": 16.9,
+      "FileCount": 21
+    },
+    {
+      "Extension": "ts",
+      "TotalLines": 57,
+      "AILines": 6,
+      "AIPercentage": 10.53,
+      "FileCount": 23
+    },
+    {
+      "Extension": "devcontainer/dockerfile",
+      "TotalLines": 34,
+      "AILines": 2,
+      "AIPercentage": 5.88,
+      "FileCount": 14
+    },
+    {
+      "Extension": "github/codeowners",
+      "TotalLines": 24,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 24
+    },
+    {
+      "Extension": "ipynb",
+      "TotalLines": 18,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 3
+    },
+    {
+      "Extension": "ini",
+      "TotalLines": 18,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 9
+    },
+    {
+      "Extension": "testtool",
+      "TotalLines": 10,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 5
+    },
+    {
+      "Extension": "test",
+      "TotalLines": 10,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 5
+    },
+    {
+      "Extension": "dev",
+      "TotalLines": 10,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 5
+    },
+    {
+      "Extension": "txt",
+      "TotalLines": 8,
+      "AILines": 4,
+      "AIPercentage": 50.0,
+      "FileCount": 4
+    },
+    {
+      "Extension": "bicepparam",
+      "TotalLines": 2,
+      "AILines": 2,
+      "AIPercentage": 100.0,
+      "FileCount": 10
+    }
+  ],
+  "Users": [
+    {
+      "UserName": "Prasanjeet-Microsoft",
+      "UserEmail": "v-singhprasa@microsoft.com",
+      "TotalCommits": 2,
+      "AICommits": 0,
+      "HumanCommits": 2,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 28,
+      "HumanLinesDeleted": 48,
+      "TotalLinesAdded": 28,
+      "TotalLinesDeleted": 48,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Rafi-Microsoft",
+      "UserEmail": "v-rafmd@microsoft.com",
+      "TotalCommits": 1,
+      "AICommits": 0,
+      "HumanCommits": 1,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 267,
+      "HumanLinesDeleted": 0,
+      "TotalLinesAdded": 267,
+      "TotalLinesDeleted": 0,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Harmanpreet-Microsoft",
+      "UserEmail": "v-harmanprka@microsoft.com",
+      "TotalCommits": 1,
+      "AICommits": 0,
+      "HumanCommits": 1,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 27744,
+      "HumanLinesDeleted": 46,
+      "TotalLinesAdded": 27744,
+      "TotalLinesDeleted": 46,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Roopan-Microsoft",
+      "UserEmail": "168007406+Roopan-Microsoft@users.noreply.github.com",
+      "TotalCommits": 1,
+      "AICommits": 0,
+      "HumanCommits": 1,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 7,
+      "HumanLinesDeleted": 11,
+      "TotalLinesAdded": 7,
+      "TotalLinesDeleted": 11,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Ragini-Microsoft",
+      "UserEmail": "v-raginich@microsoft.com",
+      "TotalCommits": 1,
+      "AICommits": 0,
+      "HumanCommits": 1,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 258,
+      "HumanLinesDeleted": 272,
+      "TotalLinesAdded": 258,
+      "TotalLinesDeleted": 272,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Vamshi-Microsoft",
+      "UserEmail": "v-vamolla@microsoft.com",
+      "TotalCommits": 1,
+      "AICommits": 0,
+      "HumanCommits": 1,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 17,
+      "HumanLinesDeleted": 13,
+      "TotalLinesAdded": 17,
+      "TotalLinesDeleted": 13,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "AjitPadhi-Microsoft",
+      "UserEmail": "v-padhiajit@microsoft.com",
+      "TotalCommits": 3,
+      "AICommits": 0,
+      "HumanCommits": 3,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 280,
+      "HumanLinesDeleted": 2097,
+      "TotalLinesAdded": 280,
+      "TotalLinesDeleted": 2097,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Priyanka-Microsoft",
+      "UserEmail": "v-prisinghal@microsoft.com",
+      "TotalCommits": 2,
+      "AICommits": 0,
+      "HumanCommits": 2,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 357,
+      "HumanLinesDeleted": 29,
+      "TotalLinesAdded": 357,
+      "TotalLinesDeleted": 29,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    }
+  ],
+  "ApplicationName": "CWYD",
+  "Branch": "dev",
+  "GeneratedAt": "2026-04-22 12:13:30",
+  "Metadata": {
+    "ScriptVersion": "2.0.0",
+    "GeneratedBy": "Copilot Usage Report Tool v2.0",
+    "AnalysisMethod": "5-Tier Weighted Pattern Detection",
+    "GeneratedAt": "2026-04-22 12:13:30",
+    "IncludeTestFiles": false,
+    "PowerShellVersion": "7.4.14"
+  },
+  "Commits": [
+    {
+      "Hash": "0bd33ecd6a58434ec8f5c6f17d8572b592e7b937",
+      "Author": "AjitPadhi-Microsoft",
+      "Date": "Tue Jul 29 10:49:15 2025 +0530",
+      "Message": "fix: onclick deployment issue fix (#1870)",
+      "LinesAdded": 8,
+      "LinesDeleted": 6,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "049836a0893e141657fc7061e9aaa2153b84e761",
+      "Author": "Prasanjeet-Microsoft",
+      "Date": "Mon Jul 28 10:42:23 2025 +0530",
+      "Message": "fix: Remove Exposed Speech Service API Key from Network Calls (#1869)",
+      "LinesAdded": 13,
+      "LinesDeleted": 17,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "2ff456edba1af025bd11eebb17462d88dcf9a47c",
+      "Author": "Priyanka-Microsoft",
+      "Date": "Thu Jul 24 16:38:32 2025 +0530",
+      "Message": "fix: removed fruoccopublic registry (#1867)",
+      "LinesAdded": 0,
+      "LinesDeleted": 29,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "248de84250c07e75c1a51b0ff1add849d579d011",
+      "Author": "Roopan-Microsoft",
+      "Date": "Thu Jul 24 12:30:16 2025 +0530",
+      "Message": "chore: OpenAI models by replacing `Standard` with `GlobalStandard` across infrastructure in the Bicep (#1861)",
+      "LinesAdded": 7,
+      "LinesDeleted": 11,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "3e5a737db9ba585a920d5670f240de4720654a8a",
+      "Author": "Rafi-Microsoft",
+      "Date": "Tue Jul 15 15:53:48 2025 +0530",
+      "Message": "chore: added github workflow to group dependabot security updates (#1858)",
+      "LinesAdded": 267,
+      "LinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "400d1f8ff2d2f05c2a59ca8daa660fda2ab6906a",
+      "Author": "AjitPadhi-Microsoft",
+      "Date": "Mon Jul 14 19:46:49 2025 +0530",
+      "Message": "fix: Oneclick deployment issue fix (#1859)",
+      "LinesAdded": 5,
+      "LinesDeleted": 3,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "fc269f506e14559fac72fd278292ffcb34fe106f",
+      "Author": "Harmanpreet-Microsoft",
+      "Date": "Mon Jul 14 16:25:48 2025 +0530",
+      "Message": "ci: refactor deployment workflow to include dynamic URL outputs, e2e test orchestration, and improved Makefile targets (#1855)",
+      "LinesAdded": 27744,
+      "LinesDeleted": 46,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "21d3aefec1ffe9cfc78a4487b9e1a6e51b7e2a28",
+      "Author": "AjitPadhi-Microsoft",
+      "Date": "Mon Jul 14 16:20:24 2025 +0530",
+      "Message": "fix: Only support RBAC with authenticate using managed identity  (#1857)",
+      "LinesAdded": 267,
+      "LinesDeleted": 2088,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "e791e4342d282808473a43999667f2ae76c618db",
+      "Author": "Ragini-Microsoft",
+      "Date": "Fri Jul 11 19:46:03 2025 +0530",
+      "Message": "feat: Added templateName tag on rg (#1856)",
+      "LinesAdded": 258,
+      "LinesDeleted": 272,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "e4a3361246a6a57bb5e46d304060e37ce9f866df",
+      "Author": "Priyanka-Microsoft",
+      "Date": "Fri Jul 11 16:34:32 2025 +0530",
+      "Message": "feat: quota check script and guide (#1854)",
+      "LinesAdded": 357,
+      "LinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "8cbb2cb03cb651e7e6cc3c3539f478a41cabeb94",
+      "Author": "Vamshi-Microsoft",
+      "Date": "Wed Jul 9 16:57:49 2025 +0530",
+      "Message": "ci: Updated workflow for checking broken links in Markdown files (#1853)",
+      "LinesAdded": 17,
+      "LinesDeleted": 13,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "5dcca8b9f30e0ea9632d4bdcb6af77a0a306ade8",
+      "Author": "Prasanjeet-Microsoft",
+      "Date": "Tue Jul 1 22:28:42 2025 +0530",
+      "Message": "fix: Fixed GitHub issue #1846 (#1851)",
+      "LinesAdded": 15,
+      "LinesDeleted": 31,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    }
+  ]
+}

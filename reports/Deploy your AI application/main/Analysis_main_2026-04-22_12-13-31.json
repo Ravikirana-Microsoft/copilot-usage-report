@@ -1,0 +1,489 @@
+{
+  "TierDistribution": {
+    "Tier3_High": 0,
+    "Tier1_Definitive": 0,
+    "Human": 14,
+    "Tier5_Low": 1,
+    "Tier4_Moderate": 0,
+    "Tier2_VeryHigh": 0
+  },
+  "AIAttributionOverride": {
+    "Notes": null,
+    "Applied": false,
+    "OverridePercentage": null
+  },
+  "BranchStatistics": {
+    "Branch": "main",
+    "TotalCommits": 15,
+    "AICommits": 1,
+    "HumanCommits": 14,
+    "TotalLinesAdded": 74116.0,
+    "TotalLinesDeleted": 60775.0,
+    "AILinesAdded": 73577.0,
+    "AILinesDeleted": 60044.0,
+    "Tier1Commits": 0,
+    "Tier2Commits": 0,
+    "Tier3Commits": 0,
+    "Tier4Commits": 0,
+    "Tier5Commits": 1,
+    "UniqueContributors": 6,
+    "AIPercentage": 99.27,
+    "HumanLinesAdded": 539.0
+  },
+  "AnalysisPeriod": {
+    "FilterApplied": true,
+    "EndDate": "2025-07-31",
+    "StartDate": "2025-07-01"
+  },
+  "FileTypeBreakdown": [
+    {
+      "Extension": "json",
+      "TotalLines": 234683,
+      "AILines": 143818,
+      "AIPercentage": 61.28,
+      "FileCount": 123
+    },
+    {
+      "Extension": "ps1",
+      "TotalLines": 134221,
+      "AILines": 12550,
+      "AIPercentage": 9.35,
+      "FileCount": 1045
+    },
+    {
+      "Extension": "md",
+      "TotalLines": 47062,
+      "AILines": 1350,
+      "AIPercentage": 2.87,
+      "FileCount": 717
+    },
+    {
+      "Extension": "sh",
+      "TotalLines": 16702,
+      "AILines": 318,
+      "AIPercentage": 1.9,
+      "FileCount": 338
+    },
+    {
+      "Extension": "bicep",
+      "TotalLines": 8052,
+      "AILines": 1497,
+      "AIPercentage": 18.59,
+      "FileCount": 468
+    },
+    {
+      "Extension": "bicepparam",
+      "TotalLines": 2296,
+      "AILines": 90,
+      "AIPercentage": 3.92,
+      "FileCount": 55
+    },
+    {
+      "Extension": "yaml",
+      "TotalLines": 2010,
+      "AILines": 108,
+      "AIPercentage": 5.37,
+      "FileCount": 82
+    },
+    {
+      "Extension": "yml",
+      "TotalLines": 1891,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 93
+    },
+    {
+      "Extension": "py",
+      "TotalLines": 1676,
+      "AILines": 792,
+      "AIPercentage": 47.26,
+      "FileCount": 136
+    },
+    {
+      "Extension": "gitignore",
+      "TotalLines": 1169,
+      "AILines": 2,
+      "AIPercentage": 0.17,
+      "FileCount": 41
+    },
+    {
+      "Extension": "sample",
+      "TotalLines": 594,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 18
+    },
+    {
+      "Extension": "other",
+      "TotalLines": 270,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 42
+    },
+    {
+      "Extension": "txt",
+      "TotalLines": 102,
+      "AILines": 24,
+      "AIPercentage": 23.53,
+      "FileCount": 96
+    },
+    {
+      "Extension": "env",
+      "TotalLines": 84,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 24
+    },
+    {
+      "Extension": "gitmodules",
+      "TotalLines": 39,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 15
+    },
+    {
+      "Extension": "devcontainer/dockerfile",
+      "TotalLines": 36,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 9
+    },
+    {
+      "Extension": "github/codeowners",
+      "TotalLines": 28,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 20
+    },
+    {
+      "Extension": "md}",
+      "TotalLines": 15,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 9
+    }
+  ],
+  "Users": [
+    {
+      "UserName": "Prajwal D C",
+      "UserEmail": "v-dcprajwal@microsoft.com",
+      "TotalCommits": 2,
+      "AICommits": 0,
+      "HumanCommits": 2,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 42,
+      "HumanLinesDeleted": 42,
+      "TotalLinesAdded": 42,
+      "TotalLinesDeleted": 42,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Seth Steenken",
+      "UserEmail": "sethsteenken@gmail.com",
+      "TotalCommits": 1,
+      "AICommits": 1,
+      "HumanCommits": 0,
+      "AILinesAdded": 73577,
+      "AILinesDeleted": 60044,
+      "HumanLinesAdded": 0,
+      "HumanLinesDeleted": 0,
+      "TotalLinesAdded": 73577,
+      "TotalLinesDeleted": 60044,
+      "AIPercentage": 100.0,
+      "AvgConfidenceScore": 63.0,
+      "ConfidenceScores": [
+        63
+      ],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 1
+    },
+    {
+      "UserName": "Seth",
+      "UserEmail": "sethsteenken@microsoft.com",
+      "TotalCommits": 4,
+      "AICommits": 0,
+      "HumanCommits": 4,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 229,
+      "HumanLinesDeleted": 582,
+      "TotalLinesAdded": 229,
+      "TotalLinesDeleted": 582,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Prajwal-Microsoft",
+      "UserEmail": "v-dcprajwal@microsoft.com",
+      "TotalCommits": 4,
+      "AICommits": 0,
+      "HumanCommits": 4,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 171,
+      "HumanLinesDeleted": 104,
+      "TotalLinesAdded": 171,
+      "TotalLinesDeleted": 104,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Rohini-Microsoft",
+      "UserEmail": "168007985+Rohini-Microsoft@users.noreply.github.com",
+      "TotalCommits": 2,
+      "AICommits": 0,
+      "HumanCommits": 2,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 38,
+      "HumanLinesDeleted": 1,
+      "TotalLinesAdded": 38,
+      "TotalLinesDeleted": 1,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Vamshi-Microsoft",
+      "UserEmail": "v-vamolla@microsoft.com",
+      "TotalCommits": 2,
+      "AICommits": 0,
+      "HumanCommits": 2,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 59,
+      "HumanLinesDeleted": 2,
+      "TotalLinesAdded": 59,
+      "TotalLinesDeleted": 2,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    }
+  ],
+  "ApplicationName": "Deploy your AI application",
+  "Branch": "main",
+  "GeneratedAt": "2026-04-22 12:13:31",
+  "Metadata": {
+    "ScriptVersion": "2.0.0",
+    "GeneratedBy": "Copilot Usage Report Tool v2.0",
+    "AnalysisMethod": "5-Tier Weighted Pattern Detection",
+    "GeneratedAt": "2026-04-22 12:13:31",
+    "IncludeTestFiles": false,
+    "PowerShellVersion": "7.4.14"
+  },
+  "Commits": [
+    {
+      "Hash": "8d739fff155a7131c9b429855f70f02a17d75720",
+      "Author": "Prajwal-Microsoft",
+      "Date": "Mon Jul 28 18:12:44 2025 +0530",
+      "Message": "fix: Handle Null values for Sample App (#71)",
+      "LinesAdded": 6,
+      "LinesDeleted": 4,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "de0de33ceb41ed482f8cac1c30c6b11f9c496f32",
+      "Author": "Prajwal D C",
+      "Date": "Thu Jul 24 12:03:42 2025 +0530",
+      "Message": "fix: Shell script causing deployment to fail due to incorrect exit code",
+      "LinesAdded": 2,
+      "LinesDeleted": 2,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "2d50fab4ef98b99497f966935f74a8867bfb8a09",
+      "Author": "Prajwal-Microsoft",
+      "Date": "Mon Jul 21 15:30:52 2025 +0530",
+      "Message": "fix: Storage account name issue with special characters. (#68)",
+      "LinesAdded": 5,
+      "LinesDeleted": 3,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "a13b50e95709c0c3d6b0e156884b7c49a2b2a657",
+      "Author": "Prajwal-Microsoft",
+      "Date": "Wed Jul 16 15:41:11 2025 +0530",
+      "Message": "feat: EXP Changes to reuse existing log analytics workspace (#66)",
+      "LinesAdded": 158,
+      "LinesDeleted": 95,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "7d787e2f3c60bbdac1cbbf30c15abf7de98f6699",
+      "Author": "Rohini-Microsoft",
+      "Date": "Tue Jul 15 15:48:12 2025 +0530",
+      "Message": "Update dependabot.yml",
+      "LinesAdded": 16,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "15248e49ee9826881f54e8bed80de68d0cb21660",
+      "Author": "Rohini-Microsoft",
+      "Date": "Tue Jul 15 15:35:37 2025 +0530",
+      "Message": "Add files via upload",
+      "LinesAdded": 22,
+      "LinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "ff2e1663ce1f71ecb2e0ce041d999096d10c875f",
+      "Author": "Prajwal-Microsoft",
+      "Date": "Fri Jul 11 13:34:24 2025 +0000",
+      "Message": "fix: Modified the branch name in scripts",
+      "LinesAdded": 2,
+      "LinesDeleted": 2,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "1e6938c9883113c650c6f10f3f4ab825e7a0f2eb",
+      "Author": "Seth Steenken",
+      "Date": "Thu Jul 10 10:36:28 2025 -0400",
+      "Message": "Sample Application (#49)",
+      "LinesAdded": 73577,
+      "LinesDeleted": 60044,
+      "IsAI": true,
+      "ConfidenceScore": 63,
+      "ConfidenceTier": "Tier 5: Low Confidence (60-69 percent)",
+      "TierNumber": 5
+    },
+    {
+      "Hash": "e718f9c35f9db153f0c5cc1a64c6de5f62ad69de",
+      "Author": "Vamshi-Microsoft",
+      "Date": "Wed Jul 9 09:20:02 2025 +0000",
+      "Message": "update file paths for testing script and images in documentation",
+      "LinesAdded": 2,
+      "LinesDeleted": 2,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "02a6875604fed58d819c55bb774d68db9dd32a0c",
+      "Author": "Vamshi-Microsoft",
+      "Date": "Wed Jul 9 05:54:36 2025 +0000",
+      "Message": "add broken link checker workflow for markdown files",
+      "LinesAdded": 57,
+      "LinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "c157ffb401581cffdf5104cebbae6ab76eb17b7e",
+      "Author": "Prajwal D C",
+      "Date": "Thu Jul 3 23:00:07 2025 +0530",
+      "Message": "fix: AI project location to be same as Congnitive service account",
+      "LinesAdded": 40,
+      "LinesDeleted": 40,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "92e2bcdbd90a17d4d19a347fcebcaf6db9aab29e",
+      "Author": "Seth",
+      "Date": "Tue Jul 1 15:29:13 2025 -0400",
+      "Message": "Search - fixed bug where roleassignments was not being used",
+      "LinesAdded": 52,
+      "LinesDeleted": 68,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "bfaf0cb8b7b0aefe00cbcafdbb175d1dba349f31",
+      "Author": "Seth",
+      "Date": "Tue Jul 1 15:18:32 2025 -0400",
+      "Message": "Disabled no-unnecessary-dependson warnings",
+      "LinesAdded": 13,
+      "LinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "1176cf420f0cdb73a187f207600643cbe37ef072",
+      "Author": "Seth",
+      "Date": "Tue Jul 1 15:16:10 2025 -0400",
+      "Message": "Quota - documentation and main.json",
+      "LinesAdded": 100,
+      "LinesDeleted": 153,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "5b7f3d8e6de0288a63801198c62bd39cf1c01f99",
+      "Author": "Seth",
+      "Date": "Tue Jul 1 15:03:45 2025 -0400",
+      "Message": "Quota - implemented AZD quota check, removed model array for embedding and gpt only, removed scripts",
+      "LinesAdded": 64,
+      "LinesDeleted": 361,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    }
+  ]
+}
