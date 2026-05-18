@@ -1,0 +1,291 @@
+{
+  "GeneratedAt": "2026-05-18 05:27:12",
+  "ApplicationName": "Data and Security",
+  "AIAttributionOverride": {
+    "Applied": false,
+    "OverridePercentage": null,
+    "Notes": null
+  },
+  "Branch": "dev",
+  "BranchStatistics": {
+    "Branch": "dev",
+    "TotalCommits": 9,
+    "AICommits": 1,
+    "HumanCommits": 8,
+    "TotalLinesAdded": 95.0,
+    "TotalLinesDeleted": 66.0,
+    "AILinesAdded": 19.0,
+    "AILinesDeleted": 19.0,
+    "Tier1Commits": 1,
+    "Tier2Commits": 0,
+    "Tier3Commits": 0,
+    "Tier4Commits": 0,
+    "Tier5Commits": 0,
+    "UniqueContributors": 2,
+    "AIPercentage": 20.0,
+    "HumanLinesAdded": 76.0
+  },
+  "Users": [
+    {
+      "UserName": "Harmanpreet-Microsoft",
+      "UserEmail": "v-harmanprka@microsoft.com",
+      "TotalCommits": 8,
+      "AICommits": 1,
+      "HumanCommits": 7,
+      "AILinesAdded": 19,
+      "AILinesDeleted": 19,
+      "HumanLinesAdded": 76,
+      "HumanLinesDeleted": 46,
+      "TotalLinesAdded": 95,
+      "TotalLinesDeleted": 65,
+      "AIPercentage": 20.0,
+      "AvgConfidenceScore": 100.0,
+      "ConfidenceScores": [
+        100
+      ],
+      "Tier1Commits": 1,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Rafi-Microsoft",
+      "UserEmail": "v-rafmd@microsoft.com",
+      "TotalCommits": 1,
+      "AICommits": 0,
+      "HumanCommits": 1,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 0,
+      "HumanLinesDeleted": 1,
+      "TotalLinesAdded": 0,
+      "TotalLinesDeleted": 1,
+      "AIPercentage": 0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    }
+  ],
+  "TierDistribution": {
+    "Tier1_Definitive": 1,
+    "Human": 8,
+    "Tier5_Low": 0,
+    "Tier3_High": 0,
+    "Tier4_Moderate": 0,
+    "Tier2_VeryHigh": 0
+  },
+  "Commits": [
+    {
+      "Hash": "412c4a9564b7d365eb37ade278faefef5551a00d",
+      "Author": "Harmanpreet-Microsoft",
+      "Date": "Thu May 7 23:36:19 2026 +0530",
+      "Message": "Fix shadow Import-Module: respect -Force/-MinimumVersion, make Name mandatory",
+      "LinesAdded": 8,
+      "LinesDeleted": 2,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "d528e7a0606b076d32ca2c613cc1d91fc48d4d8f",
+      "Author": "Harmanpreet-Microsoft",
+      "Date": "Thu May 7 23:31:06 2026 +0530",
+      "Message": "Suppress PSAvoidOverwritingBuiltInCmdlets for shadow Import-Module",
+      "LinesAdded": 1,
+      "LinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "71265e0b9bbeaa8c432a9ef6153f65c4e4c82872",
+      "Author": "Harmanpreet-Microsoft",
+      "Date": "Thu May 7 23:19:28 2026 +0530",
+      "Message": "fix: use CmdletBinding for shadow Import-Module to avoid ErrorAction conflict",
+      "LinesAdded": 3,
+      "LinesDeleted": 3,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "1c8b02f218060649b3ded578cb29a69d0e47d19b",
+      "Author": "Harmanpreet-Microsoft",
+      "Date": "Thu May 7 23:15:44 2026 +0530",
+      "Message": "fix: shadow Import-Module to prevent assembly conflicts on CI runners",
+      "LinesAdded": 23,
+      "LinesDeleted": 15,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "11dcec0a23f02bda07af71bddf1b4ebbf4c8e2a4",
+      "Author": "Harmanpreet-Microsoft",
+      "Date": "Thu May 7 23:09:13 2026 +0530",
+      "Message": "fix: prioritize user-installed Az modules in PSModulePath to prevent assembly conflicts",
+      "LinesAdded": 34,
+      "LinesDeleted": 24,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "1689adb0edbb33203fa12f30fe9af37ae2c4989d",
+      "Author": "Harmanpreet-Microsoft",
+      "Date": "Thu May 7 22:57:03 2026 +0530",
+      "Message": "fix: guard all Az module imports against assembly reload conflict",
+      "LinesAdded": 19,
+      "LinesDeleted": 19,
+      "IsAI": true,
+      "ConfidenceScore": 100,
+      "ConfidenceTier": "Tier 1: Definitive AI - Git Trailer (100 percent)",
+      "TierNumber": 1
+    },
+    {
+      "Hash": "3b3aaed7d3c241d0889bafe3fedd99e75385de58",
+      "Author": "Harmanpreet-Microsoft",
+      "Date": "Thu May 7 22:49:41 2026 +0530",
+      "Message": "fix: skip Az.Accounts import when already loaded to avoid assembly conflict",
+      "LinesAdded": 6,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "67eea34424451be6380cddf0eaef9c6c7a37073d",
+      "Author": "Harmanpreet-Microsoft",
+      "Date": "Thu May 7 22:45:51 2026 +0530",
+      "Message": "fix: add -Force to Import-Module Az.Accounts to prevent assembly conflict",
+      "LinesAdded": 1,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "f78d22692ffebb895a76b6cb0bbba82c6f736eb1",
+      "Author": "Rafi-Microsoft",
+      "Date": "Tue May 5 10:58:12 2026 +0530",
+      "Message": "fix(run.ps1): remove orphan PSScriptAnalyzer suppression comment",
+      "LinesAdded": 0,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    }
+  ],
+  "Metadata": {
+    "IncludeTestFiles": false,
+    "GeneratedBy": "Copilot Usage Report Tool v2.0",
+    "ScriptVersion": "2.0.0",
+    "PowerShellVersion": "7.4.15",
+    "AnalysisMethod": "5-Tier Weighted Pattern Detection",
+    "GeneratedAt": "2026-05-18 05:27:12"
+  },
+  "FileTypeBreakdown": [
+    {
+      "Extension": "md",
+      "TotalLines": 25884,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 480
+    },
+    {
+      "Extension": "ps1",
+      "TotalLines": 21307,
+      "AILines": 507,
+      "AIPercentage": 2.38,
+      "FileCount": 512
+    },
+    {
+      "Extension": "json",
+      "TotalLines": 3079,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 51
+    },
+    {
+      "Extension": "yml",
+      "TotalLines": 2394,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 190
+    },
+    {
+      "Extension": "gitignore",
+      "TotalLines": 1257,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 6
+    },
+    {
+      "Extension": "other",
+      "TotalLines": 418,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 8
+    },
+    {
+      "Extension": "bicep",
+      "TotalLines": 379,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 24
+    },
+    {
+      "Extension": "yaml",
+      "TotalLines": 229,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 32
+    },
+    {
+      "Extension": "bicepparam",
+      "TotalLines": 196,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 32
+    },
+    {
+      "Extension": "md\"",
+      "TotalLines": 92,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "github/codeowners",
+      "TotalLines": 4,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "yml}",
+      "TotalLines": 2,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 2
+    }
+  ],
+  "AnalysisPeriod": {
+    "FilterApplied": true,
+    "StartDate": "2026-05-01",
+    "EndDate": "2026-05-17"
+  }
+}

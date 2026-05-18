@@ -1,0 +1,339 @@
+{
+  "GeneratedAt": "2026-05-18 05:27:04",
+  "ApplicationName": "RTI",
+  "AIAttributionOverride": {
+    "Applied": false,
+    "OverridePercentage": null,
+    "Notes": null
+  },
+  "Branch": "main",
+  "BranchStatistics": {
+    "Branch": "main",
+    "TotalCommits": 5,
+    "AICommits": 0,
+    "HumanCommits": 5,
+    "TotalLinesAdded": 11.0,
+    "TotalLinesDeleted": 21.0,
+    "AILinesAdded": null,
+    "AILinesDeleted": null,
+    "Tier1Commits": 0,
+    "Tier2Commits": 0,
+    "Tier3Commits": 0,
+    "Tier4Commits": 0,
+    "Tier5Commits": 0,
+    "UniqueContributors": 3,
+    "AIPercentage": 0.0,
+    "HumanLinesAdded": 11.0
+  },
+  "Users": [
+    {
+      "UserName": "Saswato-Microsoft",
+      "UserEmail": "v-saswatoc@microsoft.com",
+      "TotalCommits": 2,
+      "AICommits": 0,
+      "HumanCommits": 2,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 8,
+      "HumanLinesDeleted": 1,
+      "TotalLinesAdded": 8,
+      "TotalLinesDeleted": 1,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Rafi-Microsoft",
+      "UserEmail": "v-rafmd@microsoft.com",
+      "TotalCommits": 2,
+      "AICommits": 0,
+      "HumanCommits": 2,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 3,
+      "HumanLinesDeleted": 1,
+      "TotalLinesAdded": 3,
+      "TotalLinesDeleted": 1,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Yamini-Microsoft",
+      "UserEmail": "v-yamini3@microsoft.com",
+      "TotalCommits": 1,
+      "AICommits": 0,
+      "HumanCommits": 1,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 0,
+      "HumanLinesDeleted": 19,
+      "TotalLinesAdded": 0,
+      "TotalLinesDeleted": 19,
+      "AIPercentage": 0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    }
+  ],
+  "TierDistribution": {
+    "Tier1_Definitive": 0,
+    "Human": 5,
+    "Tier5_Low": 0,
+    "Tier3_High": 0,
+    "Tier4_Moderate": 0,
+    "Tier2_VeryHigh": 0
+  },
+  "Commits": [
+    {
+      "Hash": "4afc0f18f75d4929494771d0f51da24648ff16af",
+      "Author": "Yamini-Microsoft",
+      "Date": "Thu May 14 17:37:25 2026 +0530",
+      "Message": "fix: restrict deploy workflow to manual trigger only",
+      "LinesAdded": 0,
+      "LinesDeleted": 19,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "f5f28e93c737d7ec308feabb29997ea32ec7ddb8",
+      "Author": "Saswato-Microsoft",
+      "Date": "Wed May 13 17:18:53 2026 +0530",
+      "Message": "fix: comment out AZURE_LOCATION in .env file",
+      "LinesAdded": 1,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "1688a8fd4cc8696d5801b6921abb9d8a47f4c2a3",
+      "Author": "Saswato-Microsoft",
+      "Date": "Wed May 13 15:36:01 2026 +0530",
+      "Message": "Add infra/vscode_web/.env",
+      "LinesAdded": 7,
+      "LinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "4b2e20c8b46861b90cd76d2a77f17e18b2800b68",
+      "Author": "Rafi-Microsoft",
+      "Date": "Wed May 6 15:39:56 2026 +0530",
+      "Message": "docs: address Copilot review on RTI Bicep CLI prerequisite",
+      "LinesAdded": 2,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "b8a3e6b0d259fed8b25f023ad9856db141ebb387",
+      "Author": "Rafi-Microsoft",
+      "Date": "Wed May 6 13:58:54 2026 +0530",
+      "Message": "docs: add Bicep CLI prerequisite to local deployment guide",
+      "LinesAdded": 1,
+      "LinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    }
+  ],
+  "Metadata": {
+    "IncludeTestFiles": false,
+    "GeneratedBy": "Copilot Usage Report Tool v2.0",
+    "ScriptVersion": "2.0.0",
+    "PowerShellVersion": "7.4.15",
+    "AnalysisMethod": "5-Tier Weighted Pattern Detection",
+    "GeneratedAt": "2026-05-18 05:27:04"
+  },
+  "FileTypeBreakdown": [
+    {
+      "Extension": "csv",
+      "TotalLines": 1555392,
+      "AILines": 1555392,
+      "AIPercentage": 100.0,
+      "FileCount": 30
+    },
+    {
+      "Extension": "py",
+      "TotalLines": 104886,
+      "AILines": 90228,
+      "AIPercentage": 86.02,
+      "FileCount": 1295
+    },
+    {
+      "Extension": "md",
+      "TotalLines": 55690,
+      "AILines": 20676,
+      "AIPercentage": 37.13,
+      "FileCount": 1348
+    },
+    {
+      "Extension": "ps1",
+      "TotalLines": 36372,
+      "AILines": 36360,
+      "AIPercentage": 99.97,
+      "FileCount": 120
+    },
+    {
+      "Extension": "json",
+      "TotalLines": 34176,
+      "AILines": 6834,
+      "AIPercentage": 20.0,
+      "FileCount": 219
+    },
+    {
+      "Extension": "ipynb",
+      "TotalLines": 24963,
+      "AILines": 16296,
+      "AIPercentage": 65.28,
+      "FileCount": 89
+    },
+    {
+      "Extension": "kql",
+      "TotalLines": 9246,
+      "AILines": 9114,
+      "AIPercentage": 98.57,
+      "FileCount": 216
+    },
+    {
+      "Extension": "yml",
+      "TotalLines": 7680,
+      "AILines": 2424,
+      "AIPercentage": 31.56,
+      "FileCount": 391
+    },
+    {
+      "Extension": "gitignore",
+      "TotalLines": 3618,
+      "AILines": 90,
+      "AIPercentage": 2.49,
+      "FileCount": 24
+    },
+    {
+      "Extension": "bicep",
+      "TotalLines": 1620,
+      "AILines": 840,
+      "AIPercentage": 51.85,
+      "FileCount": 85
+    },
+    {
+      "Extension": "sh",
+      "TotalLines": 1122,
+      "AILines": 990,
+      "AIPercentage": 88.24,
+      "FileCount": 42
+    },
+    {
+      "Extension": "dockerignore",
+      "TotalLines": 564,
+      "AILines": 564,
+      "AIPercentage": 100.0,
+      "FileCount": 6
+    },
+    {
+      "Extension": "txt",
+      "TotalLines": 540,
+      "AILines": 180,
+      "AIPercentage": 33.33,
+      "FileCount": 114
+    },
+    {
+      "Extension": "ps1}",
+      "TotalLines": 462,
+      "AILines": 6,
+      "AIPercentage": 1.3,
+      "FileCount": 12
+    },
+    {
+      "Extension": "platform",
+      "TotalLines": 457,
+      "AILines": 360,
+      "AIPercentage": 78.77,
+      "FileCount": 100
+    },
+    {
+      "Extension": "other",
+      "TotalLines": 378,
+      "AILines": 126,
+      "AIPercentage": 33.33,
+      "FileCount": 18
+    },
+    {
+      "Extension": "yaml",
+      "TotalLines": 289,
+      "AILines": 192,
+      "AIPercentage": 66.44,
+      "FileCount": 66
+    },
+    {
+      "Extension": "flake8",
+      "TotalLines": 276,
+      "AILines": 276,
+      "AIPercentage": 100.0,
+      "FileCount": 12
+    },
+    {
+      "Extension": "github/codeowners",
+      "TotalLines": 144,
+      "AILines": 36,
+      "AIPercentage": 25.0,
+      "FileCount": 24
+    },
+    {
+      "Extension": "devcontainer/dockerfile",
+      "TotalLines": 20,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 5
+    },
+    {
+      "Extension": "env",
+      "TotalLines": 8,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "png",
+      "TotalLines": 6,
+      "AILines": 6,
+      "AIPercentage": 100.0,
+      "FileCount": 470
+    },
+    {
+      "Extension": "py}",
+      "TotalLines": 6,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 6
+    }
+  ],
+  "AnalysisPeriod": {
+    "FilterApplied": true,
+    "StartDate": "2026-05-01",
+    "EndDate": "2026-05-17"
+  }
+}

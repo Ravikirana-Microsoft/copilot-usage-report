@@ -1,0 +1,3 @@
+"UserName","UserEmail","TotalCommits","AICommits","HumanCommits","AILinesAdded","HumanLinesAdded","TotalLinesAdded","AIPercentage","AvgConfidenceScore","Tier1Commits","Tier2Commits","Tier3Commits","Tier4Commits","Tier5Commits"
+"Harmanpreet-Microsoft","v-harmanprka@microsoft.com","8","1","7","19","76","95","20","100","1","0","0","0","0"
+"Rafi-Microsoft","v-rafmd@microsoft.com","1","0","1","0","0","0","0","0","0","0","0","0","0"

@@ -1,0 +1,394 @@
+{
+  "GeneratedAt": "2026-05-18 05:27:06",
+  "ApplicationName": "DKM",
+  "AIAttributionOverride": {
+    "Applied": false,
+    "OverridePercentage": null,
+    "Notes": null
+  },
+  "Branch": "dev",
+  "BranchStatistics": {
+    "Branch": "dev",
+    "TotalCommits": 9,
+    "AICommits": 0,
+    "HumanCommits": 9,
+    "TotalLinesAdded": 398.0,
+    "TotalLinesDeleted": 96.0,
+    "AILinesAdded": null,
+    "AILinesDeleted": null,
+    "Tier1Commits": 0,
+    "Tier2Commits": 0,
+    "Tier3Commits": 0,
+    "Tier4Commits": 0,
+    "Tier5Commits": 0,
+    "UniqueContributors": 3,
+    "AIPercentage": 0.0,
+    "HumanLinesAdded": 398.0
+  },
+  "Users": [
+    {
+      "UserName": "Priyanka-Microsoft",
+      "UserEmail": "v-prisinghal@microsoft.com",
+      "TotalCommits": 3,
+      "AICommits": 0,
+      "HumanCommits": 3,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 25,
+      "HumanLinesDeleted": 26,
+      "TotalLinesAdded": 25,
+      "TotalLinesDeleted": 26,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Niraj Chaudhari (Persistent Systems Inc)",
+      "UserEmail": "v-nirajcha@microsoft.com",
+      "TotalCommits": 4,
+      "AICommits": 0,
+      "HumanCommits": 4,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 331,
+      "HumanLinesDeleted": 54,
+      "TotalLinesAdded": 331,
+      "TotalLinesDeleted": 54,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Harmanpreet-Microsoft",
+      "UserEmail": "v-harmanprka@microsoft.com",
+      "TotalCommits": 2,
+      "AICommits": 0,
+      "HumanCommits": 2,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 42,
+      "HumanLinesDeleted": 16,
+      "TotalLinesAdded": 42,
+      "TotalLinesDeleted": 16,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    }
+  ],
+  "TierDistribution": {
+    "Tier1_Definitive": 0,
+    "Human": 9,
+    "Tier5_Low": 0,
+    "Tier3_High": 0,
+    "Tier4_Moderate": 0,
+    "Tier2_VeryHigh": 0
+  },
+  "Commits": [
+    {
+      "Hash": "332a985e16e2fff518e4c8165f7863becbb754be",
+      "Author": "Niraj Chaudhari (Persistent Systems Inc)",
+      "Date": "Thu May 14 14:33:26 2026 +0530",
+      "Message": "Resolved DKM SFI issues",
+      "LinesAdded": 20,
+      "LinesDeleted": 9,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "0cea6fccb4fb2b2bcaa2a5af15752eb45ade8e14",
+      "Author": "Priyanka-Microsoft",
+      "Date": "Thu May 14 10:10:15 2026 +0530",
+      "Message": "Potential fix for pull request finding",
+      "LinesAdded": 1,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "0828b916d57dd212a3dbe71bd01d8a7addd04ac2",
+      "Author": "Priyanka-Microsoft",
+      "Date": "Wed May 13 17:55:52 2026 +0530",
+      "Message": "uncommented meta data",
+      "LinesAdded": 3,
+      "LinesDeleted": 3,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "64836e6b4f90f8ebe0965280e09421fa31baba8a",
+      "Author": "Priyanka-Microsoft",
+      "Date": "Tue May 12 17:30:11 2026 +0530",
+      "Message": "resolve content overflow issue",
+      "LinesAdded": 21,
+      "LinesDeleted": 22,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "b98f69b7ca05ce46da5075117ee60d64f3308f0d",
+      "Author": "Niraj Chaudhari (Persistent Systems Inc)",
+      "Date": "Thu May 7 17:57:23 2026 +0530",
+      "Message": "Resolve Copilot comment",
+      "LinesAdded": 2,
+      "LinesDeleted": 6,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "2c090be851eac5d9184a2f5ee94ad60ac7525d34",
+      "Author": "Niraj Chaudhari (Persistent Systems Inc)",
+      "Date": "Thu May 7 14:03:34 2026 +0530",
+      "Message": "Update email format 2",
+      "LinesAdded": 12,
+      "LinesDeleted": 12,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "1aae91d536b1d09491da342dbcf7545cd6b28453",
+      "Author": "Harmanpreet-Microsoft",
+      "Date": "Thu May 7 12:01:32 2026 +0530",
+      "Message": "fix(infra): correct dataSources assignment in Bicep module for private networking",
+      "LinesAdded": 1,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "b1a5dd94c11732c2ee953405429a180b9f3f77e3",
+      "Author": "Harmanpreet-Microsoft",
+      "Date": "Thu May 7 11:58:44 2026 +0530",
+      "Message": "feat(infra): update dataSources configuration for private networking in Bicep templates",
+      "LinesAdded": 41,
+      "LinesDeleted": 15,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "281493aeeb5317fce4af5f6bff4391e74ee5699e",
+      "Author": "Niraj Chaudhari (Persistent Systems Inc)",
+      "Date": "Wed May 6 12:23:59 2026 +0530",
+      "Message": "Update email format 3",
+      "LinesAdded": 297,
+      "LinesDeleted": 27,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    }
+  ],
+  "Metadata": {
+    "IncludeTestFiles": false,
+    "GeneratedBy": "Copilot Usage Report Tool v2.0",
+    "ScriptVersion": "2.0.0",
+    "PowerShellVersion": "7.4.15",
+    "AnalysisMethod": "5-Tier Weighted Pattern Detection",
+    "GeneratedAt": "2026-05-18 05:27:06"
+  },
+  "FileTypeBreakdown": [
+    {
+      "Extension": "json",
+      "TotalLines": 205146,
+      "AILines": 35448,
+      "AIPercentage": 17.28,
+      "FileCount": 162
+    },
+    {
+      "Extension": "lock",
+      "TotalLines": 62367,
+      "AILines": 2230,
+      "AIPercentage": 3.58,
+      "FileCount": 31
+    },
+    {
+      "Extension": "md",
+      "TotalLines": 23930,
+      "AILines": 2,
+      "AIPercentage": 0.01,
+      "FileCount": 517
+    },
+    {
+      "Extension": "yml",
+      "TotalLines": 16173,
+      "AILines": 444,
+      "AIPercentage": 2.75,
+      "FileCount": 658
+    },
+    {
+      "Extension": "py",
+      "TotalLines": 12439,
+      "AILines": 2068,
+      "AIPercentage": 16.63,
+      "FileCount": 51
+    },
+    {
+      "Extension": "bicep",
+      "TotalLines": 7521,
+      "AILines": 2992,
+      "AIPercentage": 39.78,
+      "FileCount": 237
+    },
+    {
+      "Extension": "cs",
+      "TotalLines": 3401,
+      "AILines": 2906,
+      "AIPercentage": 85.45,
+      "FileCount": 89
+    },
+    {
+      "Extension": "sample",
+      "TotalLines": 3282,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 61
+    },
+    {
+      "Extension": "ps1",
+      "TotalLines": 1816,
+      "AILines": 292,
+      "AIPercentage": 16.08,
+      "FileCount": 89
+    },
+    {
+      "Extension": "tsx",
+      "TotalLines": 1464,
+      "AILines": 1119,
+      "AIPercentage": 76.43,
+      "FileCount": 79
+    },
+    {
+      "Extension": "ts",
+      "TotalLines": 641,
+      "AILines": 585,
+      "AIPercentage": 91.26,
+      "FileCount": 25
+    },
+    {
+      "Extension": "sh",
+      "TotalLines": 508,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 6
+    },
+    {
+      "Extension": "scss",
+      "TotalLines": 462,
+      "AILines": 274,
+      "AIPercentage": 59.31,
+      "FileCount": 20
+    },
+    {
+      "Extension": "other",
+      "TotalLines": 374,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "csproj",
+      "TotalLines": 166,
+      "AILines": 8,
+      "AIPercentage": 4.82,
+      "FileCount": 58
+    },
+    {
+      "Extension": "template",
+      "TotalLines": 163,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 30
+    },
+    {
+      "Extension": "psm1",
+      "TotalLines": 158,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 5
+    },
+    {
+      "Extension": "props",
+      "TotalLines": 133,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 18
+    },
+    {
+      "Extension": "yaml",
+      "TotalLines": 74,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 27
+    },
+    {
+      "Extension": "yml}",
+      "TotalLines": 70,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 19
+    },
+    {
+      "Extension": "github/codeowners",
+      "TotalLines": 18,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 18
+    },
+    {
+      "Extension": "css",
+      "TotalLines": 12,
+      "AILines": 12,
+      "AIPercentage": 100.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "ini",
+      "TotalLines": 6,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "jsonl",
+      "TotalLines": 2,
+      "AILines": 2,
+      "AIPercentage": 100.0,
+      "FileCount": 2
+    }
+  ],
+  "AnalysisPeriod": {
+    "FilterApplied": true,
+    "StartDate": "2026-05-01",
+    "EndDate": "2026-05-17"
+  }
+}

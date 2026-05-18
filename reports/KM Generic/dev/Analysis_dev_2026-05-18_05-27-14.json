@@ -1,0 +1,766 @@
+{
+  "GeneratedAt": "2026-05-18 05:27:14",
+  "ApplicationName": "KM Generic",
+  "AIAttributionOverride": {
+    "Applied": false,
+    "OverridePercentage": null,
+    "Notes": null
+  },
+  "Branch": "dev",
+  "BranchStatistics": {
+    "Branch": "dev",
+    "TotalCommits": 30,
+    "AICommits": 5,
+    "HumanCommits": 25,
+    "TotalLinesAdded": 2410.0,
+    "TotalLinesDeleted": 1392.0,
+    "AILinesAdded": 214.0,
+    "AILinesDeleted": 193.0,
+    "Tier1Commits": 5,
+    "Tier2Commits": 0,
+    "Tier3Commits": 0,
+    "Tier4Commits": 0,
+    "Tier5Commits": 0,
+    "UniqueContributors": 7,
+    "AIPercentage": 8.88,
+    "HumanLinesAdded": 2196.0
+  },
+  "Users": [
+    {
+      "UserName": "Kanchan-Microsoft",
+      "UserEmail": "v-knagshetti@microsoft.com",
+      "TotalCommits": 6,
+      "AICommits": 2,
+      "HumanCommits": 4,
+      "AILinesAdded": 3,
+      "AILinesDeleted": 2,
+      "HumanLinesAdded": 55,
+      "HumanLinesDeleted": 1029,
+      "TotalLinesAdded": 58,
+      "TotalLinesDeleted": 1031,
+      "AIPercentage": 5.17,
+      "AvgConfidenceScore": 100.0,
+      "ConfidenceScores": [
+        100,
+        100
+      ],
+      "Tier1Commits": 2,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Copilot",
+      "UserEmail": "223556219+Copilot@users.noreply.github.com",
+      "TotalCommits": 1,
+      "AICommits": 0,
+      "HumanCommits": 1,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 7,
+      "HumanLinesDeleted": 6,
+      "TotalLinesAdded": 7,
+      "TotalLinesDeleted": 6,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Rafi-Microsoft",
+      "UserEmail": "v-rafmd@microsoft.com",
+      "TotalCommits": 5,
+      "AICommits": 2,
+      "HumanCommits": 3,
+      "AILinesAdded": 15,
+      "AILinesDeleted": 3,
+      "HumanLinesAdded": 3,
+      "HumanLinesDeleted": 1,
+      "TotalLinesAdded": 18,
+      "TotalLinesDeleted": 4,
+      "AIPercentage": 83.33,
+      "AvgConfidenceScore": 100.0,
+      "ConfidenceScores": [
+        100,
+        100
+      ],
+      "Tier1Commits": 2,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Niraj Chaudhari (Persistent Systems Inc)",
+      "UserEmail": "v-nirajcha@microsoft.com",
+      "TotalCommits": 4,
+      "AICommits": 0,
+      "HumanCommits": 4,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 321,
+      "HumanLinesDeleted": 43,
+      "TotalLinesAdded": 321,
+      "TotalLinesDeleted": 43,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Yamini-Microsoft",
+      "UserEmail": "v-yamini3@microsoft.com",
+      "TotalCommits": 8,
+      "AICommits": 0,
+      "HumanCommits": 8,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 79,
+      "HumanLinesDeleted": 65,
+      "TotalLinesAdded": 79,
+      "TotalLinesDeleted": 65,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Harsh-Microsoft",
+      "UserEmail": "v-hbangera@microsoft.com",
+      "TotalCommits": 5,
+      "AICommits": 1,
+      "HumanCommits": 4,
+      "AILinesAdded": 196,
+      "AILinesDeleted": 188,
+      "HumanLinesAdded": 1712,
+      "HumanLinesDeleted": 54,
+      "TotalLinesAdded": 1908,
+      "TotalLinesDeleted": 242,
+      "AIPercentage": 10.27,
+      "AvgConfidenceScore": 100.0,
+      "ConfidenceScores": [
+        100
+      ],
+      "Tier1Commits": 1,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Vamshi-Microsoft",
+      "UserEmail": "v-vamolla@microsoft.com",
+      "TotalCommits": 1,
+      "AICommits": 0,
+      "HumanCommits": 1,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 19,
+      "HumanLinesDeleted": 1,
+      "TotalLinesAdded": 19,
+      "TotalLinesDeleted": 1,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    }
+  ],
+  "TierDistribution": {
+    "Tier1_Definitive": 5,
+    "Human": 25,
+    "Tier5_Low": 0,
+    "Tier3_High": 0,
+    "Tier4_Moderate": 0,
+    "Tier2_VeryHigh": 0
+  },
+  "Commits": [
+    {
+      "Hash": "c4486f26764dd5fd3db5a9a89eaef820afa101b6",
+      "Author": "Yamini-Microsoft",
+      "Date": "Fri May 15 02:50:44 2026 +0530",
+      "Message": "fix: hide citation panel when chat is hidden",
+      "LinesAdded": 5,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "6bc53a239379aef1e284640441d4eff68e54af6c",
+      "Author": "Yamini-Microsoft",
+      "Date": "Fri May 15 02:42:15 2026 +0530",
+      "Message": "fix: citation panel height mismatch with chat panels",
+      "LinesAdded": 14,
+      "LinesDeleted": 17,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "103865d48e57278343271c4a1ec01dbacc285f3a",
+      "Author": "Copilot",
+      "Date": "Thu May 14 22:45:52 2026 +0530",
+      "Message": "refactor: rename get_async_azure_credential to build_async_azure_credential",
+      "LinesAdded": 7,
+      "LinesDeleted": 6,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "49d3fd5da6b13275e05d3d728f123348ce508a77",
+      "Author": "Rafi-Microsoft",
+      "Date": "Thu May 14 17:26:42 2026 +0530",
+      "Message": "test: patch get_azure_credential_async in test_generate_title_failed_run",
+      "LinesAdded": 1,
+      "LinesDeleted": 1,
+      "IsAI": true,
+      "ConfidenceScore": 100,
+      "ConfidenceTier": "Tier 1: Definitive AI - Git Trailer (100 percent)",
+      "TierNumber": 1
+    },
+    {
+      "Hash": "b13d1629f4accfda97c40183c08f16c7ba41e54f",
+      "Author": "Rafi-Microsoft",
+      "Date": "Thu May 14 17:23:51 2026 +0530",
+      "Message": "fix: remove unused get_azure_credential import (flake8 F401)",
+      "LinesAdded": 1,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "bdb7d3640f1ded804eadc996d403cc6a63759361",
+      "Author": "Yamini-Microsoft",
+      "Date": "Thu May 14 15:08:58 2026 +0530",
+      "Message": "Address PR review: CSS variable, pointer-events, aria-label",
+      "LinesAdded": 11,
+      "LinesDeleted": 6,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "d92d5bb24bf9e97cd4f42e6b0ad2b2bba9785da5",
+      "Author": "Yamini-Microsoft",
+      "Date": "Thu May 14 14:40:11 2026 +0530",
+      "Message": "fix: revert to simple fixed overlay for Citation panel",
+      "LinesAdded": 2,
+      "LinesDeleted": 8,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "72c8fe05fa835ca5a48885d4bde63a044595c04d",
+      "Author": "Yamini-Microsoft",
+      "Date": "Thu May 14 14:13:38 2026 +0530",
+      "Message": "fix: use smart overlay for Citation panel that avoids blocking Chat History",
+      "LinesAdded": 20,
+      "LinesDeleted": 8,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "0f1925fca31d3219f7fd6c6c6c0e735c64dc3cb7",
+      "Author": "Yamini-Microsoft",
+      "Date": "Thu May 14 12:56:00 2026 +0530",
+      "Message": "fix: replace fixed overlay with flex-based citation panel",
+      "LinesAdded": 8,
+      "LinesDeleted": 14,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "3067c6ddf47b11bb8b4c9b44c75883bb81454aa0",
+      "Author": "Yamini-Microsoft",
+      "Date": "Thu May 14 00:23:58 2026 +0530",
+      "Message": "fix: make Citation and Chat History panels fully independent",
+      "LinesAdded": 18,
+      "LinesDeleted": 9,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "5944cde4de1826d487bcf42c3e7fc47c2fe2214b",
+      "Author": "Harsh-Microsoft",
+      "Date": "Wed May 13 20:34:40 2026 +0530",
+      "Message": "rebuild main.json",
+      "LinesAdded": 2,
+      "LinesDeleted": 2,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "59a7aa79e151917ad856917619aa10d8b3f31f97",
+      "Author": "Kanchan-Microsoft",
+      "Date": "Wed May 13 13:53:27 2026 +0530",
+      "Message": "removed unnecessary comments",
+      "LinesAdded": 4,
+      "LinesDeleted": 22,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "75e453af577010b801678ee9ee049d970e6a97b2",
+      "Author": "Kanchan-Microsoft",
+      "Date": "Wed May 13 12:42:27 2026 +0530",
+      "Message": "docs: Add Azure Container Registry to prerequisites in Deployment Guide",
+      "LinesAdded": 1,
+      "LinesDeleted": 0,
+      "IsAI": true,
+      "ConfidenceScore": 100,
+      "ConfidenceTier": "Tier 1: Definitive AI - Git Trailer (100 percent)",
+      "TierNumber": 1
+    },
+    {
+      "Hash": "fd59a2fd071cee0984abb8f8fefb7704f230a17f",
+      "Author": "Rafi-Microsoft",
+      "Date": "Wed May 13 12:33:01 2026 +0530",
+      "Message": "Fix bulk delete chat history failure after idle session (Bug 43424)",
+      "LinesAdded": 14,
+      "LinesDeleted": 2,
+      "IsAI": true,
+      "ConfidenceScore": 100,
+      "ConfidenceTier": "Tier 1: Definitive AI - Git Trailer (100 percent)",
+      "TierNumber": 1
+    },
+    {
+      "Hash": "aa70100af91ca3fd7854527d91fdaf0a56dec33c",
+      "Author": "Kanchan-Microsoft",
+      "Date": "Wed May 13 11:59:55 2026 +0530",
+      "Message": "Potential fix for pull request finding",
+      "LinesAdded": 1,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "3aaebefae78f8a168dea864d2915a0feb03c9cbe",
+      "Author": "Harsh-Microsoft",
+      "Date": "Wed May 13 11:59:49 2026 +0530",
+      "Message": "add extension monitoring agent configuration for VM",
+      "LinesAdded": 31,
+      "LinesDeleted": 5,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "235d99725f2725ee263dee2dd8478e23e963bea9",
+      "Author": "Kanchan-Microsoft",
+      "Date": "Wed May 13 11:31:14 2026 +0530",
+      "Message": "fixed table structure",
+      "LinesAdded": 0,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "9711da30bb07f547a85a7caf350450d3e2cd5187",
+      "Author": "Kanchan-Microsoft",
+      "Date": "Wed May 13 11:07:34 2026 +0530",
+      "Message": "copilot comments",
+      "LinesAdded": 2,
+      "LinesDeleted": 2,
+      "IsAI": true,
+      "ConfidenceScore": 100,
+      "ConfidenceTier": "Tier 1: Definitive AI - Git Trailer (100 percent)",
+      "TierNumber": 1
+    },
+    {
+      "Hash": "62ce8eb5cd1a84c1d82592bc9f7e33e51cccddfb",
+      "Author": "Harsh-Microsoft",
+      "Date": "Wed May 13 10:56:43 2026 +0530",
+      "Message": "Added data collection rules for VM, added double encryption for storage account and added e2eEncryption in app service",
+      "LinesAdded": 1648,
+      "LinesDeleted": 29,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "f716105c2026444e35fbb8383dbecb00b62187aa",
+      "Author": "Kanchan-Microsoft",
+      "Date": "Wed May 13 10:06:30 2026 +0530",
+      "Message": "cleanup unused resources",
+      "LinesAdded": 50,
+      "LinesDeleted": 1005,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "6c4f75b456ecbe4a6660393d36866da49c6954cb",
+      "Author": "Yamini-Microsoft",
+      "Date": "Tue May 12 19:17:34 2026 +0530",
+      "Message": "fix: make Citation and Chat History panels independent",
+      "LinesAdded": 1,
+      "LinesDeleted": 2,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "12f99acf3d06254feb35afa2c66e2d5c66ec7d09",
+      "Author": "Harsh-Microsoft",
+      "Date": "Thu May 7 19:45:10 2026 +0530",
+      "Message": "fix: explicitly close AsyncOpenAI embeddings client in try/finally",
+      "LinesAdded": 196,
+      "LinesDeleted": 188,
+      "IsAI": true,
+      "ConfidenceScore": 100,
+      "ConfidenceTier": "Tier 1: Definitive AI - Git Trailer (100 percent)",
+      "TierNumber": 1
+    },
+    {
+      "Hash": "ac7d73fdaa91f3c65cbfd338f336f090be83bc6e",
+      "Author": "Niraj Chaudhari (Persistent Systems Inc)",
+      "Date": "Thu May 7 18:04:45 2026 +0530",
+      "Message": "Resolve Copilot comment",
+      "LinesAdded": 10,
+      "LinesDeleted": 2,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "1b874b96e216d1f0269ebf1e3d076b219f9e1676",
+      "Author": "Harsh-Microsoft",
+      "Date": "Thu May 7 16:50:01 2026 +0530",
+      "Message": "Update default GPT model from gpt-4.1 to gpt-4o-mini and expand allowed regions",
+      "LinesAdded": 31,
+      "LinesDeleted": 18,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "bd0c252c4bf68c731174432f108ea1e5a69dc077",
+      "Author": "Niraj Chaudhari (Persistent Systems Inc)",
+      "Date": "Thu May 7 14:07:25 2026 +0530",
+      "Message": "Update email format 1",
+      "LinesAdded": 2,
+      "LinesDeleted": 2,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "6c2ef9397cb39a817e84c623c9ad70ca09aea997",
+      "Author": "Niraj Chaudhari (Persistent Systems Inc)",
+      "Date": "Thu May 7 14:06:33 2026 +0530",
+      "Message": "Update email format 2",
+      "LinesAdded": 13,
+      "LinesDeleted": 13,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "77f7d275377f7f9559f99435995f35809eb1f1ed",
+      "Author": "Rafi-Microsoft",
+      "Date": "Wed May 6 19:50:32 2026 +0530",
+      "Message": "docs: Add Bicep CLI (v0.33.0+) version pinning alongside azd/PowerShell",
+      "LinesAdded": 1,
+      "LinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "21165d80e5f72753f8acf679aab4aa864552df87",
+      "Author": "Rafi-Microsoft",
+      "Date": "Wed May 6 13:58:09 2026 +0530",
+      "Message": "docs: add Bicep CLI prerequisite to local deployment guide",
+      "LinesAdded": 1,
+      "LinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "aed8d2ba2ea0a96ee2265a9c8f4277d81f3be1d7",
+      "Author": "Niraj Chaudhari (Persistent Systems Inc)",
+      "Date": "Wed May 6 12:55:02 2026 +0530",
+      "Message": "Update email format 5",
+      "LinesAdded": 296,
+      "LinesDeleted": 26,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "1e75b871dc145d9cdb9b40ba3979fe23017e0b20",
+      "Author": "Vamshi-Microsoft",
+      "Date": "Tue May 5 11:46:19 2026 +0530",
+      "Message": "Enhance delete_all_conversations to handle transient connection errors with a retry mechanism",
+      "LinesAdded": 19,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    }
+  ],
+  "Metadata": {
+    "IncludeTestFiles": false,
+    "GeneratedBy": "Copilot Usage Report Tool v2.0",
+    "ScriptVersion": "2.0.0",
+    "PowerShellVersion": "7.4.15",
+    "AnalysisMethod": "5-Tier Weighted Pattern Detection",
+    "GeneratedAt": "2026-05-18 05:27:14"
+  },
+  "FileTypeBreakdown": [
+    {
+      "Extension": "json",
+      "TotalLines": 3679878,
+      "AILines": 1313,
+      "AIPercentage": 0.04,
+      "FileCount": 724
+    },
+    {
+      "Extension": "py",
+      "TotalLines": 52715,
+      "AILines": 26700,
+      "AIPercentage": 50.65,
+      "FileCount": 1941
+    },
+    {
+      "Extension": "bicep",
+      "TotalLines": 36637,
+      "AILines": 3492,
+      "AIPercentage": 9.53,
+      "FileCount": 761
+    },
+    {
+      "Extension": "sh",
+      "TotalLines": 32194,
+      "AILines": 332,
+      "AIPercentage": 1.03,
+      "FileCount": 813
+    },
+    {
+      "Extension": "yml",
+      "TotalLines": 22463,
+      "AILines": 2030,
+      "AIPercentage": 9.04,
+      "FileCount": 1065
+    },
+    {
+      "Extension": "md",
+      "TotalLines": 19365,
+      "AILines": 49,
+      "AIPercentage": 0.25,
+      "FileCount": 897
+    },
+    {
+      "Extension": "ts",
+      "TotalLines": 16855,
+      "AILines": 14737,
+      "AIPercentage": 87.43,
+      "FileCount": 328
+    },
+    {
+      "Extension": "tsx",
+      "TotalLines": 13877,
+      "AILines": 4931,
+      "AIPercentage": 35.53,
+      "FileCount": 352
+    },
+    {
+      "Extension": "yaml",
+      "TotalLines": 4047,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 113
+    },
+    {
+      "Extension": "ps1",
+      "TotalLines": 1032,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 55
+    },
+    {
+      "Extension": "txt",
+      "TotalLines": 706,
+      "AILines": 97,
+      "AIPercentage": 13.74,
+      "FileCount": 174
+    },
+    {
+      "Extension": "cmd",
+      "TotalLines": 609,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 19
+    },
+    {
+      "Extension": "md}",
+      "TotalLines": 408,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 14
+    },
+    {
+      "Extension": "gitignore",
+      "TotalLines": 255,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 3
+    },
+    {
+      "Extension": "other",
+      "TotalLines": 149,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 5
+    },
+    {
+      "Extension": "css",
+      "TotalLines": 103,
+      "AILines": 60,
+      "AIPercentage": 58.25,
+      "FileCount": 22
+    },
+    {
+      "Extension": "dockerfile",
+      "TotalLines": 102,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 22
+    },
+    {
+      "Extension": "py}",
+      "TotalLines": 100,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 10
+    },
+    {
+      "Extension": "svg",
+      "TotalLines": 80,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 30
+    },
+    {
+      "Extension": "ipynb",
+      "TotalLines": 72,
+      "AILines": 28,
+      "AIPercentage": 38.89,
+      "FileCount": 24
+    },
+    {
+      "Extension": "sample",
+      "TotalLines": 63,
+      "AILines": 2,
+      "AIPercentage": 3.17,
+      "FileCount": 28
+    },
+    {
+      "Extension": "yml}",
+      "TotalLines": 56,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 4
+    },
+    {
+      "Extension": "env",
+      "TotalLines": 54,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 26
+    },
+    {
+      "Extension": "conf",
+      "TotalLines": 34,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 1
+    },
+    {
+      "Extension": "bicep}",
+      "TotalLines": 20,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 10
+    },
+    {
+      "Extension": "github/codeowners",
+      "TotalLines": 13,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 13
+    },
+    {
+      "Extension": "devcontainer/dockerfile",
+      "TotalLines": 12,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 3
+    },
+    {
+      "Extension": "json}",
+      "TotalLines": 4,
+      "AILines": 4,
+      "AIPercentage": 100.0,
+      "FileCount": 4
+    }
+  ],
+  "AnalysisPeriod": {
+    "FilterApplied": true,
+    "StartDate": "2026-05-01",
+    "EndDate": "2026-05-17"
+  }
+}

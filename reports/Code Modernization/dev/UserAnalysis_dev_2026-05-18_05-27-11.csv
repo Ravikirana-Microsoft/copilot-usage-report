@@ -1,0 +1,5 @@
+"UserName","UserEmail","TotalCommits","AICommits","HumanCommits","AILinesAdded","HumanLinesAdded","TotalLinesAdded","AIPercentage","AvgConfidenceScore","Tier1Commits","Tier2Commits","Tier3Commits","Tier4Commits","Tier5Commits"
+"Dhruvkumar-Microsoft","v-dbabariya@microsoft.com","1","0","1","0","25","25","0","0","0","0","0","0","0"
+"Niraj Chaudhari (Persistent Systems Inc)","v-nirajcha@microsoft.com","4","0","4","0","309","309","0","0","0","0","0","0","0"
+"Shreyas-Microsoft","v-swaikar@microsoft.com","1","0","1","0","4","4","0","0","0","0","0","0","0"
+"Vamshi-Microsoft","v-vamolla@microsoft.com","12","1","11","32","597","629","5.09","100","1","0","0","0","0"

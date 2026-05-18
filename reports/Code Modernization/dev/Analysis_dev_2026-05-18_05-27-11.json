@@ -1,0 +1,553 @@
+{
+  "GeneratedAt": "2026-05-18 05:27:11",
+  "ApplicationName": "Code Modernization",
+  "AIAttributionOverride": {
+    "Applied": false,
+    "OverridePercentage": null,
+    "Notes": null
+  },
+  "Branch": "dev",
+  "BranchStatistics": {
+    "Branch": "dev",
+    "TotalCommits": 18,
+    "AICommits": 1,
+    "HumanCommits": 17,
+    "TotalLinesAdded": 967.0,
+    "TotalLinesDeleted": 4814.0,
+    "AILinesAdded": 32.0,
+    "AILinesDeleted": 3.0,
+    "Tier1Commits": 1,
+    "Tier2Commits": 0,
+    "Tier3Commits": 0,
+    "Tier4Commits": 0,
+    "Tier5Commits": 0,
+    "UniqueContributors": 4,
+    "AIPercentage": 3.31,
+    "HumanLinesAdded": 935.0
+  },
+  "Users": [
+    {
+      "UserName": "Dhruvkumar-Microsoft",
+      "UserEmail": "v-dbabariya@microsoft.com",
+      "TotalCommits": 1,
+      "AICommits": 0,
+      "HumanCommits": 1,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 25,
+      "HumanLinesDeleted": 4573,
+      "TotalLinesAdded": 25,
+      "TotalLinesDeleted": 4573,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Niraj Chaudhari (Persistent Systems Inc)",
+      "UserEmail": "v-nirajcha@microsoft.com",
+      "TotalCommits": 4,
+      "AICommits": 0,
+      "HumanCommits": 4,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 309,
+      "HumanLinesDeleted": 43,
+      "TotalLinesAdded": 309,
+      "TotalLinesDeleted": 43,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Shreyas-Microsoft",
+      "UserEmail": "v-swaikar@microsoft.com",
+      "TotalCommits": 1,
+      "AICommits": 0,
+      "HumanCommits": 1,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 4,
+      "HumanLinesDeleted": 8,
+      "TotalLinesAdded": 4,
+      "TotalLinesDeleted": 8,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Vamshi-Microsoft",
+      "UserEmail": "v-vamolla@microsoft.com",
+      "TotalCommits": 12,
+      "AICommits": 1,
+      "HumanCommits": 11,
+      "AILinesAdded": 32,
+      "AILinesDeleted": 3,
+      "HumanLinesAdded": 597,
+      "HumanLinesDeleted": 187,
+      "TotalLinesAdded": 629,
+      "TotalLinesDeleted": 190,
+      "AIPercentage": 5.09,
+      "AvgConfidenceScore": 100.0,
+      "ConfidenceScores": [
+        100
+      ],
+      "Tier1Commits": 1,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    }
+  ],
+  "TierDistribution": {
+    "Tier1_Definitive": 1,
+    "Human": 17,
+    "Tier5_Low": 0,
+    "Tier3_High": 0,
+    "Tier4_Moderate": 0,
+    "Tier2_VeryHigh": 0
+  },
+  "Commits": [
+    {
+      "Hash": "65f4d0ab99f1e217d533a7fca47d1817131e9ec2",
+      "Author": "Shreyas-Microsoft",
+      "Date": "Wed May 13 16:48:21 2026 +0530",
+      "Message": "fix(infra): remove enableAnalyticalStorage on Cosmos DB account creation",
+      "LinesAdded": 4,
+      "LinesDeleted": 8,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "b6f3567a666203bbde8af37f86a6191cabee2301",
+      "Author": "Vamshi-Microsoft",
+      "Date": "Wed May 13 15:01:34 2026 +0530",
+      "Message": "Resolve copilot comments",
+      "LinesAdded": 64,
+      "LinesDeleted": 15,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "eba6addc3ea2e147fccc07437f7e5bb20bfac1ae",
+      "Author": "Vamshi-Microsoft",
+      "Date": "Wed May 13 14:01:06 2026 +0530",
+      "Message": "Update owner tag to Owner",
+      "LinesAdded": 5,
+      "LinesDeleted": 5,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "dc9fd0591eef968c7cb1d30a3ae84c26adf23870",
+      "Author": "Vamshi-Microsoft",
+      "Date": "Tue May 12 15:35:00 2026 +0530",
+      "Message": "Add additional Azure regions and update description for existing_webapp_url input",
+      "LinesAdded": 3,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "0baf1e2318890b42d04873bcbb77aec143767aa3",
+      "Author": "Vamshi-Microsoft",
+      "Date": "Tue May 12 14:29:26 2026 +0530",
+      "Message": "Refactor UserProfile and useAuth to standardize sign out terminology",
+      "LinesAdded": 23,
+      "LinesDeleted": 23,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "3b481c1210446f07cdd815d684c3aada7768d50a",
+      "Author": "Vamshi-Microsoft",
+      "Date": "Tue May 12 12:07:54 2026 +0530",
+      "Message": "Refactor UserProfile and useAuth to standardize logout terminology",
+      "LinesAdded": 23,
+      "LinesDeleted": 23,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "2b63fe0e840fb41ec5d901a4be2f741fc8c43d76",
+      "Author": "Vamshi-Microsoft",
+      "Date": "Tue May 12 10:40:38 2026 +0530",
+      "Message": "Update descriptions for workflow inputs in deploy-v2.yml for clarity",
+      "LinesAdded": 12,
+      "LinesDeleted": 11,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "be5088a2016a2b0ac9ce26b08fc5f73527b31c9f",
+      "Author": "Vamshi-Microsoft",
+      "Date": "Tue May 12 09:37:29 2026 +0530",
+      "Message": "Add enable_scalability input default false to deployment workflows for WAF configuration",
+      "LinesAdded": 44,
+      "LinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "8345e1999ee936238faaaf4e3e93133d84680142",
+      "Author": "Vamshi-Microsoft",
+      "Date": "Tue May 12 09:23:50 2026 +0530",
+      "Message": "Add owner tag to RG and Enhance email notification template to include deployment details such as triggered by and branch information",
+      "LinesAdded": 32,
+      "LinesDeleted": 3,
+      "IsAI": true,
+      "ConfidenceScore": 100,
+      "ConfidenceTier": "Tier 1: Definitive AI - Git Trailer (100 percent)",
+      "TierNumber": 1
+    },
+    {
+      "Hash": "3311dae4a5dbe9ae8b3407d394dc4b97e08113a7",
+      "Author": "Vamshi-Microsoft",
+      "Date": "Tue May 12 08:59:48 2026 +0530",
+      "Message": "Rename logout to signOut in UserProfile and useAuth for consistency; update related comments and method calls.",
+      "LinesAdded": 11,
+      "LinesDeleted": 11,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "783f34c292e7b12d9b9c4a94c5ede375902302bb",
+      "Author": "Vamshi-Microsoft",
+      "Date": "Mon May 11 16:13:14 2026 +0530",
+      "Message": "Beautify the email template",
+      "LinesAdded": 377,
+      "LinesDeleted": 80,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "6cf5d4bcb858caf8f1441dcf979b833571054486",
+      "Author": "Vamshi-Microsoft",
+      "Date": "Fri May 8 12:32:44 2026 +0530",
+      "Message": "Update Tooltip content in UserProfile to display a more informative message for signed-in users",
+      "LinesAdded": 1,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "9921badcc7104bf66c54c7636efa819fea1ad10e",
+      "Author": "Vamshi-Microsoft",
+      "Date": "Fri May 8 11:56:51 2026 +0530",
+      "Message": "Enhance Header component to conditionally render UserProfile based on auth status and improve code readability",
+      "LinesAdded": 34,
+      "LinesDeleted": 17,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "a4c9a9cb2678a55a7f89156d237933cd345e0157",
+      "Author": "Niraj Chaudhari (Persistent Systems Inc)",
+      "Date": "Thu May 7 17:52:49 2026 +0530",
+      "Message": "Resolve Copilot Comment",
+      "LinesAdded": 2,
+      "LinesDeleted": 6,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "5d4e538e336644a3e8bdb4fae8970967a0e4559a",
+      "Author": "Niraj Chaudhari (Persistent Systems Inc)",
+      "Date": "Thu May 7 13:53:48 2026 +0530",
+      "Message": "Update email format 3",
+      "LinesAdded": 11,
+      "LinesDeleted": 11,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "61d1978b4a1733e28ac2365ebc973da070e66cf5",
+      "Author": "Niraj Chaudhari (Persistent Systems Inc)",
+      "Date": "Wed May 6 10:21:41 2026 +0530",
+      "Message": "Update email format 2",
+      "LinesAdded": 2,
+      "LinesDeleted": 2,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "49c6b68095400f27b9b45e031fa2e21d559b00f9",
+      "Author": "Niraj Chaudhari (Persistent Systems Inc)",
+      "Date": "Wed May 6 10:16:48 2026 +0530",
+      "Message": "Update email format",
+      "LinesAdded": 294,
+      "LinesDeleted": 24,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "6d5716a0aa3bba4f17e7ae4060d971aed0fd9905",
+      "Author": "Dhruvkumar-Microsoft",
+      "Date": "Tue May 5 12:45:06 2026 +0530",
+      "Message": "removed the Unused resource key vault",
+      "LinesAdded": 25,
+      "LinesDeleted": 4573,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    }
+  ],
+  "Metadata": {
+    "IncludeTestFiles": false,
+    "GeneratedBy": "Copilot Usage Report Tool v2.0",
+    "ScriptVersion": "2.0.0",
+    "PowerShellVersion": "7.4.15",
+    "AnalysisMethod": "5-Tier Weighted Pattern Detection",
+    "GeneratedAt": "2026-05-18 05:27:11"
+  },
+  "FileTypeBreakdown": [
+    {
+      "Extension": "json",
+      "TotalLines": 299980,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 365
+    },
+    {
+      "Extension": "yml",
+      "TotalLines": 36288,
+      "AILines": 440,
+      "AIPercentage": 1.21,
+      "FileCount": 1261
+    },
+    {
+      "Extension": "py",
+      "TotalLines": 26825,
+      "AILines": 18114,
+      "AIPercentage": 67.53,
+      "FileCount": 1150
+    },
+    {
+      "Extension": "md",
+      "TotalLines": 21034,
+      "AILines": 36,
+      "AIPercentage": 0.17,
+      "FileCount": 579
+    },
+    {
+      "Extension": "bicep",
+      "TotalLines": 16471,
+      "AILines": 1650,
+      "AIPercentage": 10.02,
+      "FileCount": 476
+    },
+    {
+      "Extension": "pdf",
+      "TotalLines": 4210,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 5
+    },
+    {
+      "Extension": "tsx",
+      "TotalLines": 2599,
+      "AILines": 1518,
+      "AIPercentage": 58.41,
+      "FileCount": 443
+    },
+    {
+      "Extension": "sql",
+      "TotalLines": 1825,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 125
+    },
+    {
+      "Extension": "other",
+      "TotalLines": 900,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 66
+    },
+    {
+      "Extension": "gitignore",
+      "TotalLines": 525,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 11
+    },
+    {
+      "Extension": "yaml",
+      "TotalLines": 449,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 57
+    },
+    {
+      "Extension": "txt",
+      "TotalLines": 321,
+      "AILines": 4,
+      "AIPercentage": 1.25,
+      "FileCount": 89
+    },
+    {
+      "Extension": "cs",
+      "TotalLines": 216,
+      "AILines": 96,
+      "AIPercentage": 44.44,
+      "FileCount": 36
+    },
+    {
+      "Extension": "toml",
+      "TotalLines": 145,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 10
+    },
+    {
+      "Extension": "sh",
+      "TotalLines": 141,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 22
+    },
+    {
+      "Extension": "sample",
+      "TotalLines": 76,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 17
+    },
+    {
+      "Extension": "yml}",
+      "TotalLines": 74,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 5
+    },
+    {
+      "Extension": "ts",
+      "TotalLines": 43,
+      "AILines": 15,
+      "AIPercentage": 34.88,
+      "FileCount": 7
+    },
+    {
+      "Extension": "env",
+      "TotalLines": 42,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 6
+    },
+    {
+      "Extension": "jsx",
+      "TotalLines": 36,
+      "AILines": 12,
+      "AIPercentage": 33.33,
+      "FileCount": 36
+    },
+    {
+      "Extension": "dockerfile",
+      "TotalLines": 30,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 18
+    },
+    {
+      "Extension": "devcontainer/dockerfile",
+      "TotalLines": 20,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 5
+    },
+    {
+      "Extension": "github/codeowners",
+      "TotalLines": 18,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 18
+    },
+    {
+      "Extension": "js",
+      "TotalLines": 18,
+      "AILines": 12,
+      "AIPercentage": 66.67,
+      "FileCount": 42
+    },
+    {
+      "Extension": "dockerignore",
+      "TotalLines": 13,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 12
+    },
+    {
+      "Extension": "ps1",
+      "TotalLines": 12,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 4
+    },
+    {
+      "Extension": "ini",
+      "TotalLines": 12,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 6
+    },
+    {
+      "Extension": "md}",
+      "TotalLines": 6,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 3
+    }
+  ],
+  "AnalysisPeriod": {
+    "FilterApplied": true,
+    "StartDate": "2026-05-01",
+    "EndDate": "2026-05-17"
+  }
+}
