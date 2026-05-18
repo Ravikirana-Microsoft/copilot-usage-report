@@ -1,0 +1,179 @@
+{
+  "Users": [],
+  "Metadata": {
+    "GeneratedAt": "2026-05-18 05:14:17",
+    "ScriptVersion": "2.0.0",
+    "PowerShellVersion": "7.4.15",
+    "IncludeTestFiles": false,
+    "AnalysisMethod": "5-Tier Weighted Pattern Detection",
+    "GeneratedBy": "Copilot Usage Report Tool v2.0"
+  },
+  "FileTypeBreakdown": [
+    {
+      "Extension": "json",
+      "TotalLines": 213985,
+      "AILines": 20,
+      "AIPercentage": 0.01,
+      "FileCount": 201
+    },
+    {
+      "Extension": "bicep",
+      "TotalLines": 28255,
+      "AILines": 4408,
+      "AIPercentage": 15.6,
+      "FileCount": 481
+    },
+    {
+      "Extension": "md",
+      "TotalLines": 6076,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 286
+    },
+    {
+      "Extension": "sh",
+      "TotalLines": 4938,
+      "AILines": 180,
+      "AIPercentage": 3.65,
+      "FileCount": 151
+    },
+    {
+      "Extension": "py",
+      "TotalLines": 4131,
+      "AILines": 2032,
+      "AIPercentage": 49.19,
+      "FileCount": 300
+    },
+    {
+      "Extension": "yaml",
+      "TotalLines": 2135,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 31
+    },
+    {
+      "Extension": "ps1",
+      "TotalLines": 636,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 6
+    },
+    {
+      "Extension": "yml",
+      "TotalLines": 633,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 93
+    },
+    {
+      "Extension": "gitignore",
+      "TotalLines": 510,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 6
+    },
+    {
+      "Extension": "txt",
+      "TotalLines": 279,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 57
+    },
+    {
+      "Extension": "other",
+      "TotalLines": 126,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 6
+    },
+    {
+      "Extension": "sample",
+      "TotalLines": 54,
+      "AILines": 4,
+      "AIPercentage": 7.41,
+      "FileCount": 12
+    },
+    {
+      "Extension": "ts",
+      "TotalLines": 48,
+      "AILines": 48,
+      "AIPercentage": 100.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "env",
+      "TotalLines": 42,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 6
+    },
+    {
+      "Extension": "github/codeowners",
+      "TotalLines": 18,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 18
+    },
+    {
+      "Extension": "bicep}",
+      "TotalLines": 16,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 7
+    },
+    {
+      "Extension": "json}",
+      "TotalLines": 6,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 4
+    },
+    {
+      "Extension": "dockerfile",
+      "TotalLines": 4,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 4
+    }
+  ],
+  "TierDistribution": {
+    "Tier5_Low": 0,
+    "Tier4_Moderate": 0,
+    "Tier1_Definitive": 0,
+    "Human": 0,
+    "Tier3_High": 0,
+    "Tier2_VeryHigh": 0
+  },
+  "AIAttributionOverride": {
+    "Notes": null,
+    "Applied": false,
+    "OverridePercentage": null
+  },
+  "Commits": null,
+  "AnalysisPeriod": {
+    "EndDate": "2026-04-30",
+    "FilterApplied": true,
+    "StartDate": "2026-04-01"
+  },
+  "Branch": "dev",
+  "BranchStatistics": {
+    "Branch": "dev",
+    "TotalCommits": 0,
+    "AICommits": 0,
+    "HumanCommits": 0,
+    "TotalLinesAdded": null,
+    "TotalLinesDeleted": null,
+    "AILinesAdded": null,
+    "AILinesDeleted": null,
+    "Tier1Commits": 0,
+    "Tier2Commits": 0,
+    "Tier3Commits": 0,
+    "Tier4Commits": 0,
+    "Tier5Commits": 0,
+    "UniqueContributors": 0,
+    "AIPercentage": 0,
+    "HumanLinesAdded": 0
+  },
+  "GeneratedAt": "2026-05-18 05:14:17",
+  "ApplicationName": "BYOC"
+}
