@@ -1,0 +1,454 @@
+{
+  "AIAttributionOverride": {
+    "Notes": null,
+    "Applied": false,
+    "OverridePercentage": null
+  },
+  "Branch": "main",
+  "AnalysisPeriod": {
+    "FilterApplied": true,
+    "EndDate": "2026-05-31",
+    "StartDate": "2026-05-01"
+  },
+  "TierDistribution": {
+    "Tier4_Moderate": 0,
+    "Tier2_VeryHigh": 0,
+    "Tier3_High": 0,
+    "Human": 14,
+    "Tier5_Low": 0,
+    "Tier1_Definitive": 1
+  },
+  "GeneratedAt": "2026-09-28 09:58:19",
+  "Users": [
+    {
+      "UserName": "Harmanpreet-Microsoft",
+      "UserEmail": "v-harmanprka@microsoft.com",
+      "TotalCommits": 2,
+      "AICommits": 0,
+      "HumanCommits": 2,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 9,
+      "HumanLinesDeleted": 73,
+      "TotalLinesAdded": 9,
+      "TotalLinesDeleted": 73,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Rafi-Microsoft",
+      "UserEmail": "v-rafmd@microsoft.com",
+      "TotalCommits": 5,
+      "AICommits": 0,
+      "HumanCommits": 5,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 14,
+      "HumanLinesDeleted": 3,
+      "TotalLinesAdded": 14,
+      "TotalLinesDeleted": 3,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "AjitPadhi-Microsoft",
+      "UserEmail": "v-padhiajit@microsoft.com",
+      "TotalCommits": 1,
+      "AICommits": 0,
+      "HumanCommits": 1,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 2,
+      "HumanLinesDeleted": 0,
+      "TotalLinesAdded": 2,
+      "TotalLinesDeleted": 0,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Saswato-Microsoft",
+      "UserEmail": "v-saswatoc@microsoft.com",
+      "TotalCommits": 7,
+      "AICommits": 1,
+      "HumanCommits": 6,
+      "AILinesAdded": 255,
+      "AILinesDeleted": 181,
+      "HumanLinesAdded": 401,
+      "HumanLinesDeleted": 75,
+      "TotalLinesAdded": 656,
+      "TotalLinesDeleted": 256,
+      "AIPercentage": 38.87,
+      "AvgConfidenceScore": 100.0,
+      "ConfidenceScores": [
+        100
+      ],
+      "Tier1Commits": 1,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    }
+  ],
+  "Commits": [
+    {
+      "Hash": "e827a2856130cc83589d5e1f83aa20457f759128",
+      "Author": "AjitPadhi-Microsoft",
+      "Date": "Thu May 28 19:30:48 2026 +0530",
+      "Message": "fixed template pipeline scheduler (#161)",
+      "LinesAdded": 2,
+      "LinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "cac797ad0f13e344cd3efbd3560b55e2ef094762",
+      "Author": "Saswato-Microsoft",
+      "Date": "Wed May 27 12:39:31 2026 +0530",
+      "Message": "fix: update documentation and configuration for Microsoft Entra ID authentication on Jump VM via Azure Bastion",
+      "LinesAdded": 128,
+      "LinesDeleted": 41,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "d31d3e7eeffaee8d48fb3ad1ff1c9cfe5c57e68c",
+      "Author": "Saswato-Microsoft",
+      "Date": "Tue May 26 14:38:50 2026 +0530",
+      "Message": "chore: main to dev merge (#162)",
+      "LinesAdded": 0,
+      "LinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "3aca9a733a853d0ec7a085ae1c816aa57cae39b5",
+      "Author": "Saswato-Microsoft",
+      "Date": "Thu May 21 17:10:30 2026 +0530",
+      "Message": "fix: Add support for reusing existing Azure AI Foundry projects in deployment (#157)",
+      "LinesAdded": 255,
+      "LinesDeleted": 181,
+      "IsAI": true,
+      "ConfidenceScore": 100,
+      "ConfidenceTier": "Tier 1: Definitive AI - Git Trailer (100 percent)",
+      "TierNumber": 1
+    },
+    {
+      "Hash": "83f96773d43f5f6470e12c36e6d46a2efdace4a8",
+      "Author": "Rafi-Microsoft",
+      "Date": "Wed May 20 15:27:02 2026 +0530",
+      "Message": "fix(ci): use GITHUB_RUN_ID for globally unique env name suffix",
+      "LinesAdded": 3,
+      "LinesDeleted": 3,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "25b6d989cc99307337c32e96b179dda08ce7640c",
+      "Author": "Rafi-Microsoft",
+      "Date": "Tue May 19 16:34:18 2026 +0530",
+      "Message": "fix(workflow): generate unique AZURE_ENV_NAME per run to avoid soft-deleted KV conflict",
+      "LinesAdded": 7,
+      "LinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "bb64caf4310a3e7489872f9df7fcaeb823c604db",
+      "Author": "Saswato-Microsoft",
+      "Date": "Wed May 13 18:31:04 2026 +0530",
+      "Message": "fix: update Log Analytics workspace descriptions and routing for PostgreSQL diagnostics",
+      "LinesAdded": 19,
+      "LinesDeleted": 21,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "c3f8a15a79f473f99509a61f9e533c8c5565a279",
+      "Author": "Harmanpreet-Microsoft",
+      "Date": "Tue May 12 18:28:26 2026 +0000",
+      "Message": "fix: remove fabric capacity resources and diagnostics for BYO Log Analytics",
+      "LinesAdded": 5,
+      "LinesDeleted": 67,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "da1efb8f74b6b97be9af14f794ccbee3adde2a44",
+      "Author": "Saswato-Microsoft",
+      "Date": "Tue May 12 13:42:10 2026 +0530",
+      "Message": "fix: update permissions and outputs for BYO Log Analytics and Application Insights integration",
+      "LinesAdded": 14,
+      "LinesDeleted": 4,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "d734b5593c7663649ab9691e9df06c578a80c2e2",
+      "Author": "Saswato-Microsoft",
+      "Date": "Tue May 12 11:10:56 2026 +0530",
+      "Message": "fix: adding additional comments for existingLogAnalyticsWorkspaceResourceId",
+      "LinesAdded": 5,
+      "LinesDeleted": 3,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "13277a13c82e4ce619eed2d8b6f54d26600b4b20",
+      "Author": "Saswato-Microsoft",
+      "Date": "Mon May 11 20:59:11 2026 +0530",
+      "Message": "feat: add support for Bring Your Own Log Analytics Workspace in deployment",
+      "LinesAdded": 235,
+      "LinesDeleted": 6,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "92366301a7a6888ab27a16ba28126563ca38ecef",
+      "Author": "Rafi-Microsoft",
+      "Date": "Wed May 6 20:06:30 2026 +0530",
+      "Message": "docs: Add Bicep CLI version pinning to prerequisites table",
+      "LinesAdded": 1,
+      "LinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "b85823630f5182ea0d4182b2f4b85d9dd445fbc0",
+      "Author": "Rafi-Microsoft",
+      "Date": "Wed May 6 19:49:27 2026 +0530",
+      "Message": "docs: Add Bicep CLI (v0.33.0+) version pinning alongside azd/PowerShell",
+      "LinesAdded": 2,
+      "LinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "7e0f96f06c7e127f577b70cdaa3b788ada2c6e8c",
+      "Author": "Rafi-Microsoft",
+      "Date": "Wed May 6 13:59:09 2026 +0530",
+      "Message": "docs: add Bicep CLI prerequisite to local deployment guide",
+      "LinesAdded": 1,
+      "LinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "7a078c8ce9a348b6d51100bbbda3b93097772af9",
+      "Author": "Harmanpreet-Microsoft",
+      "Date": "Tue May 5 15:44:03 2026 +0000",
+      "Message": "fix: update dependabot configuration to include gitsubmodule ecosystem",
+      "LinesAdded": 4,
+      "LinesDeleted": 6,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    }
+  ],
+  "FileTypeBreakdown": [
+    {
+      "Extension": "json",
+      "TotalLines": 240143,
+      "AILines": 143818,
+      "AIPercentage": 59.89,
+      "FileCount": 130
+    },
+    {
+      "Extension": "ps1",
+      "TotalLines": 135068,
+      "AILines": 12550,
+      "AIPercentage": 9.29,
+      "FileCount": 1055
+    },
+    {
+      "Extension": "md",
+      "TotalLines": 47930,
+      "AILines": 1350,
+      "AIPercentage": 2.82,
+      "FileCount": 758
+    },
+    {
+      "Extension": "sh",
+      "TotalLines": 17054,
+      "AILines": 318,
+      "AIPercentage": 1.86,
+      "FileCount": 340
+    },
+    {
+      "Extension": "bicep",
+      "TotalLines": 8257,
+      "AILines": 1497,
+      "AIPercentage": 18.13,
+      "FileCount": 478
+    },
+    {
+      "Extension": "bicepparam",
+      "TotalLines": 2346,
+      "AILines": 90,
+      "AIPercentage": 3.84,
+      "FileCount": 67
+    },
+    {
+      "Extension": "yml",
+      "TotalLines": 2130,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 122
+    },
+    {
+      "Extension": "yaml",
+      "TotalLines": 2011,
+      "AILines": 108,
+      "AIPercentage": 5.37,
+      "FileCount": 84
+    },
+    {
+      "Extension": "py",
+      "TotalLines": 1676,
+      "AILines": 792,
+      "AIPercentage": 47.26,
+      "FileCount": 136
+    },
+    {
+      "Extension": "gitignore",
+      "TotalLines": 1169,
+      "AILines": 2,
+      "AIPercentage": 0.17,
+      "FileCount": 41
+    },
+    {
+      "Extension": "sample",
+      "TotalLines": 594,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 18
+    },
+    {
+      "Extension": "other",
+      "TotalLines": 270,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 42
+    },
+    {
+      "Extension": "txt",
+      "TotalLines": 102,
+      "AILines": 24,
+      "AIPercentage": 23.53,
+      "FileCount": 96
+    },
+    {
+      "Extension": "env",
+      "TotalLines": 84,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 24
+    },
+    {
+      "Extension": "example",
+      "TotalLines": 73,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "gitmodules",
+      "TotalLines": 39,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 15
+    },
+    {
+      "Extension": "devcontainer/dockerfile",
+      "TotalLines": 36,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 9
+    },
+    {
+      "Extension": "github/codeowners",
+      "TotalLines": 28,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 20
+    },
+    {
+      "Extension": "md}",
+      "TotalLines": 15,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 9
+    }
+  ],
+  "BranchStatistics": {
+    "Branch": "main",
+    "TotalCommits": 15,
+    "AICommits": 1,
+    "HumanCommits": 14,
+    "TotalLinesAdded": 681.0,
+    "TotalLinesDeleted": 332.0,
+    "AILinesAdded": 255.0,
+    "AILinesDeleted": 181.0,
+    "Tier1Commits": 1,
+    "Tier2Commits": 0,
+    "Tier3Commits": 0,
+    "Tier4Commits": 0,
+    "Tier5Commits": 0,
+    "UniqueContributors": 4,
+    "AIPercentage": 37.44,
+    "HumanLinesAdded": 426.0
+  },
+  "ApplicationName": "Deploy your AI application",
+  "Metadata": {
+    "IncludeTestFiles": false,
+    "AnalysisMethod": "5-Tier Weighted Pattern Detection",
+    "GeneratedAt": "2026-09-28 09:58:19",
+    "GeneratedBy": "Copilot Usage Report Tool v2.0",
+    "ScriptVersion": "2.0.0",
+    "PowerShellVersion": "7.6.6"
+  }
+}

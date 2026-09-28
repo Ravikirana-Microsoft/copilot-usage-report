@@ -1,0 +1,429 @@
+{
+  "AIAttributionOverride": {
+    "Notes": null,
+    "Applied": false,
+    "OverridePercentage": null
+  },
+  "Branch": "dev",
+  "AnalysisPeriod": {
+    "FilterApplied": true,
+    "EndDate": "2026-05-31",
+    "StartDate": "2026-05-01"
+  },
+  "TierDistribution": {
+    "Tier4_Moderate": 0,
+    "Tier2_VeryHigh": 0,
+    "Tier3_High": 0,
+    "Human": 16,
+    "Tier5_Low": 0,
+    "Tier1_Definitive": 1
+  },
+  "GeneratedAt": "2026-09-28 09:58:23",
+  "Users": [
+    {
+      "UserName": "Harmanpreet-Microsoft",
+      "UserEmail": "v-harmanprka@microsoft.com",
+      "TotalCommits": 8,
+      "AICommits": 1,
+      "HumanCommits": 7,
+      "AILinesAdded": 19,
+      "AILinesDeleted": 19,
+      "HumanLinesAdded": 76,
+      "HumanLinesDeleted": 46,
+      "TotalLinesAdded": 95,
+      "TotalLinesDeleted": 65,
+      "AIPercentage": 20.0,
+      "AvgConfidenceScore": 100.0,
+      "ConfidenceScores": [
+        100
+      ],
+      "Tier1Commits": 1,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Ajit Padhi",
+      "UserEmail": "v-padhiajit@microsoft.com",
+      "TotalCommits": 2,
+      "AICommits": 0,
+      "HumanCommits": 2,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 3,
+      "HumanLinesDeleted": 3,
+      "TotalLinesAdded": 3,
+      "TotalLinesDeleted": 3,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Yamini-Microsoft",
+      "UserEmail": "v-yamini3@microsoft.com",
+      "TotalCommits": 1,
+      "AICommits": 0,
+      "HumanCommits": 1,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 0,
+      "HumanLinesDeleted": 4,
+      "TotalLinesAdded": 0,
+      "TotalLinesDeleted": 4,
+      "AIPercentage": 0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Rafi-Microsoft",
+      "UserEmail": "v-rafmd@microsoft.com",
+      "TotalCommits": 6,
+      "AICommits": 0,
+      "HumanCommits": 6,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 6,
+      "HumanLinesDeleted": 2,
+      "TotalLinesAdded": 6,
+      "TotalLinesDeleted": 2,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    }
+  ],
+  "Commits": [
+    {
+      "Hash": "1ab162cdee439449c0c76f0da2cf7c6aa44a25e9",
+      "Author": "Ajit Padhi",
+      "Date": "Thu May 21 18:14:39 2026 +0530",
+      "Message": "fix: dependabot package upgrades",
+      "LinesAdded": 2,
+      "LinesDeleted": 2,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "cb35651129514e8036cde7e79fc5dff116e1e27d",
+      "Author": "Ajit Padhi",
+      "Date": "Thu May 21 15:00:23 2026 +0530",
+      "Message": "updated as per comment",
+      "LinesAdded": 1,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "d2a4b57b48fb81ddf88b9d4996bf10ad38e1eb28",
+      "Author": "Yamini-Microsoft",
+      "Date": "Thu May 14 17:37:26 2026 +0530",
+      "Message": "fix: restrict deploy workflow to manual trigger only",
+      "LinesAdded": 0,
+      "LinesDeleted": 4,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "412c4a9564b7d365eb37ade278faefef5551a00d",
+      "Author": "Harmanpreet-Microsoft",
+      "Date": "Thu May 7 23:36:19 2026 +0530",
+      "Message": "Fix shadow Import-Module: respect -Force/-MinimumVersion, make Name mandatory",
+      "LinesAdded": 8,
+      "LinesDeleted": 2,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "d528e7a0606b076d32ca2c613cc1d91fc48d4d8f",
+      "Author": "Harmanpreet-Microsoft",
+      "Date": "Thu May 7 23:31:06 2026 +0530",
+      "Message": "Suppress PSAvoidOverwritingBuiltInCmdlets for shadow Import-Module",
+      "LinesAdded": 1,
+      "LinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "71265e0b9bbeaa8c432a9ef6153f65c4e4c82872",
+      "Author": "Harmanpreet-Microsoft",
+      "Date": "Thu May 7 23:19:28 2026 +0530",
+      "Message": "fix: use CmdletBinding for shadow Import-Module to avoid ErrorAction conflict",
+      "LinesAdded": 3,
+      "LinesDeleted": 3,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "1c8b02f218060649b3ded578cb29a69d0e47d19b",
+      "Author": "Harmanpreet-Microsoft",
+      "Date": "Thu May 7 23:15:44 2026 +0530",
+      "Message": "fix: shadow Import-Module to prevent assembly conflicts on CI runners",
+      "LinesAdded": 23,
+      "LinesDeleted": 15,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "11dcec0a23f02bda07af71bddf1b4ebbf4c8e2a4",
+      "Author": "Harmanpreet-Microsoft",
+      "Date": "Thu May 7 23:09:13 2026 +0530",
+      "Message": "fix: prioritize user-installed Az modules in PSModulePath to prevent assembly conflicts",
+      "LinesAdded": 34,
+      "LinesDeleted": 24,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "1689adb0edbb33203fa12f30fe9af37ae2c4989d",
+      "Author": "Harmanpreet-Microsoft",
+      "Date": "Thu May 7 22:57:03 2026 +0530",
+      "Message": "fix: guard all Az module imports against assembly reload conflict",
+      "LinesAdded": 19,
+      "LinesDeleted": 19,
+      "IsAI": true,
+      "ConfidenceScore": 100,
+      "ConfidenceTier": "Tier 1: Definitive AI - Git Trailer (100 percent)",
+      "TierNumber": 1
+    },
+    {
+      "Hash": "3b3aaed7d3c241d0889bafe3fedd99e75385de58",
+      "Author": "Harmanpreet-Microsoft",
+      "Date": "Thu May 7 22:49:41 2026 +0530",
+      "Message": "fix: skip Az.Accounts import when already loaded to avoid assembly conflict",
+      "LinesAdded": 6,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "67eea34424451be6380cddf0eaef9c6c7a37073d",
+      "Author": "Harmanpreet-Microsoft",
+      "Date": "Thu May 7 22:45:51 2026 +0530",
+      "Message": "fix: add -Force to Import-Module Az.Accounts to prevent assembly conflict",
+      "LinesAdded": 1,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "9351aa4b6907fb5cd364b7808eb34c6dd24484ba",
+      "Author": "Rafi-Microsoft",
+      "Date": "Wed May 6 22:27:53 2026 +0530",
+      "Message": "docs: Use 'az bicep version' for reliable Bicep check (Copilot review)",
+      "LinesAdded": 1,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "e3b3a3d86672721b02d5ef4d0a1ff2d4916e7043",
+      "Author": "Rafi-Microsoft",
+      "Date": "Wed May 6 20:06:26 2026 +0530",
+      "Message": "docs: Add Bicep CLI version pinning to bulleted prereq list",
+      "LinesAdded": 1,
+      "LinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "9d575dca77afac01fcba3b46888b8bea6720b618",
+      "Author": "Rafi-Microsoft",
+      "Date": "Wed May 6 19:50:23 2026 +0530",
+      "Message": "docs: Add Bicep CLI (v0.33.0+) version pinning alongside azd/PowerShell",
+      "LinesAdded": 1,
+      "LinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "70fb3b9e52c5d832b542e551028e4cbe6be99a00",
+      "Author": "Rafi-Microsoft",
+      "Date": "Wed May 6 19:50:19 2026 +0530",
+      "Message": "docs: Add Bicep CLI (v0.33.0+) version pinning alongside azd/PowerShell",
+      "LinesAdded": 2,
+      "LinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "fc092440df48b823175eafbf2a3a616f51f56389",
+      "Author": "Rafi-Microsoft",
+      "Date": "Wed May 6 13:58:47 2026 +0530",
+      "Message": "docs: add Bicep CLI prerequisite to local deployment guide",
+      "LinesAdded": 1,
+      "LinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "f78d22692ffebb895a76b6cb0bbba82c6f736eb1",
+      "Author": "Rafi-Microsoft",
+      "Date": "Tue May 5 10:58:12 2026 +0530",
+      "Message": "fix(run.ps1): remove orphan PSScriptAnalyzer suppression comment",
+      "LinesAdded": 0,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    }
+  ],
+  "FileTypeBreakdown": [
+    {
+      "Extension": "md",
+      "TotalLines": 25891,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 486
+    },
+    {
+      "Extension": "ps1",
+      "TotalLines": 21402,
+      "AILines": 507,
+      "AIPercentage": 2.37,
+      "FileCount": 558
+    },
+    {
+      "Extension": "json",
+      "TotalLines": 3079,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 51
+    },
+    {
+      "Extension": "yml",
+      "TotalLines": 2396,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 193
+    },
+    {
+      "Extension": "gitignore",
+      "TotalLines": 1257,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 6
+    },
+    {
+      "Extension": "other",
+      "TotalLines": 418,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 8
+    },
+    {
+      "Extension": "bicep",
+      "TotalLines": 379,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 24
+    },
+    {
+      "Extension": "yaml",
+      "TotalLines": 229,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 32
+    },
+    {
+      "Extension": "bicepparam",
+      "TotalLines": 196,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 32
+    },
+    {
+      "Extension": "md\"",
+      "TotalLines": 92,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "github/codeowners",
+      "TotalLines": 4,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "yml}",
+      "TotalLines": 2,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 2
+    }
+  ],
+  "BranchStatistics": {
+    "Branch": "dev",
+    "TotalCommits": 17,
+    "AICommits": 1,
+    "HumanCommits": 16,
+    "TotalLinesAdded": 104.0,
+    "TotalLinesDeleted": 74.0,
+    "AILinesAdded": 19.0,
+    "AILinesDeleted": 19.0,
+    "Tier1Commits": 1,
+    "Tier2Commits": 0,
+    "Tier3Commits": 0,
+    "Tier4Commits": 0,
+    "Tier5Commits": 0,
+    "UniqueContributors": 4,
+    "AIPercentage": 18.27,
+    "HumanLinesAdded": 85.0
+  },
+  "ApplicationName": "Data and Security",
+  "Metadata": {
+    "IncludeTestFiles": false,
+    "AnalysisMethod": "5-Tier Weighted Pattern Detection",
+    "GeneratedAt": "2026-09-28 09:58:23",
+    "GeneratedBy": "Copilot Usage Report Tool v2.0",
+    "ScriptVersion": "2.0.0",
+    "PowerShellVersion": "7.6.6"
+  }
+}

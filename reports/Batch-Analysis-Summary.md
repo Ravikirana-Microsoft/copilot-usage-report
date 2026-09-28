@@ -1,7 +1,7 @@
 # Batch Analysis Summary - 5-Tier Model
 
-**Analysis Date:** 2026-05-18 05:27:16  
-**Period:** 2026-05-01 to 2026-05-17
+**Analysis Date:** 2026-09-28 09:59:05  
+**Period:** 2026-05-01 to 2026-05-31
 
 ---
 
@@ -20,12 +20,12 @@
 
 | Metric | Value |
 |--------|-------|
-| **Total Commits** | 274 |
-| **AI-Assisted Commits** | 29 |
-| **Human Commits** | 245 |
-| **Total Lines Added** | 33403 |
-| **AI-Assisted Lines** | 10585 (31.69%) |
-| **Human-Written Lines** | 22818 (68.31%) |
+| **Total Commits** | 681 |
+| **AI-Assisted Commits** | 86 |
+| **Human Commits** | 595 |
+| **Total Lines Added** | 708618 |
+| **AI-Assisted Lines** | 428865 (60.52%) |
+| **Human-Written Lines** | 279753 (39.48%) |
 
 ---
 
@@ -33,12 +33,12 @@
 
 | Tier | Description | Commits |
 |------|-------------|---------|
-| **Tier 1** | Definitive AI (99-100%) | 18 |
-| **Tier 2** | Very High Confidence (90-98%) | 5 |
-| **Tier 3** | High Confidence (80-89%) | 4 |
-| **Tier 4** | Moderate Confidence (70-79%) | 0 |
-| **Tier 5** | Low Confidence (60-69%) | 2 |
-| **Human** | No AI Detected | 245 |
+| **Tier 1** | Definitive AI (99-100%) | 38 |
+| **Tier 2** | Very High Confidence (90-98%) | 18 |
+| **Tier 3** | High Confidence (80-89%) | 12 |
+| **Tier 4** | Moderate Confidence (70-79%) | 8 |
+| **Tier 5** | Low Confidence (60-69%) | 10 |
+| **Human** | No AI Detected | 595 |
 
 ---
 
@@ -46,20 +46,20 @@
 
 | Application | Branch | Commits | AI Commits | AI Lines | AI % | T1 | T2 | T3 | T4 | T5 | Contributors |
 |-------------|--------|---------|------------|----------|------|----|----|----|----|-----|--------------|
-| CWYD | dev | 18 | 5 | 5081 | 50.47% | 3 | 1 | 0 | 0 | 1 | 11 |
-| Fabric SQL | dev | 38 | 5 | 456 | 32.23% | 1 | 1 | 2 | 0 | 1 | 8 |
-| Container Migration | dev | 40 | 7 | 3955 | 76.12% | 5 | 2 | 0 | 0 | 0 | 5 |
-| Content Generation | dev | 31 | 2 | 238 | 26.68% | 0 | 0 | 2 | 0 | 0 | 6 |
-| KM Generic | dev | 30 | 5 | 214 | 8.88% | 5 | 0 | 0 | 0 | 0 | 7 |
-| Content Processing | dev | 24 | 1 | 364 | 44.07% | 1 | 0 | 0 | 0 | 0 | 5 |
-| Data and Security | dev | 9 | 1 | 19 | 20% | 1 | 0 | 0 | 0 | 0 | 2 |
-| BYOCC | dev | 26 | 1 | 3 | 0.03% | 1 | 0 | 0 | 0 | 0 | 5 |
-| Code Modernization | dev | 18 | 1 | 32 | 3.31% | 1 | 0 | 0 | 0 | 0 | 4 |
-| MACAE v4 | main | 22 | 1 | 223 | 30.14% | 0 | 1 | 0 | 0 | 0 | 5 |
-| DKM | dev | 9 | 0 |  | 0% | 0 | 0 | 0 | 0 | 0 | 3 |
-| RTI | main | 5 | 0 |  | 0% | 0 | 0 | 0 | 0 | 0 | 3 |
-| Deploy your AI application | main | 4 | 0 |  | 0% | 0 | 0 | 0 | 0 | 0 | 2 |
-| MAAG | dev | 0 | 0 |  | 0% | 0 | 0 | 0 | 0 | 0 | 0 |
+| MACAE v4 | main | 96 | 22 | 20765 | 81.82% | 0 | 11 | 4 | 3 | 4 | 13 |
+| Fabric SQL | dev | 120 | 8 | 2711 | 1.2% | 1 | 2 | 2 | 0 | 3 | 16 |
+| BYOCC | dev | 67 | 5 | 74412 | 84.67% | 1 | 1 | 1 | 2 | 0 | 9 |
+| KM Generic | dev | 80 | 12 | 313745 | 97.22% | 7 | 0 | 3 | 2 | 0 | 14 |
+| Container Migration | dev | 78 | 13 | 6207 | 54.5% | 10 | 2 | 0 | 0 | 1 | 8 |
+| Content Processing | dev | 63 | 9 | 1025 | 11.24% | 7 | 1 | 0 | 1 | 0 | 12 |
+| CWYD | dev | 29 | 7 | 9354 | 51.71% | 5 | 1 | 0 | 0 | 1 | 12 |
+| Content Generation | dev | 49 | 3 | 247 | 7.12% | 1 | 0 | 2 | 0 | 0 | 11 |
+| Code Modernization | dev | 33 | 2 | 38 | 1.6% | 2 | 0 | 0 | 0 | 0 | 9 |
+| DKM | dev | 23 | 3 | 87 | 4.83% | 2 | 0 | 0 | 0 | 1 | 6 |
+| Data and Security | dev | 17 | 1 | 19 | 18.27% | 1 | 0 | 0 | 0 | 0 | 4 |
+| Deploy your AI application | main | 15 | 1 | 255 | 37.44% | 1 | 0 | 0 | 0 | 0 | 4 |
+| RTI | main | 6 | 0 |  | 0% | 0 | 0 | 0 | 0 | 0 | 4 |
+| MAAG | dev | 5 | 0 |  | 0% | 0 | 0 | 0 | 0 | 0 | 2 |
 
 ---
 
@@ -67,21 +67,21 @@
 
 | Application | Branch | Status | Timestamp |
 |-------------|--------|--------|-----------|
-| CWYD | dev | ✓ Success | 2026-05-18 05:27:15 |
-| Fabric SQL | dev | ✓ Success | 2026-05-18 05:27:15 |
-| Container Migration | dev | ✓ Success | 2026-05-18 05:27:15 |
-| Content Generation | dev | ✓ Success | 2026-05-18 05:27:15 |
-| KM Generic | dev | ✓ Success | 2026-05-18 05:27:15 |
-| Content Processing | dev | ✓ Success | 2026-05-18 05:27:15 |
-| Data and Security | dev | ✓ Success | 2026-05-18 05:27:15 |
-| BYOCC | dev | ✓ Success | 2026-05-18 05:27:15 |
-| Code Modernization | dev | ✓ Success | 2026-05-18 05:27:15 |
-| MACAE v4 | main | ✓ Success | 2026-05-18 05:27:15 |
-| DKM | dev | ✓ Success | 2026-05-18 05:27:15 |
-| RTI | main | ✓ Success | 2026-05-18 05:27:15 |
-| BYOC | dev | ✓ Success | 2026-05-18 05:27:15 |
-| Deploy your AI application | main | ✓ Success | 2026-05-18 05:27:15 |
-| MAAG | dev | ✓ Success | 2026-05-18 05:27:15 |
+| MACAE v4 | main | ✓ Success | 2026-09-28 09:59:05 |
+| Fabric SQL | dev | ✓ Success | 2026-09-28 09:59:05 |
+| BYOCC | dev | ✓ Success | 2026-09-28 09:59:05 |
+| KM Generic | dev | ✓ Success | 2026-09-28 09:59:05 |
+| Container Migration | dev | ✓ Success | 2026-09-28 09:59:05 |
+| Content Processing | dev | ✓ Success | 2026-09-28 09:59:05 |
+| CWYD | dev | ✓ Success | 2026-09-28 09:59:05 |
+| Content Generation | dev | ✓ Success | 2026-09-28 09:59:05 |
+| Code Modernization | dev | ✓ Success | 2026-09-28 09:59:05 |
+| DKM | dev | ✓ Success | 2026-09-28 09:59:05 |
+| Data and Security | dev | ✓ Success | 2026-09-28 09:59:05 |
+| Deploy your AI application | main | ✓ Success | 2026-09-28 09:59:05 |
+| RTI | main | ✓ Success | 2026-09-28 09:59:05 |
+| MAAG | dev | ✓ Success | 2026-09-28 09:59:05 |
+| BYOC | dev | ✓ Success | 2026-09-28 09:59:05 |
 
 ---
 

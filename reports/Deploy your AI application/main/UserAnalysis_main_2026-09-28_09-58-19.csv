@@ -1,0 +1,5 @@
+"UserName","UserEmail","TotalCommits","AICommits","HumanCommits","AILinesAdded","HumanLinesAdded","TotalLinesAdded","AIPercentage","AvgConfidenceScore","Tier1Commits","Tier2Commits","Tier3Commits","Tier4Commits","Tier5Commits"
+"Harmanpreet-Microsoft","v-harmanprka@microsoft.com","2","0","2","0","9","9","0","0","0","0","0","0","0"
+"Rafi-Microsoft","v-rafmd@microsoft.com","5","0","5","0","14","14","0","0","0","0","0","0","0"
+"AjitPadhi-Microsoft","v-padhiajit@microsoft.com","1","0","1","0","2","2","0","0","0","0","0","0","0"
+"Saswato-Microsoft","v-saswatoc@microsoft.com","7","1","6","255","401","656","38.87","100","1","0","0","0","0"
