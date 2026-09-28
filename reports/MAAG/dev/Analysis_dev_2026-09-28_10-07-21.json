@@ -1,0 +1,377 @@
+{
+  "AIAttributionOverride": {
+    "OverridePercentage": null,
+    "Applied": false,
+    "Notes": null
+  },
+  "FileTypeBreakdown": [
+    {
+      "Extension": "csv",
+      "TotalLines": 227398,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 276
+    },
+    {
+      "Extension": "json",
+      "TotalLines": 99271,
+      "AILines": 8435,
+      "AIPercentage": 8.5,
+      "FileCount": 114
+    },
+    {
+      "Extension": "py",
+      "TotalLines": 76795,
+      "AILines": 69788,
+      "AIPercentage": 90.88,
+      "FileCount": 566
+    },
+    {
+      "Extension": "md",
+      "TotalLines": 47220,
+      "AILines": 7889,
+      "AIPercentage": 16.71,
+      "FileCount": 1086
+    },
+    {
+      "Extension": "ipynb",
+      "TotalLines": 46035,
+      "AILines": 2750,
+      "AIPercentage": 5.97,
+      "FileCount": 911
+    },
+    {
+      "Extension": "ps1",
+      "TotalLines": 16960,
+      "AILines": 14062,
+      "AIPercentage": 82.91,
+      "FileCount": 83
+    },
+    {
+      "Extension": "bak",
+      "TotalLines": 7905,
+      "AILines": 7905,
+      "AIPercentage": 100.0,
+      "FileCount": 10
+    },
+    {
+      "Extension": "tmdl",
+      "TotalLines": 7383,
+      "AILines": 7350,
+      "AIPercentage": 99.55,
+      "FileCount": 75
+    },
+    {
+      "Extension": "yml",
+      "TotalLines": 3487,
+      "AILines": 618,
+      "AIPercentage": 17.72,
+      "FileCount": 236
+    },
+    {
+      "Extension": "sh",
+      "TotalLines": 3454,
+      "AILines": 236,
+      "AIPercentage": 6.83,
+      "FileCount": 71
+    },
+    {
+      "Extension": "platform",
+      "TotalLines": 1974,
+      "AILines": 1974,
+      "AIPercentage": 100.0,
+      "FileCount": 188
+    },
+    {
+      "Extension": "gitignore",
+      "TotalLines": 1358,
+      "AILines": 2,
+      "AIPercentage": 0.15,
+      "FileCount": 14
+    },
+    {
+      "Extension": "bicep",
+      "TotalLines": 866,
+      "AILines": 26,
+      "AIPercentage": 3.0,
+      "FileCount": 65
+    },
+    {
+      "Extension": "py}",
+      "TotalLines": 654,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 12
+    },
+    {
+      "Extension": "txt",
+      "TotalLines": 607,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 73
+    },
+    {
+      "Extension": "yaml",
+      "TotalLines": 219,
+      "AILines": 36,
+      "AIPercentage": 16.44,
+      "FileCount": 49
+    },
+    {
+      "Extension": "dockerignore",
+      "TotalLines": 188,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "other",
+      "TotalLines": 168,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 8
+    },
+    {
+      "Extension": "sql",
+      "TotalLines": 92,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 6
+    },
+    {
+      "Extension": "env",
+      "TotalLines": 42,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 6
+    },
+    {
+      "Extension": "github/psl-codeowners",
+      "TotalLines": 27,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 3
+    },
+    {
+      "Extension": "pbir",
+      "TotalLines": 27,
+      "AILines": 27,
+      "AIPercentage": 100.0,
+      "FileCount": 3
+    },
+    {
+      "Extension": "ps1}",
+      "TotalLines": 26,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 4
+    },
+    {
+      "Extension": "github/codeowners",
+      "TotalLines": 25,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 25
+    },
+    {
+      "Extension": "devcontainer/dockerfile",
+      "TotalLines": 20,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 5
+    },
+    {
+      "Extension": "pbism",
+      "TotalLines": 15,
+      "AILines": 15,
+      "AIPercentage": 100.0,
+      "FileCount": 3
+    },
+    {
+      "Extension": "yml}",
+      "TotalLines": 4,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "png",
+      "TotalLines": 2,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 278
+    }
+  ],
+  "Metadata": {
+    "GeneratedAt": "2026-09-28 10:07:21",
+    "GeneratedBy": "Copilot Usage Report Tool v2.0",
+    "AnalysisMethod": "5-Tier Weighted Pattern Detection",
+    "PowerShellVersion": "7.6.6",
+    "ScriptVersion": "2.0.0",
+    "IncludeTestFiles": false
+  },
+  "Commits": [
+    {
+      "Hash": "652271960c5eb66661d4ca19febceb627a423269",
+      "Author": "chaudhariniraj",
+      "Date": "Fri Jul 17 13:47:42 2026 +0530",
+      "Message": "Potential fix for pull request finding",
+      "LinesAdded": 6,
+      "LinesDeleted": 6,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "a2b29927cf9300540ae6f5fd0f9b7aa0f9dc23f9",
+      "Author": "Niraj Chaudhari (Persistent Systems Limited)",
+      "Date": "Fri Jul 17 13:18:33 2026 +0530",
+      "Message": "Add posix in azure.yaml file",
+      "LinesAdded": 10,
+      "LinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "431d9a98f4a4dccd0dba71f3d8c3d9d7a978958a",
+      "Author": "Niraj Chaudhari (Persistent Systems Limited)",
+      "Date": "Thu Jul 16 12:51:13 2026 +0530",
+      "Message": "Update Owners ID for Vinay and Prajwal",
+      "LinesAdded": 1,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "3e311e53a7d1bf92f0d5c7f9ce8dc6f5d6307113",
+      "Author": "Niraj Chaudhari (Persistent Systems Limited)",
+      "Date": "Tue Jul 14 19:43:32 2026 +0530",
+      "Message": "Posix not required",
+      "LinesAdded": 0,
+      "LinesDeleted": 10,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "cde8101558d06a3d81fdfecbacc29624b79f7992",
+      "Author": "Niraj Chaudhari (Persistent Systems Limited)",
+      "Date": "Tue Jul 14 16:12:59 2026 +0530",
+      "Message": "Update URL",
+      "LinesAdded": 2,
+      "LinesDeleted": 2,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "7b81d599e8b387013e6278ae8b64bb4d92a11b67",
+      "Author": "Niraj Chaudhari (Persistent Systems Limited)",
+      "Date": "Tue Jul 14 15:55:56 2026 +0530",
+      "Message": "update azure.yaml to show github issue URL 2",
+      "LinesAdded": 3,
+      "LinesDeleted": 2,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "e71c4967674036cb3c548597494e728d2df78cb0",
+      "Author": "Niraj Chaudhari (Persistent Systems Limited)",
+      "Date": "Tue Jul 14 15:43:12 2026 +0530",
+      "Message": "update azure.yaml to show github issue URL",
+      "LinesAdded": 20,
+      "LinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    }
+  ],
+  "Branch": "dev",
+  "TierDistribution": {
+    "Tier1_Definitive": 0,
+    "Tier3_High": 0,
+    "Tier4_Moderate": 0,
+    "Human": 7,
+    "Tier2_VeryHigh": 0,
+    "Tier5_Low": 0
+  },
+  "ApplicationName": "MAAG",
+  "BranchStatistics": {
+    "Branch": "dev",
+    "TotalCommits": 7,
+    "AICommits": 0,
+    "HumanCommits": 7,
+    "TotalLinesAdded": 42.0,
+    "TotalLinesDeleted": 21.0,
+    "AILinesAdded": null,
+    "AILinesDeleted": null,
+    "Tier1Commits": 0,
+    "Tier2Commits": 0,
+    "Tier3Commits": 0,
+    "Tier4Commits": 0,
+    "Tier5Commits": 0,
+    "UniqueContributors": 2,
+    "AIPercentage": 0.0,
+    "HumanLinesAdded": 42.0
+  },
+  "Users": [
+    {
+      "UserName": "Niraj Chaudhari (Persistent Systems Limited)",
+      "UserEmail": "v-cniraj@microsoft.com",
+      "TotalCommits": 6,
+      "AICommits": 0,
+      "HumanCommits": 6,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 36,
+      "HumanLinesDeleted": 15,
+      "TotalLinesAdded": 36,
+      "TotalLinesDeleted": 15,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "chaudhariniraj",
+      "UserEmail": "70953410+chaudhariniraj@users.noreply.github.com",
+      "TotalCommits": 1,
+      "AICommits": 0,
+      "HumanCommits": 1,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 6,
+      "HumanLinesDeleted": 6,
+      "TotalLinesAdded": 6,
+      "TotalLinesDeleted": 6,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    }
+  ],
+  "GeneratedAt": "2026-09-28 10:07:21",
+  "AnalysisPeriod": {
+    "FilterApplied": true,
+    "StartDate": "2026-07-01",
+    "EndDate": "2026-07-31"
+  }
+}

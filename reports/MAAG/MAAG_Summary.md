@@ -2,8 +2,8 @@
 
 > Consolidated analysis across all branches using 5-Tier AI Detection Model
 
-**Generated:** 2026-09-28 10:04:01  
-**Analysis Period:** 2026-08-01 to 2026-08-31
+**Generated:** 2026-09-28 10:09:03  
+**Analysis Period:** 2026-07-01 to 2026-07-31
 
 ---
 
@@ -13,7 +13,7 @@
 |--------|-------|
 | **Application** | MAAG |
 | **Branches Analyzed** | 1 |
-| **Total Contributors** | 4 |
+| **Total Contributors** | 2 |
 | **Overall AI Usage** | **0%** |
 
 ---
@@ -25,8 +25,8 @@
 | Category | Lines | Percentage | Commits |
 |----------|-------|------------|---------|
 | **AI-Assisted** | 0 | 0% | 0 |
-| **Human-Written** | 115 | 100% | 7 |
-| **Total** | 115 | 100% | 7 |
+| **Human-Written** | 42 | 100% | 7 |
+| **Total** | 42 | 100% | 7 |
 
 ### Visual Summary
 
@@ -54,7 +54,7 @@ Human-Written: ████████████████████ 100%
 
 | Branch | Commits | AI Commits | AI Lines | AI % | T1 | T2 | T3 | T4 | T5 | Contributors |
 |--------|---------|------------|----------|------|----|----|----|----|-----|--------------|
-| **dev** | 7 | 0 |  | 0% | 0 | 0 | 0 | 0 | 0 | 4 |
+| **dev** | 7 | 0 |  | 0% | 0 | 0 | 0 | 0 | 0 | 2 |
 
 ---
 

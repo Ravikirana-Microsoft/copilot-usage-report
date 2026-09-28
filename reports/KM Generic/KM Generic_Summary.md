@@ -2,8 +2,8 @@
 
 > Consolidated analysis across all branches using 5-Tier AI Detection Model
 
-**Generated:** 2026-09-28 10:04:01  
-**Analysis Period:** 2026-08-01 to 2026-08-31
+**Generated:** 2026-09-28 10:09:03  
+**Analysis Period:** 2026-07-01 to 2026-07-31
 
 ---
 
@@ -13,8 +13,8 @@
 |--------|-------|
 | **Application** | KM Generic |
 | **Branches Analyzed** | 1 |
-| **Total Contributors** | 11 |
-| **Overall AI Usage** | **0.59%** |
+| **Total Contributors** | 9 |
+| **Overall AI Usage** | **97.3%** |
 
 ---
 
@@ -24,15 +24,15 @@
 
 | Category | Lines | Percentage | Commits |
 |----------|-------|------------|---------|
-| **AI-Assisted** | 406 | 0.59% | 2 |
-| **Human-Written** | 68312 | 99.41% | 48 |
-| **Total** | 68718 | 100% | 50 |
+| **AI-Assisted** | 222879 | 97.3% | 16 |
+| **Human-Written** | 6192 | 2.7% | 103 |
+| **Total** | 229071 | 100% | 119 |
 
 ### Visual Summary
 
 ```
-AI-Assisted:   ░░░░░░░░░░░░░░░░░░░░ 0.59%
-Human-Written: ███████████████████░ 99.41%
+AI-Assisted:   ███████████████████░ 97.3%
+Human-Written: ░░░░░░░░░░░░░░░░░░░░ 2.7%
 ```
 
 ---
@@ -41,12 +41,12 @@ Human-Written: ███████████████████░ 99.4
 
 | Tier | Confidence | Description | Commits | Percentage |
 |------|------------|-------------|---------|------------|
-| **Tier 1** | 99-100% | Definitive AI markers | 2 | 100% |
+| **Tier 1** | 99-100% | Definitive AI markers | 0 | 0% |
 | **Tier 2** | 90-98% | Very high confidence | 0 | 0% |
-| **Tier 3** | 80-89% | High confidence | 0 | 0% |
-| **Tier 4** | 70-79% | Moderate confidence | 0 | 0% |
-| **Tier 5** | 60-69% | Low confidence | 0 | 0% |
-| **Human** | <60% | No AI detected | 48 | 96% |
+| **Tier 3** | 80-89% | High confidence | 5 | 31.2% |
+| **Tier 4** | 70-79% | Moderate confidence | 7 | 43.8% |
+| **Tier 5** | 60-69% | Low confidence | 4 | 25% |
+| **Human** | <60% | No AI detected | 103 | 86.6% |
 
 ---
 
@@ -54,22 +54,22 @@ Human-Written: ███████████████████░ 99.4
 
 | Branch | Commits | AI Commits | AI Lines | AI % | T1 | T2 | T3 | T4 | T5 | Contributors |
 |--------|---------|------------|----------|------|----|----|----|----|-----|--------------|
-| **dev** | 50 | 2 | 406 | 0.59% | 2 | 0 | 0 | 0 | 0 | 11 |
+| **dev** | 119 | 16 | 222879 | 97.3% | 0 | 0 | 5 | 7 | 4 | 9 |
 
 ---
 
 ## Branch Reports
 
-- **dev**: [dev/](dev/) - AI: 0.59%
+- **dev**: [dev/](dev/) - AI: 97.3%
 
 ---
 
 ## Key Insights
 
-### Human-Centric Development
-This application is **primarily human-written** with only 0.59% AI-assisted code.
-- Most commits are traditional human development
-- AI tools used selectively or minimally
+### High AI Adoption
+This application shows **strong AI-assisted development** with 97.3% of code attributed to AI tools.
+- Tier 1-2 (High confidence AI): 0 commits
+- Primary development appears to leverage Copilot effectively
 
 ---
 

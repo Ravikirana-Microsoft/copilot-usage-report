@@ -1,0 +1,323 @@
+{
+  "AIAttributionOverride": {
+    "OverridePercentage": null,
+    "Applied": false,
+    "Notes": null
+  },
+  "FileTypeBreakdown": [
+    {
+      "Extension": "json",
+      "TotalLines": 240143,
+      "AILines": 143818,
+      "AIPercentage": 59.89,
+      "FileCount": 130
+    },
+    {
+      "Extension": "ps1",
+      "TotalLines": 135076,
+      "AILines": 12550,
+      "AIPercentage": 9.29,
+      "FileCount": 1057
+    },
+    {
+      "Extension": "md",
+      "TotalLines": 47936,
+      "AILines": 1350,
+      "AIPercentage": 2.82,
+      "FileCount": 759
+    },
+    {
+      "Extension": "sh",
+      "TotalLines": 17073,
+      "AILines": 318,
+      "AIPercentage": 1.86,
+      "FileCount": 342
+    },
+    {
+      "Extension": "bicep",
+      "TotalLines": 8257,
+      "AILines": 1497,
+      "AIPercentage": 18.13,
+      "FileCount": 478
+    },
+    {
+      "Extension": "bicepparam",
+      "TotalLines": 2348,
+      "AILines": 90,
+      "AIPercentage": 3.83,
+      "FileCount": 68
+    },
+    {
+      "Extension": "yml",
+      "TotalLines": 2142,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 129
+    },
+    {
+      "Extension": "yaml",
+      "TotalLines": 2024,
+      "AILines": 108,
+      "AIPercentage": 5.34,
+      "FileCount": 86
+    },
+    {
+      "Extension": "py",
+      "TotalLines": 1676,
+      "AILines": 792,
+      "AIPercentage": 47.26,
+      "FileCount": 136
+    },
+    {
+      "Extension": "gitignore",
+      "TotalLines": 1169,
+      "AILines": 2,
+      "AIPercentage": 0.17,
+      "FileCount": 41
+    },
+    {
+      "Extension": "sample",
+      "TotalLines": 594,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 18
+    },
+    {
+      "Extension": "other",
+      "TotalLines": 270,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 42
+    },
+    {
+      "Extension": "txt",
+      "TotalLines": 102,
+      "AILines": 24,
+      "AIPercentage": 23.53,
+      "FileCount": 96
+    },
+    {
+      "Extension": "env",
+      "TotalLines": 84,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 24
+    },
+    {
+      "Extension": "example",
+      "TotalLines": 73,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "gitmodules",
+      "TotalLines": 39,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 15
+    },
+    {
+      "Extension": "devcontainer/dockerfile",
+      "TotalLines": 36,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 9
+    },
+    {
+      "Extension": "github/codeowners",
+      "TotalLines": 29,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 21
+    },
+    {
+      "Extension": "md}",
+      "TotalLines": 15,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 9
+    }
+  ],
+  "Metadata": {
+    "GeneratedAt": "2026-09-28 10:07:24",
+    "GeneratedBy": "Copilot Usage Report Tool v2.0",
+    "AnalysisMethod": "5-Tier Weighted Pattern Detection",
+    "PowerShellVersion": "7.6.6",
+    "ScriptVersion": "2.0.0",
+    "IncludeTestFiles": false
+  },
+  "Commits": [
+    {
+      "Hash": "4120ba325bac7cd0c6f7b324c01c04d7ebde176f",
+      "Author": "Niraj Chaudhari (Persistent Systems Limited)",
+      "Date": "Thu Jul 16 12:46:51 2026 +0530",
+      "Message": "Update Owners ID for Vinay and Prajwal",
+      "LinesAdded": 1,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "42a91581d84b7fb2a7856488cf5adc12e725f8d5",
+      "Author": "chaudhariniraj",
+      "Date": "Tue Jul 14 17:34:04 2026 +0530",
+      "Message": "Potential fix for pull request finding",
+      "LinesAdded": 1,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "4ce7650b41041f3cc8871e5e7875c026daa0ff45",
+      "Author": "Niraj Chaudhari (Persistent Systems Limited)",
+      "Date": "Tue Jul 14 17:28:13 2026 +0530",
+      "Message": "Update Azure.yaml files to show github issue URLS",
+      "LinesAdded": 12,
+      "LinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "3bc7619b12a9e00b3546c8161a8ce47ef825dff6",
+      "Author": "chaudhariniraj",
+      "Date": "Fri Jul 10 13:08:37 2026 +0530",
+      "Message": "resolve copilot comment 2",
+      "LinesAdded": 7,
+      "LinesDeleted": 7,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "5f9b854f38e0572ad19ec3d240db50af3fbdeacc",
+      "Author": "chaudhariniraj",
+      "Date": "Fri Jul 10 13:05:35 2026 +0530",
+      "Message": "resolve copilot comment",
+      "LinesAdded": 2,
+      "LinesDeleted": 2,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "9c67c4d210fe768123fe1b05db18695ec50adb60",
+      "Author": "chaudhariniraj",
+      "Date": "Fri Jul 10 12:57:37 2026 +0530",
+      "Message": "Upgrade gpt-4.1 mini model to gpt-5-mini",
+      "LinesAdded": 26,
+      "LinesDeleted": 26,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    }
+  ],
+  "Branch": "main",
+  "TierDistribution": {
+    "Tier1_Definitive": 0,
+    "Tier3_High": 0,
+    "Tier4_Moderate": 0,
+    "Human": 6,
+    "Tier2_VeryHigh": 0,
+    "Tier5_Low": 0
+  },
+  "ApplicationName": "Deploy your AI application",
+  "BranchStatistics": {
+    "Branch": "main",
+    "TotalCommits": 6,
+    "AICommits": 0,
+    "HumanCommits": 6,
+    "TotalLinesAdded": 49.0,
+    "TotalLinesDeleted": 37.0,
+    "AILinesAdded": null,
+    "AILinesDeleted": null,
+    "Tier1Commits": 0,
+    "Tier2Commits": 0,
+    "Tier3Commits": 0,
+    "Tier4Commits": 0,
+    "Tier5Commits": 0,
+    "UniqueContributors": 3,
+    "AIPercentage": 0.0,
+    "HumanLinesAdded": 49.0
+  },
+  "Users": [
+    {
+      "UserName": "chaudhariniraj",
+      "UserEmail": "70953410+chaudhariniraj@users.noreply.github.com",
+      "TotalCommits": 1,
+      "AICommits": 0,
+      "HumanCommits": 1,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 1,
+      "HumanLinesDeleted": 1,
+      "TotalLinesAdded": 1,
+      "TotalLinesDeleted": 1,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Niraj Chaudhari (Persistent Systems Limited)",
+      "UserEmail": "v-cniraj@microsoft.com",
+      "TotalCommits": 2,
+      "AICommits": 0,
+      "HumanCommits": 2,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 13,
+      "HumanLinesDeleted": 1,
+      "TotalLinesAdded": 13,
+      "TotalLinesDeleted": 1,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "chaudhariniraj",
+      "UserEmail": "chaudhariniraj19@gmail.com",
+      "TotalCommits": 3,
+      "AICommits": 0,
+      "HumanCommits": 3,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 35,
+      "HumanLinesDeleted": 35,
+      "TotalLinesAdded": 35,
+      "TotalLinesDeleted": 35,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    }
+  ],
+  "GeneratedAt": "2026-09-28 10:07:24",
+  "AnalysisPeriod": {
+    "FilterApplied": true,
+    "StartDate": "2026-07-01",
+    "EndDate": "2026-07-31"
+  }
+}
