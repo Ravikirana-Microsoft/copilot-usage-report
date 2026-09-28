@@ -133,6 +133,7 @@
         .summary-card.human .value { color: #6b7280; }
         .summary-card.commits .value { color: var(--warning-color); }
         .summary-card.contributors .value { color: #b4a0ff; }
+        .summary-card.prs-per-dev .value { color: #34d399; }
 
         .charts-grid {
             display: grid;
@@ -1435,6 +1436,11 @@
                 <div class="label">Contributors</div>
                 <div class="value" id="totalContributors">--</div>
                 <div class="subtext">Unique authors</div>
+            </div>
+            <div class="summary-card prs-per-dev">
+                <div class="label">Avg PRs / Developer</div>
+                <div class="value" id="avgPRsPerDev">--</div>
+                <div class="subtext" id="mergedPRs">-- merged PRs</div>
             </div>
         </div>
 
@@ -7914,6 +7920,8 @@
             document.getElementById('humanPercentage').textContent = '--';
             document.getElementById('totalCommits').textContent = '--';
             document.getElementById('totalContributors').textContent = '--';
+            document.getElementById('avgPRsPerDev').textContent = '--';
+            document.getElementById('mergedPRs').textContent = '-- merged PRs';
             // Show no data placeholder, hide dashboard content
             document.getElementById('noDataPlaceholder').style.display = 'block';
             document.getElementById('dashboardContent').style.display = 'none';
@@ -8238,6 +8246,22 @@
             processed.summary.humanLines = processed.summary.totalLines - processed.summary.aiLines;
             processed.summary.contributorCount = processed.summary.contributors.size;
 
+            // Merged PRs derived from commit messages (merge commits + squash-merge "(#123)" suffix),
+            // deduped by application + PR number since PR numbers are per-repository
+            const mergedPRSet = new Set();
+            processed.commits.forEach(commit => {
+                const msg = commit.Message || '';
+                const app = commit.application || '';
+                const merge = msg.match(/Merge pull request #(\d+)/i);
+                if (merge) { mergedPRSet.add(app + '#' + merge[1]); return; }
+                const squash = msg.match(/\(#(\d+)\)/);
+                if (squash) { mergedPRSet.add(app + '#' + squash[1]); }
+            });
+            processed.summary.mergedPRs = mergedPRSet.size;
+            processed.summary.avgPRsPerDev = processed.summary.contributorCount > 0
+                ? processed.summary.mergedPRs / processed.summary.contributorCount
+                : 0;
+
             return processed;
         }
 
@@ -8272,6 +8296,8 @@
             document.getElementById('totalCommits').textContent = formatNumber(summary.totalCommits);
             document.getElementById('aiCommits').textContent = summary.aiCommits + ' AI commits';
             document.getElementById('totalContributors').textContent = summary.contributorCount;
+            document.getElementById('avgPRsPerDev').textContent = (summary.avgPRsPerDev || 0).toFixed(2);
+            document.getElementById('mergedPRs').textContent = formatNumber(summary.mergedPRs || 0) + ' merged PRs';
 
             // Update timestamp - show which report is being displayed
             const reportName = currentReportPath ? currentReportPath.split('/').pop().replace('.json', '').replace('ConsolidatedReport_', '') : 'Unknown';
