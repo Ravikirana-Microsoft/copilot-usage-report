@@ -1,11 +1,11 @@
 # Git Access Validation Report
 
-**Generated:** 2026-09-28 11:17:58
+**Generated:** 2026-09-28 12:02:09
 
 ## Summary
 
-- **Total Applications:** 15
-- **Accessible:** 15 ✓
+- **Total Applications:** 16
+- **Accessible:** 16 ✓
 - **Not Accessible:** 0 ✗
 
 ## Detailed Results
@@ -27,6 +27,7 @@
 | KM Generic | https://github.com/microsoft/Conversation-Knowledge-Mining-Solution-Accelerator.git | ✓ Success |  |
 | Data and Security | https://github.com/microsoft/Data-and-Agent-Governance-and-Security-Accelerator.git | ✓ Success |  |
 | Content Generation | https://github.com/microsoft/content-generation-solution-accelerator.git | ✓ Success |  |
+| 3 IQ | https://github.com/microsoft/microsoft-iq-solution-accelerator.git | ✓ Success |  |
 
 ## Authentication Guidance
 
