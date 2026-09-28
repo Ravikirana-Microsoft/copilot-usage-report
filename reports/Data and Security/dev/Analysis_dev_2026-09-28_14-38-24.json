@@ -1,0 +1,170 @@
+{
+  "Metadata": {
+    "GeneratedBy": "Copilot Usage Report Tool v2.0",
+    "IncludeTestFiles": false,
+    "GeneratedAt": "2026-09-28 14:38:24",
+    "PowerShellVersion": "7.6.6",
+    "AnalysisMethod": "5-Tier Weighted Pattern Detection",
+    "ScriptVersion": "2.0.0"
+  },
+  "Users": [
+    {
+      "UserName": "Teja Sri Munnangi (Persistent Systems Inc)",
+      "UserEmail": "v-temunnangi@microsoft.com",
+      "TotalCommits": 1,
+      "AICommits": 0,
+      "HumanCommits": 1,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 0,
+      "HumanLinesDeleted": 63,
+      "TotalLinesAdded": 0,
+      "TotalLinesDeleted": 63,
+      "AIPercentage": 0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    }
+  ],
+  "TierDistribution": {
+    "Tier5_Low": 0,
+    "Human": 1,
+    "Tier3_High": 0,
+    "Tier4_Moderate": 0,
+    "Tier1_Definitive": 0,
+    "Tier2_VeryHigh": 0
+  },
+  "Branch": "dev",
+  "GeneratedAt": "2026-09-28 14:38:24",
+  "BranchStatistics": {
+    "Branch": "dev",
+    "TotalCommits": 1,
+    "AICommits": 0,
+    "HumanCommits": 1,
+    "TotalLinesAdded": 0.0,
+    "TotalLinesDeleted": 63.0,
+    "AILinesAdded": null,
+    "AILinesDeleted": null,
+    "Tier1Commits": 0,
+    "Tier2Commits": 0,
+    "Tier3Commits": 0,
+    "Tier4Commits": 0,
+    "Tier5Commits": 0,
+    "UniqueContributors": 1,
+    "AIPercentage": 0,
+    "HumanLinesAdded": 0.0
+  },
+  "AnalysisPeriod": {
+    "StartDate": "2026-06-01",
+    "FilterApplied": true,
+    "EndDate": "2026-06-30"
+  },
+  "ApplicationName": "Data and Security",
+  "FileTypeBreakdown": [
+    {
+      "Extension": "md",
+      "TotalLines": 25891,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 486
+    },
+    {
+      "Extension": "ps1",
+      "TotalLines": 21402,
+      "AILines": 507,
+      "AIPercentage": 2.37,
+      "FileCount": 558
+    },
+    {
+      "Extension": "json",
+      "TotalLines": 3079,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 51
+    },
+    {
+      "Extension": "yml",
+      "TotalLines": 2434,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 208
+    },
+    {
+      "Extension": "gitignore",
+      "TotalLines": 1257,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 6
+    },
+    {
+      "Extension": "other",
+      "TotalLines": 418,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 8
+    },
+    {
+      "Extension": "bicep",
+      "TotalLines": 379,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 24
+    },
+    {
+      "Extension": "yaml",
+      "TotalLines": 242,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 33
+    },
+    {
+      "Extension": "bicepparam",
+      "TotalLines": 196,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 32
+    },
+    {
+      "Extension": "md\"",
+      "TotalLines": 92,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "github/codeowners",
+      "TotalLines": 4,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "yml}",
+      "TotalLines": 2,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 2
+    }
+  ],
+  "AIAttributionOverride": {
+    "Applied": false,
+    "Notes": null,
+    "OverridePercentage": null
+  },
+  "Commits": {
+    "Hash": "0eb142ac8181182a5d5d5748c8f6dc86e60d490a",
+    "Author": "Teja Sri Munnangi (Persistent Systems Inc)",
+    "Date": "Sat Jun 27 01:39:28 2026 +0530",
+    "Message": "commit",
+    "LinesAdded": 0,
+    "LinesDeleted": 63,
+    "IsAI": false,
+    "ConfidenceScore": 0,
+    "ConfidenceTier": "Human Written",
+    "TierNumber": 0
+  }
+}

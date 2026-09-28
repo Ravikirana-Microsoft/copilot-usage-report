@@ -1,0 +1,212 @@
+{
+  "Metadata": {
+    "GeneratedBy": "Copilot Usage Report Tool v2.0",
+    "IncludeTestFiles": false,
+    "GeneratedAt": "2026-09-28 14:38:21",
+    "PowerShellVersion": "7.6.6",
+    "AnalysisMethod": "5-Tier Weighted Pattern Detection",
+    "ScriptVersion": "2.0.0"
+  },
+  "Users": [
+    {
+      "UserName": "AbdulMujeeb-2000",
+      "UserEmail": "abdulmujeeb21013@gmail.com",
+      "TotalCommits": 1,
+      "AICommits": 0,
+      "HumanCommits": 1,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 0,
+      "HumanLinesDeleted": 65,
+      "TotalLinesAdded": 0,
+      "TotalLinesDeleted": 65,
+      "AIPercentage": 0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    }
+  ],
+  "TierDistribution": {
+    "Tier5_Low": 0,
+    "Human": 1,
+    "Tier3_High": 0,
+    "Tier4_Moderate": 0,
+    "Tier1_Definitive": 0,
+    "Tier2_VeryHigh": 0
+  },
+  "Branch": "dev",
+  "GeneratedAt": "2026-09-28 14:38:21",
+  "BranchStatistics": {
+    "Branch": "dev",
+    "TotalCommits": 1,
+    "AICommits": 0,
+    "HumanCommits": 1,
+    "TotalLinesAdded": 0.0,
+    "TotalLinesDeleted": 65.0,
+    "AILinesAdded": null,
+    "AILinesDeleted": null,
+    "Tier1Commits": 0,
+    "Tier2Commits": 0,
+    "Tier3Commits": 0,
+    "Tier4Commits": 0,
+    "Tier5Commits": 0,
+    "UniqueContributors": 1,
+    "AIPercentage": 0,
+    "HumanLinesAdded": 0.0
+  },
+  "AnalysisPeriod": {
+    "StartDate": "2026-06-01",
+    "FilterApplied": true,
+    "EndDate": "2026-06-30"
+  },
+  "ApplicationName": "BYOC",
+  "FileTypeBreakdown": [
+    {
+      "Extension": "json",
+      "TotalLines": 213985,
+      "AILines": 20,
+      "AIPercentage": 0.01,
+      "FileCount": 201
+    },
+    {
+      "Extension": "bicep",
+      "TotalLines": 28255,
+      "AILines": 4408,
+      "AIPercentage": 15.6,
+      "FileCount": 481
+    },
+    {
+      "Extension": "md",
+      "TotalLines": 6076,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 286
+    },
+    {
+      "Extension": "sh",
+      "TotalLines": 4938,
+      "AILines": 180,
+      "AIPercentage": 3.65,
+      "FileCount": 151
+    },
+    {
+      "Extension": "py",
+      "TotalLines": 4131,
+      "AILines": 2032,
+      "AIPercentage": 49.19,
+      "FileCount": 300
+    },
+    {
+      "Extension": "yaml",
+      "TotalLines": 2135,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 31
+    },
+    {
+      "Extension": "ps1",
+      "TotalLines": 636,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 6
+    },
+    {
+      "Extension": "yml",
+      "TotalLines": 633,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 94
+    },
+    {
+      "Extension": "gitignore",
+      "TotalLines": 510,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 6
+    },
+    {
+      "Extension": "txt",
+      "TotalLines": 279,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 57
+    },
+    {
+      "Extension": "other",
+      "TotalLines": 126,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 6
+    },
+    {
+      "Extension": "sample",
+      "TotalLines": 54,
+      "AILines": 4,
+      "AIPercentage": 7.41,
+      "FileCount": 12
+    },
+    {
+      "Extension": "ts",
+      "TotalLines": 48,
+      "AILines": 48,
+      "AIPercentage": 100.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "env",
+      "TotalLines": 42,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 6
+    },
+    {
+      "Extension": "github/codeowners",
+      "TotalLines": 18,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 18
+    },
+    {
+      "Extension": "bicep}",
+      "TotalLines": 16,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 7
+    },
+    {
+      "Extension": "json}",
+      "TotalLines": 6,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 4
+    },
+    {
+      "Extension": "dockerfile",
+      "TotalLines": 4,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 4
+    }
+  ],
+  "AIAttributionOverride": {
+    "Applied": false,
+    "Notes": null,
+    "OverridePercentage": null
+  },
+  "Commits": {
+    "Hash": "30e8fcf064489289d171f061de58d60ad38746ec",
+    "Author": "AbdulMujeeb-2000",
+    "Date": "Sat Jun 27 01:38:51 2026 +0530",
+    "Message": "deleting the create-release.yml  (codfish) due to security issue",
+    "LinesAdded": 0,
+    "LinesDeleted": 65,
+    "IsAI": false,
+    "ConfidenceScore": 0,
+    "ConfidenceTier": "Human Written",
+    "TierNumber": 0
+  }
+}
