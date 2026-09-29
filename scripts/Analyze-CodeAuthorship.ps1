@@ -425,6 +425,11 @@ try {
 
     # Parse commits
     Write-Host "Parsing commits and analyzing patterns..." -ForegroundColor Gray
+
+    # Generated / non-code files excluded from BOTH the AI numerator and the line denominator,
+    # so the metric measures actual code (e.g. compiled ARM JSON, lock files, docs, images).
+    $nonCodeFilePattern = '\.(md|txt|json|xml|yml|yaml|png|jpg|gif|svg|ico|woff|ttf|eot|lock|sum|min\.js|min\.css)$'
+
     $commits = @()
     $currentCommit = $null
     $files = @()
@@ -457,21 +462,16 @@ try {
             $commitDate = $matches[4]
             $commitMessage = $matches[5]
             
-            # Quick check: Only fetch full message if message hints at AI (optimization)
-            $fullCommitMsg = $commitMessage
+            # Fetch the full commit body so AI co-author trailers (e.g. Copilot) are detected
+            # regardless of the subject line (Copilot PRs often use plain conventional-commit titles).
             $hasAITrailer = $false
-            
-            # Only fetch full commit body if the subject line suggests AI involvement
-            $shouldFetchFull = $commitMessage -match '(?i)copilot|AI|generated|automated|auto-fix'
-            if ($shouldFetchFull) {
-                $fullCommitMsg = git log -1 --format="%B" $commitHash 2>$null
-                
-                # Check for git trailers (Co-authored-by, etc.)
-                foreach ($trailer in $gitTrailers) {
-                    if ($fullCommitMsg -match $trailer) {
-                        $hasAITrailer = $true
-                        break
-                    }
+            $fullBody = git log -1 --format="%B" $commitHash 2>$null
+            $fullCommitMsg = if ($fullBody) { $fullBody } else { $commitMessage }
+
+            foreach ($trailer in $gitTrailers) {
+                if ($fullCommitMsg -match $trailer) {
+                    $hasAITrailer = $true
+                    break
                 }
             }
             
@@ -496,6 +496,8 @@ try {
                 Files = @()
                 LinesAdded = 0
                 LinesDeleted = 0
+                CodeLinesAdded = 0
+                CodeLinesDeleted = 0
                 IsAI = $false
                 ConfidenceScore = 0
                 ConfidenceTier = ""
@@ -528,6 +530,10 @@ try {
             
             $currentCommit.LinesAdded += $added
             $currentCommit.LinesDeleted += $deleted
+            if ($filePath -notmatch $nonCodeFilePattern) {
+                $currentCommit.CodeLinesAdded += $added
+                $currentCommit.CodeLinesDeleted += $deleted
+            }
         }
     }
     
@@ -633,7 +639,7 @@ try {
         
         foreach ($file in $commit.Files) {
             # Skip non-code files
-            if ($file.Path -match '\.(md|txt|json|xml|yml|yaml|png|jpg|gif|svg|ico|woff|ttf|eot|lock|sum|min\.js|min\.css)$') {
+            if ($file.Path -match $nonCodeFilePattern) {
                 continue
             }
             
@@ -862,6 +868,8 @@ try {
                     Message = $pc.Message
                     LinesAdded = $pc.LinesAdded
                     LinesDeleted = $pc.LinesDeleted
+                    CodeLinesAdded = if ($null -ne $pc.CodeLinesAdded) { $pc.CodeLinesAdded } else { $pc.LinesAdded }
+                    CodeLinesDeleted = if ($null -ne $pc.CodeLinesDeleted) { $pc.CodeLinesDeleted } else { $pc.LinesDeleted }
                     IsAI = $pc.IsAI
                     ConfidenceScore = $pc.ConfidenceScore
                     ConfidenceTier = $pc.ConfidenceTier
@@ -950,13 +958,13 @@ try {
         
         $user = $userStats[$userKey]
         $user.TotalCommits++
-        $user.TotalLinesAdded += $commit.LinesAdded
-        $user.TotalLinesDeleted += $commit.LinesDeleted
+        $user.TotalLinesAdded += $commit.CodeLinesAdded
+        $user.TotalLinesDeleted += $commit.CodeLinesDeleted
         
         if ($commit.IsAI) {
             $user.AICommits++
-            $user.AILinesAdded += $commit.LinesAdded
-            $user.AILinesDeleted += $commit.LinesDeleted
+            $user.AILinesAdded += $commit.CodeLinesAdded
+            $user.AILinesDeleted += $commit.CodeLinesDeleted
             $user.ConfidenceScores += $commit.ConfidenceScore
             
             # Track tier distribution
@@ -969,8 +977,8 @@ try {
             }
         } else {
             $user.HumanCommits++
-            $user.HumanLinesAdded += $commit.LinesAdded
-            $user.HumanLinesDeleted += $commit.LinesDeleted
+            $user.HumanLinesAdded += $commit.CodeLinesAdded
+            $user.HumanLinesDeleted += $commit.CodeLinesDeleted
         }
     }
     
@@ -990,10 +998,10 @@ try {
         TotalCommits = $commits.Count
         AICommits = ($commits | Where-Object IsAI).Count
         HumanCommits = ($commits | Where-Object { -not $_.IsAI }).Count
-        TotalLinesAdded = ($commits | Measure-Object -Property LinesAdded -Sum).Sum
-        TotalLinesDeleted = ($commits | Measure-Object -Property LinesDeleted -Sum).Sum
-        AILinesAdded = ($commits | Where-Object IsAI | Measure-Object -Property LinesAdded -Sum).Sum
-        AILinesDeleted = ($commits | Where-Object IsAI | Measure-Object -Property LinesDeleted -Sum).Sum
+        TotalLinesAdded = ($commits | Measure-Object -Property CodeLinesAdded -Sum).Sum
+        TotalLinesDeleted = ($commits | Measure-Object -Property CodeLinesDeleted -Sum).Sum
+        AILinesAdded = ($commits | Where-Object IsAI | Measure-Object -Property CodeLinesAdded -Sum).Sum
+        AILinesDeleted = ($commits | Where-Object IsAI | Measure-Object -Property CodeLinesDeleted -Sum).Sum
         Tier1Commits = ($commits | Where-Object { $_.TierNumber -eq 1 }).Count
         Tier2Commits = ($commits | Where-Object { $_.TierNumber -eq 2 }).Count
         Tier3Commits = ($commits | Where-Object { $_.TierNumber -eq 3 }).Count
@@ -1164,7 +1172,7 @@ try {
         # IMPROVEMENT: Add file type breakdown to JSON
         FileTypeBreakdown = @($fileTypeBreakdown)
         Users = $userStats.Values
-        Commits = $commits | Select-Object Hash, Author, Date, Message, LinesAdded, LinesDeleted, IsAI, ConfidenceScore, ConfidenceTier, TierNumber
+        Commits = $commits | Select-Object Hash, Author, Date, Message, LinesAdded, LinesDeleted, CodeLinesAdded, CodeLinesDeleted, IsAI, ConfidenceScore, ConfidenceTier, TierNumber
     }
     $jsonData | ConvertTo-Json -Depth 10 | Out-File -FilePath $jsonPath -Encoding UTF8
 
