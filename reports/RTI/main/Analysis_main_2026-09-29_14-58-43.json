@@ -1,0 +1,250 @@
+{
+  "ApplicationName": "RTI",
+  "AIAttributionOverride": {
+    "Notes": null,
+    "Applied": false,
+    "OverridePercentage": null
+  },
+  "BranchStatistics": {
+    "Branch": "main",
+    "TotalCommits": 1,
+    "AICommits": 0,
+    "HumanCommits": 1,
+    "TotalLinesAdded": 0.0,
+    "TotalLinesDeleted": 0.0,
+    "AILinesAdded": null,
+    "AILinesDeleted": null,
+    "Tier1Commits": 0,
+    "Tier2Commits": 0,
+    "Tier3Commits": 0,
+    "Tier4Commits": 0,
+    "Tier5Commits": 0,
+    "UniqueContributors": 1,
+    "AIPercentage": 0,
+    "HumanLinesAdded": 0.0,
+    "MergedPRs": null
+  },
+  "TierDistribution": {
+    "Tier3_High": 0,
+    "Tier1_Definitive": 0,
+    "Tier5_Low": 0,
+    "Tier2_VeryHigh": 0,
+    "Tier4_Moderate": 0,
+    "Human": 1
+  },
+  "AnalysisPeriod": {
+    "EndDate": "2026-09-29",
+    "FilterApplied": true,
+    "StartDate": "2026-09-01"
+  },
+  "Commits": {
+    "Hash": "82214c415a24d21cff4a1fcd373d2fab3d333118",
+    "Author": "KanchanN-Microsoft",
+    "Date": "Thu Sep 10 17:58:29 2026 +0530",
+    "Message": "fix: update fabric-data-agent-sdk version to 0.1.30a0",
+    "LinesAdded": 1,
+    "LinesDeleted": 1,
+    "CodeLinesAdded": 0,
+    "CodeLinesDeleted": 0,
+    "IsAI": false,
+    "ConfidenceScore": 0,
+    "ConfidenceTier": "Human Written",
+    "TierNumber": 0
+  },
+  "FileTypeBreakdown": [
+    {
+      "Extension": "csv",
+      "TotalLines": 1555392,
+      "AILines": 1555392,
+      "AIPercentage": 100.0,
+      "FileCount": 30
+    },
+    {
+      "Extension": "py",
+      "TotalLines": 104947,
+      "AILines": 90228,
+      "AIPercentage": 85.97,
+      "FileCount": 1337
+    },
+    {
+      "Extension": "md",
+      "TotalLines": 55693,
+      "AILines": 20676,
+      "AIPercentage": 37.12,
+      "FileCount": 1350
+    },
+    {
+      "Extension": "ps1",
+      "TotalLines": 36387,
+      "AILines": 36360,
+      "AIPercentage": 99.93,
+      "FileCount": 125
+    },
+    {
+      "Extension": "json",
+      "TotalLines": 34176,
+      "AILines": 6834,
+      "AIPercentage": 20.0,
+      "FileCount": 219
+    },
+    {
+      "Extension": "ipynb",
+      "TotalLines": 24963,
+      "AILines": 16296,
+      "AIPercentage": 65.28,
+      "FileCount": 89
+    },
+    {
+      "Extension": "kql",
+      "TotalLines": 9246,
+      "AILines": 9114,
+      "AIPercentage": 98.57,
+      "FileCount": 216
+    },
+    {
+      "Extension": "yml",
+      "TotalLines": 7804,
+      "AILines": 2424,
+      "AIPercentage": 31.06,
+      "FileCount": 437
+    },
+    {
+      "Extension": "gitignore",
+      "TotalLines": 3618,
+      "AILines": 90,
+      "AIPercentage": 2.49,
+      "FileCount": 24
+    },
+    {
+      "Extension": "bicep",
+      "TotalLines": 1711,
+      "AILines": 840,
+      "AIPercentage": 49.09,
+      "FileCount": 93
+    },
+    {
+      "Extension": "sh",
+      "TotalLines": 1142,
+      "AILines": 990,
+      "AIPercentage": 86.69,
+      "FileCount": 52
+    },
+    {
+      "Extension": "txt",
+      "TotalLines": 590,
+      "AILines": 180,
+      "AIPercentage": 30.51,
+      "FileCount": 149
+    },
+    {
+      "Extension": "dockerignore",
+      "TotalLines": 564,
+      "AILines": 564,
+      "AIPercentage": 100.0,
+      "FileCount": 6
+    },
+    {
+      "Extension": "ps1}",
+      "TotalLines": 462,
+      "AILines": 6,
+      "AIPercentage": 1.3,
+      "FileCount": 12
+    },
+    {
+      "Extension": "yaml",
+      "TotalLines": 461,
+      "AILines": 192,
+      "AIPercentage": 41.65,
+      "FileCount": 90
+    },
+    {
+      "Extension": "platform",
+      "TotalLines": 457,
+      "AILines": 360,
+      "AIPercentage": 78.77,
+      "FileCount": 100
+    },
+    {
+      "Extension": "other",
+      "TotalLines": 378,
+      "AILines": 126,
+      "AIPercentage": 33.33,
+      "FileCount": 18
+    },
+    {
+      "Extension": "flake8",
+      "TotalLines": 276,
+      "AILines": 276,
+      "AIPercentage": 100.0,
+      "FileCount": 12
+    },
+    {
+      "Extension": "github/codeowners",
+      "TotalLines": 149,
+      "AILines": 36,
+      "AIPercentage": 24.16,
+      "FileCount": 29
+    },
+    {
+      "Extension": "devcontainer/dockerfile",
+      "TotalLines": 20,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 5
+    },
+    {
+      "Extension": "env",
+      "TotalLines": 16,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 4
+    },
+    {
+      "Extension": "py}",
+      "TotalLines": 6,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 6
+    },
+    {
+      "Extension": "png",
+      "TotalLines": 6,
+      "AILines": 6,
+      "AIPercentage": 100.0,
+      "FileCount": 470
+    }
+  ],
+  "Metadata": {
+    "PowerShellVersion": "7.6.6",
+    "AnalysisMethod": "5-Tier Weighted Pattern Detection",
+    "IncludeTestFiles": false,
+    "GeneratedBy": "Copilot Usage Report Tool v2.0",
+    "ScriptVersion": "2.0.0",
+    "GeneratedAt": "2026-09-29 14:58:43"
+  },
+  "Users": [
+    {
+      "UserName": "KanchanN-Microsoft",
+      "UserEmail": "v-kanchann@microsoft.com",
+      "TotalCommits": 1,
+      "AICommits": 0,
+      "HumanCommits": 1,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 0,
+      "HumanLinesDeleted": 0,
+      "TotalLinesAdded": 0,
+      "TotalLinesDeleted": 0,
+      "AIPercentage": 0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    }
+  ],
+  "GeneratedAt": "2026-09-29 14:58:43",
+  "Branch": "main"
+}

@@ -2,8 +2,8 @@
 
 > Consolidated analysis across all branches using 5-Tier AI Detection Model
 
-**Generated:** 2026-09-29 11:02:07  
-**Analysis Period:** 2026-07-01 to 2026-09-28
+**Generated:** 2026-09-29 14:58:52  
+**Analysis Period:** 2026-09-01 to 2026-09-29
 
 ---
 
@@ -13,7 +13,7 @@
 |--------|-------|
 | **Application** | Deploy your AI application |
 | **Branches Analyzed** | 1 |
-| **Total Contributors** | 6 |
+| **Total Contributors** | 1 |
 | **Overall AI Usage** | **0%** |
 
 ---
@@ -24,9 +24,9 @@
 
 | Category | Lines | Percentage | Commits |
 |----------|-------|------------|---------|
-| **AI-Assisted** | 0 | 0% | 1 |
-| **Human-Written** | 30 | 100% | 9 |
-| **Total** | 30 | 100% | 10 |
+| **AI-Assisted** | 0 | 0% | 0 |
+| **Human-Written** | 0 | 100% | 1 |
+| **Total** | 0 | 100% | 1 |
 
 ### Visual Summary
 
@@ -41,12 +41,12 @@ Human-Written: ████████████████████ 100%
 
 | Tier | Confidence | Description | Commits | Percentage |
 |------|------------|-------------|---------|------------|
-| **Tier 1** | 99-100% | Definitive AI markers | 1 | 100% |
+| **Tier 1** | 99-100% | Definitive AI markers | 0 | 0% |
 | **Tier 2** | 90-98% | Very high confidence | 0 | 0% |
 | **Tier 3** | 80-89% | High confidence | 0 | 0% |
 | **Tier 4** | 70-79% | Moderate confidence | 0 | 0% |
 | **Tier 5** | 60-69% | Low confidence | 0 | 0% |
-| **Human** | <60% | No AI detected | 9 | 90% |
+| **Human** | <60% | No AI detected | 1 | 100% |
 
 ---
 
@@ -54,7 +54,7 @@ Human-Written: ████████████████████ 100%
 
 | Branch | Commits | AI Commits | AI Lines | AI % | T1 | T2 | T3 | T4 | T5 | Contributors |
 |--------|---------|------------|----------|------|----|----|----|----|-----|--------------|
-| **main** | 10 | 1 | 0 | 0% | 1 | 0 | 0 | 0 | 0 | 6 |
+| **main** | 1 | 0 |  | 0% | 0 | 0 | 0 | 0 | 0 | 1 |
 
 ---
 
