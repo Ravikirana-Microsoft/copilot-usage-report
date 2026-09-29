@@ -1,0 +1,406 @@
+{
+  "Users": [
+    {
+      "UserName": "Ayaz-Microsoft",
+      "UserEmail": "v-ayazkhan@microsoft.com",
+      "TotalCommits": 1,
+      "AICommits": 0,
+      "HumanCommits": 1,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 1,
+      "HumanLinesDeleted": 1,
+      "TotalLinesAdded": 1,
+      "TotalLinesDeleted": 1,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Prekshith DJ (Persistent Systems Limited)",
+      "UserEmail": "v-prekdj@microsoft.com",
+      "TotalCommits": 3,
+      "AICommits": 0,
+      "HumanCommits": 3,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 0,
+      "HumanLinesDeleted": 0,
+      "TotalLinesAdded": 0,
+      "TotalLinesDeleted": 0,
+      "AIPercentage": 0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    }
+  ],
+  "GeneratedAt": "2026-09-29 08:34:26",
+  "ApplicationName": "KM Generic",
+  "AnalysisPeriod": {
+    "StartDate": "2026-09-01",
+    "FilterApplied": true,
+    "EndDate": "2026-09-28"
+  },
+  "Branch": "dev",
+  "AIAttributionOverride": {
+    "OverridePercentage": null,
+    "Applied": false,
+    "Notes": null
+  },
+  "BranchStatistics": {
+    "Branch": "dev",
+    "TotalCommits": 4,
+    "AICommits": 0,
+    "HumanCommits": 4,
+    "TotalLinesAdded": 1.0,
+    "TotalLinesDeleted": 1.0,
+    "AILinesAdded": null,
+    "AILinesDeleted": null,
+    "Tier1Commits": 0,
+    "Tier2Commits": 0,
+    "Tier3Commits": 0,
+    "Tier4Commits": 0,
+    "Tier5Commits": 0,
+    "UniqueContributors": 2,
+    "AIPercentage": 0.0,
+    "HumanLinesAdded": 1.0,
+    "MergedPRs": null
+  },
+  "Metadata": {
+    "IncludeTestFiles": false,
+    "AnalysisMethod": "5-Tier Weighted Pattern Detection",
+    "GeneratedBy": "Copilot Usage Report Tool v2.0",
+    "PowerShellVersion": "7.6.6",
+    "GeneratedAt": "2026-09-29 08:34:26",
+    "ScriptVersion": "2.0.0"
+  },
+  "TierDistribution": {
+    "Tier2_VeryHigh": 0,
+    "Tier3_High": 0,
+    "Human": 4,
+    "Tier1_Definitive": 0,
+    "Tier5_Low": 0,
+    "Tier4_Moderate": 0
+  },
+  "FileTypeBreakdown": [
+    {
+      "Extension": "json",
+      "TotalLines": 4804972,
+      "AILines": 905110,
+      "AIPercentage": 18.84,
+      "FileCount": 1007
+    },
+    {
+      "Extension": "py",
+      "TotalLines": 100165,
+      "AILines": 67115,
+      "AIPercentage": 67.0,
+      "FileCount": 2909
+    },
+    {
+      "Extension": "bicep",
+      "TotalLines": 65922,
+      "AILines": 31007,
+      "AIPercentage": 47.04,
+      "FileCount": 1330
+    },
+    {
+      "Extension": "sh",
+      "TotalLines": 34657,
+      "AILines": 1424,
+      "AIPercentage": 4.11,
+      "FileCount": 911
+    },
+    {
+      "Extension": "md",
+      "TotalLines": 27384,
+      "AILines": 2475,
+      "AIPercentage": 9.04,
+      "FileCount": 1167
+    },
+    {
+      "Extension": "yml",
+      "TotalLines": 23573,
+      "AILines": 2030,
+      "AIPercentage": 8.61,
+      "FileCount": 1188
+    },
+    {
+      "Extension": "tsx",
+      "TotalLines": 22112,
+      "AILines": 11801,
+      "AIPercentage": 53.37,
+      "FileCount": 591
+    },
+    {
+      "Extension": "ts",
+      "TotalLines": 17490,
+      "AILines": 15282,
+      "AIPercentage": 87.38,
+      "FileCount": 367
+    },
+    {
+      "Extension": "ps1",
+      "TotalLines": 13541,
+      "AILines": 6940,
+      "AIPercentage": 51.25,
+      "FileCount": 386
+    },
+    {
+      "Extension": "yaml",
+      "TotalLines": 4729,
+      "AILines": 110,
+      "AIPercentage": 2.33,
+      "FileCount": 180
+    },
+    {
+      "Extension": "css",
+      "TotalLines": 2512,
+      "AILines": 1434,
+      "AIPercentage": 57.09,
+      "FileCount": 65
+    },
+    {
+      "Extension": "txt",
+      "TotalLines": 1012,
+      "AILines": 292,
+      "AIPercentage": 28.85,
+      "FileCount": 275
+    },
+    {
+      "Extension": "svg",
+      "TotalLines": 797,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 36
+    },
+    {
+      "Extension": "gitignore",
+      "TotalLines": 766,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 16
+    },
+    {
+      "Extension": "cmd",
+      "TotalLines": 619,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 21
+    },
+    {
+      "Extension": "md}",
+      "TotalLines": 408,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 14
+    },
+    {
+      "Extension": "dockerfile",
+      "TotalLines": 356,
+      "AILines": 23,
+      "AIPercentage": 6.46,
+      "FileCount": 51
+    },
+    {
+      "Extension": "other",
+      "TotalLines": 354,
+      "AILines": 15,
+      "AIPercentage": 4.24,
+      "FileCount": 26
+    },
+    {
+      "Extension": "conf",
+      "TotalLines": 103,
+      "AILines": 27,
+      "AIPercentage": 26.21,
+      "FileCount": 8
+    },
+    {
+      "Extension": "py}",
+      "TotalLines": 100,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 10
+    },
+    {
+      "Extension": "env",
+      "TotalLines": 77,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 31
+    },
+    {
+      "Extension": "ipynb",
+      "TotalLines": 72,
+      "AILines": 28,
+      "AIPercentage": 38.89,
+      "FileCount": 24
+    },
+    {
+      "Extension": "sample",
+      "TotalLines": 63,
+      "AILines": 2,
+      "AIPercentage": 3.17,
+      "FileCount": 28
+    },
+    {
+      "Extension": "yml}",
+      "TotalLines": 56,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 4
+    },
+    {
+      "Extension": "dockerignore",
+      "TotalLines": 40,
+      "AILines": 4,
+      "AIPercentage": 10.0,
+      "FileCount": 9
+    },
+    {
+      "Extension": "bicep}",
+      "TotalLines": 20,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 10
+    },
+    {
+      "Extension": "devcontainer/dockerfile",
+      "TotalLines": 20,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 8
+    },
+    {
+      "Extension": "html",
+      "TotalLines": 17,
+      "AILines": 1,
+      "AIPercentage": 5.88,
+      "FileCount": 3
+    },
+    {
+      "Extension": "github/codeowners",
+      "TotalLines": 17,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 17
+    },
+    {
+      "Extension": "flake8",
+      "TotalLines": 5,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 1
+    },
+    {
+      "Extension": "dockerfile}",
+      "TotalLines": 5,
+      "AILines": 5,
+      "AIPercentage": 100.0,
+      "FileCount": 1
+    },
+    {
+      "Extension": "json}",
+      "TotalLines": 4,
+      "AILines": 4,
+      "AIPercentage": 100.0,
+      "FileCount": 4
+    },
+    {
+      "Extension": "js",
+      "TotalLines": 3,
+      "AILines": 3,
+      "AIPercentage": 100.0,
+      "FileCount": 1
+    },
+    {
+      "Extension": "ps1}",
+      "TotalLines": 3,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 3
+    },
+    {
+      "Extension": "npmrc",
+      "TotalLines": 3,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 3
+    },
+    {
+      "Extension": "production",
+      "TotalLines": 1,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 1
+    }
+  ],
+  "Commits": [
+    {
+      "Hash": "fb7108e46f4498a19ac528b1d15ac1de7b7eab79",
+      "Author": "Prekshith DJ (Persistent Systems Limited)",
+      "Date": "Mon Sep 21 13:04:35 2026 +0530",
+      "Message": "Fix lockfile registry URLs",
+      "LinesAdded": 4,
+      "LinesDeleted": 4,
+      "CodeLinesAdded": 0,
+      "CodeLinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "a18106b00a5cec2c6548417cdda12b354506ac6a",
+      "Author": "Prekshith DJ (Persistent Systems Limited)",
+      "Date": "Mon Sep 21 12:41:50 2026 +0530",
+      "Message": "Resolved the dependabot issues",
+      "LinesAdded": 15,
+      "LinesDeleted": 15,
+      "CodeLinesAdded": 0,
+      "CodeLinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "966df90e32684e8e4aee18b6bfaa998fca7f6883",
+      "Author": "Ayaz-Microsoft",
+      "Date": "Fri Sep 18 18:35:45 2026 +0530",
+      "Message": "fix dev container opening issue",
+      "LinesAdded": 1,
+      "LinesDeleted": 1,
+      "CodeLinesAdded": 1,
+      "CodeLinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "dc1ac1ea534bae46b471351a4b44a316244f6584",
+      "Author": "Prekshith DJ (Persistent Systems Limited)",
+      "Date": "Wed Sep 9 18:29:32 2026 +0530",
+      "Message": "Resolved the dependabot issues",
+      "LinesAdded": 4,
+      "LinesDeleted": 4,
+      "CodeLinesAdded": 0,
+      "CodeLinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    }
+  ]
+}

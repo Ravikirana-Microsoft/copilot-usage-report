@@ -1,0 +1,4 @@
+"UserName","UserEmail","TotalCommits","AICommits","HumanCommits","AILinesAdded","HumanLinesAdded","TotalLinesAdded","AIPercentage","AvgConfidenceScore","Tier1Commits","Tier2Commits","Tier3Commits","Tier4Commits","Tier5Commits"
+"Akhileswara-Microsoft","v-golnaidu@microsoft.com","11","4","7","12","69","81","14.81","100","4","0","0","0","0"
+"VishalSh-Microsoft","v-shindevis@microsoft.com","5","1","4","183","169","352","51.99","75","0","0","0","1","0"
+"Ayaz-Microsoft","v-ayazkhan@microsoft.com","4","0","4","0","16","16","0","0","0","0","0","0","0"
