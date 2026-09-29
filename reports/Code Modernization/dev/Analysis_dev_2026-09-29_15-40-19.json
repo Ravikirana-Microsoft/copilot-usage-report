@@ -1,0 +1,604 @@
+{
+  "FileTypeBreakdown": [
+    {
+      "Extension": "json",
+      "TotalLines": 310742,
+      "AILines": 404,
+      "AIPercentage": 0.13,
+      "FileCount": 409
+    },
+    {
+      "Extension": "yml",
+      "TotalLines": 36902,
+      "AILines": 440,
+      "AIPercentage": 1.19,
+      "FileCount": 1299
+    },
+    {
+      "Extension": "py",
+      "TotalLines": 27168,
+      "AILines": 18114,
+      "AIPercentage": 66.67,
+      "FileCount": 1155
+    },
+    {
+      "Extension": "md",
+      "TotalLines": 21374,
+      "AILines": 52,
+      "AIPercentage": 0.24,
+      "FileCount": 650
+    },
+    {
+      "Extension": "bicep",
+      "TotalLines": 17321,
+      "AILines": 1878,
+      "AIPercentage": 10.84,
+      "FileCount": 528
+    },
+    {
+      "Extension": "pdf",
+      "TotalLines": 4210,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 5
+    },
+    {
+      "Extension": "tsx",
+      "TotalLines": 2639,
+      "AILines": 1518,
+      "AIPercentage": 57.52,
+      "FileCount": 448
+    },
+    {
+      "Extension": "sql",
+      "TotalLines": 1825,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 125
+    },
+    {
+      "Extension": "sh",
+      "TotalLines": 1184,
+      "AILines": 334,
+      "AIPercentage": 28.21,
+      "FileCount": 39
+    },
+    {
+      "Extension": "ps1",
+      "TotalLines": 1164,
+      "AILines": 388,
+      "AIPercentage": 33.33,
+      "FileCount": 11
+    },
+    {
+      "Extension": "other",
+      "TotalLines": 900,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 66
+    },
+    {
+      "Extension": "yaml",
+      "TotalLines": 860,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 94
+    },
+    {
+      "Extension": "gitignore",
+      "TotalLines": 525,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 11
+    },
+    {
+      "Extension": "txt",
+      "TotalLines": 334,
+      "AILines": 4,
+      "AIPercentage": 1.2,
+      "FileCount": 93
+    },
+    {
+      "Extension": "cs",
+      "TotalLines": 216,
+      "AILines": 96,
+      "AIPercentage": 44.44,
+      "FileCount": 36
+    },
+    {
+      "Extension": "toml",
+      "TotalLines": 145,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 10
+    },
+    {
+      "Extension": "sample",
+      "TotalLines": 101,
+      "AILines": 10,
+      "AIPercentage": 9.9,
+      "FileCount": 22
+    },
+    {
+      "Extension": "yml}",
+      "TotalLines": 74,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 5
+    },
+    {
+      "Extension": "ts",
+      "TotalLines": 71,
+      "AILines": 15,
+      "AIPercentage": 21.13,
+      "FileCount": 11
+    },
+    {
+      "Extension": "env",
+      "TotalLines": 42,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 6
+    },
+    {
+      "Extension": "jsx",
+      "TotalLines": 36,
+      "AILines": 12,
+      "AIPercentage": 33.33,
+      "FileCount": 36
+    },
+    {
+      "Extension": "dockerfile",
+      "TotalLines": 30,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 18
+    },
+    {
+      "Extension": "github/codeowners",
+      "TotalLines": 24,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 24
+    },
+    {
+      "Extension": "devcontainer/dockerfile",
+      "TotalLines": 20,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 5
+    },
+    {
+      "Extension": "js",
+      "TotalLines": 18,
+      "AILines": 12,
+      "AIPercentage": 66.67,
+      "FileCount": 42
+    },
+    {
+      "Extension": "dockerignore",
+      "TotalLines": 13,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 12
+    },
+    {
+      "Extension": "ini",
+      "TotalLines": 12,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 6
+    },
+    {
+      "Extension": "md}",
+      "TotalLines": 6,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 3
+    }
+  ],
+  "ApplicationName": "Code Modernization",
+  "TierDistribution": {
+    "Tier4_Moderate": 0,
+    "Tier3_High": 0,
+    "Tier1_Definitive": 0,
+    "Tier5_Low": 0,
+    "Human": 18,
+    "Tier2_VeryHigh": 1
+  },
+  "BranchStatistics": {
+    "Branch": "dev",
+    "TotalCommits": 19,
+    "AICommits": 1,
+    "HumanCommits": 18,
+    "TotalLinesAdded": 485.0,
+    "TotalLinesDeleted": 131.0,
+    "AILinesAdded": 480.0,
+    "AILinesDeleted": 106.0,
+    "Tier1Commits": 0,
+    "Tier2Commits": 1,
+    "Tier3Commits": 0,
+    "Tier4Commits": 0,
+    "Tier5Commits": 0,
+    "UniqueContributors": 4,
+    "AIPercentage": 98.97,
+    "HumanLinesAdded": 5.0,
+    "MergedPRs": null
+  },
+  "GeneratedAt": "2026-09-29 15:40:19",
+  "AIAttributionOverride": {
+    "Notes": null,
+    "OverridePercentage": null,
+    "Applied": false
+  },
+  "Metadata": {
+    "GeneratedAt": "2026-09-29 15:40:19",
+    "AnalysisMethod": "5-Tier Weighted Pattern Detection",
+    "ScriptVersion": "2.0.0",
+    "PowerShellVersion": "7.6.6",
+    "IncludeTestFiles": false,
+    "GeneratedBy": "Copilot Usage Report Tool v2.0"
+  },
+  "Users": [
+    {
+      "UserName": "VishalSh-Microsoft",
+      "UserEmail": "v-shindevis@microsoft.com",
+      "TotalCommits": 9,
+      "AICommits": 1,
+      "HumanCommits": 8,
+      "AILinesAdded": 480,
+      "AILinesDeleted": 106,
+      "HumanLinesAdded": 0,
+      "HumanLinesDeleted": 20,
+      "TotalLinesAdded": 480,
+      "TotalLinesDeleted": 126,
+      "AIPercentage": 100.0,
+      "AvgConfidenceScore": 98.0,
+      "ConfidenceScores": [
+        98
+      ],
+      "Tier1Commits": 0,
+      "Tier2Commits": 1,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Ragini-Microsoft",
+      "UserEmail": "v-raginich@microsoft.com",
+      "TotalCommits": 5,
+      "AICommits": 0,
+      "HumanCommits": 5,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 4,
+      "HumanLinesDeleted": 4,
+      "TotalLinesAdded": 4,
+      "TotalLinesDeleted": 4,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Niraj Chaudhari (Persistent Systems Limited)",
+      "UserEmail": "v-cniraj@microsoft.com",
+      "TotalCommits": 4,
+      "AICommits": 0,
+      "HumanCommits": 4,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 1,
+      "HumanLinesDeleted": 1,
+      "TotalLinesAdded": 1,
+      "TotalLinesDeleted": 1,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Abdul-Microsoft",
+      "UserEmail": "v-abduta@microsoft.com",
+      "TotalCommits": 1,
+      "AICommits": 0,
+      "HumanCommits": 1,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 0,
+      "HumanLinesDeleted": 0,
+      "TotalLinesAdded": 0,
+      "TotalLinesDeleted": 0,
+      "AIPercentage": 0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    }
+  ],
+  "Branch": "dev",
+  "AnalysisPeriod": {
+    "StartDate": "2026-07-01",
+    "EndDate": "2026-07-31",
+    "FilterApplied": true
+  },
+  "Commits": [
+    {
+      "Hash": "65eebfac906cd52c927bfb13c2dfe1afb7f01aa5",
+      "Author": "VishalSh-Microsoft",
+      "Date": "Thu Jul 23 16:38:54 2026 +0530",
+      "Message": "fix: improve web app URL retrieval in postprovision hooks",
+      "LinesAdded": 6,
+      "LinesDeleted": 2,
+      "CodeLinesAdded": 0,
+      "CodeLinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "59b9f4636dcc3cffeeb13a1ec2dea2f06e79b551",
+      "Author": "VishalSh-Microsoft",
+      "Date": "Thu Jul 23 15:43:22 2026 +0530",
+      "Message": "fix: update script paths for consistency in deployment hooks",
+      "LinesAdded": 3,
+      "LinesDeleted": 3,
+      "CodeLinesAdded": 0,
+      "CodeLinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "ecbd315ae7ac6bdaa730cfd4f080de5592ead272",
+      "Author": "VishalSh-Microsoft",
+      "Date": "Thu Jul 23 15:30:10 2026 +0530",
+      "Message": "fix:  added post-deployment script/command visible in the terminal after deployment",
+      "LinesAdded": 29,
+      "LinesDeleted": 0,
+      "CodeLinesAdded": 0,
+      "CodeLinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "e9f4f8c1cd5a08da636f1cd22a3a38f7fbc2a8df",
+      "Author": "Niraj Chaudhari (Persistent Systems Limited)",
+      "Date": "Fri Jul 17 14:20:04 2026 +0530",
+      "Message": "Add posix in azure.yaml file",
+      "LinesAdded": 10,
+      "LinesDeleted": 1,
+      "CodeLinesAdded": 0,
+      "CodeLinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "4ac5805c62754196cb910c0ae32ea52d01d4299f",
+      "Author": "VishalSh-Microsoft",
+      "Date": "Thu Jul 16 18:36:24 2026 +0530",
+      "Message": "fix: remove redundant deployment prompts and duration details from Deployment Guide",
+      "LinesAdded": 0,
+      "LinesDeleted": 9,
+      "CodeLinesAdded": 0,
+      "CodeLinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "62ce75e32f88effd1380a54828f280ad3a7408ea",
+      "Author": "VishalSh-Microsoft",
+      "Date": "Thu Jul 16 18:29:23 2026 +0530",
+      "Message": "fix: update template hashes and remove redundant entries in main.json",
+      "LinesAdded": 3,
+      "LinesDeleted": 41,
+      "CodeLinesAdded": 0,
+      "CodeLinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "3dba2a7412822ef642c6b0ab943b53d7aede6081",
+      "Author": "VishalSh-Microsoft",
+      "Date": "Thu Jul 16 15:56:40 2026 +0530",
+      "Message": "fix: enhance deployment guide with detailed prompts and expected duration for `azd up`",
+      "LinesAdded": 10,
+      "LinesDeleted": 10,
+      "CodeLinesAdded": 0,
+      "CodeLinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "a8f01326d02a35813984d88e1f8229634c016e94",
+      "Author": "VishalSh-Microsoft",
+      "Date": "Thu Jul 16 15:49:57 2026 +0530",
+      "Message": "fix: clarify deployment steps and expected duration in the Deployment Guide",
+      "LinesAdded": 2,
+      "LinesDeleted": 2,
+      "CodeLinesAdded": 0,
+      "CodeLinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "2854a95f492774d0d31e579f356332dbc6955c33",
+      "Author": "VishalSh-Microsoft",
+      "Date": "Thu Jul 16 14:24:37 2026 +0530",
+      "Message": "fix: update GPT model reference and remove unused AVM telemetry resource from container registry module",
+      "LinesAdded": 1,
+      "LinesDeleted": 21,
+      "CodeLinesAdded": 0,
+      "CodeLinesDeleted": 20,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "0391b892473690defd32d84af0b8c87fb50cb46c",
+      "Author": "Niraj Chaudhari (Persistent Systems Limited)",
+      "Date": "Thu Jul 16 12:39:37 2026 +0530",
+      "Message": "Update Owners ID for Vinay and Prajwal",
+      "LinesAdded": 1,
+      "LinesDeleted": 1,
+      "CodeLinesAdded": 1,
+      "CodeLinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "90c3b510647401ffa29b05bd2e65695a27c6af73",
+      "Author": "Abdul-Microsoft",
+      "Date": "Wed Jul 15 21:30:01 2026 +0530",
+      "Message": "reorder the deployment guide based on copilot review",
+      "LinesAdded": 9,
+      "LinesDeleted": 10,
+      "CodeLinesAdded": 0,
+      "CodeLinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "0b51ae83e6cfb879a79642673903bbfd331dd561",
+      "Author": "Niraj Chaudhari (Persistent Systems Limited)",
+      "Date": "Tue Jul 14 19:42:30 2026 +0530",
+      "Message": "Posix not required",
+      "LinesAdded": 0,
+      "LinesDeleted": 10,
+      "CodeLinesAdded": 0,
+      "CodeLinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "2c83751a2abc08a22bd472e7b8b4267362a602de",
+      "Author": "Niraj Chaudhari (Persistent Systems Limited)",
+      "Date": "Tue Jul 14 15:35:22 2026 +0530",
+      "Message": "update azure.yaml to show github issue URL",
+      "LinesAdded": 24,
+      "LinesDeleted": 0,
+      "CodeLinesAdded": 0,
+      "CodeLinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "0029832821a3567f3d5692eeb974d4df8079cbcf",
+      "Author": "VishalSh-Microsoft",
+      "Date": "Tue Jul 14 12:42:39 2026 +0530",
+      "Message": "feat: add Azure Container Registry module, enhance deployment scripts, and update model configuration",
+      "LinesAdded": 690,
+      "LinesDeleted": 3321,
+      "CodeLinesAdded": 480,
+      "CodeLinesDeleted": 106,
+      "IsAI": true,
+      "ConfidenceScore": 98,
+      "ConfidenceTier": "Tier 2: Very High Confidence (90-98 percent)",
+      "TierNumber": 2
+    },
+    {
+      "Hash": "a56cba6b099ce80c15a08f8122cbcf69171cc35b",
+      "Author": "Ragini-Microsoft",
+      "Date": "Fri Jul 3 17:20:54 2026 +0530",
+      "Message": "docs updated",
+      "LinesAdded": 10,
+      "LinesDeleted": 9,
+      "CodeLinesAdded": 0,
+      "CodeLinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "765c0913a14225c211e04e2ac91d0ae6765dca0a",
+      "Author": "Ragini-Microsoft",
+      "Date": "Fri Jul 3 17:07:21 2026 +0530",
+      "Message": "rebuilt main.json",
+      "LinesAdded": 3,
+      "LinesDeleted": 3,
+      "CodeLinesAdded": 0,
+      "CodeLinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "d9dd9f72de9ec76f18b795303ec8f18accd16498",
+      "Author": "Ragini-Microsoft",
+      "Date": "Fri Jul 3 17:05:09 2026 +0530",
+      "Message": "updated gpt model and version",
+      "LinesAdded": 4,
+      "LinesDeleted": 4,
+      "CodeLinesAdded": 4,
+      "CodeLinesDeleted": 4,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "b340bba4f0c214a976b64ab0bd2b26a4aa77f8fe",
+      "Author": "Ragini-Microsoft",
+      "Date": "Fri Jul 3 17:00:23 2026 +0530",
+      "Message": "updated the readme",
+      "LinesAdded": 24,
+      "LinesDeleted": 12,
+      "CodeLinesAdded": 0,
+      "CodeLinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "71af9c75219ff101bef96607542a2fbd8bd1dd62",
+      "Author": "Ragini-Microsoft",
+      "Date": "Fri Jul 3 16:44:14 2026 +0530",
+      "Message": "reverted azure.yaml changes",
+      "LinesAdded": 3,
+      "LinesDeleted": 18,
+      "CodeLinesAdded": 0,
+      "CodeLinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    }
+  ]
+}
