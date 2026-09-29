@@ -295,7 +295,13 @@ try {
         @{ Pattern = 'mock_\w+\s*=\s*MagicMock'; Weight = 18 },
         @{ Pattern = 'assert_called_once_with\s*\('; Weight = 12 },
         @{ Pattern = 'return_value\s*=\s*\{'; Weight = 15 },
-        @{ Pattern = 'side_effect\s*=\s*\['; Weight = 15 }
+        @{ Pattern = 'side_effect\s*=\s*\['; Weight = 15 },
+
+        # Infrastructure / scripting AI signatures (PowerShell, Bicep, shell, Azure CLI)
+        @{ Pattern = '#\s*[\u2500-\u257F]{2,}'; Weight = 20 },              # Copilot box-drawing comment separators (── ──)
+        @{ Pattern = 'az\s+[\w-]+.*--query\s+"[^"]+"\s+-o\s+tsv'; Weight = 18 }, # Azure CLI query piped to tsv
+        @{ Pattern = 'if\s*\(\s*\$LASTEXITCODE\s+-ne\s+0'; Weight = 15 },  # native exit-code guard
+        @{ Pattern = 'function\s+[\w-]+\s*\(\s*\[[\w\[\]]+\]\$'; Weight = 15 } # typed PowerShell helper functions
     )
 
     # Tier 3 (80-89%): High confidence patterns - Weight: 8-14
@@ -332,7 +338,15 @@ try {
         
         # HTTP client patterns (AI loves axios/fetch abstractions)
         @{ Pattern = 'httpClient\.\w+\s*\('; Weight = 10 },
-        @{ Pattern = 'axiosInstance\.\w+\s*\('; Weight = 10 }
+        @{ Pattern = 'axiosInstance\.\w+\s*\('; Weight = 10 },
+
+        # Infrastructure / scripting patterns
+        @{ Pattern = '\[CmdletBinding\('; Weight = 12 },
+        @{ Pattern = '\[Parameter\(Mandatory'; Weight = 10 },
+        @{ Pattern = 'Get-Command\s+[\w-]+\s+-ErrorAction\s+SilentlyContinue'; Weight = 10 },
+        @{ Pattern = '\$ErrorActionPreference\s*=\s*[''"]Stop'; Weight = 8 },
+        @{ Pattern = '@description\('; Weight = 10 },                        # Bicep param/resource decorator
+        @{ Pattern = 'resource\s+\w+\s+''Microsoft\.'; Weight = 10 }         # Bicep resource declaration
     )
 
     # Tier 4 (70-79%): Moderate indicators - Weight: 4-7
@@ -365,7 +379,14 @@ try {
         @{ Pattern = 'import\s*\{[^}]*createSlice[^}]*\}'; Weight = 6 },
         @{ Pattern = 'export\s+const\s+\w+Slice\s*='; Weight = 7 },
         @{ Pattern = 'memo\(\s*\(\s*\{'; Weight = 5 },
-        @{ Pattern = 'useCallback\(\s*async'; Weight = 6 }
+        @{ Pattern = 'useCallback\(\s*async'; Weight = 6 },
+
+        # Infrastructure / scripting patterns
+        @{ Pattern = 'Write-Host\s+.*-ForegroundColor'; Weight = 5 },
+        @{ Pattern = '-ErrorAction\s+SilentlyContinue'; Weight = 5 },
+        @{ Pattern = 'set\s+-euo\s+pipefail'; Weight = 7 },
+        @{ Pattern = 'output\s+\w+\s+(string|int|bool|object|array)\s*='; Weight = 5 }, # Bicep output
+        @{ Pattern = 'param\s+\w+\s+(string|int|bool|object|array)'; Weight = 5 }      # Bicep param
     )
 
     # Tier 5 (60-69%): Weak indicators - Weight: 2-3
@@ -381,7 +402,12 @@ try {
         @{ Pattern = '@property'; Weight = 2 },
         @{ Pattern = 'f"[^"]*\{\w+\}[^"]*"'; Weight = 2 },
         @{ Pattern = 'List\[\w+\]'; Weight = 2 },
-        @{ Pattern = 'Dict\[\w+,\s*\w+\]'; Weight = 2 }
+        @{ Pattern = 'Dict\[\w+,\s*\w+\]'; Weight = 2 },
+
+        # Infrastructure / scripting patterns
+        @{ Pattern = '\[string\]\$\w+'; Weight = 3 },   # typed PowerShell params
+        @{ Pattern = '2>\$null'; Weight = 2 },            # PowerShell error redirection
+        @{ Pattern = 'az\s+[\w-]+\s+[\w-]+'; Weight = 2 } # Azure CLI invocations
     )
 
     # Scoring thresholds (weighted)
