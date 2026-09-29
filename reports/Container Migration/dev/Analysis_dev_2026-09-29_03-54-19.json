@@ -1,0 +1,769 @@
+{
+  "TierDistribution": {
+    "Tier2_VeryHigh": 0,
+    "Tier5_Low": 0,
+    "Tier4_Moderate": 0,
+    "Tier3_High": 0,
+    "Tier1_Definitive": 1,
+    "Human": 32
+  },
+  "Commits": [
+    {
+      "Hash": "c82168ec2c3e632fe411822bc55bc824876f5625",
+      "Author": "KanchanN-Microsoft",
+      "Date": "Wed Jul 22 15:57:45 2026 +0530",
+      "Message": "removed trailing space",
+      "LinesAdded": 1,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "e9a9831eaef4b428223893a34449ab5a8041c49c",
+      "Author": "KanchanN-Microsoft",
+      "Date": "Wed Jul 22 15:51:34 2026 +0530",
+      "Message": "Remove posix preprovision hook from azure.yaml",
+      "LinesAdded": 0,
+      "LinesDeleted": 10,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "dc18b146e66900f4ace811c1cb8b730fa662ea18",
+      "Author": "KanchanN-Microsoft",
+      "Date": "Wed Jul 22 15:46:25 2026 +0530",
+      "Message": "resolved co-pilot comments",
+      "LinesAdded": 4,
+      "LinesDeleted": 7,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "0e2abfd050d1999da8753081b3c454848b713980",
+      "Author": "KanchanN-Microsoft",
+      "Date": "Wed Jul 22 15:31:17 2026 +0530",
+      "Message": "corrected script file name",
+      "LinesAdded": 2,
+      "LinesDeleted": 2,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "315ab214ba8abdc634cba5dac0ccc651b786083d",
+      "Author": "KanchanN-Microsoft",
+      "Date": "Tue Jul 21 11:14:09 2026 +0530",
+      "Message": "Enhance preprovision and postdeploy hooks and instructions for building and pushing container images.",
+      "LinesAdded": 30,
+      "LinesDeleted": 5,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "8a591b4fbf328e99a8293f8de305ea2c94843d59",
+      "Author": "Akhileswara-Microsoft",
+      "Date": "Fri Jul 17 17:55:27 2026 +0530",
+      "Message": "fix: update container registry module to reference VNet and DNS zone outputs directly",
+      "LinesAdded": 4,
+      "LinesDeleted": 4,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "61d25ef375e9bc50baf18c7ce045b984ef2abf17",
+      "Author": "chaudhariniraj",
+      "Date": "Fri Jul 17 13:43:45 2026 +0530",
+      "Message": "Potential fix for pull request finding",
+      "LinesAdded": 6,
+      "LinesDeleted": 6,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "85c298df32b7b7202779c49979838b25b11bc16b",
+      "Author": "Niraj Chaudhari (Persistent Systems Limited)",
+      "Date": "Fri Jul 17 13:17:27 2026 +0530",
+      "Message": "Add posix in azure.yaml file",
+      "LinesAdded": 10,
+      "LinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "a64dcffb4f05406005943cda917e10c9e1bb4984",
+      "Author": "Priyanka Singhal (Persistent Systems Limited)",
+      "Date": "Fri Jul 17 12:34:03 2026 +0530",
+      "Message": "remove local deployment changes",
+      "LinesAdded": 1,
+      "LinesDeleted": 1733,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "5f0dd5ef9f8ee696a458d304dcc3dd675e0e0a6e",
+      "Author": "Akhileswara-Microsoft",
+      "Date": "Fri Jul 17 10:04:30 2026 +0530",
+      "Message": "fix: update resource ID references for private networking in container registry module",
+      "LinesAdded": 11,
+      "LinesDeleted": 11,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "0dc96ec3c39cb301b2ed68c583e3a32891358aac",
+      "Author": "Akhileswara-Microsoft",
+      "Date": "Fri Jul 17 09:01:59 2026 +0530",
+      "Message": "Potential fix for pull request finding",
+      "LinesAdded": 1,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "196fc3e650c850c88b3c5f73a5b63dae186a06bd",
+      "Author": "Akhileswara-Microsoft",
+      "Date": "Fri Jul 17 09:01:46 2026 +0530",
+      "Message": "Potential fix for pull request finding",
+      "LinesAdded": 1,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "ff1cd6f40502ecced4e012009c338b4ddf663a96",
+      "Author": "Akhileswara-Microsoft",
+      "Date": "Fri Jul 17 08:59:13 2026 +0530",
+      "Message": "Potential fix for pull request finding",
+      "LinesAdded": 1,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "c32d2266060d155f03a124270848559ca556ae62",
+      "Author": "Akhileswara-Microsoft",
+      "Date": "Fri Jul 17 08:55:49 2026 +0530",
+      "Message": "fix: update deployment scripts to use new acr_build_push scripts for consistency",
+      "LinesAdded": 2,
+      "LinesDeleted": 2,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "168813d529f420b3d59a641d227afb8b698d2de6",
+      "Author": "Akhileswara-Microsoft",
+      "Date": "Fri Jul 17 08:53:22 2026 +0530",
+      "Message": "fix: remove deprecated deploy_container_images scripts for cleaner deployment process",
+      "LinesAdded": 0,
+      "LinesDeleted": 378,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "03aa515bd14e0eecd9b56144fcb20b7263f3daa5",
+      "Author": "Akhileswara-Microsoft",
+      "Date": "Fri Jul 17 08:51:37 2026 +0530",
+      "Message": "fix: update placeholder image script references and add new build/push scripts for container images",
+      "LinesAdded": 382,
+      "LinesDeleted": 4,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "3c96cb6fb6b5852c7e0c39282a72aeac5fab30c7",
+      "Author": "Niraj Chaudhari (Persistent Systems Limited)",
+      "Date": "Thu Jul 16 12:12:59 2026 +0530",
+      "Message": "Update Owners ID for Vinay and Prajwal",
+      "LinesAdded": 1,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "af587e7a96f5557b987c8d1cd764a85ddca6481b",
+      "Author": "Niraj Chaudhari (Persistent Systems Limited)",
+      "Date": "Tue Jul 14 19:38:41 2026 +0530",
+      "Message": "Posix not required",
+      "LinesAdded": 0,
+      "LinesDeleted": 10,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "5a97f9771dc89eebd7a3a11e0976a9cb170c6a1d",
+      "Author": "chaudhariniraj",
+      "Date": "Tue Jul 14 14:45:04 2026 +0530",
+      "Message": "Potential fix for pull request finding",
+      "LinesAdded": 6,
+      "LinesDeleted": 6,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "3da48345e47395d79f7701f2f83647d1d1397ab8",
+      "Author": "Niraj Chaudhari (Persistent Systems Limited)",
+      "Date": "Tue Jul 14 14:36:59 2026 +0530",
+      "Message": "update azure.yaml to add posix",
+      "LinesAdded": 10,
+      "LinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "5e3a9a48499b408054f4099543f9884cbf0917d6",
+      "Author": "Niraj Chaudhari (Persistent Systems Limited)",
+      "Date": "Tue Jul 14 14:09:15 2026 +0530",
+      "Message": "Update azure.yaml file to show github issue URL before provisioning",
+      "LinesAdded": 11,
+      "LinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "174e71a7e3d4abee6de676d70c982df2b0e803f6",
+      "Author": "Akhileswara-Microsoft",
+      "Date": "Mon Jul 13 18:05:05 2026 +0530",
+      "Message": "fix: include subscription ID in environment variable checks for container deployment scripts",
+      "LinesAdded": 30,
+      "LinesDeleted": 2,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "5dd26beabef296de0312090ce4d54d5b7b48e73a",
+      "Author": "Akhileswara-Microsoft",
+      "Date": "Fri Jul 10 11:24:26 2026 +0530",
+      "Message": "Potential fix for pull request finding",
+      "LinesAdded": 2,
+      "LinesDeleted": 6,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "448e1f1771793cfb3103a7347bf05dea3fd03a7a",
+      "Author": "Akhileswara-Microsoft",
+      "Date": "Wed Jul 8 17:00:04 2026 +0530",
+      "Message": "fix: ensure default image tag is applied after environment variable fallback",
+      "LinesAdded": 5,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "7d5223fd66f78abcd645199ad61981fdd99c53bb",
+      "Author": "Akhileswara-Microsoft",
+      "Date": "Wed Jul 8 15:49:55 2026 +0530",
+      "Message": "fix: update default image tag and placeholder container image for consistency",
+      "LinesAdded": 13,
+      "LinesDeleted": 13,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "949c253cca1e8a0f968017ee329bf81b969d2d82",
+      "Author": "Akhileswara-Microsoft",
+      "Date": "Wed Jul 8 14:50:49 2026 +0530",
+      "Message": "fix: address Copilot review comments on WAF ACR toggle (PR #318)",
+      "LinesAdded": 23,
+      "LinesDeleted": 13,
+      "IsAI": true,
+      "ConfidenceScore": 100,
+      "ConfidenceTier": "Tier 1: Definitive AI - Git Trailer (100 percent)",
+      "TierNumber": 1
+    },
+    {
+      "Hash": "64a6ad0f84a467325bb218d0501ef4dac684ed12",
+      "Author": "Akhileswara-Microsoft",
+      "Date": "Wed Jul 8 14:31:20 2026 +0530",
+      "Message": "fix: update deployment guide to include script for building and pushing application images",
+      "LinesAdded": 16,
+      "LinesDeleted": 2,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "7712d4a4fb1142791791ecdf9178de588b7bd198",
+      "Author": "Akhileswara-Microsoft",
+      "Date": "Tue Jul 7 15:29:07 2026 +0530",
+      "Message": "fix: update deployment scripts and templates for WAF support and private networking configuration",
+      "LinesAdded": 507,
+      "LinesDeleted": 35,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "7a25b40945ef591a6f62151f13026b60a747f073",
+      "Author": "Akhileswara-Microsoft",
+      "Date": "Mon Jul 6 14:10:26 2026 +0530",
+      "Message": "fix: enhance error handling in deployment scripts to ensure all required values are loaded",
+      "LinesAdded": 16,
+      "LinesDeleted": 16,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "3d3df5703cf31487f2464e8df2e895fcd1d01afc",
+      "Author": "Akhileswara-Microsoft",
+      "Date": "Mon Jul 6 13:37:55 2026 +0530",
+      "Message": "Potential fix for pull request finding",
+      "LinesAdded": 4,
+      "LinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "383f53cda11ac98213902103075fa8e975d4ddd7",
+      "Author": "Akhileswara-Microsoft",
+      "Date": "Mon Jul 6 13:37:26 2026 +0530",
+      "Message": "Potential fix for pull request finding",
+      "LinesAdded": 5,
+      "LinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "973b51fb8759a285d408091f8136c78fbbc44dd9",
+      "Author": "Akhileswara-Microsoft",
+      "Date": "Mon Jul 6 13:32:25 2026 +0530",
+      "Message": "fix: update deployment scripts to ensure Azure CLI is installed before execution",
+      "LinesAdded": 18,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "202f707ebf2518ed03f9dd712f55994d23d27c28",
+      "Author": "Akhileswara-Microsoft",
+      "Date": "Mon Jul 6 12:55:52 2026 +0530",
+      "Message": "feat: implement dedicated Azure Container Registry with identity-based authentication and update deployment scripts",
+      "LinesAdded": 432,
+      "LinesDeleted": 12,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    }
+  ],
+  "AnalysisPeriod": {
+    "EndDate": "2026-07-31",
+    "FilterApplied": true,
+    "StartDate": "2026-07-01"
+  },
+  "Metadata": {
+    "ScriptVersion": "2.0.0",
+    "GeneratedAt": "2026-09-29 03:54:19",
+    "IncludeTestFiles": false,
+    "AnalysisMethod": "5-Tier Weighted Pattern Detection",
+    "PowerShellVersion": "7.6.6",
+    "GeneratedBy": "Copilot Usage Report Tool v2.0"
+  },
+  "Users": [
+    {
+      "UserName": "Niraj Chaudhari (Persistent Systems Limited)",
+      "UserEmail": "v-cniraj@microsoft.com",
+      "TotalCommits": 5,
+      "AICommits": 0,
+      "HumanCommits": 5,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 32,
+      "HumanLinesDeleted": 11,
+      "TotalLinesAdded": 32,
+      "TotalLinesDeleted": 11,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Akhileswara-Microsoft",
+      "UserEmail": "v-golnaidu@microsoft.com",
+      "TotalCommits": 20,
+      "AICommits": 1,
+      "HumanCommits": 19,
+      "AILinesAdded": 23,
+      "AILinesDeleted": 13,
+      "HumanLinesAdded": 1450,
+      "HumanLinesDeleted": 490,
+      "TotalLinesAdded": 1473,
+      "TotalLinesDeleted": 503,
+      "AIPercentage": 1.56,
+      "AvgConfidenceScore": 100.0,
+      "ConfidenceScores": [
+        100
+      ],
+      "Tier1Commits": 1,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "KanchanN-Microsoft",
+      "UserEmail": "v-kanchann@microsoft.com",
+      "TotalCommits": 5,
+      "AICommits": 0,
+      "HumanCommits": 5,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 37,
+      "HumanLinesDeleted": 25,
+      "TotalLinesAdded": 37,
+      "TotalLinesDeleted": 25,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Priyanka Singhal (Persistent Systems Limited)",
+      "UserEmail": "v-priysingha@microsoft.com",
+      "TotalCommits": 1,
+      "AICommits": 0,
+      "HumanCommits": 1,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 1,
+      "HumanLinesDeleted": 1733,
+      "TotalLinesAdded": 1,
+      "TotalLinesDeleted": 1733,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "chaudhariniraj",
+      "UserEmail": "70953410+chaudhariniraj@users.noreply.github.com",
+      "TotalCommits": 2,
+      "AICommits": 0,
+      "HumanCommits": 2,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 12,
+      "HumanLinesDeleted": 12,
+      "TotalLinesAdded": 12,
+      "TotalLinesDeleted": 12,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    }
+  ],
+  "AIAttributionOverride": {
+    "OverridePercentage": null,
+    "Notes": null,
+    "Applied": false
+  },
+  "BranchStatistics": {
+    "Branch": "dev",
+    "TotalCommits": 33,
+    "AICommits": 1,
+    "HumanCommits": 32,
+    "TotalLinesAdded": 1555.0,
+    "TotalLinesDeleted": 2284.0,
+    "AILinesAdded": 23.0,
+    "AILinesDeleted": 13.0,
+    "Tier1Commits": 1,
+    "Tier2Commits": 0,
+    "Tier3Commits": 0,
+    "Tier4Commits": 0,
+    "Tier5Commits": 0,
+    "UniqueContributors": 5,
+    "AIPercentage": 1.48,
+    "HumanLinesAdded": 1532.0,
+    "MergedPRs": null
+  },
+  "Branch": "dev",
+  "ApplicationName": "Container Migration",
+  "GeneratedAt": "2026-09-29 03:54:19",
+  "FileTypeBreakdown": [
+    {
+      "Extension": "json",
+      "TotalLines": 789514,
+      "AILines": 21122,
+      "AIPercentage": 2.68,
+      "FileCount": 382
+    },
+    {
+      "Extension": "py",
+      "TotalLines": 107620,
+      "AILines": 99535,
+      "AIPercentage": 92.49,
+      "FileCount": 962
+    },
+    {
+      "Extension": "txt",
+      "TotalLines": 30492,
+      "AILines": 18924,
+      "AIPercentage": 62.06,
+      "FileCount": 465
+    },
+    {
+      "Extension": "yml",
+      "TotalLines": 30358,
+      "AILines": 524,
+      "AIPercentage": 1.73,
+      "FileCount": 820
+    },
+    {
+      "Extension": "md",
+      "TotalLines": 28835,
+      "AILines": 12470,
+      "AIPercentage": 43.25,
+      "FileCount": 772
+    },
+    {
+      "Extension": "lock",
+      "TotalLines": 25379,
+      "AILines": 11666,
+      "AIPercentage": 45.97,
+      "FileCount": 72
+    },
+    {
+      "Extension": "bicep",
+      "TotalLines": 18062,
+      "AILines": 6354,
+      "AIPercentage": 35.18,
+      "FileCount": 332
+    },
+    {
+      "Extension": "tsx",
+      "TotalLines": 16113,
+      "AILines": 14871,
+      "AIPercentage": 92.29,
+      "FileCount": 134
+    },
+    {
+      "Extension": "sh",
+      "TotalLines": 3524,
+      "AILines": 490,
+      "AIPercentage": 13.9,
+      "FileCount": 48
+    },
+    {
+      "Extension": "ts",
+      "TotalLines": 3342,
+      "AILines": 3342,
+      "AIPercentage": 100.0,
+      "FileCount": 25
+    },
+    {
+      "Extension": "gitignore",
+      "TotalLines": 2808,
+      "AILines": 1456,
+      "AIPercentage": 51.85,
+      "FileCount": 18
+    },
+    {
+      "Extension": "yaml",
+      "TotalLines": 1383,
+      "AILines": 736,
+      "AIPercentage": 53.22,
+      "FileCount": 98
+    },
+    {
+      "Extension": "dockerignore",
+      "TotalLines": 908,
+      "AILines": 900,
+      "AIPercentage": 99.12,
+      "FileCount": 10
+    },
+    {
+      "Extension": "ps1",
+      "TotalLines": 822,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 20
+    },
+    {
+      "Extension": "css",
+      "TotalLines": 714,
+      "AILines": 714,
+      "AIPercentage": 100.0,
+      "FileCount": 10
+    },
+    {
+      "Extension": "toml",
+      "TotalLines": 603,
+      "AILines": 236,
+      "AIPercentage": 39.14,
+      "FileCount": 86
+    },
+    {
+      "Extension": "jsx",
+      "TotalLines": 507,
+      "AILines": 363,
+      "AIPercentage": 71.6,
+      "FileCount": 30
+    },
+    {
+      "Extension": "other",
+      "TotalLines": 402,
+      "AILines": 222,
+      "AIPercentage": 55.22,
+      "FileCount": 27
+    },
+    {
+      "Extension": "js",
+      "TotalLines": 331,
+      "AILines": 330,
+      "AIPercentage": 99.7,
+      "FileCount": 12
+    },
+    {
+      "Extension": "http",
+      "TotalLines": 208,
+      "AILines": 208,
+      "AIPercentage": 100.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "example",
+      "TotalLines": 192,
+      "AILines": 54,
+      "AIPercentage": 28.12,
+      "FileCount": 16
+    },
+    {
+      "Extension": "ini",
+      "TotalLines": 66,
+      "AILines": 66,
+      "AIPercentage": 100.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "yml}",
+      "TotalLines": 54,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 4
+    },
+    {
+      "Extension": "env",
+      "TotalLines": 42,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 6
+    },
+    {
+      "Extension": "flake8",
+      "TotalLines": 33,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 21
+    },
+    {
+      "Extension": "sample",
+      "TotalLines": 28,
+      "AILines": 28,
+      "AIPercentage": 100.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "html",
+      "TotalLines": 26,
+      "AILines": 26,
+      "AIPercentage": 100.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "github/codeowners",
+      "TotalLines": 26,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 22
+    },
+    {
+      "Extension": "devcontainer/dockerfile",
+      "TotalLines": 25,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 10
+    },
+    {
+      "Extension": "python-version",
+      "TotalLines": 4,
+      "AILines": 4,
+      "AIPercentage": 100.0,
+      "FileCount": 4
+    }
+  ]
+}
