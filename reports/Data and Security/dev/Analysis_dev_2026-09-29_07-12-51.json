@@ -1,0 +1,171 @@
+{
+  "BranchStatistics": {
+    "Branch": "dev",
+    "TotalCommits": 1,
+    "AICommits": 0,
+    "HumanCommits": 1,
+    "TotalLinesAdded": 13.0,
+    "TotalLinesDeleted": 2.0,
+    "AILinesAdded": null,
+    "AILinesDeleted": null,
+    "Tier1Commits": 0,
+    "Tier2Commits": 0,
+    "Tier3Commits": 0,
+    "Tier4Commits": 0,
+    "Tier5Commits": 0,
+    "UniqueContributors": 1,
+    "AIPercentage": 0.0,
+    "HumanLinesAdded": 13.0,
+    "MergedPRs": null
+  },
+  "TierDistribution": {
+    "Tier4_Moderate": 0,
+    "Tier2_VeryHigh": 0,
+    "Tier3_High": 0,
+    "Tier1_Definitive": 0,
+    "Human": 1,
+    "Tier5_Low": 0
+  },
+  "FileTypeBreakdown": [
+    {
+      "Extension": "md",
+      "TotalLines": 25891,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 486
+    },
+    {
+      "Extension": "ps1",
+      "TotalLines": 21402,
+      "AILines": 507,
+      "AIPercentage": 2.37,
+      "FileCount": 558
+    },
+    {
+      "Extension": "json",
+      "TotalLines": 3079,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 51
+    },
+    {
+      "Extension": "yml",
+      "TotalLines": 2434,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 208
+    },
+    {
+      "Extension": "gitignore",
+      "TotalLines": 1257,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 6
+    },
+    {
+      "Extension": "other",
+      "TotalLines": 418,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 8
+    },
+    {
+      "Extension": "bicep",
+      "TotalLines": 379,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 24
+    },
+    {
+      "Extension": "yaml",
+      "TotalLines": 268,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 35
+    },
+    {
+      "Extension": "bicepparam",
+      "TotalLines": 196,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 32
+    },
+    {
+      "Extension": "md\"",
+      "TotalLines": 92,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "github/codeowners",
+      "TotalLines": 4,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "yml}",
+      "TotalLines": 2,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 2
+    }
+  ],
+  "AnalysisPeriod": {
+    "FilterApplied": true,
+    "StartDate": "2026-07-01",
+    "EndDate": "2026-07-31"
+  },
+  "Users": [
+    {
+      "UserName": "Niraj Chaudhari (Persistent Systems Limited)",
+      "UserEmail": "v-cniraj@microsoft.com",
+      "TotalCommits": 1,
+      "AICommits": 0,
+      "HumanCommits": 1,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 13,
+      "HumanLinesDeleted": 2,
+      "TotalLinesAdded": 13,
+      "TotalLinesDeleted": 2,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    }
+  ],
+  "Commits": {
+    "Hash": "9b657362138453aeb09838ba8752359cd33e92f5",
+    "Author": "Niraj Chaudhari (Persistent Systems Limited)",
+    "Date": "Tue Jul 14 19:55:30 2026 +0530",
+    "Message": "update azure.yaml to show gihub issues URL.",
+    "LinesAdded": 13,
+    "LinesDeleted": 2,
+    "IsAI": false,
+    "ConfidenceScore": 0,
+    "ConfidenceTier": "Human Written",
+    "TierNumber": 0
+  },
+  "GeneratedAt": "2026-09-29 07:12:51",
+  "AIAttributionOverride": {
+    "Notes": null,
+    "Applied": false,
+    "OverridePercentage": null
+  },
+  "Branch": "dev",
+  "ApplicationName": "Data and Security",
+  "Metadata": {
+    "GeneratedBy": "Copilot Usage Report Tool v2.0",
+    "ScriptVersion": "2.0.0",
+    "PowerShellVersion": "7.6.6",
+    "GeneratedAt": "2026-09-29 07:12:51",
+    "IncludeTestFiles": false,
+    "AnalysisMethod": "5-Tier Weighted Pattern Detection"
+  }
+}
