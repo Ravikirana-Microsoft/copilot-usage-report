@@ -16211,13 +16211,19 @@
             let mergedPRsFromApi = 0;
             let hasApiMergedPRs = false;
 
-            // Contributors who commit under two Git identities — merged so each counts as one person.
+            // Contributors who commit under multiple Git identities — merged so each counts as one person.
             // Matched case-insensitively; value is the canonical display name.
             const AUTHOR_ALIASES = {
                 'ajit padhi': 'PadhiAjit-Microsoft',
+                'ajit': 'PadhiAjit-Microsoft',
                 'prekshith dj (persistent systems limited)': 'PrekshithD-Microsoft',
                 'priyanka singhal (persistent systems limited)': 'Priyanka2-Microsoft',
-                'yamini dhiman': 'Yamini1-Microsoft'
+                'yamini dhiman': 'Yamini1-Microsoft',
+                'chaudhariniraj': 'NirajC3-Microsoft',
+                'niraj chaudhari (persistent systems limited)': 'NirajC3-Microsoft',
+                'harsh-microsoft': 'HarshB-Microsoft',
+                'harshbangera': 'HarshB-Microsoft',
+                'dhruvkumar1-microsoft': 'Dhruvkumar-Microsoft'
             };
             const canonicalAuthor = name => {
                 const t = (name || '').trim();
