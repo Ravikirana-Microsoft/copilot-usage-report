@@ -1,0 +1,323 @@
+{
+  "Metadata": {
+    "GeneratedBy": "Copilot Usage Report Tool v2.0",
+    "IncludeTestFiles": false,
+    "GeneratedAt": "2026-09-28 14:38:26",
+    "PowerShellVersion": "7.6.6",
+    "AnalysisMethod": "5-Tier Weighted Pattern Detection",
+    "ScriptVersion": "2.0.0"
+  },
+  "Users": [
+    {
+      "UserName": "Teja Sri Munnangi (Persistent Systems Inc)",
+      "UserEmail": "v-temunnangi@microsoft.com",
+      "TotalCommits": 1,
+      "AICommits": 0,
+      "HumanCommits": 1,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 0,
+      "HumanLinesDeleted": 64,
+      "TotalLinesAdded": 0,
+      "TotalLinesDeleted": 64,
+      "AIPercentage": 0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Saswato-Microsoft",
+      "UserEmail": "v-saswatoc@microsoft.com",
+      "TotalCommits": 4,
+      "AICommits": 0,
+      "HumanCommits": 4,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 154,
+      "HumanLinesDeleted": 12,
+      "TotalLinesAdded": 154,
+      "TotalLinesDeleted": 12,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Mohammad Rafi",
+      "UserEmail": "mohammadrafi.cse69@gmail.com",
+      "TotalCommits": 1,
+      "AICommits": 0,
+      "HumanCommits": 1,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 1,
+      "HumanLinesDeleted": 1,
+      "TotalLinesAdded": 1,
+      "TotalLinesDeleted": 1,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    }
+  ],
+  "TierDistribution": {
+    "Tier5_Low": 0,
+    "Human": 6,
+    "Tier3_High": 0,
+    "Tier4_Moderate": 0,
+    "Tier1_Definitive": 0,
+    "Tier2_VeryHigh": 0
+  },
+  "Branch": "main",
+  "GeneratedAt": "2026-09-28 14:38:26",
+  "BranchStatistics": {
+    "Branch": "main",
+    "TotalCommits": 6,
+    "AICommits": 0,
+    "HumanCommits": 6,
+    "TotalLinesAdded": 155.0,
+    "TotalLinesDeleted": 77.0,
+    "AILinesAdded": null,
+    "AILinesDeleted": null,
+    "Tier1Commits": 0,
+    "Tier2Commits": 0,
+    "Tier3Commits": 0,
+    "Tier4Commits": 0,
+    "Tier5Commits": 0,
+    "UniqueContributors": 3,
+    "AIPercentage": 0.0,
+    "HumanLinesAdded": 155.0
+  },
+  "AnalysisPeriod": {
+    "StartDate": "2026-06-01",
+    "FilterApplied": true,
+    "EndDate": "2026-06-30"
+  },
+  "ApplicationName": "Deploy your AI application",
+  "FileTypeBreakdown": [
+    {
+      "Extension": "json",
+      "TotalLines": 240221,
+      "AILines": 143818,
+      "AIPercentage": 59.87,
+      "FileCount": 131
+    },
+    {
+      "Extension": "ps1",
+      "TotalLines": 135133,
+      "AILines": 12550,
+      "AIPercentage": 9.29,
+      "FileCount": 1058
+    },
+    {
+      "Extension": "md",
+      "TotalLines": 47960,
+      "AILines": 1350,
+      "AIPercentage": 2.81,
+      "FileCount": 765
+    },
+    {
+      "Extension": "sh",
+      "TotalLines": 17073,
+      "AILines": 318,
+      "AIPercentage": 1.86,
+      "FileCount": 342
+    },
+    {
+      "Extension": "bicep",
+      "TotalLines": 8257,
+      "AILines": 1497,
+      "AIPercentage": 18.13,
+      "FileCount": 478
+    },
+    {
+      "Extension": "bicepparam",
+      "TotalLines": 2349,
+      "AILines": 90,
+      "AIPercentage": 3.83,
+      "FileCount": 69
+    },
+    {
+      "Extension": "yml",
+      "TotalLines": 2154,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 137
+    },
+    {
+      "Extension": "yaml",
+      "TotalLines": 2024,
+      "AILines": 108,
+      "AIPercentage": 5.34,
+      "FileCount": 86
+    },
+    {
+      "Extension": "py",
+      "TotalLines": 1676,
+      "AILines": 792,
+      "AIPercentage": 47.26,
+      "FileCount": 136
+    },
+    {
+      "Extension": "gitignore",
+      "TotalLines": 1169,
+      "AILines": 2,
+      "AIPercentage": 0.17,
+      "FileCount": 41
+    },
+    {
+      "Extension": "sample",
+      "TotalLines": 594,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 18
+    },
+    {
+      "Extension": "other",
+      "TotalLines": 270,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 42
+    },
+    {
+      "Extension": "txt",
+      "TotalLines": 102,
+      "AILines": 24,
+      "AIPercentage": 23.53,
+      "FileCount": 96
+    },
+    {
+      "Extension": "env",
+      "TotalLines": 84,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 24
+    },
+    {
+      "Extension": "example",
+      "TotalLines": 73,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "gitmodules",
+      "TotalLines": 39,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 15
+    },
+    {
+      "Extension": "devcontainer/dockerfile",
+      "TotalLines": 36,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 9
+    },
+    {
+      "Extension": "github/codeowners",
+      "TotalLines": 30,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 22
+    },
+    {
+      "Extension": "md}",
+      "TotalLines": 15,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 10
+    }
+  ],
+  "AIAttributionOverride": {
+    "Applied": false,
+    "Notes": null,
+    "OverridePercentage": null
+  },
+  "Commits": [
+    {
+      "Hash": "70e95c145fb50b70fdf6e1e50955340c22ca797c",
+      "Author": "Mohammad Rafi",
+      "Date": "Mon Jun 29 14:20:12 2026 +0530",
+      "Message": "chore: update CODEOWNERS handles",
+      "LinesAdded": 1,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "f72e41093f132d15834cfc2689c2a8abe02841f1",
+      "Author": "Teja Sri Munnangi (Persistent Systems Inc)",
+      "Date": "Sat Jun 27 01:38:13 2026 +0530",
+      "Message": "commit",
+      "LinesAdded": 0,
+      "LinesDeleted": 64,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "9601317dfb4a21195ffd0adf9b30aa61028dacb3",
+      "Author": "Saswato-Microsoft",
+      "Date": "Mon Jun 8 14:04:47 2026 +0530",
+      "Message": "fix: add tenant and principal ID configuration steps in deployment guide",
+      "LinesAdded": 13,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "c5f2c8bf0918e5270ed3e589ba81fbccc6c5e2c9",
+      "Author": "Saswato-Microsoft",
+      "Date": "Mon Jun 8 13:21:42 2026 +0530",
+      "Message": "fix: update VM size to Standard_D2s_v5 and add transient network failure handling in SearchHelpers.ps1",
+      "LinesAdded": 58,
+      "LinesDeleted": 4,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "697c4a06bcb0f31340fc88124a09814cb44e49ad",
+      "Author": "Saswato-Microsoft",
+      "Date": "Fri Jun 5 11:51:55 2026 +0530",
+      "Message": "Update main.json file",
+      "LinesAdded": 78,
+      "LinesDeleted": 2,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "ff9c0feb37fc7f601e2eed6578d00f2fe812a1b0",
+      "Author": "Saswato-Microsoft",
+      "Date": "Fri Jun 5 10:51:59 2026 +0530",
+      "Message": "fix: update links to Accessing Private Resources documentation for consistency",
+      "LinesAdded": 5,
+      "LinesDeleted": 5,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    }
+  ]
+}

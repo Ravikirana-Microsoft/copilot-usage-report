@@ -1,0 +1,538 @@
+{
+  "Metadata": {
+    "GeneratedBy": "Copilot Usage Report Tool v2.0",
+    "IncludeTestFiles": false,
+    "GeneratedAt": "2026-09-28 14:38:27",
+    "PowerShellVersion": "7.6.6",
+    "AnalysisMethod": "5-Tier Weighted Pattern Detection",
+    "ScriptVersion": "2.0.0"
+  },
+  "Users": [
+    {
+      "UserName": "AbdulMujeeb-2000",
+      "UserEmail": "74786844+AbdulMujeeb-2000@users.noreply.github.com",
+      "TotalCommits": 3,
+      "AICommits": 0,
+      "HumanCommits": 3,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 23,
+      "HumanLinesDeleted": 10,
+      "TotalLinesAdded": 23,
+      "TotalLinesDeleted": 10,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "AjitPadhi-Microsoft",
+      "UserEmail": "v-padhiajit@microsoft.com",
+      "TotalCommits": 1,
+      "AICommits": 1,
+      "HumanCommits": 0,
+      "AILinesAdded": 78,
+      "AILinesDeleted": 17,
+      "HumanLinesAdded": 0,
+      "HumanLinesDeleted": 0,
+      "TotalLinesAdded": 78,
+      "TotalLinesDeleted": 17,
+      "AIPercentage": 100.0,
+      "AvgConfidenceScore": 100.0,
+      "ConfidenceScores": [
+        100
+      ],
+      "Tier1Commits": 1,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Prajwal1-Microsoft",
+      "UserEmail": "v-pdc@microsoft.com",
+      "TotalCommits": 2,
+      "AICommits": 0,
+      "HumanCommits": 2,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 2,
+      "HumanLinesDeleted": 90,
+      "TotalLinesAdded": 2,
+      "TotalLinesDeleted": 90,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "chaudhariniraj",
+      "UserEmail": "70953410+chaudhariniraj@users.noreply.github.com",
+      "TotalCommits": 1,
+      "AICommits": 0,
+      "HumanCommits": 1,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 7,
+      "HumanLinesDeleted": 7,
+      "TotalLinesAdded": 7,
+      "TotalLinesDeleted": 7,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Rafi-Mohammad-69",
+      "UserEmail": "138191778+Rafi-Mohammad-69@users.noreply.github.com",
+      "TotalCommits": 1,
+      "AICommits": 0,
+      "HumanCommits": 1,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 2,
+      "HumanLinesDeleted": 1,
+      "TotalLinesAdded": 2,
+      "TotalLinesDeleted": 1,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    }
+  ],
+  "TierDistribution": {
+    "Tier5_Low": 0,
+    "Human": 7,
+    "Tier3_High": 0,
+    "Tier4_Moderate": 0,
+    "Tier1_Definitive": 1,
+    "Tier2_VeryHigh": 0
+  },
+  "Branch": "dev",
+  "GeneratedAt": "2026-09-28 14:38:27",
+  "BranchStatistics": {
+    "Branch": "dev",
+    "TotalCommits": 8,
+    "AICommits": 1,
+    "HumanCommits": 7,
+    "TotalLinesAdded": 112.0,
+    "TotalLinesDeleted": 125.0,
+    "AILinesAdded": 78.0,
+    "AILinesDeleted": 17.0,
+    "Tier1Commits": 1,
+    "Tier2Commits": 0,
+    "Tier3Commits": 0,
+    "Tier4Commits": 0,
+    "Tier5Commits": 0,
+    "UniqueContributors": 5,
+    "AIPercentage": 69.64,
+    "HumanLinesAdded": 34.0
+  },
+  "AnalysisPeriod": {
+    "StartDate": "2026-06-01",
+    "FilterApplied": true,
+    "EndDate": "2026-06-30"
+  },
+  "ApplicationName": "CWYD",
+  "FileTypeBreakdown": [
+    {
+      "Extension": "json",
+      "TotalLines": 14706049,
+      "AILines": 390032,
+      "AIPercentage": 2.65,
+      "FileCount": 732
+    },
+    {
+      "Extension": "py",
+      "TotalLines": 244299,
+      "AILines": 160367,
+      "AIPercentage": 65.64,
+      "FileCount": 2376
+    },
+    {
+      "Extension": "csv",
+      "TotalLines": 108144,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 8
+    },
+    {
+      "Extension": "lock",
+      "TotalLines": 105790,
+      "AILines": 17467,
+      "AIPercentage": 16.51,
+      "FileCount": 67
+    },
+    {
+      "Extension": "bicep",
+      "TotalLines": 63245,
+      "AILines": 48006,
+      "AIPercentage": 75.9,
+      "FileCount": 974
+    },
+    {
+      "Extension": "md",
+      "TotalLines": 62558,
+      "AILines": 38511,
+      "AIPercentage": 61.56,
+      "FileCount": 804
+    },
+    {
+      "Extension": "bak",
+      "TotalLines": 57960,
+      "AILines": 57960,
+      "AIPercentage": 100.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "yml",
+      "TotalLines": 44099,
+      "AILines": 1189,
+      "AIPercentage": 2.7,
+      "FileCount": 856
+    },
+    {
+      "Extension": "tsx",
+      "TotalLines": 38963,
+      "AILines": 19221,
+      "AIPercentage": 49.33,
+      "FileCount": 466
+    },
+    {
+      "Extension": "sh",
+      "TotalLines": 6952,
+      "AILines": 929,
+      "AIPercentage": 13.36,
+      "FileCount": 149
+    },
+    {
+      "Extension": "css",
+      "TotalLines": 4864,
+      "AILines": 1670,
+      "AIPercentage": 34.33,
+      "FileCount": 88
+    },
+    {
+      "Extension": "ps1",
+      "TotalLines": 4122,
+      "AILines": 724,
+      "AIPercentage": 17.56,
+      "FileCount": 52
+    },
+    {
+      "Extension": "py}",
+      "TotalLines": 2020,
+      "AILines": 2020,
+      "AIPercentage": 100.0,
+      "FileCount": 10
+    },
+    {
+      "Extension": "toml",
+      "TotalLines": 1262,
+      "AILines": 382,
+      "AIPercentage": 30.27,
+      "FileCount": 61
+    },
+    {
+      "Extension": "bicep}",
+      "TotalLines": 821,
+      "AILines": 812,
+      "AIPercentage": 98.9,
+      "FileCount": 5
+    },
+    {
+      "Extension": "other",
+      "TotalLines": 701,
+      "AILines": 221,
+      "AIPercentage": 31.53,
+      "FileCount": 27
+    },
+    {
+      "Extension": "txt",
+      "TotalLines": 572,
+      "AILines": 548,
+      "AIPercentage": 95.8,
+      "FileCount": 37
+    },
+    {
+      "Extension": "yaml",
+      "TotalLines": 568,
+      "AILines": 101,
+      "AIPercentage": 17.78,
+      "FileCount": 97
+    },
+    {
+      "Extension": "js",
+      "TotalLines": 506,
+      "AILines": 253,
+      "AIPercentage": 50.0,
+      "FileCount": 20
+    },
+    {
+      "Extension": "sample",
+      "TotalLines": 403,
+      "AILines": 214,
+      "AIPercentage": 53.1,
+      "FileCount": 35
+    },
+    {
+      "Extension": "ts",
+      "TotalLines": 246,
+      "AILines": 93,
+      "AIPercentage": 37.8,
+      "FileCount": 96
+    },
+    {
+      "Extension": "frontend",
+      "TotalLines": 132,
+      "AILines": 66,
+      "AIPercentage": 50.0,
+      "FileCount": 6
+    },
+    {
+      "Extension": "gitignore",
+      "TotalLines": 131,
+      "AILines": 42,
+      "AIPercentage": 32.06,
+      "FileCount": 19
+    },
+    {
+      "Extension": "functions",
+      "TotalLines": 102,
+      "AILines": 51,
+      "AIPercentage": 50.0,
+      "FileCount": 6
+    },
+    {
+      "Extension": "ci-validate",
+      "TotalLines": 84,
+      "AILines": 42,
+      "AIPercentage": 50.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "backend",
+      "TotalLines": 77,
+      "AILines": 38,
+      "AIPercentage": 49.35,
+      "FileCount": 7
+    },
+    {
+      "Extension": "devcontainer/dockerfile",
+      "TotalLines": 66,
+      "AILines": 12,
+      "AIPercentage": 18.18,
+      "FileCount": 20
+    },
+    {
+      "Extension": "jsonl",
+      "TotalLines": 57,
+      "AILines": 57,
+      "AIPercentage": 100.0,
+      "FileCount": 4
+    },
+    {
+      "Extension": "dockerfile",
+      "TotalLines": 51,
+      "AILines": 51,
+      "AIPercentage": 100.0,
+      "FileCount": 12
+    },
+    {
+      "Extension": "ipynb",
+      "TotalLines": 30,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 8
+    },
+    {
+      "Extension": "github/codeowners",
+      "TotalLines": 27,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 27
+    },
+    {
+      "Extension": "ini",
+      "TotalLines": 23,
+      "AILines": 2,
+      "AIPercentage": 8.7,
+      "FileCount": 18
+    },
+    {
+      "Extension": "html",
+      "TotalLines": 15,
+      "AILines": 12,
+      "AIPercentage": 80.0,
+      "FileCount": 4
+    },
+    {
+      "Extension": "test",
+      "TotalLines": 10,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 8
+    },
+    {
+      "Extension": "testtool",
+      "TotalLines": 10,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 8
+    },
+    {
+      "Extension": "dev",
+      "TotalLines": 10,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 8
+    },
+    {
+      "Extension": "tsbuildinfo",
+      "TotalLines": 6,
+      "AILines": 1,
+      "AIPercentage": 16.67,
+      "FileCount": 6
+    },
+    {
+      "Extension": "npmrc",
+      "TotalLines": 4,
+      "AILines": 2,
+      "AIPercentage": 50.0,
+      "FileCount": 4
+    },
+    {
+      "Extension": "flake8",
+      "TotalLines": 2,
+      "AILines": 1,
+      "AIPercentage": 50.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "bicepparam",
+      "TotalLines": 2,
+      "AILines": 2,
+      "AIPercentage": 100.0,
+      "FileCount": 10
+    }
+  ],
+  "AIAttributionOverride": {
+    "Applied": false,
+    "Notes": null,
+    "OverridePercentage": null
+  },
+  "Commits": [
+    {
+      "Hash": "c65a1ca1bbcb683d95274cb39408b6ec3b127036",
+      "Author": "Rafi-Mohammad-69",
+      "Date": "Mon Jun 29 19:52:05 2026 +0530",
+      "Message": "chore: update CODEOWNERS handles (#2287)",
+      "LinesAdded": 2,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "e3043f664b36357b4e4e855318c6eec6122be5c0",
+      "Author": "Prajwal1-Microsoft",
+      "Date": "Sat Jun 27 09:34:14 2026 +0530",
+      "Message": "chore: Down merge to dev (#2286)",
+      "LinesAdded": 1,
+      "LinesDeleted": 45,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "7929e693124013eee02a24e16384db625e26b425",
+      "Author": "Prajwal1-Microsoft",
+      "Date": "Sat Jun 27 09:21:25 2026 +0530",
+      "Message": "fix: Removed codfish related pipeline (#2285)",
+      "LinesAdded": 1,
+      "LinesDeleted": 45,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "3e985598db7faa74e414d243ca4e88a68c4e74d0",
+      "Author": "AjitPadhi-Microsoft",
+      "Date": "Thu Jun 25 15:45:18 2026 +0530",
+      "Message": "chore: Dev to Main (#2243)",
+      "LinesAdded": 78,
+      "LinesDeleted": 17,
+      "IsAI": true,
+      "ConfidenceScore": 100,
+      "ConfidenceTier": "Tier 1: Definitive AI - Git Trailer (100 percent)",
+      "TierNumber": 1
+    },
+    {
+      "Hash": "86621169b07cfa4fbb9da300e8ba6866f0373da8",
+      "Author": "AbdulMujeeb-2000",
+      "Date": "Thu Jun 25 14:03:48 2026 +0530",
+      "Message": "chore: add temporary commit to trigger CI pipeline (#2278)",
+      "LinesAdded": 1,
+      "LinesDeleted": 2,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "a1ac841b08ecaf0116a092c26d14be19fd4f738e",
+      "Author": "AbdulMujeeb-2000",
+      "Date": "Wed Jun 24 15:44:41 2026 +0530",
+      "Message": "fix: add Azure CLI installation prerequisite to local deployment guide (#2273)",
+      "LinesAdded": 14,
+      "LinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "83696a7b41801c3f811c350834e67730065740ac",
+      "Author": "AbdulMujeeb-2000",
+      "Date": "Tue Jun 23 11:05:15 2026 +0530",
+      "Message": "fix: PostgreSQL Post-Deployment Script Issue (#2271)",
+      "LinesAdded": 8,
+      "LinesDeleted": 8,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "6d35c0e11573bc917672b97de5d039b93f308dc9",
+      "Author": "chaudhariniraj",
+      "Date": "Tue Jun 16 15:05:23 2026 +0530",
+      "Message": "chore: Replace roleDefinitionIdOrName value with ID for all (#2258)",
+      "LinesAdded": 7,
+      "LinesDeleted": 7,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    }
+  ]
+}

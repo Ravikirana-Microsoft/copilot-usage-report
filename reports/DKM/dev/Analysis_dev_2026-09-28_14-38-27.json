@@ -1,0 +1,424 @@
+{
+  "Metadata": {
+    "GeneratedBy": "Copilot Usage Report Tool v2.0",
+    "IncludeTestFiles": false,
+    "GeneratedAt": "2026-09-28 14:38:27",
+    "PowerShellVersion": "7.6.6",
+    "AnalysisMethod": "5-Tier Weighted Pattern Detection",
+    "ScriptVersion": "2.0.0"
+  },
+  "Users": [
+    {
+      "UserName": "Priyanka-Microsoft",
+      "UserEmail": "v-prisinghal@microsoft.com",
+      "TotalCommits": 1,
+      "AICommits": 0,
+      "HumanCommits": 1,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 6,
+      "HumanLinesDeleted": 6,
+      "TotalLinesAdded": 6,
+      "TotalLinesDeleted": 6,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Prachig-Microsoft",
+      "UserEmail": "v-prachig@microsoft.com",
+      "TotalCommits": 1,
+      "AICommits": 0,
+      "HumanCommits": 1,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 0,
+      "HumanLinesDeleted": 65,
+      "TotalLinesAdded": 0,
+      "TotalLinesDeleted": 65,
+      "AIPercentage": 0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Mohammad Rafi",
+      "UserEmail": "mohammadrafi.cse69@gmail.com",
+      "TotalCommits": 1,
+      "AICommits": 0,
+      "HumanCommits": 1,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 1,
+      "HumanLinesDeleted": 1,
+      "TotalLinesAdded": 1,
+      "TotalLinesDeleted": 1,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Ayaz-Microsoft",
+      "UserEmail": "v-ayazkhan@microsoft.com",
+      "TotalCommits": 5,
+      "AICommits": 0,
+      "HumanCommits": 5,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 97,
+      "HumanLinesDeleted": 40,
+      "TotalLinesAdded": 97,
+      "TotalLinesDeleted": 40,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    }
+  ],
+  "TierDistribution": {
+    "Tier5_Low": 0,
+    "Human": 8,
+    "Tier3_High": 0,
+    "Tier4_Moderate": 0,
+    "Tier1_Definitive": 0,
+    "Tier2_VeryHigh": 0
+  },
+  "Branch": "dev",
+  "GeneratedAt": "2026-09-28 14:38:27",
+  "BranchStatistics": {
+    "Branch": "dev",
+    "TotalCommits": 8,
+    "AICommits": 0,
+    "HumanCommits": 8,
+    "TotalLinesAdded": 104.0,
+    "TotalLinesDeleted": 112.0,
+    "AILinesAdded": null,
+    "AILinesDeleted": null,
+    "Tier1Commits": 0,
+    "Tier2Commits": 0,
+    "Tier3Commits": 0,
+    "Tier4Commits": 0,
+    "Tier5Commits": 0,
+    "UniqueContributors": 4,
+    "AIPercentage": 0.0,
+    "HumanLinesAdded": 104.0
+  },
+  "AnalysisPeriod": {
+    "StartDate": "2026-06-01",
+    "FilterApplied": true,
+    "EndDate": "2026-06-30"
+  },
+  "ApplicationName": "DKM",
+  "FileTypeBreakdown": [
+    {
+      "Extension": "json",
+      "TotalLines": 205888,
+      "AILines": 35448,
+      "AIPercentage": 17.22,
+      "FileCount": 177
+    },
+    {
+      "Extension": "lock",
+      "TotalLines": 64577,
+      "AILines": 2230,
+      "AIPercentage": 3.45,
+      "FileCount": 33
+    },
+    {
+      "Extension": "md",
+      "TotalLines": 24363,
+      "AILines": 2,
+      "AIPercentage": 0.01,
+      "FileCount": 546
+    },
+    {
+      "Extension": "yml",
+      "TotalLines": 16840,
+      "AILines": 444,
+      "AIPercentage": 2.64,
+      "FileCount": 709
+    },
+    {
+      "Extension": "py",
+      "TotalLines": 12713,
+      "AILines": 2070,
+      "AIPercentage": 16.28,
+      "FileCount": 54
+    },
+    {
+      "Extension": "bicep",
+      "TotalLines": 7781,
+      "AILines": 2992,
+      "AIPercentage": 38.45,
+      "FileCount": 249
+    },
+    {
+      "Extension": "cs",
+      "TotalLines": 3859,
+      "AILines": 3177,
+      "AIPercentage": 82.33,
+      "FileCount": 122
+    },
+    {
+      "Extension": "sample",
+      "TotalLines": 3282,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 61
+    },
+    {
+      "Extension": "ps1",
+      "TotalLines": 1858,
+      "AILines": 292,
+      "AIPercentage": 15.72,
+      "FileCount": 93
+    },
+    {
+      "Extension": "tsx",
+      "TotalLines": 1665,
+      "AILines": 1152,
+      "AIPercentage": 69.19,
+      "FileCount": 101
+    },
+    {
+      "Extension": "ts",
+      "TotalLines": 731,
+      "AILines": 585,
+      "AIPercentage": 80.03,
+      "FileCount": 39
+    },
+    {
+      "Extension": "sh",
+      "TotalLines": 680,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 14
+    },
+    {
+      "Extension": "scss",
+      "TotalLines": 462,
+      "AILines": 274,
+      "AIPercentage": 59.31,
+      "FileCount": 20
+    },
+    {
+      "Extension": "other",
+      "TotalLines": 382,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 6
+    },
+    {
+      "Extension": "csproj",
+      "TotalLines": 166,
+      "AILines": 8,
+      "AIPercentage": 4.82,
+      "FileCount": 58
+    },
+    {
+      "Extension": "template",
+      "TotalLines": 163,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 30
+    },
+    {
+      "Extension": "psm1",
+      "TotalLines": 158,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 5
+    },
+    {
+      "Extension": "yaml",
+      "TotalLines": 141,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 34
+    },
+    {
+      "Extension": "props",
+      "TotalLines": 133,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 18
+    },
+    {
+      "Extension": "yml}",
+      "TotalLines": 70,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 19
+    },
+    {
+      "Extension": "config",
+      "TotalLines": 66,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 10
+    },
+    {
+      "Extension": "github/codeowners",
+      "TotalLines": 21,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 21
+    },
+    {
+      "Extension": "css",
+      "TotalLines": 12,
+      "AILines": 12,
+      "AIPercentage": 100.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "txt",
+      "TotalLines": 7,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 5
+    },
+    {
+      "Extension": "ini",
+      "TotalLines": 6,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "npmrc",
+      "TotalLines": 2,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "jsonl",
+      "TotalLines": 2,
+      "AILines": 2,
+      "AIPercentage": 100.0,
+      "FileCount": 2
+    }
+  ],
+  "AIAttributionOverride": {
+    "Applied": false,
+    "Notes": null,
+    "OverridePercentage": null
+  },
+  "Commits": [
+    {
+      "Hash": "6491dfab625b86a89783510be9356d84d27ccd3c",
+      "Author": "Mohammad Rafi",
+      "Date": "Mon Jun 29 13:55:16 2026 +0530",
+      "Message": "chore: update CODEOWNERS handles",
+      "LinesAdded": 1,
+      "LinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "cad8d6f3ccd111a52c6f107bad842fcd88ea4ff9",
+      "Author": "Prachig-Microsoft",
+      "Date": "Sat Jun 27 01:22:15 2026 +0530",
+      "Message": "Removing Create-Release.yml file",
+      "LinesAdded": 0,
+      "LinesDeleted": 65,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "8525edd638f5cb9ee9816e8d3fa5e930dac88dba",
+      "Author": "Ayaz-Microsoft",
+      "Date": "Thu Jun 18 18:37:47 2026 +0530",
+      "Message": "update roleDefinitionIdOrName GUIDs for Contributor role in main.bicep and main.json",
+      "LinesAdded": 3,
+      "LinesDeleted": 3,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "f763ca535ade2f32794437e5dc0a068b3abf4d35",
+      "Author": "Ayaz-Microsoft",
+      "Date": "Thu Jun 18 13:46:34 2026 +0530",
+      "Message": "replace roleDefinitionIdOrName strings with corresponding GUIDs",
+      "LinesAdded": 19,
+      "LinesDeleted": 19,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "f1754fd300db72c3f024d12b4d1b42758daa7e0b",
+      "Author": "Priyanka-Microsoft",
+      "Date": "Mon Jun 15 14:32:22 2026 +0530",
+      "Message": "updated quota check script",
+      "LinesAdded": 6,
+      "LinesDeleted": 6,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "1256cc6c6ce4bd47cbae4e79c95dd9e70a33f6da",
+      "Author": "Ayaz-Microsoft",
+      "Date": "Thu Jun 4 18:13:51 2026 +0530",
+      "Message": "remove comments",
+      "LinesAdded": 0,
+      "LinesDeleted": 3,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "5cbaaf268febecfa00b597308be9e2cea38b493a",
+      "Author": "Ayaz-Microsoft",
+      "Date": "Thu Jun 4 17:58:40 2026 +0530",
+      "Message": "fix: Update ChatApiResponse to ChatUiResponse for improved client state management",
+      "LinesAdded": 19,
+      "LinesDeleted": 9,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "27dc9f887637406acbdec82d1b022c57d1666f9d",
+      "Author": "Ayaz-Microsoft",
+      "Date": "Thu Jun 4 11:40:16 2026 +0530",
+      "Message": "feat: Enhance chat functionality with error handling and request tracking",
+      "LinesAdded": 56,
+      "LinesDeleted": 6,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    }
+  ]
+}
