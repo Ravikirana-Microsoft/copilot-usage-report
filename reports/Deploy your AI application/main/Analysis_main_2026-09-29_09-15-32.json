@@ -1,0 +1,273 @@
+{
+  "BranchStatistics": {
+    "Branch": "main",
+    "TotalCommits": 3,
+    "AICommits": 0,
+    "HumanCommits": 3,
+    "TotalLinesAdded": 0.0,
+    "TotalLinesDeleted": 0.0,
+    "AILinesAdded": null,
+    "AILinesDeleted": null,
+    "Tier1Commits": 0,
+    "Tier2Commits": 0,
+    "Tier3Commits": 0,
+    "Tier4Commits": 0,
+    "Tier5Commits": 0,
+    "UniqueContributors": 2,
+    "AIPercentage": 0,
+    "HumanLinesAdded": 0.0,
+    "MergedPRs": null
+  },
+  "Branch": "main",
+  "GeneratedAt": "2026-09-29 09:15:32",
+  "Metadata": {
+    "AnalysisMethod": "5-Tier Weighted Pattern Detection",
+    "IncludeTestFiles": false,
+    "GeneratedAt": "2026-09-29 09:15:32",
+    "ScriptVersion": "2.0.0",
+    "PowerShellVersion": "7.6.6",
+    "GeneratedBy": "Copilot Usage Report Tool v2.0"
+  },
+  "ApplicationName": "Deploy your AI application",
+  "Users": [
+    {
+      "UserName": "Saswato-Microsoft",
+      "UserEmail": "v-saswatoc@microsoft.com",
+      "TotalCommits": 1,
+      "AICommits": 0,
+      "HumanCommits": 1,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 0,
+      "HumanLinesDeleted": 0,
+      "TotalLinesAdded": 0,
+      "TotalLinesDeleted": 0,
+      "AIPercentage": 0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Prekshith DJ (Persistent Systems Limited)",
+      "UserEmail": "v-prekdj@microsoft.com",
+      "TotalCommits": 2,
+      "AICommits": 0,
+      "HumanCommits": 2,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 0,
+      "HumanLinesDeleted": 0,
+      "TotalLinesAdded": 0,
+      "TotalLinesDeleted": 0,
+      "AIPercentage": 0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    }
+  ],
+  "FileTypeBreakdown": [
+    {
+      "Extension": "json",
+      "TotalLines": 240221,
+      "AILines": 143818,
+      "AIPercentage": 59.87,
+      "FileCount": 131
+    },
+    {
+      "Extension": "ps1",
+      "TotalLines": 135149,
+      "AILines": 12550,
+      "AIPercentage": 9.29,
+      "FileCount": 1062
+    },
+    {
+      "Extension": "md",
+      "TotalLines": 47978,
+      "AILines": 1350,
+      "AIPercentage": 2.81,
+      "FileCount": 768
+    },
+    {
+      "Extension": "sh",
+      "TotalLines": 17111,
+      "AILines": 318,
+      "AIPercentage": 1.86,
+      "FileCount": 346
+    },
+    {
+      "Extension": "bicep",
+      "TotalLines": 8257,
+      "AILines": 1497,
+      "AIPercentage": 18.13,
+      "FileCount": 478
+    },
+    {
+      "Extension": "bicepparam",
+      "TotalLines": 2353,
+      "AILines": 90,
+      "AIPercentage": 3.82,
+      "FileCount": 71
+    },
+    {
+      "Extension": "yml",
+      "TotalLines": 2178,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 151
+    },
+    {
+      "Extension": "yaml",
+      "TotalLines": 2050,
+      "AILines": 108,
+      "AIPercentage": 5.27,
+      "FileCount": 90
+    },
+    {
+      "Extension": "py",
+      "TotalLines": 1676,
+      "AILines": 792,
+      "AIPercentage": 47.26,
+      "FileCount": 136
+    },
+    {
+      "Extension": "gitignore",
+      "TotalLines": 1169,
+      "AILines": 2,
+      "AIPercentage": 0.17,
+      "FileCount": 41
+    },
+    {
+      "Extension": "sample",
+      "TotalLines": 594,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 18
+    },
+    {
+      "Extension": "other",
+      "TotalLines": 270,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 42
+    },
+    {
+      "Extension": "txt",
+      "TotalLines": 102,
+      "AILines": 24,
+      "AIPercentage": 23.53,
+      "FileCount": 96
+    },
+    {
+      "Extension": "env",
+      "TotalLines": 84,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 24
+    },
+    {
+      "Extension": "example",
+      "TotalLines": 73,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "gitmodules",
+      "TotalLines": 39,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 15
+    },
+    {
+      "Extension": "devcontainer/dockerfile",
+      "TotalLines": 36,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 9
+    },
+    {
+      "Extension": "github/codeowners",
+      "TotalLines": 32,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 24
+    },
+    {
+      "Extension": "md}",
+      "TotalLines": 15,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 10
+    }
+  ],
+  "AIAttributionOverride": {
+    "OverridePercentage": null,
+    "Notes": null,
+    "Applied": false
+  },
+  "AnalysisPeriod": {
+    "EndDate": "2026-08-31",
+    "StartDate": "2026-08-01",
+    "FilterApplied": true
+  },
+  "Commits": [
+    {
+      "Hash": "b3c4f871590019f7afdb76a68cd287e92a531640",
+      "Author": "Saswato-Microsoft",
+      "Date": "Wed Aug 26 11:14:07 2026 +0530",
+      "Message": "Remove create-release workflow file",
+      "LinesAdded": 0,
+      "LinesDeleted": 64,
+      "CodeLinesAdded": 0,
+      "CodeLinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "f405c7b6d966b10ca166f11d4de5e13ab46b4c94",
+      "Author": "Prekshith DJ (Persistent Systems Limited)",
+      "Date": "Wed Aug 19 17:58:44 2026 +0530",
+      "Message": "resolved the comments",
+      "LinesAdded": 2,
+      "LinesDeleted": 2,
+      "CodeLinesAdded": 0,
+      "CodeLinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "52a77ea68024079691eac6240bf858883b609727",
+      "Author": "Prekshith DJ (Persistent Systems Limited)",
+      "Date": "Mon Aug 17 16:44:15 2026 +0530",
+      "Message": "Pin GitHub Actions to commit SHAs",
+      "LinesAdded": 10,
+      "LinesDeleted": 10,
+      "CodeLinesAdded": 0,
+      "CodeLinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    }
+  ],
+  "TierDistribution": {
+    "Tier5_Low": 0,
+    "Tier3_High": 0,
+    "Tier2_VeryHigh": 0,
+    "Human": 3,
+    "Tier1_Definitive": 0,
+    "Tier4_Moderate": 0
+  }
+}
