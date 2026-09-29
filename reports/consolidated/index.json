@@ -1,66 +1,72 @@
 {
   "reports": [
     {
+      "filename": "ConsolidatedReport_2026-09-29_08-24-54.json",
+      "dateRange": "2026-08-01 to 2026-08-31",
+      "name": "AugustNEW-2026",
+      "isLatest": true,
+      "date": "2026-09-29 08:24:54 UTC"
+    },
+    {
+      "filename": "ConsolidatedReport_2026-09-29_03-55-48.json",
+      "dateRange": "2026-07-01 to 2026-07-31",
       "name": "July-2026",
-      "date": "2026-09-29 07:14:38 UTC",
+      "date": "2026-09-29 03:55:48 UTC"
+    },
+    {
       "filename": "ConsolidatedReport_2026-09-29_07-14-38.json",
       "dateRange": "2026-07-01 to 2026-07-31",
-      "isLatest": true
-    },
-    {
       "name": "July-2026",
-      "date": "2026-09-29 03:55:48 UTC",
-      "filename": "ConsolidatedReport_2026-09-29_03-55-48.json",
-      "dateRange": "2026-07-01 to 2026-07-31"
+      "date": "2026-09-29 07:14:38 UTC"
     },
     {
-      "name": "June-2026",
-      "date": "2026-09-28 14:39:28 UTC",
       "filename": "ConsolidatedReport_2026-09-28_14-39-28.json",
-      "dateRange": "2026-06-01 to 2026-06-30"
+      "dateRange": "2026-06-01 to 2026-06-30",
+      "name": "June-2026",
+      "date": "2026-09-28 14:39:28 UTC"
     },
     {
-      "name": "August-2026",
-      "date": "2026-09-28 12:03:49 UTC",
       "filename": "ConsolidatedReport_2026-09-28_12-03-49.json",
-      "dateRange": "2026-08-01 to 2026-08-31"
-    },
-    {
-      "name": "July-2026",
-      "date": "2026-09-28 10:09:04 UTC",
-      "filename": "ConsolidatedReport_2026-09-28_10-09-03.json",
-      "dateRange": "2026-07-01 to 2026-07-31"
-    },
-    {
-      "name": "September2-2026",
-      "date": "2026-09-28 11:19:15 UTC",
-      "filename": "ConsolidatedReport_2026-09-28_11-19-14.json",
-      "dateRange": "2026-09-01 to 2026-09-27"
-    },
-    {
-      "name": "September-2026",
-      "date": "2026-09-28 09:59:06 UTC",
-      "filename": "ConsolidatedReport_2026-09-28_09-59-05.json",
-      "dateRange": "2026-05-01 to 2026-05-31"
-    },
-    {
+      "dateRange": "2026-08-01 to 2026-08-31",
       "name": "August-2026",
-      "date": "2026-09-28 10:04:01 UTC",
+      "date": "2026-09-28 12:03:49 UTC"
+    },
+    {
+      "filename": "ConsolidatedReport_2026-09-28_10-09-03.json",
+      "dateRange": "2026-07-01 to 2026-07-31",
+      "name": "July-2026",
+      "date": "2026-09-28 10:09:04 UTC"
+    },
+    {
+      "filename": "ConsolidatedReport_2026-09-28_11-19-14.json",
+      "dateRange": "2026-09-01 to 2026-09-27",
+      "name": "September2-2026",
+      "date": "2026-09-28 11:19:15 UTC"
+    },
+    {
       "filename": "ConsolidatedReport_2026-09-28_10-04-01.json",
-      "dateRange": "2026-08-01 to 2026-08-31"
+      "dateRange": "2026-08-01 to 2026-08-31",
+      "name": "August-2026",
+      "date": "2026-09-28 10:04:01 UTC"
     },
     {
-      "name": "April-2026",
-      "date": "2026-05-18 05:14:59 UTC",
+      "filename": "ConsolidatedReport_2026-09-28_09-59-05.json",
+      "dateRange": "2026-05-01 to 2026-05-31",
+      "name": "September-2026",
+      "date": "2026-09-28 09:59:06 UTC"
+    },
+    {
       "filename": "ConsolidatedReport_2026-05-18_05-14-59.json",
-      "dateRange": "2026-04-01 to 2026-04-30"
+      "dateRange": "2026-04-01 to 2026-04-30",
+      "name": "April-2026",
+      "date": "2026-05-18 05:14:59 UTC"
     },
     {
-      "name": "May-2026",
-      "date": "2026-05-18 05:27:16 UTC",
       "filename": "ConsolidatedReport_2026-05-18_05-27-16.json",
-      "dateRange": "2026-05-01 to 2026-05-17"
+      "dateRange": "2026-05-01 to 2026-05-17",
+      "name": "May-2026",
+      "date": "2026-05-18 05:27:16 UTC"
     }
   ],
-  "lastUpdated": "2026-09-29 07:14:38"
+  "lastUpdated": "2026-09-29 08:24:54"
 }

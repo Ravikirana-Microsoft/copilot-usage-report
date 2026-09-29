@@ -1,0 +1,173 @@
+{
+  "AIAttributionOverride": {
+    "OverridePercentage": null,
+    "Applied": false,
+    "Notes": null
+  },
+  "TierDistribution": {
+    "Human": 1,
+    "Tier5_Low": 0,
+    "Tier4_Moderate": 0,
+    "Tier1_Definitive": 0,
+    "Tier3_High": 0,
+    "Tier2_VeryHigh": 0
+  },
+  "AnalysisPeriod": {
+    "FilterApplied": true,
+    "EndDate": "2026-08-31",
+    "StartDate": "2026-08-01"
+  },
+  "Users": [
+    {
+      "UserName": "VishalSh-Microsoft",
+      "UserEmail": "v-shindevis@microsoft.com",
+      "TotalCommits": 1,
+      "AICommits": 0,
+      "HumanCommits": 1,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 0,
+      "HumanLinesDeleted": 0,
+      "TotalLinesAdded": 0,
+      "TotalLinesDeleted": 0,
+      "AIPercentage": 0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    }
+  ],
+  "Commits": {
+    "Hash": "1d95990b40b5136cc38b0084b0f7029aedbb5a3e",
+    "Author": "VishalSh-Microsoft",
+    "Date": "Tue Aug 18 17:20:10 2026 +0530",
+    "Message": "fix: Pin GitHub Actions to commit SHAs",
+    "LinesAdded": 19,
+    "LinesDeleted": 19,
+    "CodeLinesAdded": 0,
+    "CodeLinesDeleted": 0,
+    "IsAI": false,
+    "ConfidenceScore": 0,
+    "ConfidenceTier": "Human Written",
+    "TierNumber": 0
+  },
+  "ApplicationName": "Data and Security",
+  "GeneratedAt": "2026-09-29 08:24:36",
+  "Branch": "dev",
+  "FileTypeBreakdown": [
+    {
+      "Extension": "md",
+      "TotalLines": 25891,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 486
+    },
+    {
+      "Extension": "ps1",
+      "TotalLines": 21402,
+      "AILines": 507,
+      "AIPercentage": 2.37,
+      "FileCount": 558
+    },
+    {
+      "Extension": "json",
+      "TotalLines": 3079,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 51
+    },
+    {
+      "Extension": "yml",
+      "TotalLines": 2453,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 215
+    },
+    {
+      "Extension": "gitignore",
+      "TotalLines": 1257,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 6
+    },
+    {
+      "Extension": "other",
+      "TotalLines": 418,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 8
+    },
+    {
+      "Extension": "bicep",
+      "TotalLines": 379,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 24
+    },
+    {
+      "Extension": "yaml",
+      "TotalLines": 268,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 35
+    },
+    {
+      "Extension": "bicepparam",
+      "TotalLines": 196,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 32
+    },
+    {
+      "Extension": "md\"",
+      "TotalLines": 92,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "github/codeowners",
+      "TotalLines": 4,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "yml}",
+      "TotalLines": 2,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 2
+    }
+  ],
+  "BranchStatistics": {
+    "Branch": "dev",
+    "TotalCommits": 1,
+    "AICommits": 0,
+    "HumanCommits": 1,
+    "TotalLinesAdded": 0.0,
+    "TotalLinesDeleted": 0.0,
+    "AILinesAdded": null,
+    "AILinesDeleted": null,
+    "Tier1Commits": 0,
+    "Tier2Commits": 0,
+    "Tier3Commits": 0,
+    "Tier4Commits": 0,
+    "Tier5Commits": 0,
+    "UniqueContributors": 1,
+    "AIPercentage": 0,
+    "HumanLinesAdded": 0.0,
+    "MergedPRs": null
+  },
+  "Metadata": {
+    "PowerShellVersion": "7.6.6",
+    "IncludeTestFiles": false,
+    "AnalysisMethod": "5-Tier Weighted Pattern Detection",
+    "GeneratedBy": "Copilot Usage Report Tool v2.0",
+    "ScriptVersion": "2.0.0",
+    "GeneratedAt": "2026-09-29 08:24:36"
+  }
+}
