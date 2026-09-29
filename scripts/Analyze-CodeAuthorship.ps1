@@ -1011,7 +1011,41 @@ try {
     $branchStats | Add-Member -NotePropertyName "HumanLinesAdded" -NotePropertyValue $(
         $branchStats.TotalLinesAdded - $branchStats.AILinesAdded
     )
-    
+
+    # =====================================================
+    # MERGED PR COUNT: Query GitHub for PRs merged into this branch (Avg PRs/Week/Dev KPI)
+    # Uses the Search API filtered by base branch and merge date. Null if unavailable.
+    # =====================================================
+    $mergedPRCount = $null
+    try {
+        $remoteUrl = (git config --get remote.origin.url 2>$null)
+        $token = if ($env:GITHUB_TOKEN) { $env:GITHUB_TOKEN } elseif ($env:GH_TOKEN) { $env:GH_TOKEN } else { $null }
+        if ($remoteUrl -and $token -and ($remoteUrl -match 'github\.com[:/]([^/]+)/(.+)$')) {
+            $prOwner = $matches[1]
+            $prRepo = $matches[2] -replace '\.git$', ''
+            $query = "repo:$prOwner/$prRepo is:pr is:merged base:$Branch"
+            if ($StartDate -and $EndDate) {
+                $query += " merged:$StartDate..$EndDate"
+            } elseif ($StartDate) {
+                $query += " merged:>=$StartDate"
+            } elseif ($EndDate) {
+                $query += " merged:<=$EndDate"
+            }
+            $uri = "https://api.github.com/search/issues?q=$([uri]::EscapeDataString($query))&per_page=1"
+            $headers = @{
+                Authorization = "Bearer $token"
+                Accept        = "application/vnd.github+json"
+                "User-Agent"  = "copilot-usage-report"
+            }
+            $prResponse = Invoke-RestMethod -Uri $uri -Headers $headers -Method Get -ErrorAction Stop
+            $mergedPRCount = [int]$prResponse.total_count
+            Write-Host "  Merged PRs into '$Branch': $mergedPRCount" -ForegroundColor Gray
+        }
+    } catch {
+        Write-Warning "  Could not fetch merged PR count from GitHub: $($_.Exception.Message)"
+    }
+    $branchStats | Add-Member -NotePropertyName "MergedPRs" -NotePropertyValue $mergedPRCount
+
     # =====================================================
     # AI ATTRIBUTION OVERRIDE: Apply manual attribution if configured
     # =====================================================

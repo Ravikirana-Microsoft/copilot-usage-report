@@ -1438,7 +1438,7 @@
                 <div class="subtext">Unique authors</div>
             </div>
             <div class="summary-card prs-per-dev">
-                <div class="label">Avg PRs / Developer</div>
+                <div class="label">Avg PRs / Developer / Week</div>
                 <div class="value" id="avgPRsPerDev">--</div>
                 <div class="subtext" id="mergedPRs">-- merged PRs</div>
             </div>
@@ -10528,6 +10528,23 @@
                 }
             };
 
+            // KPI accumulators: real merged-PR counts from the GitHub API
+            let mergedPRsFromApi = 0;
+            let hasApiMergedPRs = false;
+
+            // Contributors who commit under two Git identities — merged so each counts as one person.
+            // Matched case-insensitively; value is the canonical display name.
+            const AUTHOR_ALIASES = {
+                'ajit padhi': 'PadhiAjit-Microsoft',
+                'prekshith dj (persistent systems limited)': 'PrekshithD-Microsoft',
+                'priyanka singhal (persistent systems limited)': 'Priyanka2-Microsoft',
+                'yamini dhiman': 'Yamini1-Microsoft'
+            };
+            const canonicalAuthor = name => {
+                const t = (name || '').trim();
+                return AUTHOR_ALIASES[t.toLowerCase()] || t;
+            };
+
             results.forEach(item => {
                 // Handle different data structures
                 if (item.BranchStatistics) {
@@ -10561,6 +10578,12 @@
                         fileTypeBreakdown: item.FileTypeBreakdown || []
                     });
 
+                    // Accumulate real merged-PR counts from the pipeline (GitHub API) when present
+                    if (stats.MergedPRs !== null && stats.MergedPRs !== undefined) {
+                        mergedPRsFromApi += stats.MergedPRs;
+                        hasApiMergedPRs = true;
+                    }
+
                     // Process commits - ensure it's an array
                     if (item.Commits) {
                         const commits = Array.isArray(item.Commits) ? item.Commits : [item.Commits];
@@ -10570,54 +10593,59 @@
                                 return; // Skip this commit entirely
                             }
                             
-                            const author = commit.Author.trim();
+                            const author = canonicalAuthor(commit.Author);
+                            const isBot = /\[bot\]$/i.test(commit.Author.trim());
                             
-                            processed.summary.contributors.add(author);
-                            
-                            if (!processed.users[author]) {
-                                processed.users[author] = {
-                                    name: author,
-                                    totalCommits: 0,
-                                    aiCommits: 0,
-                                    totalLines: 0,
-                                    aiLines: 0,
-                                    applications: {}  // Track per-application stats
-                                };
+                            // Bots' commits are still tracked (totals/PRs) but bots are not counted as contributors
+                            if (!isBot) {
+                                processed.summary.contributors.add(author);
+                                
+                                if (!processed.users[author]) {
+                                    processed.users[author] = {
+                                        name: author,
+                                        totalCommits: 0,
+                                        aiCommits: 0,
+                                        totalLines: 0,
+                                        aiLines: 0,
+                                        applications: {}  // Track per-application stats
+                                    };
+                                }
+                                
+                                // Track per-application stats for this user
+                                if (!processed.users[author].applications[appName]) {
+                                    processed.users[author].applications[appName] = {
+                                        totalCommits: 0,
+                                        aiCommits: 0,
+                                        totalLines: 0,
+                                        aiLines: 0
+                                    };
+                                }
+                                
+                                processed.users[author].applications[appName].totalCommits++;
+                                processed.users[author].applications[appName].totalLines += commit.LinesAdded || 0;
+                                
+                                if (commit.IsAI) {
+                                    processed.users[author].applications[appName].aiCommits++;
+                                    processed.users[author].applications[appName].aiLines += commit.LinesAdded || 0;
+                                }
+                                
+                                processed.users[author].totalCommits++;
+                                processed.users[author].totalLines += commit.LinesAdded || 0;
+                                
+                                // Track AI-specific stats
+                                if (commit.IsAI) {
+                                    processed.users[author].aiCommits++;
+                                    processed.users[author].aiLines += commit.LinesAdded || 0;
+                                }
                             }
                             
-                            // Track per-application stats for this user
-                            if (!processed.users[author].applications[appName]) {
-                                processed.users[author].applications[appName] = {
-                                    totalCommits: 0,
-                                    aiCommits: 0,
-                                    totalLines: 0,
-                                    aiLines: 0
-                                };
-                            }
-                            
-                            processed.users[author].applications[appName].totalCommits++;
-                            processed.users[author].applications[appName].totalLines += commit.LinesAdded || 0;
-                            
-                            if (commit.IsAI) {
-                                processed.users[author].applications[appName].aiCommits++;
-                                processed.users[author].applications[appName].aiLines += commit.LinesAdded || 0;
-                            }
-                            
-                            processed.users[author].totalCommits++;
-                            processed.users[author].totalLines += commit.LinesAdded || 0;
-                            
-                            // Track AI-specific stats
-                            if (commit.IsAI) {
-                                processed.users[author].aiCommits++;
-                                processed.users[author].aiLines += commit.LinesAdded || 0;
-                            }
-                            
-                            // Push ALL commits (both AI and non-AI) to track all contributors
+                            // Push ALL commits (including bots) so totals and PR counts consider them
                             processed.commits.push({
                                 ...commit,
                                 Author: author,
                                 application: appName,
-                                branch: stats.Branch
+                                branch: stats.Branch,
+                                isBot: isBot
                             });
                         });
                     }
@@ -10642,6 +10670,7 @@
             
             // First pass: collect ALL users per application from commits
             processed.commits.forEach(commit => {
+                if (commit.isBot) return; // bots are not counted as contributors
                 const appName = commit.application;
                 const author = commit.Author;
                 if (!appUsers[appName]) {
@@ -10712,20 +10741,28 @@
             processed.summary.humanLines = processed.summary.totalLines - processed.summary.aiLines;
             processed.summary.contributorCount = processed.summary.contributors.size;
 
-            // Merged PRs derived from commit messages (merge commits + squash-merge "(#123)" suffix),
+            // Merged PRs: prefer real counts from the pipeline (GitHub PR API); otherwise
+            // derive from commit messages (merge commits + squash-merge "(#123)" suffix),
             // deduped by application + PR number since PR numbers are per-repository
-            const mergedPRSet = new Set();
-            processed.commits.forEach(commit => {
-                const msg = commit.Message || '';
-                const app = commit.application || '';
-                const merge = msg.match(/Merge pull request #(\d+)/i);
-                if (merge) { mergedPRSet.add(app + '#' + merge[1]); return; }
-                const squash = msg.match(/\(#(\d+)\)/);
-                if (squash) { mergedPRSet.add(app + '#' + squash[1]); }
-            });
-            processed.summary.mergedPRs = mergedPRSet.size;
+            let mergedPRs;
+            if (hasApiMergedPRs) {
+                mergedPRs = mergedPRsFromApi;
+            } else {
+                const mergedPRSet = new Set();
+                processed.commits.forEach(commit => {
+                    const msg = commit.Message || '';
+                    const app = commit.application || '';
+                    const merge = msg.match(/Merge pull request #(\d+)/i);
+                    if (merge) { mergedPRSet.add(app + '#' + merge[1]); return; }
+                    const squash = msg.match(/\(#(\d+)\)/);
+                    if (squash) { mergedPRSet.add(app + '#' + squash[1]); }
+                });
+                mergedPRs = mergedPRSet.size;
+            }
+
+            processed.summary.mergedPRs = mergedPRs;
             processed.summary.avgPRsPerDev = processed.summary.contributorCount > 0
-                ? processed.summary.mergedPRs / processed.summary.contributorCount
+                ? mergedPRs / processed.summary.contributorCount
                 : 0;
 
             return processed;
