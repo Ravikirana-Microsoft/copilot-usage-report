@@ -8489,7 +8489,8 @@
 
             try {
                 // Try to load the consolidated report via fetch (works with HTTP server)
-                const response = await fetch(reportPath);
+                // Cache-bust so freshly updated reports are never served stale from cache
+                const response = await fetch(`${reportPath}${reportPath.includes('?') ? '&' : '?'}_t=${Date.now()}`, { cache: 'no-store' });
                 if (!response.ok) throw new Error('Report not found');
                 
                 const data = await response.json();
