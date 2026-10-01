@@ -8864,6 +8864,60 @@
     "Tier5_Low": 0
   },
   "ApplicationName": "Data and Security"
+},
+{
+  "AIAttributionOverride": {
+    "Notes": "Manually-supplied offline analysis (Frontier mono repo). Not accessible to the automated pipeline; metrics generated from a local clone. Methodology: code-only (excludes docs/tests/data/CSV/PDF/images/notebooks). AI = T1-T5 signal tiers. All-files split: AI 62395 / Human 10197 / Total 72592 (86.0%). MergedPRs=23 (not stored to avoid flipping the dashboard PR card to API mode).",
+    "Applied": false,
+    "OverridePercentage": null
+  },
+  "BranchStatistics": {
+    "Branch": "main",
+    "TotalCommits": 106,
+    "AICommits": 55,
+    "HumanCommits": 50,
+    "TotalLinesAdded": 42504.0,
+    "TotalLinesDeleted": null,
+    "AILinesAdded": 33227.0,
+    "AILinesDeleted": null,
+    "Tier1Commits": 23,
+    "Tier2Commits": 3,
+    "Tier3Commits": 24,
+    "Tier4Commits": 2,
+    "Tier5Commits": 3,
+    "UniqueContributors": 15,
+    "AIPercentage": 78.2,
+    "HumanLinesAdded": 9277.0,
+    "MergedPRs": null
+  },
+  "TierDistribution": {
+    "Tier3_High": 24,
+    "Tier1_Definitive": 23,
+    "Tier5_Low": 3,
+    "Tier2_VeryHigh": 3,
+    "Tier4_Moderate": 2,
+    "Human": 50
+  },
+  "AnalysisPeriod": {
+    "EndDate": "2026-08-31",
+    "FilterApplied": true,
+    "StartDate": "2026-08-01"
+  },
+  "Commits": null,
+  "FileTypeBreakdown": [],
+  "Metadata": {
+    "PowerShellVersion": "7.6.6",
+    "AnalysisMethod": "5-Tier Weighted Pattern Detection",
+    "IncludeTestFiles": false,
+    "GeneratedBy": "Copilot Usage Report Tool v2.0 (manual offline entry)",
+    "ScriptVersion": "2.0.0",
+    "GeneratedAt": "2026-09-29 15:29:54",
+    "DataSource": "Local clone analysis; Frontier mono repo not accessible to pipeline"
+  },
+  "Users": [],
+  "GeneratedAt": "2026-09-29 15:29:54",
+  "Branch": "main",
+  "ApplicationName": "Frontier"
 }
   ]
 }

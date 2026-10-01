@@ -6413,6 +6413,60 @@
   "GeneratedAt": "2026-09-29 14:58:43",
   "Branch": "main",
   "ApplicationName": "Supply Chain Intelligence"
+},
+{
+  "AIAttributionOverride": {
+    "Notes": "Manually-supplied offline analysis (Frontier mono repo). Not accessible to the automated pipeline; metrics generated from a local clone. Methodology: code-only (excludes docs/tests/data/CSV/PDF/images/notebooks). AI = T1-T5 signal tiers. All-files split: AI 176296 / Human 3945 / Total 180241 (97.8%). MergedPRs=18 (not stored to avoid flipping the dashboard PR card to API mode).",
+    "Applied": false,
+    "OverridePercentage": null
+  },
+  "BranchStatistics": {
+    "Branch": "main",
+    "TotalCommits": 81,
+    "AICommits": 61,
+    "HumanCommits": 20,
+    "TotalLinesAdded": 46992.0,
+    "TotalLinesDeleted": null,
+    "AILinesAdded": 43197.0,
+    "AILinesDeleted": null,
+    "Tier1Commits": 49,
+    "Tier2Commits": 0,
+    "Tier3Commits": 9,
+    "Tier4Commits": 0,
+    "Tier5Commits": 3,
+    "UniqueContributors": 21,
+    "AIPercentage": 91.9,
+    "HumanLinesAdded": 3795.0,
+    "MergedPRs": null
+  },
+  "TierDistribution": {
+    "Tier3_High": 9,
+    "Tier1_Definitive": 49,
+    "Tier5_Low": 3,
+    "Tier2_VeryHigh": 0,
+    "Tier4_Moderate": 0,
+    "Human": 20
+  },
+  "AnalysisPeriod": {
+    "EndDate": "2026-09-29",
+    "FilterApplied": true,
+    "StartDate": "2026-09-01"
+  },
+  "Commits": null,
+  "FileTypeBreakdown": [],
+  "Metadata": {
+    "PowerShellVersion": "7.6.6",
+    "AnalysisMethod": "5-Tier Weighted Pattern Detection",
+    "IncludeTestFiles": false,
+    "GeneratedBy": "Copilot Usage Report Tool v2.0 (manual offline entry)",
+    "ScriptVersion": "2.0.0",
+    "GeneratedAt": "2026-09-29 14:58:43",
+    "DataSource": "Local clone analysis; Frontier mono repo not accessible to pipeline"
+  },
+  "Users": [],
+  "GeneratedAt": "2026-09-29 14:58:43",
+  "Branch": "main",
+  "ApplicationName": "Frontier"
 }
   ]
 }
