@@ -1,0 +1,595 @@
+{
+  "AnalysisPeriod": {
+    "EndDate": "2026-09-30",
+    "FilterApplied": true,
+    "StartDate": "2026-09-01"
+  },
+  "Commits": [
+    {
+      "Hash": "a38c738573ef7403bfe1358d9787cbd9dd7122e8",
+      "Author": "Ayaz-Microsoft",
+      "Date": "Thu Sep 10 09:35:23 2026 +0530",
+      "Message": "Refactor formatLabel function to improve label formatting logic",
+      "LinesAdded": 2,
+      "LinesDeleted": 1,
+      "CodeLinesAdded": 2,
+      "CodeLinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "daf25898125ba73b20a842c320d714566d4a7b39",
+      "Author": "Ayaz-Microsoft",
+      "Date": "Tue Sep 8 15:18:56 2026 +0530",
+      "Message": "Add formatLabel function to format category labels in filter component",
+      "LinesAdded": 11,
+      "LinesDeleted": 2,
+      "CodeLinesAdded": 11,
+      "CodeLinesDeleted": 2,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "f3bcf3e3ef0fd73e928200a684e29f7ef30aff59",
+      "Author": "Akhileswara-Microsoft",
+      "Date": "Mon Sep 7 19:44:02 2026 +0530",
+      "Message": "Refactor response handling in chatService",
+      "LinesAdded": 6,
+      "LinesDeleted": 2,
+      "CodeLinesAdded": 6,
+      "CodeLinesDeleted": 2,
+      "IsAI": true,
+      "ConfidenceScore": 100,
+      "ConfidenceTier": "Tier 1: Definitive AI - Git Trailer (100 percent)",
+      "TierNumber": 1
+    },
+    {
+      "Hash": "0c9f89bc45a48b3e6e7ae1cd9ecff7354f009d4e",
+      "Author": "Akhileswara-Microsoft",
+      "Date": "Mon Sep 7 19:34:57 2026 +0530",
+      "Message": "Return display answer from parsed string",
+      "LinesAdded": 1,
+      "LinesDeleted": 1,
+      "CodeLinesAdded": 1,
+      "CodeLinesDeleted": 1,
+      "IsAI": true,
+      "ConfidenceScore": 100,
+      "ConfidenceTier": "Tier 1: Definitive AI - Git Trailer (100 percent)",
+      "TierNumber": 1
+    },
+    {
+      "Hash": "12187024f29bcdaccdd10387b1868e37072d5746",
+      "Author": "Akhileswara-Microsoft",
+      "Date": "Mon Sep 7 19:29:39 2026 +0530",
+      "Message": "Handle string response in chatService",
+      "LinesAdded": 3,
+      "LinesDeleted": 0,
+      "CodeLinesAdded": 3,
+      "CodeLinesDeleted": 0,
+      "IsAI": true,
+      "ConfidenceScore": 100,
+      "ConfidenceTier": "Tier 1: Definitive AI - Git Trailer (100 percent)",
+      "TierNumber": 1
+    },
+    {
+      "Hash": "53ba1b092d7f48e97ddc8c31634fad2b9aee9861",
+      "Author": "Akhileswara-Microsoft",
+      "Date": "Mon Sep 7 19:29:27 2026 +0530",
+      "Message": "Update regex for code block removal in chatService",
+      "LinesAdded": 2,
+      "LinesDeleted": 2,
+      "CodeLinesAdded": 2,
+      "CodeLinesDeleted": 2,
+      "IsAI": true,
+      "ConfidenceScore": 100,
+      "ConfidenceTier": "Tier 1: Definitive AI - Git Trailer (100 percent)",
+      "TierNumber": 1
+    },
+    {
+      "Hash": "137df7c6a4308e7b07a9bd0eb9bb21aae0326260",
+      "Author": "Akhileswara-Microsoft",
+      "Date": "Mon Sep 7 19:22:18 2026 +0530",
+      "Message": "Refactor getDisplayAnswer function to improve JSON parsing and response handling",
+      "LinesAdded": 7,
+      "LinesDeleted": 8,
+      "CodeLinesAdded": 7,
+      "CodeLinesDeleted": 8,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "4a78a29d96c083fda6424a4f23d58759a9bfdedb",
+      "Author": "Akhileswara-Microsoft",
+      "Date": "Mon Sep 7 18:40:37 2026 +0530",
+      "Message": "Improve response handling in getDisplayAnswer function to ensure proper JSON parsing and fallback for string replacements",
+      "LinesAdded": 8,
+      "LinesDeleted": 4,
+      "CodeLinesAdded": 8,
+      "CodeLinesDeleted": 4,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "c5edf3316fea685c87b155dac88333429b0628c9",
+      "Author": "VishalSh-Microsoft",
+      "Date": "Mon Sep 7 14:08:08 2026 +0530",
+      "Message": "Implement document import lease management and enhance upload handling",
+      "LinesAdded": 183,
+      "LinesDeleted": 43,
+      "CodeLinesAdded": 183,
+      "CodeLinesDeleted": 43,
+      "IsAI": true,
+      "ConfidenceScore": 75,
+      "ConfidenceTier": "Tier 4: Moderate Confidence (70-79 percent)",
+      "TierNumber": 4
+    },
+    {
+      "Hash": "3fdabc51afc7aa21be04bd9daeaee82dfc8e399f",
+      "Author": "Akhileswara-Microsoft",
+      "Date": "Mon Sep 7 10:49:52 2026 +0530",
+      "Message": "Fix syntax error in getDisplayAnswer function",
+      "LinesAdded": 1,
+      "LinesDeleted": 1,
+      "CodeLinesAdded": 1,
+      "CodeLinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "c3c820e8da4e18b053e48660251cecb367af393c",
+      "Author": "Akhileswara-Microsoft",
+      "Date": "Mon Sep 7 10:45:42 2026 +0530",
+      "Message": "Update getDisplayAnswer function",
+      "LinesAdded": 2,
+      "LinesDeleted": 2,
+      "CodeLinesAdded": 2,
+      "CodeLinesDeleted": 2,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "7d4813a6d6f3c50f3b713c149854ed29c3e44b37",
+      "Author": "Akhileswara-Microsoft",
+      "Date": "Mon Sep 7 10:41:20 2026 +0530",
+      "Message": "Update getDisplayAnswer function to provide a user-friendly message when no answer is returned",
+      "LinesAdded": 1,
+      "LinesDeleted": 1,
+      "CodeLinesAdded": 1,
+      "CodeLinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "d71ba1ad164e24d6d3d3827b4b65f453fe030c46",
+      "Author": "Akhileswara-Microsoft",
+      "Date": "Mon Sep 7 10:28:28 2026 +0530",
+      "Message": "Refactor getDisplayAnswer function to handle unknown types and improve JSON stringification",
+      "LinesAdded": 18,
+      "LinesDeleted": 3,
+      "CodeLinesAdded": 18,
+      "CodeLinesDeleted": 3,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "40c144777729aa770579668f850f6d42ca288e73",
+      "Author": "Akhileswara-Microsoft",
+      "Date": "Fri Sep 4 12:57:24 2026 +0530",
+      "Message": "Enhance answer parsing in Completion function to handle JSON responses and improve error handling",
+      "LinesAdded": 32,
+      "LinesDeleted": 2,
+      "CodeLinesAdded": 32,
+      "CodeLinesDeleted": 2,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "8b78461bc64f8080dfd66c754fa20cf806e94dc9",
+      "Author": "VishalSh-Microsoft",
+      "Date": "Fri Sep 4 12:36:24 2026 +0530",
+      "Message": "Refactor document import logic to use a temporary file stream for non-seekable streams",
+      "LinesAdded": 13,
+      "LinesDeleted": 1,
+      "CodeLinesAdded": 13,
+      "CodeLinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "48688ccdb85447eda0b7e48bf3c53786ca91b07b",
+      "Author": "VishalSh-Microsoft",
+      "Date": "Fri Sep 4 12:27:58 2026 +0530",
+      "Message": "Enhance document import logic to support concurrent imports and update existing document handling in the repository",
+      "LinesAdded": 35,
+      "LinesDeleted": 2,
+      "CodeLinesAdded": 35,
+      "CodeLinesDeleted": 2,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "396c0ae72f0faeb25e3041935290679c7ee42385",
+      "Author": "VishalSh-Microsoft",
+      "Date": "Fri Sep 4 12:09:57 2026 +0530",
+      "Message": "Refactor document upload logic to handle non-seekable streams and improve error message parsing in the upload dialog",
+      "LinesAdded": 59,
+      "LinesDeleted": 10,
+      "CodeLinesAdded": 59,
+      "CodeLinesDeleted": 10,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "431f6de659d7ea0384276aab9eef2ff97f7b270e",
+      "Author": "Ayaz-Microsoft",
+      "Date": "Thu Sep 3 17:48:39 2026 +0530",
+      "Message": "erased PII from image",
+      "LinesAdded": 0,
+      "LinesDeleted": 0,
+      "CodeLinesAdded": 0,
+      "CodeLinesDeleted": 0,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "df075a97ba641bca660a043b0ab04feedf4eab9c",
+      "Author": "Ayaz-Microsoft",
+      "Date": "Thu Sep 3 17:20:26 2026 +0530",
+      "Message": "normalize search query to lowercase and update image assets",
+      "LinesAdded": 3,
+      "LinesDeleted": 1,
+      "CodeLinesAdded": 3,
+      "CodeLinesDeleted": 1,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    },
+    {
+      "Hash": "fbe3fe8ae22f68589fff71fa7add2dc694bfcde4",
+      "Author": "VishalSh-Microsoft",
+      "Date": "Thu Sep 3 14:48:15 2026 +0530",
+      "Message": "Enhance document upload functionality and improve document registration logic",
+      "LinesAdded": 62,
+      "LinesDeleted": 19,
+      "CodeLinesAdded": 62,
+      "CodeLinesDeleted": 19,
+      "IsAI": false,
+      "ConfidenceScore": 0,
+      "ConfidenceTier": "Human Written",
+      "TierNumber": 0
+    }
+  ],
+  "Metadata": {
+    "AnalysisMethod": "5-Tier Weighted Pattern Detection",
+    "ScriptVersion": "2.0.0",
+    "GeneratedBy": "Copilot Usage Report Tool v2.0",
+    "PowerShellVersion": "7.6.6",
+    "IncludeTestFiles": false,
+    "GeneratedAt": "2026-10-01 01:17:35"
+  },
+  "TierDistribution": {
+    "Tier3_High": 0,
+    "Tier1_Definitive": 4,
+    "Tier5_Low": 0,
+    "Tier2_VeryHigh": 0,
+    "Tier4_Moderate": 1,
+    "Human": 15
+  },
+  "ApplicationName": "DKM",
+  "FileTypeBreakdown": [
+    {
+      "Extension": "json",
+      "TotalLines": 205932,
+      "AILines": 35452,
+      "AIPercentage": 17.22,
+      "FileCount": 193
+    },
+    {
+      "Extension": "lock",
+      "TotalLines": 68997,
+      "AILines": 2230,
+      "AIPercentage": 3.23,
+      "FileCount": 37
+    },
+    {
+      "Extension": "md",
+      "TotalLines": 26007,
+      "AILines": 2,
+      "AIPercentage": 0.01,
+      "FileCount": 614
+    },
+    {
+      "Extension": "yml",
+      "TotalLines": 17020,
+      "AILines": 444,
+      "AIPercentage": 2.61,
+      "FileCount": 785
+    },
+    {
+      "Extension": "py",
+      "TotalLines": 12713,
+      "AILines": 2070,
+      "AIPercentage": 16.28,
+      "FileCount": 54
+    },
+    {
+      "Extension": "bicep",
+      "TotalLines": 8501,
+      "AILines": 3332,
+      "AIPercentage": 39.2,
+      "FileCount": 269
+    },
+    {
+      "Extension": "cs",
+      "TotalLines": 5387,
+      "AILines": 4053,
+      "AIPercentage": 75.24,
+      "FileCount": 190
+    },
+    {
+      "Extension": "sample",
+      "TotalLines": 3282,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 61
+    },
+    {
+      "Extension": "tsx",
+      "TotalLines": 2057,
+      "AILines": 1232,
+      "AIPercentage": 59.89,
+      "FileCount": 121
+    },
+    {
+      "Extension": "ps1",
+      "TotalLines": 1862,
+      "AILines": 292,
+      "AIPercentage": 15.68,
+      "FileCount": 97
+    },
+    {
+      "Extension": "sh",
+      "TotalLines": 1364,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 42
+    },
+    {
+      "Extension": "ts",
+      "TotalLines": 1055,
+      "AILines": 585,
+      "AIPercentage": 55.45,
+      "FileCount": 83
+    },
+    {
+      "Extension": "scss",
+      "TotalLines": 462,
+      "AILines": 274,
+      "AIPercentage": 59.31,
+      "FileCount": 20
+    },
+    {
+      "Extension": "other",
+      "TotalLines": 398,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 14
+    },
+    {
+      "Extension": "yaml",
+      "TotalLines": 397,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 58
+    },
+    {
+      "Extension": "config",
+      "TotalLines": 198,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 30
+    },
+    {
+      "Extension": "csproj",
+      "TotalLines": 166,
+      "AILines": 8,
+      "AIPercentage": 4.82,
+      "FileCount": 58
+    },
+    {
+      "Extension": "template",
+      "TotalLines": 163,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 30
+    },
+    {
+      "Extension": "psm1",
+      "TotalLines": 158,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 5
+    },
+    {
+      "Extension": "props",
+      "TotalLines": 133,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 18
+    },
+    {
+      "Extension": "yml}",
+      "TotalLines": 70,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 19
+    },
+    {
+      "Extension": "github/codeowners",
+      "TotalLines": 29,
+      "AILines": 2,
+      "AIPercentage": 6.9,
+      "FileCount": 29
+    },
+    {
+      "Extension": "txt",
+      "TotalLines": 27,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 21
+    },
+    {
+      "Extension": "css",
+      "TotalLines": 12,
+      "AILines": 12,
+      "AIPercentage": 100.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "npmrc",
+      "TotalLines": 6,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 6
+    },
+    {
+      "Extension": "ini",
+      "TotalLines": 6,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "jsonl",
+      "TotalLines": 2,
+      "AILines": 2,
+      "AIPercentage": 100.0,
+      "FileCount": 2
+    }
+  ],
+  "BranchStatistics": {
+    "Branch": "dev",
+    "TotalCommits": 20,
+    "AICommits": 5,
+    "HumanCommits": 15,
+    "TotalLinesAdded": 449.0,
+    "TotalLinesDeleted": 105.0,
+    "AILinesAdded": 195.0,
+    "AILinesDeleted": 48.0,
+    "Tier1Commits": 4,
+    "Tier2Commits": 0,
+    "Tier3Commits": 0,
+    "Tier4Commits": 1,
+    "Tier5Commits": 0,
+    "UniqueContributors": 3,
+    "AIPercentage": 43.43,
+    "HumanLinesAdded": 254.0,
+    "MergedPRs": null
+  },
+  "Users": [
+    {
+      "UserName": "Ayaz-Microsoft",
+      "UserEmail": "v-ayazkhan@microsoft.com",
+      "TotalCommits": 4,
+      "AICommits": 0,
+      "HumanCommits": 4,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 16,
+      "HumanLinesDeleted": 4,
+      "TotalLinesAdded": 16,
+      "TotalLinesDeleted": 4,
+      "AIPercentage": 0.0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Akhileswara-Microsoft",
+      "UserEmail": "v-golnaidu@microsoft.com",
+      "TotalCommits": 11,
+      "AICommits": 4,
+      "HumanCommits": 7,
+      "AILinesAdded": 12,
+      "AILinesDeleted": 5,
+      "HumanLinesAdded": 69,
+      "HumanLinesDeleted": 21,
+      "TotalLinesAdded": 81,
+      "TotalLinesDeleted": 26,
+      "AIPercentage": 14.81,
+      "AvgConfidenceScore": 100.0,
+      "ConfidenceScores": [
+        100,
+        100,
+        100,
+        100
+      ],
+      "Tier1Commits": 4,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "VishalSh-Microsoft",
+      "UserEmail": "v-shindevis@microsoft.com",
+      "TotalCommits": 5,
+      "AICommits": 1,
+      "HumanCommits": 4,
+      "AILinesAdded": 183,
+      "AILinesDeleted": 43,
+      "HumanLinesAdded": 169,
+      "HumanLinesDeleted": 32,
+      "TotalLinesAdded": 352,
+      "TotalLinesDeleted": 75,
+      "AIPercentage": 51.99,
+      "AvgConfidenceScore": 75.0,
+      "ConfidenceScores": [
+        75
+      ],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 1,
+      "Tier5Commits": 0
+    }
+  ],
+  "AIAttributionOverride": {
+    "Notes": null,
+    "Applied": false,
+    "OverridePercentage": null
+  },
+  "GeneratedAt": "2026-10-01 01:17:35",
+  "Branch": "dev"
+}

@@ -1,0 +1,306 @@
+{
+  "AnalysisPeriod": {
+    "EndDate": "2026-09-30",
+    "FilterApplied": true,
+    "StartDate": "2026-09-01"
+  },
+  "Commits": null,
+  "Metadata": {
+    "AnalysisMethod": "5-Tier Weighted Pattern Detection",
+    "ScriptVersion": "2.0.0",
+    "GeneratedBy": "Copilot Usage Report Tool v2.0",
+    "PowerShellVersion": "7.6.6",
+    "IncludeTestFiles": false,
+    "GeneratedAt": "2026-10-01 01:17:31"
+  },
+  "TierDistribution": {
+    "Tier3_High": 0,
+    "Tier1_Definitive": 0,
+    "Tier5_Low": 0,
+    "Tier2_VeryHigh": 0,
+    "Tier4_Moderate": 0,
+    "Human": 0
+  },
+  "ApplicationName": "Content Generation",
+  "FileTypeBreakdown": [
+    {
+      "Extension": "json",
+      "TotalLines": 623699,
+      "AILines": 323556,
+      "AIPercentage": 51.88,
+      "FileCount": 766
+    },
+    {
+      "Extension": "py",
+      "TotalLines": 166159,
+      "AILines": 122607,
+      "AIPercentage": 73.79,
+      "FileCount": 2163
+    },
+    {
+      "Extension": "tsx",
+      "TotalLines": 48511,
+      "AILines": 42437,
+      "AIPercentage": 87.48,
+      "FileCount": 1421
+    },
+    {
+      "Extension": "bicep",
+      "TotalLines": 40844,
+      "AILines": 21456,
+      "AIPercentage": 52.53,
+      "FileCount": 896
+    },
+    {
+      "Extension": "md",
+      "TotalLines": 30030,
+      "AILines": 8078,
+      "AIPercentage": 26.9,
+      "FileCount": 1002
+    },
+    {
+      "Extension": "yml",
+      "TotalLines": 29653,
+      "AILines": 6524,
+      "AIPercentage": 22.0,
+      "FileCount": 1400
+    },
+    {
+      "Extension": "sh",
+      "TotalLines": 14491,
+      "AILines": 7031,
+      "AIPercentage": 48.52,
+      "FileCount": 449
+    },
+    {
+      "Extension": "ts",
+      "TotalLines": 13778,
+      "AILines": 13095,
+      "AIPercentage": 95.04,
+      "FileCount": 860
+    },
+    {
+      "Extension": "html",
+      "TotalLines": 12257,
+      "AILines": 12205,
+      "AIPercentage": 99.58,
+      "FileCount": 184
+    },
+    {
+      "Extension": "ps1",
+      "TotalLines": 8609,
+      "AILines": 4989,
+      "AIPercentage": 57.95,
+      "FileCount": 177
+    },
+    {
+      "Extension": "yaml",
+      "TotalLines": 5794,
+      "AILines": 2087,
+      "AIPercentage": 36.02,
+      "FileCount": 236
+    },
+    {
+      "Extension": "js",
+      "TotalLines": 2325,
+      "AILines": 2150,
+      "AIPercentage": 92.47,
+      "FileCount": 95
+    },
+    {
+      "Extension": "css",
+      "TotalLines": 2210,
+      "AILines": 1900,
+      "AIPercentage": 85.97,
+      "FileCount": 129
+    },
+    {
+      "Extension": "gitignore",
+      "TotalLines": 1158,
+      "AILines": 285,
+      "AIPercentage": 24.61,
+      "FileCount": 77
+    },
+    {
+      "Extension": "txt",
+      "TotalLines": 1124,
+      "AILines": 339,
+      "AIPercentage": 30.16,
+      "FileCount": 269
+    },
+    {
+      "Extension": "other",
+      "TotalLines": 704,
+      "AILines": 557,
+      "AIPercentage": 79.12,
+      "FileCount": 70
+    },
+    {
+      "Extension": "template",
+      "TotalLines": 655,
+      "AILines": 595,
+      "AIPercentage": 90.84,
+      "FileCount": 15
+    },
+    {
+      "Extension": "md}",
+      "TotalLines": 590,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 8
+    },
+    {
+      "Extension": "dockerfile",
+      "TotalLines": 513,
+      "AILines": 39,
+      "AIPercentage": 7.6,
+      "FileCount": 49
+    },
+    {
+      "Extension": "sample",
+      "TotalLines": 449,
+      "AILines": 67,
+      "AIPercentage": 14.92,
+      "FileCount": 62
+    },
+    {
+      "Extension": "dockerignore",
+      "TotalLines": 434,
+      "AILines": 9,
+      "AIPercentage": 2.07,
+      "FileCount": 38
+    },
+    {
+      "Extension": "ini",
+      "TotalLines": 138,
+      "AILines": 120,
+      "AIPercentage": 86.96,
+      "FileCount": 21
+    },
+    {
+      "Extension": "js}",
+      "TotalLines": 135,
+      "AILines": 75,
+      "AIPercentage": 55.56,
+      "FileCount": 15
+    },
+    {
+      "Extension": "backend",
+      "TotalLines": 102,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 6
+    },
+    {
+      "Extension": "cmd",
+      "TotalLines": 75,
+      "AILines": 65,
+      "AIPercentage": 86.67,
+      "FileCount": 24
+    },
+    {
+      "Extension": "devcontainer/dockerfile",
+      "TotalLines": 60,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 14
+    },
+    {
+      "Extension": "svg",
+      "TotalLines": 56,
+      "AILines": 12,
+      "AIPercentage": 21.43,
+      "FileCount": 61
+    },
+    {
+      "Extension": "env",
+      "TotalLines": 52,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 16
+    },
+    {
+      "Extension": "log",
+      "TotalLines": 51,
+      "AILines": 51,
+      "AIPercentage": 100.0,
+      "FileCount": 8
+    },
+    {
+      "Extension": "github/codeowners",
+      "TotalLines": 31,
+      "AILines": 2,
+      "AIPercentage": 6.45,
+      "FileCount": 22
+    },
+    {
+      "Extension": "templateignore",
+      "TotalLines": 15,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 6
+    },
+    {
+      "Extension": "npmrc",
+      "TotalLines": 12,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 12
+    },
+    {
+      "Extension": "flake8",
+      "TotalLines": 10,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 7
+    },
+    {
+      "Extension": "gitattributes",
+      "TotalLines": 9,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 4
+    },
+    {
+      "Extension": "sample}",
+      "TotalLines": 4,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "yml}",
+      "TotalLines": 2,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 8
+    }
+  ],
+  "BranchStatistics": {
+    "Branch": "dev",
+    "TotalCommits": 0,
+    "AICommits": 0,
+    "HumanCommits": 0,
+    "TotalLinesAdded": null,
+    "TotalLinesDeleted": null,
+    "AILinesAdded": null,
+    "AILinesDeleted": null,
+    "Tier1Commits": 0,
+    "Tier2Commits": 0,
+    "Tier3Commits": 0,
+    "Tier4Commits": 0,
+    "Tier5Commits": 0,
+    "UniqueContributors": 0,
+    "AIPercentage": 0,
+    "HumanLinesAdded": 0,
+    "MergedPRs": null
+  },
+  "Users": [],
+  "AIAttributionOverride": {
+    "Notes": null,
+    "Applied": false,
+    "OverridePercentage": null
+  },
+  "GeneratedAt": "2026-10-01 01:17:31",
+  "Branch": "dev"
+}

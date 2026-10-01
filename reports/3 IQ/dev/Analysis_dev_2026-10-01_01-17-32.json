@@ -1,0 +1,284 @@
+{
+  "AnalysisPeriod": {
+    "EndDate": "2026-09-30",
+    "FilterApplied": true,
+    "StartDate": "2026-09-01"
+  },
+  "Commits": [
+    {
+      "Hash": "41a760d064b385fa3ebd6dc547de2dc947b04d12",
+      "Author": "Yamini1-Microsoft",
+      "Date": "Thu Sep 24 15:14:51 2026 +0530",
+      "Message": "fix: serialize AI Foundry resource updates",
+      "LinesAdded": 10,
+      "LinesDeleted": 1,
+      "CodeLinesAdded": 10,
+      "CodeLinesDeleted": 1,
+      "IsAI": true,
+      "ConfidenceScore": 100,
+      "ConfidenceTier": "Tier 1: Definitive AI (99-100 percent)",
+      "TierNumber": 1
+    },
+    {
+      "Hash": "f6b93c6149b0b31a1f17495292d63efcb28f0aba",
+      "Author": "Copilot",
+      "Date": "Mon Sep 21 16:17:25 2026 +0530",
+      "Message": "build: migrate dev container to Bookworm",
+      "LinesAdded": 7,
+      "LinesDeleted": 6,
+      "CodeLinesAdded": 4,
+      "CodeLinesDeleted": 3,
+      "IsAI": true,
+      "ConfidenceScore": 100,
+      "ConfidenceTier": "Tier 1: Definitive AI (99-100 percent)",
+      "TierNumber": 1
+    }
+  ],
+  "Metadata": {
+    "AnalysisMethod": "5-Tier Weighted Pattern Detection",
+    "ScriptVersion": "2.0.0",
+    "GeneratedBy": "Copilot Usage Report Tool v2.0",
+    "PowerShellVersion": "7.6.6",
+    "IncludeTestFiles": false,
+    "GeneratedAt": "2026-10-01 01:17:32"
+  },
+  "TierDistribution": {
+    "Tier3_High": 0,
+    "Tier1_Definitive": 2,
+    "Tier5_Low": 0,
+    "Tier2_VeryHigh": 0,
+    "Tier4_Moderate": 0,
+    "Human": 0
+  },
+  "ApplicationName": "3 IQ",
+  "FileTypeBreakdown": [
+    {
+      "Extension": "csv",
+      "TotalLines": 421659,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 114
+    },
+    {
+      "Extension": "py",
+      "TotalLines": 12282,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 63
+    },
+    {
+      "Extension": "json",
+      "TotalLines": 7835,
+      "AILines": 56,
+      "AIPercentage": 0.71,
+      "FileCount": 263
+    },
+    {
+      "Extension": "tmdl",
+      "TotalLines": 6270,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 53
+    },
+    {
+      "Extension": "md",
+      "TotalLines": 6020,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 113
+    },
+    {
+      "Extension": "ipynb",
+      "TotalLines": 5146,
+      "AILines": 32,
+      "AIPercentage": 0.62,
+      "FileCount": 83
+    },
+    {
+      "Extension": "ps1",
+      "TotalLines": 1984,
+      "AILines": 258,
+      "AIPercentage": 13.0,
+      "FileCount": 29
+    },
+    {
+      "Extension": "bicep",
+      "TotalLines": 1238,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 30
+    },
+    {
+      "Extension": "yml",
+      "TotalLines": 977,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 51
+    },
+    {
+      "Extension": "sh",
+      "TotalLines": 505,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 12
+    },
+    {
+      "Extension": "platform",
+      "TotalLines": 411,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 35
+    },
+    {
+      "Extension": "gitignore",
+      "TotalLines": 195,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "dockerignore",
+      "TotalLines": 94,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 1
+    },
+    {
+      "Extension": "txt",
+      "TotalLines": 88,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 18
+    },
+    {
+      "Extension": "sql",
+      "TotalLines": 43,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "yaml",
+      "TotalLines": 36,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 1
+    },
+    {
+      "Extension": "other",
+      "TotalLines": 21,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 1
+    },
+    {
+      "Extension": "pbir",
+      "TotalLines": 18,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 2
+    },
+    {
+      "Extension": "pbism",
+      "TotalLines": 15,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 3
+    },
+    {
+      "Extension": "devcontainer/dockerfile",
+      "TotalLines": 8,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 5
+    },
+    {
+      "Extension": "github/codeowners",
+      "TotalLines": 5,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 1
+    },
+    {
+      "Extension": "png",
+      "TotalLines": 1,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 18
+    }
+  ],
+  "BranchStatistics": {
+    "Branch": "dev",
+    "TotalCommits": 2,
+    "AICommits": 2,
+    "HumanCommits": 0,
+    "TotalLinesAdded": 14.0,
+    "TotalLinesDeleted": 4.0,
+    "AILinesAdded": 14.0,
+    "AILinesDeleted": 4.0,
+    "Tier1Commits": 2,
+    "Tier2Commits": 0,
+    "Tier3Commits": 0,
+    "Tier4Commits": 0,
+    "Tier5Commits": 0,
+    "UniqueContributors": 2,
+    "AIPercentage": 100.0,
+    "HumanLinesAdded": 0.0,
+    "MergedPRs": null
+  },
+  "Users": [
+    {
+      "UserName": "Copilot",
+      "UserEmail": "copilot@example.com",
+      "TotalCommits": 1,
+      "AICommits": 1,
+      "HumanCommits": 0,
+      "AILinesAdded": 4,
+      "AILinesDeleted": 3,
+      "HumanLinesAdded": 0,
+      "HumanLinesDeleted": 0,
+      "TotalLinesAdded": 4,
+      "TotalLinesDeleted": 3,
+      "AIPercentage": 100.0,
+      "AvgConfidenceScore": 100.0,
+      "ConfidenceScores": [
+        100
+      ],
+      "Tier1Commits": 1,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    },
+    {
+      "UserName": "Yamini1-Microsoft",
+      "UserEmail": "v-yamini5@microsoft.com",
+      "TotalCommits": 1,
+      "AICommits": 1,
+      "HumanCommits": 0,
+      "AILinesAdded": 10,
+      "AILinesDeleted": 1,
+      "HumanLinesAdded": 0,
+      "HumanLinesDeleted": 0,
+      "TotalLinesAdded": 10,
+      "TotalLinesDeleted": 1,
+      "AIPercentage": 100.0,
+      "AvgConfidenceScore": 100.0,
+      "ConfidenceScores": [
+        100
+      ],
+      "Tier1Commits": 1,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    }
+  ],
+  "AIAttributionOverride": {
+    "Notes": null,
+    "Applied": false,
+    "OverridePercentage": null
+  },
+  "GeneratedAt": "2026-10-01 01:17:32",
+  "Branch": "dev"
+}
