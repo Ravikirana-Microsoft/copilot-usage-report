@@ -6359,6 +6359,60 @@
   "GeneratedAt": "2026-09-29 14:58:43",
   "Branch": "dev",
   "ApplicationName": "Code Modernization"
+},
+{
+  "AIAttributionOverride": {
+    "Notes": "Manually-supplied offline analysis. Repo is in the mcaps-microsoft org and not accessible to the automated pipeline; metrics generated from a local clone. Methodology: code-only (excludes data/, CSV, PDF, images, notebooks). AI = T1-T5 signal tiers.",
+    "Applied": false,
+    "OverridePercentage": null
+  },
+  "BranchStatistics": {
+    "Branch": "main",
+    "TotalCommits": 33,
+    "AICommits": 26,
+    "HumanCommits": 7,
+    "TotalLinesAdded": 66339.0,
+    "TotalLinesDeleted": null,
+    "AILinesAdded": 61688.0,
+    "AILinesDeleted": null,
+    "Tier1Commits": 2,
+    "Tier2Commits": 5,
+    "Tier3Commits": 4,
+    "Tier4Commits": 5,
+    "Tier5Commits": 10,
+    "UniqueContributors": 9,
+    "AIPercentage": 93.0,
+    "HumanLinesAdded": 4651.0,
+    "MergedPRs": null
+  },
+  "TierDistribution": {
+    "Tier3_High": 4,
+    "Tier1_Definitive": 2,
+    "Tier5_Low": 10,
+    "Tier2_VeryHigh": 5,
+    "Tier4_Moderate": 5,
+    "Human": 7
+  },
+  "AnalysisPeriod": {
+    "EndDate": "2026-09-29",
+    "FilterApplied": true,
+    "StartDate": "2026-09-01"
+  },
+  "Commits": null,
+  "FileTypeBreakdown": [],
+  "Metadata": {
+    "PowerShellVersion": "7.6.6",
+    "AnalysisMethod": "5-Tier Weighted Pattern Detection",
+    "IncludeTestFiles": false,
+    "GeneratedBy": "Copilot Usage Report Tool v2.0 (manual offline entry)",
+    "ScriptVersion": "2.0.0",
+    "GeneratedAt": "2026-09-29 14:58:43",
+    "DataSource": "Local clone analysis; mcaps-microsoft org not accessible to pipeline"
+  },
+  "Users": [],
+  "GeneratedAt": "2026-09-29 14:58:43",
+  "Branch": "main",
+  "ApplicationName": "Supply Chain Intelligence"
 }
   ]
 }
