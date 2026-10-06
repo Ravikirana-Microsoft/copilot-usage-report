@@ -1051,6 +1051,7 @@ try {
     # Uses the Search API filtered by base branch and merge date. Null if unavailable.
     # =====================================================
     $mergedPRCount = $null
+    $mergedPRDetails = @()
     try {
         $remoteUrl = (git config --get remote.origin.url 2>$null)
         $token = if ($env:GITHUB_TOKEN) { $env:GITHUB_TOKEN } elseif ($env:GH_TOKEN) { $env:GH_TOKEN } else { $null }
@@ -1065,14 +1066,28 @@ try {
             } elseif ($EndDate) {
                 $query += " merged:<=$EndDate"
             }
-            $uri = "https://api.github.com/search/issues?q=$([uri]::EscapeDataString($query))&per_page=1"
             $headers = @{
                 Authorization = "Bearer $token"
                 Accept        = "application/vnd.github+json"
                 "User-Agent"  = "copilot-usage-report"
             }
-            $prResponse = Invoke-RestMethod -Uri $uri -Headers $headers -Method Get -ErrorAction Stop
-            $mergedPRCount = [int]$prResponse.total_count
+            $page = 1
+            do {
+                $uri = "https://api.github.com/search/issues?q=$([uri]::EscapeDataString($query))&per_page=100&page=$page"
+                $prResponse = Invoke-RestMethod -Uri $uri -Headers $headers -Method Get -ErrorAction Stop
+                if ($null -eq $mergedPRCount) {
+                    $mergedPRCount = [int]$prResponse.total_count
+                }
+                foreach ($pullRequest in @($prResponse.items)) {
+                    $mergedPRDetails += [PSCustomObject]@{
+                        Number = [int]$pullRequest.number
+                        Author = $pullRequest.user.login
+                        MergedAt = $pullRequest.closed_at
+                        Url = $pullRequest.html_url
+                    }
+                }
+                $page++
+            } while ($prResponse.items.Count -eq 100 -and $mergedPRDetails.Count -lt 1000)
             Write-Host "  Merged PRs into '$Branch': $mergedPRCount" -ForegroundColor Gray
         }
     } catch {
@@ -1187,6 +1202,7 @@ try {
         }
         GeneratedAt = (Get-Date -Format "yyyy-MM-dd HH:mm:ss")
         BranchStatistics = $branchStats
+        PullRequests = @($mergedPRDetails)
         TierDistribution = @{
             Tier1_Definitive = $branchStats.Tier1Commits
             Tier2_VeryHigh = $branchStats.Tier2Commits
