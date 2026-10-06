@@ -1,114 +1,120 @@
 {
-  "lastUpdated": "2026-10-01 01:17:42",
   "reports": [
     {
-      "name": "September3-2026",
-      "dateRange": "2026-09-01 to 2026-09-30",
       "isLatest": true,
+      "date": "2026-10-06 10:12:05 UTC",
+      "filename": "ConsolidatedReport_2026-10-06_10-12-05.json",
+      "dateRange": "2026-07-01 to 2026-09-30",
+      "name": "2026-27-Q1"
+    },
+    {
+      "date": "2026-10-01 01:17:42 UTC",
       "filename": "ConsolidatedReport_2026-10-01_01-17-42.json",
-      "date": "2026-10-01 01:17:42 UTC"
+      "dateRange": "2026-09-01 to 2026-09-30",
+      "name": "September3-2026"
     },
     {
-      "name": "JulyNEW2-2026",
-      "dateRange": "2026-07-01 to 2026-07-31",
+      "date": "2026-09-29 15:41:14 UTC",
       "filename": "ConsolidatedReport_2026-09-29_15-41-14.json",
-      "date": "2026-09-29 15:41:14 UTC"
+      "dateRange": "2026-07-01 to 2026-07-31",
+      "name": "JulyNEW2-2026"
     },
     {
-      "name": "AugustNEW2-2026",
-      "dateRange": "2026-08-01 to 2026-08-31",
+      "date": "2026-09-29 15:29:54 UTC",
       "filename": "ConsolidatedReport_2026-09-29_15-29-54.json",
-      "date": "2026-09-29 15:29:54 UTC"
+      "dateRange": "2026-08-01 to 2026-08-31",
+      "name": "AugustNEW2-2026"
     },
     {
-      "name": "SeptemberNEW2-2026",
-      "dateRange": "2026-09-01 to 2026-09-29",
+      "date": "2026-09-29 14:58:53 UTC",
       "filename": "ConsolidatedReport_2026-09-29_14-58-52.json",
-      "date": "2026-09-29 14:58:53 UTC"
+      "dateRange": "2026-09-01 to 2026-09-29",
+      "name": "SeptemberNEW2-2026"
     },
     {
-      "name": "FY27-Q1",
-      "dateRange": "2026-07-01 to 2026-09-28",
+      "date": "2026-09-29 11:02:07 UTC",
       "filename": "ConsolidatedReport_2026-09-29_11-02-07.json",
-      "date": "2026-09-29 11:02:07 UTC"
+      "dateRange": "2026-07-01 to 2026-09-28",
+      "name": "FY27-Q1"
     },
     {
-      "name": "AugustNEW1-2026",
-      "dateRange": "2026-08-01 to 2026-08-31",
+      "date": "2026-09-29 09:15:49 UTC",
       "filename": "ConsolidatedReport_2026-09-29_09-15-49.json",
-      "date": "2026-09-29 09:15:49 UTC"
+      "dateRange": "2026-08-01 to 2026-08-31",
+      "name": "AugustNEW1-2026"
     },
     {
-      "name": "SeptemberNEW-2026",
-      "dateRange": "2026-09-01 to 2026-09-28",
+      "date": "2026-09-29 08:34:31 UTC",
       "filename": "ConsolidatedReport_2026-09-29_08-34-31.json",
-      "date": "2026-09-29 08:34:31 UTC"
+      "dateRange": "2026-09-01 to 2026-09-28",
+      "name": "SeptemberNEW-2026"
     },
     {
-      "name": "AugustNEW-2026",
-      "dateRange": "2026-08-01 to 2026-08-31",
+      "date": "2026-09-29 08:24:54 UTC",
       "filename": "ConsolidatedReport_2026-09-29_08-24-54.json",
-      "date": "2026-09-29 08:24:54 UTC"
+      "dateRange": "2026-08-01 to 2026-08-31",
+      "name": "AugustNEW-2026"
     },
     {
-      "name": "July-2026",
-      "dateRange": "2026-07-01 to 2026-07-31",
+      "date": "2026-09-29 07:14:38 UTC",
       "filename": "ConsolidatedReport_2026-09-29_07-14-38.json",
-      "date": "2026-09-29 07:14:38 UTC"
+      "dateRange": "2026-07-01 to 2026-07-31",
+      "name": "July-2026"
     },
     {
-      "name": "July-2026",
-      "dateRange": "2026-07-01 to 2026-07-31",
+      "date": "2026-09-29 03:55:48 UTC",
       "filename": "ConsolidatedReport_2026-09-29_03-55-48.json",
-      "date": "2026-09-29 03:55:48 UTC"
-    },
-    {
-      "name": "August-2026",
-      "dateRange": "2026-08-01 to 2026-08-31",
-      "filename": "ConsolidatedReport_2026-09-28_12-03-49.json",
-      "date": "2026-09-28 12:03:49 UTC"
-    },
-    {
-      "name": "June-2026",
-      "dateRange": "2026-06-01 to 2026-06-30",
-      "filename": "ConsolidatedReport_2026-09-28_14-39-28.json",
-      "date": "2026-09-28 14:39:28 UTC"
-    },
-    {
-      "name": "September2-2026",
-      "dateRange": "2026-09-01 to 2026-09-27",
-      "filename": "ConsolidatedReport_2026-09-28_11-19-14.json",
-      "date": "2026-09-28 11:19:15 UTC"
-    },
-    {
-      "name": "July-2026",
       "dateRange": "2026-07-01 to 2026-07-31",
-      "filename": "ConsolidatedReport_2026-09-28_10-09-03.json",
-      "date": "2026-09-28 10:09:04 UTC"
+      "name": "July-2026"
     },
     {
-      "name": "August-2026",
+      "date": "2026-09-28 14:39:28 UTC",
+      "filename": "ConsolidatedReport_2026-09-28_14-39-28.json",
+      "dateRange": "2026-06-01 to 2026-06-30",
+      "name": "June-2026"
+    },
+    {
+      "date": "2026-09-28 12:03:49 UTC",
+      "filename": "ConsolidatedReport_2026-09-28_12-03-49.json",
       "dateRange": "2026-08-01 to 2026-08-31",
+      "name": "August-2026"
+    },
+    {
+      "date": "2026-09-28 11:19:15 UTC",
+      "filename": "ConsolidatedReport_2026-09-28_11-19-14.json",
+      "dateRange": "2026-09-01 to 2026-09-27",
+      "name": "September2-2026"
+    },
+    {
+      "date": "2026-09-28 10:09:04 UTC",
+      "filename": "ConsolidatedReport_2026-09-28_10-09-03.json",
+      "dateRange": "2026-07-01 to 2026-07-31",
+      "name": "July-2026"
+    },
+    {
+      "date": "2026-09-28 10:04:01 UTC",
       "filename": "ConsolidatedReport_2026-09-28_10-04-01.json",
-      "date": "2026-09-28 10:04:01 UTC"
+      "dateRange": "2026-08-01 to 2026-08-31",
+      "name": "August-2026"
     },
     {
-      "name": "September-2026",
-      "dateRange": "2026-05-01 to 2026-05-31",
+      "date": "2026-09-28 09:59:06 UTC",
       "filename": "ConsolidatedReport_2026-09-28_09-59-05.json",
-      "date": "2026-09-28 09:59:06 UTC"
+      "dateRange": "2026-05-01 to 2026-05-31",
+      "name": "September-2026"
     },
     {
-      "name": "May-2026",
-      "dateRange": "2026-05-01 to 2026-05-17",
+      "date": "2026-05-18 05:27:16 UTC",
       "filename": "ConsolidatedReport_2026-05-18_05-27-16.json",
-      "date": "2026-05-18 05:27:16 UTC"
+      "dateRange": "2026-05-01 to 2026-05-17",
+      "name": "May-2026"
     },
     {
-      "name": "April-2026",
-      "dateRange": "2026-04-01 to 2026-04-30",
+      "date": "2026-05-18 05:14:59 UTC",
       "filename": "ConsolidatedReport_2026-05-18_05-14-59.json",
-      "date": "2026-05-18 05:14:59 UTC"
+      "dateRange": "2026-04-01 to 2026-04-30",
+      "name": "April-2026"
     }
-  ]
+  ],
+  "lastUpdated": "2026-10-06 10:12:05"
 }
