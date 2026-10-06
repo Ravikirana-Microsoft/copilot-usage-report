@@ -56,7 +56,10 @@ try {
     } else {
         $config = Import-Csv -Path $ConfigPath
     }
-    Write-Host "Found $($config.Count) application(s) to validate`n" -ForegroundColor Green
+    $config = @($config | Where-Object {
+        $_.Enabled -eq 'true' -or $_.Enabled -eq 'True' -or $_.Enabled -eq $true
+    })
+    Write-Host "Found $($config.Count) enabled application(s) to validate`n" -ForegroundColor Green
 } catch {
     Write-Error "Failed to read configuration file: $_"
     exit 1

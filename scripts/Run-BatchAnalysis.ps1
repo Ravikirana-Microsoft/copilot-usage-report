@@ -358,8 +358,33 @@ Write-Host "═══ Step 1: Validating Git Access ═══`n" -ForegroundColo
 & $validateScript -ConfigPath $ConfigPath
 
 if ($LASTEXITCODE -ne 0) {
-    Write-Error "Git access validation failed. Please resolve authentication issues before proceeding."
-    exit 1
+    if ($ValidateOnly) {
+        Write-Error "Git access validation failed. Please resolve authentication issues before proceeding."
+        exit 1
+    }
+
+    $validationReportPath = Join-Path $reportsPath "Git-Access-Validation-Report.csv"
+    if (-not (Test-Path $validationReportPath)) {
+        Write-Error "Git access validation failed and no validation report was generated."
+        exit 1
+    }
+
+    $validationResults = Import-Csv -Path $validationReportPath
+    $accessibleUrls = @{}
+    foreach ($result in $validationResults | Where-Object { $_.Authenticated -eq 'True' }) {
+        $accessibleUrls[$result.GitUrl] = $true
+    }
+
+    $inaccessibleApps = @($config | Where-Object { -not $accessibleUrls.ContainsKey($_.GitUrl) })
+    $config = @($config | Where-Object { $accessibleUrls.ContainsKey($_.GitUrl) })
+
+    if ($config.Count -eq 0) {
+        Write-Error "None of the enabled repositories are accessible. Analysis cannot continue."
+        exit 1
+    }
+
+    Write-Warning "Continuing with partial results. Skipping $($inaccessibleApps.Count) inaccessible application(s): $($inaccessibleApps.ApplicationName -join ', ')"
+    Write-Host "Repositories remaining for analysis: $($config.Count)" -ForegroundColor Yellow
 }
 
 if ($ValidateOnly) {
