@@ -1613,6 +1613,11 @@
         <div id="usersView" class="view-content">
             <div class="chart-card">
                 <h3>User-Level Copilot Usage</h3>
+                <div class="tabs" style="margin-bottom: 16px;">
+                    <button class="tab active" id="usersTabAll" onclick="switchUsersTab('all')">All</button>
+                    <button class="tab" id="usersTabPersistent" onclick="switchUsersTab('persistent')">Persistent</button>
+                    <button class="tab" id="usersTabMicrosoft" onclick="switchUsersTab('microsoft')">Microsoft</button>
+                </div>
                 <div id="usersList"></div>
             </div>
         </div>
@@ -1922,6 +1927,24 @@
                     <div id="configSummary" style="color: var(--text-secondary); font-size: 14px;">
                         Loading...
                     </div>
+                </div>
+
+                <!-- PR Calculation Settings -->
+                <div class="pr-calc-section" style="margin-top: 20px; padding: 20px; background: var(--card-bg); border-radius: 12px; border: 1px solid var(--border-color);">
+                    <h4 style="margin: 0 0 12px 0; display: flex; align-items: center; gap: 8px;">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+                        Average PR Calculation
+                    </h4>
+                    <p style="color: var(--text-secondary); margin-bottom: 12px; font-size: 14px;">
+                        Set the total number of developers to use for the <strong>Avg PRs / Developer / Week</strong> KPI. When set, this value overrides the auto-detected contributor count.
+                    </p>
+                    <div style="display: flex; gap: 12px; align-items: center; flex-wrap: wrap;">
+                        <input type="number" id="totalDevelopersInput" min="1" step="1" placeholder="e.g. 25"
+                            style="width: 160px; padding: 10px 14px; border: 1px solid var(--border-color); border-radius: 8px; background: var(--bg-secondary); color: var(--text-primary);">
+                        <button onclick="saveTotalDevelopers()" style="background: linear-gradient(135deg, #22c55e, #16a34a); color: white; border: none; padding: 10px 20px; border-radius: 8px; cursor: pointer; font-weight: 500;">💾 Save</button>
+                        <button onclick="clearTotalDevelopers()" style="background: var(--card-bg); color: var(--text-primary); border: 1px solid var(--border-color); padding: 10px 16px; border-radius: 8px; cursor: pointer;">Clear</button>
+                    </div>
+                    <div id="totalDevelopersResult" style="margin-top: 8px; font-size: 14px;"></div>
                 </div>
 
                 <!-- GitHub Token Section for Saving -->
@@ -8375,6 +8398,7 @@
         let currentData = null;
         let currentReportPath = null;  // Track which report is loaded
         let charts = {};
+        let currentUsersFilter = 'all';  // Users sub-tab filter: 'all' | 'persistent' | 'microsoft'
         let isLocalFileAccess = false;  // Flag to track if running from file:// protocol
         let currentArchive = 'current';  // Track which archive is being viewed ('current' = main reports)
         let availableArchives = [];      // List of available archive bundles
@@ -8979,7 +9003,12 @@
             document.getElementById('totalCommits').textContent = formatNumber(summary.totalCommits);
             document.getElementById('aiCommits').textContent = summary.aiCommits + ' AI commits';
             document.getElementById('totalContributors').textContent = summary.contributorCount;
-            document.getElementById('avgPRsPerDev').textContent = (summary.avgPRsPerDev || 0).toFixed(2);
+            // Avg PRs / Developer: use the manually configured total developer count from Settings
+            // (localStorage) when available; otherwise fall back to the auto-detected contributor count.
+            const configuredDevs = parseInt(localStorage.getItem('totalDevelopers'), 10);
+            const devCount = (configuredDevs && configuredDevs > 0) ? configuredDevs : summary.contributorCount;
+            const avgPRsPerDev = devCount > 0 ? (summary.mergedPRs || 0) / devCount : 0;
+            document.getElementById('avgPRsPerDev').textContent = avgPRsPerDev.toFixed(2);
             document.getElementById('mergedPRs').textContent = formatNumber(summary.mergedPRs || 0) + ' merged PRs';
 
             // Update timestamp - show which report is being displayed
@@ -9743,18 +9772,35 @@
             });
         }
 
+        function switchUsersTab(filter) {
+            currentUsersFilter = filter;
+            document.getElementById('usersTabAll').classList.toggle('active', filter === 'all');
+            document.getElementById('usersTabPersistent').classList.toggle('active', filter === 'persistent');
+            document.getElementById('usersTabMicrosoft').classList.toggle('active', filter === 'microsoft');
+            renderUsersList();
+        }
+
         function renderUsersList() {
             const container = document.getElementById('usersList');
             container.innerHTML = '';
 
             // Filter out null, empty, 'Unknown', and 'null' string names
-            const users = Object.values(currentData.users)
+            let users = Object.values(currentData.users)
                 .filter(u => u.name && u.name !== 'null' && u.name !== 'Unknown' && u.name.trim() !== '')
                 .map(u => ({
                     ...u,
                     aiPercentage: u.totalLines > 0 ? ((u.aiLines / u.totalLines) * 100).toFixed(1) : 0
                 }))
                 .sort((a, b) => b.aiLines - a.aiLines);
+
+            // Apply Persistent / Microsoft sub-tab filter.
+            // Users whose name ends with "-Microsoft" are Persistent; everyone else is Microsoft.
+            const filter = currentUsersFilter || 'all';
+            if (filter === 'persistent') {
+                users = users.filter(u => /-Microsoft$/i.test(u.name.trim()));
+            } else if (filter === 'microsoft') {
+                users = users.filter(u => !/-Microsoft$/i.test(u.name.trim()));
+            }
 
             if (users.length === 0) {
                 container.innerHTML = '<p style="color: #888; text-align: center; padding: 20px;">No user data available</p>';
@@ -12405,8 +12451,50 @@
                 if (savedToken) {
                     document.getElementById('settingsGithubToken').value = savedToken;
                 }
+                // Load saved total developer count for Avg PR calculation
+                loadTotalDevelopers();
             }
         };
+
+        // ============================================
+        // AVG PR CALCULATION — TOTAL DEVELOPERS SETTING
+        // ============================================
+        function loadTotalDevelopers() {
+            const saved = localStorage.getItem('totalDevelopers');
+            const input = document.getElementById('totalDevelopersInput');
+            const result = document.getElementById('totalDevelopersResult');
+            if (!input) return;
+            if (saved && parseInt(saved, 10) > 0) {
+                input.value = saved;
+                if (result) result.innerHTML = `<span style="color:#22c55e;">Using ${saved} developers for Avg PR calculation.</span>`;
+            } else {
+                input.value = '';
+                if (result) result.innerHTML = '<span style="color:var(--text-secondary);">Not set — using auto-detected contributor count.</span>';
+            }
+        }
+
+        function saveTotalDevelopers() {
+            const input = document.getElementById('totalDevelopersInput');
+            const result = document.getElementById('totalDevelopersResult');
+            const value = parseInt(input.value, 10);
+            if (!value || value < 1) {
+                result.innerHTML = '<span style="color:#ef4444;">Please enter a valid number of developers (1 or more).</span>';
+                return;
+            }
+            localStorage.setItem('totalDevelopers', String(value));
+            result.innerHTML = `<span style="color:#22c55e;">Saved. Avg PR calculation now uses ${value} developers.</span>`;
+            // Re-render dashboard so the Avg PRs KPI reflects the new value immediately
+            if (currentData) renderDashboard();
+        }
+
+        function clearTotalDevelopers() {
+            localStorage.removeItem('totalDevelopers');
+            const input = document.getElementById('totalDevelopersInput');
+            const result = document.getElementById('totalDevelopersResult');
+            if (input) input.value = '';
+            if (result) result.innerHTML = '<span style="color:var(--text-secondary);">Cleared — using auto-detected contributor count.</span>';
+            if (currentData) renderDashboard();
+        }
 
     </script>
 </body>
