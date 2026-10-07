@@ -1724,12 +1724,16 @@
                 <h3>Pull Requests by Calendar Week</h3>
                 <p id="prWeekPeriod" style="color: var(--text-secondary); margin-top: 6px;"></p>
               </div>
-              <select class="filter-select" id="prOrganizationFilter" onchange="setPROrganizationFilter(this.value)">
-                <option value="all">All</option>
-                <option value="persistent">Persistent</option>
-                <option value="microsoft">Microsoft</option>
-              </select>
+              <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+                <button class="refresh-btn" id="loadPRDetailsBtn" onclick="loadHistoricalPRDetails()">Load PR Details</button>
+                <select class="filter-select" id="prOrganizationFilter" onchange="setPROrganizationFilter(this.value)">
+                  <option value="all">All</option>
+                  <option value="persistent">Persistent</option>
+                  <option value="microsoft">Microsoft</option>
+                </select>
+              </div>
             </div>
+            <div id="prLoadStatus" style="display: none; margin-bottom: 16px; color: var(--text-secondary);"></div>
             <div class="pr-week-grid" id="prWeekGrid"></div>
             <div class="chart-card" id="prWeekDetails"></div>
           </div>
@@ -20551,8 +20555,9 @@
         }
 
         function parsePRReportDate(value) {
-          if (!value || !/^\d{4}-\d{2}-\d{2}/.test(value)) return null;
-          const date = new Date(value.length === 10 ? `${value}T00:00:00` : value);
+          if (!value || typeof value !== 'string') return null;
+          const trimmed = value.trim();
+          const date = new Date(/^\d{4}-\d{2}-\d{2}$/.test(trimmed) ? `${trimmed}T00:00:00` : trimmed);
           return Number.isNaN(date.getTime()) ? null : date;
         }
 
@@ -20625,11 +20630,134 @@
           renderWeeklyPullRequests();
         }
 
+        function getPRCacheKey() {
+          return `copilot_pr_details:${currentReportPath || currentData?.metadata?.timestamp || 'current'}`;
+        }
+
+        function restoreCachedPRDetails() {
+          if (!currentData || currentData.pullRequests?.length > 0) return;
+          try {
+            const cached = JSON.parse(localStorage.getItem(getPRCacheKey()) || 'null');
+            if (Array.isArray(cached) && cached.length > 0) {
+              currentData.pullRequests = cached;
+              updatePRSummary();
+            }
+          } catch (error) {
+            console.warn('Could not restore cached PR details:', error.message);
+          }
+        }
+
+        function updatePRSummary() {
+          const total = currentData.pullRequests?.length || 0;
+          currentData.summary.mergedPRs = total;
+          const configuredDevs = parseInt(localStorage.getItem('totalDevelopers'), 10);
+          const developerCount = configuredDevs > 0 ? configuredDevs : currentData.summary.contributorCount;
+          document.getElementById('mergedPRs').textContent = `${formatNumber(total)} merged PRs`;
+          document.getElementById('avgPRsPerDev').textContent = (developerCount > 0 ? total / developerCount : 0).toFixed(2);
+        }
+
+        async function loadHistoricalPRDetails() {
+          const button = document.getElementById('loadPRDetailsBtn');
+          const status = document.getElementById('prLoadStatus');
+          const period = currentData?.analysisPeriod || {};
+          const startDate = parsePRReportDate(period.StartDate);
+          const endDate = parsePRReportDate(period.EndDate);
+          if (!startDate || !endDate) {
+            status.style.display = 'block';
+            status.textContent = 'This report does not have a valid analysis date range.';
+            return;
+          }
+
+          let token = localStorage.getItem('github_token') || localStorage.getItem('github_workflow_token') || '';
+          if (!token) {
+            token = prompt('Enter a GitHub Personal Access Token with read access to the configured repositories:') || '';
+            if (!token) return;
+            localStorage.setItem('github_token', token);
+          }
+
+          button.disabled = true;
+          status.style.display = 'block';
+          status.textContent = 'Loading repository configuration...';
+
+          try {
+            const repoInfo = getRepoFromUrl();
+            const configUrl = `https://raw.githubusercontent.com/${repoInfo.owner}/${repoInfo.repo}/main/config/config.json?_t=${Date.now()}`;
+            const configResponse = await fetch(configUrl, { cache: 'no-store' });
+            if (!configResponse.ok) throw new Error('Could not load repository configuration.');
+            const config = await configResponse.json();
+            const repositories = new Map((config.repositories || []).map(repo => [repo.applicationName, repo]));
+            const branches = currentData.branches || [];
+            const details = [];
+            const failures = [];
+            const headers = {
+              'Accept': 'application/vnd.github+json',
+              'Authorization': `Bearer ${token}`,
+              'X-GitHub-Api-Version': '2022-11-28'
+            };
+
+            for (let index = 0; index < branches.length; index++) {
+              const branch = branches[index];
+              const repository = repositories.get(branch.application);
+              if (!repository?.gitUrl) continue;
+              const repoMatch = repository.gitUrl.match(/github\.com[/:]([^/]+)\/(.+?)(?:\.git)?$/i);
+              if (!repoMatch) continue;
+              const owner = repoMatch[1];
+              const repo = repoMatch[2].replace(/\.git$/i, '');
+              status.textContent = `Loading PR details ${index + 1} of ${branches.length}: ${branch.application}`;
+
+              try {
+                const query = `repo:${owner}/${repo} is:pr is:merged base:${branch.branch} merged:${period.StartDate}..${period.EndDate}`;
+                let pageNumber = 1;
+                let pageItems;
+                do {
+                  const apiUrl = `https://api.github.com/search/issues?q=${encodeURIComponent(query)}&per_page=100&page=${pageNumber}`;
+                  const response = await fetch(apiUrl, { headers });
+                  if (!response.ok) {
+                    const apiError = await response.json().catch(() => ({}));
+                    throw new Error(apiError.message || `GitHub API returned ${response.status}`);
+                  }
+                  const result = await response.json();
+                  pageItems = result.items || [];
+                  pageItems.forEach(pullRequest => details.push({
+                    number: pullRequest.number,
+                    author: pullRequest.user?.login || 'Unknown',
+                    mergedAt: pullRequest.closed_at,
+                    url: pullRequest.html_url,
+                    application: branch.application,
+                    branch: branch.branch
+                  }));
+                  pageNumber++;
+                } while (pageItems.length === 100 && pageNumber <= 10);
+              } catch (error) {
+                failures.push(`${branch.application}: ${error.message}`);
+              }
+            }
+
+            const uniqueDetails = Array.from(new Map(details.map(detail => [`${detail.application}#${detail.number}`, detail])).values());
+            currentData.pullRequests = uniqueDetails;
+            localStorage.setItem(getPRCacheKey(), JSON.stringify(uniqueDetails));
+            selectedPRWeekIndex = 0;
+            currentPROrganizationFilter = 'all';
+            document.getElementById('prOrganizationFilter').value = 'all';
+            updatePRSummary();
+            renderWeeklyPullRequests();
+            status.textContent = failures.length > 0
+              ? `Loaded ${uniqueDetails.length} PRs. ${failures.length} repository request(s) failed: ${failures.join('; ')}`
+              : `Loaded ${uniqueDetails.length} PRs for this report.`;
+          } catch (error) {
+            status.textContent = `Could not load PR details: ${error.message}`;
+          } finally {
+            button.disabled = false;
+          }
+        }
+
         function renderWeeklyPullRequests() {
           const grid = document.getElementById('prWeekGrid');
           const details = document.getElementById('prWeekDetails');
           const periodLabel = document.getElementById('prWeekPeriod');
           if (!grid || !details || !periodLabel || !currentData) return;
+
+          restoreCachedPRDetails();
 
           const weeks = getPRCalendarWeeks();
           if (weeks.length === 0) {
@@ -20642,7 +20770,9 @@
           selectedPRWeekIndex = Math.min(selectedPRWeekIndex, weeks.length - 1);
           periodLabel.textContent = `${formatPRWeekDate(weeks[0].start)} to ${formatPRWeekDate(weeks[weeks.length - 1].end)}`;
           grid.innerHTML = weeks.map((week, index) => {
-            const developerCount = new Set(week.pullRequests.map(pullRequest => pullRequest.author).filter(Boolean)).size;
+            const configuredDevelopers = parseInt(localStorage.getItem('totalDevelopers'), 10);
+            const dynamicDeveloperCount = new Set(week.pullRequests.map(pullRequest => pullRequest.author).filter(Boolean)).size;
+            const developerCount = configuredDevelopers > 0 ? configuredDevelopers : dynamicDeveloperCount;
             const average = developerCount > 0 ? week.pullRequests.length / developerCount : 0;
             return `
               <button class="pr-week-card ${index === selectedPRWeekIndex ? 'active' : ''}" onclick="selectPRWeek(${index})">
