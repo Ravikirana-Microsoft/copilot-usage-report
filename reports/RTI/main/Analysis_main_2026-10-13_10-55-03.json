@@ -1,0 +1,97 @@
+{
+  "ApplicationName": "RTI",
+  "Branch": "main",
+  "PullRequests": [],
+  "Users": [
+    {
+      "UserName": "KanchanN-Microsoft",
+      "UserEmail": "v-kanchann@microsoft.com",
+      "TotalCommits": 1,
+      "AICommits": 0,
+      "HumanCommits": 1,
+      "AILinesAdded": 0,
+      "AILinesDeleted": 0,
+      "HumanLinesAdded": 0,
+      "HumanLinesDeleted": 0,
+      "TotalLinesAdded": 0,
+      "TotalLinesDeleted": 0,
+      "AIPercentage": 0,
+      "AvgConfidenceScore": 0,
+      "ConfidenceScores": [],
+      "Tier1Commits": 0,
+      "Tier2Commits": 0,
+      "Tier3Commits": 0,
+      "Tier4Commits": 0,
+      "Tier5Commits": 0
+    }
+  ],
+  "AIAttributionOverride": {
+    "Notes": null,
+    "Applied": false,
+    "OverridePercentage": null
+  },
+  "Commits": {
+    "Hash": "82214c415a24d21cff4a1fcd373d2fab3d333118",
+    "Author": "KanchanN-Microsoft",
+    "Date": "Thu Sep 10 17:58:29 2026 +0530",
+    "Message": "fix: update fabric-data-agent-sdk version to 0.1.30a0",
+    "LinesAdded": 1,
+    "LinesDeleted": 1,
+    "CodeLinesAdded": 0,
+    "CodeLinesDeleted": 0,
+    "IsAI": false,
+    "ConfidenceScore": 0,
+    "ConfidenceTier": "Human Written",
+    "TierNumber": 0
+  },
+  "AnalysisPeriod": {
+    "StartDate": "2026-09-01",
+    "EndDate": "2026-09-30",
+    "FilterApplied": true
+  },
+  "TierDistribution": {
+    "Tier5_Low": 0,
+    "Tier1_Definitive": 0,
+    "Tier2_VeryHigh": 0,
+    "Tier3_High": 0,
+    "Human": 1,
+    "Tier4_Moderate": 0
+  },
+  "FileTypeBreakdown": [
+    {
+      "Extension": "yml",
+      "TotalLines": 1,
+      "AILines": 0,
+      "AIPercentage": 0.0,
+      "FileCount": 1
+    }
+  ],
+  "Metadata": {
+    "GeneratedAt": "2026-10-13 10:55:03",
+    "IncludeTestFiles": false,
+    "PowerShellVersion": "7.6.6",
+    "GeneratedBy": "Copilot Usage Report Tool v2.0",
+    "ScriptVersion": "2.0.0",
+    "AnalysisMethod": "5-Tier Weighted Pattern Detection"
+  },
+  "BranchStatistics": {
+    "Branch": "main",
+    "TotalCommits": 1,
+    "AICommits": 0,
+    "HumanCommits": 1,
+    "TotalLinesAdded": 0.0,
+    "TotalLinesDeleted": 0.0,
+    "AILinesAdded": null,
+    "AILinesDeleted": null,
+    "Tier1Commits": 0,
+    "Tier2Commits": 0,
+    "Tier3Commits": 0,
+    "Tier4Commits": 0,
+    "Tier5Commits": 0,
+    "UniqueContributors": 1,
+    "AIPercentage": 0,
+    "HumanLinesAdded": 0.0,
+    "MergedPRs": null
+  },
+  "GeneratedAt": "2026-10-13 10:55:03"
+}
